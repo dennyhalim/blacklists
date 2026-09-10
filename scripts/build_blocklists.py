@@ -12,9 +12,13 @@ from pathlib import Path
 
 API_BASE = "https://iplists.firehol.org/api/v1/sets"
 OUTPUT_DIR = Path("dist")
+README_PATH = Path("README.md")
 TIMEOUT_SECONDS = 60
 USER_AGENT = "firehol-mikrotik-builder/1.0"
 ROUTEROS_LIST_PREFIX = "firehol"
+
+README_TABLE_START = "<!-- BLOCKLIST_COUNTS_START -->"
+README_TABLE_END = "<!-- BLOCKLIST_COUNTS_END -->"
 
 # Define exactly which output files/lists to generate.
 #
@@ -23,10 +27,6 @@ ROUTEROS_LIST_PREFIX = "firehol"
 #
 # Value:
 #   One or more FireHOL feed names to merge.
-#
-# Examples:
-#   "level1"    -> dist/level1.rsc
-#   "combined1" -> dist/combined1.rsc
 LISTS: dict[str, tuple[str, ...]] = {
     "level1": (
         "firehol_level1",
@@ -195,10 +195,11 @@ def write_rsc(
         handle.write("/ip firewall address-list\n")
 
         for network in networks:
-            if network.prefixlen == 32:
-                address = str(network.network_address)
-            else:
-                address = str(network)
+            address = (
+                str(network.network_address)
+                if network.prefixlen == 32
+                else str(network)
+            )
 
             handle.write(
                 "add "
@@ -210,9 +211,9 @@ def write_rsc(
 
 def build_lists(
     downloaded: dict[str, set[ipaddress.IPv4Network]],
-) -> int:
-    """Build every configured MikroTik list."""
-    built = 0
+) -> dict[str, int]:
+    """Build every configured MikroTik list and return generated counts."""
+    counts: dict[str, int] = {}
 
     for output_name, feeds in LISTS.items():
         merged: set[ipaddress.IPv4Network] = set()
@@ -233,15 +234,80 @@ def build_lists(
             networks,
         )
 
+        counts[output_name] = len(networks)
+
         print(
             f"built   {output}: "
             f"{len(networks):,} entries "
             f"from {len(feeds)} feed(s)"
         )
 
-        built += 1
+    return counts
 
-    return built
+
+def build_readme_table(counts: dict[str, int]) -> str:
+    """Build the generated Markdown blocklist-count table."""
+    lines = [
+        README_TABLE_START,
+        "| List | FireHOL Sources | IP/CIDR Count |",
+        "|---|---|---:|",
+    ]
+
+    for output_name, feeds in LISTS.items():
+        sources = " + ".join(f"`{feed}`" for feed in feeds)
+        count = counts[output_name]
+
+        lines.append(
+            f"| `{safe_name(output_name)}` | {sources} | {count:,} |"
+        )
+
+    lines.append(README_TABLE_END)
+    return "\n".join(lines)
+
+
+def update_readme(counts: dict[str, int]) -> None:
+    """Replace only the generated blocklist-count section in README.md."""
+    if not README_PATH.exists():
+        raise RuntimeError(
+            f"{README_PATH} not found; "
+            "create it with the blocklist marker section first"
+        )
+
+    content = README_PATH.read_text(encoding="utf-8")
+
+    start = content.find(README_TABLE_START)
+    end = content.find(README_TABLE_END)
+
+    if start == -1 or end == -1:
+        raise RuntimeError(
+            f"{README_PATH} must contain both "
+            f"{README_TABLE_START} and {README_TABLE_END}"
+        )
+
+    if end < start:
+        raise RuntimeError(
+            f"{README_PATH}: blocklist count markers are in the wrong order"
+        )
+
+    end += len(README_TABLE_END)
+
+    generated_table = build_readme_table(counts)
+
+    updated = (
+        content[:start]
+        + generated_table
+        + content[end:]
+    )
+
+    if updated != content:
+        README_PATH.write_text(
+            updated,
+            encoding="utf-8",
+            newline="\n",
+        )
+        print(f"updated {README_PATH}")
+    else:
+        print(f"unchanged {README_PATH}")
 
 
 def main() -> int:
@@ -268,10 +334,11 @@ def main() -> int:
                 f"{len(networks):,} entries"
             )
 
-        built = build_lists(downloaded)
+        counts = build_lists(downloaded)
+        update_readme(counts)
 
         print(
-            f"done: {built} RSC file(s) "
+            f"done: {len(counts)} RSC file(s) "
             f"in {OUTPUT_DIR}/"
         )
 
@@ -287,4 +354,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
