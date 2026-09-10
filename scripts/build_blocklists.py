@@ -315,36 +315,49 @@ def build_readme_table(counts: dict[str, int]) -> str:
 
 
 def update_readme(counts: dict[str, int]) -> None:
-    """Replace only the generated blocklist-count section in README.md."""
+    """Update or append the generated blocklist-count section in README.md."""
+    generated_table = build_readme_table(counts)
+
     if not README_PATH.exists():
-        raise RuntimeError(
-            f"{README_PATH} not found; "
-            "create it with the blocklist marker section first"
+        content = (
+            "# MikroTik Blocklists\n\n"
+            "## Generated Lists\n\n"
+            f"{generated_table}\n"
         )
+        README_PATH.write_text(
+            content,
+            encoding="utf-8",
+            newline="\n",
+        )
+        print(f"created {README_PATH}")
+        return
 
     content = README_PATH.read_text(encoding="utf-8")
 
     start = content.find(README_TABLE_START)
     end = content.find(README_TABLE_END)
 
-    if start == -1 or end == -1:
-        raise RuntimeError(
-            f"{README_PATH} must contain both "
-            f"{README_TABLE_START} and {README_TABLE_END}"
+    if start == -1 and end == -1:
+        separator = "" if not content or content.endswith("\n\n") else "\n\n"
+        updated = (
+            content.rstrip()
+            + separator
+            + "## Generated Lists\n\n"
+            + generated_table
+            + "\n"
         )
-
-    if end < start:
+    elif start == -1 or end == -1 or end < start:
         raise RuntimeError(
-            f"{README_PATH}: blocklist count markers are in the wrong order"
+            f"{README_PATH}: malformed blocklist count markers; "
+            "either remove both markers or fix their order"
         )
-
-    end += len(README_TABLE_END)
-
-    updated = (
-        content[:start]
-        + build_readme_table(counts)
-        + content[end:]
-    )
+    else:
+        end += len(README_TABLE_END)
+        updated = (
+            content[:start]
+            + generated_table
+            + content[end:]
+        )
 
     if updated != content:
         README_PATH.write_text(
