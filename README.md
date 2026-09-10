@@ -182,3 +182,18 @@ Settings
 IP blocklists are provided by FireHOL IP Lists.
 
 The contents and size of each source list can change over time. This repository only converts and combines the configured source data for MikroTik RouterOS use.
+
+## Generated Lists
+
+<!-- BLOCKLIST_COUNTS_START -->
+| List | Sources | IP/CIDR Count |
+|---|---|---:|
+| `level1` | `level1` | 4,657 |
+| `level2` | `level2` | 18,786 |
+| `level3` | `level3` | 13,063 |
+| `webserver` | `webserver` | 1,264 |
+| `combined1` | `level1` + `level2` | 22,816 |
+| `combined2` | `level2` + `level3` | 31,310 |
+| `combined3` | `level1` + `webserver` | 5,909 |
+| `combined4` | `level1` + `level2` + `level3` | 35,356 |
+<!-- BLOCKLIST_COUNTS_END -->
