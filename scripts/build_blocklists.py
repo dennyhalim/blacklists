@@ -40,6 +40,18 @@ LISTS: dict[str, tuple[str, ...]] = {
     "webserver": (
         "firehol_webserver",
     ),
+    "etblock": (
+        "et_block",
+    ),
+    "dshield": (
+        "dshield_7d",
+    ),
+    "botscout": (
+        "botscout_7d",
+    ),
+    "blocklistde": (
+        "blocklist_de",
+    ),
     "combined1": (
         "firehol_level1",
         "firehol_level2",
