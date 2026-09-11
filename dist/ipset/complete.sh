@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SET_NAME="blocklist_combined3"
-TEMP_NAME="blocklist_combined3_new"
+SET_NAME="blocklist_complete"
+TEMP_NAME="blocklist_complete_new"
 TIMEOUT="259200"
 
 ipset create "$SET_NAME" hash:net family inet timeout "$TIMEOUT" -exist

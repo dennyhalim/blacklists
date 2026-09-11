@@ -2,7 +2,7 @@
 $ErrorActionPreference = "Stop"
 
 $Group = "Generated Blocklists"
-$Prefix = "Blocklist combined3"
+$Prefix = "Blocklist complete"
 $RunId = [Guid]::NewGuid().ToString("N")
 $NewPrefix = "$Prefix new-$RunId"
 

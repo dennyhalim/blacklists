@@ -1,5 +1,5 @@
-flush set inet filter blocklist_combined3
-add element inet filter blocklist_combined3 {
+flush set inet filter blocklist_complete
+add element inet filter blocklist_complete {
         1.0.136.129,
         1.0.170.50,
         1.0.171.141,

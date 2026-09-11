@@ -10,7 +10,7 @@
   },
   "lists": {
     "combined1": {
-      "entries": 2890,
+      "entries": 3267,
       "files": {
         "bat": [
           "dist/windows/combined1.bat"
@@ -38,14 +38,16 @@
       },
       "sources": [
         "etblock",
-        "forumspam",
+        "feodo",
+        "toxic",
         "webserver",
+        "hijack",
         "dshield30",
         "abuseipdb30"
       ]
     },
     "combined2": {
-      "entries": 2908,
+      "entries": 3285,
       "files": {
         "bat": [
           "dist/windows/combined2.bat"
@@ -73,46 +75,50 @@
       },
       "sources": [
         "etblock",
-        "forumspam",
+        "feodo",
+        "toxic",
         "webserver",
+        "hijack",
         "dshield7",
         "abuseipdb7"
       ]
     },
-    "combined3": {
+    "complete": {
       "entries": 141281,
       "files": {
         "bat": [
-          "dist/windows/combined3.bat"
+          "dist/windows/complete.bat"
         ],
         "ipset": [
-          "dist/ipset/combined3.sh"
+          "dist/ipset/complete.sh"
         ],
         "mikrotik": [
-          "dist/mikrotik/combined3.rsc"
+          "dist/mikrotik/complete.rsc"
         ],
         "nftables": [
-          "dist/nftables/combined3.nft",
-          "dist/nftables/combined3.sh"
+          "dist/nftables/complete.nft",
+          "dist/nftables/complete.sh"
         ],
         "pf": [
-          "dist/pf/combined3.txt",
-          "dist/pf/combined3.sh"
+          "dist/pf/complete.txt",
+          "dist/pf/complete.sh"
         ],
         "plain": [
-          "dist/plain/combined3.txt"
+          "dist/plain/complete.txt"
         ],
         "powershell": [
-          "dist/windows/combined3.ps1"
+          "dist/windows/complete.ps1"
         ]
       },
       "sources": [
         "etblock",
-        "forumspam",
+        "feodo",
+        "toxic",
         "webserver",
+        "hijack",
         "dshield30",
         "abuseipdb30",
-        "hijack"
+        "level4"
       ]
     },
     "level1": {
@@ -184,9 +190,11 @@
     "dshield30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_30d.netset",
     "dshield7": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_7d.netset",
     "etblock": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_block.netset",
-    "forumspam": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset",
-    "hijack": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
+    "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
+    "hijack": "https://raw.githubusercontent.com/kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset",
     "level1": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset",
+    "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
+    "toxic": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset",
     "webserver": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webserver.netset"
   },
   "stale_after_days": 3
