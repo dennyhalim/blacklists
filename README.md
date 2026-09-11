@@ -17,8 +17,6 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 | `complete` | `etblock` + `feodo` + `toxic` + `webserver` + `hijack` + `strongips` + `dshield30` + `abuseipdb30` + `level2` + `level4` + `botnet` | 169,260 | [TXT](dist/plain/complete.txt) | [RSC](dist/mikrotik/complete.rsc) | [NFT](dist/nftables/complete.nft) / [SH](dist/nftables/complete.sh) | [SH](dist/ipset/complete.sh) | [PS1](dist/windows/complete.ps1) / [BAT](dist/windows/complete.bat) | [TXT](dist/pf/complete.txt) / [SH](dist/pf/complete.sh) |
 <!-- BLOCKLIST_COUNTS_END -->
 
-> Counts above are examples. They change as FireHOL updates its feeds and should ideally be generated automatically during each build.
-
 ### Warning! Firehol Level1 contain bogons (local reserved) IP Addresses
 
 - https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses
