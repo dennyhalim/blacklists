@@ -49,6 +49,10 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset"
     ),
+    "strongips": (
+        "https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset"
+    ),
     "toxic": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"
@@ -78,9 +82,9 @@ SOURCES: dict[str, str] = {
 LISTS: dict[str, tuple[str, ...]] = {
     "level1": ("level1",),
     "webserver": ("webserver",),
-    "combined1": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30"),
-    "combined2": ("etblock","feodo","toxic","webserver","hijack","dshield7","abuseipdb7"),
-    "complete": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","level2","level4","botnet"),
+    "combined1": ("etblock","feodo","toxic","webserver","hijack","strongips","dshield30","abuseipdb30"),
+    "combined2": ("etblock","feodo","toxic","webserver","hijack","strongips","dshield7","abuseipdb7"),
+    "complete": ("etblock","feodo","toxic","webserver","hijack","strongips","dshield30","abuseipdb30","level2","level4","botnet"),
 }
 
 EXPORTS: dict[str, bool] = {
