@@ -28,7 +28,7 @@
 } on-error={}
 
 :do {
-    /tool fetch url=\$url dst-path=\$file check-certificate=yes
+    /tool fetch url=\$url dst-path=\$file 
 } on-error={
     :log error \"ipbl.dennyhalim.com : download failed\"
     :error \"ipbl.dennyhalim.com download failed\"
