@@ -32,7 +32,7 @@ jobs:
         run: |
           #rm README.md || true
           python scripts/build_blocklists.py
-          ls -l
+          ls -l dist
 
       - name: Commit generated files
         shell: bash
