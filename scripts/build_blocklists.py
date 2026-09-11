@@ -66,9 +66,9 @@ SOURCES: dict[str, str] = {
 LISTS: dict[str, tuple[str, ...]] = {
     "level1": ("level1",),
     "webserver": ("webserver",),
-    "combined1": ("etblock", "forumspam","dshield7","webserver","abuseipdb7"),
-    "combined2": ("etblock", "forumspam","dshield30","webserver","abuseipdb30"),
-    "combined2": ("etblock", "forumspam","dshield30","webserver","abuseipdb30","hijack"),
+    "combined1": ("etblock", "forumspam","webserver","dshield7","abuseipdb7"),
+    "combined2": ("etblock", "forumspam","webserver","dshield30","abuseipdb30"),
+    "combined3": ("etblock", "forumspam","webserver","dshield30","abuseipdb30","hijack"),
 }
 
 EXPORTS: dict[str, bool] = {
