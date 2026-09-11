@@ -25,6 +25,10 @@ README_TABLE_START = "<!-- BLOCKLIST_COUNTS_START -->"
 README_TABLE_END = "<!-- BLOCKLIST_COUNTS_END -->"
 
 SOURCES: dict[str, str] = {
+    "et_block": (
+        "https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/et_block.netset"
+    ),
     "level1": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_level1.netset"
