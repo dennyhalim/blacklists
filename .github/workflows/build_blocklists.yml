@@ -3,13 +3,7 @@ name: Build MikroTik FireHOL blocklists
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 3 * * *"
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/build-blocklists.yml"
-      - "scripts/build_blocklists.py"
+    - cron: "17 */7 * * *"
 
 permissions:
   contents: write
