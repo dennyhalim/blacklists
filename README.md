@@ -23,6 +23,7 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 
 - https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses
 - https://en.wikipedia.org/wiki/Bogon_filtering
+- if you want similar to level1 IP list without bogons, try et_block
 
 ## Configuration
 
