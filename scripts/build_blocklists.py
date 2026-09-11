@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import ipaddress
 import json
 import re
@@ -16,6 +17,7 @@ from typing import Iterable
 
 DIST_DIR = Path("dist")
 README_PATH = Path("README.md")
+INDEX_PATH = Path("index.html")
 MANIFEST_PATH = DIST_DIR / "manifest.json"
 CHECKSUM_PATH = DIST_DIR / "SHA256SUMS"
 
@@ -25,6 +27,8 @@ STALE_AFTER_DAYS = 3
 
 README_TABLE_START = "<!-- BLOCKLIST_COUNTS_START -->"
 README_TABLE_END = "<!-- BLOCKLIST_COUNTS_END -->"
+INDEX_TABLE_START = "<!-- BLOCKLIST_INDEX_START -->"
+INDEX_TABLE_END = "<!-- BLOCKLIST_INDEX_END -->"
 
 SOURCES: dict[str, str] = {
     "etblock": (
@@ -68,8 +72,8 @@ SOURCES: dict[str, str] = {
 LISTS: dict[str, tuple[str, ...]] = {
     "level1": ("level1",),
     "webserver": ("webserver",),
-    "combined1": ("etblock", "forumspam","webserver","dshield30","abuseipdb30"),
-    "combined2": ("etblock", "forumspam","webserver","dshield7","abuseipdb7"),
+    "combined1": ("etblock", "forumspam","webserver","dshield7","abuseipdb7"),
+    "combined2": ("etblock", "forumspam","webserver","dshield30","abuseipdb30"),
     "combined3": ("etblock", "forumspam","webserver","dshield30","abuseipdb30","hijack"),
 }
 
@@ -664,6 +668,7 @@ def main() -> int:
         write_manifest(manifest)
         write_checksums()
         update_readme(manifest)
+        update_index(manifest)
 
         print(f"done: {len(manifest)} configured list(s)")
         return 0
