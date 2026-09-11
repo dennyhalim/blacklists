@@ -619,6 +619,146 @@ def update_readme(manifest: dict[str, dict[str, object]]) -> None:
         print(f"unchanged {README_PATH}")
 
 
+
+def html_link(label: str, path: str) -> str:
+    href = "/" + path.lstrip("/")
+    return (
+        f'<a href="{html.escape(href, quote=True)}">'
+        f'{html.escape(label)}</a>'
+    )
+
+
+def build_index_table(manifest: dict[str, dict[str, object]]) -> str:
+    rows: list[str] = []
+
+    for name, item in manifest.items():
+        sources = " + ".join(
+            f"<code>{html.escape(str(source))}</code>"
+            for source in item["sources"]
+        )
+        entries = int(item["entries"])
+        files = item["files"]
+
+        def links(kind: str) -> str:
+            values: list[str] = []
+            for file_path in files.get(kind, []):
+                suffix = Path(file_path).suffix.lstrip(".").upper() or "FILE"
+                values.append(html_link(suffix, file_path))
+            return " / ".join(values) or "-"
+
+        windows: list[str] = []
+        for kind in ("powershell", "bat"):
+            value = links(kind)
+            if value != "-":
+                windows.append(value)
+
+        rows.append(
+            "        <tr>\n"
+            f"          <td><code>{html.escape(name)}</code></td>\n"
+            f"          <td>{sources}</td>\n"
+            f"          <td>{entries:,}</td>\n"
+            f"          <td>{links('plain')}</td>\n"
+            f"          <td>{links('mikrotik')}</td>\n"
+            f"          <td>{links('nftables')}</td>\n"
+            f"          <td>{links('ipset')}</td>\n"
+            f"          <td>{' / '.join(windows) or '-'}</td>\n"
+            f"          <td>{links('pf')}</td>\n"
+            "        </tr>"
+        )
+
+    return (
+        f"{INDEX_TABLE_START}\n"
+        '    <div class="table-wrap">\n'
+        "      <table>\n"
+        "        <thead>\n"
+        "          <tr>\n"
+        "            <th>List</th>\n"
+        "            <th>Sources</th>\n"
+        "            <th>Entries</th>\n"
+        "            <th>Plain</th>\n"
+        "            <th>MikroTik</th>\n"
+        "            <th>nftables</th>\n"
+        "            <th>ipset</th>\n"
+        "            <th>Windows</th>\n"
+        "            <th>pf</th>\n"
+        "          </tr>\n"
+        "        </thead>\n"
+        "        <tbody>\n"
+        + "\n".join(rows)
+        + "\n        </tbody>\n"
+        "      </table>\n"
+        "    </div>\n"
+        f"{INDEX_TABLE_END}"
+    )
+
+
+def default_index_html(table: str) -> str:
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generated Blocklists</title>
+  <style>
+    :root {{ color-scheme: dark; font-family: system-ui, sans-serif; }}
+    * {{ box-sizing: border-box; }}
+    body {{ margin: 0; background: #151719; color: #e7e9eb; }}
+    main {{ max-width: 1200px; margin: 0 auto; padding: 32px 20px; }}
+    h1 {{ margin: 0 0 8px; }}
+    p {{ margin: 0 0 24px; color: #b8bec4; }}
+    .table-wrap {{ overflow-x: auto; border: 1px solid #3b4147; border-radius: 10px; }}
+    table {{ width: 100%; min-width: 900px; border-collapse: collapse; background: #1c1f22; }}
+    th, td {{ padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid #343a40; }}
+    th {{ background: #24282c; color: #f3f4f5; }}
+    tr:last-child td {{ border-bottom: 0; }}
+    a {{ color: #9bc1ff; text-decoration: none; }}
+    a:hover {{ text-decoration: underline; }}
+    code {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Generated Blocklists</h1>
+    <p>Download the latest generated firewall and plain-text blocklists.</p>
+{table}
+  </main>
+</body>
+</html>
+'''
+
+
+def update_index(manifest: dict[str, dict[str, object]]) -> None:
+    generated_table = build_index_table(manifest)
+
+    if not INDEX_PATH.exists():
+        write_text(INDEX_PATH, default_index_html(generated_table))
+        print(f"created {INDEX_PATH}")
+        return
+
+    content = INDEX_PATH.read_text(encoding="utf-8")
+    start = content.find(INDEX_TABLE_START)
+    end = content.find(INDEX_TABLE_END)
+
+    if start == -1 and end == -1:
+        write_text(INDEX_PATH, default_index_html(generated_table))
+        print(f"recreated {INDEX_PATH}")
+        return
+
+    if start == -1 or end == -1 or end < start:
+        raise RuntimeError(
+            f"{INDEX_PATH}: malformed blocklist index markers; "
+            "remove both markers or fix their order"
+        )
+
+    end += len(INDEX_TABLE_END)
+    updated = content[:start] + generated_table + content[end:]
+
+    if updated != content:
+        write_text(INDEX_PATH, updated)
+        print(f"updated {INDEX_PATH}")
+    else:
+        print(f"unchanged {INDEX_PATH}")
+
 def write_manifest(manifest: dict[str, dict[str, object]]) -> None:
     data = {
         "stale_after_days": STALE_AFTER_DAYS,
