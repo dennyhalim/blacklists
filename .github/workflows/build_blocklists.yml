@@ -39,13 +39,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -f dist/*.rsc
-          git add README.md
+          git add -A dist README.md
 
           if git diff --cached --quiet; then
-            echo "No generated changes."
-            exit 0
+              echo "No generated changes."
+              exit 0
           fi
 
-          git commit -m "chore: update FireHOL MikroTik blocklists"
+          git commit -m "chore: update generated blocklists"
           git push
