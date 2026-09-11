@@ -10,7 +10,7 @@
   },
   "lists": {
     "combined1": {
-      "entries": 3267,
+      "entries": 3543,
       "files": {
         "bat": [
           "dist/windows/combined1.bat"
@@ -42,12 +42,13 @@
         "toxic",
         "webserver",
         "hijack",
+        "strongips",
         "dshield30",
         "abuseipdb30"
       ]
     },
     "combined2": {
-      "entries": 3285,
+      "entries": 3561,
       "files": {
         "bat": [
           "dist/windows/combined2.bat"
@@ -79,12 +80,13 @@
         "toxic",
         "webserver",
         "hijack",
+        "strongips",
         "dshield7",
         "abuseipdb7"
       ]
     },
     "complete": {
-      "entries": 141281,
+      "entries": 169260,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -116,40 +118,74 @@
         "toxic",
         "webserver",
         "hijack",
+        "strongips",
         "dshield30",
         "abuseipdb30",
-        "level4"
+        "level2",
+        "level4",
+        "botnet"
       ]
     },
-    "level1": {
-      "entries": 4670,
+    "hijack": {
+      "entries": 512,
       "files": {
         "bat": [
-          "dist/windows/level1.bat"
+          "dist/windows/hijack.bat"
         ],
         "ipset": [
-          "dist/ipset/level1.sh"
+          "dist/ipset/hijack.sh"
         ],
         "mikrotik": [
-          "dist/mikrotik/level1.rsc"
+          "dist/mikrotik/hijack.rsc"
         ],
         "nftables": [
-          "dist/nftables/level1.nft",
-          "dist/nftables/level1.sh"
+          "dist/nftables/hijack.nft",
+          "dist/nftables/hijack.sh"
         ],
         "pf": [
-          "dist/pf/level1.txt",
-          "dist/pf/level1.sh"
+          "dist/pf/hijack.txt",
+          "dist/pf/hijack.sh"
         ],
         "plain": [
-          "dist/plain/level1.txt"
+          "dist/plain/hijack.txt"
         ],
         "powershell": [
-          "dist/windows/level1.ps1"
+          "dist/windows/hijack.ps1"
         ]
       },
       "sources": [
-        "level1"
+        "hijack"
+      ]
+    },
+    "level2": {
+      "entries": 18770,
+      "files": {
+        "bat": [
+          "dist/windows/level2.bat"
+        ],
+        "ipset": [
+          "dist/ipset/level2.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/level2.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/level2.nft",
+          "dist/nftables/level2.sh"
+        ],
+        "pf": [
+          "dist/pf/level2.txt",
+          "dist/pf/level2.sh"
+        ],
+        "plain": [
+          "dist/plain/level2.txt"
+        ],
+        "powershell": [
+          "dist/windows/level2.ps1"
+        ]
+      },
+      "sources": [
+        "level2"
       ]
     },
     "webserver": {
@@ -187,13 +223,15 @@
   "sources": {
     "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-75percent.ipv4",
     "abuseipdb7": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4",
+    "botnet": "https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt",
     "dshield30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_30d.netset",
     "dshield7": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_7d.netset",
     "etblock": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_block.netset",
     "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
     "hijack": "https://raw.githubusercontent.com/kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset",
-    "level1": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset",
+    "level2": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset",
     "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
+    "strongips": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset",
     "toxic": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset",
     "webserver": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webserver.netset"
   },
