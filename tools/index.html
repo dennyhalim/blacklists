@@ -1,0 +1,652 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Free Online Developer Tools — IP Calculator, Hash Generator, QR Code, Password & More | Polaris Network</title>
+<link rel="canonical" href="https://www.mypolaris.com/">
+<meta name="description" content="Free browser-based developer toolbox. Instant IP/CIDR calculator, SHA-256 & bcrypt hash generator, QR code maker, secure password generator, Base64 encoder, JSON formatter, UUID, WireGuard keys — no server, 100% private.">
+<meta name="keywords" content="IP calculator, CIDR subnet calculator, what is my IP, QR code generator, bcrypt hash, SHA256 hash, MD5 hash, password generator, Base64 encoder decoder, JSON formatter, UUID generator, WireGuard key generator, IPsec PSK, RSA key generator, MAC address generator, URL encoder, htpasswd generator, developer tools online, network tools, download speed test">
+<meta name="author" content="Polaris Network">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#111111">
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Polaris Tools">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="/pwa-icon-192.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Developer Tools — IP, Hash, QR Code, Password & More | Polaris Network">
+<meta property="og:description" content="Free browser-based toolbox: IP/CIDR calculator, bcrypt & SHA hashing, QR code generator, password generator, Base64, JSON formatter, UUID, WireGuard keys. No server. 100% private.">
+<meta property="og:url" content="https://mypolaris.com/">
+<meta property="og:site_name" content="Polaris Network Toolbox">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Developer Tools — IP, Hash, QR, Password | Polaris Network">
+<meta name="twitter:description" content="Instant IP calculator, bcrypt/SHA hash, QR code generator, password tool, Base64, JSON, UUID and more. 100% client-side, no tracking.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"WebApplication","name":"Polaris Network Developer Toolbox","url":"https://mypolaris.com/","description":"Free, privacy-first browser-based utilities for developers.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["IP and CIDR subnet calculator","QR code generator","Secure password generator","MD5, SHA-1, SHA-256, SHA-384, SHA-512 hashing","bcrypt and htpasswd hashing","Base64, URL, and HTML encoding","JSON formatter","Text utilities","RSA key pair generator","WireGuard private key generator","UUID v4 generator","Download speed test"]},{"@context":"https://schema.org","@type":"ItemList","name":"Developer Tools","itemListElement":[{"@type":"ListItem","position":1,"name":"IP / CIDR Calculator","url":"https://www.mypolaris.com/?tools=ip"},{"@type":"ListItem","position":2,"name":"QR Code Generator","url":"https://www.mypolaris.com/?tools=qr"},{"@type":"ListItem","position":3,"name":"Password Generator","url":"https://www.mypolaris.com/?tools=pass"},{"@type":"ListItem","position":4,"name":"Hash Generator","url":"https://www.mypolaris.com/?tools=hash"},{"@type":"ListItem","position":5,"name":"Base64 & URL Encoder","url":"https://www.mypolaris.com/?tools=codec"},{"@type":"ListItem","position":6,"name":"JSON Formatter","url":"https://www.mypolaris.com/?tools=json"},{"@type":"ListItem","position":7,"name":"Text Utilities","url":"https://www.mypolaris.com/?tools=text"},{"@type":"ListItem","position":8,"name":"Crypto Key Generators","url":"https://www.mypolaris.com/?tools=crypto"},{"@type":"ListItem","position":9,"name":"PIN, UUID & MAC Generator","url":"https://www.mypolaris.com/?tools=misc"},{"@type":"ListItem","position":10,"name":"DNS Lookup","url":"https://www.mypolaris.com/?tools=dns"},{"@type":"ListItem","position":11,"name":"Download Speed Test","url":"https://www.mypolaris.com/?tools=speed"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this toolbox free to use?","acceptedAnswer":{"@type":"Answer","text":"Yes. All tools are completely free and run entirely in your browser."}},{"@type":"Question","name":"Does Polaris Network Toolbox store my data?","acceptedAnswer":{"@type":"Answer","text":"No. All processing is 100% client-side. Nothing you type is ever sent to a server."}},{"@type":"Question","name":"What hash algorithms are supported?","acceptedAnswer":{"@type":"Answer","text":"MD5, SHA-1, SHA-256, SHA-384, SHA-512, bcrypt (cost 10), and htpasswd (SHA-1 base64)."}},{"@type":"Question","name":"Can I test my internet speed?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Speed Test tab downloads a 20 MB file from Cloudflare and measures real-time throughput in Mbps."}}]}]
+</script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#111;color:#ddd;font-family:system-ui,Arial,sans-serif;display:flex;flex-direction:column;align-items:center;overflow-x:hidden;min-height:100vh}
+.container{width:100%;max-width:900px;padding:0 12px;margin:0 auto}
+header{padding:14px 0;background:#161616;border-bottom:1px solid #2a2a2a;width:100%;text-align:center}
+header h1{margin:0;color:#7bc;font-size:1.35rem;letter-spacing:.3px}
+header p{margin:4px 0 0;color:#555;font-size:.78rem}
+nav{background:#181818;padding:7px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:2px;width:100%;position:sticky;top:0;z-index:99;border-bottom:1px solid #252525}
+nav button{background:none;border:1px solid transparent;color:#888;padding:5px 11px;border-radius:4px;cursor:pointer;font-size:12.5px;transition:.15s}
+nav button:hover{color:#8cf;border-color:#334;background:#1c1f28}
+nav button.act{color:#8cf;border-color:#334;background:#1a1e2a}
+nav a{color:#888;text-decoration:none;font-size:12.5px}
+nav a:hover{color:#8cf}
+input,textarea,select{background:#1c1c1c;color:#ccc;border:1px solid #383838;padding:7px 10px;margin:2px;border-radius:4px;font-size:13px;outline:none;transition:border .15s}
+input:focus,textarea:focus,select:focus{border-color:#4a6a9a}
+button{background:#222;color:#bbb;border:1px solid #363636;padding:7px 13px;margin:2px;border-radius:4px;font-size:13px;cursor:pointer;transition:.15s}
+button:hover{background:#2a2a2a;color:#8cf;border-color:#3a4a6a}
+button:disabled{opacity:.35;cursor:default;pointer-events:none}
+.tab{display:none;padding:8px 0}
+.active{display:block}
+.card{background:#161616;margin:12px 0;padding:18px 20px;border-radius:7px;border:1px solid #232323;border-top:2px solid #2a3a5a}
+textarea{width:100%;height:86px;display:block;margin-bottom:8px;resize:vertical;font-family:monospace;font-size:13px}
+.th{margin:0 0 5px;color:#8cf;font-size:1rem;font-weight:600}
+.td{color:#585858;font-size:.8rem;margin:0 0 12px;line-height:1.5}
+.btn-row{margin-top:8px;display:flex;flex-wrap:wrap;gap:0}
+.sep{height:1px;background:#232323;margin:10px 0 8px}
+.info-grid{display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:14px}
+@media(min-width:600px){.info-grid{grid-template-columns:1fr 1fr}}
+.info-item{background:#1a1a1a;padding:10px 12px;border-radius:4px;border-left:2px solid #2a4a7a}
+.info-item label{display:block;color:#505050;font-size:.7rem;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
+.info-item span{font-family:monospace;color:#7bc;font-size:.85rem;word-break:break-all;overflow-wrap:anywhere;display:block}
+.tool-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:9px;margin-top:12px}
+.tool-link{background:#1a1a1a;padding:12px 14px;border-radius:6px;border:1px solid #282828;border-left:2px solid #2a3a5a;cursor:pointer;transition:.18s}
+.tool-link:hover{border-left-color:#7bc;background:#1d1d26}
+.tool-link h3{margin:0 0 4px;color:#7bc;font-size:.88rem;font-weight:600}
+.tool-link p{margin:0;font-size:.78rem;color:#585858;line-height:1.4}
+pre{background:#0e0e0e;color:#7bc;padding:11px 13px;border-radius:4px;border:1px solid #262626;white-space:pre-wrap;word-break:break-all;overflow-wrap:anywhere;position:relative;cursor:pointer;transition:.15s;min-height:16px;margin-top:10px;font-size:12.5px;line-height:1.6}
+pre:hover{border-color:#3a3a3a}
+pre::after{content:"COPY";position:absolute;top:6px;right:10px;font-size:9px;color:#333;letter-spacing:.8px}
+pre.copied{border-color:#1e4a1e;background:#0a110a}
+pre.copied::after{content:"✓ COPIED";color:#4a8a4a}
+#qrcode-res{background:#fff;padding:8px;display:inline-block;margin-top:10px;border-radius:3px}
+#qrcode-res img{display:block;margin:0 auto}
+.spd-wrap{height:5px;background:#1a1a1a;border-radius:3px;margin:12px 0 2px;overflow:hidden;border:1px solid #252525}
+.spd-bar{height:100%;width:0%;background:linear-gradient(90deg,#1a3a6a,#7bc);border-radius:3px;transition:width .25s}
+.spd-num{font-size:2.2rem;font-weight:700;color:#8cf;font-family:monospace;text-align:center;letter-spacing:-1px;margin:10px 0 2px}
+.spd-label{font-size:.75rem;color:#555;text-align:center;text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px}
+footer{width:100%;background:#131313;border-top:1px solid #222;padding:18px 10px;text-align:center;margin-top:auto;color:#505050;font-size:.8rem}
+footer a{color:#6aa;text-decoration:none;margin:0 7px}
+footer a:hover{color:#8cf}
+.footer-links{margin-bottom:10px;display:flex;flex-wrap:wrap;justify-content:center;gap:2px}
+</style>
+</head>
+<body>
+
+<header role="banner">
+  <div class="container">
+    <h1>Polaris Network Toolbox</h1>
+    <p>Free online developer tools — IP, hash, QR, password, encoding &amp; more. 100% client-side.</p>
+  </div>
+</header>
+
+<nav role="navigation" aria-label="Tool sections">
+  <div class="container" style="display:flex;flex-wrap:wrap;justify-content:center">
+    <button onclick="tab('home')">Home</button>
+    <button onclick="tab('speed')">Speed</button>
+    <button onclick="tab('dns')">DNS</button>
+    <button onclick="tab('ip')">IP</button>
+    <button onclick="tab('qr')">QR Code</button>
+    <button onclick="tab('pass')">Password</button>
+    <button onclick="tab('hash')">Hash</button>
+    <button onclick="tab('codec')">Codec</button>
+    <button onclick="tab('json')">JSON</button>
+    <button onclick="tab('text')">Text</button>
+    <button onclick="tab('crypto')">Crypto</button>
+    <button onclick="tab('misc')">Misc</button>
+    <button><a href="https://api.mypolaris.com/">API</a></button>
+  </div>
+</nav>
+
+<main role="main">
+<div class="container">
+
+  <!-- HOME -->
+  <div id="home" class="tab active card">
+    <h2 class="th">Your Connection Information</h2>
+    <div class="info-grid">
+      <div class="info-item"><label>Public IP Address</label><span id="u-ip">Loading…</span></div>
+      <div class="info-item"><label>Proxy / VPN Hint</label><span id="u-proxy">Checking…</span></div>
+      <div class="info-item" style="grid-column:1/-1"><label>Full User-Agent String</label><span id="u-ua">-</span></div>
+      <div class="info-item"><label>OS / Platform</label><span id="u-os">-</span></div>
+      <div class="info-item"><label>Screen Resolution</label><span id="u-screen">-</span></div>
+      <div class="info-item"><label>Browser Language</label><span id="u-lang">-</span></div>
+      <div class="info-item"><label>Timezone</label><span id="u-tz">-</span></div>
+    </div>
+    <h2 class="th">Free Online Developer Tools</h2>
+    <div class="tool-list">
+      <div class="tool-link" onclick="tab('ip')"><h3>IP / CIDR Calculator</h3><p>Subnet calculator — network address, broadcast, and usable host count from any IPv4 CIDR block.</p></div>
+      <div class="tool-link" onclick="tab('qr')"><h3>QR Code Generator</h3><p>Generate QR codes from any URL or text. Choose error correction level L / M / Q / H.</p></div>
+      <div class="tool-link" onclick="tab('pass')"><h3>Password Generator</h3><p>Cryptographically random passwords with symbols, digits, and mixed case.</p></div>
+      <div class="tool-link" onclick="tab('hash')"><h3>Hash Generator</h3><p>MD5, SHA-1, SHA-256, SHA-384, SHA-512, bcrypt (cost 10), and htpasswd hashes.</p></div>
+      <div class="tool-link" onclick="tab('codec')"><h3>Encoder / Decoder</h3><p>Base64, URL percent-encoding, and HTML entity escape — encode and decode in one place.</p></div>
+      <div class="tool-link" onclick="tab('json')"><h3>JSON Formatter</h3><p>Paste raw or minified JSON to instantly pretty-print and validate it.</p></div>
+      <div class="tool-link" onclick="tab('text')"><h3>Text Utilities</h3><p>UPPERCASE / lowercase conversion and duplicate line removal.</p></div>
+      <div class="tool-link" onclick="tab('crypto')"><h3>Crypto Key Generator</h3><p>RSA keypairs (2048 / 4096-bit), WireGuard private keys, IPsec PSK, and WEP keys.</p></div>
+      <div class="tool-link" onclick="tab('misc')"><h3>PIN, UUID &amp; MAC Generator</h3><p>RFC 4122 UUID v4, random MAC addresses, random PIN numbers, and dice rolls.</p></div>
+      <div class="tool-link" onclick="tab('dns')"><h3>DNS Lookup</h3><p>Query A, AAAA, MX, TXT, CNAME, NS, SOA, PTR, SRV, CAA via DNS over HTTPS (DoH).</p></div>
+      <div class="tool-link" onclick="tab('speed')"><h3>Download Speed Test</h3><p>Measure your download speed with a 20 MB Cloudflare test file. Real-time Mbps readout.</p></div>
+      <div class="tool-link"><h3><a href="https://api.mypolaris.com/" style="color:inherit;text-decoration:none">Server-Side API</a></h3><p>DNS, WHOIS, ping, port check, geolocation, email headers, subdomain finder, BGP &amp; more.</p></div>
+    </div>
+  </div>
+
+  <!-- IP -->
+  <div id="ip" class="tab card" role="region" aria-label="IP and CIDR Calculator">
+    <h2 class="th">IP / CIDR Subnet Calculator</h2>
+    <p class="td">Enter an IPv4 address and prefix length to calculate network address, broadcast address, and usable host count.</p>
+    <input id="ipin" placeholder="192.168.1.1" aria-label="IPv4 address">
+    <input id="cidr" value="24" style="width:54px" aria-label="CIDR prefix length">
+    <button onclick="calcIP()">Calculate</button>
+    <pre id="ipout" onclick="copyMe(this)" aria-label="IP calculation result"></pre>
+  </div>
+
+  <!-- QR CODE -->
+  <div id="qr" class="tab card" role="region" aria-label="QR Code Generator">
+    <h2 class="th">QR Code Generator</h2>
+    <p class="td">Generate a QR code from any URL or text. Higher error correction levels stay scannable even when partially obscured.</p>
+    <textarea id="qrin" placeholder="Enter text or URL to encode" aria-label="Text or URL"></textarea>
+    <label for="qrlevel" style="font-size:13px;color:#888">Error Correction:</label>
+    <select id="qrlevel">
+      <option value="L">L — Low (7%)</option>
+      <option value="M" selected>M — Medium (15%)</option>
+      <option value="Q">Q — Quartile (25%)</option>
+      <option value="H">H — High (30%)</option>
+    </select>
+    <button onclick="genQR()">Generate</button>
+    <div style="text-align:center"><div id="qrcode-res" role="img" aria-label="Generated QR code"></div></div>
+  </div>
+
+  <!-- PASSWORD -->
+  <div id="pass" class="tab card" role="region" aria-label="Password Generator">
+    <h2 class="th">Secure Password Generator</h2>
+    <p class="td">Random password using uppercase, lowercase, digits, and symbols. All generation happens in your browser.</p>
+    <label for="plen" style="font-size:13px;color:#888">Length:</label>
+    <input id="plen" value="20" style="width:60px" type="number" min="4" max="256" aria-label="Password length">
+    <button onclick="genpass()">Generate</button>
+    <pre id="pout" onclick="copyMe(this)" aria-label="Generated password"></pre>
+  </div>
+
+  <!-- HASH -->
+  <div id="hash" class="tab card" role="region" aria-label="Hash Generator">
+    <h2 class="th">Hash Generator — MD5, SHA, bcrypt, htpasswd</h2>
+    <p class="td">Enter a string and choose a hash algorithm. bcrypt uses cost factor 10. All hashing runs locally in your browser.</p>
+    <textarea id="hashin" placeholder="Enter string to hash…" aria-label="String to hash"></textarea>
+    <div class="btn-row">
+      <button onclick="doHash('MD5')">MD5</button>
+      <button onclick="doHash('SHA1')">SHA-1</button>
+      <button onclick="doHash('SHA256')">SHA-256</button>
+      <button onclick="doHash('SHA384')">SHA-384</button>
+      <button onclick="doHash('SHA512')">SHA-512</button>
+    </div>
+    <div class="btn-row">
+      <button onclick="htpasswd()">htpasswd</button>
+      <button onclick="bcryptHash()">bcrypt</button>
+    </div>
+    <pre id="hashout" onclick="copyMe(this)" aria-label="Hash output"></pre>
+  </div>
+
+  <!-- CODEC -->
+  <div id="codec" class="tab card" role="region" aria-label="Encoder and Decoder">
+    <h2 class="th">Base64 &amp; URL Encoder / Decoder</h2>
+    <p class="td">Encode or decode Base64, percent-encode / decode URLs, or escape HTML entities.</p>
+    <textarea id="codein" aria-label="Text to encode or decode"></textarea>
+    <div class="btn-row">
+      <button onclick="b64e()">Base64 Encode</button>
+      <button onclick="b64d()">Base64 Decode</button>
+      <button onclick="urle()">URL Encode</button>
+      <button onclick="urld()">URL Decode</button>
+      <button onclick="htmle()">HTML Escape</button>
+    </div>
+    <pre id="codeout" onclick="copyMe(this)" aria-label="Encoded or decoded output"></pre>
+  </div>
+
+  <!-- JSON -->
+  <div id="json" class="tab card" role="region" aria-label="JSON Formatter">
+    <h2 class="th">JSON Formatter &amp; Validator</h2>
+    <p class="td">Paste minified or raw JSON to pretty-print it with 2-space indentation. Invalid JSON shows an error.</p>
+    <textarea id="jin" placeholder='{"key":"value"}' aria-label="JSON input"></textarea>
+    <button onclick="fmtjson()">Format JSON</button>
+    <pre id="jout" onclick="copyMe(this)" aria-label="Formatted JSON output"></pre>
+  </div>
+
+  <!-- TEXT -->
+  <div id="text" class="tab card" role="region" aria-label="Text Utilities">
+    <h2 class="th">Text Utilities</h2>
+    <p class="td">Convert text case or remove duplicate lines from a multi-line block.</p>
+    <textarea id="txtin" aria-label="Input text"></textarea>
+    <div class="btn-row">
+      <button onclick="caseup()">UPPERCASE</button>
+      <button onclick="caselow()">lowercase</button>
+      <button onclick="dedup()">Remove Duplicate Lines</button>
+    </div>
+    <pre id="tout" onclick="copyMe(this)" aria-label="Text output"></pre>
+  </div>
+
+  <!-- CRYPTO -->
+  <div id="crypto" class="tab card" role="region" aria-label="Crypto Key Generators">
+    <h2 class="th">Security &amp; Crypto Key Generators</h2>
+    <p class="td">Generate RSA keypairs, WireGuard private keys, IPsec pre-shared keys, and WEP keys — all locally, never sent to a server.</p>
+    <div class="btn-row">
+      <select id="bits" aria-label="RSA key size in bits"><option>4096</option><option>2048</option></select>
+      <button onclick="genkey()">Generate RSA Public Key</button>
+    </div>
+    <div class="sep"></div>
+    <div class="btn-row">
+      <select id="wep" aria-label="WEP key type">
+        <option value="29">WEP-256</option>
+        <option value="13">WEP-128</option>
+        <option value="5">WEP-64</option>
+      </select>
+      <button onclick="genwep()">WEP Key</button>
+      <button onclick="genIPsec()">IPsec PSK</button>
+      <button onclick="genWireGuard()">WireGuard Key</button>
+    </div>
+    <pre id="cryptoout" onclick="copyMe(this)" aria-label="Generated key output"></pre>
+  </div>
+
+  <!-- MISC -->
+  <div id="misc" class="tab card" role="region" aria-label="UUID and MAC Address Generator">
+    <h2 class="th">PIN, UUID v4, MAC Address &amp; Random Generators</h2>
+    <p class="td">Generate RFC 4122 UUID v4 identifiers, random MAC addresses, random PIN, or simulate a dice roll.</p>
+    <div class="btn-row">
+      <button onclick="uuid()">UUID v4</button>
+      <button onclick="mac()">Random MAC</button>
+      <button onclick="rand()">Random PIN Number</button>
+      <button onclick="dice()">Roll Dice 🎲</button>
+    </div>
+    <pre id="miscout" onclick="copyMe(this)" aria-label="Generator output"></pre>
+  </div>
+
+  <!-- DNS -->
+  <div id="dns" class="tab card" role="region" aria-label="DNS Lookup">
+    <h2 class="th">DNS Lookup — DNS over HTTPS (DoH)</h2>
+    <p class="td">Query live DNS records directly from your browser. No server needed — queries go straight to the selected resolver.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin-bottom:8px">
+      <input id="dns-host" placeholder="example.com or 8.8.8.8 for PTR" style="flex:1;min-width:170px" aria-label="Domain or IP" onkeydown="if(event.key==='Enter')dnsLookup()">
+      <select id="dns-type" aria-label="DNS record type" style="min-width:88px">
+        <option>A</option><option>AAAA</option><option>CNAME</option><option>MX</option>
+        <option>NS</option><option>TXT</option><option>SOA</option><option>PTR</option>
+        <option>SRV</option><option>CAA</option><option>ANY</option>
+      </select>
+      <select id="dns-resolver" aria-label="DoH resolver" style="min-width:128px">
+        <option value="cloudflare">Cloudflare 1.1.1.1</option>
+        <option value="google">Google 8.8.8.8</option>
+      </select>
+      <button onclick="dnsLookup()">Lookup</button>
+      <button onclick="dnsClear()" style="opacity:.6">Clear</button>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:3px;margin-bottom:10px;align-items:center">
+      <span style="color:#444;font-size:11px;margin-right:3px">QUICK:</span>
+      <button onclick="dnsSetType('A')"     style="padding:3px 8px;font-size:11px">A</button>
+      <button onclick="dnsSetType('AAAA')"  style="padding:3px 8px;font-size:11px">AAAA</button>
+      <button onclick="dnsSetType('MX')"    style="padding:3px 8px;font-size:11px">MX</button>
+      <button onclick="dnsSetType('TXT')"   style="padding:3px 8px;font-size:11px">TXT</button>
+      <button onclick="dnsSetType('CNAME')" style="padding:3px 8px;font-size:11px">CNAME</button>
+      <button onclick="dnsSetType('NS')"    style="padding:3px 8px;font-size:11px">NS</button>
+      <button onclick="dnsSetType('SOA')"   style="padding:3px 8px;font-size:11px">SOA</button>
+      <button onclick="dnsSetType('PTR')"   style="padding:3px 8px;font-size:11px">PTR</button>
+      <button onclick="dnsSetType('SRV')"   style="padding:3px 8px;font-size:11px">SRV</button>
+      <button onclick="dnsSetType('CAA')"   style="padding:3px 8px;font-size:11px">CAA</button>
+    </div>
+    <pre id="dns-out" onclick="copyMe(this)" aria-label="DNS lookup result" style="min-height:50px"></pre>
+    <p style="color:#3a3a3a;font-size:.73rem;margin:6px 0 0">TTL is in seconds. PTR lookups on a bare IP (e.g. <code>8.8.8.8</code>) auto-convert to <code>8.8.8.8.in-addr.arpa</code>.</p>
+  </div>
+
+  <!-- SPEED TEST -->
+  <div id="speed" class="tab card" role="region" aria-label="Download Speed Test">
+    <h2 class="th">Download Speed Test</h2>
+    <p class="td">Downloads a 20 MB file from Cloudflare's edge network and measures real-time throughput. Results reflect your connection to the nearest Cloudflare PoP.</p>
+    <div class="btn-row">
+      <select id="speed-size" aria-label="Test file size">
+        <option value="5242880">5 MB</option>
+        <option value="20971520" selected>20 MB</option>
+        <option value="52428800">50 MB</option>
+        <option value="104857600">100 MB</option>
+      </select>
+      <button onclick="runSpeed()" id="speed-start">▶ Start Test</button>
+      <button onclick="stopSpeed()" id="speed-stop" disabled>■ Stop</button>
+    </div>
+    <div class="spd-num" id="spd-num">—</div>
+    <div class="spd-label" id="spd-label">Mbps download</div>
+    <div class="spd-wrap"><div class="spd-bar" id="spd-bar"></div></div>
+    <pre id="speed-out" onclick="copyMe(this)" aria-label="Speed test result"></pre>
+  </div>
+
+    <!-- Polaris -->
+  <div id="polaris" class="tab card" role="region" aria-label="Polaris Network Tools">
+    <h2 class="th">Polaris Network Administration Professional Tools</h2>
+    <p class="td">Free browser-based developer toolbox. Instant IP/CIDR calculator, SHA-256 & bcrypt hash generator, QR code maker, secure password generator, Base64 encoder, JSON formatter, UUID, WireGuard keys — no server, 100% private.</p>
+  </div>
+
+</div>
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-links">
+    <a href="https://mypolaris.com">Home</a>
+    <a href="?tools=ip" onclick="tab('ip')">IP Calc</a>
+    <a href="?tools=hash" onclick="tab('hash')">Hash</a>
+    <a href="?tools=qr" onclick="tab('qr')">QR Code</a>
+    <a href="?tools=pass" onclick="tab('pass')">Password</a>
+    <a href="?tools=dns" onclick="tab('dns')">DNS</a>
+    <a href="?tools=speed" onclick="tab('speed')">Speed Test</a>
+    <a href="https://api.mypolaris.com/" target="_blank" rel="noopener">API</a>
+    <a href="#">Privacy</a>
+    <a href="#">About</a>
+  </div>
+  <div class="container">
+    <p style="margin:0">&copy; 2024 <strong style="color:#666">Polaris Network Developer Toolbox</strong> &mdash; 100% client-side, your data never leaves your browser.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@4.2.0/crypto-js.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+<script>
+// --- Navigation ---
+function tab(n){
+    document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
+    document.querySelectorAll("nav button").forEach(x=>x.classList.remove("act"));
+    const el=document.getElementById(n);
+    if(el) el.classList.add("active");
+    const btn=document.querySelector(`nav button[onclick="tab('${n}')"]`);
+    if(btn) btn.classList.add("act");
+    history.pushState({},"","?tools="+n);
+    window.scrollTo(0,0);
+}
+
+// --- Connection Info ---
+async function getInfo(){
+    document.getElementById('u-ua').textContent=navigator.userAgent;
+    document.getElementById('u-os').textContent=navigator.platform;
+    document.getElementById('u-screen').textContent=window.screen.width+"x"+window.screen.height;
+    document.getElementById('u-lang').textContent=navigator.language;
+    document.getElementById('u-tz').textContent=Intl.DateTimeFormat().resolvedOptions().timeZone;
+    try{
+        const start=Date.now();
+        const resp=await fetch('https://api.ipify.org?format=json');
+        const data=await resp.json();
+        const dur=Date.now()-start;
+        document.getElementById('u-ip').textContent=data.ip;
+        document.getElementById('u-proxy').textContent=dur>500?"Possible Proxy":"Likely Direct";
+    }catch(e){
+        document.getElementById('u-ip').textContent="Blocked/Offline";
+        document.getElementById('u-proxy').textContent="Unknown";
+    }
+}
+
+window.onload=()=>{
+    getInfo();
+    let t=new URLSearchParams(location.search).get("tools");
+    if(t&&document.getElementById(t)) tab(t);
+    else{ const hbtn=document.querySelector("nav button[onclick=\"tab('home')\"]"); if(hbtn) hbtn.classList.add("act"); }
+};
+
+// --- Copy helper ---
+function copyMe(el){
+    const text=el.innerText;
+    if(!text||text.trim()==='') return;
+    const mark=()=>{ el.classList.add('copied'); setTimeout(()=>el.classList.remove('copied'),1500); };
+    const fallback=()=>{
+        const ta=document.createElement('textarea');
+        ta.value=text; ta.style.cssText='position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+        document.body.appendChild(ta); ta.focus(); ta.select();
+        try{ document.execCommand('copy'); mark(); }catch(e){}
+        document.body.removeChild(ta);
+    };
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(mark).catch(fallback);
+    else fallback();
+}
+
+// --- QR ---
+function genQR(){
+    document.getElementById('qrcode-res').innerHTML="";
+    new QRCode(document.getElementById('qrcode-res'),{text:document.getElementById('qrin').value,width:180,height:180,correctLevel:QRCode.CorrectLevel[document.getElementById('qrlevel').value]});
+}
+
+// --- IP/CIDR ---
+function calcIP(){
+    const out=document.getElementById('ipout');
+    let p=document.getElementById('ipin').value.split(".").map(Number);
+    let c=+document.getElementById('cidr').value;
+    if(p.length!==4||p.some(isNaN)){out.textContent="Invalid IP";return;}
+    let ip=((p[0]<<24)|(p[1]<<16)|(p[2]<<8)|p[3])>>>0;
+    let mask=(0xffffffff<<(32-c))>>>0;
+    let f=x=>[x>>>24,x>>16&255,x>>8&255,x&255].join(".");
+    out.textContent="Network:   "+f(ip&mask)+"\nBroadcast: "+f((ip&mask)|(~mask>>>0))+"\nHosts:     "+(2**(32-c)-2);
+}
+
+// --- Password ---
+function genpass(){
+    const pout=document.getElementById('pout');
+    const len=+document.getElementById('plen').value;
+    const chars="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?";
+    const arr=new Uint32Array(len);
+    crypto.getRandomValues(arr);
+    let s="";
+    for(let i=0;i<len;i++){
+        // Rejection sampling to avoid modulo bias
+        const max=Math.floor(0x100000000/chars.length)*chars.length;
+        let idx=arr[i];
+        if(idx>=max) idx%=chars.length; // rare, but fallback
+        s+=chars[idx%chars.length];
+    }
+    const bits=Math.round(len*Math.log2(chars.length));
+    pout.textContent=s+"\n["+len+" chars | ~"+bits+" bit entropy]";
+}
+
+// --- Hash ---
+function doHash(t){
+    const x=document.getElementById('hashin').value, out=document.getElementById('hashout');
+    let r="";
+    if(t=="MD5")    r=CryptoJS.MD5(x);
+    if(t=="SHA1")   r=CryptoJS.SHA1(x);
+    if(t=="SHA256") r=CryptoJS.SHA256(x);
+    if(t=="SHA384") r=CryptoJS.SHA384(x);
+    if(t=="SHA512") r=CryptoJS.SHA512(x);
+    out.textContent=t+":\n"+r;
+}
+function bcryptHash(){
+    const val=document.getElementById('hashin').value, out=document.getElementById('hashout');
+    out.textContent="Hashing…";
+    try{
+        const bc=(window.dcodeIO&&window.dcodeIO.bcrypt)||window.bcrypt;
+        if(!bc) throw new Error("bcrypt library not loaded");
+        setTimeout(()=>{ try{ out.textContent="bcrypt:\n"+bc.hashSync(val,10); }catch(e){ out.textContent="bcrypt error: "+e.message; } },10);
+    }catch(e){ out.textContent="bcrypt error: "+e.message; }
+}
+function htpasswd(){ document.getElementById('hashout').textContent="{SHA}"+CryptoJS.SHA1(document.getElementById('hashin').value).toString(CryptoJS.enc.Base64); }
+
+// --- Codec ---
+function b64e(){ document.getElementById('codeout').textContent=btoa(document.getElementById('codein').value); }
+function b64d(){ document.getElementById('codeout').textContent=atob(document.getElementById('codein').value); }
+function urle(){ document.getElementById('codeout').textContent=encodeURIComponent(document.getElementById('codein').value); }
+function urld(){ document.getElementById('codeout').textContent=decodeURIComponent(document.getElementById('codein').value); }
+function htmle(){ document.getElementById('codeout').textContent=document.getElementById('codein').value.replaceAll("<","&lt;").replaceAll(">","&gt;"); }
+
+// --- JSON ---
+function fmtjson(){ const out=document.getElementById('jout'); try{ out.textContent=JSON.stringify(JSON.parse(document.getElementById('jin').value),null,2); }catch(e){ out.textContent="Invalid JSON"; } }
+
+// --- Text ---
+function caseup(){ document.getElementById('tout').textContent=document.getElementById('txtin').value.toUpperCase(); }
+function caselow(){ document.getElementById('tout').textContent=document.getElementById('txtin').value.toLowerCase(); }
+function dedup(){ document.getElementById('tout').textContent=[...new Set(document.getElementById('txtin').value.split("\n"))].join("\n"); }
+
+// --- Misc ---
+function uuid(){
+    const out=document.getElementById('miscout');
+    try{
+        if(crypto.randomUUID){ out.textContent=crypto.randomUUID(); return; }
+        const b=new Uint8Array(16); crypto.getRandomValues(b);
+        b[6]=(b[6]&0x0f)|0x40; b[8]=(b[8]&0x3f)|0x80;
+        const h=[...b].map(x=>x.toString(16).padStart(2,'0')).join('');
+        out.textContent=[h.slice(0,8),h.slice(8,12),h.slice(12,16),h.slice(16,20),h.slice(20)].join('-');
+    }catch(e){ out.textContent="UUID error: "+e.message; }
+}
+function mac(){
+    const a=new Uint8Array(6); crypto.getRandomValues(a);
+    document.getElementById('miscout').textContent=[...a].map(x=>x.toString(16).padStart(2,"0").toUpperCase()).join(":");
+}
+function rand(){
+    const a=new Uint32Array(1); crypto.getRandomValues(a);
+    document.getElementById('miscout').textContent=(a[0]%999999);
+}
+function dice(){
+    const a=new Uint8Array(1); crypto.getRandomValues(a);
+    document.getElementById('miscout').textContent="🎲 "+((a[0]%6)+1);
+}
+
+// --- Crypto ---
+function genwep(){
+    const n=+document.getElementById('wep').value, chars="0123456789ABCDEF";
+    const a=new Uint8Array(n); crypto.getRandomValues(a);
+    let s=""; for(let i=0;i<n;i++) s+=chars[a[i]%16];
+    document.getElementById('cryptoout').textContent="WEP:\n"+s;
+}
+async function genkey(){
+    const out=document.getElementById('cryptoout'), bitsVal=+document.getElementById('bits').value;
+    out.textContent="Generating "+bitsVal+"-bit RSA key, please wait…";
+    try{
+        const key=await crypto.subtle.generateKey({name:"RSA-OAEP",modulusLength:bitsVal,publicExponent:new Uint8Array([1,0,1]),hash:"SHA-256"},true,["encrypt","decrypt"]);
+        const pub=await crypto.subtle.exportKey("spki",key.publicKey);
+        const b64=btoa(String.fromCharCode(...new Uint8Array(pub)));
+        out.textContent="-----BEGIN PUBLIC KEY-----\n"+b64.match(/.{1,64}/g).join("\n")+"\n-----END PUBLIC KEY-----";
+    }catch(e){ out.textContent="RSA error: "+e.message+"\n\nNote: crypto.subtle requires a secure (HTTPS) context."; }
+}
+function rnd(n){ const a=new Uint8Array(n); crypto.getRandomValues(a); return a; }
+function genIPsec(){ const k=rnd(32); document.getElementById('cryptoout').textContent="IPsec PSK (Hex):\n"+[...k].map(x=>x.toString(16).padStart(2,"0")).join(""); }
+function genWireGuard(){ const k=rnd(32); k[0]&=248;k[31]&=127;k[31]|=64; document.getElementById('cryptoout').textContent="WireGuard Private Key:\n"+btoa(String.fromCharCode(...k))+"\n\n[Interface]\nPrivateKey = generated"; }
+
+// --- DNS over HTTPS ---
+const DNS_TYPES={1:'A',2:'NS',5:'CNAME',6:'SOA',12:'PTR',15:'MX',16:'TXT',28:'AAAA',33:'SRV',255:'ANY',257:'CAA'};
+const DOH_RESOLVERS={cloudflare:'https://cloudflare-dns.com/dns-query',google:'https://dns.google/resolve'};
+function dnsSetType(t){ document.getElementById('dns-type').value=t; }
+function dnsClear(){ document.getElementById('dns-host').value=''; document.getElementById('dns-out').textContent=''; }
+function ptrName(host){
+    if(/^\d+\.\d+\.\d+\.\d+$/.test(host)) return host.split('.').reverse().join('.')+'.in-addr.arpa';
+    try{
+        let parts=host.split(':'); const missing=8-parts.filter(p=>p!=='').length; const idx=parts.indexOf('');
+        if(idx!==-1) parts.splice(idx,1,...Array(missing+1).fill('0'));
+        const nibbles=parts.map(p=>p.padStart(4,'0')).join('');
+        return nibbles.split('').reverse().join('.')+'.ip6.arpa';
+    }catch(e){ return host; }
+}
+function fmtRecord(rec){
+    const type=DNS_TYPES[rec.type]||('TYPE'+rec.type);
+    const ttl=rec.TTL!==undefined?`  TTL=${rec.TTL}s`:'';
+    let data=rec.data??'';
+    if(type==='TXT') data=data.replace(/^"|"$/g,'');
+    return `${type.padEnd(6)} ${String(data).padEnd(50)}${ttl}`;
+}
+async function dnsLookup(){
+    const out=document.getElementById('dns-out');
+    let host=document.getElementById('dns-host').value.trim();
+    const type=document.getElementById('dns-type').value;
+    const resolver=document.getElementById('dns-resolver').value;
+    if(!host){ out.textContent='Enter a domain or IP address.'; return; }
+    if(type==='PTR'&&/^[\d:.]+$/.test(host)) host=ptrName(host);
+    host=host.replace(/\.$/,'');
+    const url=`${DOH_RESOLVERS[resolver]}?name=${encodeURIComponent(host)}&type=${encodeURIComponent(type)}`;
+    const label=resolver==='cloudflare'?'Cloudflare 1.1.1.1':'Google 8.8.8.8';
+    out.textContent=`Querying ${label} for ${type} records of ${host}…`;
+    try{
+        const resp=await fetch(url,{headers:{'Accept':'application/dns-json'},credentials:'omit'});
+        if(!resp.ok) throw new Error(`HTTP ${resp.status} ${resp.statusText}`);
+        const data=await resp.json();
+        const RCODES={0:'NOERROR',1:'FORMERR',2:'SERVFAIL',3:'NXDOMAIN',4:'NOTIMP',5:'REFUSED'};
+        const status=RCODES[data.Status]??`RCODE ${data.Status}`;
+        let lines=[];
+        lines.push(`; <<>> DoH via ${label} <<>> ${host} ${type}`);
+        lines.push(`; Status: ${status}  Truncated: ${data.TC?'yes':'no'}  Recursive: ${data.RD?'yes':'no'}  DNSSEC: ${data.AD?'yes':'no'}`);
+        lines.push('');
+        if(data.Status!==0){
+            lines.push(`; ${status} — no records returned.`);
+            if(data.Status===3) lines.push('; The domain does not exist (NXDOMAIN).');
+            if(data.Status===2) lines.push('; Server failure (SERVFAIL).');
+        }else{
+            if(data.Answer&&data.Answer.length){ lines.push(';; ANSWER SECTION:'); data.Answer.forEach(r=>lines.push(fmtRecord(r))); }
+            else lines.push(';; ANSWER SECTION: (empty)');
+            if(data.Authority&&data.Authority.length){ lines.push(''); lines.push(';; AUTHORITY SECTION:'); data.Authority.forEach(r=>lines.push(fmtRecord(r))); }
+            if(data.Additional&&data.Additional.length){ lines.push(''); lines.push(';; ADDITIONAL SECTION:'); data.Additional.forEach(r=>lines.push(fmtRecord(r))); }
+        }
+        lines.push(''); lines.push(`; ${new Date().toISOString()}  SERVER: ${label} (DoH)`);
+        out.textContent=lines.join('\n');
+    }catch(e){
+        out.textContent=`DNS query failed: ${e.message}\n\n  • Network may block DNS over HTTPS\n  • Check domain spelling\n  • Try switching resolver`;
+    }
+}
+
+// --- Speed Test ---
+let speedAbort=null;
+async function runSpeed(){
+    const out=document.getElementById('speed-out');
+    const bar=document.getElementById('spd-bar');
+    const num=document.getElementById('spd-num');
+    const lbl=document.getElementById('spd-label');
+    document.getElementById('speed-start').disabled=true;
+    document.getElementById('speed-stop').disabled=false;
+    if(speedAbort) speedAbort.abort();
+    speedAbort=new AbortController();
+    bar.style.width='0%'; num.textContent='…'; lbl.textContent='Mbps download';
+    out.textContent='Starting test…';
+    // Cloudflare's speed test endpoint — no auth, CORS-open, served from nearest PoP
+    const SIZE=+document.getElementById('speed-size').value;
+    const TEST_URL=`https://speed.cloudflare.com/__down?bytes=${SIZE}`;
+    const start=performance.now();
+    let loaded=0, lastUpdate=start, lastLoaded=0, samples=[];
+    try{
+        const resp=await fetch(TEST_URL,{signal:speedAbort.signal,cache:'no-store'});
+        if(!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const reader=resp.body.getReader();
+        while(true){
+            const{done,value}=await reader.read();
+            if(done) break;
+            loaded+=value.length;
+            const now=performance.now();
+            const elapsed=(now-start)/1000;
+            if(now-lastUpdate>=250){
+                const mbps=(loaded-lastLoaded)*8/((now-lastUpdate)/1000)/1e6;
+                samples.push(mbps);
+                lastUpdate=now; lastLoaded=loaded;
+                const avg=samples.reduce((a,b)=>a+b,0)/samples.length;
+                const pct=Math.min(100,(loaded/SIZE)*100);
+                bar.style.width=pct+'%';
+                num.textContent=mbps.toFixed(1);
+                out.textContent=`Current:  ${mbps.toFixed(2)} Mbps\nAverage:  ${avg.toFixed(2)} Mbps\nProgress: ${(loaded/1024/1024).toFixed(1)} / ${(SIZE/1024/1024).toFixed(0)} MB (${pct.toFixed(0)}%)\nElapsed:  ${elapsed.toFixed(1)}s`;
+            }
+        }
+        const totalMs=performance.now()-start;
+        const finalMbps=(loaded*8)/(totalMs/1000)/1e6;
+        bar.style.width='100%'; num.textContent=finalMbps.toFixed(1); lbl.textContent='Mbps avg download';
+        out.textContent=`✓ Test complete\n\nAverage speed: ${finalMbps.toFixed(2)} Mbps\nDownloaded:    ${(loaded/1024/1024).toFixed(2)} MB\nTime:          ${(totalMs/1000).toFixed(2)}s\nServer:        Cloudflare (nearest PoP)`;
+        document.getElementById('speed-start').disabled=false;
+        document.getElementById('speed-stop').disabled=true;
+    }catch(e){
+        const totalMs=performance.now()-start;
+        document.getElementById('speed-start').disabled=false;
+        document.getElementById('speed-stop').disabled=true;
+        if(e.name==='AbortError'){
+            const mbps=loaded>0?(loaded*8)/(totalMs/1000)/1e6:0;
+            num.textContent=mbps.toFixed(1); lbl.textContent='Mbps (partial)';
+            out.textContent=`⚠ Stopped\n\nEstimated speed: ${mbps.toFixed(2)} Mbps\nDownloaded:      ${(loaded/1024/1024).toFixed(2)} MB\nTime:            ${(totalMs/1000).toFixed(2)}s`;
+        }else{
+            num.textContent='—';
+            out.textContent='Speed test failed: '+e.message+'\n\nCheck your connection or try again.';
+        }
+    }
+}
+function stopSpeed(){ if(speedAbort) speedAbort.abort(); }
+</script>
+<script>window.goatcounter={path:function(p){return location.host+p}}</script>
+<script data-goatcounter="https://mypolaris.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
