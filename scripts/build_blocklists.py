@@ -719,9 +719,29 @@ def default_index_html(table: str) -> str:
 <body>
   <main>
     <h1>Generated Blocklists</h1>
-    <p>Download the latest generated firewall and plain-text blocklists.</p>
+    <p>Download the latest generated firewall and plain-text blocklists. by <a href="https://mypolaris.com">Polaris Network Indonesia</a></p>
 {table}
   </main>
+<footer role="contentinfo">
+  <div class="footer-links">
+    <a href="https://mypolaris.com">Home</a>
+    <a href="?tools=ip" onclick="tab('ip')">IP Calc</a>
+    <a href="?tools=hash" onclick="tab('hash')">Hash</a>
+    <a href="?tools=qr" onclick="tab('qr')">QR Code</a>
+    <a href="?tools=pass" onclick="tab('pass')">Password</a>
+    <a href="?tools=dns" onclick="tab('dns')">DNS</a>
+    <a href="?tools=speed" onclick="tab('speed')">Speed Test</a>
+    <a href="https://api.mypolaris.com/" target="_blank" rel="noopener">API</a>
+    <a href="#">Privacy</a>
+    <a href="#">About</a>
+  </div>
+  <div class="container">
+    <p style="margin:0">&copy; 2024 <strong style="color:#666">Polaris Network Developer Toolbox</strong> &mdash; 100% client-side, your data never leaves your browser.</p>
+  </div>
+</footer>
+</script>
+<script>window.goatcounter={path:function(p){return location.host+p}}</script>
+<script data-goatcounter="https://mypolaris.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 '''
