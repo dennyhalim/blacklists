@@ -5,9 +5,9 @@
 :local blacklistUrl "https://blacklists.pages.dev/dist/mikrotik/combined1.rsc"
 :local interval "8h"
 
-:local downloaderName "blacklist-downloader"
-:local schedulerName "blacklist-updater"
-:local downloadFile "blacklist.rsc"
+:local downloaderName "ipbl-downloader"
+:local schedulerName "ipbl-updater"
+:local downloadFile "ipblacklist.rsc"
 
 # Remove previous installation
 /system scheduler remove [find where name=$schedulerName]
