@@ -30,7 +30,7 @@ jobs:
 
       - name: Build blocklists
         run: |
-          rm README.md
+          rm README.md || true
           python scripts/build_blocklists.py
 
       - name: Commit generated files
