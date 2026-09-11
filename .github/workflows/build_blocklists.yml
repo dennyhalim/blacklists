@@ -3,7 +3,7 @@ name: Build IP blocklists
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */7 * * *"
+    - cron: "3 */7 * * *"
 
 permissions:
   contents: write
