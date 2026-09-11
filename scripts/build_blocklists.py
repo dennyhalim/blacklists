@@ -12,6 +12,7 @@ import shutil
 import sys
 import urllib.error
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
@@ -104,7 +105,7 @@ NFT_TABLE_FAMILY = "inet"
 NFT_TABLE_NAME = "filter"
 IPSET_PREFIX = "blocklist"
 PF_TABLE_PREFIX = "blocklist"
-WINDOWS_RULE_GROUP = "Blocklists ipbl.dennyhalim.com"
+WINDOWS_RULE_GROUP = "ipbl.dennyhalim.com Blocklists"
 WINDOWS_RULE_CHUNK_SIZE = 500
 
 SAFE_NAME_RE = re.compile(r"[^a-zA-Z0-9_-]+")
@@ -557,6 +558,12 @@ def build_lists(
     return manifest
 
 
+
+def generated_timestamp() -> str:
+    """Return the current build time in UTC."""
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+
+
 def markdown_link(label: str, path: str) -> str:
     return f"[{label}]({path})"
 
@@ -566,6 +573,8 @@ def build_readme_table(
 ) -> str:
     lines = [
         README_TABLE_START,
+        f"Last updated: **{generated_timestamp()}**",
+        "",
         "| List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |",
         "|---|---|---:|---|---|---|---|---|---|",
     ]
@@ -687,6 +696,9 @@ def build_index_table(manifest: dict[str, dict[str, object]]) -> str:
 
     return (
         f"{INDEX_TABLE_START}\n"
+        f'    <p class="updated">Last updated: '
+        f'<time datetime="{datetime.now(timezone.utc).isoformat()}">'
+        f'{generated_timestamp()}</time></p>\n'
         '    <div class="table-wrap">\n'
         "      <table>\n"
         "        <thead>\n"
