@@ -104,7 +104,7 @@ NFT_TABLE_FAMILY = "inet"
 NFT_TABLE_NAME = "filter"
 IPSET_PREFIX = "blocklist"
 PF_TABLE_PREFIX = "blocklist"
-WINDOWS_RULE_GROUP = "ipbl.dennyhalim.com"
+WINDOWS_RULE_GROUP = "Blocklists ipbl.dennyhalim.com"
 WINDOWS_RULE_CHUNK_SIZE = 500
 
 SAFE_NAME_RE = re.compile(r"[^a-zA-Z0-9_-]+")
@@ -210,14 +210,22 @@ def fetch_source(name: str) -> set[ipaddress.IPv4Network]:
 
         try:
             network = ipaddress.ip_network(value, strict=False)
-        except ValueError as exc:
-            raise RuntimeError(
-                f"{name}: invalid IPv4/CIDR at line "
-                f"{line_number}: {value!r}"
-            ) from exc
+        except ValueError:
+            print(
+                f"warning: {name}: ignored non-IP line "
+                f"{line_number}: {value!r}",
+                file=sys.stderr,
+            )
+            continue
 
         if network.version == 4:
             networks.add(network)
+        else:
+            print(
+                f"warning: {name}: ignored non-IPv4 line "
+                f"{line_number}: {value!r}",
+                file=sys.stderr,
+            )
 
     if not networks:
         raise RuntimeError(f"{name}: source is empty")
@@ -730,26 +738,9 @@ def default_index_html(table: str) -> str:
 <body>
   <main>
     <h1>Generated Blocklists</h1>
-    <p>Download the latest generated firewall and plain-text blocklists. by <a href="https://mypolaris.com">Polaris Network Indonesia</a></p>
+    <p>Download the latest generated firewall and plain-text blocklists.</p>
 {table}
   </main>
-<footer role="contentinfo">
-  <div class="footer-links">
-    <a href="https://mypolaris.com">Home</a>
-    <a href="?tools=ip" onclick="tab('ip')">IP Calc</a>
-    <a href="?tools=hash" onclick="tab('hash')">Hash</a>
-    <a href="?tools=qr" onclick="tab('qr')">QR Code</a>
-    <a href="?tools=pass" onclick="tab('pass')">Password</a>
-    <a href="?tools=dns" onclick="tab('dns')">DNS</a>
-    <a href="?tools=speed" onclick="tab('speed')">Speed Test</a>
-    <a href="https://api.mypolaris.com/" target="_blank" rel="noopener">API</a>
-    <a href="#">Privacy</a>
-    <a href="#">About</a>
-  </div>
-  <div class="container">
-    <p style="margin:0">&copy; 2024 <strong style="color:#666">Polaris Network Developer Toolbox</strong> &mdash; 100% client-side, your data never leaves your browser.</p>
-  </div>
-</footer>
 </body>
 </html>
 '''
