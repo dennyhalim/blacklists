@@ -1,0 +1,264 @@
+{
+  "exports": {
+    "bat": true,
+    "ipset": true,
+    "mikrotik": true,
+    "nftables": true,
+    "pf": true,
+    "plain": true,
+    "powershell": true
+  },
+  "lists": {
+    "combined1": {
+      "entries": 22808,
+      "files": {
+        "bat": [
+          "dist/windows/combined1.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined1.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined1.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined1.nft",
+          "dist/nftables/combined1.sh"
+        ],
+        "pf": [
+          "dist/pf/combined1.txt"
+        ],
+        "plain": [
+          "dist/plain/combined1.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined1.ps1"
+        ]
+      },
+      "sources": [
+        "level1",
+        "level2"
+      ]
+    },
+    "combined2": {
+      "entries": 31591,
+      "files": {
+        "bat": [
+          "dist/windows/combined2.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined2.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined2.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined2.nft",
+          "dist/nftables/combined2.sh"
+        ],
+        "pf": [
+          "dist/pf/combined2.txt"
+        ],
+        "plain": [
+          "dist/plain/combined2.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined2.ps1"
+        ]
+      },
+      "sources": [
+        "level2",
+        "level3"
+      ]
+    },
+    "combined3": {
+      "entries": 5910,
+      "files": {
+        "bat": [
+          "dist/windows/combined3.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined3.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined3.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined3.nft",
+          "dist/nftables/combined3.sh"
+        ],
+        "pf": [
+          "dist/pf/combined3.txt"
+        ],
+        "plain": [
+          "dist/plain/combined3.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined3.ps1"
+        ]
+      },
+      "sources": [
+        "level1",
+        "webserver"
+      ]
+    },
+    "combined4": {
+      "entries": 35630,
+      "files": {
+        "bat": [
+          "dist/windows/combined4.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined4.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined4.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined4.nft",
+          "dist/nftables/combined4.sh"
+        ],
+        "pf": [
+          "dist/pf/combined4.txt"
+        ],
+        "plain": [
+          "dist/plain/combined4.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined4.ps1"
+        ]
+      },
+      "sources": [
+        "level1",
+        "level2",
+        "level3"
+      ]
+    },
+    "level1": {
+      "entries": 4670,
+      "files": {
+        "bat": [
+          "dist/windows/level1.bat"
+        ],
+        "ipset": [
+          "dist/ipset/level1.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/level1.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/level1.nft",
+          "dist/nftables/level1.sh"
+        ],
+        "pf": [
+          "dist/pf/level1.txt"
+        ],
+        "plain": [
+          "dist/plain/level1.txt"
+        ],
+        "powershell": [
+          "dist/windows/level1.ps1"
+        ]
+      },
+      "sources": [
+        "level1"
+      ]
+    },
+    "level2": {
+      "entries": 18770,
+      "files": {
+        "bat": [
+          "dist/windows/level2.bat"
+        ],
+        "ipset": [
+          "dist/ipset/level2.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/level2.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/level2.nft",
+          "dist/nftables/level2.sh"
+        ],
+        "pf": [
+          "dist/pf/level2.txt"
+        ],
+        "plain": [
+          "dist/plain/level2.txt"
+        ],
+        "powershell": [
+          "dist/windows/level2.ps1"
+        ]
+      },
+      "sources": [
+        "level2"
+      ]
+    },
+    "level3": {
+      "entries": 13408,
+      "files": {
+        "bat": [
+          "dist/windows/level3.bat"
+        ],
+        "ipset": [
+          "dist/ipset/level3.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/level3.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/level3.nft",
+          "dist/nftables/level3.sh"
+        ],
+        "pf": [
+          "dist/pf/level3.txt"
+        ],
+        "plain": [
+          "dist/plain/level3.txt"
+        ],
+        "powershell": [
+          "dist/windows/level3.ps1"
+        ]
+      },
+      "sources": [
+        "level3"
+      ]
+    },
+    "webserver": {
+      "entries": 1255,
+      "files": {
+        "bat": [
+          "dist/windows/webserver.bat"
+        ],
+        "ipset": [
+          "dist/ipset/webserver.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/webserver.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/webserver.nft",
+          "dist/nftables/webserver.sh"
+        ],
+        "pf": [
+          "dist/pf/webserver.txt"
+        ],
+        "plain": [
+          "dist/plain/webserver.txt"
+        ],
+        "powershell": [
+          "dist/windows/webserver.ps1"
+        ]
+      },
+      "sources": [
+        "webserver"
+      ]
+    }
+  },
+  "sources": {
+    "level1": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset",
+    "level2": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset",
+    "level3": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level3.netset",
+    "webserver": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webserver.netset"
+  }
+}
