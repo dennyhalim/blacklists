@@ -32,13 +32,14 @@ INDEX_TABLE_END = "<!-- BLOCKLIST_INDEX_END -->"
 
 SOURCES: dict[str, str] = {
     "feodo": ("https://feodotracker.abuse.ch/downloads/ipblocklist.txt"),
+    "botnet": ("https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt"),
     "etblock": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/et_block.netset"
     ),
-    "level1": (
+    "level2": (
         "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/firehol_level1.netset"
+        "firehol/blocklist-ipsets/master/firehol_level2.netset"
     ),
     "level4": (
         "https://raw.githubusercontent.com/"
@@ -79,7 +80,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "webserver": ("webserver",),
     "combined1": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30"),
     "combined2": ("etblock","feodo","toxic","webserver","hijack","dshield7","abuseipdb7"),
-    "complete": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","level4"),
+    "complete": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","level2","level4","botnet"),
 }
 
 EXPORTS: dict[str, bool] = {
