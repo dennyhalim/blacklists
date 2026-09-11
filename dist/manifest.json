@@ -155,6 +155,40 @@
         "abuseipdb7"
       ]
     },
+    "compact3": {
+      "entries": 1668,
+      "files": {
+        "bat": [
+          "dist/windows/compact3.bat"
+        ],
+        "ipset": [
+          "dist/ipset/compact3.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/compact3.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/compact3.nft",
+          "dist/nftables/compact3.sh"
+        ],
+        "pf": [
+          "dist/pf/compact3.txt",
+          "dist/pf/compact3.sh"
+        ],
+        "plain": [
+          "dist/plain/compact3.txt"
+        ],
+        "powershell": [
+          "dist/windows/compact3.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "feodo",
+        "dshield7",
+        "abuseipdb7"
+      ]
+    },
     "complete": {
       "entries": 169260,
       "files": {

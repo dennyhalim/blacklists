@@ -7,7 +7,7 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 ## Generated Lists
 
 <!-- BLOCKLIST_COUNTS_START -->
-Last updated: **2026-09-11 09:23:20 UTC**
+Last updated: **2026-09-11 09:35:00 UTC**
 
 | List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
 |---|---|---:|---|---|---|---|---|---|
@@ -16,6 +16,7 @@ Last updated: **2026-09-11 09:23:20 UTC**
 | `webserver` | `webserver` | 1,255 | [TXT](dist/plain/webserver.txt) | [RSC](dist/mikrotik/webserver.rsc) | [NFT](dist/nftables/webserver.nft) / [SH](dist/nftables/webserver.sh) | [SH](dist/ipset/webserver.sh) | [PS1](dist/windows/webserver.ps1) / [BAT](dist/windows/webserver.bat) | [TXT](dist/pf/webserver.txt) / [SH](dist/pf/webserver.sh) |
 | `compact1` | `etblock` + `feodo` + `toxic` + `hijack` + `dshield7` + `abuseipdb7` | 2,103 | [TXT](dist/plain/compact1.txt) | [RSC](dist/mikrotik/compact1.rsc) | [NFT](dist/nftables/compact1.nft) / [SH](dist/nftables/compact1.sh) | [SH](dist/ipset/compact1.sh) | [PS1](dist/windows/compact1.ps1) / [BAT](dist/windows/compact1.bat) | [TXT](dist/pf/compact1.txt) / [SH](dist/pf/compact1.sh) |
 | `compact2` | `etblock` + `feodo` + `hijack` + `dshield7` + `abuseipdb7` | 2,046 | [TXT](dist/plain/compact2.txt) | [RSC](dist/mikrotik/compact2.rsc) | [NFT](dist/nftables/compact2.nft) / [SH](dist/nftables/compact2.sh) | [SH](dist/ipset/compact2.sh) | [PS1](dist/windows/compact2.ps1) / [BAT](dist/windows/compact2.bat) | [TXT](dist/pf/compact2.txt) / [SH](dist/pf/compact2.sh) |
+| `compact3` | `etblock` + `feodo` + `dshield7` + `abuseipdb7` | 1,668 | [TXT](dist/plain/compact3.txt) | [RSC](dist/mikrotik/compact3.rsc) | [NFT](dist/nftables/compact3.nft) / [SH](dist/nftables/compact3.sh) | [SH](dist/ipset/compact3.sh) | [PS1](dist/windows/compact3.ps1) / [BAT](dist/windows/compact3.bat) | [TXT](dist/pf/compact3.txt) / [SH](dist/pf/compact3.sh) |
 | `combined1` | `etblock` + `feodo` + `toxic` + `webserver` + `hijack` + `dshield7` + `abuseipdb7` | 3,285 | [TXT](dist/plain/combined1.txt) | [RSC](dist/mikrotik/combined1.rsc) | [NFT](dist/nftables/combined1.nft) / [SH](dist/nftables/combined1.sh) | [SH](dist/ipset/combined1.sh) | [PS1](dist/windows/combined1.ps1) / [BAT](dist/windows/combined1.bat) | [TXT](dist/pf/combined1.txt) / [SH](dist/pf/combined1.sh) |
 | `combined2` | `etblock` + `feodo` + `toxic` + `webserver` + `hijack` + `dshield30` + `abuseipdb30` + `strongips` | 3,543 | [TXT](dist/plain/combined2.txt) | [RSC](dist/mikrotik/combined2.rsc) | [NFT](dist/nftables/combined2.nft) / [SH](dist/nftables/combined2.sh) | [SH](dist/ipset/combined2.sh) | [PS1](dist/windows/combined2.ps1) / [BAT](dist/windows/combined2.bat) | [TXT](dist/pf/combined2.txt) / [SH](dist/pf/combined2.sh) |
 | `complete` | `etblock` + `feodo` + `toxic` + `webserver` + `hijack` + `dshield30` + `abuseipdb30` + `strongips` + `level2` + `level4` + `botnet` | 169,260 | [TXT](dist/plain/complete.txt) | [RSC](dist/mikrotik/complete.rsc) | [NFT](dist/nftables/complete.nft) / [SH](dist/nftables/complete.sh) | [SH](dist/ipset/complete.sh) | [PS1](dist/windows/complete.ps1) / [BAT](dist/windows/complete.bat) | [TXT](dist/pf/complete.txt) / [SH](dist/pf/complete.sh) |
