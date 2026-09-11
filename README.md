@@ -21,11 +21,6 @@ Last updated: **2026-09-11 09:23:20 UTC**
 | `complete` | `etblock` + `feodo` + `toxic` + `webserver` + `hijack` + `dshield30` + `abuseipdb30` + `strongips` + `level2` + `level4` + `botnet` | 169,260 | [TXT](dist/plain/complete.txt) | [RSC](dist/mikrotik/complete.rsc) | [NFT](dist/nftables/complete.nft) / [SH](dist/nftables/complete.sh) | [SH](dist/ipset/complete.sh) | [PS1](dist/windows/complete.ps1) / [BAT](dist/windows/complete.bat) | [TXT](dist/pf/complete.txt) / [SH](dist/pf/complete.sh) |
 <!-- BLOCKLIST_COUNTS_END -->
 
-### Warning! Firehol Level1 contain bogons (local reserved) IP Addresses
-
-- https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses
-- https://en.wikipedia.org/wiki/Bogon_filtering
-- if you want similar to level1 IP list without bogons, try et_block
 
 ## Mikrotik settings
 
@@ -44,84 +39,6 @@ Run this ONCE in you mikrotik to activate block rule and install the scheduler
 import ipbl-installer.rsc
 ```
 
-## Configuration
-
-Lists and combinations are configured in `scripts/build_blocklists.py`:
-
-```python
-LISTS = {
-    "level1": (
-        "firehol_level1",
-    ),
-    "level2": (
-        "firehol_level2",
-    ),
-    "level3": (
-        "firehol_level3",
-    ),
-    "webserver": (
-        "firehol_webserver",
-    ),
-
-    "combined1": (
-        "firehol_level1",
-        "firehol_level2",
-    ),
-    "combined2": (
-        "firehol_level2",
-        "firehol_level3",
-    ),
-    "combined3": (
-        "firehol_level1",
-        "firehol_webserver",
-    ),
-    "combined4": (
-        "firehol_level1",
-        "firehol_level2",
-        "firehol_level3",
-    ),
-}
-```
-
-Each key creates one `.rsc` file.
-
-For example:
-
-```text
-combined1
-    = firehol_level1
-    + firehol_level2
-
-→ dist/combined1.rsc
-→ MikroTik list: firehol-combined1
-```
-
-Add or remove combinations by editing only `LISTS`.
-
-## Output
-
-Generated files are stored in:
-
-```text
-dist/
-├── level1.rsc
-├── level2.rsc
-├── level3.rsc
-├── webserver.rsc
-├── combined1.rsc
-├── combined2.rsc
-├── combined3.rsc
-└── combined4.rsc
-```
-
-Each file contains a standard RouterOS address list:
-
-```routeros
-/ip firewall address-list
-add list="firehol-combined1" address="1.2.3.0/24" comment="FireHOL: firehol_level1 + firehol_level2"
-add list="firehol-combined1" address="5.6.7.8" comment="FireHOL: firehol_level1 + firehol_level2"
-```
-
 Overlapping and adjacent networks are collapsed where possible before generating the RouterOS list.
 
 ## Local Build
@@ -134,7 +51,7 @@ python scripts/build_blocklists.py
 
 The builder:
 
-* downloads each required FireHOL feed only once;
+* downloads each required feed only once;
 * validates IPv4 addresses and CIDRs;
 * removes duplicate entries;
 * merges configured combinations;
@@ -165,19 +82,6 @@ Settings
 → Read and write permissions
 ```
 
-## Files
-
-```text
-.
-├── .github/
-│   └── workflows/
-│       └── build-blocklists.yml
-├── scripts/
-│   └── build_blocklists.py
-├── dist/
-│   └── *.rsc
-└── README.md
-```
 
 ## Data Source
 
