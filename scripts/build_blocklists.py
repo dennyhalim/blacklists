@@ -79,7 +79,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "webserver": ("webserver",),
     "combined1": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30"),
     "combined2": ("etblock","feodo","toxic","webserver","hijack","dshield7","abuseipdb7"),
-    "combined3": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","level4"),
+    "complete": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","level4"),
 }
 
 EXPORTS: dict[str, bool] = {
