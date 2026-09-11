@@ -25,13 +25,17 @@ README_TABLE_START = "<!-- BLOCKLIST_COUNTS_START -->"
 README_TABLE_END = "<!-- BLOCKLIST_COUNTS_END -->"
 
 SOURCES: dict[str, str] = {
-    "et_block": (
+    "etblock": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/et_block.netset"
     ),
     "level1": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_level1.netset"
+    ),
+    "hijack": (
+        "https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/firehol_level4.netset"
     ),
     "forumspam": (
         "https://raw.githubusercontent.com/"
@@ -49,17 +53,22 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_webserver.netset"
     ),
+    "abuseipdb7": (
+        "https://raw.githubusercontent.com/"
+        "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4"
+    ),
+    "abuseipdb30": (
+        "https://raw.githubusercontent.com/"
+        "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-75percent.ipv4"
+    ),
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
     "level1": ("level1",),
-    "level2": ("level2",),
-    "level3": ("level3",),
     "webserver": ("webserver",),
-    "combined1": ("level1", "level2"),
-    "combined2": ("level2", "level3"),
-    "combined3": ("level1", "webserver"),
-    "combined4": ("level1", "level2", "level3"),
+    "combined1": ("etblock", "forumspam","dshield7","webserver","abuseipdb7"),
+    "combined2": ("etblock", "forumspam","dshield30","webserver","abuseipdb30"),
+    "combined2": ("etblock", "forumspam","dshield30","webserver","abuseipdb30","hijack"),
 }
 
 EXPORTS: dict[str, bool] = {
