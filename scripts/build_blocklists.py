@@ -84,6 +84,8 @@ LISTS: dict[str, tuple[str, ...]] = {
     "level2": ("level2",),
     "hijack": ("hijack",),
     "webserver": ("webserver",),
+    "compact1": ("etblock","feodo","toxic","hijack","dshield7","abuseipdb7"),
+    "compact2": ("etblock","feodo","hijack","dshield7","abuseipdb7"),
     "combined1": ("etblock","feodo","toxic","webserver","hijack","dshield7","abuseipdb7"),
     "combined2": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","strongips"),
     "complete": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","strongips","level2","level4","botnet"),
