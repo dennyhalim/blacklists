@@ -29,7 +29,9 @@ jobs:
           python-version: "3.13"
 
       - name: Build blocklists
-        run: python scripts/build_blocklists.py
+        run: |
+          rm README.md
+          python scripts/build_blocklists.py
 
       - name: Commit generated files
         shell: bash
