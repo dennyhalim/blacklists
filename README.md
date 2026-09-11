@@ -25,6 +25,8 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 
 ## Mikrotik settings
 
+> first, download, examine, audit the script before you execute on your router!
+
 Run this ONCE in you mikrotik to activate block rule and install the scheduler
 
 ```bash
