@@ -33,13 +33,17 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_level1.netset"
     ),
-    "level2": (
+    "forumspam": (
         "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/firehol_level2.netset"
+        "firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"
     ),
-    "level3": (
+    "dshield7": (
         "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/firehol_level3.netset"
+        "firehol/blocklist-ipsets/master/dshield_7d.netset"
+    ),
+    "dshield30": (
+        "https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/dshield_30d.netset"
     ),
     "webserver": (
         "https://raw.githubusercontent.com/"
