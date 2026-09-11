@@ -1,8 +1,5 @@
-table inet filter {
-    set blocklist_webserver {
-        type ipv4_addr
-        flags interval
-        elements = {
+flush set inet filter blocklist_webserver
+add element inet filter blocklist_webserver {
         2.59.220.0/22,
         3.85.80.23,
         3.89.170.186,
@@ -1258,6 +1255,4 @@ table inet filter {
         216.244.66.228,
         217.147.172.0/24,
         223.24.61.15
-        }
-    }
 }

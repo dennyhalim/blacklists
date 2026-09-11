@@ -26,7 +26,8 @@
           "dist/nftables/combined1.sh"
         ],
         "pf": [
-          "dist/pf/combined1.txt"
+          "dist/pf/combined1.txt",
+          "dist/pf/combined1.sh"
         ],
         "plain": [
           "dist/plain/combined1.txt"
@@ -38,13 +39,13 @@
       "sources": [
         "etblock",
         "forumspam",
-        "dshield7",
         "webserver",
+        "dshield7",
         "abuseipdb7"
       ]
     },
     "combined2": {
-      "entries": 141280,
+      "entries": 2889,
       "files": {
         "bat": [
           "dist/windows/combined2.bat"
@@ -60,7 +61,8 @@
           "dist/nftables/combined2.sh"
         ],
         "pf": [
-          "dist/pf/combined2.txt"
+          "dist/pf/combined2.txt",
+          "dist/pf/combined2.sh"
         ],
         "plain": [
           "dist/plain/combined2.txt"
@@ -72,8 +74,43 @@
       "sources": [
         "etblock",
         "forumspam",
-        "dshield30",
         "webserver",
+        "dshield30",
+        "abuseipdb30"
+      ]
+    },
+    "combined3": {
+      "entries": 141280,
+      "files": {
+        "bat": [
+          "dist/windows/combined3.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined3.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined3.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined3.nft",
+          "dist/nftables/combined3.sh"
+        ],
+        "pf": [
+          "dist/pf/combined3.txt",
+          "dist/pf/combined3.sh"
+        ],
+        "plain": [
+          "dist/plain/combined3.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined3.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "forumspam",
+        "webserver",
+        "dshield30",
         "abuseipdb30",
         "hijack"
       ]
@@ -95,7 +132,8 @@
           "dist/nftables/level1.sh"
         ],
         "pf": [
-          "dist/pf/level1.txt"
+          "dist/pf/level1.txt",
+          "dist/pf/level1.sh"
         ],
         "plain": [
           "dist/plain/level1.txt"
@@ -125,7 +163,8 @@
           "dist/nftables/webserver.sh"
         ],
         "pf": [
-          "dist/pf/webserver.txt"
+          "dist/pf/webserver.txt",
+          "dist/pf/webserver.sh"
         ],
         "plain": [
           "dist/plain/webserver.txt"
@@ -149,5 +188,6 @@
     "hijack": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
     "level1": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset",
     "webserver": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webserver.netset"
-  }
+  },
+  "stale_after_days": 3
 }

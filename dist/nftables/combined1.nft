@@ -1,8 +1,5 @@
-table inet filter {
-    set blocklist_combined1 {
-        type ipv4_addr
-        flags interval
-        elements = {
+flush set inet filter blocklist_combined1
+add element inet filter blocklist_combined1 {
         1.10.16.0/20,
         1.19.0.0/16,
         1.32.128.0/18,
@@ -2910,6 +2907,4 @@ table inet filter {
         223.155.16.0/24,
         223.169.0.0/16,
         223.254.0.0/16
-        }
-    }
 }
