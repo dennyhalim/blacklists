@@ -84,6 +84,77 @@
         "strongips"
       ]
     },
+    "compact1": {
+      "entries": 2103,
+      "files": {
+        "bat": [
+          "dist/windows/compact1.bat"
+        ],
+        "ipset": [
+          "dist/ipset/compact1.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/compact1.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/compact1.nft",
+          "dist/nftables/compact1.sh"
+        ],
+        "pf": [
+          "dist/pf/compact1.txt",
+          "dist/pf/compact1.sh"
+        ],
+        "plain": [
+          "dist/plain/compact1.txt"
+        ],
+        "powershell": [
+          "dist/windows/compact1.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "feodo",
+        "toxic",
+        "hijack",
+        "dshield7",
+        "abuseipdb7"
+      ]
+    },
+    "compact2": {
+      "entries": 2046,
+      "files": {
+        "bat": [
+          "dist/windows/compact2.bat"
+        ],
+        "ipset": [
+          "dist/ipset/compact2.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/compact2.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/compact2.nft",
+          "dist/nftables/compact2.sh"
+        ],
+        "pf": [
+          "dist/pf/compact2.txt",
+          "dist/pf/compact2.sh"
+        ],
+        "plain": [
+          "dist/plain/compact2.txt"
+        ],
+        "powershell": [
+          "dist/windows/compact2.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "feodo",
+        "hijack",
+        "dshield7",
+        "abuseipdb7"
+      ]
+    },
     "complete": {
       "entries": 169260,
       "files": {
