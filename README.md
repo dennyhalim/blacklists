@@ -36,8 +36,8 @@ Run this ONCE in you mikrotik to activate block rule and install the scheduler
 /ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com src-address-list=blocklist-complete
 
 #download and run installer 
-/tool fetch url="https://blacklists.pages.dev/mikrotik-installer.rsc"
-/system/script/run mikrotik-installer.rsc
+/tool fetch url="https://blacklists.pages.dev/ipbl-installer.rsc"
+/system/script/run ipbl-installer.rsc
 ```
 
 ## Configuration
