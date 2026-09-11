@@ -80,7 +80,8 @@ SOURCES: dict[str, str] = {
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
-    "level1": ("level1",),
+    "level2": ("level2",),
+    "hijack": ("hijack",),
     "webserver": ("webserver",),
     "combined1": ("etblock","feodo","toxic","webserver","hijack","strongips","dshield30","abuseipdb30"),
     "combined2": ("etblock","feodo","toxic","webserver","hijack","strongips","dshield7","abuseipdb7"),
