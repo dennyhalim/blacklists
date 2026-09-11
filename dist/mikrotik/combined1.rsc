@@ -1,5 +1,5 @@
 # Generated from: etblock, forumspam, webserver, dshield7, abuseipdb7
-# Entries: 2907
+# Entries: 2908
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="blocklist-combined1" and comment="blocklist-builder"]
@@ -1819,6 +1819,7 @@ add list="blocklist-combined1" address="157.254.112.0/20" timeout=3d comment="bl
 add list="blocklist-combined1" address="157.254.146.0/23" timeout=3d comment="blocklist-builder"
 add list="blocklist-combined1" address="157.254.148.0/22" timeout=3d comment="blocklist-builder"
 add list="blocklist-combined1" address="157.254.242.0/23" timeout=3d comment="blocklist-builder"
+add list="blocklist-combined1" address="158.94.187.0/24" timeout=3d comment="blocklist-builder"
 add list="blocklist-combined1" address="158.94.208.0/22" timeout=3d comment="blocklist-builder"
 add list="blocklist-combined1" address="158.173.51.0/24" timeout=3d comment="blocklist-builder"
 add list="blocklist-combined1" address="158.222.113.0/24" timeout=3d comment="blocklist-builder"

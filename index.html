@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generated Blocklists</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #151719; color: #e7e9eb; }
+    main { max-width: 1200px; margin: 0 auto; padding: 32px 20px; }
+    h1 { margin: 0 0 8px; }
+    p { margin: 0 0 24px; color: #b8bec4; }
+    .table-wrap { overflow-x: auto; border: 1px solid #3b4147; border-radius: 10px; }
+    table { width: 100%; min-width: 900px; border-collapse: collapse; background: #1c1f22; }
+    th, td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid #343a40; }
+    th { background: #24282c; color: #f3f4f5; }
+    tr:last-child td { border-bottom: 0; }
+    a { color: #9bc1ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Generated Blocklists</h1>
+    <p>Download the latest generated firewall and plain-text blocklists.</p>
+<!-- BLOCKLIST_INDEX_START -->
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>List</th>
+            <th>Sources</th>
+            <th>Entries</th>
+            <th>Plain</th>
+            <th>MikroTik</th>
+            <th>nftables</th>
+            <th>ipset</th>
+            <th>Windows</th>
+            <th>pf</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><code>level1</code></td>
+          <td><code>level1</code></td>
+          <td>4,670</td>
+          <td><a href="/dist/plain/level1.txt">TXT</a></td>
+          <td><a href="/dist/mikrotik/level1.rsc">RSC</a></td>
+          <td><a href="/dist/nftables/level1.nft">NFT</a> / <a href="/dist/nftables/level1.sh">SH</a></td>
+          <td><a href="/dist/ipset/level1.sh">SH</a></td>
+          <td><a href="/dist/windows/level1.ps1">PS1</a> / <a href="/dist/windows/level1.bat">BAT</a></td>
+          <td><a href="/dist/pf/level1.txt">TXT</a> / <a href="/dist/pf/level1.sh">SH</a></td>
+        </tr>
+        <tr>
+          <td><code>webserver</code></td>
+          <td><code>webserver</code></td>
+          <td>1,255</td>
+          <td><a href="/dist/plain/webserver.txt">TXT</a></td>
+          <td><a href="/dist/mikrotik/webserver.rsc">RSC</a></td>
+          <td><a href="/dist/nftables/webserver.nft">NFT</a> / <a href="/dist/nftables/webserver.sh">SH</a></td>
+          <td><a href="/dist/ipset/webserver.sh">SH</a></td>
+          <td><a href="/dist/windows/webserver.ps1">PS1</a> / <a href="/dist/windows/webserver.bat">BAT</a></td>
+          <td><a href="/dist/pf/webserver.txt">TXT</a> / <a href="/dist/pf/webserver.sh">SH</a></td>
+        </tr>
+        <tr>
+          <td><code>combined1</code></td>
+          <td><code>etblock</code> + <code>forumspam</code> + <code>webserver</code> + <code>dshield7</code> + <code>abuseipdb7</code></td>
+          <td>2,908</td>
+          <td><a href="/dist/plain/combined1.txt">TXT</a></td>
+          <td><a href="/dist/mikrotik/combined1.rsc">RSC</a></td>
+          <td><a href="/dist/nftables/combined1.nft">NFT</a> / <a href="/dist/nftables/combined1.sh">SH</a></td>
+          <td><a href="/dist/ipset/combined1.sh">SH</a></td>
+          <td><a href="/dist/windows/combined1.ps1">PS1</a> / <a href="/dist/windows/combined1.bat">BAT</a></td>
+          <td><a href="/dist/pf/combined1.txt">TXT</a> / <a href="/dist/pf/combined1.sh">SH</a></td>
+        </tr>
+        <tr>
+          <td><code>combined2</code></td>
+          <td><code>etblock</code> + <code>forumspam</code> + <code>webserver</code> + <code>dshield30</code> + <code>abuseipdb30</code></td>
+          <td>2,890</td>
+          <td><a href="/dist/plain/combined2.txt">TXT</a></td>
+          <td><a href="/dist/mikrotik/combined2.rsc">RSC</a></td>
+          <td><a href="/dist/nftables/combined2.nft">NFT</a> / <a href="/dist/nftables/combined2.sh">SH</a></td>
+          <td><a href="/dist/ipset/combined2.sh">SH</a></td>
+          <td><a href="/dist/windows/combined2.ps1">PS1</a> / <a href="/dist/windows/combined2.bat">BAT</a></td>
+          <td><a href="/dist/pf/combined2.txt">TXT</a> / <a href="/dist/pf/combined2.sh">SH</a></td>
+        </tr>
+        <tr>
+          <td><code>combined3</code></td>
+          <td><code>etblock</code> + <code>forumspam</code> + <code>webserver</code> + <code>dshield30</code> + <code>abuseipdb30</code> + <code>hijack</code></td>
+          <td>141,281</td>
+          <td><a href="/dist/plain/combined3.txt">TXT</a></td>
+          <td><a href="/dist/mikrotik/combined3.rsc">RSC</a></td>
+          <td><a href="/dist/nftables/combined3.nft">NFT</a> / <a href="/dist/nftables/combined3.sh">SH</a></td>
+          <td><a href="/dist/ipset/combined3.sh">SH</a></td>
+          <td><a href="/dist/windows/combined3.ps1">PS1</a> / <a href="/dist/windows/combined3.bat">BAT</a></td>
+          <td><a href="/dist/pf/combined3.txt">TXT</a> / <a href="/dist/pf/combined3.sh">SH</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- BLOCKLIST_INDEX_END -->
+  </main>
+</body>
+</html>
