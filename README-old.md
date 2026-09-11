@@ -6,6 +6,17 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 
 ## Generated Lists
 
+| List        | FireHOL Sources                                        | IP/CIDR Count |
+| ----------- | ------------------------------------------------------ | ------------: |
+| `level1`    | `firehol_level1`                                       |         4,321 |
+| `level2`    | `firehol_level2`                                       |        18,742 |
+| `level3`    | `firehol_level3`                                       |        32,518 |
+| `webserver` | `firehol_webserver`                                    |         7,904 |
+| `combined1` | `firehol_level1` + `firehol_level2`                    |        21,886 |
+| `combined2` | `firehol_level2` + `firehol_level3`                    |        47,103 |
+| `combined3` | `firehol_level1` + `firehol_webserver`                 |        11,972 |
+| `combined4` | `firehol_level1` + `firehol_level2` + `firehol_level3` |        49,821 |
+
 > Counts above are examples. They change as FireHOL updates its feeds and should ideally be generated automatically during each build.
 
 ### Warning! Firehol Level1 contain bogons (local reserved) IP Addresses
