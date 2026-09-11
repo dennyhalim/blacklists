@@ -19,6 +19,11 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 
 > Counts above are examples. They change as FireHOL updates its feeds and should ideally be generated automatically during each build.
 
+### Warning! Firehol Level1 contain bogons (local reserved) IP Addresses
+
+- https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses
+- https://en.wikipedia.org/wiki/Bogon_filtering
+
 ## Configuration
 
 Lists and combinations are configured in `scripts/build_blocklists.py`:
