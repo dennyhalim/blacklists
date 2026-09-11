@@ -7,6 +7,8 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 ## Generated Lists
 
 <!-- BLOCKLIST_COUNTS_START -->
+Last updated: **2026-09-11 08:31:24 UTC**
+
 | List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
 |---|---|---:|---|---|---|---|---|---|
 | `level2` | `level2` | 18,770 | [TXT](dist/plain/level2.txt) | [RSC](dist/mikrotik/level2.rsc) | [NFT](dist/nftables/level2.nft) / [SH](dist/nftables/level2.sh) | [SH](dist/ipset/level2.sh) | [PS1](dist/windows/level2.ps1) / [BAT](dist/windows/level2.bat) | [TXT](dist/pf/level2.txt) / [SH](dist/pf/level2.sh) |
