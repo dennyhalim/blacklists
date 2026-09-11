@@ -31,9 +31,9 @@ Run this ONCE in you mikrotik to activate block rule and install the scheduler
 
 ```bash
 #first activate firewall block rules
-/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com src-address-list=blocklist-combined1
-/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com src-address-list=blocklist-combined2
-/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com src-address-list=blocklist-complete
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-combined1
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-combined2
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-complete
 
 #download and run installer 
 /tool fetch url="https://blacklists.pages.dev/ipbl-installer.rsc"
@@ -120,29 +120,6 @@ add list="firehol-combined1" address="5.6.7.8" comment="FireHOL: firehol_level1 
 
 Overlapping and adjacent networks are collapsed where possible before generating the RouterOS list.
 
-## Import to MikroTik
-
-Upload the required `.rsc` file to the router and import it:
-
-```routeros
-/import file-name=combined1.rsc
-```
-
-The corresponding address list is then available as:
-
-```text
-firehol-combined1
-```
-
-For example, to drop traffic from the list:
-
-```routeros
-/ip firewall filter
-add chain=input src-address-list=firehol-combined1 action=drop
-```
-
-Review firewall placement before applying rules to a production router.
-
 ## Local Build
 
 Requires Python 3.10+ and no third-party packages.
@@ -202,16 +179,4 @@ Settings
 
 IP blocklists are provided by FireHOL IP Lists.
 
-The contents and size of each source list can change over time. This repository only converts and combines the configured source data for MikroTik RouterOS use.
-
-## Generated Lists
-
-<!-- BLOCKLIST_COUNTS_START -->
-| List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
-|---|---|---:|---|---|---|---|---|---|
-| `level1` | `level1` | 4,670 | [TXT](dist/plain/level1.txt) | [RSC](dist/mikrotik/level1.rsc) | [NFT](dist/nftables/level1.nft) / [SH](dist/nftables/level1.sh) | [SH](dist/ipset/level1.sh) | [PS1](dist/windows/level1.ps1) / [BAT](dist/windows/level1.bat) | [TXT](dist/pf/level1.txt) / [SH](dist/pf/level1.sh) |
-| `webserver` | `webserver` | 1,255 | [TXT](dist/plain/webserver.txt) | [RSC](dist/mikrotik/webserver.rsc) | [NFT](dist/nftables/webserver.nft) / [SH](dist/nftables/webserver.sh) | [SH](dist/ipset/webserver.sh) | [PS1](dist/windows/webserver.ps1) / [BAT](dist/windows/webserver.bat) | [TXT](dist/pf/webserver.txt) / [SH](dist/pf/webserver.sh) |
-| `combined1` | `etblock` + `forumspam` + `webserver` + `dshield7` + `abuseipdb7` | 2,907 | [TXT](dist/plain/combined1.txt) | [RSC](dist/mikrotik/combined1.rsc) | [NFT](dist/nftables/combined1.nft) / [SH](dist/nftables/combined1.sh) | [SH](dist/ipset/combined1.sh) | [PS1](dist/windows/combined1.ps1) / [BAT](dist/windows/combined1.bat) | [TXT](dist/pf/combined1.txt) / [SH](dist/pf/combined1.sh) |
-| `combined2` | `etblock` + `forumspam` + `webserver` + `dshield30` + `abuseipdb30` | 2,889 | [TXT](dist/plain/combined2.txt) | [RSC](dist/mikrotik/combined2.rsc) | [NFT](dist/nftables/combined2.nft) / [SH](dist/nftables/combined2.sh) | [SH](dist/ipset/combined2.sh) | [PS1](dist/windows/combined2.ps1) / [BAT](dist/windows/combined2.bat) | [TXT](dist/pf/combined2.txt) / [SH](dist/pf/combined2.sh) |
-| `combined3` | `etblock` + `forumspam` + `webserver` + `dshield30` + `abuseipdb30` + `hijack` | 141,280 | [TXT](dist/plain/combined3.txt) | [RSC](dist/mikrotik/combined3.rsc) | [NFT](dist/nftables/combined3.nft) / [SH](dist/nftables/combined3.sh) | [SH](dist/ipset/combined3.sh) | [PS1](dist/windows/combined3.ps1) / [BAT](dist/windows/combined3.bat) | [TXT](dist/pf/combined3.txt) / [SH](dist/pf/combined3.sh) |
-<!-- BLOCKLIST_COUNTS_END -->
+The contents and size of each source list can change over time. This repository only converts and combines the configured source data.
