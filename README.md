@@ -39,7 +39,7 @@ Run this ONCE in you mikrotik to activate block rule and install the scheduler
 
 #download and run installer 
 /tool fetch url="https://blacklists.pages.dev/ipbl-installer.rsc"
-/system/script/run ipbl-installer.rsc
+import ipbl-installer.rsc
 ```
 
 ## Configuration
