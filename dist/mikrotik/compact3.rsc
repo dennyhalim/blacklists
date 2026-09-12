@@ -1,5 +1,5 @@
 # Generated from: etblock, feodo, dshield7, abuseipdb7
-# Entries: 1671
+# Entries: 1673
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="blocklist-compact3" and comment="ipbl.dennyhalim.com"]
@@ -30,7 +30,6 @@ add list="blocklist-compact3" address="14.128.32.0/20" timeout=3d comment="ipbl.
 add list="blocklist-compact3" address="14.128.48.0/21" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="14.152.94.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="16.5.0.0/24" timeout=3d comment="ipbl.dennyhalim.com"
-add list="blocklist-compact3" address="18.217.208.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="19.200.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="23.94.252.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="23.128.48.0/24" timeout=3d comment="ipbl.dennyhalim.com"
@@ -582,6 +581,7 @@ add list="blocklist-compact3" address="107.155.224.0/22" timeout=3d comment="ipb
 add list="blocklist-compact3" address="107.182.240.0/20" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="108.164.0.0/20" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="108.164.128.0/17" timeout=3d comment="ipbl.dennyhalim.com"
+add list="blocklist-compact3" address="109.160.32.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="109.202.104.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="109.206.244.0/22" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="109.238.86.0/23" timeout=3d comment="ipbl.dennyhalim.com"
@@ -976,6 +976,7 @@ add list="blocklist-compact3" address="185.242.226.0/24" timeout=3d comment="ipb
 add list="blocklist-compact3" address="185.242.246.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="185.243.96.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="185.244.249.0/24" timeout=3d comment="ipbl.dennyhalim.com"
+add list="blocklist-compact3" address="185.245.62.0/23" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="185.247.137.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="185.255.20.0/22" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="185.255.192.0/22" timeout=3d comment="ipbl.dennyhalim.com"
@@ -1074,6 +1075,7 @@ add list="blocklist-compact3" address="192.251.231.0/24" timeout=3d comment="ipb
 add list="blocklist-compact3" address="192.252.16.0/20" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="192.252.176.0/20" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="192.253.248.0/24" timeout=3d comment="ipbl.dennyhalim.com"
+add list="blocklist-compact3" address="193.3.53.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="193.3.164.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="193.24.123.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact3" address="193.26.115.0/24" timeout=3d comment="ipbl.dennyhalim.com"
