@@ -7,7 +7,7 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 ## Generated Lists
 
 <!-- BLOCKLIST_COUNTS_START -->
-Last updated: **2026-09-12 16:41:24 UTC**
+Last updated: **2026-09-12 22:46:33 UTC**
 
 | List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
 |---|---|---:|---|---|---|---|---|---|
