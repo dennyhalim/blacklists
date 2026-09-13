@@ -1,5 +1,5 @@
 # Generated from: etblock, feodo, hijack, dshield7, abuseipdb7
-# Entries: 2051
+# Entries: 2052
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="blocklist-compact2" and comment="ipbl.dennyhalim.com"]
@@ -395,6 +395,7 @@ add list="blocklist-compact2" address="89.40.138.0/24" timeout=3d comment="ipbl.
 add list="blocklist-compact2" address="89.40.207.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="89.40.209.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="89.41.50.0/23" timeout=3d comment="ipbl.dennyhalim.com"
+add list="blocklist-compact2" address="89.42.231.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="89.43.50.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="89.45.34.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="89.45.82.0/24" timeout=3d comment="ipbl.dennyhalim.com"
@@ -860,7 +861,6 @@ add list="blocklist-compact2" address="147.50.0.0/16" timeout=3d comment="ipbl.d
 add list="blocklist-compact2" address="147.78.224.0/22" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="147.119.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="147.185.132.0/23" timeout=3d comment="ipbl.dennyhalim.com"
-add list="blocklist-compact2" address="148.59.129.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="148.105.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="148.148.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="148.154.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
@@ -952,7 +952,6 @@ add list="blocklist-compact2" address="160.14.0.0/16" timeout=3d comment="ipbl.d
 add list="blocklist-compact2" address="160.65.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="160.104.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="160.116.0.0/15" timeout=3d comment="ipbl.dennyhalim.com"
-add list="blocklist-compact2" address="160.119.76.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="160.121.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="160.122.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="160.180.0.0/16" timeout=3d comment="ipbl.dennyhalim.com"
@@ -1146,6 +1145,7 @@ add list="blocklist-compact2" address="185.130.36.0/22" timeout=3d comment="ipbl
 add list="blocklist-compact2" address="185.132.8.0/22" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="185.132.53.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="185.134.48.0/22" timeout=3d comment="ipbl.dennyhalim.com"
+add list="blocklist-compact2" address="185.136.15.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="185.137.98.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="185.144.180.0/22" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="185.148.240.0/22" timeout=3d comment="ipbl.dennyhalim.com"
@@ -2022,6 +2022,7 @@ add list="blocklist-compact2" address="213.177.179.0/24" timeout=3d comment="ipb
 add list="blocklist-compact2" address="213.209.159.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="216.7.96.0/20" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="216.9.224.0/22" timeout=3d comment="ipbl.dennyhalim.com"
+add list="blocklist-compact2" address="216.25.89.0/24" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="216.26.224.0/19" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="216.30.144.0/20" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-compact2" address="216.63.240.0/22" timeout=3d comment="ipbl.dennyhalim.com"
