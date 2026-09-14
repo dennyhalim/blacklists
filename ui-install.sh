@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# UBIQUITI UNIFI UDR UCQ installer
+# UBIQUITI UNIFI UDR UCG installer
 # ipbl.dennyhalim.com
 set -euo pipefail
 
@@ -17,7 +17,7 @@ DEFAULT_BLOCKLIST_URL="https://blacklists.pages.dev/dist/plain/combined1.txt"
 
 usage() {
     cat <<'EOF'
-UBIQUITI UNIFI UDR UCQ installer ipbl.dennyhalim.com
+UBIQUITI UNIFI UDR UCG installer ipbl.dennyhalim.com
 
 Usage:
   sudo ./ui-install.sh [URL...]
