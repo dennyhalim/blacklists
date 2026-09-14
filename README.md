@@ -50,7 +50,7 @@ curl -O https://blacklists.pages.dev/ui-install.sh
 #examine
 less ui-install.sh
 # INSTALL
-sudo ./install.sh
+sudo ./ui-install.sh
 ```
 
 
