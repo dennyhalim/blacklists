@@ -101,12 +101,11 @@ LISTS: dict[str, tuple[str, ...]] = {
     "etblock": ("etblock",),
     "hijack": ("hijack",),
     "webserver": ("webserver",),
-    "compact1": ("etblock","feodo","toxic","dshield7","abuseipdb7"),
-    "compact2": ("etblock","feodo","dshield7","abuseipdb7"),
-    "compact3": ("etblock","feodo","dshield7","abuseipdb7"),
-    "combined1": ("etblock","feodo","toxic","webserver","dshield7","abuseipdb7"),
-    "combined2": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum8"),
-    "combined3": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum8","etcompromised"),
+    "compact": ("etblock","feodo","toxic","dshield7","abuseipdb7"),
+    "compact1": ("etblock","feodo","dshield7","abuseipdb7"),
+    "combined": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","ipsum4","strongips","etcompromised"),
+    "combined1": ("etblock","feodo","toxic","webserver","dshield7","abuseipdb7","ipsum8"),
+    "combined2": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum4"),
     "complete": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum4","level2","level3","botnet","etcompromised"),
 }
 
