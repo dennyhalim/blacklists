@@ -97,7 +97,7 @@ SOURCES: dict[str, str] = {
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
-    "level2": ("level2",),
+    "level4": ("level4",),
     "etblock": ("etblock",),
     "hijack": ("hijack",),
     "webserver": ("webserver",),
