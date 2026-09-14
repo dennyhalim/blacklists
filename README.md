@@ -22,10 +22,9 @@ Last updated: **2026-09-13 22:47:35 UTC**
 | `complete` | `etblock` + `feodo` + `toxic` + `webserver` + `hijack` + `dshield30` + `abuseipdb30` + `strongips` + `level2` + `level4` + `botnet` | 175,539 | [TXT](dist/plain/complete.txt) | [RSC](dist/mikrotik/complete.rsc) | [NFT](dist/nftables/complete.nft) / [SH](dist/nftables/complete.sh) | [SH](dist/ipset/complete.sh) | [PS1](dist/windows/complete.ps1) / [BAT](dist/windows/complete.bat) | [TXT](dist/pf/complete.txt) / [SH](dist/pf/complete.sh) |
 <!-- BLOCKLIST_COUNTS_END -->
 
+## first, download, examine, audit the script before you execute on your router!
 
 ## Mikrotik settings
-
-> first, download, examine, audit the script before you execute on your router!
 
 Run this ONCE in you mikrotik to activate block rule and install the scheduler
 
@@ -41,6 +40,19 @@ import ipbl-installer.rsc
 ```
 
 Overlapping and adjacent networks are collapsed where possible before generating the RouterOS list.
+
+## Ubiquiti / Unifi / UDR / UCG blacklist install
+
+```bash
+#download
+cd /data
+curl -O https://blacklists.pages.dev/ui-install.sh
+#examine
+less ui-install.sh
+# INSTALL
+sudo ./install.sh
+```
+
 
 ## Local Build
 
