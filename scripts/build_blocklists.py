@@ -101,10 +101,10 @@ LISTS: dict[str, tuple[str, ...]] = {
     "etblock": ("etblock",),
     "hijack": ("hijack",),
     "webserver": ("webserver",),
-    "compact": ("etblock","feodo","toxic","dshield7","abuseipdb7"),
+    "compact": ("etblock","feodo","toxic","dshield7","abuseipdb7","ipsum7"),
     "compact1": ("etblock","feodo","dshield7","abuseipdb7"),
     "combined": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","ipsum3","strongips","etcompromised"),
-    "combined1": ("etblock","feodo","toxic","webserver","dshield7","abuseipdb7","ipsum7"),
+    "combined1": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","ipsum3"),
     "combined2": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum3"),
     "complete": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum3","level2","level3","botnet","etcompromised"),
 }
