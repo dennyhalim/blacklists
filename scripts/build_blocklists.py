@@ -46,6 +46,10 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_level2.netset"
     ),
+    "level3": (
+        "https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/firehol_level3.netset"
+    ),
     "level4": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_level4.netset"
@@ -103,7 +107,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "combined1": ("etblock","feodo","toxic","webserver","dshield7","abuseipdb7"),
     "combined2": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum8"),
     "combined3": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum8","etcompromised"),
-    "complete": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum4","level2","level4","botnet","etcompromised"),
+    "complete": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum4","level2","level3","botnet","etcompromised"),
 }
 
 EXPORTS: dict[str, bool] = {
