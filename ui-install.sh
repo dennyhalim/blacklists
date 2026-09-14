@@ -3,7 +3,7 @@
 # ipbl.dennyhalim.com
 set -euo pipefail
 
-INSTALL_DIR="/data/ipbl"
+INSTALL_DIR="/data/ipblocklist"
 CONFIG_FILE="$INSTALL_DIR/config"
 UPDATE_SCRIPT="$INSTALL_DIR/update.sh"
 SERVICE_NAME="ipblocklist.service"
@@ -12,17 +12,22 @@ SERVICE_FILE="/etc/systemd/system/$SERVICE_NAME"
 TIMER_FILE="/etc/systemd/system/$TIMER_NAME"
 TABLE_NAME="ipblocklists"
 SET_NAME="blocked_ipv4"
-UPDATE_MINUTES=90
+UPDATE_MINUTES=30
+DEFAULT_BLOCKLIST_URL="https://blacklists.pages.dev/dist/plain/combined1.txt"
 
 usage() {
     cat <<'EOF'
-UBIQUITI UNIFI UDR UCQ installer by ipbl.dennyhalim.com
+UBIQUITI UNIFI UDR UCQ installer ipbl.dennyhalim.com
 
 Usage:
-  sudo ./uinstall.sh URL [URL...]
+  sudo ./ui-install.sh [URL...]
 
-Example:
-  sudo ./uinstall.sh \
+Without URLs, the default blocklist is used.
+
+Examples:
+  sudo ./ui-install.sh
+
+  sudo ./ui-install.sh \
     https://blacklists.pages.dev/dist/plain/combined2.txt \
     https://blacklists.pages.dev/dist/plain/level2.txt
 
@@ -36,8 +41,9 @@ if [[ "$(id -u)" -ne 0 ]]; then
 fi
 
 if (( $# == 0 )); then
-    usage
-    exit 1
+    set -- "$DEFAULT_BLOCKLIST_URL"
+    echo "No blocklist URL supplied; using default:"
+    echo "  $DEFAULT_BLOCKLIST_URL"
 fi
 
 for cmd in nft curl ip awk sort grep mktemp systemctl; do
@@ -50,7 +56,7 @@ done
 mkdir -p "$INSTALL_DIR"
 
 {
-    echo '# Managed by ipbl.dennyhalim.com uinstall.sh'
+    echo '# Managed by ipbl.dennyhalim.com install.sh'
     echo 'BLOCKLIST_URLS=('
     for url in "$@"; do
         printf '    %q\n' "$url"
@@ -61,11 +67,9 @@ chmod 0600 "$CONFIG_FILE"
 
 cat > "$UPDATE_SCRIPT" <<'EOF'
 #!/usr/bin/env bash
-# UBIQUITI UNIFI UDR UCQ installer
-# ipbl.dennyhalim.com
 set -euo pipefail
 
-INSTALL_DIR="/data/ipbl"
+INSTALL_DIR="/data/ipblocklist"
 CONFIG_FILE="$INSTALL_DIR/config"
 TABLE_NAME="ipblocklists"
 SET_NAME="blocked_ipv4"
