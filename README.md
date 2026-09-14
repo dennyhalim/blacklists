@@ -7,7 +7,7 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 ## Generated Lists
 
 <!-- BLOCKLIST_COUNTS_START -->
-Last updated: **2026-09-14 03:39:29 UTC**
+Last updated: **2026-09-14 04:35:03 UTC**
 
 | List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
 |---|---|---:|---|---|---|---|---|---|
@@ -21,7 +21,7 @@ Last updated: **2026-09-14 03:39:29 UTC**
 | `combined1` | `etblock` + `feodo` + `toxic` + `webserver` + `dshield7` + `abuseipdb7` | 2,990 | [TXT](dist/plain/combined1.txt) | [RSC](dist/mikrotik/combined1.rsc) | [NFT](dist/nftables/combined1.nft) / [SH](dist/nftables/combined1.sh) | [SH](dist/ipset/combined1.sh) | [PS1](dist/windows/combined1.ps1) / [BAT](dist/windows/combined1.bat) | [TXT](dist/pf/combined1.txt) / [SH](dist/pf/combined1.sh) |
 | `combined2` | `etblock` + `feodo` + `toxic` + `webserver` + `dshield30` + `abuseipdb30` + `strongips` + `ipsum8` | 3,288 | [TXT](dist/plain/combined2.txt) | [RSC](dist/mikrotik/combined2.rsc) | [NFT](dist/nftables/combined2.nft) / [SH](dist/nftables/combined2.sh) | [SH](dist/ipset/combined2.sh) | [PS1](dist/windows/combined2.ps1) / [BAT](dist/windows/combined2.bat) | [TXT](dist/pf/combined2.txt) / [SH](dist/pf/combined2.sh) |
 | `combined3` | `etblock` + `feodo` + `toxic` + `webserver` + `dshield30` + `abuseipdb30` + `strongips` + `ipsum8` + `etcompromised` | 3,823 | [TXT](dist/plain/combined3.txt) | [RSC](dist/mikrotik/combined3.rsc) | [NFT](dist/nftables/combined3.nft) / [SH](dist/nftables/combined3.sh) | [SH](dist/ipset/combined3.sh) | [PS1](dist/windows/combined3.ps1) / [BAT](dist/windows/combined3.bat) | [TXT](dist/pf/combined3.txt) / [SH](dist/pf/combined3.sh) |
-| `complete` | `etblock` + `feodo` + `toxic` + `webserver` + `dshield30` + `abuseipdb30` + `strongips` + `ipsum4` + `level2` + `level4` + `botnet` + `etcompromised` | 177,889 | [TXT](dist/plain/complete.txt) | [RSC](dist/mikrotik/complete.rsc) | [NFT](dist/nftables/complete.nft) / [SH](dist/nftables/complete.sh) | [SH](dist/ipset/complete.sh) | [PS1](dist/windows/complete.ps1) / [BAT](dist/windows/complete.bat) | [TXT](dist/pf/complete.txt) / [SH](dist/pf/complete.sh) |
+| `complete` | `etblock` + `feodo` + `toxic` + `webserver` + `dshield30` + `abuseipdb30` + `strongips` + `ipsum4` + `level2` + `level3` + `botnet` + `etcompromised` | 52,734 | [TXT](dist/plain/complete.txt) | [RSC](dist/mikrotik/complete.rsc) | [NFT](dist/nftables/complete.nft) / [SH](dist/nftables/complete.sh) | [SH](dist/ipset/complete.sh) | [PS1](dist/windows/complete.ps1) / [BAT](dist/windows/complete.bat) | [TXT](dist/pf/complete.txt) / [SH](dist/pf/complete.sh) |
 <!-- BLOCKLIST_COUNTS_END -->
 
 ## first, download, examine, audit the script before you execute on your router!
