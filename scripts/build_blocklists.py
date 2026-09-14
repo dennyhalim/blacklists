@@ -100,10 +100,10 @@ LISTS: dict[str, tuple[str, ...]] = {
     "compact1": ("etblock","feodo","toxic","hijack","dshield7","abuseipdb7"),
     "compact2": ("etblock","feodo","hijack","dshield7","abuseipdb7"),
     "compact3": ("etblock","feodo","dshield7","abuseipdb7"),
-    "combined1": ("etblock","feodo","toxic","webserver","hijack","dshield7","abuseipdb7"),
-    "combined2": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","strongips","ipsum8"),
-    "combined3": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","strongips","ipsum8","etcompromised"),
-    "complete": ("etblock","feodo","toxic","webserver","hijack","dshield30","abuseipdb30","strongips","ipsum4","level2","level4","botnet","etcompromised"),
+    "combined1": ("etblock","feodo","toxic","webserver","dshield7","abuseipdb7"),
+    "combined2": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum8"),
+    "combined3": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum8","etcompromised"),
+    "complete": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum4","level2","level4","botnet","etcompromised"),
 }
 
 EXPORTS: dict[str, bool] = {
