@@ -86,13 +86,13 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-75percent.ipv4"
     ),
-    "ipsum4": (
+    "ipsum3": (
         "https://raw.githubusercontent.com/"
-        "stamparm/ipsum/master/levels/4.txt"
+        "stamparm/ipsum/master/levels/3.txt"
     ),
-    "ipsum8": (
+    "ipsum7": (
         "https://raw.githubusercontent.com/"
-        "stamparm/ipsum/master/levels/8.txt"
+        "stamparm/ipsum/master/levels/7.txt"
     ),
 }
 
@@ -103,10 +103,10 @@ LISTS: dict[str, tuple[str, ...]] = {
     "webserver": ("webserver",),
     "compact": ("etblock","feodo","toxic","dshield7","abuseipdb7"),
     "compact1": ("etblock","feodo","dshield7","abuseipdb7"),
-    "combined": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","ipsum4","strongips","etcompromised"),
-    "combined1": ("etblock","feodo","toxic","webserver","dshield7","abuseipdb7","ipsum8"),
-    "combined2": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum4"),
-    "complete": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum4","level2","level3","botnet","etcompromised"),
+    "combined": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","ipsum3","strongips","etcompromised"),
+    "combined1": ("etblock","feodo","toxic","webserver","dshield7","abuseipdb7","ipsum7"),
+    "combined2": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum3"),
+    "complete": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum3","level2","level3","botnet","etcompromised"),
 }
 
 EXPORTS: dict[str, bool] = {
