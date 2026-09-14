@@ -9,8 +9,47 @@
     "powershell": true
   },
   "lists": {
+    "combined": {
+      "entries": 14484,
+      "files": {
+        "bat": [
+          "dist/windows/combined.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined.nft",
+          "dist/nftables/combined.sh"
+        ],
+        "pf": [
+          "dist/pf/combined.txt",
+          "dist/pf/combined.sh"
+        ],
+        "plain": [
+          "dist/plain/combined.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "feodo",
+        "toxic",
+        "webserver",
+        "dshield30",
+        "abuseipdb30",
+        "ipsum3",
+        "strongips",
+        "etcompromised"
+      ]
+    },
     "combined1": {
-      "entries": 2990,
+      "entries": 14078,
       "files": {
         "bat": [
           "dist/windows/combined1.bat"
@@ -41,12 +80,13 @@
         "feodo",
         "toxic",
         "webserver",
-        "dshield7",
-        "abuseipdb7"
+        "dshield30",
+        "abuseipdb30",
+        "ipsum3"
       ]
     },
     "combined2": {
-      "entries": 3288,
+      "entries": 14182,
       "files": {
         "bat": [
           "dist/windows/combined2.bat"
@@ -80,50 +120,47 @@
         "dshield30",
         "abuseipdb30",
         "strongips",
-        "ipsum8"
+        "ipsum3"
       ]
     },
-    "combined3": {
-      "entries": 3823,
+    "compact": {
+      "entries": 1890,
       "files": {
         "bat": [
-          "dist/windows/combined3.bat"
+          "dist/windows/compact.bat"
         ],
         "ipset": [
-          "dist/ipset/combined3.sh"
+          "dist/ipset/compact.sh"
         ],
         "mikrotik": [
-          "dist/mikrotik/combined3.rsc"
+          "dist/mikrotik/compact.rsc"
         ],
         "nftables": [
-          "dist/nftables/combined3.nft",
-          "dist/nftables/combined3.sh"
+          "dist/nftables/compact.nft",
+          "dist/nftables/compact.sh"
         ],
         "pf": [
-          "dist/pf/combined3.txt",
-          "dist/pf/combined3.sh"
+          "dist/pf/compact.txt",
+          "dist/pf/compact.sh"
         ],
         "plain": [
-          "dist/plain/combined3.txt"
+          "dist/plain/compact.txt"
         ],
         "powershell": [
-          "dist/windows/combined3.ps1"
+          "dist/windows/compact.ps1"
         ]
       },
       "sources": [
         "etblock",
         "feodo",
         "toxic",
-        "webserver",
-        "dshield30",
-        "abuseipdb30",
-        "strongips",
-        "ipsum8",
-        "etcompromised"
+        "dshield7",
+        "abuseipdb7",
+        "ipsum7"
       ]
     },
     "compact1": {
-      "entries": 1732,
+      "entries": 1674,
       "files": {
         "bat": [
           "dist/windows/compact1.bat"
@@ -152,81 +189,12 @@
       "sources": [
         "etblock",
         "feodo",
-        "toxic",
-        "dshield7",
-        "abuseipdb7"
-      ]
-    },
-    "compact2": {
-      "entries": 1674,
-      "files": {
-        "bat": [
-          "dist/windows/compact2.bat"
-        ],
-        "ipset": [
-          "dist/ipset/compact2.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/compact2.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/compact2.nft",
-          "dist/nftables/compact2.sh"
-        ],
-        "pf": [
-          "dist/pf/compact2.txt",
-          "dist/pf/compact2.sh"
-        ],
-        "plain": [
-          "dist/plain/compact2.txt"
-        ],
-        "powershell": [
-          "dist/windows/compact2.ps1"
-        ]
-      },
-      "sources": [
-        "etblock",
-        "feodo",
-        "dshield7",
-        "abuseipdb7"
-      ]
-    },
-    "compact3": {
-      "entries": 1674,
-      "files": {
-        "bat": [
-          "dist/windows/compact3.bat"
-        ],
-        "ipset": [
-          "dist/ipset/compact3.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/compact3.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/compact3.nft",
-          "dist/nftables/compact3.sh"
-        ],
-        "pf": [
-          "dist/pf/compact3.txt",
-          "dist/pf/compact3.sh"
-        ],
-        "plain": [
-          "dist/plain/compact3.txt"
-        ],
-        "powershell": [
-          "dist/windows/compact3.ps1"
-        ]
-      },
-      "sources": [
-        "etblock",
-        "feodo",
         "dshield7",
         "abuseipdb7"
       ]
     },
     "complete": {
-      "entries": 52734,
+      "entries": 53294,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -260,7 +228,7 @@
         "dshield30",
         "abuseipdb30",
         "strongips",
-        "ipsum4",
+        "ipsum3",
         "level2",
         "level3",
         "botnet",
@@ -329,35 +297,35 @@
         "hijack"
       ]
     },
-    "level2": {
-      "entries": 21903,
+    "level4": {
+      "entries": 146301,
       "files": {
         "bat": [
-          "dist/windows/level2.bat"
+          "dist/windows/level4.bat"
         ],
         "ipset": [
-          "dist/ipset/level2.sh"
+          "dist/ipset/level4.sh"
         ],
         "mikrotik": [
-          "dist/mikrotik/level2.rsc"
+          "dist/mikrotik/level4.rsc"
         ],
         "nftables": [
-          "dist/nftables/level2.nft",
-          "dist/nftables/level2.sh"
+          "dist/nftables/level4.nft",
+          "dist/nftables/level4.sh"
         ],
         "pf": [
-          "dist/pf/level2.txt",
-          "dist/pf/level2.sh"
+          "dist/pf/level4.txt",
+          "dist/pf/level4.sh"
         ],
         "plain": [
-          "dist/plain/level2.txt"
+          "dist/plain/level4.txt"
         ],
         "powershell": [
-          "dist/windows/level2.ps1"
+          "dist/windows/level4.ps1"
         ]
       },
       "sources": [
-        "level2"
+        "level4"
       ]
     },
     "webserver": {
@@ -402,8 +370,8 @@
     "etcompromised": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_compromised.ipset",
     "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
     "hijack": "https://raw.githubusercontent.com/kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset",
-    "ipsum4": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/4.txt",
-    "ipsum8": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/8.txt",
+    "ipsum3": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/3.txt",
+    "ipsum7": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/7.txt",
     "level2": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset",
     "level3": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level3.netset",
     "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",

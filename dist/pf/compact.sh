@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 set -eu
 
-TABLE='blocklist-combined3'
+TABLE='blocklist-compact'
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 
 # Replace the table contents in one operation so removed source IPs disappear.
-pfctl -t "$TABLE" -T replace -f "$SCRIPT_DIR/combined3.txt"
+pfctl -t "$TABLE" -T replace -f "$SCRIPT_DIR/compact.txt"
