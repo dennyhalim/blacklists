@@ -3,7 +3,7 @@
 # ipbl.dennyhalim.com
 
 :local blacklistUrl "https://blacklists.pages.dev/dist/mikrotik/combined1.rsc"
-:local interval "8h"
+:local interval "13h"
 
 :local downloaderName "ipbl-downloader"
 :local schedulerName "ipbl-updater"
