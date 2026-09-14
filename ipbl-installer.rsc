@@ -2,7 +2,7 @@
 # RouterOS v7
 # ipbl.dennyhalim.com
 
-:local blacklistUrl "https://blacklists.pages.dev/dist/mikrotik/combined1.rsc"
+:local blacklistUrl "https://blacklists.pages.dev/dist/mikrotik/combined.rsc"
 :local interval "13h"
 
 :local downloaderName "ipbl-downloader"
