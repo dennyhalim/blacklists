@@ -10,7 +10,7 @@
   },
   "lists": {
     "combined1": {
-      "entries": 3367,
+      "entries": 2990,
       "files": {
         "bat": [
           "dist/windows/combined1.bat"
@@ -41,13 +41,12 @@
         "feodo",
         "toxic",
         "webserver",
-        "hijack",
         "dshield7",
         "abuseipdb7"
       ]
     },
     "combined2": {
-      "entries": 3632,
+      "entries": 3288,
       "files": {
         "bat": [
           "dist/windows/combined2.bat"
@@ -78,14 +77,53 @@
         "feodo",
         "toxic",
         "webserver",
-        "hijack",
         "dshield30",
         "abuseipdb30",
-        "strongips"
+        "strongips",
+        "ipsum8"
+      ]
+    },
+    "combined3": {
+      "entries": 3823,
+      "files": {
+        "bat": [
+          "dist/windows/combined3.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined3.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined3.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined3.nft",
+          "dist/nftables/combined3.sh"
+        ],
+        "pf": [
+          "dist/pf/combined3.txt",
+          "dist/pf/combined3.sh"
+        ],
+        "plain": [
+          "dist/plain/combined3.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined3.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "feodo",
+        "toxic",
+        "webserver",
+        "dshield30",
+        "abuseipdb30",
+        "strongips",
+        "ipsum8",
+        "etcompromised"
       ]
     },
     "compact1": {
-      "entries": 2109,
+      "entries": 1732,
       "files": {
         "bat": [
           "dist/windows/compact1.bat"
@@ -115,13 +153,12 @@
         "etblock",
         "feodo",
         "toxic",
-        "hijack",
         "dshield7",
         "abuseipdb7"
       ]
     },
     "compact2": {
-      "entries": 2052,
+      "entries": 1674,
       "files": {
         "bat": [
           "dist/windows/compact2.bat"
@@ -150,7 +187,6 @@
       "sources": [
         "etblock",
         "feodo",
-        "hijack",
         "dshield7",
         "abuseipdb7"
       ]
@@ -190,7 +226,7 @@
       ]
     },
     "complete": {
-      "entries": 175539,
+      "entries": 177889,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -221,13 +257,45 @@
         "feodo",
         "toxic",
         "webserver",
-        "hijack",
         "dshield30",
         "abuseipdb30",
         "strongips",
+        "ipsum4",
         "level2",
         "level4",
-        "botnet"
+        "botnet",
+        "etcompromised"
+      ]
+    },
+    "etblock": {
+      "entries": 1632,
+      "files": {
+        "bat": [
+          "dist/windows/etblock.bat"
+        ],
+        "ipset": [
+          "dist/ipset/etblock.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/etblock.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/etblock.nft",
+          "dist/nftables/etblock.sh"
+        ],
+        "pf": [
+          "dist/pf/etblock.txt",
+          "dist/pf/etblock.sh"
+        ],
+        "plain": [
+          "dist/plain/etblock.txt"
+        ],
+        "powershell": [
+          "dist/windows/etblock.ps1"
+        ]
+      },
+      "sources": [
+        "etblock"
       ]
     },
     "hijack": {
@@ -331,8 +399,11 @@
     "dshield30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_30d.netset",
     "dshield7": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_7d.netset",
     "etblock": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_block.netset",
+    "etcompromised": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_compromised.ipset",
     "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
     "hijack": "https://raw.githubusercontent.com/kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset",
+    "ipsum4": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/4.txt",
+    "ipsum8": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/8.txt",
     "level2": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset",
     "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
     "strongips": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset",
