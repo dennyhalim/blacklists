@@ -71,7 +71,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "level4": ("level4",),
     "threatfox": ("threatfox",),
     "hijack": ("hijack",),
-    "webserver": ("webserver",),
+    "botnet": ("botnet",),
     "compact": ("etblock","feodo","dshield7","abuseipdb7","ipsum7","toxic"),
     "compact1": ("etblock","feodo","dshield7","abuseipdb7"),
     "combined": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic","strongips","etcompromised"),
