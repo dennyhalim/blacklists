@@ -9,8 +9,39 @@
     "powershell": true
   },
   "lists": {
+    "botnet": {
+      "entries": 43592,
+      "files": {
+        "bat": [
+          "dist/windows/botnet.bat"
+        ],
+        "ipset": [
+          "dist/ipset/botnet.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/botnet.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/botnet.nft",
+          "dist/nftables/botnet.sh"
+        ],
+        "pf": [
+          "dist/pf/botnet.txt",
+          "dist/pf/botnet.sh"
+        ],
+        "plain": [
+          "dist/plain/botnet.txt"
+        ],
+        "powershell": [
+          "dist/windows/botnet.ps1"
+        ]
+      },
+      "sources": [
+        "botnet"
+      ]
+    },
     "combined": {
-      "entries": 13686,
+      "entries": 13574,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -39,17 +70,17 @@
       "sources": [
         "etblock",
         "feodo",
-        "toxic",
         "webserver",
         "dshield30",
         "abuseipdb30",
         "ipsum3",
+        "toxic",
         "strongips",
         "etcompromised"
       ]
     },
     "combined1": {
-      "entries": 13242,
+      "entries": 13173,
       "files": {
         "bat": [
           "dist/windows/combined1.bat"
@@ -78,15 +109,15 @@
       "sources": [
         "etblock",
         "feodo",
-        "toxic",
         "webserver",
         "dshield30",
         "abuseipdb30",
-        "ipsum3"
+        "ipsum3",
+        "toxic"
       ]
     },
     "combined2": {
-      "entries": 13353,
+      "entries": 13285,
       "files": {
         "bat": [
           "dist/windows/combined2.bat"
@@ -115,16 +146,16 @@
       "sources": [
         "etblock",
         "feodo",
-        "toxic",
         "webserver",
         "dshield30",
         "abuseipdb30",
         "strongips",
-        "ipsum3"
+        "ipsum3",
+        "toxic"
       ]
     },
     "compact": {
-      "entries": 1796,
+      "entries": 1809,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -153,14 +184,14 @@
       "sources": [
         "etblock",
         "feodo",
-        "toxic",
         "dshield7",
         "abuseipdb7",
-        "ipsum7"
+        "ipsum7",
+        "toxic"
       ]
     },
     "compact1": {
-      "entries": 1673,
+      "entries": 1688,
       "files": {
         "bat": [
           "dist/windows/compact1.bat"
@@ -194,7 +225,7 @@
       ]
     },
     "complete": {
-      "entries": 50355,
+      "entries": 64392,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -223,16 +254,17 @@
       "sources": [
         "etblock",
         "feodo",
-        "toxic",
         "webserver",
         "dshield30",
         "abuseipdb30",
         "strongips",
         "ipsum3",
+        "toxic",
         "level2",
         "level3",
         "botnet",
-        "etcompromised"
+        "etcompromised",
+        "threatfox"
       ]
     },
     "hijack": {
@@ -267,7 +299,7 @@
       ]
     },
     "level4": {
-      "entries": 147933,
+      "entries": 153240,
       "files": {
         "bat": [
           "dist/windows/level4.bat"
@@ -298,7 +330,7 @@
       ]
     },
     "threatfox": {
-      "entries": 17870,
+      "entries": 17816,
       "files": {
         "bat": [
           "dist/windows/threatfox.bat"
@@ -326,37 +358,6 @@
       },
       "sources": [
         "threatfox"
-      ]
-    },
-    "webserver": {
-      "entries": 1338,
-      "files": {
-        "bat": [
-          "dist/windows/webserver.bat"
-        ],
-        "ipset": [
-          "dist/ipset/webserver.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/webserver.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/webserver.nft",
-          "dist/nftables/webserver.sh"
-        ],
-        "pf": [
-          "dist/pf/webserver.txt",
-          "dist/pf/webserver.sh"
-        ],
-        "plain": [
-          "dist/plain/webserver.txt"
-        ],
-        "powershell": [
-          "dist/windows/webserver.ps1"
-        ]
-      },
-      "sources": [
-        "webserver"
       ]
     }
   },
