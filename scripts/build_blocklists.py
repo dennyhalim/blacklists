@@ -34,66 +34,36 @@ INDEX_TABLE_END = "<!-- BLOCKLIST_INDEX_END -->"
 SOURCES: dict[str, str] = {
     "feodo": ("https://feodotracker.abuse.ch/downloads/ipblocklist.txt"),
     "botnet": ("https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt"),
-    "etblock": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/et_block.netset"
-    ),
-    "etcompromised": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/et_compromised.ipset"
-    ),
-    "level2": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/firehol_level2.netset"
-    ),
-    "level3": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/firehol_level3.netset"
-    ),
-    "level4": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/firehol_level4.netset"
-    ),
-    "hijack": (
-        "https://raw.githubusercontent.com/"
-        "kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset"
-    ),
-    "strongips": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset"
-    ),
-    "toxic": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"
-    ),
-    "dshield7": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/dshield_7d.netset"
-    ),
-    "dshield30": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/dshield_30d.netset"
-    ),
-    "webserver": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/firehol_webserver.netset"
-    ),
-    "abuseipdb7": (
-        "https://raw.githubusercontent.com/"
-        "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4"
-    ),
-    "abuseipdb30": (
-        "https://raw.githubusercontent.com/"
-        "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-75percent.ipv4"
-    ),
-    "ipsum3": (
-        "https://raw.githubusercontent.com/"
-        "stamparm/ipsum/master/levels/3.txt"
-    ),
-    "ipsum7": (
-        "https://raw.githubusercontent.com/"
-        "stamparm/ipsum/master/levels/7.txt"
-    ),
+    "etblock": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/et_block.netset"),
+    "etcompromised": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/et_compromised.ipset"),
+    "level2": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/firehol_level2.netset"),
+    "level3": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/firehol_level3.netset"),
+    "level4": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/firehol_level4.netset"),
+    "hijack": ("https://raw.githubusercontent.com/"
+        "kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset"),
+    "strongips": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset"),
+    "toxic": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"),
+    "dshield7": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/dshield_7d.netset"),
+    "dshield30": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/dshield_30d.netset"),
+    "webserver": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/firehol_webserver.netset"),
+    "abuseipdb7": ("https://raw.githubusercontent.com/"
+        "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4"),
+    "abuseipdb30": ("https://raw.githubusercontent.com/"
+        "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-75percent.ipv4"),
+    "ipsum3": ("https://raw.githubusercontent.com/"
+        "stamparm/ipsum/master/levels/3.txt"),
+    "ipsum7": ("https://raw.githubusercontent.com/"
+        "stamparm/ipsum/master/levels/7.txt"),
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
