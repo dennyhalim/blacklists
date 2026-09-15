@@ -77,7 +77,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "combined": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic","strongips","etcompromised"),
     "combined1": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic"),
     "combined2": ("etblock","feodo","webserver","dshield30","abuseipdb30","strongips","ipsum3","toxic"),
-    "complete": ("etblock","feodo","webserver","dshield30","abuseipdb30","strongips","ipsum3","toxic","level2","level3","botnet","etcompromised"),
+    "complete": ("etblock","feodo","webserver","dshield30","abuseipdb30","strongips","ipsum3","toxic","level2","level3","botnet","etcompromised","threatfox"),
 }
 
 EXPORTS: dict[str, bool] = {
