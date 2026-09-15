@@ -3,7 +3,7 @@ set -euo pipefail
 
 TABLE_FAMILY='inet'
 TABLE_NAME='filter'
-SET_NAME='blocklist_etblock'
+SET_NAME='blocklist_threatfox'
 TIMEOUT='3d'
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
@@ -16,4 +16,4 @@ if ! nft list set "$TABLE_FAMILY" "$TABLE_NAME" "$SET_NAME" >/dev/null 2>&1; the
 fi
 
 # Flush + repopulate are applied in one nft transaction.
-nft -f "$SCRIPT_DIR/etblock.nft"
+nft -f "$SCRIPT_DIR/threatfox.nft"
