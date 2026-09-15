@@ -72,12 +72,12 @@ LISTS: dict[str, tuple[str, ...]] = {
     "threatfox": ("threatfox",),
     "hijack": ("hijack",),
     "webserver": ("webserver",),
-    "compact": ("etblock","feodo","toxic","dshield7","abuseipdb7","ipsum7"),
+    "compact": ("etblock","feodo","dshield7","abuseipdb7","ipsum7","toxic"),
     "compact1": ("etblock","feodo","dshield7","abuseipdb7"),
-    "combined": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","ipsum3","strongips","etcompromised"),
-    "combined1": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","ipsum3"),
-    "combined2": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum3"),
-    "complete": ("etblock","feodo","toxic","webserver","dshield30","abuseipdb30","strongips","ipsum3","level2","level3","botnet","etcompromised"),
+    "combined": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic","strongips","etcompromised"),
+    "combined1": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic"),
+    "combined2": ("etblock","feodo","webserver","dshield30","abuseipdb30","strongips","ipsum3","toxic"),
+    "complete": ("etblock","feodo","webserver","dshield30","abuseipdb30","strongips","ipsum3","toxic","level2","level3","botnet","etcompromised"),
 }
 
 EXPORTS: dict[str, bool] = {
