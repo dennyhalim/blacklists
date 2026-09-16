@@ -60,6 +60,8 @@ SOURCES: dict[str, str] = {
         "firehol/blocklist-ipsets/master/dshield_30d.netset"),
     "webserver": ("https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_webserver.netset"),
+    "webclient": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/firehol_webclient.netset"),
     "abuseipdb7": ("https://raw.githubusercontent.com/"
         "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4"),
     "abuseipdb30": ("https://raw.githubusercontent.com/"
@@ -73,7 +75,7 @@ SOURCES: dict[str, str] = {
 LISTS: dict[str, tuple[str, ...]] = {
     "base3": ("etblock","toxic","dshield30","abuseipdb30","feodo"),
     "base7": ("etblock","toxic","dshield7","abuseipdb7","feodo"),
-    "baseip": ("feodo","strongips","etcompromised","webserver"),
+    "baseip": ("feodo","strongips","etcompromised","webserver","webclient"),
     "compact": ("base7","ipsum7","baseip"),
     "combined": ("base3","ipsum3","baseip"),
     "combined4server": ("combined","threatfox","level4","abuser","botnet"),
