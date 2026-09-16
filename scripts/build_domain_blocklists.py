@@ -11,18 +11,18 @@ INDEX_START='<!-- DOMAIN_BLOCKLISTS_START -->'; INDEX_END='<!-- DOMAIN_BLOCKLIST
 
 SOURCES={
  'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
- 'threat1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
- 'threatmini1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
+ #'tif':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
+ 'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
  'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-onlydomains.txt',
  'phish1':'https://phishing.army/download/phishing_army_blocklist_extended.txt',
  'nsfw1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt',
 }
 ALLOWLIST=set()
 LISTS={
- 'threat': {'from':('threatmini1',), 'remove_labels':('www','web')},
+ 'threat': {'from':('tifmini',), 'merge_subdomains':4},
  'fake': {'from':('fake1','phish1',), 'remove_labels':('www','web')},
- 'gambling': {'from':('gambling1',), 'merge_subdomains':3},
- 'nsfw': {'from':('nsfw1',), 'merge_subdomains':3},
+ 'gambling': {'from':('gambling1',), 'merge_subdomains':4},
+ 'nsfw': {'from':('nsfw1',), 'merge_subdomains':4},
 }
 
 EXPORTS=('plain','hosts','adblock','dnsmasq','rpz','wildcard')
