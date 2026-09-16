@@ -1,0 +1,193 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+import hashlib, html, ipaddress, json, re, urllib.request
+from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+
+DIST=Path('dist'); README=Path('README.md'); INDEX=Path('index.html')
+START='<!-- DOMAIN_BLOCKLISTS_START -->'; END='<!-- DOMAIN_BLOCKLISTS_END -->'
+
+SOURCES={'hagezi':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/pro.txt'}
+ALLOWLIST=set()
+LISTS={
+ 'list1': {'from':('hagezi',), 'remove_labels':('www','web')},
+ 'list2': {'from':('list1',), 'merge_subdomains':3},
+}
+EXPORTS=('plain','hosts','adblock','dnsmasq','rpz','wildcard')
+PLATFORMS={'Pi-hole':'plain','AdGuard Home':'adblock','uBlock Origin':'adblock','Adblock Plus':'adblock','dnsmasq':'dnsmasq','BIND RPZ':'rpz'}
+# Common multi-label public suffixes. Add project-specific delegated suffixes here.
+PUBLIC_SUFFIXES=set('ac.uk co.uk gov.uk net.uk org.uk com.au net.au org.au co.jp ne.jp or.jp co.nz net.nz org.nz co.in net.in org.in com.br net.br org.br com.cn net.cn org.cn com.sg net.sg org.sg com.hk net.hk org.hk co.id web.id or.id ac.id go.id github.io'.split())
+DOMAIN_RE=re.compile(r'^(?=.{1,253}\.?$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.?$',re.I)
+ABP_RE=re.compile(r'^(?P<exc>@@)?\|\|(?P<domain>[a-z0-9._-]+)\^(?P<opts>\$.*)?$',re.I)
+
+def write(p,s): p.parent.mkdir(parents=True,exist_ok=True); p.write_text(s,encoding='utf-8',newline='\n')
+def norm(v):
+ v=v.strip().rstrip('.').lower(); v=v[2:] if v.startswith('*.') else v
+ if not v or '.' not in v:return None
+ try:v=v.encode('idna').decode('ascii')
+ except UnicodeError:return None
+ if not DOMAIN_RE.fullmatch(v):return None
+ try:ipaddress.ip_address(v); return None
+ except ValueError:return v
+
+def parse(text):
+ domains,native=set(),set()
+ for raw in text.splitlines():
+  line=raw.strip()
+  if not line or line.startswith(('#','!')):continue
+  clean=line.split('#',1)[0].strip(); f=clean.split()
+  if len(f)>=2:
+   try:ipaddress.ip_address(f[0])
+   except ValueError:pass
+   else:
+    found=False
+    for x in f[1:]:
+     d=norm(x)
+     if d:domains.add(d); found=True
+    if found:native.add(clean)
+    continue
+  m=ABP_RE.fullmatch(line)
+  if m:
+   d=norm(m.group('domain'))
+   if d:
+    if not m.group('exc') and not m.group('opts'):domains.add(d)
+    native.add(line)
+   continue
+  d=norm(line)
+  if d:domains.add(d)
+  else:native.add(line)  # preserve potentially meaningful browser/adblock/IP rules
+ return domains,native
+
+def same_or_sub(d,p):return d==p or d.endswith('.'+p)
+def allowset(values):
+ out=set()
+ for x in values:
+  d=norm(x)
+  if not d:raise ValueError(f'invalid allowlist domain: {x!r}')
+  out.add(d)
+ return out
+
+def protected(d,allow):return any(same_or_sub(d,a) for a in allow)
+def remove_labels(domains,labels,allow):
+ labels={x.lower() for x in labels}; out=set()
+ for original in domains:
+  d=original
+  if protected(d,allow):out.add(d); continue
+  while '.' in d:
+   first,rest=d.split('.',1)
+   if first not in labels or protected(rest,allow):break
+   d=rest
+  out.add(d)
+ return out
+
+def suffix(d):
+ labels=d.split('.'); best=labels[-1]
+ for i in range(len(labels)):
+  c='.'.join(labels[i:])
+  if c in PUBLIC_SUFFIXES and c.count('.')>=best.count('.'):best=c
+ return best
+
+def floor(d):
+ s=suffix(d); a=d.split('.'); b=s.split('.')
+ return None if len(a)<=len(b) else '.'.join(a[-len(b)-1:])
+def parent(d):
+ if '.' not in d:return None
+ p=d.split('.',1)[1]; f=floor(d)
+ return p if f and len(p.split('.'))>=len(f.split('.')) else None
+
+def merge(domains,n,allow):
+ if n<2:raise ValueError('merge_subdomains must be >= 2')
+ out=set(domains)
+ while True:
+  groups=defaultdict(set)
+  for d in out:
+   p=parent(d)
+   if p:groups[p].add(d)
+  candidates=[(p.count('.'),p,kids) for p,kids in groups.items() if len(kids)>=n and not any(same_or_sub(a,p) for a in allow)]
+  if not candidates:break
+  changed=False
+  for _,p,kids in sorted(candidates,reverse=True):
+   live=kids & out
+   if len(live)>=n and not any(same_or_sub(a,p) for a in allow):out-=live; out.add(p); changed=True
+  if not changed:break
+ return out
+
+def download(name,url):
+ print('download:',name,url); req=urllib.request.Request(url,headers={'User-Agent':'domain-blocklist-builder/1.0'})
+ with urllib.request.urlopen(req,timeout=120) as r:return r.read().decode('utf-8','replace')
+
+def resolve(name,sources,cache,stack=()):
+ if name in cache:return cache[name]
+ if name in stack:raise ValueError('LISTS cycle: '+' -> '.join((*stack,name)))
+ cfg=LISTS[name]; domains,native=set(),set()
+ for ref in cfg['from']:
+  if ref in sources:d,n=sources[ref]
+  elif ref in LISTS:d,n=resolve(ref,sources,cache,(*stack,name))
+  else:raise ValueError(f'{name}: unknown source/list {ref!r}')
+  domains|=set(d); native|=set(n)
+ allow=allowset(ALLOWLIST)|allowset(cfg.get('allowlist',()))
+ if cfg.get('remove_labels'):domains=remove_labels(domains,cfg['remove_labels'],allow)
+ if cfg.get('merge_subdomains') is not None:domains=merge(domains,int(cfg['merge_subdomains']),allow)
+ cache[name]=(frozenset(domains),frozenset(native)); return cache[name]
+
+def export(name,domains,native):
+ domains=sorted(domains); files={}
+ data={
+  'plain':'\n'.join(domains)+'\n',
+  'hosts':''.join(f'0.0.0.0 {d}\n' for d in domains),
+  'adblock':'\n'.join(sorted(set(native)|{f'||{d}^' for d in domains}))+'\n',
+  'dnsmasq':''.join(f'address=/{d}/#\n' for d in domains),
+  'rpz':''.join(f'{d} CNAME .\n' for d in domains),
+  'wildcard':''.join(f'*.{d}\n' for d in domains),
+ }
+ ext={'plain':'txt','hosts':'txt','adblock':'txt','dnsmasq':'conf','rpz':'rpz','wildcard':'txt'}
+ for fmt in EXPORTS:
+  p=DIST/fmt/f'{name}.{ext[fmt]}'; write(p,data[fmt]); files[fmt]=p.as_posix()
+ return files
+
+def sha(p):
+ h=hashlib.sha256(); h.update(p.read_bytes()); return h.hexdigest()
+def metadata(m):
+ write(DIST/'manifest.json',json.dumps(m,indent=2,sort_keys=True)+'\n')
+ files=sorted(p for p in DIST.rglob('*') if p.is_file() and p.name!='SHA256SUMS')
+ write(DIST/'SHA256SUMS',''.join(f'{sha(p)}  {p.as_posix()}\n' for p in files))
+def mdlink(label,p):return f'[{label}]({p})'
+def section(m):
+ lines=[START,f"Last updated: **{m['generated_at']}**",'', '| List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | RPZ | Wildcard |','|---|---:|---:|---|---|---|---|---|---|']
+ for name,x in m['lists'].items():
+  cells=[mdlink(f,x['files'][f]) for f in EXPORTS]
+  lines.append(f"| `{name}` | {x['domains']:,} | {x['native_rules']:,} | "+' | '.join(cells)+' |')
+ lines+=['','### Platform compatibility','']+[f'- **{p}** → `{fmt}` output' for p,fmt in PLATFORMS.items()]+[END]
+ return '\n'.join(lines)
+def docs(m):
+ s=section(m)
+ if README.exists():
+  t=README.read_text(encoding='utf-8'); a,b=START in t,END in t
+  if a!=b:raise RuntimeError('README markers malformed')
+  if a:before,rest=t.split(START,1); _,after=rest.split(END,1); t=before+s+after
+  else:t=t.rstrip()+'\n\n## Generated Domain Lists\n\n'+s+'\n'
+ else:t='# Domain Blocklists\n\n'+s+'\n'
+ write(README,t)
+ rows=[]
+ for name,x in m['lists'].items():
+  links=' · '.join(f'<a href="/{html.escape(p)}">{html.escape(f)}</a>' for f,p in x['files'].items())
+  rows.append(f"<tr><td>{html.escape(name)}</td><td>{x['domains']:,}</td><td>{x['native_rules']:,}</td><td>{links}</td></tr>")
+ plats=''.join(f'<tr><td>{html.escape(p)}</td><td>{html.escape(f)}</td></tr>' for p,f in PLATFORMS.items())
+ page=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Domain Blocklists</title><style>body{{max-width:1100px;margin:40px auto;padding:0 20px;font:16px/1.5 system-ui,sans-serif;background:#17191c;color:#e6e7e9}}a{{color:#9fc3e8}}table{{width:100%;border-collapse:collapse;margin:1rem 0 2rem}}th,td{{text-align:left;padding:.55rem .7rem;border-bottom:1px solid #3a3d42}}</style></head><body><h1>Domain Blocklists</h1><p>Last updated: {m['generated_at']}</p><table><tr><th>List</th><th>Domains</th><th>Native rules</th><th>Formats</th></tr>{''.join(rows)}</table><h2>Platform compatibility</h2><table>{plats}</table></body></html>'''
+ write(INDEX,page)
+def main():
+ if set(SOURCES)&set(LISTS):raise ValueError('SOURCES and LISTS names overlap')
+ required=set()
+ def collect(n,stack=()):
+  if n in SOURCES:required.add(n); return
+  if n not in LISTS:raise ValueError(f'unknown source/list: {n}')
+  if n in stack:raise ValueError('LISTS cycle: '+' -> '.join((*stack,n)))
+  for r in LISTS[n].get('from',()):collect(r,(*stack,n))
+ for n in LISTS:collect(n)
+ parsed={n:parse(download(n,SOURCES[n])) for n in sorted(required)}; cache={}
+ m={'generated_at':datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC'),'sources':{n:SOURCES[n] for n in sorted(required)},'platforms':PLATFORMS,'lists':{}}
+ for n in LISTS:
+  d,r=resolve(n,parsed,cache); files=export(n,d,r); m['lists'][n]={'domains':len(d),'native_rules':len(r),'files':files,'config':LISTS[n]}; print('built:',n,len(d),'domains',len(r),'native rules')
+ metadata(m); docs(m)
+if __name__=='__main__':main()
