@@ -12,10 +12,12 @@ INDEX_START='<!-- DOMAIN_BLOCKLISTS_START -->'; INDEX_END='<!-- DOMAIN_BLOCKLIST
 SOURCES={
  'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
  'scam1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt',
+ 'phishunt':'https://phishunt.io/feed.txt',
  'phish1':'https://phishing.army/download/phishing_army_blocklist_extended.txt',
  'phish2':'https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt',
- 'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',
+ 'phish3':'https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt',
  #'tif':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
+ 'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',
  'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
  'cti':'https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt',
  'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-onlydomains.txt',
@@ -27,8 +29,8 @@ SOURCES={
 }
 ALLOWLIST=set()
 LISTS={
- 'threat': {'from':('tifmini','cti',), 'remove_labels':('www','web')},
- 'fake': {'from':('fake1','phish1','phish2','urlhaus','scam1',), 'remove_labels':('www','web')},
+ 'threat': {'from':('tifmini','cti','urlhaus',), 'remove_labels':('www','web')},
+ 'fake': {'from':('fake1','phish1','phish2','phish3','phishunt','scam1',), 'remove_labels':('www','web')},
  'gambling': {'from':('gambling1','gambling2',), 'remove_labels':('www','web')},
  'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'remove_labels':('www','web')},
  'combined': {'from':('threat','fake',), 'merge_subdomains':3},
