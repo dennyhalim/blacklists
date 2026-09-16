@@ -30,10 +30,10 @@ jobs:
 
       - name: Build blocklists
         run: |
-          #rm README.md || true
+          python scripts/build_domain_blocklists.py || true
           python scripts/build_blocklists.py
           ls -l dist
-          sort dist/plain/complete.txt | uniq -d || true
+          #sort dist/plain/complete.txt | uniq -d || true
 
       - name: Commit generated files
         shell: bash
