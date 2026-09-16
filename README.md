@@ -52,6 +52,31 @@ sudo ./ui-install.sh
 ```
 
 
+
+## Generated Domain Lists
+
+<!-- DOMAIN_BLOCKLISTS_START -->
+Last updated: **2026-09-16 08:50:54 UTC**
+
+| List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | RPZ | Wildcard |
+|---|---:|---:|---|---|---|---|---|---|
+| `threat` | 192,079 | 8,832 | [plain](dist/plain/threat.txt) | [hosts](dist/hosts/threat.txt) | [adblock](dist/adblock/threat.txt) | [dnsmasq](dist/dnsmasq/threat.conf) | [rpz](dist/rpz/threat.rpz) | [wildcard](dist/wildcard/threat.txt) |
+| `fake` | 262,948 | 29,035 | [plain](dist/plain/fake.txt) | [hosts](dist/hosts/fake.txt) | [adblock](dist/adblock/fake.txt) | [dnsmasq](dist/dnsmasq/fake.conf) | [rpz](dist/rpz/fake.rpz) | [wildcard](dist/wildcard/fake.txt) |
+| `gambling` | 72,672 | 6,644 | [plain](dist/plain/gambling.txt) | [hosts](dist/hosts/gambling.txt) | [adblock](dist/adblock/gambling.txt) | [dnsmasq](dist/dnsmasq/gambling.conf) | [rpz](dist/rpz/gambling.rpz) | [wildcard](dist/wildcard/gambling.txt) |
+| `nsfw` | 126,177 | 76,770 | [plain](dist/plain/nsfw.txt) | [hosts](dist/hosts/nsfw.txt) | [adblock](dist/adblock/nsfw.txt) | [dnsmasq](dist/dnsmasq/nsfw.conf) | [rpz](dist/rpz/nsfw.rpz) | [wildcard](dist/wildcard/nsfw.txt) |
+| `security` | 304,397 | 37,867 | [plain](dist/plain/security.txt) | [hosts](dist/hosts/security.txt) | [adblock](dist/adblock/security.txt) | [dnsmasq](dist/dnsmasq/security.conf) | [rpz](dist/rpz/security.rpz) | [wildcard](dist/wildcard/security.txt) |
+| `all` | 487,771 | 121,281 | [plain](dist/plain/all.txt) | [hosts](dist/hosts/all.txt) | [adblock](dist/adblock/all.txt) | [dnsmasq](dist/dnsmasq/all.conf) | [rpz](dist/rpz/all.rpz) | [wildcard](dist/wildcard/all.txt) |
+
+### Platform compatibility
+
+- **Pi-hole** → `plain` output
+- **AdGuard Home** → `adblock` output
+- **uBlock Origin** → `adblock` output
+- **Adblock Plus** → `adblock` output
+- **dnsmasq** → `dnsmasq` output
+- **BIND RPZ** → `rpz` output
+<!-- DOMAIN_BLOCKLISTS_END -->
+
 ## Local Build
 
 Requires Python 3.10+ and no third-party packages.
@@ -93,33 +118,3 @@ Settings
 → Read and write permissions
 ```
 
-
-## Data Source
-
-IP blocklists are provided by FireHOL IP Lists.
-
-The contents and size of each source list can change over time. This repository only converts and combines the configured source data.
-
-## Generated Domain Lists
-
-<!-- DOMAIN_BLOCKLISTS_START -->
-Last updated: **2026-09-16 08:50:54 UTC**
-
-| List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | RPZ | Wildcard |
-|---|---:|---:|---|---|---|---|---|---|
-| `threat` | 192,079 | 8,832 | [plain](dist/plain/threat.txt) | [hosts](dist/hosts/threat.txt) | [adblock](dist/adblock/threat.txt) | [dnsmasq](dist/dnsmasq/threat.conf) | [rpz](dist/rpz/threat.rpz) | [wildcard](dist/wildcard/threat.txt) |
-| `fake` | 262,948 | 29,035 | [plain](dist/plain/fake.txt) | [hosts](dist/hosts/fake.txt) | [adblock](dist/adblock/fake.txt) | [dnsmasq](dist/dnsmasq/fake.conf) | [rpz](dist/rpz/fake.rpz) | [wildcard](dist/wildcard/fake.txt) |
-| `gambling` | 72,672 | 6,644 | [plain](dist/plain/gambling.txt) | [hosts](dist/hosts/gambling.txt) | [adblock](dist/adblock/gambling.txt) | [dnsmasq](dist/dnsmasq/gambling.conf) | [rpz](dist/rpz/gambling.rpz) | [wildcard](dist/wildcard/gambling.txt) |
-| `nsfw` | 126,177 | 76,770 | [plain](dist/plain/nsfw.txt) | [hosts](dist/hosts/nsfw.txt) | [adblock](dist/adblock/nsfw.txt) | [dnsmasq](dist/dnsmasq/nsfw.conf) | [rpz](dist/rpz/nsfw.rpz) | [wildcard](dist/wildcard/nsfw.txt) |
-| `security` | 304,397 | 37,867 | [plain](dist/plain/security.txt) | [hosts](dist/hosts/security.txt) | [adblock](dist/adblock/security.txt) | [dnsmasq](dist/dnsmasq/security.conf) | [rpz](dist/rpz/security.rpz) | [wildcard](dist/wildcard/security.txt) |
-| `all` | 487,771 | 121,281 | [plain](dist/plain/all.txt) | [hosts](dist/hosts/all.txt) | [adblock](dist/adblock/all.txt) | [dnsmasq](dist/dnsmasq/all.conf) | [rpz](dist/rpz/all.rpz) | [wildcard](dist/wildcard/all.txt) |
-
-### Platform compatibility
-
-- **Pi-hole** → `plain` output
-- **AdGuard Home** → `adblock` output
-- **uBlock Origin** → `adblock` output
-- **Adblock Plus** → `adblock` output
-- **dnsmasq** → `dnsmasq` output
-- **BIND RPZ** → `rpz` output
-<!-- DOMAIN_BLOCKLISTS_END -->
