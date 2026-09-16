@@ -18,13 +18,15 @@ SOURCES={
  'phish1':'https://phishing.army/download/phishing_army_blocklist_extended.txt',
  'nsfw1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt',
  'nsfw2':'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts',
+ 'nsfw3':'https://nsfw.oisd.nl/domainswild2',
+ #'nsfw3':'https://nsfw-small.oisd.nl/domainswild2',
 }
 ALLOWLIST=set()
 LISTS={
  'threat': {'from':('tifmini',), 'remove_labels':('www','web')},
  'fake': {'from':('fake1','phish1',), 'remove_labels':('www','web')},
  'gambling': {'from':('gambling1','gambling2',), 'remove_labels':('www','web')},
- 'nsfw': {'from':('nsfw1','nsfw2',), 'remove_labels':('www','web')},
+ 'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'remove_labels':('www','web')},
  'combined': {'from':('threat','fake',), 'merge_subdomains':3},
  'complete': {'from':('threat','fake','gambling','nsfw',), 'merge_subdomains':3},
 }
