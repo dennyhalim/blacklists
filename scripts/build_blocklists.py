@@ -36,6 +36,7 @@ SOURCES: dict[str, str] = {
     "botnet": ("https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt"),
     "threatfox": ("https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt"),
     #"blocklistde": ("https://lists.blocklist.de/lists/all.txt"), #level2
+    #"toxic": ("https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"), #webserver
     "etblock": ("https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/et_block.netset"),
     "etcompromised": ("https://raw.githubusercontent.com/"
@@ -52,8 +53,6 @@ SOURCES: dict[str, str] = {
         "kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset"),
     "strongips": ("https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset"),
-    "toxic": ("https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"),
     "dshield7": ("https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/dshield_7d.netset"),
     "dshield30": ("https://raw.githubusercontent.com/"
@@ -73,9 +72,9 @@ SOURCES: dict[str, str] = {
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
-    "base3": ("etblock","toxic","dshield30","abuseipdb30","feodo"),
-    "base7": ("etblock","toxic","dshield7","abuseipdb7","feodo"),
-    "baseip": ("feodo","strongips","etcompromised","webserver","webclient"),
+    "base3": ("etblock","webserver","dshield30","abuseipdb30","feodo"),
+    "base7": ("etblock","webserver","dshield7","abuseipdb7","feodo"),
+    "baseip": ("feodo","strongips","etcompromised","webclient"),
     "compact": ("base7","ipsum7","baseip"),
     "combined": ("base3","ipsum3","baseip"),
     "combined4server": ("combined","threatfox","level4","abuser","botnet"),
