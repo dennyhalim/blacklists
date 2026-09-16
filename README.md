@@ -7,7 +7,7 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 ## Generated Lists
 
 <!-- BLOCKLIST_COUNTS_START -->
-Last updated: **2026-09-16 08:36:00 UTC**
+Last updated: **2026-09-16 08:50:43 UTC**
 
 | List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
 |---|---|---:|---|---|---|---|---|---|
@@ -103,16 +103,16 @@ The contents and size of each source list can change over time. This repository 
 ## Generated Domain Lists
 
 <!-- DOMAIN_BLOCKLISTS_START -->
-Last updated: **2026-09-16 08:36:10 UTC**
+Last updated: **2026-09-16 08:50:54 UTC**
 
 | List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | RPZ | Wildcard |
 |---|---:|---:|---|---|---|---|---|---|
 | `threat` | 192,079 | 8,832 | [plain](dist/plain/threat.txt) | [hosts](dist/hosts/threat.txt) | [adblock](dist/adblock/threat.txt) | [dnsmasq](dist/dnsmasq/threat.conf) | [rpz](dist/rpz/threat.rpz) | [wildcard](dist/wildcard/threat.txt) |
 | `fake` | 262,948 | 29,035 | [plain](dist/plain/fake.txt) | [hosts](dist/hosts/fake.txt) | [adblock](dist/adblock/fake.txt) | [dnsmasq](dist/dnsmasq/fake.conf) | [rpz](dist/rpz/fake.rpz) | [wildcard](dist/wildcard/fake.txt) |
 | `gambling` | 72,672 | 6,644 | [plain](dist/plain/gambling.txt) | [hosts](dist/hosts/gambling.txt) | [adblock](dist/adblock/gambling.txt) | [dnsmasq](dist/dnsmasq/gambling.conf) | [rpz](dist/rpz/gambling.rpz) | [wildcard](dist/wildcard/gambling.txt) |
-| `nsfw` | 126,178 | 76,770 | [plain](dist/plain/nsfw.txt) | [hosts](dist/hosts/nsfw.txt) | [adblock](dist/adblock/nsfw.txt) | [dnsmasq](dist/dnsmasq/nsfw.conf) | [rpz](dist/rpz/nsfw.rpz) | [wildcard](dist/wildcard/nsfw.txt) |
-| `combined` | 304,397 | 37,867 | [plain](dist/plain/combined.txt) | [hosts](dist/hosts/combined.txt) | [adblock](dist/adblock/combined.txt) | [dnsmasq](dist/dnsmasq/combined.conf) | [rpz](dist/rpz/combined.rpz) | [wildcard](dist/wildcard/combined.txt) |
-| `complete` | 487,772 | 121,281 | [plain](dist/plain/complete.txt) | [hosts](dist/hosts/complete.txt) | [adblock](dist/adblock/complete.txt) | [dnsmasq](dist/dnsmasq/complete.conf) | [rpz](dist/rpz/complete.rpz) | [wildcard](dist/wildcard/complete.txt) |
+| `nsfw` | 126,177 | 76,770 | [plain](dist/plain/nsfw.txt) | [hosts](dist/hosts/nsfw.txt) | [adblock](dist/adblock/nsfw.txt) | [dnsmasq](dist/dnsmasq/nsfw.conf) | [rpz](dist/rpz/nsfw.rpz) | [wildcard](dist/wildcard/nsfw.txt) |
+| `security` | 304,397 | 37,867 | [plain](dist/plain/security.txt) | [hosts](dist/hosts/security.txt) | [adblock](dist/adblock/security.txt) | [dnsmasq](dist/dnsmasq/security.conf) | [rpz](dist/rpz/security.rpz) | [wildcard](dist/wildcard/security.txt) |
+| `all` | 487,771 | 121,281 | [plain](dist/plain/all.txt) | [hosts](dist/hosts/all.txt) | [adblock](dist/adblock/all.txt) | [dnsmasq](dist/dnsmasq/all.conf) | [rpz](dist/rpz/all.rpz) | [wildcard](dist/wildcard/all.txt) |
 
 ### Platform compatibility
 

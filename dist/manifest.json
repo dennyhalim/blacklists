@@ -1,26 +1,7 @@
 {
-  "generated_at": "2026-09-16 08:36:10 UTC",
+  "generated_at": "2026-09-16 08:50:54 UTC",
   "lists": {
-    "combined": {
-      "config": {
-        "from": [
-          "threat",
-          "fake"
-        ],
-        "merge_subdomains": 3
-      },
-      "domains": 304397,
-      "files": {
-        "adblock": "dist/adblock/combined.txt",
-        "dnsmasq": "dist/dnsmasq/combined.conf",
-        "hosts": "dist/hosts/combined.txt",
-        "plain": "dist/plain/combined.txt",
-        "rpz": "dist/rpz/combined.rpz",
-        "wildcard": "dist/wildcard/combined.txt"
-      },
-      "native_rules": 37867
-    },
-    "complete": {
+    "all": {
       "config": {
         "from": [
           "threat",
@@ -30,14 +11,14 @@
         ],
         "merge_subdomains": 3
       },
-      "domains": 487772,
+      "domains": 487771,
       "files": {
-        "adblock": "dist/adblock/complete.txt",
-        "dnsmasq": "dist/dnsmasq/complete.conf",
-        "hosts": "dist/hosts/complete.txt",
-        "plain": "dist/plain/complete.txt",
-        "rpz": "dist/rpz/complete.rpz",
-        "wildcard": "dist/wildcard/complete.txt"
+        "adblock": "dist/adblock/all.txt",
+        "dnsmasq": "dist/dnsmasq/all.conf",
+        "hosts": "dist/hosts/all.txt",
+        "plain": "dist/plain/all.txt",
+        "rpz": "dist/rpz/all.rpz",
+        "wildcard": "dist/wildcard/all.txt"
       },
       "native_rules": 121281
     },
@@ -101,7 +82,7 @@
           "web"
         ]
       },
-      "domains": 126178,
+      "domains": 126177,
       "files": {
         "adblock": "dist/adblock/nsfw.txt",
         "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -111,6 +92,25 @@
         "wildcard": "dist/wildcard/nsfw.txt"
       },
       "native_rules": 76770
+    },
+    "security": {
+      "config": {
+        "from": [
+          "threat",
+          "fake"
+        ],
+        "merge_subdomains": 3
+      },
+      "domains": 304397,
+      "files": {
+        "adblock": "dist/adblock/security.txt",
+        "dnsmasq": "dist/dnsmasq/security.conf",
+        "hosts": "dist/hosts/security.txt",
+        "plain": "dist/plain/security.txt",
+        "rpz": "dist/rpz/security.rpz",
+        "wildcard": "dist/wildcard/security.txt"
+      },
+      "native_rules": 37867
     },
     "threat": {
       "config": {
