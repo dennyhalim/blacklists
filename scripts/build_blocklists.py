@@ -62,7 +62,7 @@ SOURCES: dict[str, str] = {
     "webclient": ("https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_webclient.netset"),
     "abuseipdb": ("https://raw.githubusercontent.com/"
-        "borestad/blocklist-abuseipdb/blob/main/abuseipdb-s100-3d.ipv4"),
+        "borestad/blocklist-abuseipdb/main/abuseipdb-s100-3d.ipv4"),
     "abuseipdb7": ("https://raw.githubusercontent.com/"
         "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4"),
     "abuseipdb30": ("https://raw.githubusercontent.com/"
