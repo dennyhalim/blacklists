@@ -34,8 +34,8 @@ LISTS={
  'fake': {'from':('fake1','phish1','phish2','phish3','phishunt','scam1',), 'remove_labels':('www','web')},
  'gambling': {'from':('gambling1','gambling2',), 'remove_labels':('www','web')},
  'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'remove_labels':('www','web')},
- 'security': {'from':('threat','fake',), 'merge_subdomains':3},
- 'all': {'from':('threat','fake','gambling','nsfw',), 'merge_subdomains':3},
+ #'security': {'from':('threat','fake',), 'merge_subdomains':3},
+ #'all': {'from':('threat','fake','gambling','nsfw',), 'merge_subdomains':3},
 }
 
 EXPORTS=('plain','hosts','adblock','dnsmasq','rpz','wildcard')
