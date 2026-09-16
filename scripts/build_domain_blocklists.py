@@ -10,12 +10,12 @@ START='<!-- DOMAIN_BLOCKLISTS_START -->'; END='<!-- DOMAIN_BLOCKLISTS_END -->'
 INDEX_START='<!-- DOMAIN_BLOCKLISTS_START -->'; INDEX_END='<!-- DOMAIN_BLOCKLISTS_END -->'
 
 SOURCES={
- 'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
  'scam1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt',
- 'phishunt':'https://phishunt.io/feed.txt',
  'phish1':'https://phishing.army/download/phishing_army_blocklist_extended.txt',
  'phish2':'https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt',
  'phish3':'https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt',
+ #'phishunt':'https://phishunt.io/feed.txt',
+ #'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
  #'tif':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
  'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
  'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',
@@ -31,7 +31,7 @@ ALLOWLIST=set()
 #do NOT use same name with ip blocklist, it will get replaced
 LISTS={
  'threat': {'from':('tifmini','cti','urlhaus',), 'merge_subdomains':3},
- 'fake': {'from':('fake1','phish1','phish2','phish3','phishunt','scam1',), 'merge_subdomains':3},
+ 'fake': {'from':('phish1','phish2','phish3','scam1',), 'merge_subdomains':3},
  'gambling': {'from':('gambling1','gambling2',), 'merge_subdomains':3},
  'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'merge_subdomains':3},
  #'security': {'from':('threat','fake',), 'remove_labels':('www','web'),'merge_subdomains':3},
