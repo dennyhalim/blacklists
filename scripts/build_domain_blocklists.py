@@ -13,6 +13,8 @@ SOURCES={
  'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
  'scam1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt',
  'phish1':'https://phishing.army/download/phishing_army_blocklist_extended.txt',
+ 'phish2':'https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt',
+ 'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',
  #'tif':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
  'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
  'cti':'https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt',
@@ -26,7 +28,7 @@ SOURCES={
 ALLOWLIST=set()
 LISTS={
  'threat': {'from':('tifmini','cti',), 'remove_labels':('www','web')},
- 'fake': {'from':('fake1','phish1','scam1',), 'remove_labels':('www','web')},
+ 'fake': {'from':('fake1','phish1','phish2','urlhaus','scam1',), 'remove_labels':('www','web')},
  'gambling': {'from':('gambling1','gambling2',), 'remove_labels':('www','web')},
  'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'remove_labels':('www','web')},
  'combined': {'from':('threat','fake',), 'merge_subdomains':3},
