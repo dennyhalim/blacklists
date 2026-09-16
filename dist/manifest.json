@@ -10,7 +10,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 1789,
+      "entries": 2921,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -38,14 +38,14 @@
       },
       "sources": [
         "etblock",
-        "toxic",
+        "webserver",
         "dshield30",
         "abuseipdb30",
         "feodo"
       ]
     },
     "base7": {
-      "entries": 1746,
+      "entries": 2931,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -73,14 +73,14 @@
       },
       "sources": [
         "etblock",
-        "toxic",
+        "webserver",
         "dshield7",
         "abuseipdb7",
         "feodo"
       ]
     },
     "baseip": {
-      "entries": 2657,
+      "entries": 1407,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -110,7 +110,6 @@
         "feodo",
         "strongips",
         "etcompromised",
-        "webserver",
         "webclient"
       ]
     },
@@ -143,19 +142,18 @@
       },
       "sources": [
         "etblock",
-        "toxic",
+        "webserver",
         "dshield30",
         "abuseipdb30",
         "feodo",
         "ipsum3",
         "strongips",
         "etcompromised",
-        "webserver",
         "webclient"
       ]
     },
     "combined4server": {
-      "entries": 194712,
+      "entries": 213469,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -183,19 +181,19 @@
       },
       "sources": [
         "etblock",
-        "toxic",
+        "webserver",
         "dshield30",
         "abuseipdb30",
         "feodo",
         "ipsum3",
         "strongips",
         "etcompromised",
-        "webserver",
         "webclient",
         "threatfox",
         "level4",
         "abuser",
-        "botnet"
+        "botnet",
+        "abuseipdb"
       ]
     },
     "compact": {
@@ -227,19 +225,18 @@
       },
       "sources": [
         "etblock",
-        "toxic",
+        "webserver",
         "dshield7",
         "abuseipdb7",
         "feodo",
         "ipsum7",
         "strongips",
         "etcompromised",
-        "webserver",
         "webclient"
       ]
     },
     "complete": {
-      "entries": 48876,
+      "entries": 48879,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -267,14 +264,13 @@
       },
       "sources": [
         "etblock",
-        "toxic",
+        "webserver",
         "dshield30",
         "abuseipdb30",
         "feodo",
         "ipsum3",
         "strongips",
         "etcompromised",
-        "webserver",
         "webclient",
         "threatfox",
         "level2",
@@ -283,6 +279,7 @@
     }
   },
   "sources": {
+    "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-3d.ipv4",
     "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-75percent.ipv4",
     "abuseipdb7": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4",
     "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
@@ -300,7 +297,6 @@
     "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
     "strongips": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset",
     "threatfox": "https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt",
-    "toxic": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset",
     "webclient": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webclient.netset",
     "webserver": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webserver.netset"
   },

@@ -1,5 +1,5 @@
-# Generated from: etblock, toxic, dshield30, abuseipdb30, feodo, ipsum3, strongips, etcompromised, webserver, webclient, threatfox, level2, level3
-# Entries: 48876
+# Generated from: etblock, webserver, dshield30, abuseipdb30, feodo, ipsum3, strongips, etcompromised, webclient, threatfox, level2, level3
+# Entries: 48879
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="blocklist-complete" and comment="ipbl.dennyhalim.com"]
@@ -2626,6 +2626,7 @@ add list="blocklist-complete" address="18.223.6.45" timeout=3d comment="ipbl.den
 add list="blocklist-complete" address="18.223.232.146" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="18.224.108.49" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="18.225.109.243" timeout=3d comment="ipbl.dennyhalim.com"
+add list="blocklist-complete" address="18.228.80.130" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="18.230.228.148" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="18.231.156.119" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="18.232.11.247" timeout=3d comment="ipbl.dennyhalim.com"
@@ -8283,6 +8284,7 @@ add list="blocklist-complete" address="42.193.123.90" timeout=3d comment="ipbl.d
 add list="blocklist-complete" address="42.193.169.176" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="42.193.181.128" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="42.193.188.121" timeout=3d comment="ipbl.dennyhalim.com"
+add list="blocklist-complete" address="42.193.239.217" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="42.193.244.172" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="42.194.137.92" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="42.194.149.138" timeout=3d comment="ipbl.dennyhalim.com"
@@ -9327,6 +9329,7 @@ add list="blocklist-complete" address="45.61.151.200" timeout=3d comment="ipbl.d
 add list="blocklist-complete" address="45.61.161.233" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="45.61.170.105" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="45.61.170.158" timeout=3d comment="ipbl.dennyhalim.com"
+add list="blocklist-complete" address="45.61.170.191" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="45.61.176.63" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="45.61.176.146" timeout=3d comment="ipbl.dennyhalim.com"
 add list="blocklist-complete" address="45.61.177.22/31" timeout=3d comment="ipbl.dennyhalim.com"
