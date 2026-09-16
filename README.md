@@ -7,7 +7,7 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 ## Generated Lists
 
 <!-- BLOCKLIST_COUNTS_START -->
-Last updated: **2026-09-16 06:39:09 UTC**
+Last updated: **2026-09-16 06:54:14 UTC**
 
 | List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
 |---|---|---:|---|---|---|---|---|---|
@@ -103,12 +103,14 @@ The contents and size of each source list can change over time. This repository 
 ## Generated Domain Lists
 
 <!-- DOMAIN_BLOCKLISTS_START -->
-Last updated: **2026-09-16 06:38:52 UTC**
+Last updated: **2026-09-16 06:53:52 UTC**
 
 | List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | RPZ | Wildcard |
 |---|---:|---:|---|---|---|---|---|---|
+| `threat` | 2,397,056 | 0 | [plain](dist/plain/threat.txt) | [hosts](dist/hosts/threat.txt) | [adblock](dist/adblock/threat.txt) | [dnsmasq](dist/dnsmasq/threat.conf) | [rpz](dist/rpz/threat.rpz) | [wildcard](dist/wildcard/threat.txt) |
 | `fake` | 167,976 | 0 | [plain](dist/plain/fake.txt) | [hosts](dist/hosts/fake.txt) | [adblock](dist/adblock/fake.txt) | [dnsmasq](dist/dnsmasq/fake.conf) | [rpz](dist/rpz/fake.rpz) | [wildcard](dist/wildcard/fake.txt) |
 | `gambling` | 421,320 | 0 | [plain](dist/plain/gambling.txt) | [hosts](dist/hosts/gambling.txt) | [adblock](dist/adblock/gambling.txt) | [dnsmasq](dist/dnsmasq/gambling.conf) | [rpz](dist/rpz/gambling.rpz) | [wildcard](dist/wildcard/gambling.txt) |
+| `nsfw` | 72,764 | 0 | [plain](dist/plain/nsfw.txt) | [hosts](dist/hosts/nsfw.txt) | [adblock](dist/adblock/nsfw.txt) | [dnsmasq](dist/dnsmasq/nsfw.conf) | [rpz](dist/rpz/nsfw.rpz) | [wildcard](dist/wildcard/nsfw.txt) |
 
 ### Platform compatibility
 
