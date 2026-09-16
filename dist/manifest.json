@@ -9,39 +9,6 @@
     "powershell": true
   },
   "lists": {
-    "base": {
-      "entries": 1703,
-      "files": {
-        "bat": [
-          "dist/windows/base.bat"
-        ],
-        "ipset": [
-          "dist/ipset/base.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/base.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/base.nft",
-          "dist/nftables/base.sh"
-        ],
-        "pf": [
-          "dist/pf/base.txt",
-          "dist/pf/base.sh"
-        ],
-        "plain": [
-          "dist/plain/base.txt"
-        ],
-        "powershell": [
-          "dist/windows/base.ps1"
-        ]
-      },
-      "sources": [
-        "etblock",
-        "toxic",
-        "feodo"
-      ]
-    },
     "base3": {
       "entries": 1789,
       "files": {
@@ -72,9 +39,9 @@
       "sources": [
         "etblock",
         "toxic",
-        "feodo",
         "dshield30",
-        "abuseipdb30"
+        "abuseipdb30",
+        "feodo"
       ]
     },
     "base7": {
@@ -107,13 +74,13 @@
       "sources": [
         "etblock",
         "toxic",
-        "feodo",
         "dshield7",
-        "abuseipdb7"
+        "abuseipdb7",
+        "feodo"
       ]
     },
     "baseip": {
-      "entries": 942,
+      "entries": 2196,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -142,7 +109,8 @@
       "sources": [
         "feodo",
         "strongips",
-        "etcompromised"
+        "etcompromised",
+        "webserver"
       ]
     },
     "combined": {
@@ -175,9 +143,9 @@
       "sources": [
         "etblock",
         "toxic",
-        "feodo",
         "dshield30",
         "abuseipdb30",
+        "feodo",
         "ipsum3",
         "strongips",
         "etcompromised",
@@ -214,9 +182,9 @@
       "sources": [
         "etblock",
         "toxic",
-        "feodo",
         "dshield30",
         "abuseipdb30",
+        "feodo",
         "ipsum3",
         "strongips",
         "etcompromised",
@@ -226,47 +194,8 @@
         "botnet"
       ]
     },
-    "combined7": {
-      "entries": 3875,
-      "files": {
-        "bat": [
-          "dist/windows/combined7.bat"
-        ],
-        "ipset": [
-          "dist/ipset/combined7.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/combined7.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/combined7.nft",
-          "dist/nftables/combined7.sh"
-        ],
-        "pf": [
-          "dist/pf/combined7.txt",
-          "dist/pf/combined7.sh"
-        ],
-        "plain": [
-          "dist/plain/combined7.txt"
-        ],
-        "powershell": [
-          "dist/windows/combined7.ps1"
-        ]
-      },
-      "sources": [
-        "etblock",
-        "toxic",
-        "feodo",
-        "dshield7",
-        "abuseipdb7",
-        "ipsum7",
-        "strongips",
-        "etcompromised",
-        "webserver"
-      ]
-    },
     "compact": {
-      "entries": 2690,
+      "entries": 3875,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -295,12 +224,13 @@
       "sources": [
         "etblock",
         "toxic",
-        "feodo",
         "dshield7",
         "abuseipdb7",
+        "feodo",
         "ipsum7",
         "strongips",
-        "etcompromised"
+        "etcompromised",
+        "webserver"
       ]
     },
     "complete": {
@@ -333,9 +263,9 @@
       "sources": [
         "etblock",
         "toxic",
-        "feodo",
         "dshield30",
         "abuseipdb30",
+        "feodo",
         "ipsum3",
         "strongips",
         "etcompromised",
