@@ -1,4 +1,4 @@
-# Generated from: etblock, feodo, webserver, dshield30, abuseipdb30, strongips, ipsum3, toxic, level2, level3, etcompromised, threatfox
+# Generated from: etblock, feodo, toxic, dshield30, abuseipdb30, strongips, etcompromised, ipsum3, webserver, threatfox, level2, level3
 # Entries: 48506
 # Managed entries expire after: 3d
 /ip firewall address-list

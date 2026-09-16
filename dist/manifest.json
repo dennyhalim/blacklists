@@ -9,35 +9,140 @@
     "powershell": true
   },
   "lists": {
-    "botnet": {
-      "entries": 38154,
+    "base": {
+      "entries": 1703,
       "files": {
         "bat": [
-          "dist/windows/botnet.bat"
+          "dist/windows/base.bat"
         ],
         "ipset": [
-          "dist/ipset/botnet.sh"
+          "dist/ipset/base.sh"
         ],
         "mikrotik": [
-          "dist/mikrotik/botnet.rsc"
+          "dist/mikrotik/base.rsc"
         ],
         "nftables": [
-          "dist/nftables/botnet.nft",
-          "dist/nftables/botnet.sh"
+          "dist/nftables/base.nft",
+          "dist/nftables/base.sh"
         ],
         "pf": [
-          "dist/pf/botnet.txt",
-          "dist/pf/botnet.sh"
+          "dist/pf/base.txt",
+          "dist/pf/base.sh"
         ],
         "plain": [
-          "dist/plain/botnet.txt"
+          "dist/plain/base.txt"
         ],
         "powershell": [
-          "dist/windows/botnet.ps1"
+          "dist/windows/base.ps1"
         ]
       },
       "sources": [
-        "botnet"
+        "etblock",
+        "feodo",
+        "toxic"
+      ]
+    },
+    "base3": {
+      "entries": 1789,
+      "files": {
+        "bat": [
+          "dist/windows/base3.bat"
+        ],
+        "ipset": [
+          "dist/ipset/base3.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/base3.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/base3.nft",
+          "dist/nftables/base3.sh"
+        ],
+        "pf": [
+          "dist/pf/base3.txt",
+          "dist/pf/base3.sh"
+        ],
+        "plain": [
+          "dist/plain/base3.txt"
+        ],
+        "powershell": [
+          "dist/windows/base3.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "feodo",
+        "toxic",
+        "dshield30",
+        "abuseipdb30"
+      ]
+    },
+    "base7": {
+      "entries": 1746,
+      "files": {
+        "bat": [
+          "dist/windows/base7.bat"
+        ],
+        "ipset": [
+          "dist/ipset/base7.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/base7.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/base7.nft",
+          "dist/nftables/base7.sh"
+        ],
+        "pf": [
+          "dist/pf/base7.txt",
+          "dist/pf/base7.sh"
+        ],
+        "plain": [
+          "dist/plain/base7.txt"
+        ],
+        "powershell": [
+          "dist/windows/base7.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "feodo",
+        "toxic",
+        "dshield7",
+        "abuseipdb7"
+      ]
+    },
+    "baseip": {
+      "entries": 942,
+      "files": {
+        "bat": [
+          "dist/windows/baseip.bat"
+        ],
+        "ipset": [
+          "dist/ipset/baseip.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/baseip.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/baseip.nft",
+          "dist/nftables/baseip.sh"
+        ],
+        "pf": [
+          "dist/pf/baseip.txt",
+          "dist/pf/baseip.sh"
+        ],
+        "plain": [
+          "dist/plain/baseip.txt"
+        ],
+        "powershell": [
+          "dist/windows/baseip.ps1"
+        ]
+      },
+      "sources": [
+        "feodo",
+        "strongips",
+        "etcompromised"
       ]
     },
     "combined": {
@@ -70,17 +175,17 @@
       "sources": [
         "etblock",
         "feodo",
-        "webserver",
+        "toxic",
         "dshield30",
         "abuseipdb30",
-        "ipsum3",
-        "toxic",
         "strongips",
-        "etcompromised"
+        "etcompromised",
+        "ipsum3",
+        "webserver"
       ]
     },
     "combined4server": {
-      "entries": 175516,
+      "entries": 175574,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -109,17 +214,19 @@
       "sources": [
         "etblock",
         "feodo",
-        "webserver",
+        "toxic",
         "dshield30",
         "abuseipdb30",
+        "strongips",
+        "etcompromised",
         "ipsum3",
-        "toxic",
+        "webserver",
         "level4",
         "botnet"
       ]
     },
     "combined7": {
-      "entries": 3098,
+      "entries": 3875,
       "files": {
         "bat": [
           "dist/windows/combined7.bat"
@@ -148,11 +255,13 @@
       "sources": [
         "etblock",
         "feodo",
-        "webserver",
+        "toxic",
         "dshield7",
         "abuseipdb7",
+        "strongips",
+        "etcompromised",
         "ipsum7",
-        "toxic"
+        "webserver"
       ]
     },
     "compact": {
@@ -185,45 +294,10 @@
       "sources": [
         "etblock",
         "feodo",
+        "toxic",
         "dshield7",
         "abuseipdb7",
-        "toxic",
         "ipsum7"
-      ]
-    },
-    "compact3": {
-      "entries": 1789,
-      "files": {
-        "bat": [
-          "dist/windows/compact3.bat"
-        ],
-        "ipset": [
-          "dist/ipset/compact3.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/compact3.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/compact3.nft",
-          "dist/nftables/compact3.sh"
-        ],
-        "pf": [
-          "dist/pf/compact3.txt",
-          "dist/pf/compact3.sh"
-        ],
-        "plain": [
-          "dist/plain/compact3.txt"
-        ],
-        "powershell": [
-          "dist/windows/compact3.ps1"
-        ]
-      },
-      "sources": [
-        "etblock",
-        "feodo",
-        "dshield30",
-        "abuseipdb30",
-        "toxic"
       ]
     },
     "complete": {
@@ -256,109 +330,16 @@
       "sources": [
         "etblock",
         "feodo",
-        "webserver",
+        "toxic",
         "dshield30",
         "abuseipdb30",
         "strongips",
-        "ipsum3",
-        "toxic",
-        "level2",
-        "level3",
         "etcompromised",
-        "threatfox"
-      ]
-    },
-    "hijack": {
-      "entries": 512,
-      "files": {
-        "bat": [
-          "dist/windows/hijack.bat"
-        ],
-        "ipset": [
-          "dist/ipset/hijack.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/hijack.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/hijack.nft",
-          "dist/nftables/hijack.sh"
-        ],
-        "pf": [
-          "dist/pf/hijack.txt",
-          "dist/pf/hijack.sh"
-        ],
-        "plain": [
-          "dist/plain/hijack.txt"
-        ],
-        "powershell": [
-          "dist/windows/hijack.ps1"
-        ]
-      },
-      "sources": [
-        "hijack"
-      ]
-    },
-    "level4": {
-      "entries": 153240,
-      "files": {
-        "bat": [
-          "dist/windows/level4.bat"
-        ],
-        "ipset": [
-          "dist/ipset/level4.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/level4.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/level4.nft",
-          "dist/nftables/level4.sh"
-        ],
-        "pf": [
-          "dist/pf/level4.txt",
-          "dist/pf/level4.sh"
-        ],
-        "plain": [
-          "dist/plain/level4.txt"
-        ],
-        "powershell": [
-          "dist/windows/level4.ps1"
-        ]
-      },
-      "sources": [
-        "level4"
-      ]
-    },
-    "threatfox": {
-      "entries": 17903,
-      "files": {
-        "bat": [
-          "dist/windows/threatfox.bat"
-        ],
-        "ipset": [
-          "dist/ipset/threatfox.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/threatfox.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/threatfox.nft",
-          "dist/nftables/threatfox.sh"
-        ],
-        "pf": [
-          "dist/pf/threatfox.txt",
-          "dist/pf/threatfox.sh"
-        ],
-        "plain": [
-          "dist/plain/threatfox.txt"
-        ],
-        "powershell": [
-          "dist/windows/threatfox.ps1"
-        ]
-      },
-      "sources": [
-        "threatfox"
+        "ipsum3",
+        "webserver",
+        "threatfox",
+        "level2",
+        "level3"
       ]
     }
   },
