@@ -38,8 +38,8 @@
       },
       "sources": [
         "etblock",
-        "feodo",
-        "toxic"
+        "toxic",
+        "feodo"
       ]
     },
     "base3": {
@@ -71,8 +71,8 @@
       },
       "sources": [
         "etblock",
-        "feodo",
         "toxic",
+        "feodo",
         "dshield30",
         "abuseipdb30"
       ]
@@ -106,8 +106,8 @@
       },
       "sources": [
         "etblock",
-        "feodo",
         "toxic",
+        "feodo",
         "dshield7",
         "abuseipdb7"
       ]
@@ -174,18 +174,18 @@
       },
       "sources": [
         "etblock",
-        "feodo",
         "toxic",
+        "feodo",
         "dshield30",
         "abuseipdb30",
+        "ipsum3",
         "strongips",
         "etcompromised",
-        "ipsum3",
         "webserver"
       ]
     },
     "combined4server": {
-      "entries": 175574,
+      "entries": 191060,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -213,14 +213,15 @@
       },
       "sources": [
         "etblock",
-        "feodo",
         "toxic",
+        "feodo",
         "dshield30",
         "abuseipdb30",
+        "ipsum3",
         "strongips",
         "etcompromised",
-        "ipsum3",
         "webserver",
+        "threatfox",
         "level4",
         "botnet"
       ]
@@ -254,18 +255,18 @@
       },
       "sources": [
         "etblock",
-        "feodo",
         "toxic",
+        "feodo",
         "dshield7",
         "abuseipdb7",
+        "ipsum7",
         "strongips",
         "etcompromised",
-        "ipsum7",
         "webserver"
       ]
     },
     "compact": {
-      "entries": 1913,
+      "entries": 2690,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -293,15 +294,17 @@
       },
       "sources": [
         "etblock",
-        "feodo",
         "toxic",
+        "feodo",
         "dshield7",
         "abuseipdb7",
-        "ipsum7"
+        "ipsum7",
+        "strongips",
+        "etcompromised"
       ]
     },
     "complete": {
-      "entries": 48506,
+      "entries": 48429,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -329,13 +332,13 @@
       },
       "sources": [
         "etblock",
-        "feodo",
         "toxic",
+        "feodo",
         "dshield30",
         "abuseipdb30",
+        "ipsum3",
         "strongips",
         "etcompromised",
-        "ipsum3",
         "webserver",
         "threatfox",
         "level2",
