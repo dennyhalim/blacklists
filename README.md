@@ -7,7 +7,7 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 ## Generated Lists
 
 <!-- BLOCKLIST_COUNTS_START -->
-Last updated: **2026-09-16 01:14:54 UTC**
+Last updated: **2026-09-16 01:51:03 UTC**
 
 | List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
 |---|---|---:|---|---|---|---|---|---|
@@ -19,7 +19,7 @@ Last updated: **2026-09-16 01:14:54 UTC**
 | `compact1` | `etblock` + `feodo` + `dshield7` + `abuseipdb7` | 1,688 | [TXT](dist/plain/compact1.txt) | [RSC](dist/mikrotik/compact1.rsc) | [NFT](dist/nftables/compact1.nft) / [SH](dist/nftables/compact1.sh) | [SH](dist/ipset/compact1.sh) | [PS1](dist/windows/compact1.ps1) / [BAT](dist/windows/compact1.bat) | [TXT](dist/pf/compact1.txt) / [SH](dist/pf/compact1.sh) |
 | `combined` | `etblock` + `feodo` + `webserver` + `dshield30` + `abuseipdb30` + `ipsum3` + `toxic` + `strongips` + `etcompromised` | 13,683 | [TXT](dist/plain/combined.txt) | [RSC](dist/mikrotik/combined.rsc) | [NFT](dist/nftables/combined.nft) / [SH](dist/nftables/combined.sh) | [SH](dist/ipset/combined.sh) | [PS1](dist/windows/combined.ps1) / [BAT](dist/windows/combined.bat) | [TXT](dist/pf/combined.txt) / [SH](dist/pf/combined.sh) |
 | `combined1` | `etblock` + `feodo` + `webserver` + `dshield30` + `abuseipdb30` + `ipsum3` + `toxic` | 13,283 | [TXT](dist/plain/combined1.txt) | [RSC](dist/mikrotik/combined1.rsc) | [NFT](dist/nftables/combined1.nft) / [SH](dist/nftables/combined1.sh) | [SH](dist/ipset/combined1.sh) | [PS1](dist/windows/combined1.ps1) / [BAT](dist/windows/combined1.bat) | [TXT](dist/pf/combined1.txt) / [SH](dist/pf/combined1.sh) |
-| `combined4server` | `level4` + `botnet` | 177,901 | [TXT](dist/plain/combined4server.txt) | [RSC](dist/mikrotik/combined4server.rsc) | [NFT](dist/nftables/combined4server.nft) / [SH](dist/nftables/combined4server.sh) | [SH](dist/ipset/combined4server.sh) | [PS1](dist/windows/combined4server.ps1) / [BAT](dist/windows/combined4server.bat) | [TXT](dist/pf/combined4server.txt) / [SH](dist/pf/combined4server.sh) |
+| `combined4server` | `etblock` + `feodo` + `webserver` + `dshield30` + `abuseipdb30` + `ipsum3` + `toxic` + `level4` + `botnet` | 175,516 | [TXT](dist/plain/combined4server.txt) | [RSC](dist/mikrotik/combined4server.rsc) | [NFT](dist/nftables/combined4server.nft) / [SH](dist/nftables/combined4server.sh) | [SH](dist/ipset/combined4server.sh) | [PS1](dist/windows/combined4server.ps1) / [BAT](dist/windows/combined4server.bat) | [TXT](dist/pf/combined4server.txt) / [SH](dist/pf/combined4server.sh) |
 | `complete` | `etblock` + `feodo` + `webserver` + `dshield30` + `abuseipdb30` + `strongips` + `ipsum3` + `toxic` + `level2` + `level3` + `etcompromised` + `threatfox` | 48,506 | [TXT](dist/plain/complete.txt) | [RSC](dist/mikrotik/complete.rsc) | [NFT](dist/nftables/complete.nft) / [SH](dist/nftables/complete.sh) | [SH](dist/ipset/complete.sh) | [PS1](dist/windows/complete.ps1) / [BAT](dist/windows/complete.bat) | [TXT](dist/pf/complete.txt) / [SH](dist/pf/complete.sh) |
 <!-- BLOCKLIST_COUNTS_END -->
 
