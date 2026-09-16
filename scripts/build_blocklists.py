@@ -68,16 +68,15 @@ SOURCES: dict[str, str] = {
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
-    "level4": ("level4",),
-    "threatfox": ("threatfox",),
-    "hijack": ("hijack",),
-    "botnet": ("botnet",),
-    "compact": ("etblock","feodo","dshield7","abuseipdb7","toxic","ipsum7"),
-    "compact3": ("etblock","feodo","dshield30","abuseipdb30","toxic"),
-    "combined": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic","strongips","etcompromised"),
-    "combined7": ("etblock","feodo","webserver","dshield7","abuseipdb7","ipsum7","toxic"),
-    "combined4server": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic","level4","botnet"),
-    "complete": ("etblock","feodo","webserver","dshield30","abuseipdb30","strongips","ipsum3","toxic","level2","level3","etcompromised","threatfox"),
+    "base": ("etblock","feodo","toxic"),
+    "base3": ("base","dshield30","abuseipdb30"),
+    "base7": ("base","dshield7","abuseipdb7"),
+    "baseip": ("feodo","strongips","etcompromised"),
+    "compact": ("base7","ipsum7"),
+    "combined": ("base3","baseip","ipsum3","webserver"),
+    "combined7": ("base7","baseip","ipsum7","webserver"),
+    "combined4server": ("combined","level4","botnet"),
+    "complete": ("combined","baseip","threatfox","level2","level3"),
 }
 
 EXPORTS: dict[str, bool] = {
