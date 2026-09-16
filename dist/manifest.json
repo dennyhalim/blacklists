@@ -41,7 +41,7 @@
       ]
     },
     "combined": {
-      "entries": 13574,
+      "entries": 13683,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -80,7 +80,7 @@
       ]
     },
     "combined1": {
-      "entries": 13173,
+      "entries": 13283,
       "files": {
         "bat": [
           "dist/windows/combined1.bat"
@@ -116,46 +116,40 @@
         "toxic"
       ]
     },
-    "combined2": {
-      "entries": 13285,
+    "combined4server": {
+      "entries": 177901,
       "files": {
         "bat": [
-          "dist/windows/combined2.bat"
+          "dist/windows/combined4server.bat"
         ],
         "ipset": [
-          "dist/ipset/combined2.sh"
+          "dist/ipset/combined4server.sh"
         ],
         "mikrotik": [
-          "dist/mikrotik/combined2.rsc"
+          "dist/mikrotik/combined4server.rsc"
         ],
         "nftables": [
-          "dist/nftables/combined2.nft",
-          "dist/nftables/combined2.sh"
+          "dist/nftables/combined4server.nft",
+          "dist/nftables/combined4server.sh"
         ],
         "pf": [
-          "dist/pf/combined2.txt",
-          "dist/pf/combined2.sh"
+          "dist/pf/combined4server.txt",
+          "dist/pf/combined4server.sh"
         ],
         "plain": [
-          "dist/plain/combined2.txt"
+          "dist/plain/combined4server.txt"
         ],
         "powershell": [
-          "dist/windows/combined2.ps1"
+          "dist/windows/combined4server.ps1"
         ]
       },
       "sources": [
-        "etblock",
-        "feodo",
-        "webserver",
-        "dshield30",
-        "abuseipdb30",
-        "strongips",
-        "ipsum3",
-        "toxic"
+        "level4",
+        "botnet"
       ]
     },
     "compact": {
-      "entries": 1809,
+      "entries": 1913,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -225,7 +219,7 @@
       ]
     },
     "complete": {
-      "entries": 48105,
+      "entries": 48506,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
