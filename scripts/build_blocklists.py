@@ -45,6 +45,8 @@ SOURCES: dict[str, str] = {
         "firehol/blocklist-ipsets/master/firehol_level3.netset"),
     "level4": ("https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_level4.netset"),
+    "abuser": ("https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/firehol_abusers_1d.netset"),
     "hijack": ("https://raw.githubusercontent.com/"
         "kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset"),
     "strongips": ("https://raw.githubusercontent.com/"
@@ -73,7 +75,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "baseip": ("feodo","strongips","etcompromised","webserver"),
     "compact": ("base7","ipsum7","baseip"),
     "combined": ("base3","ipsum3","baseip"),
-    "combined4server": ("combined","threatfox","level4","botnet"),
+    "combined4server": ("combined","threatfox","level4","abuser","botnet"),
     "complete": ("combined","threatfox","level2","level3"),
 }
 
