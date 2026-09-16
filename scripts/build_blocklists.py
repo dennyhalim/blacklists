@@ -38,6 +38,7 @@ SOURCES: dict[str, str] = {
     "tif": ("https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/ips/tif.txt"),
     #"blocklistde": ("https://lists.blocklist.de/lists/all.txt"), #level2
     #"toxic": ("https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"), #webserver
+    #"hijack": ("https://raw.githubusercontent.com/kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset"), #level4
     "etblock": ("https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/et_block.netset"),
     "etcompromised": ("https://raw.githubusercontent.com/"
@@ -50,8 +51,6 @@ SOURCES: dict[str, str] = {
         "firehol/blocklist-ipsets/master/firehol_level4.netset"),
     "abuser": ("https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_abusers_1d.netset"),
-    "hijack": ("https://raw.githubusercontent.com/"
-        "kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset"),
     "strongips": ("https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset"),
     "dshield7": ("https://raw.githubusercontent.com/"
