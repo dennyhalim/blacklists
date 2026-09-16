@@ -80,7 +80,7 @@
       ]
     },
     "baseip": {
-      "entries": 2196,
+      "entries": 2657,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -110,11 +110,12 @@
         "feodo",
         "strongips",
         "etcompromised",
-        "webserver"
+        "webserver",
+        "webclient"
       ]
     },
     "combined": {
-      "entries": 13683,
+      "entries": 14126,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -149,11 +150,12 @@
         "ipsum3",
         "strongips",
         "etcompromised",
-        "webserver"
+        "webserver",
+        "webclient"
       ]
     },
     "combined4server": {
-      "entries": 191060,
+      "entries": 194712,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -189,13 +191,15 @@
         "strongips",
         "etcompromised",
         "webserver",
+        "webclient",
         "threatfox",
         "level4",
+        "abuser",
         "botnet"
       ]
     },
     "compact": {
-      "entries": 3875,
+      "entries": 4323,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -230,11 +234,12 @@
         "ipsum7",
         "strongips",
         "etcompromised",
-        "webserver"
+        "webserver",
+        "webclient"
       ]
     },
     "complete": {
-      "entries": 48429,
+      "entries": 48876,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -270,6 +275,7 @@
         "strongips",
         "etcompromised",
         "webserver",
+        "webclient",
         "threatfox",
         "level2",
         "level3"
@@ -279,6 +285,7 @@
   "sources": {
     "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-75percent.ipv4",
     "abuseipdb7": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4",
+    "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
     "botnet": "https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt",
     "dshield30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_30d.netset",
     "dshield7": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_7d.netset",
@@ -294,6 +301,7 @@
     "strongips": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset",
     "threatfox": "https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt",
     "toxic": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset",
+    "webclient": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webclient.netset",
     "webserver": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webserver.netset"
   },
   "stale_after_days": 3
