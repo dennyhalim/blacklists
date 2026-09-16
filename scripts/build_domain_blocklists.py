@@ -14,15 +14,19 @@ SOURCES={
  #'tif':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
  'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
  'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-onlydomains.txt',
+ 'gambling2':'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts',
  'phish1':'https://phishing.army/download/phishing_army_blocklist_extended.txt',
  'nsfw1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt',
+ 'nsfw2':'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts',
 }
 ALLOWLIST=set()
 LISTS={
- 'threat': {'from':('tifmini',), 'merge_subdomains':4},
+ 'threat': {'from':('tifmini',), 'remove_labels':('www','web')},
  'fake': {'from':('fake1','phish1',), 'remove_labels':('www','web')},
- 'gambling': {'from':('gambling1',), 'merge_subdomains':4},
- 'nsfw': {'from':('nsfw1',), 'merge_subdomains':4},
+ 'gambling': {'from':('gambling1','gambling2',), 'remove_labels':('www','web')},
+ 'nsfw': {'from':('nsfw1','nsfw2',), 'remove_labels':('www','web')},
+ 'combined': {'from':('threat','fake',), 'merge_subdomains':3},
+ 'complete': {'from':('threat','fake','gambling','nsfw',), 'merge_subdomains':3},
 }
 
 EXPORTS=('plain','hosts','adblock','dnsmasq','rpz','wildcard')
