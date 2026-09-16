@@ -8,11 +8,17 @@ from pathlib import Path
 DIST=Path('dist'); README=Path('README.md'); INDEX=Path('index.html')
 START='<!-- DOMAIN_BLOCKLISTS_START -->'; END='<!-- DOMAIN_BLOCKLISTS_END -->'
 
-SOURCES={'hagezi':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/pro.txt'}
+SOURCES={
+ 'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
+ 'threat1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
+ 'threatmini1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
+ 'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-onlydomains.txt',
+ 'phish1':'https://phishing.army/download/phishing_army_blocklist_extended.txt',
+}
 ALLOWLIST=set()
 LISTS={
- 'list1': {'from':('hagezi',), 'remove_labels':('www','web')},
- 'list2': {'from':('list1',), 'merge_subdomains':3},
+ 'fake': {'from':('fake1','phish1'), 'remove_labels':('www','web')},
+ 'gambling': {'from':('gambling1',), 'merge_subdomains':3},
 }
 EXPORTS=('plain','hosts','adblock','dnsmasq','rpz','wildcard')
 PLATFORMS={'Pi-hole':'plain','AdGuard Home':'adblock','uBlock Origin':'adblock','Adblock Plus':'adblock','dnsmasq':'dnsmasq','BIND RPZ':'rpz'}
