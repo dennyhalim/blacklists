@@ -20,12 +20,12 @@ SOURCES={
  'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',
  'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
  'cti':'https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt',
- 'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-onlydomains.txt',
+ 'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt',
  'gambling2':'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts',
  'nsfw1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt',
  'nsfw2':'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts',
- 'nsfw3':'https://nsfw.oisd.nl/domainswild2',
- #'nsfw3':'https://nsfw-small.oisd.nl/domainswild2',
+ #'nsfw3':'https://nsfw.oisd.nl/domainswild2',
+ 'nsfw3':'https://nsfw-small.oisd.nl/domainswild2',
 }
 ALLOWLIST=set()
 LISTS={
