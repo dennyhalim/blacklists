@@ -124,7 +124,70 @@
       </table>
     </div>
 <!-- BLOCKLIST_INDEX_END -->
+    <p>Warning! Some Mikrotik have small memory might not able to handle too big list. Consider using smaller list according to your device capability!</p>
+    <p>Warning! Level1 contain bogons (private/local) IP address. It might block your LAN!</p>
+    <p>Check here for more info: <a href="https://iplists.firehol.org/">Firehol IP Lists</a></p>
+    <p>Most lists are in CIDR form. Example etblock only about 1500 CIDR list, but it can block about 15 MILLION IP Address!</p>
+    
+
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">first, download, examine, audit the script before you execute on your router!</h2><a id="user-content-first-download-examine-audit-the-script-before-you-execute-on-your-router" class="anchor" aria-label="Permalink: first, download, examine, audit the script before you execute on your router!" href="#first-download-examine-audit-the-script-before-you-execute-on-your-router"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p>nb:</p>
+<p>compact: mostly cidr, best for small firewall</p>
+<p>combined: in addition to cidr, some important ip lists</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Mikrotik settings</h2><a id="user-content-mikrotik-settings" class="anchor" aria-label="Permalink: Mikrotik settings" href="#mikrotik-settings"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">Run this ONCE in you mikrotik to activate block rule and install the scheduler</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="#first activate firewall block rules
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-complete
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-combined
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-compact
+
+#download and run installer 
+/tool fetch url=&quot;https://blacklists.pages.dev/ipbl-installer.rsc&quot;
+import ipbl-installer.rsc"><pre><span class="pl-c"><span class="pl-c">#</span>first activate firewall block rules</span>
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-complete
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-combined
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-compact
+
+<span class="pl-c"><span class="pl-c">#</span>download and run installer </span>
+/tool fetch url=<span class="pl-s"><span class="pl-pds">"</span>https://blacklists.pages.dev/ipbl-installer.rsc<span class="pl-pds">"</span></span>
+import ipbl-installer.rsc</pre></div>
+<p dir="auto">Overlapping and adjacent networks are collapsed where possible before generating the RouterOS list.</p>
+    
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Ubiquiti / Unifi / UDR / UCG blacklist install</h2><a id="user-content-ubiquiti--unifi--udr--ucg-blacklist-install" class="anchor" aria-label="Permalink: Ubiquiti / Unifi / UDR / UCG blacklist install" href="#ubiquiti--unifi--udr--ucg-blacklist-install"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="#download
+cd /data
+curl -O https://blacklists.pages.dev/ui-install.sh
+#examine
+less ui-install.sh
+# INSTALL
+sudo ./ui-install.sh"><pre><span class="pl-c"><span class="pl-c">#</span>download</span>
+<span class="pl-c1">cd</span> /data
+curl -O https://blacklists.pages.dev/ui-install.sh
+<span class="pl-c"><span class="pl-c">#</span>examine</span>
+less ui-install.sh
+<span class="pl-c"><span class="pl-c">#</span> INSTALL</span>
+sudo ./ui-install.sh</pre></div>
   </main>
 <!-- DOMAIN_BLOCKLISTS_START --><section id="domain-blocklists"><h2>Domain Blocklists</h2><p>Last updated: 2026-09-16 07:19:08 UTC</p><table><tr><th>List</th><th>Domains</th><th>Native rules</th><th>Formats</th></tr><tr><td>threat</td><td>2,397,056</td><td>0</td><td><a href="/dist/plain/threat.txt">plain</a> · <a href="/dist/hosts/threat.txt">hosts</a> · <a href="/dist/adblock/threat.txt">adblock</a> · <a href="/dist/dnsmasq/threat.conf">dnsmasq</a> · <a href="/dist/rpz/threat.rpz">rpz</a> · <a href="/dist/wildcard/threat.txt">wildcard</a></td></tr><tr><td>fake</td><td>167,976</td><td>0</td><td><a href="/dist/plain/fake.txt">plain</a> · <a href="/dist/hosts/fake.txt">hosts</a> · <a href="/dist/adblock/fake.txt">adblock</a> · <a href="/dist/dnsmasq/fake.conf">dnsmasq</a> · <a href="/dist/rpz/fake.rpz">rpz</a> · <a href="/dist/wildcard/fake.txt">wildcard</a></td></tr><tr><td>gambling</td><td>421,320</td><td>0</td><td><a href="/dist/plain/gambling.txt">plain</a> · <a href="/dist/hosts/gambling.txt">hosts</a> · <a href="/dist/adblock/gambling.txt">adblock</a> · <a href="/dist/dnsmasq/gambling.conf">dnsmasq</a> · <a href="/dist/rpz/gambling.rpz">rpz</a> · <a href="/dist/wildcard/gambling.txt">wildcard</a></td></tr><tr><td>nsfw</td><td>72,764</td><td>0</td><td><a href="/dist/plain/nsfw.txt">plain</a> · <a href="/dist/hosts/nsfw.txt">hosts</a> · <a href="/dist/adblock/nsfw.txt">adblock</a> · <a href="/dist/dnsmasq/nsfw.conf">dnsmasq</a> · <a href="/dist/rpz/nsfw.rpz">rpz</a> · <a href="/dist/wildcard/nsfw.txt">wildcard</a></td></tr></table><h3>Platform compatibility</h3><table><tr><td>Pi-hole</td><td>plain</td></tr><tr><td>AdGuard Home</td><td>adblock</td></tr><tr><td>uBlock Origin</td><td>adblock</td></tr><tr><td>Adblock Plus</td><td>adblock</td></tr><tr><td>dnsmasq</td><td>dnsmasq</td></tr><tr><td>BIND RPZ</td><td>rpz</td></tr></table></section><!-- DOMAIN_BLOCKLISTS_END -->
+
+
+<footer role="contentinfo">
+  <div class="footer-links">
+    <a href="https://mypolaris.com">Home</a>
+    <a href="/tools?tools=ip" onclick="tab('ip')">IP Calc</a>
+    <a href="/tools?tools=hash" onclick="tab('hash')">Hash</a>
+    <a href="/tools?tools=qr" onclick="tab('qr')">QR Code</a>
+    <a href="?tools=pass" onclick="tab('pass')">Password</a>
+    <a href="?tools=dns" onclick="tab('dns')">DNS</a>
+    <a href="?tools=speed" onclick="tab('speed')">Speed Test</a>
+    <a href="https://api.mypolaris.com/" target="_blank" rel="noopener">API</a>
+  </div>
+  <div class="container">
+    <p style="margin:0">&copy; 2024 <strong style="color:#666">Polaris Network Developer Toolbox</strong>.</p>
+  </div>
+</footer>
+</script>
+<script>window.goatcounter={path:function(p){return location.host+p}}</script>
+<script data-goatcounter="https://mypolaris.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
