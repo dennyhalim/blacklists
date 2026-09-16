@@ -17,8 +17,8 @@ SOURCES={
  'phish2':'https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt',
  'phish3':'https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt',
  #'tif':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
- 'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',
  'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
+ 'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',
  'cti':'https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt',
  'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt',
  'gambling2':'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts',
@@ -30,12 +30,12 @@ SOURCES={
 ALLOWLIST=set()
 #do NOT use same name with ip blocklist, it will get replaced
 LISTS={
- 'threat': {'from':('tifmini','cti','urlhaus',), 'remove_labels':('www','web')},
- 'fake': {'from':('fake1','phish1','phish2','phish3','phishunt','scam1',), 'remove_labels':('www','web')},
- 'gambling': {'from':('gambling1','gambling2',), 'remove_labels':('www','web')},
- 'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'remove_labels':('www','web')},
- #'security': {'from':('threat','fake',), 'merge_subdomains':3},
- #'all': {'from':('threat','fake','gambling','nsfw',), 'merge_subdomains':3},
+ 'threat': {'from':('tifmini','cti','urlhaus',), 'merge_subdomains':3},
+ 'fake': {'from':('fake1','phish1','phish2','phish3','phishunt','scam1',), 'merge_subdomains':3},
+ 'gambling': {'from':('gambling1','gambling2',), 'merge_subdomains':3},
+ 'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'merge_subdomains':3},
+ #'security': {'from':('threat','fake',), 'remove_labels':('www','web'),'merge_subdomains':3},
+ #'all': {'from':('threat','fake','gambling','nsfw',), 'remove_labels':('www','web'), 'merge_subdomains':3},
 }
 
 EXPORTS=('plain','hosts','adblock','dnsmasq','rpz','wildcard')
