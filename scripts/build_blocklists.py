@@ -72,10 +72,10 @@ LISTS: dict[str, tuple[str, ...]] = {
     "threatfox": ("threatfox",),
     "hijack": ("hijack",),
     "botnet": ("botnet",),
-    "compact": ("etblock","feodo","dshield7","abuseipdb7","ipsum7","toxic"),
-    "compact1": ("etblock","feodo","dshield7","abuseipdb7"),
+    "compact": ("etblock","feodo","dshield7","abuseipdb7","toxic","ipsum7"),
+    "compact3": ("etblock","feodo","dshield30","abuseipdb30","toxic"),
     "combined": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic","strongips","etcompromised"),
-    "combined1": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic"),
+    "combined7": ("etblock","feodo","webserver","dshield7","abuseipdb7","ipsum7","toxic"),
     "combined4server": ("etblock","feodo","webserver","dshield30","abuseipdb30","ipsum3","toxic","level4","botnet"),
     "complete": ("etblock","feodo","webserver","dshield30","abuseipdb30","strongips","ipsum3","toxic","level2","level3","etcompromised","threatfox"),
 }
