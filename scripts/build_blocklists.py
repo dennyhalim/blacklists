@@ -80,7 +80,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "baseip": ("feodo","strongips","etcompromised","webclient"),
     "compact": ("base7","ipsum7","baseip"),
     "combined": ("base3","ipsum3","baseip"),
-    "combined4server": ("combined","threatfox","level4","abuser","botnet","abuseipdb"),
+    "combined4server": ("base3","threatfox","level4","abuser","botnet","abuseipdb"),
     "complete": ("combined","threatfox","level2","level3","tif"),
 }
 
