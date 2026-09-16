@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16 07:19:08 UTC",
+  "generated_at": "2026-09-16 07:34:24 UTC",
   "lists": {
     "fake": {
       "config": {
@@ -62,14 +62,14 @@
     "threat": {
       "config": {
         "from": [
-          "threat1"
+          "threatmini1"
         ],
         "remove_labels": [
           "www",
           "web"
         ]
       },
-      "domains": 2397056,
+      "domains": 183052,
       "files": {
         "adblock": "dist/adblock/threat.txt",
         "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -94,6 +94,6 @@
     "gambling1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-onlydomains.txt",
     "nsfw1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt",
     "phish1": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
-    "threat1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt"
+    "threatmini1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt"
   }
 }
