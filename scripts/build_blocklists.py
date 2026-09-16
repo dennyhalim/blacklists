@@ -35,6 +35,7 @@ SOURCES: dict[str, str] = {
     "feodo": ("https://feodotracker.abuse.ch/downloads/ipblocklist.txt"),
     "botnet": ("https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt"),
     "threatfox": ("https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt"),
+    "tif": ("https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/ips/tif.txt"),
     #"blocklistde": ("https://lists.blocklist.de/lists/all.txt"), #level2
     #"toxic": ("https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"), #webserver
     "etblock": ("https://raw.githubusercontent.com/"
@@ -80,7 +81,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "compact": ("base7","ipsum7","baseip"),
     "combined": ("base3","ipsum3","baseip"),
     "combined4server": ("combined","threatfox","level4","abuser","botnet","abuseipdb"),
-    "complete": ("combined","threatfox","level2","level3"),
+    "complete": ("combined","threatfox","level2","level3","tif"),
 }
 
 EXPORTS: dict[str, bool] = {
