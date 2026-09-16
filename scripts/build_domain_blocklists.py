@@ -18,7 +18,8 @@ SOURCES={
 }
 ALLOWLIST=set()
 LISTS={
- 'fake': {'from':('fake1','phish1'), 'remove_labels':('www','web')},
+ 'threat': {'from':('threat1',), 'remove_labels':('www','web')},
+ 'fake': {'from':('fake1','phish1',), 'remove_labels':('www','web')},
  'gambling': {'from':('gambling1',), 'merge_subdomains':3},
  'nsfw': {'from':('nsfw1',), 'merge_subdomains':3},
 }
