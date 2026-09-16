@@ -14,11 +14,14 @@ SOURCES={
  'threatmini1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
  'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-onlydomains.txt',
  'phish1':'https://phishing.army/download/phishing_army_blocklist_extended.txt',
+ 'nsfw1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt',
 }
 ALLOWLIST=set()
 LISTS={
+ 'threat': {'from':('threat1'), 'remove_labels':('www','web')},
  'fake': {'from':('fake1','phish1'), 'remove_labels':('www','web')},
  'gambling': {'from':('gambling1',), 'merge_subdomains':3},
+ 'nsfw': {'from':('nsfw1',), 'merge_subdomains':3},
 }
 EXPORTS=('plain','hosts','adblock','dnsmasq','rpz','wildcard')
 PLATFORMS={'Pi-hole':'plain','AdGuard Home':'adblock','uBlock Origin':'adblock','Adblock Plus':'adblock','dnsmasq':'dnsmasq','BIND RPZ':'rpz'}
