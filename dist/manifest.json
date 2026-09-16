@@ -79,43 +79,6 @@
         "etcompromised"
       ]
     },
-    "combined1": {
-      "entries": 13283,
-      "files": {
-        "bat": [
-          "dist/windows/combined1.bat"
-        ],
-        "ipset": [
-          "dist/ipset/combined1.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/combined1.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/combined1.nft",
-          "dist/nftables/combined1.sh"
-        ],
-        "pf": [
-          "dist/pf/combined1.txt",
-          "dist/pf/combined1.sh"
-        ],
-        "plain": [
-          "dist/plain/combined1.txt"
-        ],
-        "powershell": [
-          "dist/windows/combined1.ps1"
-        ]
-      },
-      "sources": [
-        "etblock",
-        "feodo",
-        "webserver",
-        "dshield30",
-        "abuseipdb30",
-        "ipsum3",
-        "toxic"
-      ]
-    },
     "combined4server": {
       "entries": 175516,
       "files": {
@@ -155,6 +118,43 @@
         "botnet"
       ]
     },
+    "combined7": {
+      "entries": 3098,
+      "files": {
+        "bat": [
+          "dist/windows/combined7.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined7.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined7.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined7.nft",
+          "dist/nftables/combined7.sh"
+        ],
+        "pf": [
+          "dist/pf/combined7.txt",
+          "dist/pf/combined7.sh"
+        ],
+        "plain": [
+          "dist/plain/combined7.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined7.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "feodo",
+        "webserver",
+        "dshield7",
+        "abuseipdb7",
+        "ipsum7",
+        "toxic"
+      ]
+    },
     "compact": {
       "entries": 1913,
       "files": {
@@ -187,42 +187,43 @@
         "feodo",
         "dshield7",
         "abuseipdb7",
-        "ipsum7",
-        "toxic"
+        "toxic",
+        "ipsum7"
       ]
     },
-    "compact1": {
-      "entries": 1688,
+    "compact3": {
+      "entries": 1789,
       "files": {
         "bat": [
-          "dist/windows/compact1.bat"
+          "dist/windows/compact3.bat"
         ],
         "ipset": [
-          "dist/ipset/compact1.sh"
+          "dist/ipset/compact3.sh"
         ],
         "mikrotik": [
-          "dist/mikrotik/compact1.rsc"
+          "dist/mikrotik/compact3.rsc"
         ],
         "nftables": [
-          "dist/nftables/compact1.nft",
-          "dist/nftables/compact1.sh"
+          "dist/nftables/compact3.nft",
+          "dist/nftables/compact3.sh"
         ],
         "pf": [
-          "dist/pf/compact1.txt",
-          "dist/pf/compact1.sh"
+          "dist/pf/compact3.txt",
+          "dist/pf/compact3.sh"
         ],
         "plain": [
-          "dist/plain/compact1.txt"
+          "dist/plain/compact3.txt"
         ],
         "powershell": [
-          "dist/windows/compact1.ps1"
+          "dist/windows/compact3.ps1"
         ]
       },
       "sources": [
         "etblock",
         "feodo",
-        "dshield7",
-        "abuseipdb7"
+        "dshield30",
+        "abuseipdb30",
+        "toxic"
       ]
     },
     "complete": {
