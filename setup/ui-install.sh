@@ -3,14 +3,14 @@
 # ipbl.dennyhalim.com
 set -euo pipefail
 
-INSTALL_DIR="/data/ipblocklist"
+INSTALL_DIR="/data/dhblocklist"
 CONFIG_FILE="$INSTALL_DIR/config"
 UPDATE_SCRIPT="$INSTALL_DIR/update.sh"
-SERVICE_NAME="ipblocklist.service"
-TIMER_NAME="ipblocklist.timer"
+SERVICE_NAME="dhblocklist.service"
+TIMER_NAME="dhblocklist.timer"
 SERVICE_FILE="/etc/systemd/system/$SERVICE_NAME"
 TIMER_FILE="/etc/systemd/system/$TIMER_NAME"
-TABLE_NAME="ipblocklists"
+TABLE_NAME="dhblocklists"
 SET_NAME="blocked_ipv4"
 UPDATE_MINUTES=30
 DEFAULT_BLOCKLIST_URL="https://blacklists.pages.dev/dist/plain/combined.txt"
