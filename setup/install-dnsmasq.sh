@@ -1,11 +1,8 @@
 #!/bin/bash
-# bl.dennyhalim.com
 set -euo pipefail
 
 DEFAULT_URLS=(
-  "https://blacklists.pages.dev/dist/dnsmasq/threat.conf"
-  "https://blacklists.pages.dev/dist/dnsmasq/gambling.conf"
-  "https://blacklists.pages.dev/dist/dnsmasq/nsfw.conf"
+  "https://blacklists.pages.dev/dist/dnsmasq/phishing.conf"
 )
 
 LIVE_NAME="zzz-domain-blocklist.conf"
@@ -113,21 +110,18 @@ live_tmp="\$CONF_DIR/.\$LIVE_NAME.tmp"
 install -m 0644 "\$CACHE" "\$live_tmp"
 mv -f "\$live_tmp" "\$live"
 
-# Try the normal service interfaces first, then signal the daemon directly.
+# The blocklist is dnsmasq configuration, so require a real service
+# reload/restart that rereads configuration. SIGHUP is intentionally not used.
 if systemctl reload dnsmasq 2>/dev/null; then
-  :
+  echo "dnsmasq reloaded."
 elif systemctl restart dnsmasq 2>/dev/null; then
-  :
+  echo "dnsmasq restarted."
 else
-  pid="\$(pgrep -x dnsmasq | head -n1 || true)"
-  [[ -n "\$pid" ]] || {
-    echo "ERROR: blocklist installed but dnsmasq could not be reloaded." >&2
-    exit 1
-  }
-  kill -HUP "\$pid"
+  echo "ERROR: blocklist installed but dnsmasq could not be reloaded/restarted." >&2
+  exit 1
 fi
 
-echo "OK: installed \$live"
+echo "OK: installed $live"
 EOF
 
 chmod 0755 "$UPDATE"
