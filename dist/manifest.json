@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-17 06:16:52 UTC",
+    "generated_at": "2026-09-17 08:35:38 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -30,7 +30,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 126751,
+        "domains": 126715,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -84,11 +84,12 @@
           "from": [
             "tifmini",
             "cti",
+            "threatview",
             "phishing"
           ],
           "merge_subdomains": 4
         },
-        "domains": 290983,
+        "domains": 743322,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -97,7 +98,7 @@
           "rpz": "dist/rpz/threat.rpz",
           "wildcard": "dist/wildcard/threat.txt"
         },
-        "native_rules": 27980
+        "native_rules": 28020
       }
     },
     "platforms": {
@@ -119,6 +120,7 @@
       "phish1": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt",
       "phish2": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt",
       "spam1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/spam-tlds-ublock.txt",
+      "threatview": "https://threatview.io/Downloads/DOMAIN-High-Confidence-Feed.txt",
       "tifmini": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt"
     }
   },
@@ -276,7 +278,7 @@
       ]
     },
     "combined4server": {
-      "entries": 218094,
+      "entries": 219119,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -312,7 +314,8 @@
         "level4",
         "abuser",
         "botnet",
-        "abuseipdb"
+        "abuseipdb",
+        "threatview"
       ]
     },
     "compact": {
@@ -355,7 +358,7 @@
       ]
     },
     "complete": {
-      "entries": 74705,
+      "entries": 75311,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -394,7 +397,8 @@
         "threatfox",
         "level2",
         "level3",
-        "tif"
+        "tif",
+        "alienvault"
       ]
     }
   },
@@ -403,6 +407,7 @@
     "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-75percent.ipv4",
     "abuseipdb7": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4",
     "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
+    "alienvault": "http://reputation.alienvault.com/reputation.data",
     "botnet": "https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt",
     "dshield30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_30d.netset",
     "dshield7": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_7d.netset",
@@ -416,6 +421,7 @@
     "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
     "strongips": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset",
     "threatfox": "https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt",
+    "threatview": "https://threatview.io/Downloads/High-Confidence-CobaltStrike-C2%20-Feeds.txt",
     "tif": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/ips/tif.txt",
     "webclient": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webclient.netset",
     "webserver": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webserver.netset"
