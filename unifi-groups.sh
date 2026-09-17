@@ -1,4 +1,5 @@
 #!/bin/bash
+# bl.dennyhalim.com
 set -euo pipefail
 
 UNIFI_URL="${UNIFI_URL:-https://127.0.0.1}"
@@ -8,8 +9,8 @@ UNIFI_PASS="${UNIFI_PASS:-}"
 MAX_ENTRIES=10000
 
 DEFAULT_GROUPS=(
-    "denny-base3|https://blacklists.pages.dev/dist/plain/base3.txt"
-    "denny-compact|https://blacklists.pages.dev/dist/plain/compact.txt"
+    "dennyhalim-base3|https://blacklists.pages.dev/dist/plain/base3.txt"
+    "dennyhalim-compact|https://blacklists.pages.dev/dist/plain/compact.txt"
 )
 
 usage() {
