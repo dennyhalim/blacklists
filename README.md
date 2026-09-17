@@ -27,14 +27,13 @@ Last updated: **2026-09-17 03:38:03 UTC**
 Run this ONCE in you mikrotik to activate block rule and install the scheduler
 
 ```bash
-#first activate firewall block rules
-/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-complete
-/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-combined
-/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-compact
-
 #download and run installer 
 /tool fetch url="https://blacklists.pages.dev/ipbl-installer.rsc"
 import ipbl-installer.rsc
+
+# you need dns cache size ~50M to load all domain blocklist, ~30 for threat only
+/ip/dns/set cache-size=30000
+/ip/dns/adlist/add url=https://blacklists.pages.dev/dist/hosts/threat.txt
 ```
 
 Overlapping and adjacent networks are collapsed where possible before generating the RouterOS list.
