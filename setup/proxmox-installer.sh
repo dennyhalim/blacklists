@@ -2,7 +2,7 @@
 # bl.dennyhalim.com
 set -euo pipefail
 
-IPSET="blacklist"
+IPSET="dhblacklist"
 CLUSTER_FW="/etc/pve/firewall/cluster.fw"
 
 URLS=(
