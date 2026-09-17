@@ -10,15 +10,15 @@ START='<!-- DOMAIN_BLOCKLISTS_START -->'; END='<!-- DOMAIN_BLOCKLISTS_END -->'
 INDEX_START='<!-- DOMAIN_BLOCKLISTS_START -->'; INDEX_END='<!-- DOMAIN_BLOCKLISTS_END -->'
 
 SOURCES={
- 'scam1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt',
- 'phish1':'https://phishing.army/download/phishing_army_blocklist_extended.txt',
- 'phish2':'https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt',
- 'phish3':'https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt',
+ 'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
+ 'spam1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt',
+ 'phish1':'https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt',
+ 'phish2':'https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt',
+ #'phish3':'https://phishing.army/download/phishing_army_blocklist_extended.txt',#tif
  #'phishunt':'https://phishunt.io/feed.txt',
- #'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
  #'tif':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
+ #'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',#tif
  'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
- 'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',
  'cti':'https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt',
  'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt',
  'gambling2':'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts',
@@ -31,8 +31,9 @@ ALLOWLIST=('wordpress.com','hashnode.dev','com.cdn.cloudflare.net','weebly.com',
               'squarespace.com','surge.sh',)
 #do NOT use same name with ip blocklist, it will get replaced
 LISTS={
- 'threat': {'from':('tifmini','cti','urlhaus',), 'merge_subdomains':3},
- 'phishing': {'from':('phish1','phish2','phish3','scam1',), 'merge_subdomains':3},
+ 'phishing': {'from':('phish1','phish2',), 'merge_subdomains':3},
+ 'threat': {'from':('tifmini','cti','phishing',), 'merge_subdomains':3},
+ 'scam': {'from':('fake1','spam1',), 'merge_subdomains':3},
  'gambling': {'from':('gambling1','gambling2',), 'merge_subdomains':3},
  'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'merge_subdomains':3},
  #'security': {'from':('threat','fake',), 'remove_labels':('www','web'),'merge_subdomains':3},
@@ -184,8 +185,10 @@ def export(name,domains,native):
   'plain':'\n'.join(domains)+'\n',
   'hosts':''.join(f'0.0.0.0 {d}\n' for d in domains),
   'adblock':'\n'.join(sorted(set(native)|{f'||{d}^' for d in domains}))+'\n',
-  'dnsmasq':''.join(f'address=/{d}/#\n' for d in domains),
-  'rpz':''.join(f'{d} CNAME .\n' for d in domains),
+  # local=/domain/ prevents forwarding the domain and all of its subdomains.
+  'dnsmasq':''.join(f'local=/{d}/\n' for d in domains),
+  # RPZ needs both the owner name and wildcard owner to cover the domain tree.
+  'rpz':''.join(f'{d} CNAME .\n*.{d} CNAME .\n' for d in domains),
   'wildcard':''.join(f'*.{d}\n' for d in domains),
  }
  ext={'plain':'txt','hosts':'txt','adblock':'txt','dnsmasq':'conf','rpz':'rpz','wildcard':'txt'}
