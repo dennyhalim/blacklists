@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SET_NAME="blocklist_baseip"
-TEMP_NAME="blocklist_baseip_new"
+SET_NAME="dhblocklist_baseip"
+TEMP_NAME="dhblocklist_baseip_new"
 TIMEOUT="259200"
 
 ipset create "$SET_NAME" hash:net family inet timeout "$TIMEOUT" -exist

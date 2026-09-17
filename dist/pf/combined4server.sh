@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-TABLE='blocklist-combined4server'
+TABLE='dhblocklist-combined4server'
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 
 # Replace the table contents in one operation so removed source IPs disappear.

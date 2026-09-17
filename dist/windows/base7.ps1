@@ -1,7 +1,7 @@
 #requires -RunAsAdministrator
 $ErrorActionPreference = "Stop"
 
-$Group = "ipbl.dennyhalim.com Blocklists"
+$Group = "bl.dennyhalim.com Blocklists"
 $Prefix = "Blocklist base7"
 $RunId = [Guid]::NewGuid().ToString("N")
 $NewPrefix = "$Prefix new-$RunId"

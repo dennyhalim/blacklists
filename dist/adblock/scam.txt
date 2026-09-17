@@ -1,151 +1,4 @@
-$TTL 3600
-*.actor CNAME .
-*.apartments CNAME .
-*.auction CNAME .
-*.autos CNAME .
-*.baby CNAME .
-*.beauty CNAME .
-*.bid CNAME .
-*.bingo CNAME .
-*.black CNAME .
-*.boats CNAME .
-*.bond CNAME .
-*.boston CNAME .
-*.boutique CNAME .
-*.business CNAME .
-*.cam CNAME .
-*.casino CNAME .
-*.ceo CNAME .
-*.cfd CNAME .
-*.channel CNAME .
-*.charity CNAME .
-*.cheap CNAME .
-*.christmas CNAME .
-*.claims CNAME .
-*.clothing CNAME .
-*.co.com CNAME .
-*.college CNAME .
-*.consulting CNAME .
-*.coupons CNAME .
-*.courses CNAME .
-*.credit CNAME .
-*.dance CNAME .
-*.day CNAME .
-*.dpdns.org CNAME .
-*.edu.eu CNAME .
-*.engineer CNAME .
-*.enterprises CNAME .
-*.esq CNAME .
-*.exposed CNAME .
-*.faith CNAME .
-*.family CNAME .
-*.fans CNAME .
-*.financial CNAME .
-*.fishing CNAME .
-*.florist CNAME .
-*.forex CNAME .
-*.forsale CNAME .
-*.fund CNAME .
-*.futbol CNAME .
-*.gives CNAME .
-*.giving CNAME .
-*.golf CNAME .
-*.gq CNAME .
-*.gratis CNAME .
-*.gripe CNAME .
-*.hair CNAME .
-*.immo CNAME .
-*.insure CNAME .
-*.irish CNAME .
-*.jetzt CNAME .
-*.jewelry CNAME .
-*.joburg CNAME .
-*.kim CNAME .
-*.lat CNAME .
-*.lifestyle CNAME .
-*.living CNAME .
-*.llp CNAME .
-*.loan CNAME .
-*.loans CNAME .
-*.locker CNAME .
-*.love CNAME .
-*.luxe CNAME .
-*.management CNAME .
-*.markets CNAME .
-*.mba CNAME .
-*.miami CNAME .
-*.moda CNAME .
-*.mom CNAME .
-*.motorcycles CNAME .
-*.navy CNAME .
-*.okinawa CNAME .
-*.ong CNAME .
-*.pink CNAME .
-*.poker CNAME .
-*.promo CNAME .
-*.qpon CNAME .
-*.qzz.io CNAME .
-*.realtor CNAME .
-*.realty CNAME .
-*.recipes CNAME .
-*.rehab CNAME .
-*.ren CNAME .
-*.repair CNAME .
-*.review CNAME .
-*.reviews CNAME .
-*.rich CNAME .
-*.rodeo CNAME .
-*.ryukyu CNAME .
-*.sa.com CNAME .
-*.sale CNAME .
-*.sew CNAME .
-*.shopping CNAME .
-*.skin CNAME .
-*.soy CNAME .
-*.srl CNAME .
-*.sydney CNAME .
-*.tattoo CNAME .
-*.tax CNAME .
-*.taxi CNAME .
-*.tel CNAME .
-*.tienda CNAME .
-*.tires CNAME .
-*.tokyo CNAME .
-*.trading CNAME .
-*.us.com CNAME .
-*.us.kg CNAME .
-*.us.org CNAME .
-*.vacations CNAME .
-*.vegas CNAME .
-*.ventures CNAME .
-*.vin CNAME .
-*.voto CNAME .
-*.voyage CNAME .
-*.wang CNAME .
-*.webcam CNAME .
-*.wedding CNAME .
-*.xin CNAME .
-*.xx.kg CNAME .
-*.yoga CNAME .
-*.you CNAME .
-*.za.com CNAME .
-;
-;         https://radar.cloudflare.com/email-security
-;         https://trends.netcraft.com/cybercrime/tlds
-; Description: The Top Most Abused Top Level Domains. Only TLDs that do not have any exclusions!
-; Disclaimer: https://github.com/hagezi/dns-blocklists/blob/main/README.md#disclaimer
-; Expires: 1 day
-; Homepage: https://github.com/hagezi/dns-blocklists
-; Issues: https://github.com/hagezi/dns-blocklists/issues
-; Last modified: 14 Sep 2026 23:44 UTC
-; License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
-; Number of latin TLDs: 130/294
-; Source: https://www.spamhaus.org/reputation-statistics/gtlds/domains/
-; Syntax: RPZ
-; Title: HaGeZi's The World's Most Abused TLDs
-; Version: 2026.0914.2344.48
-@ SOA localhost. root.localhost. 1789429440 28800 3600 259200 3600
-NS  localhost.
+[Adblock Plus]
 ||01crypto.com^
 ||0dgwn.bemobtrcks.com^
 ||0el-preiswert-kaufen.de^
@@ -3039,6 +2892,7 @@ NS  localhost.
 ||cnfashion.org^
 ||cnfrm-newsale8324.click^
 ||cnfrmnewsale924.click^
+||co.com^$doc
 ||coach-florian.com^
 ||coach-ksa.com^
 ||coachoutlet-store.us.org^
@@ -4092,6 +3946,7 @@ NS  localhost.
 ||dowellwholesales.com^
 ||doyoo.shop^
 ||dozepharmacy.com^
+||dpdns.org^$doc
 ||dplantz.com^
 ||dptdopni.shop^
 ||dr-estate.com^
@@ -4389,6 +4244,7 @@ NS  localhost.
 ||edpilulanetwork.com^
 ||edreamtrips.com^
 ||edrxmeds.com^
+||edu.eu^$doc
 ||ee-fahrrad-handel.de^
 ||eew-karriere.de^
 ||efeublute.com^
@@ -7229,6 +7085,7 @@ NS  localhost.
 ||hjullagerdrivaxlar.com^
 ||hkp-biofuels.com^
 ||hks-versand.de^
+||hl.cn^$doc,domain=~lzk.hl.cn
 ||hlelu.com^
 ||hlene.com^
 ||hlpflavouring.com^
@@ -12492,6 +12349,7 @@ NS  localhost.
 ||qweria.com^
 ||qwinout.com^
 ||qytre.com^
+||qzz.io^$doc
 ||qzzfg7zy0r.online^
 ||r-handels.de^
 ||ra-ganske.de^
@@ -13120,6 +12978,7 @@ NS  localhost.
 ||rzpellet.at^
 ||rzycucbupk.gyhjjifm.beauty^
 ||s--s--s.com^
+||sa.com^$doc
 ||saalebrennholz.de^
 ||saarland-honorarfinanz.de^
 ||saarnet.myshopify.com^
@@ -15685,7 +15544,10 @@ NS  localhost.
 ||urvlentoki.com^
 ||us-shop.online^
 ||us-supplements.to^
+||us.com^$doc
+||us.kg^$doc
 ||us.nl.eu.org^
+||us.org^$doc
 ||usa-food-store.de^
 ||usacyclestorepro.com^
 ||usagcprogram.com^
@@ -16779,6 +16641,7 @@ NS  localhost.
 ||xtrader365.com^
 ||xtxtshop.com^
 ||xupe.at^
+||xx.kg^$doc
 ||xxxlutz-eu.shop^
 ||xxxxlutz.shop^
 ||xyiyi.com^
@@ -16869,6 +16732,7 @@ NS  localhost.
 ||z-wavelab.com^
 ||z7v4fn-e1.myshopify.com^
 ||z8gaming.net^
+||za.com^$doc
 ||zaballde.com^
 ||zabawechtaseba.teachable.com^
 ||zackfit.de^

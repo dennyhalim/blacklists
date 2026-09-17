@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-17 03:38:13 UTC",
+    "generated_at": "2026-09-17 06:16:52 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -30,7 +30,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 126754,
+        "domains": 126751,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -49,7 +49,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 111255,
+        "domains": 111366,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -77,7 +77,7 @@
           "rpz": "dist/rpz/scam.rpz",
           "wildcard": "dist/wildcard/scam.txt"
         },
-        "native_rules": 148
+        "native_rules": 12
       },
       "threat": {
         "config": {
@@ -88,7 +88,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 290917,
+        "domains": 290983,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -118,7 +118,7 @@
       "nsfw3": "https://nsfw-small.oisd.nl/domainswild2",
       "phish1": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt",
       "phish2": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt",
-      "spam1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt",
+      "spam1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/spam-tlds-ublock.txt",
       "tifmini": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt"
     }
   },
@@ -276,7 +276,7 @@
       ]
     },
     "combined4server": {
-      "entries": 217476,
+      "entries": 218094,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -355,7 +355,7 @@
       ]
     },
     "complete": {
-      "entries": 74695,
+      "entries": 74705,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
