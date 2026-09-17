@@ -9,8 +9,8 @@ UNIFI_PASS="${UNIFI_PASS:-}"
 MAX_ENTRIES=10000
 
 DEFAULT_GROUPS=(
-    "dennyhalim-base3|https://blacklists.pages.dev/dist/plain/base3.txt"
-    "dennyhalim-compact|https://blacklists.pages.dev/dist/plain/compact.txt"
+    "dhblocklists-base3|https://blacklists.pages.dev/dist/plain/base3.txt"
+    "dhblocklists-compact|https://blacklists.pages.dev/dist/plain/compact.txt"
 )
 
 usage() {
