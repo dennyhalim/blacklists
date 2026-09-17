@@ -1,13 +1,18 @@
 # MikroTik blacklist installer
 # RouterOS v7
-# ipbl.dennyhalim.com
+# bl.dennyhalim.com
 
+# note: you must adjust firewall src-address-list accordingly
 :local blacklistUrl "https://blacklists.pages.dev/dist/mikrotik/combined.rsc"
 :local interval "13h"
 
 :local downloaderName "ipbl-downloader"
 :local schedulerName "ipbl-updater"
 :local downloadFile "ipblacklist.rsc"
+
+# Add firewall rules. adjust src-address-list according to url filename
+# ganti nama src-adddress-list sesuai nama ip list yang digunakan dari bl.dennyhalim.com
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=ipbl comment=ipbl.dennyhalim.com place-before=0 src-address-list=blocklist-combined
 
 # Remove previous installation
 /system scheduler remove [find where name=$schedulerName]
