@@ -209,7 +209,21 @@ def transform_log(events):
  write(TRANSFORM_LOG,'\n'.join(lines)+'\n')
 
 def metadata(m):
- write(DIST/'manifest.json',json.dumps(m,indent=2,sort_keys=True)+'\n')
+ manifest_path=DIST/'manifest.json'
+ manifest={}
+ if manifest_path.exists():
+  try:
+   loaded=json.loads(manifest_path.read_text(encoding='utf-8'))
+   if isinstance(loaded,dict):manifest=loaded
+  except (OSError,json.JSONDecodeError) as e:
+   raise RuntimeError(f'cannot read existing manifest: {e}') from e
+
+ # Preserve metadata owned by other builders and replace only our section.
+ manifest['domain']=m
+ write(manifest_path,json.dumps(manifest,indent=2,sort_keys=True)+'\n')
+
+ # Rebuild checksums from all current dist files so entries from other
+ # builders are preserved and stale checksum lines disappear.
  files=sorted(p for p in DIST.rglob('*') if p.is_file() and p.name!='SHA256SUMS')
  write(DIST/'SHA256SUMS',''.join(f'{sha(p)}  {p.as_posix()}\n' for p in files))
 def mdlink(label,p):return f'[{label}]({p})'
