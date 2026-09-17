@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-17 08:35:38 UTC",
+    "generated_at": "2026-09-17 08:41:37 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -84,12 +84,11 @@
           "from": [
             "tifmini",
             "cti",
-            "threatview",
-            "phishing"
+            "threatview"
           ],
           "merge_subdomains": 4
         },
-        "domains": 743322,
+        "domains": 644287,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -98,7 +97,7 @@
           "rpz": "dist/rpz/threat.rpz",
           "wildcard": "dist/wildcard/threat.txt"
         },
-        "native_rules": 28020
+        "native_rules": 40
       }
     },
     "platforms": {
