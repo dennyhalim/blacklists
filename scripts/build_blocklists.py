@@ -93,12 +93,12 @@ EXPORTS: dict[str, bool] = {
     "pf": True,
 }
 
-ROUTEROS_LIST_PREFIX = "blocklist"
+ROUTEROS_LIST_PREFIX = "dhblocklist"
 ROUTEROS_MANAGED_COMMENT = "bl.dennyhalim.com"
 NFT_TABLE_FAMILY = "inet"
 NFT_TABLE_NAME = "filter"
-IPSET_PREFIX = "blocklist"
-PF_TABLE_PREFIX = "blocklist"
+IPSET_PREFIX = "dhblocklist"
+PF_TABLE_PREFIX = "dhblocklist"
 WINDOWS_RULE_GROUP = "bl.dennyhalim.com Blocklists"
 WINDOWS_RULE_CHUNK_SIZE = 500
 
