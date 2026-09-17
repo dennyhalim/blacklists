@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-17 02:33:13 UTC",
+    "generated_at": "2026-09-17 03:35:29 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -8,9 +8,9 @@
             "gambling1",
             "gambling2"
           ],
-          "merge_subdomains": 3
+          "merge_subdomains": 4
         },
-        "domains": 75314,
+        "domains": 75466,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -28,9 +28,9 @@
             "nsfw2",
             "nsfw3"
           ],
-          "merge_subdomains": 3
+          "merge_subdomains": 4
         },
-        "domains": 125074,
+        "domains": 126754,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -45,13 +45,11 @@
         "config": {
           "from": [
             "phish1",
-            "phish2",
-            "phish3",
-            "scam1"
+            "phish2"
           ],
-          "merge_subdomains": 3
+          "merge_subdomains": 4
         },
-        "domains": 225984,
+        "domains": 111255,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -60,18 +58,37 @@
           "rpz": "dist/rpz/phishing.rpz",
           "wildcard": "dist/wildcard/phishing.txt"
         },
-        "native_rules": 28128
+        "native_rules": 27980
+      },
+      "scam": {
+        "config": {
+          "from": [
+            "fake1",
+            "spam1"
+          ],
+          "merge_subdomains": 4
+        },
+        "domains": 16897,
+        "files": {
+          "adblock": "dist/adblock/scam.txt",
+          "dnsmasq": "dist/dnsmasq/scam.conf",
+          "hosts": "dist/hosts/scam.txt",
+          "plain": "dist/plain/scam.txt",
+          "rpz": "dist/rpz/scam.rpz",
+          "wildcard": "dist/wildcard/scam.txt"
+        },
+        "native_rules": 148
       },
       "threat": {
         "config": {
           "from": [
             "tifmini",
             "cti",
-            "urlhaus"
+            "phishing"
           ],
-          "merge_subdomains": 3
+          "merge_subdomains": 4
         },
-        "domains": 190073,
+        "domains": 290917,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -80,7 +97,7 @@
           "rpz": "dist/rpz/threat.rpz",
           "wildcard": "dist/wildcard/threat.txt"
         },
-        "native_rules": 8826
+        "native_rules": 27980
       }
     },
     "platforms": {
@@ -93,17 +110,16 @@
     },
     "sources": {
       "cti": "https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt",
+      "fake1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt",
       "gambling1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt",
       "gambling2": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts",
       "nsfw1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt",
       "nsfw2": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts",
       "nsfw3": "https://nsfw-small.oisd.nl/domainswild2",
-      "phish1": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
-      "phish2": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt",
-      "phish3": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt",
-      "scam1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt",
-      "tifmini": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt",
-      "urlhaus": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt"
+      "phish1": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt",
+      "phish2": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt",
+      "spam1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt",
+      "tifmini": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt"
     }
   },
   "exports": {
