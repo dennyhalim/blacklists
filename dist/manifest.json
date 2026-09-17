@@ -1,27 +1,6 @@
 {
-  "generated_at": "2026-09-16 20:55:18 UTC",
+  "generated_at": "2026-09-17 01:27:02 UTC",
   "lists": {
-    "fake": {
-      "config": {
-        "from": [
-          "phish1",
-          "phish2",
-          "phish3",
-          "scam1"
-        ],
-        "merge_subdomains": 3
-      },
-      "domains": 205041,
-      "files": {
-        "adblock": "dist/adblock/fake.txt",
-        "dnsmasq": "dist/dnsmasq/fake.conf",
-        "hosts": "dist/hosts/fake.txt",
-        "plain": "dist/plain/fake.txt",
-        "rpz": "dist/rpz/fake.rpz",
-        "wildcard": "dist/wildcard/fake.txt"
-      },
-      "native_rules": 28127
-    },
     "gambling": {
       "config": {
         "from": [
@@ -30,7 +9,7 @@
         ],
         "merge_subdomains": 3
       },
-      "domains": 74785,
+      "domains": 75307,
       "files": {
         "adblock": "dist/adblock/gambling.txt",
         "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -50,7 +29,7 @@
         ],
         "merge_subdomains": 3
       },
-      "domains": 124369,
+      "domains": 125056,
       "files": {
         "adblock": "dist/adblock/nsfw.txt",
         "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -61,6 +40,27 @@
       },
       "native_rules": 76770
     },
+    "phishing": {
+      "config": {
+        "from": [
+          "phish1",
+          "phish2",
+          "phish3",
+          "scam1"
+        ],
+        "merge_subdomains": 3
+      },
+      "domains": 221299,
+      "files": {
+        "adblock": "dist/adblock/phishing.txt",
+        "dnsmasq": "dist/dnsmasq/phishing.conf",
+        "hosts": "dist/hosts/phishing.txt",
+        "plain": "dist/plain/phishing.txt",
+        "rpz": "dist/rpz/phishing.rpz",
+        "wildcard": "dist/wildcard/phishing.txt"
+      },
+      "native_rules": 28128
+    },
     "threat": {
       "config": {
         "from": [
@@ -70,7 +70,7 @@
         ],
         "merge_subdomains": 3
       },
-      "domains": 186564,
+      "domains": 190046,
       "files": {
         "adblock": "dist/adblock/threat.txt",
         "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -79,7 +79,7 @@
         "rpz": "dist/rpz/threat.rpz",
         "wildcard": "dist/wildcard/threat.txt"
       },
-      "native_rules": 8901
+      "native_rules": 8826
     }
   },
   "platforms": {
