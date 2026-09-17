@@ -27,7 +27,8 @@ SOURCES={
  #'nsfw3':'https://nsfw.oisd.nl/domainswild2',
  'nsfw3':'https://nsfw-small.oisd.nl/domainswild2',
 }
-ALLOWLIST=set()
+ALLOWLIST=set('wordpress.com','hashnode.dev','com.cdn.cloudflare.net','weebly.com','edgeone.dev','edgeone.app',
+              'squarespace.com','surge.sh',)
 #do NOT use same name with ip blocklist, it will get replaced
 LISTS={
  'threat': {'from':('tifmini','cti','urlhaus',), 'merge_subdomains':3},
