@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-17 08:41:37 UTC",
+    "generated_at": "2026-09-17 08:46:50 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -83,12 +83,11 @@
         "config": {
           "from": [
             "tifmini",
-            "cti",
-            "threatview"
+            "cti"
           ],
           "merge_subdomains": 4
         },
-        "domains": 644287,
+        "domains": 190426,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -97,7 +96,7 @@
           "rpz": "dist/rpz/threat.rpz",
           "wildcard": "dist/wildcard/threat.txt"
         },
-        "native_rules": 40
+        "native_rules": 0
       }
     },
     "platforms": {
@@ -119,7 +118,6 @@
       "phish1": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt",
       "phish2": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt",
       "spam1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/spam-tlds-ublock.txt",
-      "threatview": "https://threatview.io/Downloads/DOMAIN-High-Confidence-Feed.txt",
       "tifmini": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt"
     }
   },
