@@ -13,7 +13,7 @@ TIMER_FILE="/etc/systemd/system/$TIMER_NAME"
 TABLE_NAME="dhblocklists"
 SET_NAME="blocked_ipv4"
 UPDATE_MINUTES=30
-DEFAULT_BLOCKLIST_URL="https://blacklists.pages.dev/dist/plain/combined.txt"
+DEFAULT_BLOCKLIST_URL="https://blacklists.pages.dev/dist/plain/complete.txt"
 
 usage() {
     cat <<'EOF'
