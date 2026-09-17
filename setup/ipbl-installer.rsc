@@ -26,7 +26,7 @@
 :local url \"" . $blacklistUrl . "\"
 :local file \"" . $downloadFile . "\"
 
-:log info \"ipbl.dennyhalim.com : downloading update\"
+:log info \"bl.dennyhalim.com : downloading update\"
 
 :do {
     /file remove [find where name=\$file]
@@ -35,25 +35,25 @@
 :do {
     /tool fetch url=\$url dst-path=\$file 
 } on-error={
-    :log error \"ipbl.dennyhalim.com : download failed\"
-    :error \"ipbl.dennyhalim.com download failed\"
+    :log error \"bl.dennyhalim.com : download failed\"
+    :error \"bl.dennyhalim.com download failed\"
 }
 
 :if ([:len [/file find where name=\$file]] = 0) do={
-    :log error \"ipbl.dennyhalim.com : downloaded file not found\"
-    :error \"ipbl.dennyhalim.com file missing\"
+    :log error \"bl.dennyhalim.com : downloaded file not found\"
+    :error \"bl.dennyhalim.com file missing\"
 }
 
-:log info \"ipbl.dennyhalim.com : executing downloaded script\"
+:log info \"bl.dennyhalim.com : executing downloaded script\"
 
 :do {
     /import file-name=\$file
 } on-error={
-    :log error \"ipbl.dennyhalim.com : import failed\"
-    :error \"ipbl.dennyhalim.com import failed\"
+    :log error \"bl.dennyhalim.com : import failed\"
+    :error \"bl.dennyhalim.com import failed\"
 }
 
-:log info \"ipbl.dennyhalim.com : update completed\"
+:log info \"bl.dennyhalim.com : update completed\"
 ")
 
 # Create scheduler
@@ -64,5 +64,5 @@
     on-event=$downloaderName \
     policy=ftp,read,write,policy,test
 
-:log info "ipbl.dennyhalim.com : installer completed"
-:log info ("ipbl.dennyhalim.com : update interval = " . $interval)
+:log info "bl.dennyhalim.com : installer completed"
+:log info ("bl.dennyhalim.com : update interval = " . $interval)
