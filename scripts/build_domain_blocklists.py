@@ -18,6 +18,7 @@ SOURCES={
  #'phishunt':'https://phishunt.io/feed.txt',
  #'tif':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
  #'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',#tif
+ 'threatview':'https://threatview.io/Downloads/DOMAIN-High-Confidence-Feed.txt',
  'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
  'cti':'https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt',
  'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt',
@@ -32,7 +33,7 @@ ALLOWLIST=('wordpress.com','hashnode.dev','com.cdn.cloudflare.net','weebly.com',
 #do NOT use same name with ip blocklist, it will get replaced
 LISTS={
  'phishing': {'from':('phish1','phish2',), 'merge_subdomains':4},
- 'threat': {'from':('tifmini','cti','phishing',), 'merge_subdomains':4},
+ 'threat': {'from':('tifmini','cti','threatview','phishing',), 'merge_subdomains':4},
  'scam': {'from':('fake1','spam1',), 'merge_subdomains':4},
  'gambling': {'from':('gambling1','gambling2',), 'merge_subdomains':4},
  'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'merge_subdomains':4},
