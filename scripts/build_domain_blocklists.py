@@ -31,11 +31,11 @@ ALLOWLIST=('wordpress.com','hashnode.dev','com.cdn.cloudflare.net','weebly.com',
               'squarespace.com','surge.sh',)
 #do NOT use same name with ip blocklist, it will get replaced
 LISTS={
- 'phishing': {'from':('phish1','phish2',), 'merge_subdomains':3},
- 'threat': {'from':('tifmini','cti','phishing',), 'merge_subdomains':3},
- 'scam': {'from':('fake1','spam1',), 'merge_subdomains':3},
- 'gambling': {'from':('gambling1','gambling2',), 'merge_subdomains':3},
- 'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'merge_subdomains':3},
+ 'phishing': {'from':('phish1','phish2',), 'merge_subdomains':4},
+ 'threat': {'from':('tifmini','cti','phishing',), 'merge_subdomains':4},
+ 'scam': {'from':('fake1','spam1',), 'merge_subdomains':4},
+ 'gambling': {'from':('gambling1','gambling2',), 'merge_subdomains':4},
+ 'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'merge_subdomains':4},
  #'security': {'from':('threat','fake',), 'remove_labels':('www','web'),'merge_subdomains':3},
  #'all': {'from':('threat','fake','gambling','nsfw',), 'remove_labels':('www','web'), 'merge_subdomains':3},
 }
