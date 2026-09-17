@@ -31,7 +31,7 @@ ALLOWLIST=set()
 #do NOT use same name with ip blocklist, it will get replaced
 LISTS={
  'threat': {'from':('tifmini','cti','urlhaus',), 'merge_subdomains':3},
- 'fake': {'from':('phish1','phish2','phish3','scam1',), 'merge_subdomains':3},
+ 'phishing': {'from':('phish1','phish2','phish3','scam1',), 'merge_subdomains':3},
  'gambling': {'from':('gambling1','gambling2',), 'merge_subdomains':3},
  'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'merge_subdomains':3},
  #'security': {'from':('threat','fake',), 'remove_labels':('www','web'),'merge_subdomains':3},
