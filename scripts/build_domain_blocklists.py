@@ -11,7 +11,7 @@ INDEX_START='<!-- DOMAIN_BLOCKLISTS_START -->'; INDEX_END='<!-- DOMAIN_BLOCKLIST
 
 SOURCES={
  'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
- 'spam1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt',
+ 'spam1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/spam-tlds-ublock.txt',
  'phish1':'https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt',
  'phish2':'https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt',
  #'phish3':'https://phishing.army/download/phishing_army_blocklist_extended.txt',#tif
