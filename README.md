@@ -7,7 +7,7 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 ## Generated Lists
 
 <!-- BLOCKLIST_COUNTS_START -->
-Last updated: **2026-09-17 01:26:53 UTC**
+Last updated: **2026-09-17 02:24:47 UTC**
 
 | List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
 |---|---|---:|---|---|---|---|---|---|
@@ -16,8 +16,8 @@ Last updated: **2026-09-17 01:26:53 UTC**
 | `baseip` | `feodo` + `strongips` + `etcompromised` + `webclient` | 1,398 | [TXT](dist/plain/baseip.txt) | [RSC](dist/mikrotik/baseip.rsc) | [NFT](dist/nftables/baseip.nft) / [SH](dist/nftables/baseip.sh) | [SH](dist/ipset/baseip.sh) | [PS1](dist/windows/baseip.ps1) / [BAT](dist/windows/baseip.bat) | [TXT](dist/pf/baseip.txt) / [SH](dist/pf/baseip.sh) |
 | `compact` | `etblock` + `webserver` + `dshield7` + `abuseipdb7` + `feodo` + `ipsum7` + `strongips` + `etcompromised` + `webclient` | 4,262 | [TXT](dist/plain/compact.txt) | [RSC](dist/mikrotik/compact.rsc) | [NFT](dist/nftables/compact.nft) / [SH](dist/nftables/compact.sh) | [SH](dist/ipset/compact.sh) | [PS1](dist/windows/compact.ps1) / [BAT](dist/windows/compact.bat) | [TXT](dist/pf/compact.txt) / [SH](dist/pf/compact.sh) |
 | `combined` | `etblock` + `webserver` + `dshield30` + `abuseipdb30` + `feodo` + `ipsum3` + `strongips` + `etcompromised` + `webclient` | 15,480 | [TXT](dist/plain/combined.txt) | [RSC](dist/mikrotik/combined.rsc) | [NFT](dist/nftables/combined.nft) / [SH](dist/nftables/combined.sh) | [SH](dist/ipset/combined.sh) | [PS1](dist/windows/combined.ps1) / [BAT](dist/windows/combined.bat) | [TXT](dist/pf/combined.txt) / [SH](dist/pf/combined.sh) |
-| `combined4server` | `etblock` + `webserver` + `dshield30` + `abuseipdb30` + `feodo` + `threatfox` + `level4` + `abuser` + `botnet` + `abuseipdb` | 217,651 | [TXT](dist/plain/combined4server.txt) | [RSC](dist/mikrotik/combined4server.rsc) | [NFT](dist/nftables/combined4server.nft) / [SH](dist/nftables/combined4server.sh) | [SH](dist/ipset/combined4server.sh) | [PS1](dist/windows/combined4server.ps1) / [BAT](dist/windows/combined4server.bat) | [TXT](dist/pf/combined4server.txt) / [SH](dist/pf/combined4server.sh) |
-| `complete` | `etblock` + `webserver` + `dshield30` + `abuseipdb30` + `feodo` + `ipsum3` + `strongips` + `etcompromised` + `webclient` + `threatfox` + `level2` + `level3` + `tif` | 74,856 | [TXT](dist/plain/complete.txt) | [RSC](dist/mikrotik/complete.rsc) | [NFT](dist/nftables/complete.nft) / [SH](dist/nftables/complete.sh) | [SH](dist/ipset/complete.sh) | [PS1](dist/windows/complete.ps1) / [BAT](dist/windows/complete.bat) | [TXT](dist/pf/complete.txt) / [SH](dist/pf/complete.sh) |
+| `combined4server` | `etblock` + `webserver` + `dshield30` + `abuseipdb30` + `feodo` + `threatfox` + `level4` + `abuser` + `botnet` + `abuseipdb` | 217,476 | [TXT](dist/plain/combined4server.txt) | [RSC](dist/mikrotik/combined4server.rsc) | [NFT](dist/nftables/combined4server.nft) / [SH](dist/nftables/combined4server.sh) | [SH](dist/ipset/combined4server.sh) | [PS1](dist/windows/combined4server.ps1) / [BAT](dist/windows/combined4server.bat) | [TXT](dist/pf/combined4server.txt) / [SH](dist/pf/combined4server.sh) |
+| `complete` | `etblock` + `webserver` + `dshield30` + `abuseipdb30` + `feodo` + `ipsum3` + `strongips` + `etcompromised` + `webclient` + `threatfox` + `level2` + `level3` + `tif` | 74,695 | [TXT](dist/plain/complete.txt) | [RSC](dist/mikrotik/complete.rsc) | [NFT](dist/nftables/complete.nft) / [SH](dist/nftables/complete.sh) | [SH](dist/ipset/complete.sh) | [PS1](dist/windows/complete.ps1) / [BAT](dist/windows/complete.bat) | [TXT](dist/pf/complete.txt) / [SH](dist/pf/complete.sh) |
 <!-- BLOCKLIST_COUNTS_END -->
 
 ## first, download, examine, audit the script before you execute on your router!
@@ -56,14 +56,14 @@ sudo ./ui-install.sh
 ## Generated Domain Lists
 
 <!-- DOMAIN_BLOCKLISTS_START -->
-Last updated: **2026-09-17 01:27:02 UTC**
+Last updated: **2026-09-17 02:24:57 UTC**
 
 | List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | RPZ | Wildcard |
 |---|---:|---:|---|---|---|---|---|---|
-| `threat` | 190,046 | 8,826 | [plain](dist/plain/threat.txt) | [hosts](dist/hosts/threat.txt) | [adblock](dist/adblock/threat.txt) | [dnsmasq](dist/dnsmasq/threat.conf) | [rpz](dist/rpz/threat.rpz) | [wildcard](dist/wildcard/threat.txt) |
-| `phishing` | 221,299 | 28,128 | [plain](dist/plain/phishing.txt) | [hosts](dist/hosts/phishing.txt) | [adblock](dist/adblock/phishing.txt) | [dnsmasq](dist/dnsmasq/phishing.conf) | [rpz](dist/rpz/phishing.rpz) | [wildcard](dist/wildcard/phishing.txt) |
-| `gambling` | 75,307 | 6,644 | [plain](dist/plain/gambling.txt) | [hosts](dist/hosts/gambling.txt) | [adblock](dist/adblock/gambling.txt) | [dnsmasq](dist/dnsmasq/gambling.conf) | [rpz](dist/rpz/gambling.rpz) | [wildcard](dist/wildcard/gambling.txt) |
-| `nsfw` | 125,056 | 76,770 | [plain](dist/plain/nsfw.txt) | [hosts](dist/hosts/nsfw.txt) | [adblock](dist/adblock/nsfw.txt) | [dnsmasq](dist/dnsmasq/nsfw.conf) | [rpz](dist/rpz/nsfw.rpz) | [wildcard](dist/wildcard/nsfw.txt) |
+| `threat` | 190,073 | 8,826 | [plain](dist/plain/threat.txt) | [hosts](dist/hosts/threat.txt) | [adblock](dist/adblock/threat.txt) | [dnsmasq](dist/dnsmasq/threat.conf) | [rpz](dist/rpz/threat.rpz) | [wildcard](dist/wildcard/threat.txt) |
+| `phishing` | 225,984 | 28,128 | [plain](dist/plain/phishing.txt) | [hosts](dist/hosts/phishing.txt) | [adblock](dist/adblock/phishing.txt) | [dnsmasq](dist/dnsmasq/phishing.conf) | [rpz](dist/rpz/phishing.rpz) | [wildcard](dist/wildcard/phishing.txt) |
+| `gambling` | 75,314 | 6,644 | [plain](dist/plain/gambling.txt) | [hosts](dist/hosts/gambling.txt) | [adblock](dist/adblock/gambling.txt) | [dnsmasq](dist/dnsmasq/gambling.conf) | [rpz](dist/rpz/gambling.rpz) | [wildcard](dist/wildcard/gambling.txt) |
+| `nsfw` | 125,074 | 76,770 | [plain](dist/plain/nsfw.txt) | [hosts](dist/hosts/nsfw.txt) | [adblock](dist/adblock/nsfw.txt) | [dnsmasq](dist/dnsmasq/nsfw.conf) | [rpz](dist/rpz/nsfw.rpz) | [wildcard](dist/wildcard/nsfw.txt) |
 
 ### Platform compatibility
 
