@@ -33,7 +33,7 @@ ALLOWLIST=('wordpress.com','hashnode.dev','com.cdn.cloudflare.net','weebly.com',
 #do NOT use same name with ip blocklist, it will get replaced
 LISTS={
  'phishing': {'from':('phish1','phish2',), 'merge_subdomains':4},
- 'threat': {'from':('tifmini','cti','threatview','phishing',), 'merge_subdomains':4},
+ 'threat': {'from':('tifmini','cti','threatview',), 'merge_subdomains':4},
  'scam': {'from':('fake1','spam1',), 'merge_subdomains':4},
  'gambling': {'from':('gambling1','gambling2',), 'merge_subdomains':4},
  'nsfw': {'from':('nsfw1','nsfw2','nsfw3',), 'merge_subdomains':4},
