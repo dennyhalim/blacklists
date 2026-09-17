@@ -28,7 +28,7 @@ Run this ONCE in you mikrotik to activate block rule and install the scheduler
 
 ```bash
 #download and run installer 
-/tool fetch url="https://blacklists.pages.dev/ipbl-installer.rsc"
+/tool fetch url="https://blacklists.pages.dev/setup/ipbl-installer.rsc"
 import ipbl-installer.rsc
 
 # you need dns cache size ~50M to load all domain blocklist, ~30 for threat only
@@ -43,7 +43,7 @@ Overlapping and adjacent networks are collapsed where possible before generating
 ```bash
 #download
 cd /data
-curl -O https://blacklists.pages.dev/ui-install.sh
+curl -O https://blacklists.pages.dev/setup/ui-install.sh
 #examine
 less ui-install.sh
 # INSTALL
