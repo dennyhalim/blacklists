@@ -1,107 +1,408 @@
 {
-  "generated_at": "2026-09-17 02:24:57 UTC",
-  "lists": {
-    "gambling": {
-      "config": {
-        "from": [
-          "gambling1",
-          "gambling2"
-        ],
-        "merge_subdomains": 3
+  "domain": {
+    "generated_at": "2026-09-17 02:33:13 UTC",
+    "lists": {
+      "gambling": {
+        "config": {
+          "from": [
+            "gambling1",
+            "gambling2"
+          ],
+          "merge_subdomains": 3
+        },
+        "domains": 75314,
+        "files": {
+          "adblock": "dist/adblock/gambling.txt",
+          "dnsmasq": "dist/dnsmasq/gambling.conf",
+          "hosts": "dist/hosts/gambling.txt",
+          "plain": "dist/plain/gambling.txt",
+          "rpz": "dist/rpz/gambling.rpz",
+          "wildcard": "dist/wildcard/gambling.txt"
+        },
+        "native_rules": 6644
       },
-      "domains": 75314,
-      "files": {
-        "adblock": "dist/adblock/gambling.txt",
-        "dnsmasq": "dist/dnsmasq/gambling.conf",
-        "hosts": "dist/hosts/gambling.txt",
-        "plain": "dist/plain/gambling.txt",
-        "rpz": "dist/rpz/gambling.rpz",
-        "wildcard": "dist/wildcard/gambling.txt"
+      "nsfw": {
+        "config": {
+          "from": [
+            "nsfw1",
+            "nsfw2",
+            "nsfw3"
+          ],
+          "merge_subdomains": 3
+        },
+        "domains": 125074,
+        "files": {
+          "adblock": "dist/adblock/nsfw.txt",
+          "dnsmasq": "dist/dnsmasq/nsfw.conf",
+          "hosts": "dist/hosts/nsfw.txt",
+          "plain": "dist/plain/nsfw.txt",
+          "rpz": "dist/rpz/nsfw.rpz",
+          "wildcard": "dist/wildcard/nsfw.txt"
+        },
+        "native_rules": 76770
       },
-      "native_rules": 6644
+      "phishing": {
+        "config": {
+          "from": [
+            "phish1",
+            "phish2",
+            "phish3",
+            "scam1"
+          ],
+          "merge_subdomains": 3
+        },
+        "domains": 225984,
+        "files": {
+          "adblock": "dist/adblock/phishing.txt",
+          "dnsmasq": "dist/dnsmasq/phishing.conf",
+          "hosts": "dist/hosts/phishing.txt",
+          "plain": "dist/plain/phishing.txt",
+          "rpz": "dist/rpz/phishing.rpz",
+          "wildcard": "dist/wildcard/phishing.txt"
+        },
+        "native_rules": 28128
+      },
+      "threat": {
+        "config": {
+          "from": [
+            "tifmini",
+            "cti",
+            "urlhaus"
+          ],
+          "merge_subdomains": 3
+        },
+        "domains": 190073,
+        "files": {
+          "adblock": "dist/adblock/threat.txt",
+          "dnsmasq": "dist/dnsmasq/threat.conf",
+          "hosts": "dist/hosts/threat.txt",
+          "plain": "dist/plain/threat.txt",
+          "rpz": "dist/rpz/threat.rpz",
+          "wildcard": "dist/wildcard/threat.txt"
+        },
+        "native_rules": 8826
+      }
     },
-    "nsfw": {
-      "config": {
-        "from": [
-          "nsfw1",
-          "nsfw2",
-          "nsfw3"
-        ],
-        "merge_subdomains": 3
-      },
-      "domains": 125074,
-      "files": {
-        "adblock": "dist/adblock/nsfw.txt",
-        "dnsmasq": "dist/dnsmasq/nsfw.conf",
-        "hosts": "dist/hosts/nsfw.txt",
-        "plain": "dist/plain/nsfw.txt",
-        "rpz": "dist/rpz/nsfw.rpz",
-        "wildcard": "dist/wildcard/nsfw.txt"
-      },
-      "native_rules": 76770
+    "platforms": {
+      "AdGuard Home": "adblock",
+      "Adblock Plus": "adblock",
+      "BIND RPZ": "rpz",
+      "Pi-hole": "plain",
+      "dnsmasq": "dnsmasq",
+      "uBlock Origin": "adblock"
     },
-    "phishing": {
-      "config": {
-        "from": [
-          "phish1",
-          "phish2",
-          "phish3",
-          "scam1"
-        ],
-        "merge_subdomains": 3
-      },
-      "domains": 225984,
-      "files": {
-        "adblock": "dist/adblock/phishing.txt",
-        "dnsmasq": "dist/dnsmasq/phishing.conf",
-        "hosts": "dist/hosts/phishing.txt",
-        "plain": "dist/plain/phishing.txt",
-        "rpz": "dist/rpz/phishing.rpz",
-        "wildcard": "dist/wildcard/phishing.txt"
-      },
-      "native_rules": 28128
-    },
-    "threat": {
-      "config": {
-        "from": [
-          "tifmini",
-          "cti",
-          "urlhaus"
-        ],
-        "merge_subdomains": 3
-      },
-      "domains": 190073,
-      "files": {
-        "adblock": "dist/adblock/threat.txt",
-        "dnsmasq": "dist/dnsmasq/threat.conf",
-        "hosts": "dist/hosts/threat.txt",
-        "plain": "dist/plain/threat.txt",
-        "rpz": "dist/rpz/threat.rpz",
-        "wildcard": "dist/wildcard/threat.txt"
-      },
-      "native_rules": 8826
+    "sources": {
+      "cti": "https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt",
+      "gambling1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt",
+      "gambling2": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts",
+      "nsfw1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt",
+      "nsfw2": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts",
+      "nsfw3": "https://nsfw-small.oisd.nl/domainswild2",
+      "phish1": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
+      "phish2": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt",
+      "phish3": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt",
+      "scam1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt",
+      "tifmini": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt",
+      "urlhaus": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt"
     }
   },
-  "platforms": {
-    "AdGuard Home": "adblock",
-    "Adblock Plus": "adblock",
-    "BIND RPZ": "rpz",
-    "Pi-hole": "plain",
-    "dnsmasq": "dnsmasq",
-    "uBlock Origin": "adblock"
+  "exports": {
+    "bat": true,
+    "ipset": true,
+    "mikrotik": true,
+    "nftables": true,
+    "pf": true,
+    "plain": true,
+    "powershell": true
+  },
+  "lists": {
+    "base3": {
+      "entries": 2814,
+      "files": {
+        "bat": [
+          "dist/windows/base3.bat"
+        ],
+        "ipset": [
+          "dist/ipset/base3.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/base3.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/base3.nft",
+          "dist/nftables/base3.sh"
+        ],
+        "pf": [
+          "dist/pf/base3.txt",
+          "dist/pf/base3.sh"
+        ],
+        "plain": [
+          "dist/plain/base3.txt"
+        ],
+        "powershell": [
+          "dist/windows/base3.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield30",
+        "abuseipdb30",
+        "feodo"
+      ]
+    },
+    "base7": {
+      "entries": 2826,
+      "files": {
+        "bat": [
+          "dist/windows/base7.bat"
+        ],
+        "ipset": [
+          "dist/ipset/base7.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/base7.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/base7.nft",
+          "dist/nftables/base7.sh"
+        ],
+        "pf": [
+          "dist/pf/base7.txt",
+          "dist/pf/base7.sh"
+        ],
+        "plain": [
+          "dist/plain/base7.txt"
+        ],
+        "powershell": [
+          "dist/windows/base7.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield7",
+        "abuseipdb7",
+        "feodo"
+      ]
+    },
+    "baseip": {
+      "entries": 1398,
+      "files": {
+        "bat": [
+          "dist/windows/baseip.bat"
+        ],
+        "ipset": [
+          "dist/ipset/baseip.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/baseip.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/baseip.nft",
+          "dist/nftables/baseip.sh"
+        ],
+        "pf": [
+          "dist/pf/baseip.txt",
+          "dist/pf/baseip.sh"
+        ],
+        "plain": [
+          "dist/plain/baseip.txt"
+        ],
+        "powershell": [
+          "dist/windows/baseip.ps1"
+        ]
+      },
+      "sources": [
+        "feodo",
+        "strongips",
+        "etcompromised",
+        "webclient"
+      ]
+    },
+    "combined": {
+      "entries": 15480,
+      "files": {
+        "bat": [
+          "dist/windows/combined.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined.nft",
+          "dist/nftables/combined.sh"
+        ],
+        "pf": [
+          "dist/pf/combined.txt",
+          "dist/pf/combined.sh"
+        ],
+        "plain": [
+          "dist/plain/combined.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield30",
+        "abuseipdb30",
+        "feodo",
+        "ipsum3",
+        "strongips",
+        "etcompromised",
+        "webclient"
+      ]
+    },
+    "combined4server": {
+      "entries": 217476,
+      "files": {
+        "bat": [
+          "dist/windows/combined4server.bat"
+        ],
+        "ipset": [
+          "dist/ipset/combined4server.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/combined4server.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/combined4server.nft",
+          "dist/nftables/combined4server.sh"
+        ],
+        "pf": [
+          "dist/pf/combined4server.txt",
+          "dist/pf/combined4server.sh"
+        ],
+        "plain": [
+          "dist/plain/combined4server.txt"
+        ],
+        "powershell": [
+          "dist/windows/combined4server.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield30",
+        "abuseipdb30",
+        "feodo",
+        "threatfox",
+        "level4",
+        "abuser",
+        "botnet",
+        "abuseipdb"
+      ]
+    },
+    "compact": {
+      "entries": 4262,
+      "files": {
+        "bat": [
+          "dist/windows/compact.bat"
+        ],
+        "ipset": [
+          "dist/ipset/compact.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/compact.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/compact.nft",
+          "dist/nftables/compact.sh"
+        ],
+        "pf": [
+          "dist/pf/compact.txt",
+          "dist/pf/compact.sh"
+        ],
+        "plain": [
+          "dist/plain/compact.txt"
+        ],
+        "powershell": [
+          "dist/windows/compact.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield7",
+        "abuseipdb7",
+        "feodo",
+        "ipsum7",
+        "strongips",
+        "etcompromised",
+        "webclient"
+      ]
+    },
+    "complete": {
+      "entries": 74695,
+      "files": {
+        "bat": [
+          "dist/windows/complete.bat"
+        ],
+        "ipset": [
+          "dist/ipset/complete.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/complete.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/complete.nft",
+          "dist/nftables/complete.sh"
+        ],
+        "pf": [
+          "dist/pf/complete.txt",
+          "dist/pf/complete.sh"
+        ],
+        "plain": [
+          "dist/plain/complete.txt"
+        ],
+        "powershell": [
+          "dist/windows/complete.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield30",
+        "abuseipdb30",
+        "feodo",
+        "ipsum3",
+        "strongips",
+        "etcompromised",
+        "webclient",
+        "threatfox",
+        "level2",
+        "level3",
+        "tif"
+      ]
+    }
   },
   "sources": {
-    "cti": "https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt",
-    "gambling1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt",
-    "gambling2": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts",
-    "nsfw1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt",
-    "nsfw2": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts",
-    "nsfw3": "https://nsfw-small.oisd.nl/domainswild2",
-    "phish1": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
-    "phish2": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt",
-    "phish3": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt",
-    "scam1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/spam-tlds-rpz.txt",
-    "tifmini": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt",
-    "urlhaus": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt"
-  }
+    "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-3d.ipv4",
+    "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-75percent.ipv4",
+    "abuseipdb7": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-75percent.ipv4",
+    "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
+    "botnet": "https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt",
+    "dshield30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_30d.netset",
+    "dshield7": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_7d.netset",
+    "etblock": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_block.netset",
+    "etcompromised": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_compromised.ipset",
+    "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
+    "ipsum3": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/3.txt",
+    "ipsum7": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/7.txt",
+    "level2": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset",
+    "level3": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level3.netset",
+    "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
+    "strongips": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset",
+    "threatfox": "https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt",
+    "tif": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/ips/tif.txt",
+    "webclient": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webclient.netset",
+    "webserver": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webserver.netset"
+  },
+  "stale_after_days": 3
 }

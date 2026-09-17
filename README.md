@@ -7,7 +7,7 @@ The generated lists are rebuilt by GitHub Actions and committed back to the repo
 ## Generated Lists
 
 <!-- BLOCKLIST_COUNTS_START -->
-Last updated: **2026-09-17 02:24:47 UTC**
+Last updated: **2026-09-17 02:33:00 UTC**
 
 | List | Sources | Entries | Plain | MikroTik | nftables | ipset | Windows | pf |
 |---|---|---:|---|---|---|---|---|---|
@@ -56,7 +56,7 @@ sudo ./ui-install.sh
 ## Generated Domain Lists
 
 <!-- DOMAIN_BLOCKLISTS_START -->
-Last updated: **2026-09-17 02:24:57 UTC**
+Last updated: **2026-09-17 02:33:13 UTC**
 
 | List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | RPZ | Wildcard |
 |---|---:|---:|---|---|---|---|---|---|
