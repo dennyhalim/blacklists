@@ -36,8 +36,8 @@ SOURCES: dict[str, str] = {
     "botnet": ("https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt"),
     "threatfox": ("https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt"),
     "tif": ("https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/ips/tif.txt"),
-    "alienvault": ("http://reputation.alienvault.com/reputation.data"),
     "threatview": ("https://threatview.io/Downloads/High-Confidence-CobaltStrike-C2%20-Feeds.txt"),
+    #"alienvault": ("http://reputation.alienvault.com/reputation.data"),#ERROR
     #"blocklistde": ("https://lists.blocklist.de/lists/all.txt"), #level2
     #"toxic": ("https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"), #webserver
     #"hijack": ("https://raw.githubusercontent.com/kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset"), #level4
@@ -78,7 +78,7 @@ SOURCES: dict[str, str] = {
 LISTS: dict[str, tuple[str, ...]] = {
     "base3": ("etblock","webserver","dshield30","abuseipdb30","feodo"),
     "base7": ("etblock","webserver","dshield7","abuseipdb7","feodo"),
-    "baseip": ("feodo","strongips","etcompromised","webclient","alienvault"),
+    "baseip": ("feodo","strongips","etcompromised","webclient"),
     "compact": ("base7","ipsum7","baseip"),
     "combined": ("base3","ipsum3","baseip"),
     "combined4server": ("base3","threatfox","level4","abuser","botnet","abuseipdb","threatview"),
