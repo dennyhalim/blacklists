@@ -94,12 +94,12 @@ EXPORTS: dict[str, bool] = {
 }
 
 ROUTEROS_LIST_PREFIX = "blocklist"
-ROUTEROS_MANAGED_COMMENT = "ipbl.dennyhalim.com"
+ROUTEROS_MANAGED_COMMENT = "bl.dennyhalim.com"
 NFT_TABLE_FAMILY = "inet"
 NFT_TABLE_NAME = "filter"
 IPSET_PREFIX = "blocklist"
 PF_TABLE_PREFIX = "blocklist"
-WINDOWS_RULE_GROUP = "ipbl.dennyhalim.com Blocklists"
+WINDOWS_RULE_GROUP = "bl.dennyhalim.com Blocklists"
 WINDOWS_RULE_CHUNK_SIZE = 500
 
 SAFE_NAME_RE = re.compile(r"[^a-zA-Z0-9_-]+")
