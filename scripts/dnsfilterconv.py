@@ -162,12 +162,22 @@ def main() -> int:
     parser.add_argument("inputs", type=Path, nargs="+", help="input files using TYPE:VALUE rules")
     parser.add_argument("--to", choices=sorted(TARGETS), help="output format; omit to generate every supported format")
     parser.add_argument("-o", "--output", type=Path, help="output file; only valid with one input and --to")
+    parser.add_argument(
+        "-d", "--output-dir",
+        type=Path,
+        help="directory for generated files; defaults to each input file's directory",
+    )
     args = parser.parse_args()
 
     if args.output and (not args.to or len(args.inputs) != 1):
         parser.error("--output requires exactly one input and --to")
+    if args.output and args.output_dir:
+        parser.error("--output and --output-dir cannot be used together")
 
     try:
+        if args.output_dir:
+            args.output_dir.mkdir(parents=True, exist_ok=True)
+
         for input_path in args.inputs:
             text = input_path.read_text(encoding="utf-8")
             targets = [args.to] if args.to else sorted(TARGETS)
@@ -178,7 +188,8 @@ def main() -> int:
                 if args.output:
                     output_path = args.output
                 else:
-                    output_path = input_path.with_name(f"{input_path.stem}-{target}.txt")
+                    output_dir = args.output_dir or input_path.parent
+                    output_path = output_dir / f"{input_path.stem}-{target}.txt"
 
                 output_path.write_text(output, encoding="utf-8")
                 print(output_path)
