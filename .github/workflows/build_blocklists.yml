@@ -33,6 +33,7 @@ jobs:
           python scripts/build_blocklists.py
           python scripts/build_domain_blocklists.py
           python scripts/dnsfilterconv.py src/*.list -d dist/dns
+          wget -q -O - https://team-cymru.org/Services/Bogons/fullbogons-ipv4.txt | grep -vf src/bogon-bn-nonagg.txt > dist/lessbogons.txt
           ls -l dist
           #sort dist/plain/complete.txt | uniq -d || true
 
