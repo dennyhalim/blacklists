@@ -1,12 +1,14 @@
 #ads, trackers, common blocks
 #avoid contains with <4 chars
+#keep regex short for mikrotik had limits
 #domain:example.com
 #prefix:steam
 #endswith:ads
-suffix:.top|.cfd|.icu|.gq|.tk|.bet|.bid|.cam|.tube|.gay|.bid|.bet
+suffix:.top|.cfd|.icu|.gq|.tk|.bet|.bid|.cam|.tube|.gay
 contains:doubleclick|2mdn|pagead2|quantserve|booru|heytapmobi
 contains:analyti|telemetry|beacon|tracking|trafficmanager|nexusrules|piwik
 contains:casino|poker|bingo|slots|gambling|adult|lgbt|xxx|porn|sex|sexy|webcam
 regex:google(ad|tag|syndication|-analytic)
 regex:ad(serv|vert|mob|zerk|nxs|system|tube)
 regex:(bing|mail-|search|image|video|samsung|tv)ads
+#regex:ads(flame|keeper|ports|2live|tat|min|co)
