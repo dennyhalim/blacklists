@@ -10,20 +10,19 @@ START='<!-- DOMAIN_BLOCKLISTS_START -->'; END='<!-- DOMAIN_BLOCKLISTS_END -->'
 INDEX_START='<!-- DOMAIN_BLOCKLISTS_START -->'; INDEX_END='<!-- DOMAIN_BLOCKLISTS_END -->'
 
 SOURCES={
- 'fake1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt',
- 'spam1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/spam-tlds-ublock.txt',
+ 'fake1':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/fake-onlydomains.txt',
+ 'spam1':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt',
  'phish1':'https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt',
  'phish2':'https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt',
  #'phish3':'https://phishing.army/download/phishing_army_blocklist_extended.txt',#tif
  #'phishunt':'https://phishunt.io/feed.txt',
- #'tif':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif-onlydomains.txt',
  #'urlhaus':'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt',#tif
  #'threatview':'https://threatview.io/Downloads/DOMAIN-High-Confidence-Feed.txt',#HUGE
- 'tifmini':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt',
+ 'tifmini':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.mini-onlydomains.txt',
  'cti':'https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt',
- 'gambling1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt',
+ 'gambling1':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.mini-onlydomains.txt',
  'gambling2':'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts',
- 'nsfw1':'https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt',
+ 'nsfw1':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nsfw-onlydomains.txt',
  'nsfw2':'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts',
  #'nsfw3':'https://nsfw.oisd.nl/domainswild2',
  'nsfw3':'https://nsfw-small.oisd.nl/domainswild2',
