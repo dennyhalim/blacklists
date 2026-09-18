@@ -12,7 +12,7 @@ INDEX_START='<!-- DOMAIN_BLOCKLISTS_START -->'; INDEX_END='<!-- DOMAIN_BLOCKLIST
 SOURCES={
  'fake1':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/fake-onlydomains.txt',
  'spam1':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt',
- 'phish1':'https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt',
+ 'phish1':'https://gitlab.com/malware-filter/phishing-filter/-/raw/master/dist/phishing-filter-domains.txt',
  'phish2':'https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt',
  #'phish3':'https://phishing.army/download/phishing_army_blocklist_extended.txt',#tif
  #'phishunt':'https://phishunt.io/feed.txt',
