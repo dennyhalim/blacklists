@@ -7,7 +7,7 @@ CLUSTER_FW="/etc/pve/firewall/cluster.fw"
 
 URLS=(
     "https://blacklists.pages.dev/dist/plain/complete.txt"
-    "https://blacklists.pages.dev/dist/plain/combined4server.txt"
+#    "https://blacklists.pages.dev/dist/plain/combined4server.txt" #may include a large number of false positives
 )
 
 WORKDIR="$(mktemp -d)"
