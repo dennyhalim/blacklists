@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-17 20:59:18 UTC",
+    "generated_at": "2026-09-18 01:04:33 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -30,7 +30,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 127134,
+        "domains": 127116,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -49,7 +49,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 111503,
+        "domains": 111579,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -58,7 +58,7 @@
           "rpz": "dist/rpz/phishing.rpz",
           "wildcard": "dist/wildcard/phishing.txt"
         },
-        "native_rules": 28013
+        "native_rules": 28014
       },
       "scam": {
         "config": {
@@ -87,7 +87,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 192099,
+        "domains": 192306,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -202,7 +202,7 @@
       ]
     },
     "baseip": {
-      "entries": 1398,
+      "entries": 2785,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -232,11 +232,13 @@
         "feodo",
         "strongips",
         "etcompromised",
-        "webclient"
+        "webclient",
+        "alienvault",
+        "threatviewc2"
       ]
     },
     "combined": {
-      "entries": 15428,
+      "entries": 16794,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -271,11 +273,13 @@
         "ipsum3",
         "strongips",
         "etcompromised",
-        "webclient"
+        "webclient",
+        "alienvault",
+        "threatviewc2"
       ]
     },
     "combined4server": {
-      "entries": 224056,
+      "entries": 217181,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -307,16 +311,16 @@
         "dshield30",
         "abuseipdb30",
         "feodo",
-        "threatfox",
         "level4",
-        "abuser",
         "botnet",
+        "abuser",
         "abuseipdb",
+        "threatfox",
         "threatview"
       ]
     },
     "compact": {
-      "entries": 4227,
+      "entries": 5593,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -351,11 +355,13 @@
         "ipsum7",
         "strongips",
         "etcompromised",
-        "webclient"
+        "webclient",
+        "alienvault",
+        "threatviewc2"
       ]
     },
     "complete": {
-      "entries": 77127,
+      "entries": 77642,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -391,11 +397,12 @@
         "strongips",
         "etcompromised",
         "webclient",
+        "alienvault",
+        "threatviewc2",
         "threatfox",
         "level2",
         "level3",
-        "tif",
-        "alienvault"
+        "tif"
       ]
     }
   },
@@ -418,7 +425,8 @@
     "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
     "strongips": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset",
     "threatfox": "https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt",
-    "threatview": "https://threatview.io/Downloads/High-Confidence-CobaltStrike-C2%20-Feeds.txt",
+    "threatview": "https://threatview.io/Downloads/IP-High-Confidence-Feed.txt",
+    "threatviewc2": "https://threatview.io/Downloads/High-Confidence-CobaltStrike-C2%20-Feeds.txt",
     "tif": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/ips/tif.txt",
     "webclient": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webclient.netset",
     "webserver": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_webserver.netset"
