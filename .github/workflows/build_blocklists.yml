@@ -30,6 +30,8 @@ jobs:
 
       - name: Build blocklists
         run: |
+          python scripts/dnsfilterconv.py src/adstracks.txt src/nsfw.txt
+          ls -l 
           python scripts/build_blocklists.py
           python scripts/build_domain_blocklists.py
           ls -l dist
