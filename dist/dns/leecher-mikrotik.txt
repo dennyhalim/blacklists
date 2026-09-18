@@ -1,0 +1,5 @@
+/ip dns static
+add regexp="(bytedance|bytedns|capcutapi|flix|musical\\.ly)" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="(nflx|pstatp|scdn|snssdk|spotify\\-com)" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="(spotify\\.map|spotifycdn|steam|tiktokcdn|tiktokv)" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="(tiktokw|toutiau|ttdns|ttwstatic)" type=NXDOMAIN comment="bl.dennyhalim.com"

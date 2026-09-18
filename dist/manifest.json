@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-18 05:40:45 UTC",
+    "generated_at": "2026-09-18 07:28:53 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -49,7 +49,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 123176,
+        "domains": 123262,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -87,7 +87,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 192401,
+        "domains": 192462,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -360,7 +360,7 @@
       ]
     },
     "complete": {
-      "entries": 78091,
+      "entries": 78105,
       "files": {
         "bat": [
           "dist/windows/complete.bat"

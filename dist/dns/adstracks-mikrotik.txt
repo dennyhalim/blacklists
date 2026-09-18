@@ -1,9 +1,0 @@
-/ip dns static
-add regexp="(2mdn|adserv|analyti|beacon|booru)" type=NXDOMAIN comment="bl.dennyhalim.com"
-add regexp="(doubleclick|heytapmobi|nexusrules|pagead|piwik)" type=NXDOMAIN comment="bl.dennyhalim.com"
-add regexp="(quantserve|snssdk|telemetry|tracking|trafficmanager)" type=NXDOMAIN comment="bl.dennyhalim.com"
-add regexp="(^|\\.)(?:bet|bid|cfd|gq|icu)$" type=NXDOMAIN comment="bl.dennyhalim.com"
-add regexp="(^|\\.)(?:tk|top)$" type=NXDOMAIN comment="bl.dennyhalim.com"
-add regexp="google(ad|tag|syndication|-analytic)" type=NXDOMAIN comment="bl.dennyhalim.com"
-add regexp="ad(serv|vert|mob|zerk|nxs|system|tube)" type=NXDOMAIN comment="bl.dennyhalim.com"
-add regexp="(bing|mail-|search|image|video|samsung|tv)ads" type=NXDOMAIN comment="bl.dennyhalim.com"
