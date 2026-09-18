@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 KINDS = {"domain", "suffix", "contains", "prefix", "endswith", "label", "regex"}
-TARGETS = {"pihole", "adguard", "ublock", "mikrotik"}
+TARGETS = {"pihole", "adguard", "ublock", "mikrotik", "technitium"}
 
 
 @dataclass(frozen=True, slots=True)
@@ -94,6 +94,11 @@ def hostname_regex(rule: Rule) -> str:
 
 def render_pihole(rules: list[Rule]) -> tuple[str, list[str]]:
     # Pi-hole regex blacklist: one hostname regex per line.
+    return "\n".join(hostname_regex(r) for r in rules) + "\n", []
+
+
+def render_technitium(rules: list[Rule]) -> tuple[str, list[str]]:
+    # Technitium Advanced Blocking regex list: one hostname regex per line.
     return "\n".join(hostname_regex(r) for r in rules) + "\n", []
 
 
@@ -193,6 +198,7 @@ RENDERERS = {
     "ublock": render_ublock,
     "rpz": render_rpz,
     "mikrotik": render_mikrotik,
+    "technitium": render_technitium,
 }
 
 
