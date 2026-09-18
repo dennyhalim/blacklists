@@ -134,8 +134,8 @@ def routeros_quote(value: str) -> str:
     return value.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def remove_redundant_contains(values: list[str]) -> list[str]:
-    """Drop keywords already matched by a shorter contains keyword."""
+def remove_redundant_substrings(values: list[str]) -> list[str]:
+    """Drop values already covered by a shorter substring match."""
     kept: list[str] = []
     for value in sorted(set(values), key=lambda v: (len(v), v)):
         if not any(existing in value for existing in kept):
@@ -143,24 +143,43 @@ def remove_redundant_contains(values: list[str]) -> list[str]:
     return kept
 
 
+def grouped(values: list[str], size: int = 5):
+    for i in range(0, len(values), size):
+        yield values[i:i + size]
+
+
 def render_mikrotik(rules: list[Rule]) -> tuple[str, list[str]]:
     out = ["/ip dns static"]
 
-    # Collapse contains rules because RouterOS can match alternation in one
-    # regexp. Keep at most five keywords per DNS static rule.
-    contains = remove_redundant_contains(
-        [r.value for r in rules if r.kind == "contains"]
-    )
-    for i in range(0, len(contains), 5):
-        group = contains[i:i + 5]
-        rx = routeros_quote("(" + "|".join(re.escape(v) for v in group) + ")")
-        out.append(f'add regexp="{rx}" type=NXDOMAIN comment="dnsfilterconv"')
+    # Group compatible rules by semantic type. Never mix types in one regex:
+    # their anchors/boundaries differ. Maximum five alternatives per rule.
+    by_kind: dict[str, list[str]] = {
+        kind: [r.value for r in rules if r.kind == kind]
+        for kind in ("contains", "prefix", "suffix", "endswith")
+    }
 
+    # For contains, a shorter keyword subsumes any longer keyword containing it.
+    by_kind["contains"] = remove_redundant_substrings(by_kind["contains"])
+
+    patterns = {
+        "contains": lambda values: "(" + "|".join(re.escape(v) for v in values) + ")",
+        "prefix": lambda values: r"(^|\.)(?:" + "|".join(re.escape(v) for v in values) + ")",
+        "suffix": lambda values: r"(^|\.)(?:" + "|".join(re.escape(v) for v in values) + r")$",
+        "endswith": lambda values: r"(?:" + "|".join(re.escape(v) for v in values) + r")(\.|$)",
+    }
+
+    for kind in ("contains", "prefix", "suffix", "endswith"):
+        values = sorted(set(by_kind[kind]))
+        for group in grouped(values):
+            rx = routeros_quote(patterns[kind](group))
+            out.append(f'add regexp="{rx}" type=NXDOMAIN comment="bl.dennyhalim.com"')
+
+    # Exact domains and raw regex keep their individual semantics.
     for r in rules:
-        if r.kind == "contains":
+        if r.kind in patterns:
             continue
         rx = routeros_quote(hostname_regex(r))
-        out.append(f'add regexp="{rx}" type=NXDOMAIN comment="dnsfilterconv"')
+        out.append(f'add regexp="{rx}" type=NXDOMAIN comment="bl.dennyhalim.com"')
 
     return "\n".join(out) + "\n", []
 
