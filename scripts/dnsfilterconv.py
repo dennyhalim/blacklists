@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 KINDS = {"domain", "suffix", "contains", "prefix", "endswith", "regex"}
-TARGETS = {"pihole", "adguard", "ublock", "mikrotik"}
+TARGETS = {"pihole", "adguard", "ublock", "rpz", "mikrotik"}
 
 
 @dataclass(frozen=True, slots=True)
@@ -43,30 +43,36 @@ def parse_simple(text: str) -> list[Rule]:
         if ":" not in line:
             raise ValueError(f"line {lineno}: expected TYPE:VALUE")
 
-        kind, value = (part.strip() for part in line.split(":", 1))
+        kind, raw_value = (part.strip() for part in line.split(":", 1))
         kind = kind.lower()
         if kind not in KINDS:
             raise ValueError(f"line {lineno}: unsupported rule type {kind!r}")
-        if not value:
+        if not raw_value:
             raise ValueError(f"line {lineno}: empty value")
 
-        if kind in {"domain", "suffix"}:
-            value = normalize_domain(value)
-        elif kind != "regex":
-            value = value.lower()
-        else:
-            try:
-                re.compile(value)
-            except re.error as exc:
-                raise ValueError(f"line {lineno}: invalid regex: {exc}") from exc
+        # "|" separates compact value lists except for regex, where it keeps
+        # its normal alternation meaning.
+        values = [raw_value] if kind == "regex" else [v.strip() for v in raw_value.split("|")]
+        if any(not value for value in values):
+            raise ValueError(f"line {lineno}: empty value in list")
 
-        key = (kind, value)
-        if key not in seen:
-            seen.add(key)
-            rules.append(Rule(kind, value, lineno))
+        for value in values:
+            if kind in {"domain", "suffix"}:
+                value = normalize_domain(value)
+            elif kind != "regex":
+                value = value.lower()
+            else:
+                try:
+                    re.compile(value)
+                except re.error as exc:
+                    raise ValueError(f"line {lineno}: invalid regex: {exc}") from exc
+
+            key = (kind, value)
+            if key not in seen:
+                seen.add(key)
+                rules.append(Rule(kind, value, lineno))
 
     return rules
-
 
 def hostname_regex(rule: Rule) -> str:
     """Return an unanchored/anchored regex applied to a DNS hostname."""
