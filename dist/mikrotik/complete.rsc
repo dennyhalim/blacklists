@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield30, abuseipdb30, lessbogons, feodo, ipsum3, strongips, etcompromised, webclient, alienvault, threatviewc2, threatfox, level2, level3, tif
-# Entries: 78484
+# Entries: 78488
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhblocklist-complete" and comment="bl.dennyhalim.com"]
@@ -14834,6 +14834,7 @@ add list="dhblocklist-complete" address="45.141.21.177" timeout=3d comment="bl.d
 add list="dhblocklist-complete" address="45.141.26.201" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="45.141.26.218" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="45.141.27.68" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-complete" address="45.141.27.97" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="45.141.56.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="45.141.58.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="45.141.84.0/22" timeout=3d comment="bl.dennyhalim.com"
@@ -27428,6 +27429,7 @@ add list="dhblocklist-complete" address="82.26.80.133" timeout=3d comment="bl.de
 add list="dhblocklist-complete" address="82.26.104.192" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="82.29.71.121" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="82.29.72.65" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-complete" address="82.29.92.60" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="82.29.94.14" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="82.29.94.69" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="82.29.96.88" timeout=3d comment="bl.dennyhalim.com"
@@ -33346,6 +33348,7 @@ add list="dhblocklist-complete" address="103.101.4.0/22" timeout=3d comment="bl.
 add list="dhblocklist-complete" address="103.101.52.208" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="103.101.64.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="103.101.85.1" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-complete" address="103.101.85.26" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="103.101.85.56" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="103.101.85.165" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="103.101.85.173" timeout=3d comment="bl.dennyhalim.com"
@@ -54895,6 +54898,7 @@ add list="dhblocklist-complete" address="162.216.241.206" timeout=3d comment="bl
 add list="dhblocklist-complete" address="162.216.243.39" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="162.217.160.0/21" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="162.217.226.202" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-complete" address="162.217.248.219" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="162.218.226.251" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="162.222.205.45" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-complete" address="162.227.109.103" timeout=3d comment="bl.dennyhalim.com"
