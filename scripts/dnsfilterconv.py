@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 KINDS = {"domain", "suffix", "contains", "prefix", "endswith", "regex"}
-TARGETS = {"pihole", "adguard", "ublock", "rpz", "mikrotik"}
+TARGETS = {"pihole", "adguard", "ublock", "mikrotik"}
 
 
 @dataclass(frozen=True, slots=True)
@@ -134,11 +134,34 @@ def routeros_quote(value: str) -> str:
     return value.replace("\\", "\\\\").replace('"', '\\"')
 
 
+def remove_redundant_contains(values: list[str]) -> list[str]:
+    """Drop keywords already matched by a shorter contains keyword."""
+    kept: list[str] = []
+    for value in sorted(set(values), key=lambda v: (len(v), v)):
+        if not any(existing in value for existing in kept):
+            kept.append(value)
+    return kept
+
+
 def render_mikrotik(rules: list[Rule]) -> tuple[str, list[str]]:
     out = ["/ip dns static"]
+
+    # Collapse contains rules because RouterOS can match alternation in one
+    # regexp. Keep at most five keywords per DNS static rule.
+    contains = remove_redundant_contains(
+        [r.value for r in rules if r.kind == "contains"]
+    )
+    for i in range(0, len(contains), 5):
+        group = contains[i:i + 5]
+        rx = routeros_quote("(" + "|".join(re.escape(v) for v in group) + ")")
+        out.append(f'add regexp="{rx}" type=NXDOMAIN comment="dnsfilterconv"')
+
     for r in rules:
+        if r.kind == "contains":
+            continue
         rx = routeros_quote(hostname_regex(r))
         out.append(f'add regexp="{rx}" type=NXDOMAIN comment="dnsfilterconv"')
+
     return "\n".join(out) + "\n", []
 
 
