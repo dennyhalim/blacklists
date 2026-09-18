@@ -32,6 +32,7 @@ INDEX_TABLE_START = "<!-- BLOCKLIST_INDEX_START -->"
 INDEX_TABLE_END = "<!-- BLOCKLIST_INDEX_END -->"
 
 SOURCES: dict[str, str] = {
+    "lessbogons":"https://raw.githubusercontent.com/dennyhalim/blacklists/main/dist/lessbogons.txt",
     "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
     "botnet": "https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt",
     "threatfox": "https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt",
@@ -111,8 +112,8 @@ SOURCES: dict[str, str] = {
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
-    "base3": ("etblock", "webserver", "dshield30", "abuseipdb30", "feodo"),
-    "base7": ("etblock", "webserver", "dshield7", "abuseipdb7", "feodo"),
+    "base3": ("etblock", "webserver", "dshield30", "abuseipdb30", "lessbogons", "feodo"),
+    "base7": ("etblock", "webserver", "dshield7", "abuseipdb7", "lessbogons", "feodo"),
     "baseip": ("feodo", "strongips", "etcompromised", "webclient","alienvault","threatviewc2"),
     "compact": ("base7", "ipsum7", "baseip"),
     "combined": ("base3", "ipsum3", "baseip"),
