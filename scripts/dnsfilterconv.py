@@ -9,7 +9,7 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
-KINDS = {"domain", "suffix", "contains", "prefix", "endswith", "regex"}
+KINDS = {"domain", "suffix", "contains", "prefix", "endswith", "label", "regex"}
 TARGETS = {"pihole", "adguard", "ublock", "mikrotik"}
 
 
@@ -87,6 +87,8 @@ def hostname_regex(rule: Rule) -> str:
         return rf"(^|\.){re.escape(v)}"
     if rule.kind == "endswith":
         return rf"{re.escape(v)}(\.|$)"
+    if rule.kind == "label":
+        return rf"(^|\.){re.escape(v)}(\.|$)"
     return v
 
 
@@ -155,7 +157,7 @@ def render_mikrotik(rules: list[Rule]) -> tuple[str, list[str]]:
     # their anchors/boundaries differ. Maximum five alternatives per rule.
     by_kind: dict[str, list[str]] = {
         kind: [r.value for r in rules if r.kind == kind]
-        for kind in ("contains", "prefix", "suffix", "endswith")
+        for kind in ("contains", "prefix", "suffix", "endswith", "label")
     }
 
     # For contains, a shorter keyword subsumes any longer keyword containing it.
@@ -166,9 +168,10 @@ def render_mikrotik(rules: list[Rule]) -> tuple[str, list[str]]:
         "prefix": lambda values: r"(^|\.)(?:" + "|".join(re.escape(v) for v in values) + ")",
         "suffix": lambda values: r"(^|\.)(?:" + "|".join(re.escape(v) for v in values) + r")$",
         "endswith": lambda values: r"(?:" + "|".join(re.escape(v) for v in values) + r")(\.|$)",
+        "label": lambda values: r"(^|\.)(?:" + "|".join(re.escape(v) for v in values) + r")(\.|$)",
     }
 
-    for kind in ("contains", "prefix", "suffix", "endswith"):
+    for kind in ("contains", "prefix", "suffix", "endswith", "label"):
         values = sorted(set(by_kind[kind]))
         for group in grouped(values):
             rx = routeros_quote(patterns[kind](group))
