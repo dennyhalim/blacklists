@@ -1,5 +1,5 @@
 #ads, trackers, common blocks
-#avoid contains with <4 chars
+#avoid contains with <4 chars. less specific mean more false positive.
 #keep regex short for mikrotik had limits
 #domain:example.com
 #prefix:steam
