@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-18 13:55:08 UTC",
+    "generated_at": "2026-09-18 14:01:27 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -132,7 +132,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 2783,
+      "entries": 5817,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -163,11 +163,12 @@
         "webserver",
         "dshield30",
         "abuseipdb30",
+        "lessbogons",
         "feodo"
       ]
     },
     "base7": {
-      "entries": 2801,
+      "entries": 5835,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -198,6 +199,7 @@
         "webserver",
         "dshield7",
         "abuseipdb7",
+        "lessbogons",
         "feodo"
       ]
     },
@@ -238,7 +240,7 @@
       ]
     },
     "combined": {
-      "entries": 15518,
+      "entries": 18551,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -269,6 +271,7 @@
         "webserver",
         "dshield30",
         "abuseipdb30",
+        "lessbogons",
         "feodo",
         "ipsum3",
         "strongips",
@@ -279,7 +282,7 @@
       ]
     },
     "combined4server": {
-      "entries": 205105,
+      "entries": 208129,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -310,6 +313,7 @@
         "webserver",
         "dshield30",
         "abuseipdb30",
+        "lessbogons",
         "feodo",
         "level4",
         "botnet",
@@ -319,7 +323,7 @@
       ]
     },
     "compact": {
-      "entries": 5600,
+      "entries": 8633,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -350,6 +354,7 @@
         "webserver",
         "dshield7",
         "abuseipdb7",
+        "lessbogons",
         "feodo",
         "ipsum7",
         "strongips",
@@ -360,7 +365,7 @@
       ]
     },
     "complete": {
-      "entries": 75451,
+      "entries": 78484,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -391,6 +396,7 @@
         "webserver",
         "dshield30",
         "abuseipdb30",
+        "lessbogons",
         "feodo",
         "ipsum3",
         "strongips",
@@ -419,6 +425,7 @@
     "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
     "ipsum3": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/3.txt",
     "ipsum7": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/7.txt",
+    "lessbogons": "https://raw.githubusercontent.com/dennyhalim/blacklists/main/dist/lessbogons.txt",
     "level2": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset",
     "level3": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level3.netset",
     "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
