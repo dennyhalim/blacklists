@@ -30,10 +30,9 @@ jobs:
 
       - name: Build blocklists
         run: |
-          mkdir -p dist/dns
-          python scripts/dnsfilterconv.py src/adstracks.txt src/nsfw.txt -d dist/dns
           python scripts/build_blocklists.py
           python scripts/build_domain_blocklists.py
+          python scripts/dnsfilterconv.py src/adstracks.txt src/nsfw.txt -d dist/dns
           ls -l dist
           #sort dist/plain/complete.txt | uniq -d || true
 
