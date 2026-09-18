@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-18 05:00:33 UTC",
+    "generated_at": "2026-09-18 05:19:28 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -30,7 +30,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 127108,
+        "domains": 127103,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -49,7 +49,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 111579,
+        "domains": 123176,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -58,7 +58,7 @@
           "rpz": "dist/rpz/phishing.rpz",
           "wildcard": "dist/wildcard/phishing.txt"
         },
-        "native_rules": 28014
+        "native_rules": 76
       },
       "scam": {
         "config": {
@@ -109,16 +109,16 @@
     },
     "sources": {
       "cti": "https://raw.githubusercontent.com/DNSBunker/CTI/main/domains.txt",
-      "fake1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/fake-onlydomains.txt",
-      "gambling1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling.mini-onlydomains.txt",
+      "fake1": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/fake-onlydomains.txt",
+      "gambling1": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.mini-onlydomains.txt",
       "gambling2": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts",
-      "nsfw1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt",
+      "nsfw1": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nsfw-onlydomains.txt",
       "nsfw2": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts",
       "nsfw3": "https://nsfw-small.oisd.nl/domainswild2",
-      "phish1": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt",
+      "phish1": "https://gitlab.com/malware-filter/phishing-filter/-/raw/master/dist/phishing-filter-domains.txt",
       "phish2": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/online_root_domains.txt",
-      "spam1": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/spam-tlds-ublock.txt",
-      "tifmini": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.mini-onlydomains.txt"
+      "spam1": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
+      "tifmini": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.mini-onlydomains.txt"
     }
   },
   "exports": {
@@ -360,7 +360,7 @@
       ]
     },
     "complete": {
-      "entries": 78092,
+      "entries": 78091,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
