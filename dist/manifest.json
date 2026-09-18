@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-18 07:28:53 UTC",
+    "generated_at": "2026-09-18 13:24:44 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -10,7 +10,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 137777,
+        "domains": 139492,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -30,7 +30,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 127103,
+        "domains": 126885,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -68,7 +68,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 17067,
+        "domains": 17198,
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
@@ -87,7 +87,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 192462,
+        "domains": 195874,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -132,7 +132,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 2782,
+      "entries": 2783,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -167,7 +167,7 @@
       ]
     },
     "base7": {
-      "entries": 2798,
+      "entries": 2801,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -202,7 +202,7 @@
       ]
     },
     "baseip": {
-      "entries": 2785,
+      "entries": 2836,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -238,7 +238,7 @@
       ]
     },
     "combined": {
-      "entries": 15568,
+      "entries": 15518,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -279,7 +279,7 @@
       ]
     },
     "combined4server": {
-      "entries": 202612,
+      "entries": 205105,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -319,7 +319,7 @@
       ]
     },
     "compact": {
-      "entries": 5570,
+      "entries": 5600,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -360,7 +360,7 @@
       ]
     },
     "complete": {
-      "entries": 78105,
+      "entries": 75451,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
