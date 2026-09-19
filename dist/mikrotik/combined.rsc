@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield30, abuseipdb30, lessbogons, feodo, ipsum3, strongips, etcompromised, webclient, alienvault, threatviewc2
-# Entries: 21042
+# Entries: 21041
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhblocklist-combined" and comment="bl.dennyhalim.com"]
@@ -8640,7 +8640,6 @@ add list="dhblocklist-combined" address="102.165.96.215" timeout=3d comment="bl.
 add list="dhblocklist-combined" address="102.192.0.0/13" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.200.0.0/16" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.201.0.0/19" timeout=3d comment="bl.dennyhalim.com"
-add list="dhblocklist-combined" address="102.201.32.0/21" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.201.220.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.201.224.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.203.20.0/22" timeout=3d comment="bl.dennyhalim.com"
