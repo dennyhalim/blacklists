@@ -55,6 +55,7 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_level2.netset"
     ),
+    #vxvault blocking raw github
     "level3": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_level3.netset"
