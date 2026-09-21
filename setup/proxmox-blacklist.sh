@@ -374,4 +374,4 @@ except Exception:
     raise
 PY
 
-log "Blacklist update completed"
+log "dhBlacklist update completed"
