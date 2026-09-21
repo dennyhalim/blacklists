@@ -46,7 +46,7 @@ wget https://blacklists.pages.dev/setup/proxmox-update.sh -O /etc/pve/dhblacklis
 wget https://blacklists.pages.dev/setup/pve-blacklist.sh -O /usr/local/sbin/dh-blacklist
 chmod +x /usr/local/sbin/dh-blacklist
 echo '17 */13 * * * root /usr/local/sbin/dh-blacklist >/dev/null 2>&1' >> /etc/crontab
-dh-blacklist
+/usr/local/sbin/dh-blacklist
 ```
 
 check the result
