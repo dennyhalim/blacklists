@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-21 02:34:53 UTC",
+    "generated_at": "2026-09-21 03:29:10 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -30,7 +30,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 126173,
+        "domains": 126171,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -49,7 +49,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 124408,
+        "domains": 124406,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -87,7 +87,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 469636,
+        "domains": 469835,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -282,7 +282,7 @@
       ]
     },
     "combined4server": {
-      "entries": 210248,
+      "entries": 209297,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -315,7 +315,6 @@
         "abuseipdb30",
         "lessbogons",
         "feodo",
-        "level3",
         "level4",
         "botnet",
         "abuser",
@@ -366,7 +365,7 @@
       ]
     },
     "complete": {
-      "entries": 80610,
+      "entries": 80611,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
