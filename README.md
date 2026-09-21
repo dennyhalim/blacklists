@@ -40,12 +40,21 @@ Overlapping and adjacent networks are collapsed where possible before generating
 
 ## Proxmox install
 
+first install, run only once
 ```bash
 wget https://blacklists.pages.dev/setup/proxmox-update.sh -O /etc/pve/dhblacklist-update.sh
 wget https://blacklists.pages.dev/setup/pve-blacklist.sh -O /usr/local/sbin/dh-blacklist
 chmod +x /usr/local/sbin/dh-blacklist
 echo '17 */13 * * * root /usr/local/sbin/dh-blacklist >/dev/null 2>&1' >> /etc/crontab
 dh-blacklist
+```
+
+check the result
+
+```bash
+nft list table inet dh_blacklist
+journalctl -t dh-blacklist
+nft monitor trace
 ```
 
 ## Ubiquiti / Unifi / UDR / UCG blacklist install
