@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+
+#fail! it only works for small ip sets
+#pve firewall cant handle thousands lines of ip blacklists
+
 set -euo pipefail
 
 # Proxmox VE blacklist updater
