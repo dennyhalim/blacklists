@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # bl.dennyhalim.com
+# use updated proxmox-blacklist.sh
+
 set -euo pipefail
 
 IPSET="dhblacklist"
