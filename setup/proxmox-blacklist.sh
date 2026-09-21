@@ -14,9 +14,8 @@ set -euo pipefail
 #   creates [IPSET name] and adds a DROP rule to those security groups.
 
 LISTS=(
-    "list1|https://example.com/list1.txt|"
-    "list2|https://example.com/list2.txt|webservers"
-    "list3|https://example.com/list3.txt|mailservers,databases"
+    "complete|https://blacklists.pages.dev/dist/plain/complete.txt|"
+    "servers|https://blacklists.pages.dev/dist/plain/combined4server.txt|servers"
 )
 
 CLUSTER_FW="/etc/pve/firewall/cluster.fw"
