@@ -23,7 +23,7 @@ WORKDIR="$(mktemp -d)"
 trap 'rm -rf "$WORKDIR"' EXIT
 
 log() {
-    logger -t proxmox-blacklist "$*"
+    logger -t dhbl-blacklist "$*"
     echo "[$(date '+%F %T')] $*"
 }
 
