@@ -52,8 +52,8 @@ dh-blacklist
 check the result
 
 ```bash
-nft list table inet dh_blacklist
 journalctl -t dh-blacklist
+nft list table inet dh_blacklist
 nft monitor trace
 ```
 
