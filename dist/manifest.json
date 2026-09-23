@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-23 14:06:08 UTC",
+    "generated_at": "2026-09-23 21:08:03 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -10,7 +10,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 141085,
+        "domains": 141082,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -19,7 +19,7 @@
           "rpz": "dist/rpz/gambling.rpz",
           "wildcard": "dist/wildcard/gambling.txt"
         },
-        "native_rules": 6664
+        "native_rules": 6673
       },
       "nsfw": {
         "config": {
@@ -30,7 +30,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 127430,
+        "domains": 127787,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -39,7 +39,7 @@
           "rpz": "dist/rpz/nsfw.rpz",
           "wildcard": "dist/wildcard/nsfw.txt"
         },
-        "native_rules": 76774
+        "native_rules": 76792
       },
       "phishing": {
         "config": {
@@ -49,7 +49,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 125066,
+        "domains": 125588,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -68,7 +68,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 17282,
+        "domains": 17285,
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
@@ -87,7 +87,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 215844,
+        "domains": 220747,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -282,7 +282,7 @@
       ]
     },
     "combined4server": {
-      "entries": 215661,
+      "entries": 216526,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -365,7 +365,7 @@
       ]
     },
     "complete": {
-      "entries": 80519,
+      "entries": 80331,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
