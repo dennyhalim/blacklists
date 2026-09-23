@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield7, abuseipdb7, lessbogons, feodo
-# Entries: 5931
+# Entries: 5933
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhblocklist-base7" and comment="bl.dennyhalim.com"]
@@ -1009,6 +1009,7 @@ add list="dhblocklist-base7" address="64.250.144.0/20" timeout=3d comment="bl.de
 add list="dhblocklist-base7" address="65.21.113.205" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="65.21.113.248" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="65.49.1.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-base7" address="65.49.20.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="65.166.249.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="65.205.64.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="65.216.208.0/21" timeout=3d comment="bl.dennyhalim.com"
@@ -1277,7 +1278,6 @@ add list="dhblocklist-base7" address="91.210.104.0/22" timeout=3d comment="bl.de
 add list="dhblocklist-base7" address="91.211.90.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="91.214.109.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="91.215.85.0/24" timeout=3d comment="bl.dennyhalim.com"
-add list="dhblocklist-base7" address="91.216.63.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="91.218.236.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="91.220.163.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="91.224.92.0/24" timeout=3d comment="bl.dennyhalim.com"
@@ -1294,6 +1294,9 @@ add list="dhblocklist-base7" address="91.246.43.0/24" timeout=3d comment="bl.den
 add list="dhblocklist-base7" address="91.246.176.0/21" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="92.63.197.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="92.87.6.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-base7" address="92.112.218.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-base7" address="92.112.220.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-base7" address="92.112.232.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="92.118.39.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="92.204.248.55" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="92.242.62.0/24" timeout=3d comment="bl.dennyhalim.com"
@@ -1366,6 +1369,7 @@ add list="dhblocklist-base7" address="100.29.128.75" timeout=3d comment="bl.denn
 add list="dhblocklist-base7" address="100.29.155.89" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="100.29.160.53" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="100.29.164.178" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-base7" address="100.29.192.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="100.53.239.58" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="101.0.16.0/20" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="101.1.16.0/20" timeout=3d comment="bl.dennyhalim.com"
@@ -2966,7 +2970,6 @@ add list="dhblocklist-base7" address="185.81.68.0/24" timeout=3d comment="bl.den
 add list="dhblocklist-base7" address="185.84.157.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="185.93.89.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="185.99.98.0/24" timeout=3d comment="bl.dennyhalim.com"
-add list="dhblocklist-base7" address="185.99.245.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="185.99.246.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="185.100.120.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="185.100.157.0/24" timeout=3d comment="bl.dennyhalim.com"
@@ -3316,7 +3319,6 @@ add list="dhblocklist-base7" address="193.30.241.0/24" timeout=3d comment="bl.de
 add list="dhblocklist-base7" address="193.32.66.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="193.32.162.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="193.46.255.0/24" timeout=3d comment="bl.dennyhalim.com"
-add list="dhblocklist-base7" address="193.124.20.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="193.139.0.0/16" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="193.142.146.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="193.143.1.0/24" timeout=3d comment="bl.dennyhalim.com"
