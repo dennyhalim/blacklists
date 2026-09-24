@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield30, abuseipdb30, lessbogons, feodo, ipsum3, strongips, etcompromised, webclient, alienvault, threatviewc2
-# Entries: 20424
+# Entries: 20429
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhblocklist-combined" and comment="bl.dennyhalim.com"]
@@ -8173,7 +8173,11 @@ add list="dhblocklist-combined" address="102.165.96.215" timeout=3d comment="bl.
 add list="dhblocklist-combined" address="102.165.124.165" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.192.0.0/13" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.200.0.0/16" timeout=3d comment="bl.dennyhalim.com"
-add list="dhblocklist-combined" address="102.201.0.0/19" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-combined" address="102.201.0.0/20" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-combined" address="102.201.16.0/21" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-combined" address="102.201.24.0/22" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-combined" address="102.201.28.0/23" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-combined" address="102.201.30.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.201.220.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.201.224.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="102.203.20.0/22" timeout=3d comment="bl.dennyhalim.com"
@@ -11914,6 +11918,7 @@ add list="dhblocklist-combined" address="131.255.68.201" timeout=3d comment="bl.
 add list="dhblocklist-combined" address="131.255.240.10" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="132.145.115.202" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="132.145.122.251" timeout=3d comment="bl.dennyhalim.com"
+add list="dhblocklist-combined" address="132.196.86.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="132.232.40.201" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="132.232.79.250" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-combined" address="132.243.222.137" timeout=3d comment="bl.dennyhalim.com"

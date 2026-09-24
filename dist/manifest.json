@@ -1,6 +1,6 @@
 {
   "domain": {
-    "generated_at": "2026-09-24 14:02:56 UTC",
+    "generated_at": "2026-09-24 21:11:41 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -30,7 +30,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 134978,
+        "domains": 135021,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -49,7 +49,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 125559,
+        "domains": 125685,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -87,7 +87,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 224337,
+        "domains": 222961,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -132,7 +132,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 5967,
+      "entries": 5972,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -168,7 +168,7 @@
       ]
     },
     "base7": {
-      "entries": 6000,
+      "entries": 6005,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -240,7 +240,7 @@
       ]
     },
     "combined": {
-      "entries": 20424,
+      "entries": 20429,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -282,7 +282,7 @@
       ]
     },
     "combined4server": {
-      "entries": 215802,
+      "entries": 216566,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -323,7 +323,7 @@
       ]
     },
     "compact": {
-      "entries": 8910,
+      "entries": 8915,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -365,7 +365,7 @@
       ]
     },
     "complete": {
-      "entries": 82249,
+      "entries": 82273,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
