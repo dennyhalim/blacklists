@@ -8,7 +8,6 @@ from pathlib import Path
 DIST=Path('dist'); README=Path('README.md'); INDEX=Path('index.html')
 START='<!-- DOMAIN_BLOCKLISTS_START -->'; END='<!-- DOMAIN_BLOCKLISTS_END -->'
 INDEX_START='<!-- DOMAIN_BLOCKLISTS_START -->'; INDEX_END='<!-- DOMAIN_BLOCKLISTS_END -->'
-
 SOURCES={
  'fake1':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/fake-onlydomains.txt',
  'spam1':'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt',
@@ -40,16 +39,23 @@ LISTS={
  #'all': {'from':('threat','fake','gambling','nsfw',), 'remove_labels':('www','web'), 'merge_subdomains':3},
 }
 
-EXPORTS=('plain','hosts','adblock','dnsmasq','dnsmasq-nftset','wildcard')
-PLATFORMS={'Pi-hole':'plain','AdGuard Home':'adblock','uBlock Origin':'adblock','Adblock Plus':'adblock','dnsmasq':'dnsmasq','dnsmasq+nftables':'dnsmasq-nftset','BIND RPZ':'rpz'}
+EXPORTS=('plain','hosts','adblock','dnsmasq','dnsmasq-nftset','rpz','wildcard')
+PLATFORMS={
+ 'Pi-hole':'plain',
+ 'AdGuard Home':'adblock',
+ 'uBlock Origin':'adblock',
+ 'Adblock Plus':'adblock',
+ 'dnsmasq':'dnsmasq',
+ 'dnsmasq+nftables':'dnsmasq-nftset',
+ 'BIND RPZ':'rpz',
+}
 DNSMASQ_NFTSET_TARGETS='4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6'
 PSL_URL='https://publicsuffix.org/list/public_suffix_list.dat'
 TRANSFORM_LOG=DIST/'transform.log'
 ACTIVE_PSL=None
-DOMAIN_RE=re.compile(r'^(?=.{1,253}\.?$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.?$',re.I)
-ABP_RE=re.compile(r'^(?P<exc>@@)?\|\|(?P<domain>[a-z0-9._-]+)\^(?P<opts>\$.*)?$',re.I)
-
-def write(p,s): p.parent.mkdir(parents=True,exist_ok=True); p.write_text(s,encoding='utf-8',newline='\n')
+DOMAIN_RE=re.compile(r'^(?=.{1,253}\\.?$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.?$',re.I)
+ABP_RE=re.compile(r'^(?P<exc>@@)?\\|\\|(?P<domain>[a-z0-9._-]+)\\^(?P<opts>\\$.*)?$',re.I)
+def write(p,s): p.parent.mkdir(parents=True,exist_ok=True); p.write_text(s,encoding='utf-8',newline='\\n')
 def norm(v):
  v=v.strip().rstrip('.').lower(); v=v[2:] if v.startswith('*.') else v
  if not v or '.' not in v:return None
@@ -58,7 +64,6 @@ def norm(v):
  if not DOMAIN_RE.fullmatch(v):return None
  try:ipaddress.ip_address(v); return None
  except ValueError:return v
-
 def parse(text):
  domains,native=set(),set()
  for raw in text.splitlines():
@@ -84,9 +89,8 @@ def parse(text):
    continue
   d=norm(line)
   if d:domains.add(d)
-  else:native.add(line)  # preserve potentially meaningful browser/adblock/IP rules
+  else:native.add(line)
  return domains,native
-
 def same_or_sub(d,p):return d==p or d.endswith('.'+p)
 def allowset(values):
  out=set()
@@ -95,7 +99,6 @@ def allowset(values):
   if not d:raise ValueError(f'invalid allowlist domain: {x!r}')
   out.add(d)
  return out
-
 def protected(d,allow):return any(same_or_sub(d,a) for a in allow)
 def remove_labels(domains,labels,allow,list_name,events):
  labels={x.lower() for x in labels}; out=set()
@@ -109,7 +112,6 @@ def remove_labels(domains,labels,allow,list_name,events):
   out.add(d)
   if d!=original:events.append((list_name,'remove_label',original,d))
  return out
-
 def parse_psl(text):
  exact,wild,exc=set(),set(),set()
  for raw in text.splitlines():
@@ -121,7 +123,6 @@ def parse_psl(text):
   except UnicodeError:continue
   target.add(line)
  return exact,wild,exc
-
 def suffix(d):
  if ACTIVE_PSL is None:raise RuntimeError('PSL not loaded')
  exact,wild,exc=ACTIVE_PSL; labels=d.split('.'); best=1
@@ -131,7 +132,6 @@ def suffix(d):
   if c in exact:best=max(best,len(labels)-i)
   if i>0 and c in wild:best=max(best,len(labels)-i+1)
  return '.'.join(labels[-best:])
-
 def floor(d):
  s=suffix(d); a=d.split('.'); b=s.split('.')
  return None if len(a)<=len(b) else '.'.join(a[-len(b)-1:])
@@ -139,7 +139,6 @@ def parent(d):
  if '.' not in d:return None
  p=d.split('.',1)[1]; f=floor(d)
  return p if f and len(p.split('.'))>=len(f.split('.')) else None
-
 def merge(domains,n,allow,list_name,events):
  if n<2:raise ValueError('merge_subdomains must be >= 2')
  out=set(domains)
@@ -158,11 +157,9 @@ def merge(domains,n,allow,list_name,events):
     out-=live; out.add(p); changed=True
   if not changed:break
  return out
-
 def download(name,url):
  print('download:',name,url); req=urllib.request.Request(url,headers={'User-Agent':'domain-blocklist-builder/1.0'})
  with urllib.request.urlopen(req,timeout=120) as r:return r.read().decode('utf-8','replace')
-
 def resolve(name,sources,cache,events,stack=()):
  if name in cache:return cache[name]
  if name in stack:raise ValueError('LISTS cycle: '+' -> '.join((*stack,name)))
@@ -176,32 +173,26 @@ def resolve(name,sources,cache,events,stack=()):
  if cfg.get('remove_labels'):domains=remove_labels(domains,cfg['remove_labels'],allow,name,events)
  if cfg.get('merge_subdomains') is not None:domains=merge(domains,int(cfg['merge_subdomains']),allow,name,events)
  cache[name]=(frozenset(domains),frozenset(native)); return cache[name]
-
 def domain_sort_key(d):
  root=floor(d) or d; labels=d.split('.')
  return (root,len(labels),tuple(reversed(labels)))
 def export(name,domains,native):
  domains=sorted(domains,key=domain_sort_key); files={}
  data={
-  'plain':'\n'.join(domains)+'\n',
-  'hosts':''.join(f'0.0.0.0 {d}\n' for d in domains),
-  'adblock':'\n'.join(sorted(set(native)|{f'||{d}^' for d in domains}))+'\n',
-  # local=/domain/ prevents forwarding the domain and all of its subdomains.
-  'dnsmasq':''.join(f'local=/{d}/\n' for d in domains),
-  # Adds A/AAAA answers for matching domains to pre-existing nftables sets.
-  'dnsmasq-nftset':''.join(f'nftset=/{d}/{DNSMASQ_NFTSET_TARGETS}\n' for d in domains),
-  # RPZ needs both the owner name and wildcard owner to cover the domain tree.
-  'rpz':''.join(f'{d} CNAME .\n*.{d} CNAME .\n' for d in domains),
-  'wildcard':''.join(f'*.{d}\n' for d in domains),
+  'plain':'\\n'.join(domains)+'\\n',
+  'hosts':''.join(f'0.0.0.0 {d}\\n' for d in domains),
+  'adblock':'\\n'.join(sorted(set(native)|{f'||{d}^' for d in domains}))+'\\n',
+  'dnsmasq':''.join(f'local=/{d}/\\n' for d in domains),
+  'dnsmasq-nftset':''.join(f'nftset=/{d}/{DNSMASQ_NFTSET_TARGETS}\\n' for d in domains),
+  'rpz':''.join(f'{d} CNAME .\\n*.{d} CNAME .\\n' for d in domains),
+  'wildcard':''.join(f'*.{d}\\n' for d in domains),
  }
  ext={'plain':'txt','hosts':'txt','adblock':'txt','dnsmasq':'conf','dnsmasq-nftset':'conf','rpz':'rpz','wildcard':'txt'}
  for fmt in EXPORTS:
   p=DIST/fmt/f'{name}.{ext[fmt]}'; write(p,data[fmt]); files[fmt]=p.as_posix()
  return files
-
 def sha(p):
  h=hashlib.sha256(); h.update(p.read_bytes()); return h.hexdigest()
-
 def transform_log(events):
  counts=defaultdict(lambda:{'remove_label':0,'merge_domain':0})
  for name,op,src,dst in events:counts[name][op]+=1
@@ -211,9 +202,8 @@ def transform_log(events):
   r=counts[name]['remove_label']; m=counts[name]['merge_domain']; tr+=r; tm+=m
   lines.append(f'{name}: labels_removed={r} domains_merged={m}')
  lines += [f'TOTAL: labels_removed={tr} domains_merged={tm}','','DETAILS']
- for name,op,src,dst in sorted(events):lines.append(f'{name}\t{op}\t{src}\t->\t{dst}')
- write(TRANSFORM_LOG,'\n'.join(lines)+'\n')
-
+ for name,op,src,dst in sorted(events):lines.append(f'{name}\\t{op}\\t{src}\\t->\\t{dst}')
+ write(TRANSFORM_LOG,'\\n'.join(lines)+'\\n')
 def metadata(m):
  manifest_path=DIST/'manifest.json'
  manifest={}
@@ -223,31 +213,26 @@ def metadata(m):
    if isinstance(loaded,dict):manifest=loaded
   except (OSError,json.JSONDecodeError) as e:
    raise RuntimeError(f'cannot read existing manifest: {e}') from e
-
- # Preserve metadata owned by other builders and replace only our section.
  manifest['domain']=m
- write(manifest_path,json.dumps(manifest,indent=2,sort_keys=True)+'\n')
-
- # Rebuild checksums from all current dist files so entries from other
- # builders are preserved and stale checksum lines disappear.
+ write(manifest_path,json.dumps(manifest,indent=2,sort_keys=True)+'\\n')
  files=sorted(p for p in DIST.rglob('*') if p.is_file() and p.name!='SHA256SUMS')
- write(DIST/'SHA256SUMS',''.join(f'{sha(p)}  {p.as_posix()}\n' for p in files))
+ write(DIST/'SHA256SUMS',''.join(f'{sha(p)}  {p.as_posix()}\\n' for p in files))
 def mdlink(label,p):return f'[{label}]({p})'
 def section(m):
-  lines=[START,f"Last updated: **{m['generated_at']}**",'', '| List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | dnsmasq nftset | RPZ | Wildcard |','|---|---:|---:|---|---|---|---|---|---|---|']
+ lines=[START,f"Last updated: **{m['generated_at']}**",'', '| List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | dnsmasq nftset | RPZ | Wildcard |','|---|---:|---:|---|---|---|---|---|---|---|']
  for name,x in m['lists'].items():
   cells=[mdlink(f,x['files'][f]) for f in EXPORTS]
   lines.append(f"| `{name}` | {x['domains']:,} | {x['native_rules']:,} | "+' | '.join(cells)+' |')
  lines+=['','### Platform compatibility','']+[f'- **{p}** → `{fmt}` output' for p,fmt in PLATFORMS.items()]+[END]
- return '\n'.join(lines)
+ return '\\n'.join(lines)
 def docs(m):
  s=section(m)
  if README.exists():
   t=README.read_text(encoding='utf-8'); a,b=START in t,END in t
   if a!=b:raise RuntimeError('README markers malformed')
   if a:before,rest=t.split(START,1); _,after=rest.split(END,1); t=before+s+after
-  else:t=t.rstrip()+'\n\n## Generated Domain Lists\n\n'+s+'\n'
- else:t='# Domain Blocklists\n\n'+s+'\n'
+  else:t=t.rstrip()+'\\n\\n## Generated Domain Lists\\n\\n'+s+'\\n'
+ else:t='# Domain Blocklists\\n\\n'+s+'\\n'
  write(README,t)
  rows=[]
  for name,x in m['lists'].items():
@@ -261,7 +246,7 @@ def docs(m):
   if a:before,rest=page.split(INDEX_START,1); _,after=rest.split(INDEX_END,1); page=before+section_html+after
   else:
    pos=page.lower().rfind('</body>')
-   page=(page[:pos].rstrip()+'\n'+section_html+'\n'+page[pos:]) if pos>=0 else page.rstrip()+'\n'+section_html+'\n'
+   page=(page[:pos].rstrip()+'\\n'+section_html+'\\n'+page[pos:]) if pos>=0 else page.rstrip()+'\\n'+section_html+'\\n'
  else:
   page=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blocklists</title><style>body{{max-width:1100px;margin:40px auto;padding:0 20px;font:16px/1.5 system-ui,sans-serif;background:#17191c;color:#e6e7e9}}a{{color:#9fc3e8}}table{{width:100%;border-collapse:collapse;margin:1rem 0 2rem}}th,td{{text-align:left;padding:.55rem .7rem;border-bottom:1px solid #3a3d42}}</style></head><body><h1>Blocklists</h1>{section_html}</body></html>'''
  write(INDEX,page)
@@ -278,7 +263,7 @@ def main():
   for r in LISTS[n].get('from',()):collect(r,(*stack,n))
  for n in LISTS:collect(n)
  parsed={n:parse(download(n,SOURCES[n])) for n in sorted(required)}; cache={}; events=[]
- m={'generated_at':datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC'),'sources':{n:SOURCES[n] for n in sorted(required)},'platforms':PLATFORMS,'lists':{}}
+ m={'generated_at':datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC'),'sources':{n:SOURCES[n] for n in sorted(required)},'platforms':PLATFORMS,'dnsmasq_nftset_targets':DNSMASQ_NFTSET_TARGETS,'lists':{}}
  for n in LISTS:
   d,r=resolve(n,parsed,cache,events); files=export(n,d,r); m['lists'][n]={'domains':len(d),'native_rules':len(r),'files':files,'config':LISTS[n]}; print('built:',n,len(d),'domains',len(r),'native rules')
  transform_log(events); metadata(m); docs(m)
