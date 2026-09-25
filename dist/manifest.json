@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-09-25 14:27:09 UTC",
+    "generated_at": "2026-09-25 21:08:34 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -52,7 +52,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 125948,
+        "domains": 125884,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 229232,
+        "domains": 229428,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -289,7 +289,7 @@
       ]
     },
     "combined4server": {
-      "entries": 209570,
+      "entries": 210473,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -372,7 +372,7 @@
       ]
     },
     "complete": {
-      "entries": 75402,
+      "entries": 75416,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
