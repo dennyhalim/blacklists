@@ -40,8 +40,9 @@ LISTS={
  #'all': {'from':('threat','fake','gambling','nsfw',), 'remove_labels':('www','web'), 'merge_subdomains':3},
 }
 
-EXPORTS=('plain','hosts','adblock','dnsmasq','rpz','wildcard')
-PLATFORMS={'Pi-hole':'plain','AdGuard Home':'adblock','uBlock Origin':'adblock','Adblock Plus':'adblock','dnsmasq':'dnsmasq','BIND RPZ':'rpz'}
+EXPORTS=('plain','hosts','adblock','dnsmasq','dnsmasq-nftset','wildcard')
+PLATFORMS={'Pi-hole':'plain','AdGuard Home':'adblock','uBlock Origin':'adblock','Adblock Plus':'adblock','dnsmasq':'dnsmasq','dnsmasq+nftables':'dnsmasq-nftset','BIND RPZ':'rpz'}
+DNSMASQ_NFTSET_TARGETS='4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6'
 PSL_URL='https://publicsuffix.org/list/public_suffix_list.dat'
 TRANSFORM_LOG=DIST/'transform.log'
 ACTIVE_PSL=None
@@ -187,11 +188,13 @@ def export(name,domains,native):
   'adblock':'\n'.join(sorted(set(native)|{f'||{d}^' for d in domains}))+'\n',
   # local=/domain/ prevents forwarding the domain and all of its subdomains.
   'dnsmasq':''.join(f'local=/{d}/\n' for d in domains),
+  # Adds A/AAAA answers for matching domains to pre-existing nftables sets.
+  'dnsmasq-nftset':''.join(f'nftset=/{d}/{DNSMASQ_NFTSET_TARGETS}\n' for d in domains),
   # RPZ needs both the owner name and wildcard owner to cover the domain tree.
   'rpz':''.join(f'{d} CNAME .\n*.{d} CNAME .\n' for d in domains),
   'wildcard':''.join(f'*.{d}\n' for d in domains),
  }
- ext={'plain':'txt','hosts':'txt','adblock':'txt','dnsmasq':'conf','rpz':'rpz','wildcard':'txt'}
+ ext={'plain':'txt','hosts':'txt','adblock':'txt','dnsmasq':'conf','dnsmasq-nftset':'conf','rpz':'rpz','wildcard':'txt'}
  for fmt in EXPORTS:
   p=DIST/fmt/f'{name}.{ext[fmt]}'; write(p,data[fmt]); files[fmt]=p.as_posix()
  return files
@@ -231,7 +234,7 @@ def metadata(m):
  write(DIST/'SHA256SUMS',''.join(f'{sha(p)}  {p.as_posix()}\n' for p in files))
 def mdlink(label,p):return f'[{label}]({p})'
 def section(m):
- lines=[START,f"Last updated: **{m['generated_at']}**",'', '| List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | RPZ | Wildcard |','|---|---:|---:|---|---|---|---|---|---|']
+  lines=[START,f"Last updated: **{m['generated_at']}**",'', '| List | Domains | Native rules | Plain | Hosts | Adblock | dnsmasq | dnsmasq nftset | RPZ | Wildcard |','|---|---:|---:|---|---|---|---|---|---|---|']
  for name,x in m['lists'].items():
   cells=[mdlink(f,x['files'][f]) for f in EXPORTS]
   lines.append(f"| `{name}` | {x['domains']:,} | {x['native_rules']:,} | "+' | '.join(cells)+' |')
