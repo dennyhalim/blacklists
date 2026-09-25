@@ -1,6 +1,7 @@
 {
   "domain": {
-    "generated_at": "2026-09-24 21:11:41 UTC",
+    "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
+    "generated_at": "2026-09-25 02:38:34 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -14,6 +15,7 @@
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
+          "dnsmasq-nftset": "dist/dnsmasq-nftset/gambling.conf",
           "hosts": "dist/hosts/gambling.txt",
           "plain": "dist/plain/gambling.txt",
           "rpz": "dist/rpz/gambling.rpz",
@@ -34,6 +36,7 @@
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
+          "dnsmasq-nftset": "dist/dnsmasq-nftset/nsfw.conf",
           "hosts": "dist/hosts/nsfw.txt",
           "plain": "dist/plain/nsfw.txt",
           "rpz": "dist/rpz/nsfw.rpz",
@@ -53,6 +56,7 @@
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
+          "dnsmasq-nftset": "dist/dnsmasq-nftset/phishing.conf",
           "hosts": "dist/hosts/phishing.txt",
           "plain": "dist/plain/phishing.txt",
           "rpz": "dist/rpz/phishing.rpz",
@@ -72,6 +76,7 @@
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
+          "dnsmasq-nftset": "dist/dnsmasq-nftset/scam.conf",
           "hosts": "dist/hosts/scam.txt",
           "plain": "dist/plain/scam.txt",
           "rpz": "dist/rpz/scam.rpz",
@@ -87,10 +92,11 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 222961,
+        "domains": 221896,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
+          "dnsmasq-nftset": "dist/dnsmasq-nftset/threat.conf",
           "hosts": "dist/hosts/threat.txt",
           "plain": "dist/plain/threat.txt",
           "rpz": "dist/rpz/threat.rpz",
@@ -105,6 +111,7 @@
       "BIND RPZ": "rpz",
       "Pi-hole": "plain",
       "dnsmasq": "dnsmasq",
+      "dnsmasq+nftables": "dnsmasq-nftset",
       "uBlock Origin": "adblock"
     },
     "sources": {
@@ -168,7 +175,7 @@
       ]
     },
     "base7": {
-      "entries": 6005,
+      "entries": 6004,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -240,7 +247,7 @@
       ]
     },
     "combined": {
-      "entries": 20429,
+      "entries": 19872,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -282,7 +289,7 @@
       ]
     },
     "combined4server": {
-      "entries": 216566,
+      "entries": 208582,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -323,7 +330,7 @@
       ]
     },
     "compact": {
-      "entries": 8915,
+      "entries": 8914,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -365,7 +372,7 @@
       ]
     },
     "complete": {
-      "entries": 82273,
+      "entries": 82483,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
