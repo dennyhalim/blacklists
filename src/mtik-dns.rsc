@@ -1,4 +1,4 @@
-/ip dns static
+/ip/dns/static
 add regexp="(steam|flix|nflx|scdn|spotifycdn|spotify-com|spotify.map) type=NXDOMAIN comment="bw.bl.dennyhalim.com"
 add regexp="(tiktokv|tiktokw|tiktokcdn|ttwstatic|ttdns|bytedns) type=NXDOMAIN comment="bw.bl.dennyhalim.com"
 add regexp="(casino|poker|bingo|slots|gambling)" type=NXDOMAIN comment="nsfw.bl.dennyhalim.com"
