@@ -9,7 +9,7 @@ add regexp="(adult|lgbt|xxx|porn|sexy|webcam)" type=NXDOMAIN comment="nsfw.bl.de
 add regexp="(doubleclick|booru|2mdn|pagead2|quantserve)" type=NXDOMAIN comment="ads.bl.dennyhalim.com"
 add regexp="(analyti|telemetry|beacon|tracking|nexusrules|piwik)" type=NXDOMAIN comment="trackers.bl.dennyhalim.com"
 add regexp=".*\\.(bet|bid|cfd|icu|tk|top)\$" type=NXDOMAIN comment="tld.bl.dennyhalim.com"
-add regexp=".*\\.(gay|gq|cam|sex|tube)\$" type=NXDOMAIN comment="tld.bl.dennyhalim.com"
+add regexp=".*\\.(cam|gay|gq|sex|tube)\$" type=NXDOMAIN comment="tld.bl.dennyhalim.com"
 add regexp="google(ad|tag|syndication|-analytic)" type=NXDOMAIN comment="google.bl.dennyhalim.com"
 add regexp="ad(serv|vert|mob|zerk|nxs|system|tube)" type=NXDOMAIN comment="ads.bl.dennyhalim.com"
 add regexp="(bing|mail-|search|image|video|samsung|tv)ads" type=NXDOMAIN comment="ads.bl.dennyhalim.com"
