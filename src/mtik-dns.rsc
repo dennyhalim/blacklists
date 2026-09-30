@@ -1,6 +1,6 @@
 /ip/dns/static
-add regexp="(steam|flix|nflx|scdn|spotifycdn|spotify-com|spotify.map) type=NXDOMAIN comment="bw.bl.dennyhalim.com"
-add regexp="(tiktokv|tiktokw|tiktokcdn|ttwstatic|ttdns|bytedns) type=NXDOMAIN comment="bw.bl.dennyhalim.com"
+add regexp="(steam|flix|nflx|scdn|spotifycdn|spotify-com|spotify.map)" type=NXDOMAIN comment="bw.bl.dennyhalim.com"
+add regexp="(tiktokv|tiktokw|tiktokcdn|ttwstatic|ttdns|bytedns)" type=NXDOMAIN comment="bw.bl.dennyhalim.com"
 add regexp="(casino|poker|bingo|slots|gambling)" type=NXDOMAIN comment="nsfw.bl.dennyhalim.com"
 add regexp="(adult|lgbt|xxx|porn|sexy|webcam)" type=NXDOMAIN comment="nsfw.bl.dennyhalim.com"
 add regexp="(doubleclick|booru|2mdn|pagead2|quantserve)" type=NXDOMAIN comment="ads.bl.dennyhalim.com"
