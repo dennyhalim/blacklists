@@ -4,7 +4,7 @@
 /ip/dns/static
 add cname=strict.bing.com name=www.bing.com type=CNAME comment="safe.bl.dennyhalim.com"
 add address=216.239.38.119 regexp=www.google.co type=A comment="safe.bl.dennyhalim.com"
-add regexp="(casino|poker|bingo|slots|gambling)" type=NXDOMAIN comment="nsfw.bl.dennyhalim.com"
+add regexp="(casino|poker|bingo|slots|gambl)" type=NXDOMAIN comment="nsfw.bl.dennyhalim.com"
 add regexp="(adult|lgbt|xxx|porn|sexy|webcam)" type=NXDOMAIN comment="nsfw.bl.dennyhalim.com"
 add regexp="(doubleclick|booru|2mdn|pagead2|quantserve)" type=NXDOMAIN comment="ads.bl.dennyhalim.com"
 add regexp="(analyti|telemetry|beacon|tracking|nexusrules|piwik)" type=NXDOMAIN comment="trackers.bl.dennyhalim.com"
