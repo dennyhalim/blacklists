@@ -15,7 +15,7 @@ add regexp="ad(serv|vert|mob|zerk|nxs|system|tube)" type=NXDOMAIN comment="ads.b
 add regexp="(bing|mail-|search|image|video|samsung|tv)ads" type=NXDOMAIN comment="ads.bl.dennyhalim.com"
 add regexp="(steam|flix|nflx|scdn|spotifycdn|spotify-com|spotify.map)" type=NXDOMAIN comment="bw.bl.dennyhalim.com" disabled=yes
 add regexp="(tiktokv|tiktokw|tiktokcdn|ttwstatic|ttdns|bytedns)" type=NXDOMAIN comment="bw.bl.dennyhalim.com" disabled=yes
-add regexp="(cerberhhyed5frqa|lfdachijzuwx4bc4|hjhqmbxyinislkkt)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
+add regexp="(cerberhhyed5frqa|lfdachijzuwx4bc4)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
 add regexp="(27lelchgcvs2wpm7|32kl2rwsjvqjeui7|3qbyaoohkcqkzrz6)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
 add regexp="(52uo5k3t73ypjije|ahuqfrqk54v3vnzj|avsxrcoq2q5fgrw2)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
 add regexp="(ffoqr3ug7m726zou|fnmi62725zfti2vy|ftoxmpdipwobp4qy)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
@@ -25,4 +25,4 @@ add regexp="(vrvis6ndra5jeggj|vrympoqs5ra34nfo|vyohacxzoue32vvk)" type=NXDOMAIN 
 add regexp="(4w5wihkwyhsav2ha|4kqd3hmqgptupi3p|de2nuvwegoo32oqv)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
 add regexp="(pe2cku7pebkpgeko|p27dokhpz2n7nvgr|unocl45trpuoefft)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
 add regexp="(twbers4hmi6dc65f|x5sbb5gesp6kzwsh|wjtqjleommc4z46i)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
-add regexp="(xpcx6erilkjced3j|xrhwryizf5mui7a5)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
+add regexp="(xpcx6erilkjced3j|xrhwryizf5mui7a5|hjhqmbxyinislkkt)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
