@@ -66,8 +66,6 @@ nft monitor trace
 #download
 cd /data
 curl -O https://blacklists.pages.dev/setup/ui-install.sh
-#examine
-less ui-install.sh
 # INSTALL
 sudo ./ui-install.sh
 ```
