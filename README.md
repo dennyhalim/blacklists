@@ -44,6 +44,7 @@ Overlapping and adjacent networks are collapsed where possible before generating
 ## Proxmox install
 
 first install, run only once
+! make sure your proxmox using latest nftables, otherwise use iptables version!
 ```bash
 wget https://blacklists.pages.dev/setup/proxmox-update.sh -O /etc/pve/dhblacklist-update.sh
 wget https://blacklists.pages.dev/setup/pve-blacklist.sh -O /usr/local/sbin/dh-blacklist
