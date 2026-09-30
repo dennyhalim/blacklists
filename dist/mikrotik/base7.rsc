@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield7, abuseipdb7, lessbogons, feodo
-# Entries: 6177
+# Entries: 6175
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhblocklist-base7" and comment="bl.dennyhalim.com"]
@@ -604,7 +604,6 @@ add list="dhblocklist-base7" address="43.237.196.0/22" timeout=3d comment="bl.de
 add list="dhblocklist-base7" address="43.239.104.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="43.240.12.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="43.240.92.0/22" timeout=3d comment="bl.dennyhalim.com"
-add list="dhblocklist-base7" address="43.240.116.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="43.241.100.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="43.241.196.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="43.242.232.0/22" timeout=3d comment="bl.dennyhalim.com"
@@ -727,7 +726,6 @@ add list="dhblocklist-base7" address="45.118.124.0/22" timeout=3d comment="bl.de
 add list="dhblocklist-base7" address="45.118.252.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="45.119.40.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="45.120.192.0/22" timeout=3d comment="bl.dennyhalim.com"
-add list="dhblocklist-base7" address="45.121.142.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="45.121.204.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="45.122.231.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhblocklist-base7" address="45.124.72.0/22" timeout=3d comment="bl.dennyhalim.com"
