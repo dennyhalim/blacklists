@@ -34,10 +34,6 @@ Run this ONCE in you mikrotik to activate block rule and install the scheduler
 /tool fetch url="https://blacklists.pages.dev/setup/mtik-dns.rsc"
 /import mtik-dns.rsc
 
-# you need dns cache size ~50M to load all domain blocklist, ~30 for threat only
-/ip/dns/set cache-size=20000
-/ip/dns/adlist/add url=https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts
-/ip/dns/adlist/add url=https://blacklists.pages.dev/dist/hosts/threat.txt disabled=yes
 ```
 
 Overlapping and adjacent networks are collapsed where possible before generating the RouterOS list.
