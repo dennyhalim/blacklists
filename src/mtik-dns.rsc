@@ -1,0 +1,10 @@
+/ip dns static
+add regexp="(casino|poker|bingo|slots|gambling)" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="(adult|lgbt|xxx|porn|sexy|webcam)" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="(doubleclick|booru|2mdn|pagead2|quantserve)" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="(analyti|telemetry|beacon|tracking|nexusrules|piwik)" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="(^|\\.)(?:bet|bid|cam|cfd|gay)$" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="(^|\\.)(?:gq|icu|sex|top|tube)$" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="google(ad|tag|syndication|-analytic)" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="ad(serv|vert|mob|zerk|nxs|system|tube)" type=NXDOMAIN comment="bl.dennyhalim.com"
+add regexp="(bing|mail-|search|image|video|samsung|tv)ads" type=NXDOMAIN comment="bl.dennyhalim.com"
