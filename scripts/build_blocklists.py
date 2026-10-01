@@ -42,6 +42,7 @@ SOURCES: dict[str, str] = {
     "alienvault": "http://reputation.alienvault.com/reputation.data",
     "mal40k": "https://raw.githubusercontent.com/romainmarcoux/malicious-outgoing-ip/main/full-outgoing-ip-40k.txt",
     "malin": "https://raw.githubusercontent.com/romainmarcoux/malicious-ip/main/full-40k.txt",
+    "graphicline": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/graphiclineweb.netset",
     # "blocklistde": "https://lists.blocklist.de/lists/all.txt",  # level2
     # "toxic": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset",  # webserver
     # "hijack": "https://raw.githubusercontent.com/kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset",  # level4
@@ -124,13 +125,13 @@ SOURCES: dict[str, str] = {
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
-    "huge": ("etblock", "webserver", "dshield30", "abuseipdbhuge", "lessbogons", "feodo"),
+    "giant": ("etblock", "webserver", "dshield30", "abuseipdbhuge", "lessbogons", "feodo"),
     "base3": ("etblock", "webserver", "dshield30", "abuseipdb30", "lessbogons", "feodo"),
     "base7": ("etblock", "webserver", "dshield7", "abuseipdb7", "lessbogons", "feodo"),
-    "baseip": ("feodo", "etcompromised", "webclient","alienvault","threatviewc2"),
+    "baseip": ("feodo", "etcompromised", "webclient","alienvault","threatviewc2","graphicline"),
     "compact": ("base7", "ipsum7", "baseip"),
     "combined": ("base3", "ipsum3", "baseip"),
-    "combined4server": ("huge", "level4", "botnet", "abuser", "abuseipdb", "threatview", "malin"),
+    "combined4server": ("giant", "level4", "botnet", "abuser", "abuseipdb", "threatview", "malin"),
     "complete": ("combined", "threatfox", "level2", "tif", "mal40k"),
     "goliath": ("combined4server", "ipsum2", "level3", "abuser30"),
 }
