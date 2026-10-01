@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-01 13:19:04 UTC",
+    "generated_at": "2026-10-01 13:55:27 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 197401,
+        "domains": 197403,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -289,7 +289,7 @@
       ]
     },
     "combined4server": {
-      "entries": 207560,
+      "entries": 208801,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -319,14 +319,15 @@
         "etblock",
         "webserver",
         "dshield30",
-        "abuseipdb30",
+        "abuseipdbhuge",
         "lessbogons",
         "feodo",
         "level4",
         "botnet",
         "abuser",
         "abuseipdb",
-        "threatview"
+        "threatview",
+        "malin"
       ]
     },
     "compact": {
@@ -372,7 +373,7 @@
       ]
     },
     "complete": {
-      "entries": 62350,
+      "entries": 85172,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -413,11 +414,12 @@
         "threatviewc2",
         "threatfox",
         "level2",
-        "tif"
+        "tif",
+        "mal40k"
       ]
     },
     "goliath": {
-      "entries": 168868,
+      "entries": 338521,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -447,13 +449,54 @@
         "etblock",
         "webserver",
         "dshield30",
-        "abuseipdb30",
+        "abuseipdbhuge",
         "lessbogons",
         "feodo",
-        "abuseipdbhuge",
+        "level4",
+        "botnet",
+        "abuser",
+        "abuseipdb",
+        "threatview",
+        "malin",
         "ipsum2",
         "level3",
         "abuser30"
+      ]
+    },
+    "huge": {
+      "entries": 6160,
+      "files": {
+        "bat": [
+          "dist/windows/huge.bat"
+        ],
+        "ipset": [
+          "dist/ipset/huge.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/huge.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/huge.nft",
+          "dist/nftables/huge.sh"
+        ],
+        "pf": [
+          "dist/pf/huge.txt",
+          "dist/pf/huge.sh"
+        ],
+        "plain": [
+          "dist/plain/huge.txt"
+        ],
+        "powershell": [
+          "dist/windows/huge.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield30",
+        "abuseipdbhuge",
+        "lessbogons",
+        "feodo"
       ]
     }
   },
@@ -478,6 +521,8 @@
     "level2": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset",
     "level3": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level3.netset",
     "level4": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level4.netset",
+    "mal40k": "https://raw.githubusercontent.com/romainmarcoux/malicious-outgoing-ip/main/full-outgoing-ip-40k.txt",
+    "malin": "https://raw.githubusercontent.com/romainmarcoux/malicious-ip/main/full-40k.txt",
     "strongips": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset",
     "threatfox": "https://raw.githubusercontent.com/elliotwutingfeng/ThreatFox-IOC-IPs/main/ips.txt",
     "threatview": "https://threatview.io/Downloads/IP-High-Confidence-Feed.txt",
