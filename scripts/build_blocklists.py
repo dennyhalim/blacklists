@@ -129,7 +129,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "combined": ("base3", "ipsum3", "baseip"),
     "combined4server": ("base3", "level4", "botnet", "abuser", "abuseipdb", "threatview"),
     "complete": ("combined", "threatfox", "level2", "tif"),
-    "goliath": ("base3", "ipsum3", "layer3", "abuser30"),
+    "goliath": ("base3", "ipsum3", "level3", "abuser30"),
 }
 
 EXPORTS: dict[str, bool] = {
