@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-01 14:16:17 UTC",
+    "generated_at": "2026-10-01 14:30:05 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -211,7 +211,7 @@
       ]
     },
     "baseip": {
-      "entries": 2491,
+      "entries": 5070,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -242,11 +242,12 @@
         "etcompromised",
         "webclient",
         "alienvault",
-        "threatviewc2"
+        "threatviewc2",
+        "graphicline"
       ]
     },
     "combined": {
-      "entries": 18560,
+      "entries": 21129,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -283,7 +284,8 @@
         "etcompromised",
         "webclient",
         "alienvault",
-        "threatviewc2"
+        "threatviewc2",
+        "graphicline"
       ]
     },
     "combined4server": {
@@ -329,7 +331,7 @@
       ]
     },
     "compact": {
-      "entries": 8733,
+      "entries": 11302,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -366,11 +368,12 @@
         "etcompromised",
         "webclient",
         "alienvault",
-        "threatviewc2"
+        "threatviewc2",
+        "graphicline"
       ]
     },
     "complete": {
-      "entries": 85094,
+      "entries": 87657,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -408,10 +411,47 @@
         "webclient",
         "alienvault",
         "threatviewc2",
+        "graphicline",
         "threatfox",
         "level2",
         "tif",
         "mal40k"
+      ]
+    },
+    "giant": {
+      "entries": 6160,
+      "files": {
+        "bat": [
+          "dist/windows/giant.bat"
+        ],
+        "ipset": [
+          "dist/ipset/giant.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/giant.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/giant.nft",
+          "dist/nftables/giant.sh"
+        ],
+        "pf": [
+          "dist/pf/giant.txt",
+          "dist/pf/giant.sh"
+        ],
+        "plain": [
+          "dist/plain/giant.txt"
+        ],
+        "powershell": [
+          "dist/windows/giant.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield30",
+        "abuseipdbhuge",
+        "lessbogons",
+        "feodo"
       ]
     },
     "goliath": {
@@ -458,42 +498,6 @@
         "level3",
         "abuser30"
       ]
-    },
-    "huge": {
-      "entries": 6160,
-      "files": {
-        "bat": [
-          "dist/windows/huge.bat"
-        ],
-        "ipset": [
-          "dist/ipset/huge.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/huge.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/huge.nft",
-          "dist/nftables/huge.sh"
-        ],
-        "pf": [
-          "dist/pf/huge.txt",
-          "dist/pf/huge.sh"
-        ],
-        "plain": [
-          "dist/plain/huge.txt"
-        ],
-        "powershell": [
-          "dist/windows/huge.ps1"
-        ]
-      },
-      "sources": [
-        "etblock",
-        "webserver",
-        "dshield30",
-        "abuseipdbhuge",
-        "lessbogons",
-        "feodo"
-      ]
     }
   },
   "sources": {
@@ -510,6 +514,7 @@
     "etblock": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_block.netset",
     "etcompromised": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_compromised.ipset",
     "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
+    "graphicline": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/graphiclineweb.netset",
     "ipsum2": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/2.txt",
     "ipsum3": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/3.txt",
     "ipsum7": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/7.txt",
