@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-01 14:30:05 UTC",
+    "generated_at": "2026-10-01 14:49:26 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135291,
+        "domains": 135292,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -211,7 +211,7 @@
       ]
     },
     "baseip": {
-      "entries": 5070,
+      "entries": 2491,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -242,12 +242,11 @@
         "etcompromised",
         "webclient",
         "alienvault",
-        "threatviewc2",
-        "graphicline"
+        "threatviewc2"
       ]
     },
     "combined": {
-      "entries": 21129,
+      "entries": 18560,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -284,12 +283,11 @@
         "etcompromised",
         "webclient",
         "alienvault",
-        "threatviewc2",
-        "graphicline"
+        "threatviewc2"
       ]
     },
     "combined4server": {
-      "entries": 208801,
+      "entries": 211330,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -327,11 +325,12 @@
         "abuser",
         "abuseipdb",
         "threatview",
+        "graphicline",
         "malin"
       ]
     },
     "compact": {
-      "entries": 11302,
+      "entries": 8733,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -368,12 +367,11 @@
         "etcompromised",
         "webclient",
         "alienvault",
-        "threatviewc2",
-        "graphicline"
+        "threatviewc2"
       ]
     },
     "complete": {
-      "entries": 87657,
+      "entries": 85094,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -411,7 +409,6 @@
         "webclient",
         "alienvault",
         "threatviewc2",
-        "graphicline",
         "threatfox",
         "level2",
         "tif",
@@ -455,7 +452,7 @@
       ]
     },
     "goliath": {
-      "entries": 338521,
+      "entries": 341047,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -493,6 +490,7 @@
         "abuser",
         "abuseipdb",
         "threatview",
+        "graphicline",
         "malin",
         "ipsum2",
         "level3",
