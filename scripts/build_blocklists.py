@@ -74,10 +74,6 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_abusers_30d.netset"
     ),
-    "strongips": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset"
-    ),
     "dshield7": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/dshield_7d.netset"
@@ -131,7 +127,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "huge": ("etblock", "webserver", "dshield30", "abuseipdbhuge", "lessbogons", "feodo"),
     "base3": ("etblock", "webserver", "dshield30", "abuseipdb30", "lessbogons", "feodo"),
     "base7": ("etblock", "webserver", "dshield7", "abuseipdb7", "lessbogons", "feodo"),
-    "baseip": ("feodo", "strongips", "etcompromised", "webclient","alienvault","threatviewc2"),
+    "baseip": ("feodo", "etcompromised", "webclient","alienvault","threatviewc2"),
     "compact": ("base7", "ipsum7", "baseip"),
     "combined": ("base3", "ipsum3", "baseip"),
     "combined4server": ("huge", "level4", "botnet", "abuser", "abuseipdb", "threatview", "malin"),
