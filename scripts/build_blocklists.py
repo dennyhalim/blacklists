@@ -68,6 +68,10 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_abusers_1d.netset"
     ),
+    "abuser30": (
+        "https://raw.githubusercontent.com/"
+        "firehol/blocklist-ipsets/master/firehol_abusers_30d.netset"
+    ),
     "strongips": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/blocklist_de_strongips.ipset"
@@ -102,6 +106,11 @@ SOURCES: dict[str, str] = {
         "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/"
         "abuseipdb-s99-hallofshame-30d-50percent.ipv4"
     ),
+    "abuseipdbhuge": (
+        "https://raw.githubusercontent.com/"
+        "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/"
+        "abuseipdb-s99-hallofshame-90d-50percent.ipv4"
+    ),
     "ipsum3": (
         "https://raw.githubusercontent.com/"
         "stamparm/ipsum/master/levels/3.txt"
@@ -120,6 +129,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "combined": ("base3", "ipsum3", "baseip"),
     "combined4server": ("base3", "level4", "botnet", "abuser", "abuseipdb", "threatview"),
     "complete": ("combined", "threatfox", "level2", "tif"),
+    "goliath": ("base3", "ipsum3", "layer3", "abuser30"),
 }
 
 EXPORTS: dict[str, bool] = {
