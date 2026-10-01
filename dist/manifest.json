@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-01 04:21:08 UTC",
+    "generated_at": "2026-10-01 13:03:08 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -11,7 +11,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 148569,
+        "domains": 144620,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 136086,
+        "domains": 135290,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -72,7 +72,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 17411,
+        "domains": 17429,
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 198473,
+        "domains": 197401,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6104,
+      "entries": 6167,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -175,7 +175,7 @@
       ]
     },
     "base7": {
-      "entries": 6197,
+      "entries": 6264,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -211,7 +211,7 @@
       ]
     },
     "baseip": {
-      "entries": 2858,
+      "entries": 2859,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -247,7 +247,7 @@
       ]
     },
     "combined": {
-      "entries": 18634,
+      "entries": 18666,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -289,7 +289,7 @@
       ]
     },
     "combined4server": {
-      "entries": 206595,
+      "entries": 207560,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -330,7 +330,7 @@
       ]
     },
     "compact": {
-      "entries": 8950,
+      "entries": 9007,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -372,7 +372,7 @@
       ]
     },
     "complete": {
-      "entries": 62812,
+      "entries": 62350,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -415,13 +415,54 @@
         "level2",
         "tif"
       ]
+    },
+    "goliath": {
+      "entries": 161852,
+      "files": {
+        "bat": [
+          "dist/windows/goliath.bat"
+        ],
+        "ipset": [
+          "dist/ipset/goliath.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/goliath.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/goliath.nft",
+          "dist/nftables/goliath.sh"
+        ],
+        "pf": [
+          "dist/pf/goliath.txt",
+          "dist/pf/goliath.sh"
+        ],
+        "plain": [
+          "dist/plain/goliath.txt"
+        ],
+        "powershell": [
+          "dist/windows/goliath.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield30",
+        "abuseipdb30",
+        "lessbogons",
+        "feodo",
+        "ipsum3",
+        "level3",
+        "abuser30"
+      ]
     }
   },
   "sources": {
     "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-3d.ipv4",
     "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-50percent.ipv4",
     "abuseipdb7": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-50percent.ipv4",
+    "abuseipdbhuge": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-90d-50percent.ipv4",
     "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
+    "abuser30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_30d.netset",
     "alienvault": "http://reputation.alienvault.com/reputation.data",
     "botnet": "https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt",
     "dshield30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_30d.netset",
