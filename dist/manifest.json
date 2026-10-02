@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-02 04:22:59 UTC",
+    "generated_at": "2026-10-02 06:45:32 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135793,
+        "domains": 135795,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 194794,
+        "domains": 194819,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -287,7 +287,7 @@
       ]
     },
     "combined4server": {
-      "entries": 206419,
+      "entries": 206738,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -488,6 +488,48 @@
         "ipsum2",
         "level3",
         "abuser30"
+      ]
+    },
+    "mailserver": {
+      "entries": 41421,
+      "files": {
+        "bat": [
+          "dist/windows/mailserver.bat"
+        ],
+        "ipset": [
+          "dist/ipset/mailserver.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/mailserver.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/mailserver.nft",
+          "dist/nftables/mailserver.sh"
+        ],
+        "pf": [
+          "dist/pf/mailserver.txt",
+          "dist/pf/mailserver.sh"
+        ],
+        "plain": [
+          "dist/plain/mailserver.txt"
+        ],
+        "powershell": [
+          "dist/windows/mailserver.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "webserver",
+        "dshield30",
+        "abuseipdbhuge",
+        "lessbogons",
+        "feodo",
+        "threatfox",
+        "level2",
+        "etcompromised",
+        "webclient",
+        "alienvault",
+        "threatviewc2"
       ]
     }
   },
