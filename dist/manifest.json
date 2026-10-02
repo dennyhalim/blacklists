@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-01 22:23:36 UTC",
+    "generated_at": "2026-10-02 01:07:59 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -11,7 +11,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 144620,
+        "domains": 146252,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135276,
+        "domains": 135789,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -72,7 +72,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 17429,
+        "domains": 17146,
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 197426,
+        "domains": 194778,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6167,
+      "entries": 6194,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -175,7 +175,7 @@
       ]
     },
     "base7": {
-      "entries": 6265,
+      "entries": 6171,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -246,7 +246,7 @@
       ]
     },
     "combined": {
-      "entries": 18560,
+      "entries": 18596,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -287,7 +287,7 @@
       ]
     },
     "combined4server": {
-      "entries": 212280,
+      "entries": 206514,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -320,17 +320,17 @@
         "abuseipdbhuge",
         "lessbogons",
         "feodo",
+        "graphicline",
         "level4",
         "botnet",
         "abuser",
         "abuseipdb",
         "threatview",
-        "graphicline",
         "malin"
       ]
     },
     "compact": {
-      "entries": 8734,
+      "entries": 8639,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -371,7 +371,7 @@
       ]
     },
     "complete": {
-      "entries": 83502,
+      "entries": 84404,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -416,7 +416,7 @@
       ]
     },
     "giant": {
-      "entries": 6160,
+      "entries": 8722,
       "files": {
         "bat": [
           "dist/windows/giant.bat"
@@ -448,11 +448,12 @@
         "dshield30",
         "abuseipdbhuge",
         "lessbogons",
-        "feodo"
+        "feodo",
+        "graphicline"
       ]
     },
     "goliath": {
-      "entries": 341948,
+      "entries": 171427,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -485,13 +486,7 @@
         "abuseipdbhuge",
         "lessbogons",
         "feodo",
-        "level4",
-        "botnet",
-        "abuser",
-        "abuseipdb",
-        "threatview",
         "graphicline",
-        "malin",
         "ipsum2",
         "level3",
         "abuser30"
