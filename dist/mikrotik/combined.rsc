@@ -1,4 +1,4 @@
-# Generated from: etblock, webserver, dshield30, abuseipdb30, lessbogons, feodo, ipsum3, etcompromised, webclient, alienvault, threatviewc2
+# Generated from: etblock, webserver, dshield30, abuseipdb30, lessbogons, webclient, feodo, ipsum3, etcompromised, alienvault, threatviewc2
 # Entries: 18569
 # Managed entries expire after: 3d
 /ip firewall address-list

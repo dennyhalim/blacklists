@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-02 06:45:32 UTC",
+    "generated_at": "2026-10-02 09:12:54 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 194819,
+        "domains": 194832,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6194,
+      "entries": 6647,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -171,11 +171,12 @@
         "dshield30",
         "abuseipdb30",
         "lessbogons",
+        "webclient",
         "feodo"
       ]
     },
     "base7": {
-      "entries": 6171,
+      "entries": 6624,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -207,11 +208,12 @@
         "dshield7",
         "abuseipdb7",
         "lessbogons",
+        "webclient",
         "feodo"
       ]
     },
     "baseip": {
-      "entries": 2491,
+      "entries": 2022,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -240,7 +242,6 @@
       "sources": [
         "feodo",
         "etcompromised",
-        "webclient",
         "alienvault",
         "threatviewc2"
       ]
@@ -278,16 +279,16 @@
         "dshield30",
         "abuseipdb30",
         "lessbogons",
+        "webclient",
         "feodo",
         "ipsum3",
         "etcompromised",
-        "webclient",
         "alienvault",
         "threatviewc2"
       ]
     },
     "combined4server": {
-      "entries": 206738,
+      "entries": 204012,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -315,10 +316,8 @@
       },
       "sources": [
         "etblock",
-        "webserver",
         "dshield30",
         "abuseipdbhuge",
-        "lessbogons",
         "feodo",
         "level4",
         "botnet",
@@ -362,16 +361,16 @@
         "dshield7",
         "abuseipdb7",
         "lessbogons",
+        "webclient",
         "feodo",
         "ipsum6",
         "etcompromised",
-        "webclient",
         "alienvault",
         "threatviewc2"
       ]
     },
     "complete": {
-      "entries": 86311,
+      "entries": 86335,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -403,10 +402,10 @@
         "dshield30",
         "abuseipdb30",
         "lessbogons",
+        "webclient",
         "feodo",
         "ipsum3",
         "etcompromised",
-        "webclient",
         "alienvault",
         "threatviewc2",
         "threatfox",
@@ -416,7 +415,7 @@
       ]
     },
     "giant": {
-      "entries": 6153,
+      "entries": 1749,
       "files": {
         "bat": [
           "dist/windows/giant.bat"
@@ -444,15 +443,13 @@
       },
       "sources": [
         "etblock",
-        "webserver",
         "dshield30",
         "abuseipdbhuge",
-        "lessbogons",
         "feodo"
       ]
     },
     "goliath": {
-      "entries": 167630,
+      "entries": 164707,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -480,10 +477,8 @@
       },
       "sources": [
         "etblock",
-        "webserver",
         "dshield30",
         "abuseipdbhuge",
-        "lessbogons",
         "feodo",
         "ipsum2",
         "level3",
@@ -491,7 +486,7 @@
       ]
     },
     "mailserver": {
-      "entries": 41421,
+      "entries": 175458,
       "files": {
         "bat": [
           "dist/windows/mailserver.bat"
@@ -519,15 +514,12 @@
       },
       "sources": [
         "etblock",
-        "webserver",
         "dshield30",
         "abuseipdbhuge",
-        "lessbogons",
         "feodo",
-        "threatfox",
         "level2",
+        "level4",
         "etcompromised",
-        "webclient",
         "alienvault",
         "threatviewc2"
       ]
