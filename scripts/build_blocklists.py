@@ -146,7 +146,7 @@ EXPORTS: dict[str, bool] = {
     "pf": True,
 }
 
-ROUTEROS_LIST_PREFIX = "dhblocklist"
+ROUTEROS_LIST_PREFIX = "dhbl"
 ROUTEROS_MANAGED_COMMENT = "bl.dennyhalim.com"
 NFT_TABLE_FAMILY = "inet"
 NFT_TABLE_NAME = "filter"
