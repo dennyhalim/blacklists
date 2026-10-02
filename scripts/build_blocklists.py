@@ -125,10 +125,10 @@ SOURCES: dict[str, str] = {
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
-    "giant": ("etblock", "webserver", "dshield30", "abuseipdbhuge", "lessbogons", "feodo"),
-    "base3": ("etblock", "webserver", "dshield30", "abuseipdb30", "lessbogons", "feodo"),
-    "base7": ("etblock", "webserver", "dshield7", "abuseipdb7", "lessbogons", "feodo"),
-    "baseip": ("feodo", "etcompromised", "webclient","alienvault","threatviewc2"),
+    "giant": ("etblock", "dshield30", "abuseipdbhuge", "feodo"),
+    "base3": ("etblock", "webserver", "dshield30", "abuseipdb30", "lessbogons", "webclient", "feodo"),
+    "base7": ("etblock", "webserver", "dshield7", "abuseipdb7", "lessbogons", "webclient", "feodo"),
+    "baseip": ("feodo", "etcompromised","alienvault","threatviewc2"),
     "compact": ("base7", "ipsum6", "baseip"),
     "combined": ("base3", "ipsum3", "baseip"),
     "combined4server": ("giant", "level4", "botnet", "abuser", "abuseipdb", "threatview", "malin", "graphicline"),
