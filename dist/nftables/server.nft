@@ -1,5 +1,5 @@
-flush set inet filter blocklist_giant
-add element inet filter blocklist_giant {
+flush set inet filter blocklist_server
+add element inet filter blocklist_server {
         1.10.16.0/20,
         1.19.0.0/16,
         1.24.16.0/24,
@@ -216,7 +216,6 @@ add element inet filter blocklist_giant {
         45.221.116.0/22,
         45.230.66.0/24,
         45.248.88.0/22,
-        46.29.26.0/24,
         46.151.182.0/23,
         46.173.240.0/20,
         46.174.204.0/22,
@@ -1002,6 +1001,7 @@ add element inet filter blocklist_giant {
         185.189.73.0/24,
         185.192.36.0/22,
         185.192.100.0/24,
+        185.192.103.0/24,
         185.198.240.0/24,
         185.212.240.0/22,
         185.215.132.0/22,
@@ -1138,6 +1138,7 @@ add element inet filter blocklist_giant {
         193.37.32.0/24,
         193.46.0.0/24,
         193.46.255.0/24,
+        193.47.62.0/24,
         193.124.20.0/24,
         193.139.0.0/16,
         193.142.146.0/23,

@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-02 09:28:58 UTC",
+    "generated_at": "2026-10-02 13:03:52 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -11,7 +11,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 146252,
+        "domains": 145033,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135795,
+        "domains": 135849,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -72,7 +72,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 17146,
+        "domains": 17145,
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 194830,
+        "domains": 194234,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6647,
+      "entries": 6610,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -176,7 +176,7 @@
       ]
     },
     "base7": {
-      "entries": 6624,
+      "entries": 6588,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -213,7 +213,7 @@
       ]
     },
     "baseip": {
-      "entries": 2022,
+      "entries": 2011,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -247,7 +247,7 @@
       ]
     },
     "combined": {
-      "entries": 18569,
+      "entries": 18504,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -288,7 +288,7 @@
       ]
     },
     "combined4server": {
-      "entries": 204012,
+      "entries": 206957,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -329,7 +329,7 @@
       ]
     },
     "compact": {
-      "entries": 8639,
+      "entries": 8586,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -369,8 +369,46 @@
         "threatviewc2"
       ]
     },
+    "compact4server": {
+      "entries": 17294,
+      "files": {
+        "bat": [
+          "dist/windows/compact4server.bat"
+        ],
+        "ipset": [
+          "dist/ipset/compact4server.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/compact4server.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/compact4server.nft",
+          "dist/nftables/compact4server.sh"
+        ],
+        "pf": [
+          "dist/pf/compact4server.txt",
+          "dist/pf/compact4server.sh"
+        ],
+        "plain": [
+          "dist/plain/compact4server.txt"
+        ],
+        "powershell": [
+          "dist/windows/compact4server.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "dshield30",
+        "abuseipdbhuge",
+        "feodo",
+        "level2",
+        "etcompromised",
+        "alienvault",
+        "threatviewc2"
+      ]
+    },
     "complete": {
-      "entries": 86335,
+      "entries": 80293,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -414,42 +452,47 @@
         "mal40k"
       ]
     },
-    "giant": {
-      "entries": 1749,
+    "complete4server": {
+      "entries": 175515,
       "files": {
         "bat": [
-          "dist/windows/giant.bat"
+          "dist/windows/complete4server.bat"
         ],
         "ipset": [
-          "dist/ipset/giant.sh"
+          "dist/ipset/complete4server.sh"
         ],
         "mikrotik": [
-          "dist/mikrotik/giant.rsc"
+          "dist/mikrotik/complete4server.rsc"
         ],
         "nftables": [
-          "dist/nftables/giant.nft",
-          "dist/nftables/giant.sh"
+          "dist/nftables/complete4server.nft",
+          "dist/nftables/complete4server.sh"
         ],
         "pf": [
-          "dist/pf/giant.txt",
-          "dist/pf/giant.sh"
+          "dist/pf/complete4server.txt",
+          "dist/pf/complete4server.sh"
         ],
         "plain": [
-          "dist/plain/giant.txt"
+          "dist/plain/complete4server.txt"
         ],
         "powershell": [
-          "dist/windows/giant.ps1"
+          "dist/windows/complete4server.ps1"
         ]
       },
       "sources": [
         "etblock",
         "dshield30",
         "abuseipdbhuge",
-        "feodo"
+        "feodo",
+        "level2",
+        "level4",
+        "etcompromised",
+        "alienvault",
+        "threatviewc2"
       ]
     },
     "goliath": {
-      "entries": 164707,
+      "entries": 164894,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -485,42 +528,38 @@
         "abuser30"
       ]
     },
-    "mailserver": {
-      "entries": 22911,
+    "server": {
+      "entries": 1750,
       "files": {
         "bat": [
-          "dist/windows/mailserver.bat"
+          "dist/windows/server.bat"
         ],
         "ipset": [
-          "dist/ipset/mailserver.sh"
+          "dist/ipset/server.sh"
         ],
         "mikrotik": [
-          "dist/mikrotik/mailserver.rsc"
+          "dist/mikrotik/server.rsc"
         ],
         "nftables": [
-          "dist/nftables/mailserver.nft",
-          "dist/nftables/mailserver.sh"
+          "dist/nftables/server.nft",
+          "dist/nftables/server.sh"
         ],
         "pf": [
-          "dist/pf/mailserver.txt",
-          "dist/pf/mailserver.sh"
+          "dist/pf/server.txt",
+          "dist/pf/server.sh"
         ],
         "plain": [
-          "dist/plain/mailserver.txt"
+          "dist/plain/server.txt"
         ],
         "powershell": [
-          "dist/windows/mailserver.ps1"
+          "dist/windows/server.ps1"
         ]
       },
       "sources": [
         "etblock",
         "dshield30",
         "abuseipdbhuge",
-        "feodo",
-        "level2",
-        "etcompromised",
-        "alienvault",
-        "threatviewc2"
+        "feodo"
       ]
     }
   },
