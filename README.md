@@ -26,6 +26,8 @@ Last updated: **2026-10-02 02:10:52 UTC**
 
 ## Mikrotik settings
 
+Mikrotik with 1 core cpu, choose base. with memory <512M use compact. bigger mikrotik, use combined/complete. just test and see how your mikrotik resources usage.
+
 Run this ONCE in you mikrotik to activate block rule and install the scheduler
 
 ```bash
