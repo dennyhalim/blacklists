@@ -13,7 +13,7 @@
 
 # Add firewall rules. adjust src-address-list according to url filename
 # ganti nama src-adddress-list sesuai nama ip list yang digunakan dari bl.dennyhalim.com
-/ip/firewall/raw/add chain=prerouting action=drop log-prefix=dhbl comment=bl.dennyhalim.com place-before=0 src-address-list=dhblocklist-compact
+/ip/firewall/raw/add chain=prerouting action=drop log-prefix=dhbl comment=bl.dennyhalim.com place-before=0 src-address-list=dhbl-compact
 
 # Remove previous installation
 /system scheduler remove [find where name=$schedulerName]
