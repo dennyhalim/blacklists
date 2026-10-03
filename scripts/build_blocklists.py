@@ -93,7 +93,7 @@ SOURCES: dict[str, str] = {
     ),
     "abuseipdb": (
         "https://raw.githubusercontent.com/"
-        "borestad/blocklist-abuseipdb/main/abuseipdb-s100-3d.ipv4"
+        "borestad/blocklist-abuseipdb/main/abuseipdb-s100-7d.ipv4"
     ),
     "abuseipdb7": (
         "https://raw.githubusercontent.com/"
@@ -123,9 +123,9 @@ LISTS: dict[str, tuple[str, ...]] = {
     "server": ("etblock","dshield30","abuseipdbhuge","threatviewc2","feodo"),
     "compact": ("base7", "baseip"),
     "combined": ("base3", "level2", "baseip"),
-    "combined4server": ("server", "level4", "botnet", "abuser", "abuseipdb", "threatview", "malin", "graphicline"),
+    "combined4server": ("server", "level4", "botnet", "abuser", "threatview", "malin", "graphicline"),
     "complete": ("combined", "threatfox", "level2", "tif", "mal40k"),
-    "goliath": ("server", "ipsum2", "level3", "abuser30"),
+    "goliath": ("server", "ipsum2", "level3", "abuser30", "abuseipdb"),
 }
 
 EXPORTS: dict[str, bool] = {
