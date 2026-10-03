@@ -130,7 +130,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "baseip": ("feodo", "etcompromised","alienvault","threatviewc2"),
     "server": ("etblock","dshield30","abuseipdbhuge","threatviewc2","feodo"),
     "compact": ("base7", "ipsum6", "baseip"),
-    "combined": ("base3", "level2", "baseip", "ipsum6"),
+    "combined": ("base3", "level2", "baseip", "ipsum3"),
     "combined4server": ("server", "level4", "botnet", "abuser", "abuseipdb", "threatview", "malin", "graphicline"),
     "complete": ("combined", "threatfox", "level2", "tif", "mal40k","ipsum3"),
     "goliath": ("server", "ipsum2", "level3", "abuser30"),
