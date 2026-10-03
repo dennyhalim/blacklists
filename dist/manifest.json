@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-02 21:52:42 UTC",
+    "generated_at": "2026-10-03 01:36:23 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135805,
+        "domains": 135809,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 194250,
+        "domains": 194252,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6610,
+      "entries": 6603,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -176,7 +176,7 @@
       ]
     },
     "base7": {
-      "entries": 6588,
+      "entries": 6582,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -247,7 +247,7 @@
       ]
     },
     "combined": {
-      "entries": 22179,
+      "entries": 22174,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -288,7 +288,7 @@
       ]
     },
     "combined4server": {
-      "entries": 207847,
+      "entries": 202048,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -318,6 +318,7 @@
         "etblock",
         "dshield30",
         "abuseipdbhuge",
+        "threatviewc2",
         "feodo",
         "level4",
         "botnet",
@@ -329,7 +330,7 @@
       ]
     },
     "compact": {
-      "entries": 8586,
+      "entries": 8528,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -370,7 +371,7 @@
       ]
     },
     "complete": {
-      "entries": 80322,
+      "entries": 82517,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -415,7 +416,7 @@
       ]
     },
     "goliath": {
-      "entries": 164894,
+      "entries": 164852,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -445,6 +446,7 @@
         "etblock",
         "dshield30",
         "abuseipdbhuge",
+        "threatviewc2",
         "feodo",
         "ipsum2",
         "level3",
@@ -452,7 +454,7 @@
       ]
     },
     "server": {
-      "entries": 1750,
+      "entries": 2520,
       "files": {
         "bat": [
           "dist/windows/server.bat"
@@ -482,6 +484,7 @@
         "etblock",
         "dshield30",
         "abuseipdbhuge",
+        "threatviewc2",
         "feodo"
       ]
     }
