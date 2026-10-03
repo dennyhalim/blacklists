@@ -124,7 +124,7 @@ LISTS: dict[str, tuple[str, ...]] = {
     "compact": ("base7", "baseip"),
     "combined": ("base3", "level2", "baseip"),
     "combined4server": ("server", "level4", "botnet", "abuser", "abuseipdb", "threatview", "malin", "graphicline"),
-    "complete": ("combined", "threatfox", "level2", "tif", "mal40k","ipsum3"),
+    "complete": ("combined", "threatfox", "level2", "tif", "mal40k"),
     "goliath": ("server", "ipsum2", "level3", "abuser30"),
 }
 
