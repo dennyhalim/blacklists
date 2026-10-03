@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-03 14:10:24 UTC",
+    "generated_at": "2026-10-03 14:27:51 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -288,7 +288,7 @@
       ]
     },
     "combined4server": {
-      "entries": 203412,
+      "entries": 193038,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -323,7 +323,6 @@
         "level4",
         "botnet",
         "abuser",
-        "abuseipdb",
         "threatview",
         "malin",
         "graphicline"
@@ -370,7 +369,7 @@
       ]
     },
     "complete": {
-      "entries": 73296,
+      "entries": 73292,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -414,7 +413,7 @@
       ]
     },
     "goliath": {
-      "entries": 164144,
+      "entries": 197300,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -448,7 +447,8 @@
         "feodo",
         "ipsum2",
         "level3",
-        "abuser30"
+        "abuser30",
+        "abuseipdb"
       ]
     },
     "server": {
@@ -488,7 +488,7 @@
     }
   },
   "sources": {
-    "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-3d.ipv4",
+    "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-7d.ipv4",
     "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-50percent.ipv4",
     "abuseipdb7": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-50percent.ipv4",
     "abuseipdbhuge": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-90d-50percent.ipv4",

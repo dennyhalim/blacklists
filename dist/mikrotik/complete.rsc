@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield30, abuseipdb30, lessbogons, webclient, feodo, level2, etcompromised, alienvault, threatviewc2, threatfox, tif, mal40k
-# Entries: 73296
+# Entries: 73292
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-complete" and comment="bl.dennyhalim.com"]
@@ -13899,7 +13899,6 @@ add list="dhbl-complete" address="47.92.206.63" timeout=3d comment="bl.dennyhali
 add list="dhbl-complete" address="47.92.208.27" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.5.250" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.8.32" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-complete" address="47.93.23.120" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.28.103" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.29.55" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.38.26" timeout=3d comment="bl.dennyhalim.com"
@@ -13914,10 +13913,7 @@ add list="dhbl-complete" address="47.93.86.82" timeout=3d comment="bl.dennyhalim
 add list="dhbl-complete" address="47.93.97.12" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.135.155" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.159.68" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-complete" address="47.93.191.64" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.192.43" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-complete" address="47.93.215.245" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-complete" address="47.93.216.2" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.240.197" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.243.161" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="47.93.250.191" timeout=3d comment="bl.dennyhalim.com"
