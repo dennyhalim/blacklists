@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-03 13:35:43 UTC",
+    "generated_at": "2026-10-03 13:43:57 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -247,7 +247,7 @@
       ]
     },
     "combined": {
-      "entries": 20153,
+      "entries": 13393,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -284,8 +284,7 @@
         "level2",
         "etcompromised",
         "alienvault",
-        "threatviewc2",
-        "ipsum3"
+        "threatviewc2"
       ]
     },
     "combined4server": {
@@ -331,7 +330,7 @@
       ]
     },
     "compact": {
-      "entries": 8412,
+      "entries": 8384,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -365,14 +364,13 @@
         "lessbogons",
         "webclient",
         "feodo",
-        "ipsum6",
         "etcompromised",
         "alienvault",
         "threatviewc2"
       ]
     },
     "complete": {
-      "entries": 73555,
+      "entries": 73296,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -410,7 +408,6 @@
         "etcompromised",
         "alienvault",
         "threatviewc2",
-        "ipsum3",
         "threatfox",
         "tif",
         "mal40k"
@@ -506,8 +503,6 @@
     "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
     "graphicline": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/graphiclineweb.netset",
     "ipsum2": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/2.txt",
-    "ipsum3": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/3.txt",
-    "ipsum6": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/7.txt",
     "lessbogons": "https://raw.githubusercontent.com/dennyhalim/blacklists/main/dist/lessbogons.txt",
     "level2": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset",
     "level3": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level3.netset",
