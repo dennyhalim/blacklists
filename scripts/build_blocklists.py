@@ -114,14 +114,6 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "stamparm/ipsum/master/levels/2.txt"
     ),
-    "ipsum3": (
-        "https://raw.githubusercontent.com/"
-        "stamparm/ipsum/master/levels/3.txt"
-    ),
-    "ipsum6": (
-        "https://raw.githubusercontent.com/"
-        "stamparm/ipsum/master/levels/7.txt"
-    ),
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
@@ -129,8 +121,8 @@ LISTS: dict[str, tuple[str, ...]] = {
     "base7": ("etblock", "webserver", "dshield7", "abuseipdb7", "lessbogons", "webclient", "feodo"),
     "baseip": ("feodo", "etcompromised","alienvault","threatviewc2"),
     "server": ("etblock","dshield30","abuseipdbhuge","threatviewc2","feodo"),
-    "compact": ("base7", "ipsum6", "baseip"),
-    "combined": ("base3", "level2", "baseip", "ipsum3"),
+    "compact": ("base7", "baseip"),
+    "combined": ("base3", "level2", "baseip"),
     "combined4server": ("server", "level4", "botnet", "abuser", "abuseipdb", "threatview", "malin", "graphicline"),
     "complete": ("combined", "threatfox", "level2", "tif", "mal40k","ipsum3"),
     "goliath": ("server", "ipsum2", "level3", "abuser30"),
