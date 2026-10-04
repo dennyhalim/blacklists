@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-03 20:38:54 UTC",
+    "generated_at": "2026-10-04 04:28:56 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135998,
+        "domains": 135973,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 193078,
+        "domains": 192995,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -176,7 +176,7 @@
       ]
     },
     "base7": {
-      "entries": 6463,
+      "entries": 6462,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -247,7 +247,7 @@
       ]
     },
     "combined": {
-      "entries": 13393,
+      "entries": 13392,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -288,7 +288,7 @@
       ]
     },
     "combined4server": {
-      "entries": 193042,
+      "entries": 191983,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -329,7 +329,7 @@
       ]
     },
     "compact": {
-      "entries": 8384,
+      "entries": 8383,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -369,7 +369,7 @@
       ]
     },
     "complete": {
-      "entries": 73294,
+      "entries": 73715,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -413,7 +413,7 @@
       ]
     },
     "goliath": {
-      "entries": 197815,
+      "entries": 195948,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -452,7 +452,7 @@
       ]
     },
     "server": {
-      "entries": 2520,
+      "entries": 2516,
       "files": {
         "bat": [
           "dist/windows/server.bat"
