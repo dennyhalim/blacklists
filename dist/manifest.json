@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-04 04:28:56 UTC",
+    "generated_at": "2026-10-04 14:39:08 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -11,7 +11,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 145941,
+        "domains": 143705,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135973,
+        "domains": 135675,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -72,7 +72,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 17127,
+        "domains": 17098,
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 192995,
+        "domains": 190685,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6484,
+      "entries": 6483,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -176,7 +176,7 @@
       ]
     },
     "base7": {
-      "entries": 6462,
+      "entries": 6460,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -247,7 +247,7 @@
       ]
     },
     "combined": {
-      "entries": 13392,
+      "entries": 13245,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -288,7 +288,7 @@
       ]
     },
     "combined4server": {
-      "entries": 191983,
+      "entries": 191801,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -329,7 +329,7 @@
       ]
     },
     "compact": {
-      "entries": 8383,
+      "entries": 8381,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -369,7 +369,7 @@
       ]
     },
     "complete": {
-      "entries": 73715,
+      "entries": 73330,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -413,7 +413,7 @@
       ]
     },
     "goliath": {
-      "entries": 195948,
+      "entries": 197609,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -452,7 +452,7 @@
       ]
     },
     "server": {
-      "entries": 2516,
+      "entries": 2517,
       "files": {
         "bat": [
           "dist/windows/server.bat"
