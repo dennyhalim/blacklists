@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-04 14:39:08 UTC",
+    "generated_at": "2026-10-04 20:55:10 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -11,7 +11,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 143705,
+        "domains": 143178,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135675,
+        "domains": 135706,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -72,7 +72,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 17098,
+        "domains": 17089,
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 190685,
+        "domains": 203657,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -288,7 +288,7 @@
       ]
     },
     "combined4server": {
-      "entries": 191801,
+      "entries": 191893,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -369,7 +369,7 @@
       ]
     },
     "complete": {
-      "entries": 73330,
+      "entries": 73429,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -413,7 +413,7 @@
       ]
     },
     "goliath": {
-      "entries": 197609,
+      "entries": 198070,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
