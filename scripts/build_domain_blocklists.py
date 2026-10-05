@@ -27,7 +27,7 @@ SOURCES={
  'nsfw3':'https://nsfw-small.oisd.nl/domainswild2',
 }
 ALLOWLIST=('wordpress.com','hashnode.dev','com.cdn.cloudflare.net','weebly.com','edgeone.dev','edgeone.app',
-              'squarespace.com','surge.sh',)
+              'squarespace.com','surge.sh',"cloudfront.net",)
 #do NOT use same name with ip blocklist, it will get replaced
 LISTS={
  'phishing': {'from':('phish1','phish2',), 'merge_subdomains':4},
