@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-05 05:52:52 UTC",
+    "generated_at": "2026-10-05 08:58:50 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135750,
+        "domains": 135753,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 203139,
+        "domains": 203164,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -175,43 +175,6 @@
         "feodo"
       ]
     },
-    "base7": {
-      "entries": 6468,
-      "files": {
-        "bat": [
-          "dist/windows/base7.bat"
-        ],
-        "ipset": [
-          "dist/ipset/base7.sh"
-        ],
-        "mikrotik": [
-          "dist/mikrotik/base7.rsc"
-        ],
-        "nftables": [
-          "dist/nftables/base7.nft",
-          "dist/nftables/base7.sh"
-        ],
-        "pf": [
-          "dist/pf/base7.txt",
-          "dist/pf/base7.sh"
-        ],
-        "plain": [
-          "dist/plain/base7.txt"
-        ],
-        "powershell": [
-          "dist/windows/base7.ps1"
-        ]
-      },
-      "sources": [
-        "etblock",
-        "webserver",
-        "dshield7",
-        "abuseipdb7",
-        "lessbogons",
-        "webclient",
-        "feodo"
-      ]
-    },
     "baseip": {
       "entries": 2131,
       "files": {
@@ -248,7 +211,7 @@
       ]
     },
     "c2": {
-      "entries": 21102,
+      "entries": 21106,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -328,7 +291,7 @@
       ]
     },
     "combined4server": {
-      "entries": 190785,
+      "entries": 190825,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -370,7 +333,7 @@
       ]
     },
     "compact": {
-      "entries": 8503,
+      "entries": 8526,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -399,8 +362,8 @@
       "sources": [
         "etblock",
         "webserver",
-        "dshield7",
-        "abuseipdb7",
+        "dshield30",
+        "abuseipdb30",
         "lessbogons",
         "webclient",
         "feodo",
@@ -411,7 +374,7 @@
       ]
     },
     "complete": {
-      "entries": 74160,
+      "entries": 74162,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -456,7 +419,7 @@
       ]
     },
     "goliath": {
-      "entries": 197052,
+      "entries": 197294,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -535,7 +498,6 @@
   "sources": {
     "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-7d.ipv4",
     "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-50percent.ipv4",
-    "abuseipdb7": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-50percent.ipv4",
     "abuseipdbhuge": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-120d-50percent.ipv4",
     "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
     "abuser30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_30d.netset",
@@ -543,7 +505,6 @@
     "botnet": "https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt",
     "censys": "https://raw.githubusercontent.com/drb-ra/C2IntelFeeds/master/feeds/IPC2s.csv",
     "dshield30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_30d.netset",
-    "dshield7": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_7d.netset",
     "etblock": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_block.netset",
     "etcompromised": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_compromised.ipset",
     "feodo": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
