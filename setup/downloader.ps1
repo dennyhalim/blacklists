@@ -4,6 +4,7 @@ mkdir "$ppath\temp"
 Remove-Item "$ppath\dist" -Recurse
 Remove-Item "$ppath\temp\blacklists-main" -Recurse
 compact.exe /s /c "$ppath\temp"  
+Remove-Item .\dhbl.zip
 curl.exe -o dhbl.zip https://codeload.github.com/dennyhalim/blacklists/zip/refs/heads/main
 Expand-Archive "dhbl.zip"  -DestinationPath "$ppath\temp" -Force
 move "$ppath\temp\blacklists-main\dist\" "$ppath"
