@@ -76,10 +76,6 @@ SOURCES: dict[str, str] = {
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/firehol_abusers_30d.netset"
     ),
-    "dshield7": (
-        "https://raw.githubusercontent.com/"
-        "firehol/blocklist-ipsets/master/dshield_7d.netset"
-    ),
     "dshield30": (
         "https://raw.githubusercontent.com/"
         "firehol/blocklist-ipsets/master/dshield_30d.netset"
@@ -95,11 +91,6 @@ SOURCES: dict[str, str] = {
     "abuseipdb": (
         "https://raw.githubusercontent.com/"
         "borestad/blocklist-abuseipdb/main/abuseipdb-s100-7d.ipv4"
-    ),
-    "abuseipdb7": (
-        "https://raw.githubusercontent.com/"
-        "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/"
-        "abuseipdb-s99-hallofshame-7d-50percent.ipv4"
     ),
     "abuseipdb30": (
         "https://raw.githubusercontent.com/"
@@ -119,11 +110,10 @@ SOURCES: dict[str, str] = {
 
 LISTS: dict[str, tuple[str, ...]] = {
     "base3": ("etblock", "webserver", "dshield30", "abuseipdb30", "lessbogons", "webclient", "feodo"),
-    "base7": ("etblock", "webserver", "dshield7", "abuseipdb7", "lessbogons", "webclient", "feodo"),
     "baseip": ("feodo", "etcompromised","alienvault","threatviewc2","censys"),
     "server": ("etblock","dshield30","abuseipdbhuge","threatviewc2","censys","feodo"),
     "c2": ("server","level2","threatfox"),
-    "compact": ("base7", "baseip"),
+    "compact": ("base3", "baseip"),
     "combined": ("base3", "level2", "baseip"),
     "combined4server": ("server", "level4", "botnet", "abuser", "threatview", "malin", "graphicline"),
     "complete": ("combined", "threatfox", "level2", "tif", "mal40k"),
