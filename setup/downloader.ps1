@@ -1,6 +1,6 @@
 $ppath="$env:programdata\Polaris\temp"
-mkdir "$ppath"
-del /s /f "$ppath"
+mkdir "$ppath\dhbl"
+Remove-Item $ppath\dhbl -Recurse
 compact.exe /s /c "$ppath"
 cd "$ppath"
 curl.exe -o dhbl.zip https://codeload.github.com/dennyhalim/blacklists/zip/refs/heads/main
