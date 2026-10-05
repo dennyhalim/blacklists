@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-05 01:14:28 UTC",
+    "generated_at": "2026-10-05 02:55:09 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135725,
+        "domains": 135732,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 203142,
+        "domains": 203145,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -213,7 +213,7 @@
       ]
     },
     "baseip": {
-      "entries": 2010,
+      "entries": 2131,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -243,11 +243,12 @@
         "feodo",
         "etcompromised",
         "alienvault",
-        "threatviewc2"
+        "threatviewc2",
+        "censys"
       ]
     },
     "c2": {
-      "entries": 7407,
+      "entries": 7524,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -278,12 +279,13 @@
         "dshield30",
         "abuseipdbhuge",
         "threatviewc2",
+        "censys",
         "feodo",
         "level2"
       ]
     },
     "combined": {
-      "entries": 13250,
+      "entries": 13367,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -320,11 +322,12 @@
         "level2",
         "etcompromised",
         "alienvault",
-        "threatviewc2"
+        "threatviewc2",
+        "censys"
       ]
     },
     "combined4server": {
-      "entries": 190516,
+      "entries": 190670,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -355,6 +358,7 @@
         "dshield30",
         "abuseipdbhuge",
         "threatviewc2",
+        "censys",
         "feodo",
         "level4",
         "botnet",
@@ -365,7 +369,7 @@
       ]
     },
     "compact": {
-      "entries": 8386,
+      "entries": 8503,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -401,11 +405,12 @@
         "feodo",
         "etcompromised",
         "alienvault",
-        "threatviewc2"
+        "threatviewc2",
+        "censys"
       ]
     },
     "complete": {
-      "entries": 73576,
+      "entries": 74237,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -443,13 +448,14 @@
         "etcompromised",
         "alienvault",
         "threatviewc2",
+        "censys",
         "threatfox",
         "tif",
         "mal40k"
       ]
     },
     "goliath": {
-      "entries": 195198,
+      "entries": 195313,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -480,6 +486,7 @@
         "dshield30",
         "abuseipdbhuge",
         "threatviewc2",
+        "censys",
         "feodo",
         "ipsum2",
         "level3",
@@ -488,7 +495,7 @@
       ]
     },
     "server": {
-      "entries": 2552,
+      "entries": 2669,
       "files": {
         "bat": [
           "dist/windows/server.bat"
@@ -519,6 +526,7 @@
         "dshield30",
         "abuseipdbhuge",
         "threatviewc2",
+        "censys",
         "feodo"
       ]
     }
@@ -532,6 +540,7 @@
     "abuser30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_30d.netset",
     "alienvault": "http://reputation.alienvault.com/reputation.data",
     "botnet": "https://malware-filter.gitlab.io/malware-filter/botnet-filter.txt",
+    "censys": "https://raw.githubusercontent.com/drb-ra/C2IntelFeeds/master/feeds/IPC2s.csv",
     "dshield30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_30d.netset",
     "dshield7": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_7d.netset",
     "etblock": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/et_block.netset",
