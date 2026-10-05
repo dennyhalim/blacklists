@@ -2,5 +2,5 @@
 cd /opt
 rm dhbl.zip -f
 curl -o dhbl.zip https://codeload.github.com/dennyhalim/blacklists/zip/refs/heads/main
-unzip dhbl.zip "blacklists-main/dist/*"
+unzip -o dhbl.zip "blacklists-main/dist/*"
 rm dhbl.zip -f
