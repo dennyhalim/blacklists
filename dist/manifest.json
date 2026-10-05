@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-04 20:55:10 UTC",
+    "generated_at": "2026-10-05 00:58:47 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -11,7 +11,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 143178,
+        "domains": 229484,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135706,
+        "domains": 135725,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -52,7 +52,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 125969,
+        "domains": 125807,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -72,7 +72,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 17089,
+        "domains": 17081,
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 203657,
+        "domains": 203142,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -246,6 +246,43 @@
         "threatviewc2"
       ]
     },
+    "c2": {
+      "entries": 37855,
+      "files": {
+        "bat": [
+          "dist/windows/c2.bat"
+        ],
+        "ipset": [
+          "dist/ipset/c2.sh"
+        ],
+        "mikrotik": [
+          "dist/mikrotik/c2.rsc"
+        ],
+        "nftables": [
+          "dist/nftables/c2.nft",
+          "dist/nftables/c2.sh"
+        ],
+        "pf": [
+          "dist/pf/c2.txt",
+          "dist/pf/c2.sh"
+        ],
+        "plain": [
+          "dist/plain/c2.txt"
+        ],
+        "powershell": [
+          "dist/windows/c2.ps1"
+        ]
+      },
+      "sources": [
+        "etblock",
+        "dshield30",
+        "abuseipdbhuge",
+        "threatviewc2",
+        "feodo",
+        "mal40k",
+        "level2"
+      ]
+    },
     "combined": {
       "entries": 13245,
       "files": {
@@ -288,7 +325,7 @@
       ]
     },
     "combined4server": {
-      "entries": 191893,
+      "entries": 192067,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -369,7 +406,7 @@
       ]
     },
     "complete": {
-      "entries": 73429,
+      "entries": 73609,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -413,7 +450,7 @@
       ]
     },
     "goliath": {
-      "entries": 198070,
+      "entries": 195561,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
