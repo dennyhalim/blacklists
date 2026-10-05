@@ -108,7 +108,7 @@ SOURCES: dict[str, str] = {
     "abuseipdbhuge": (
         "https://raw.githubusercontent.com/"
         "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/"
-        "abuseipdb-s99-hallofshame-90d-50percent.ipv4"
+        "abuseipdb-s99-hallofshame-120d-50percent.ipv4"
     ),
     "ipsum2": (
         "https://raw.githubusercontent.com/"
