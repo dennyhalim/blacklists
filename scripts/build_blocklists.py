@@ -43,6 +43,7 @@ SOURCES: dict[str, str] = {
     "mal40k": "https://raw.githubusercontent.com/romainmarcoux/malicious-outgoing-ip/main/full-outgoing-ip-40k.txt",
     "malin": "https://raw.githubusercontent.com/romainmarcoux/malicious-ip/main/full-40k.txt",
     "graphicline": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/graphiclineweb.netset",
+    "censys": "https://raw.githubusercontent.com/drb-ra/C2IntelFeeds/master/feeds/IPC2s.csv",
     # "blocklistde": "https://lists.blocklist.de/lists/all.txt",  # level2
     # "toxic": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset",  # webserver
     # "hijack": "https://raw.githubusercontent.com/kraloveckey/ipsets-blocklist/main/iblocklist_hijacked.netset",  # level4
@@ -119,8 +120,8 @@ SOURCES: dict[str, str] = {
 LISTS: dict[str, tuple[str, ...]] = {
     "base3": ("etblock", "webserver", "dshield30", "abuseipdb30", "lessbogons", "webclient", "feodo"),
     "base7": ("etblock", "webserver", "dshield7", "abuseipdb7", "lessbogons", "webclient", "feodo"),
-    "baseip": ("feodo", "etcompromised","alienvault","threatviewc2"),
-    "server": ("etblock","dshield30","abuseipdbhuge","threatviewc2","feodo"),
+    "baseip": ("feodo", "etcompromised","alienvault","threatviewc2","censys"),
+    "server": ("etblock","dshield30","abuseipdbhuge","threatviewc2","censys","feodo"),
     "c2": ("server","level2"),
     "compact": ("base7", "baseip"),
     "combined": ("base3", "level2", "baseip"),
