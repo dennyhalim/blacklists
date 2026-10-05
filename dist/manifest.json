@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-05 00:58:47 UTC",
+    "generated_at": "2026-10-05 01:14:28 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6483,
+      "entries": 6491,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -176,7 +176,7 @@
       ]
     },
     "base7": {
-      "entries": 6460,
+      "entries": 6468,
       "files": {
         "bat": [
           "dist/windows/base7.bat"
@@ -247,7 +247,7 @@
       ]
     },
     "c2": {
-      "entries": 37855,
+      "entries": 7407,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -279,12 +279,11 @@
         "abuseipdbhuge",
         "threatviewc2",
         "feodo",
-        "mal40k",
         "level2"
       ]
     },
     "combined": {
-      "entries": 13245,
+      "entries": 13250,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -325,7 +324,7 @@
       ]
     },
     "combined4server": {
-      "entries": 192067,
+      "entries": 190516,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -366,7 +365,7 @@
       ]
     },
     "compact": {
-      "entries": 8381,
+      "entries": 8386,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -406,7 +405,7 @@
       ]
     },
     "complete": {
-      "entries": 73609,
+      "entries": 73576,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -450,7 +449,7 @@
       ]
     },
     "goliath": {
-      "entries": 195561,
+      "entries": 195198,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -489,7 +488,7 @@
       ]
     },
     "server": {
-      "entries": 2517,
+      "entries": 2552,
       "files": {
         "bat": [
           "dist/windows/server.bat"
@@ -528,7 +527,7 @@
     "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-7d.ipv4",
     "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-50percent.ipv4",
     "abuseipdb7": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-7d-50percent.ipv4",
-    "abuseipdbhuge": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-90d-50percent.ipv4",
+    "abuseipdbhuge": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-120d-50percent.ipv4",
     "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
     "abuser30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_30d.netset",
     "alienvault": "http://reputation.alienvault.com/reputation.data",
