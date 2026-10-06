@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-06 05:03:29 UTC",
+    "generated_at": "2026-10-06 15:43:27 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -11,7 +11,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 229435,
+        "domains": 179626,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 135834,
+        "domains": 136099,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -52,7 +52,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 126139,
+        "domains": 126198,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -72,7 +72,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 17075,
+        "domains": 17106,
         "files": {
           "adblock": "dist/adblock/scam.txt",
           "dnsmasq": "dist/dnsmasq/scam.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 201812,
+        "domains": 198230,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6384,
+      "entries": 6306,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -176,7 +176,7 @@
       ]
     },
     "baseip": {
-      "entries": 2118,
+      "entries": 2115,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -211,7 +211,7 @@
       ]
     },
     "c2": {
-      "entries": 21008,
+      "entries": 28375,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -249,7 +249,7 @@
       ]
     },
     "combined": {
-      "entries": 13155,
+      "entries": 20368,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -291,7 +291,7 @@
       ]
     },
     "combined4server": {
-      "entries": 192535,
+      "entries": 196360,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -333,7 +333,7 @@
       ]
     },
     "compact": {
-      "entries": 8405,
+      "entries": 8326,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -374,7 +374,7 @@
       ]
     },
     "complete": {
-      "entries": 74006,
+      "entries": 77358,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -419,7 +419,7 @@
       ]
     },
     "goliath": {
-      "entries": 196117,
+      "entries": 196923,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -459,7 +459,7 @@
       ]
     },
     "server": {
-      "entries": 2654,
+      "entries": 2650,
       "files": {
         "bat": [
           "dist/windows/server.bat"
