@@ -1,5 +1,5 @@
 # Generated from: etblock, dshield30, abuseipdbhuge, threatviewc2, censys, feodo
-# Entries: 2668
+# Entries: 2667
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-server" and comment="bl.dennyhalim.com"]
@@ -1866,7 +1866,6 @@ add list="dhbl-server" address="185.230.14.0/24" timeout=3d comment="bl.dennyhal
 add list="dhbl-server" address="185.232.45.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="185.237.104.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="185.238.176.0/22" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-server" address="185.238.231.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="185.239.44.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="185.239.84.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="185.240.34.10" timeout=3d comment="bl.dennyhalim.com"
