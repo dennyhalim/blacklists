@@ -1,4 +1,4 @@
-# Generated from: etblock, dshield30, abuseipdbhuge, threatviewc2, censys, feodo, ipsum2, level3, abuser30, abuseipdb
+# Generated from: etblock, dshield30, abuseipdbnet, threatviewc2, censys, feodo, ipsum2, level3, abuser30, abuseipdb
 # Entries: 226468
 # Managed entries expire after: 3d
 /ip firewall address-list

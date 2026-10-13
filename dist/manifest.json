@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-13 05:38:36 UTC",
+    "generated_at": "2026-10-13 07:30:05 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 140532,
+        "domains": 140516,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 236089,
+        "domains": 235977,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6290,
+      "entries": 6293,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -169,7 +169,7 @@
         "etblock",
         "webserver",
         "dshield30",
-        "abuseipdb30",
+        "abuseipdbnet",
         "lessbogons",
         "webclient",
         "feodo"
@@ -211,7 +211,7 @@
       ]
     },
     "c2": {
-      "entries": 32148,
+      "entries": 32156,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -240,7 +240,7 @@
       "sources": [
         "etblock",
         "dshield30",
-        "abuseipdbhuge",
+        "abuseipdbnet",
         "threatviewc2",
         "censys",
         "feodo",
@@ -249,7 +249,7 @@
       ]
     },
     "combined": {
-      "entries": 24017,
+      "entries": 23872,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -279,7 +279,7 @@
         "etblock",
         "webserver",
         "dshield30",
-        "abuseipdb30",
+        "abuseipdbnet",
         "lessbogons",
         "webclient",
         "feodo",
@@ -291,7 +291,7 @@
       ]
     },
     "combined4server": {
-      "entries": 208475,
+      "entries": 208481,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -320,7 +320,7 @@
       "sources": [
         "etblock",
         "dshield30",
-        "abuseipdbhuge",
+        "abuseipdbnet",
         "threatviewc2",
         "censys",
         "feodo",
@@ -333,7 +333,7 @@
       ]
     },
     "compact": {
-      "entries": 8305,
+      "entries": 8308,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -363,7 +363,7 @@
         "etblock",
         "webserver",
         "dshield30",
-        "abuseipdb30",
+        "abuseipdbnet",
         "lessbogons",
         "webclient",
         "feodo",
@@ -374,7 +374,7 @@
       ]
     },
     "complete": {
-      "entries": 77754,
+      "entries": 77143,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -404,7 +404,7 @@
         "etblock",
         "webserver",
         "dshield30",
-        "abuseipdb30",
+        "abuseipdbnet",
         "lessbogons",
         "webclient",
         "feodo",
@@ -448,7 +448,7 @@
       "sources": [
         "etblock",
         "dshield30",
-        "abuseipdbhuge",
+        "abuseipdbnet",
         "threatviewc2",
         "censys",
         "feodo",
@@ -488,7 +488,7 @@
       "sources": [
         "etblock",
         "dshield30",
-        "abuseipdbhuge",
+        "abuseipdbnet",
         "threatviewc2",
         "censys",
         "feodo"
@@ -498,7 +498,7 @@
   "sources": {
     "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-7d.ipv4",
     "abuseipdb30": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-30d-50percent.ipv4",
-    "abuseipdbhuge": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-120d-50percent.ipv4",
+    "abuseipdbnet": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-120d-50percent.ipv4",
     "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
     "abuser30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_30d.netset",
     "alienvault": "http://reputation.alienvault.com/reputation.data",

@@ -1,4 +1,4 @@
-# Generated from: etblock, dshield30, abuseipdbhuge, threatviewc2, censys, feodo
+# Generated from: etblock, dshield30, abuseipdbnet, threatviewc2, censys, feodo
 # Entries: 2667
 # Managed entries expire after: 3d
 /ip firewall address-list
