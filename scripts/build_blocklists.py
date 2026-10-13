@@ -97,7 +97,7 @@ SOURCES: dict[str, str] = {
         "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/"
         "abuseipdb-s99-hallofshame-30d-50percent.ipv4"
     ),
-    "abuseipdbhuge": (
+    "abuseipdbnet": (
         "https://raw.githubusercontent.com/"
         "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/"
         "abuseipdb-s99-hallofshame-120d-50percent.ipv4"
@@ -109,9 +109,9 @@ SOURCES: dict[str, str] = {
 }
 
 LISTS: dict[str, tuple[str, ...]] = {
-    "base3": ("etblock", "webserver", "dshield30", "abuseipdb30", "lessbogons", "webclient", "feodo"),
+    "base3": ("etblock", "webserver", "dshield30", "abuseipdbnet", "lessbogons", "webclient", "feodo"),
     "baseip": ("feodo", "etcompromised","alienvault","threatviewc2","censys"),
-    "server": ("etblock","dshield30","abuseipdbhuge","threatviewc2","censys","feodo"),
+    "server": ("etblock","dshield30","abuseipdbnet","threatviewc2","censys","feodo"),
     "c2": ("server","level2","threatfox"),
     "compact": ("base3", "baseip"),
     "combined": ("base3", "level2", "baseip"),
