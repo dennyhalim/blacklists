@@ -69,9 +69,9 @@ cat > "$UPDATE_SCRIPT" <<'EOF'
 #!/usr/bin/env bash
 set -euo pipefail
 
-INSTALL_DIR="/data/ipblocklist"
+INSTALL_DIR="/data/dhblocklist"
 CONFIG_FILE="$INSTALL_DIR/config"
-TABLE_NAME="ipblocklists"
+TABLE_NAME="dhblocklists"
 SET_NAME="blocked_ipv4"
 
 log() {
