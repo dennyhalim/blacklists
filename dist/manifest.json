@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-13 16:45:07 UTC",
+    "generated_at": "2026-10-13 22:20:21 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6325,
+      "entries": 6324,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -211,7 +211,7 @@
       ]
     },
     "c2": {
-      "entries": 35248,
+      "entries": 35274,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -249,7 +249,7 @@
       ]
     },
     "combined": {
-      "entries": 27074,
+      "entries": 27073,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -291,7 +291,7 @@
       ]
     },
     "combined4server": {
-      "entries": 211663,
+      "entries": 211627,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -333,7 +333,7 @@
       ]
     },
     "compact": {
-      "entries": 8339,
+      "entries": 8338,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -374,7 +374,7 @@
       ]
     },
     "complete": {
-      "entries": 79273,
+      "entries": 79298,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -419,7 +419,7 @@
       ]
     },
     "goliath": {
-      "entries": 227100,
+      "entries": 228026,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
