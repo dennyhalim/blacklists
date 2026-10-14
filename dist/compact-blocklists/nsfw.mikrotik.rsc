@@ -1,0 +1,11 @@
+# RouterOS DNS static NXDOMAIN rules
+/ip dns static add regexp="(^|\\.)(xhamster\\.com|majalis\\.itch\\.io|runeygames\\.itch\\.io|sirensdomain\\.itch\\.io|venusnoiregames\\.itch\\.io)$" type=NXDOMAIN comment="nsfw"
+/ip dns static add regexp="(^|\\.)(stripchat\\.com|xvideos\\.com|erome\\.com|onlyfans\\.com|pornhub\\.com)$" type=NXDOMAIN comment="nsfw"
+/ip dns static add regexp="(^|\\.)(chaturbate\\.com|eporner\\.com|xnxx\\.com|xhcdn\\.com|faphouse\\.com)$" type=NXDOMAIN comment="nsfw"
+/ip dns static add regexp="(^|\\.)(tnaflix\\.com|xhamster\\.desi|dmm\\.co\\.jp|xhaccess\\.com|rule34\\.xxx)$" type=NXDOMAIN comment="nsfw"
+/ip dns static add regexp="(^|\\.)(pimpbunny\\.com|pornpics\\.com|spankbang\\.com|phncdn\\.com|xhamster2\\.com)$" type=NXDOMAIN comment="nsfw"
+/ip dns static add regexp="(^|\\.)(fetlife\\.com|xhopen\\.com|youporn\\.com|xhamster19\\.com|xhamster1\\.desi)$" type=NXDOMAIN comment="nsfw"
+/ip dns static add regexp="(^|\\.)(noodlemagazine\\.com|xvideos\-cdn\\.com|xham\\.live|boyfriendtv\\.com|xhspot\\.com)$" type=NXDOMAIN comment="nsfw"
+/ip dns static add regexp="(^|\\.)(danbooru\\.donmai\\.us|betabooru\\.donmai\\.us|redtube\\.com|pornone\\.com|youjizz\\.com)$" type=NXDOMAIN comment="nsfw"
+/ip dns static add regexp="(^|\\.)(e621\\.net|thisvid\\.com|aznude\\.com|xhsocial\\.com|bookmark\\.xxx)$" type=NXDOMAIN comment="nsfw"
+/ip dns static add regexp="(^|\\.)(xhname\\.com|pornhub\\.org|e\-hentai\\.org|missav\\.ws|rule34video\\.com)$" type=NXDOMAIN comment="nsfw"

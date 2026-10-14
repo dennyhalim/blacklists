@@ -1,0 +1,11 @@
+# RouterOS DNS static NXDOMAIN rules
+/ip dns static add regexp="(^|\\.)(analytics\\.google\\.com|www\-google\-analytics\\.l\\.google\\.com|analytics\\.pointdrive\\.linkedin\\.com|customerevents\\.netflix\\.com|metrics\\.icloud\\.com)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(trk\\.pinterest\\.com|analytics\\.tiktok\\.com|analytics\\.yahoo\\.com|mcs\-va\\.tiktokv\\.com|analytics\\.mobile\\.yandex\\.net)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(stats\\.wordpress\\.com|rum\\.aliyuncs\\.com|app\-analytics\\.snapchat\\.com|app\-analytics\-v2\\.snapchat\\.com|google\-analytics\\.com)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(app\-measurement\\.com|tsa\\.webex\\.com|tsa\-f\\.webex\\.com|collector\\.cdp\\.cnn\\.com|track\-na2\\.hubspot\\.com)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(tracking\\.miui\\.com|tracking\\.intl\\.miui\\.com|api\\.amplitude\\.com|api2\\.amplitude\\.com|api\\.eu\\.amplitude\\.com)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(t\\.pubmatic\\.com|track\\.pubmatic\\.com|clicktrack\\.pubmatic\\.com|dmtracking2\\.alibaba\\.com|metrics\\.mzstatic\\.com)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(t\\.appsflyer\\.com|rum\-http\-intake\\.logs\\.datadoghq\\.com|browser\-http\-intake\\.logs\\.datadoghq\\.com|cloudflareinsights\\.com|stats\\.wp\\.com)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(metrics\\.foxnews\\.com|smetrics\\.foxnews\\.com|metrics\-a\\.wbx2\\.com|client\-logs\-a\\.wbx2\\.com|ter\-jrnl\-oc\\.vidaahub\\.com)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(static\-tracking\\.klaviyo\\.com|tr\\.p\\.360\\.cn|tealium\\.cbsnews\\.com|smetrics\\.bestbuy\\.com|sanalytics\\.disneyplus\\.com)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(skroutza\\.skroutz\\.gr|cootlogix\\.com|aa\-metrics\\.beauty\\.hotpepper\\.jp|mon\-va\\.byteoversea\\.com|maliva\-mcs\\.byteoversea\\.com)$" type=NXDOMAIN comment="trackers"

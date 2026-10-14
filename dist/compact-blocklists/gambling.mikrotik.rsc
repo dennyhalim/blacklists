@@ -1,0 +1,11 @@
+# RouterOS DNS static NXDOMAIN rules
+/ip dns static add regexp="(^|\\.)(hollywoodbets\\.net|sportybet\\.com|caliente\\.mx|betika\\.com|betpawa\\.ug)$" type=NXDOMAIN comment="gambling"
+/ip dns static add regexp="(^|\\.)(takarakuji\-official\\.jp|lotto\\.web\\.de|bet365\\.com|ladbrokes\\.com|paddypower\\.com)$" type=NXDOMAIN comment="gambling"
+/ip dns static add regexp="(^|\\.)(stake\\.com|betpawa\\.com|atg\\.se|betpawa\\.co\\.tz|williamhill\\.com)$" type=NXDOMAIN comment="gambling"
+/ip dns static add regexp="(^|\\.)(bet9ja\\.com|sisal\\.it|fdj\\.fr|sportpesa\\.com|betfair\\.com)$" type=NXDOMAIN comment="gambling"
+/ip dns static add regexp="(^|\\.)(veikkaus\\.fi|loteriasyapuestas\\.es|szerencsejatek\\.hu|8888\\.bg|interbet\\.co\\.za)$" type=NXDOMAIN comment="gambling"
+/ip dns static add regexp="(^|\\.)(betpawa\\.co\\.zm|1xbet\\.com|coral\\.co\\.uk|stoloto\\.ru|skybet\\.com)$" type=NXDOMAIN comment="gambling"
+/ip dns static add regexp="(^|\\.)(superbet\\.com|gambling\\.com|betway\\.com|national\-lottery\\.co\\.uk|superbet\\.pl)$" type=NXDOMAIN comment="gambling"
+/ip dns static add regexp="(^|\\.)(svenskaspel\\.se|bwin\\.com|lotoquebec\\.com|mozzartbet\\.com|unibet\\.com)$" type=NXDOMAIN comment="gambling"
+/ip dns static add regexp="(^|\\.)(sportpesa\\.co\\.tz|adjarabet\\.com|betsson\\.com|mozzartbet\\.co\\.ke|lotto\\.de)$" type=NXDOMAIN comment="gambling"
+/ip dns static add regexp="(^|\\.)(winbet\\.bg|jogossantacasa\\.pt|33win\\.com|multipasko\\.pl|bet\\.hkjc\\.com)$" type=NXDOMAIN comment="gambling"

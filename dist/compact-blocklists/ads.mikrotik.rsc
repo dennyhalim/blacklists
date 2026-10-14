@@ -1,0 +1,11 @@
+# RouterOS DNS static NXDOMAIN rules
+/ip dns static add regexp="(^|\\.)(mail\-ads\\.google\\.com|ads\\.youtube\\.com|top\\.mail\\.ru|ads\\.linkedin\\.com|bat\\.bing\\.com)$" type=NXDOMAIN comment="ads"
+/ip dns static add regexp="(^|\\.)(log\\.pinterest\\.com|ads\-dev\\.pinterest\\.com|googlesyndication\\.com|ads\\.yahoo\\.com|marketingsolutions\\.yahoo\\.com)$" type=NXDOMAIN comment="ads"
+/ip dns static add regexp="(^|\\.)(partnerads\\.ysm\\.yahoo\\.com|ads\\.msn\\.com|ads1\\.msn\\.com|ads\\.mozilla\\.org|ads\-img\\.mozilla\\.org)$" type=NXDOMAIN comment="ads"
+/ip dns static add regexp="(^|\\.)(bs\\.yandex\\.ru|adsdk\\.yandex\\.ru|et\\.nytimes\\.com|als\-svc\\.nytimes\\.com|ad\\.xiaomi\\.com)$" type=NXDOMAIN comment="ads"
+/ip dns static add regexp="(^|\\.)(ad\\.intl\\.xiaomi\\.com|logs\\.roku\\.com|taboola\\.com|ow\\.pubmatic\\.com|st\\.pubmatic\\.com)$" type=NXDOMAIN comment="ads"
+/ip dns static add regexp="(^|\\.)(ads\\.pubmatic\\.com|aud\\.pubmatic\\.com|vid\\.pubmatic\\.com|image2\\.pubmatic\\.com|image4\\.pubmatic\\.com)$" type=NXDOMAIN comment="ads"
+/ip dns static add regexp="(^|\\.)(image6\\.pubmatic\\.com|openbid\\.pubmatic\\.com|showads\\.pubmatic\\.com|sshowads\\.pubmatic\\.com|hbopenbid\\.pubmatic\\.com)$" type=NXDOMAIN comment="ads"
+/ip dns static add regexp="(^|\\.)(adnxs\\.com|nr\-data\\.net|casalemedia\\.com|media\\.net|cdn\\.branch\\.io)$" type=NXDOMAIN comment="ads"
+/ip dns static add regexp="(^|\\.)(inner\-active\\.mobi|js\-agent\\.newrelic\\.com|adriver\\.ru|openx\\.net|ba\\.afl\\.rakuten\\.co\\.jp)$" type=NXDOMAIN comment="ads"
+/ip dns static add regexp="(^|\\.)(hbb\\.afl\\.rakuten\\.co\\.jp|rsc\-ads\\.vidaahub\\.com|360yield\\.com|3lift\\.com|rlcdn\\.com)$" type=NXDOMAIN comment="ads"
