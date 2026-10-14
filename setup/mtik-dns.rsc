@@ -15,8 +15,8 @@ add regexp="(bing|mail-|search|image|video|samsung|tv)ads" type=NXDOMAIN comment
 add regexp="(doubleclick|booru|2mdn|pagead2|quantserve)" type=NXDOMAIN comment="ads.bl.dennyhalim.com"
 add regexp="(analyti|telemetry|beacon|tracking|nexusrules|piwik)" type=NXDOMAIN comment="trackers.bl.dennyhalim.com"
 add address=127.0.10.1 type=A regexp="bca(-fash|flash)"
-add address=127.0.10.1 type=A regexp="(login|clone)*\\.(vercel|netlify|blogspot|webflow|webly)"
-add address=127.0.10.1 type=A regexp="(facebook|instagram|flix|amazon)*\\.(vercel|netlify|blogspot|webflow|webly)"
+add address=127.0.10.1 type=A regexp="(login|clone)*\\.(vercel|netlify|blogspot|webflow|weebly)"
+add address=127.0.10.1 type=A regexp="(facebook|instagram|flix|amazon)*\\.(vercel|netlify|blogspot|webflow|weebly)"
 add regexp="(steam|flix|nflx|scdn|spotifycdn|spotify-com|spotify.map)" type=NXDOMAIN comment="bw.bl.dennyhalim.com" disabled=yes
 add regexp="(tiktokv|tiktokw|tiktokcdn|ttwstatic|ttdns|bytedns)" type=NXDOMAIN comment="bw.bl.dennyhalim.com" disabled=yes
 add regexp="(cerberhhyed5frqa|lfdachijzuwx4bc4)" type=NXDOMAIN comment="malw.bl.dennyhalim.com"
