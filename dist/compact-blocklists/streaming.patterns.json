@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "pattern": "spotify",
+    "domains": 10,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "audio-ak-spotify-com.akamaized.net",
+      "audio4-ak-spotify-com.akamaized.net",
+      "heads-ak-spotify-com.akamaized.net",
+      "heads4-ak-spotify-com.akamaized.net",
+      "spotify-everywhere.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*spotify[^.]*\\."
+  },
+  {
+    "pattern": "netflixdnstest",
+    "domains": 10,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "netflixdnstest1.com",
+      "netflixdnstest10.com",
+      "netflixdnstest2.com",
+      "netflixdnstest3.com",
+      "netflixdnstest4.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*netflixdnstest[^.]*\\."
+  },
+  {
+    "pattern": "tiktokcdn",
+    "domains": 5,
+    "tranco_protected_matches": 4,
+    "examples": [
+      "p16-tiktokcdn-com.akamaized.net",
+      "tiktokcdn-eu.com",
+      "tiktokcdn-eu.com.ttdns3.com",
+      "tiktokcdn-us.com",
+      "tiktokcdn.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*tiktokcdn[^.]*\\."
+  },
+  {
+    "pattern": "netflix",
+    "domains": 4,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "netflix.ca",
+      "netflix.com",
+      "netflix.com.edgesuite.net",
+      "netflix.net"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*netflix[^.]*\\."
+  }
+]

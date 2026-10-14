@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-14 04:25:45 UTC",
+    "generated_at": "2026-10-14 05:05:51 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -211,7 +211,7 @@
       ]
     },
     "c2": {
-      "entries": 35229,
+      "entries": 35230,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -374,7 +374,7 @@
       ]
     },
     "complete": {
-      "entries": 79627,
+      "entries": 79628,
       "files": {
         "bat": [
           "dist/windows/complete.bat"

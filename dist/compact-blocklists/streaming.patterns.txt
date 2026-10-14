@@ -1,2 +1,6 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
+spotify | 10 | 1 | audio-ak-spotify-com.akamaized.net, audio4-ak-spotify-com.akamaized.net, heads-ak-spotify-com.akamaized.net, heads4-ak-spotify-com.akamaized.net, spotify-everywhere.com
+netflixdnstest | 10 | 0 | netflixdnstest1.com, netflixdnstest10.com, netflixdnstest2.com, netflixdnstest3.com, netflixdnstest4.com
+tiktokcdn | 5 | 4 | p16-tiktokcdn-com.akamaized.net, tiktokcdn-eu.com, tiktokcdn-eu.com.ttdns3.com, tiktokcdn-us.com, tiktokcdn.com
+netflix | 4 | 2 | netflix.ca, netflix.com, netflix.com.edgesuite.net, netflix.net
