@@ -38,7 +38,7 @@ SOURCES = {
         ("steven-porn", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts"),
     ],
     "threats": [
-        ("hagezi-tif-mini", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.mini-onlydomains.txt"),
+        ("hagezi-tif", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif-onlydomains.txt"),
     ],
     "gambling": [
         ("hagezi-gambling-mini", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.mini-onlydomains.txt"),
@@ -46,24 +46,14 @@ SOURCES = {
     ],
 }
 
-# DNS cannot target in-app features such as Reels reliably; these intentionally
-# block the service/domain family. Edit to fit your policy.
-STREAMING_SEEDS = {
-    "youtube.com", "youtu.be", "youtube-nocookie.com", "googlevideo.com", "ytimg.com",
-    "spotify.com", "scdn.co", "spotifycdn.com",
-    "netflix.com", "nflxvideo.net", "nflximg.net", "nflxso.net", "nflxext.com",
-    "disneyplus.com", "dssott.com", "bamgrid.com",
-    "hulu.com", "huluim.com",
-    "primevideo.com", "amazonvideo.com",
-    "twitch.tv", "ttvnw.net", "jtvnw.net",
-    "soundcloud.com", "sndcdn.com",
-    "iheart.com", "iheartmedia.com", "tunein.com",
-    "deezer.com", "dzcdn.net", "tidal.com",
-    "vimeo.com", "vimeocdn.com", "dailymotion.com", "dmcdn.net",
-    "instagram.com", "cdninstagram.com",
-    "tiktok.com", "tiktokcdn.com", "tiktokv.com",
-    "facebook.com", "fbcdn.net",
-}
+# NextDNS piracy lists cover streaming sites, not all legal media platforms.
+PIRACY_BASE = "https://raw.githubusercontent.com/lennysh/dns-blocklists/main/service-filters/"
+SOURCES["streaming"] = [
+    ("spotify", PIRACY_BASE + "spotify.txt"),
+    ("netflix", PIRACY_BASE + "netflix.txt"),
+    ("disneyplus", PIRACY_BASE + "disneyplus.txt"),
+    ("tiktok", PIRACY_BASE + "tiktok.txt"),
+]
 
 DOMAIN_RE = re.compile(
     r"(?i)(?:^|[\s|/@=,:])(?:https?://)?(?:www\.)?"
@@ -211,11 +201,6 @@ def pattern_report(outdir: Path, category: str, domains: set[str],
 def collect(category: str, psl: PSL, tranco: dict[str, int],
             protected: set[str], limit: int, outdir: Path,
             minimum: int) -> list[str]:
-    if category == "streaming":
-        pattern_report(outdir, category, set(STREAMING_SEEDS), psl, protected, minimum)
-        return rank_domains(set(STREAMING_SEEDS), Counter({d: 3 for d in STREAMING_SEEDS}),
-                            tranco, psl, limit)
-
     votes, union = Counter(), set()
     for name, url in SOURCES[category]:
         print(f"[{category}] {name}", file=sys.stderr)
@@ -227,9 +212,13 @@ def collect(category: str, psl: PSL, tranco: dict[str, int],
     pattern_report(outdir, category, union, psl, protected, minimum)
     compact = collapse(union, psl, protected)
     # Parent rules inherit the strongest vote among their covered source domains.
+    parent_votes = defaultdict(int)
+    for domain, count in votes.items():
+        parent = psl.registrable(domain)
+        parent_votes[parent] = max(parent_votes[parent], count)
     for d in compact:
         if votes[d] == 0:
-            votes[d] = max((v for x, v in votes.items() if x == d or x.endswith("." + d)), default=1)
+            votes[d] = parent_votes[psl.registrable(d)] or 1
     return rank_domains(compact, votes, tranco, psl, limit)
 
 def write_outputs(outdir: Path, category: str, domains: list[str]) -> None:
@@ -257,8 +246,8 @@ def main() -> int:
                     help="never collapse subdomains into these top Tranco parents")
     ap.add_argument("--pattern-min", type=int, default=3, help="minimum domains per suggested pattern")
     ap.add_argument("--categories", nargs="+",
-                    choices=["ads", "trackers", "nsfw", "threats", "gambling", "streaming"],
-                    default=["ads", "trackers", "nsfw", "threats", "gambling", "streaming"])
+                    choices=["ads", "trackers", "nsfw", "gambling", "streaming", "threats"],
+                    default=["ads", "trackers", "nsfw", "gambling", "streaming", "threats"])
     args = ap.parse_args()
 
     if args.limit < 1 or args.tranco_protect < 0 or args.pattern_min < 1:
