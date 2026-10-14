@@ -36,7 +36,7 @@ jobs:
           wget -q -O - https://team-cymru.org/Services/Bogons/fullbogons-ipv4.txt | grep -vf src/bogon-bn-nonagg.txt > dist/lessbogons.txt
           cd dist || true
           python ../scripts/compact_blocklists.py
-          ls -l dist
+          ls -l || true
           #sort dist/plain/complete.txt | uniq -d || true
 
       - name: Commit generated files
