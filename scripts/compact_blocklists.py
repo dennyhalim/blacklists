@@ -46,13 +46,14 @@ SOURCES = {
     ],
 }
 
-# NextDNS piracy lists cover streaming sites, not all legal media platforms.
-PIRACY_BASE = "https://raw.githubusercontent.com/lennysh/dns-blocklists/main/service-filters/"
+STREAM_BASE1 = "https://raw.githubusercontent.com/pedro-nsy/nsy-dns-blocklist/main/lists/"
+STREAM_BASE2 = "https://raw.githubusercontent.com/lennysh/dns-blocklists/main/service-filters/"
 SOURCES["streaming"] = [
-    ("spotify", PIRACY_BASE + "spotify.txt"),
-    ("netflix", PIRACY_BASE + "netflix.txt"),
-    ("disneyplus", PIRACY_BASE + "disneyplus.txt"),
-    ("tiktok", PIRACY_BASE + "tiktok.txt"),
+    ("yt", STREAM_BASE1 + "youtube.txt"),
+    ("short", STREAM_BASE1 + "shortvideo.txt"),
+    ("streaming", STREAM_BASE1 + "streaming-tv.txt"),
+    ("netflix", STREAM_BASE2 + "netflix.txt"),
+    ("tiktok", STREAM_BASE2 + "tiktok.txt"),
 ]
 
 DOMAIN_RE = re.compile(
