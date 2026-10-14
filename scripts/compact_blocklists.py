@@ -26,11 +26,11 @@ SOURCES = {
     "ads": [
         ("peter-ads", "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=plain&showintro=0&notrackers=1"),
         ("steven-base", "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"),
-        ("hagezi-light", "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/light-onlydomains.txt"),
+        ("hagezi-light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/light-onlydomains.txt"),
     ],
     "trackers": [
         ("peter-trackers", "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=plain&showintro=0&onlytrackers=1"),
-        ("hagezi-light", "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/light-onlydomains.txt"),
+        ("hagezi-light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/light-onlydomains.txt"),
     ],
     "nsfw": [
         ("hagezi-nsfw", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nsfw-onlydomains.txt"),
