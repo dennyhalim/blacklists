@@ -1,6 +1,14 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
-spotify | 10 | 1 | audio-ak-spotify-com.akamaized.net, audio4-ak-spotify-com.akamaized.net, heads-ak-spotify-com.akamaized.net, heads4-ak-spotify-com.akamaized.net, spotify-everywhere.com
 netflixdnstest | 10 | 0 | netflixdnstest1.com, netflixdnstest10.com, netflixdnstest2.com, netflixdnstest3.com, netflixdnstest4.com
 tiktokcdn | 5 | 4 | p16-tiktokcdn-com.akamaized.net, tiktokcdn-eu.com, tiktokcdn-eu.com.ttdns3.com, tiktokcdn-us.com, tiktokcdn.com
+kwai | 4 | 3 | kwai-cut.com, kwai-pro.com, kwai.com, kwai.net
 netflix | 4 | 2 | netflix.ca, netflix.com, netflix.com.edgesuite.net, netflix.net
+amazon | 3 | 3 | atv-ext.amazon.com, atv-ps.amazon.com, av-na.amazon.com
+aaplimg | 3 | 3 | hls-svod-aoc-ve.itunes.g.aaplimg.com, hls-svod-ve.itunes.g.aaplimg.com, tv.v.aaplimg.com
+svod | 3 | 3 | hls-svod-aoc-ve.itunes.g.aaplimg.com, hls-svod-ve.itunes.g.aaplimg.com, hls-svod.itunes.apple.com
+itunes | 3 | 3 | hls-svod-aoc-ve.itunes.g.aaplimg.com, hls-svod-ve.itunes.g.aaplimg.com, hls-svod.itunes.apple.com
+hls | 3 | 3 | hls-svod-aoc-ve.itunes.g.aaplimg.com, hls-svod-ve.itunes.g.aaplimg.com, hls-svod.itunes.apple.com
+odysee | 3 | 1 | odysee.com, odysee.live, odysee.tv
+plex | 3 | 3 | plex.bz, plex.direct, plex.tv
+youtube | 3 | 2 | youtube-nocookie.com, youtube.com, youtube.googleapis.com

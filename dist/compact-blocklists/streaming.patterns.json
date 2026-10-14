@@ -1,18 +1,5 @@
 [
   {
-    "pattern": "spotify",
-    "domains": 10,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "audio-ak-spotify-com.akamaized.net",
-      "audio4-ak-spotify-com.akamaized.net",
-      "heads-ak-spotify-com.akamaized.net",
-      "heads4-ak-spotify-com.akamaized.net",
-      "spotify-everywhere.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*spotify[^.]*\\."
-  },
-  {
     "pattern": "netflixdnstest",
     "domains": 10,
     "tranco_protected_matches": 0,
@@ -39,6 +26,18 @@
     "suggested_regex": "(^|\\.)[^.]*tiktokcdn[^.]*\\."
   },
   {
+    "pattern": "kwai",
+    "domains": 4,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "kwai-cut.com",
+      "kwai-pro.com",
+      "kwai.com",
+      "kwai.net"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*kwai[^.]*\\."
+  },
+  {
     "pattern": "netflix",
     "domains": 4,
     "tranco_protected_matches": 2,
@@ -49,5 +48,93 @@
       "netflix.net"
     ],
     "suggested_regex": "(^|\\.)[^.]*netflix[^.]*\\."
+  },
+  {
+    "pattern": "amazon",
+    "domains": 3,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "atv-ext.amazon.com",
+      "atv-ps.amazon.com",
+      "av-na.amazon.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*amazon[^.]*\\."
+  },
+  {
+    "pattern": "aaplimg",
+    "domains": 3,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "hls-svod-aoc-ve.itunes.g.aaplimg.com",
+      "hls-svod-ve.itunes.g.aaplimg.com",
+      "tv.v.aaplimg.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*aaplimg[^.]*\\."
+  },
+  {
+    "pattern": "svod",
+    "domains": 3,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "hls-svod-aoc-ve.itunes.g.aaplimg.com",
+      "hls-svod-ve.itunes.g.aaplimg.com",
+      "hls-svod.itunes.apple.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*svod[^.]*\\."
+  },
+  {
+    "pattern": "itunes",
+    "domains": 3,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "hls-svod-aoc-ve.itunes.g.aaplimg.com",
+      "hls-svod-ve.itunes.g.aaplimg.com",
+      "hls-svod.itunes.apple.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*itunes[^.]*\\."
+  },
+  {
+    "pattern": "hls",
+    "domains": 3,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "hls-svod-aoc-ve.itunes.g.aaplimg.com",
+      "hls-svod-ve.itunes.g.aaplimg.com",
+      "hls-svod.itunes.apple.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*hls[^.]*\\."
+  },
+  {
+    "pattern": "odysee",
+    "domains": 3,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "odysee.com",
+      "odysee.live",
+      "odysee.tv"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*odysee[^.]*\\."
+  },
+  {
+    "pattern": "plex",
+    "domains": 3,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "plex.bz",
+      "plex.direct",
+      "plex.tv"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*plex[^.]*\\."
+  },
+  {
+    "pattern": "youtube",
+    "domains": 3,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "youtube-nocookie.com",
+      "youtube.com",
+      "youtube.googleapis.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*youtube[^.]*\\."
   }
 ]
