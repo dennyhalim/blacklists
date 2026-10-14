@@ -976,7 +976,7 @@
   },
   {
     "pattern": "site",
-    "domains": 529,
+    "domains": 527,
     "tranco_protected_matches": 11,
     "examples": [
       "01ejjpa2.behtarin-site-shartbandi.com",
@@ -1158,7 +1158,7 @@
   },
   {
     "pattern": "order",
-    "domains": 474,
+    "domains": 475,
     "tranco_protected_matches": 1,
     "examples": [
       "1-order.com",
@@ -1168,6 +1168,19 @@
       "ag0ba-order.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*order[^.]*\\."
+  },
+  {
+    "pattern": "download",
+    "domains": 473,
+    "tranco_protected_matches": 28,
+    "examples": [
+      "00download.com",
+      "0download.info",
+      "10-download.com",
+      "123download.xyz",
+      "1xbet-download.lat"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*download[^.]*\\."
   },
   {
     "pattern": "home",
@@ -1194,19 +1207,6 @@
       "7sri4p7xarcugcgu.sber.yandex.ir0859017v3i9id1.update.registry.stilberri.ru"
     ],
     "suggested_regex": "(^|\\.)[^.]*update[^.]*\\."
-  },
-  {
-    "pattern": "download",
-    "domains": 470,
-    "tranco_protected_matches": 25,
-    "examples": [
-      "00download.com",
-      "0download.info",
-      "10-download.com",
-      "123download.xyz",
-      "1xbet-download.lat"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*download[^.]*\\."
   },
   {
     "pattern": "bot",

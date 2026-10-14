@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield30, abuseipdbnet, lessbogons, webclient, feodo, etcompromised, alienvault, threatviewc2, censys
-# Entries: 8350
+# Entries: 8353
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-compact" and comment="bl.dennyhalim.com"]
@@ -2611,7 +2611,9 @@ add list="dhbl-compact" address="102.200.32.0/19" timeout=3d comment="bl.dennyha
 add list="dhbl-compact" address="102.200.64.0/18" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.200.128.0/18" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.200.192.0/19" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-compact" address="102.200.224.0/20" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="102.200.224.0/21" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="102.200.232.0/22" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="102.200.236.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.201.220.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.201.224.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.203.20.0/22" timeout=3d comment="bl.dennyhalim.com"
@@ -3922,6 +3924,7 @@ add list="dhbl-compact" address="118.31.116.9" timeout=3d comment="bl.dennyhalim
 add list="dhbl-compact" address="118.79.140.135" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="118.88.0.0/21" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="118.89.79.131" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="118.89.88.183" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="118.95.33.69" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="118.107.0.0/18" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="118.126.95.117" timeout=3d comment="bl.dennyhalim.com"
