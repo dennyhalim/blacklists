@@ -257,8 +257,8 @@ def main() -> int:
                     help="never collapse subdomains into these top Tranco parents")
     ap.add_argument("--pattern-min", type=int, default=3, help="minimum domains per suggested pattern")
     ap.add_argument("--categories", nargs="+",
-                    choices=["ads", "trackers", "nsfw", "gambling", "streaming"],
-                    default=["ads", "trackers", "nsfw", "gambling", "streaming"])
+                    choices=["ads", "trackers", "nsfw", "threats", "gambling", "streaming"],
+                    default=["ads", "trackers", "nsfw", "threats", "gambling", "streaming"])
     args = ap.parse_args()
 
     if args.limit < 1 or args.tranco_protect < 0 or args.pattern_min < 1:
