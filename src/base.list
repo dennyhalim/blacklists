@@ -6,11 +6,11 @@
 #endswith:ads
 #label:pixel
 contains:casino|poker|bingo|slots|gambl|adult|lgbt|xxx|porn|sexy|webcam
-contains:doubleclick|booru|2mdn|pagead2|quantserve
+contains:doubleclick|booru|2mdn|pagead2|quantserve|xhamster
 contains:analyti|telemetry|beacon|tracking|trafficmanager|nexusrules|piwik
 suffix:.top|.cfd|.icu|.bet|.bid
 suffix:.cam|.tube|.gay|.gq|.sex
 regex:google(ad|tag|syndication|-analytic)
-regex:ad(serv|vert|mob|zerk|nxs|system|tube)
-regex:(bing|mail-|search|image|video|samsung|tv)ads
+regex:ad(serv|system|-delivery|nxs|vert|mob|zerk|tube)
+regex:(bing|mail-|search|image|video|moat|tv)ads
 #regex:ads(flame|keeper|ports|2live|tat|min|co)
