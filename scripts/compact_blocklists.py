@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import csv
 import io
+import json
 import re
 import sys
 import urllib.request
@@ -170,9 +171,45 @@ def rank_domains(domains: set[str], votes: Counter, tranco: dict[str, int],
         return (-votes[d], rank, d.count("."), len(d), d)
     return sorted(domains, key=score)[:limit]
 
+def pattern_report(outdir: Path, category: str, domains: set[str],
+                   psl: PSL, protected: set[str], minimum: int = 3) -> None:
+    """Suggest frequent label patterns; never deploy them automatically."""
+    counts = Counter()
+    examples = defaultdict(list)
+    popular = Counter()
+    for domain in sorted(domains):
+        parent = psl.registrable(domain)
+        # Ignore suffix labels and one/two-character fragments.
+        labels = domain[:-len(parent)].rstrip(".").split(".") if domain != parent else []
+        labels += parent.split(".")[:1]
+        tokens = {x for label in labels for x in re.split(r"[-_0-9]+", label)
+                  if 3 <= len(x) <= 24 and x not in {"www", "com", "net", "org", "cdn", "static"}}
+        for token in tokens:
+            counts[token] += 1
+            if len(examples[token]) < 5:
+                examples[token].append(domain)
+            if parent in protected:
+                popular[token] += 1
+    rows = [{"pattern": token, "domains": count,
+             "tranco_protected_matches": popular[token], "examples": examples[token],
+             "suggested_regex": rf"(^|\.)[^.]*{re.escape(token)}[^.]*\."
+             } for token, count in counts.most_common() if count >= minimum]
+    # Frequent tokens are discovery hints, not safe DNS rules.
+    (outdir / f"{category}.patterns.json").write_text(
+        json.dumps(rows[:100], indent=2) + "\n", encoding="utf-8")
+    with (outdir / f"{category}.patterns.txt").open("w", encoding="utf-8") as f:
+        f.write("# REVIEW ONLY: substring patterns may block legitimate domains.\n")
+        f.write("# pattern | matched domains | Tranco-protected matches | examples\n")
+        for row in rows[:100]:
+            f.write(f"{row['pattern']} | {row['domains']} | "
+                    f"{row['tranco_protected_matches']} | {', '.join(row['examples'])}\n")
+
+
 def collect(category: str, psl: PSL, tranco: dict[str, int],
-            protected: set[str], limit: int) -> list[str]:
+            protected: set[str], limit: int, outdir: Path,
+            minimum: int) -> list[str]:
     if category == "streaming":
+        pattern_report(outdir, category, set(STREAMING_SEEDS), psl, protected, minimum)
         return rank_domains(set(STREAMING_SEEDS), Counter({d: 3 for d in STREAMING_SEEDS}),
                             tranco, psl, limit)
 
@@ -184,6 +221,7 @@ def collect(category: str, psl: PSL, tranco: dict[str, int],
             votes[d] += 1
         union |= domains
 
+    pattern_report(outdir, category, union, psl, protected, minimum)
     compact = collapse(union, psl, protected)
     # Parent rules inherit the strongest vote among their covered source domains.
     for d in compact:
@@ -204,7 +242,7 @@ def write_outputs(outdir: Path, category: str, domains: list[str]) -> None:
     mt = ["# RouterOS DNS static NXDOMAIN rules"]
     for i in range(0, len(domains), 5):
         chunk = domains[i:i + 5]
-        alternatives = "|".join(re.escape(d).replace(r"\.", r"\\.") for d in chunk)
+        alternatives = "|".join(re.escape(d) for d in chunk)
         mt.append(f'/ip dns static add regexp="(^|\\\\.)({alternatives})$" type=NXDOMAIN comment="{category}"')
     (outdir / f"{category}.mikrotik.rsc").write_text("\n".join(mt) + "\n", encoding="utf-8")
 
@@ -214,12 +252,13 @@ def main() -> int:
     ap.add_argument("-o", "--out", default="compact-blocklists", help="output directory")
     ap.add_argument("--tranco-protect", type=int, default=100_000,
                     help="never collapse subdomains into these top Tranco parents")
+    ap.add_argument("--pattern-min", type=int, default=3, help="minimum domains per suggested pattern")
     ap.add_argument("--categories", nargs="+",
                     choices=["ads", "trackers", "nsfw", "gambling", "streaming"],
                     default=["ads", "trackers", "nsfw", "gambling", "streaming"])
     args = ap.parse_args()
 
-    if args.limit < 1 or args.tranco_protect < 0:
+    if args.limit < 1 or args.tranco_protect < 0 or args.pattern_min < 1:
         ap.error("limits must be positive")
 
     print("[meta] Public Suffix List", file=sys.stderr)
@@ -228,8 +267,9 @@ def main() -> int:
     tranco, protected = load_tranco(args.tranco_protect)
 
     out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
     for category in args.categories:
-        domains = collect(category, psl, tranco, protected, args.limit)
+        domains = collect(category, psl, tranco, protected, args.limit, out, args.pattern_min)
         write_outputs(out, category, domains)
         print(f"[done] {category}: {len(domains)}", file=sys.stderr)
     return 0
