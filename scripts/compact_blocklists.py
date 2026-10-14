@@ -38,7 +38,7 @@ SOURCES = {
         ("steven-porn", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts"),
     ],
     "threats": [
-        ("hagezi-gambling-mini", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.mini-onlydomains.txt"),
+        ("hagezi-tif-mini", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.mini-onlydomains.txt"),
     ],
     "gambling": [
         ("hagezi-gambling-mini", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.mini-onlydomains.txt"),
