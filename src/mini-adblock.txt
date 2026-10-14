@@ -1,0 +1,61 @@
+! Title: Mini <10k - Ads + Trackers + Phishing
+! Last updated
+
+! === ADS ===
+||doubleclick.net^
+||googlesyndication.com^
+||googleadservices.com^
+||googletagservices.com^
+||adservice.google.*^
+||amazon-adsystem.com^
+||ad-delivery.net^
+||adnxs.com^
+||rubiconproject.com^
+||pubmatic.com^
+||criteo.net^
+||taboola.com^
+||outbrain.com^
+
+! === GENERAL TRACKERS ===
+||google-analytics.com^$3p
+||googletagmanager.com^$3p
+||facebook.net^$3p
+||connect.facebook.net^
+||scorecardresearch.com^
+||hotjar.com^$3p
+||clarity.ms^$3p
+||mixpanel.com^$3p
+||segment.com^
+||segment.io^
+||amplitude.com^$3p
+||sentry.io^$3p
+||bugsnag.com^$3p
+||doubleverify.com^
+||moatads.com^
+||tiktok.com/i18n/analytics^
+||snapchat.com/tr^$3p
+
+! === PHISHING / MALICIOUS ===
+! block newly registered + known phish kits
+||phishing-check.com^
+||xn--*^$important
+||*-login.*.top^
+||*-secure.*.xyz^
+||*.tk^$3p
+||*.ml^$3p
+||*.cf^$3p
+||*.gq^$3p
+$popup,3p,domain=~safe.com
+
+! cosmetic
+##.ad
+##.ads
+##.advert
+##.ad-container
+##.ad-wrapper
+##[id*="google_ads"]
+##[class*="sponsored"]
+##[id*="taboola"]
+##[id*="outbrain"]
+##a[href*="/adclick"]
+##a[href^="https://ad."]
