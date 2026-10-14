@@ -1,0 +1,239 @@
+#!/usr/bin/env python3
+"""
+Compact DNS/adblock list builder.
+
+Downloads public blocklists, normalizes domains, protects Tranco top sites,
+uses PSL boundaries for safe parent collapsing, ranks candidates, and writes
+small category lists for Adblock/uBlock/AdGuard, Pi-hole and MikroTik.
+"""
+from __future__ import annotations
+
+import argparse
+import csv
+import io
+import re
+import sys
+import urllib.request
+import zipfile
+from collections import Counter, defaultdict
+from pathlib import Path
+
+UA = "compact-blocklist/1.0 (+local list compiler)"
+DEFAULT_LIMIT = 50
+COLLAPSE_MIN = 4
+
+SOURCES = {
+    "ads": [
+        ("peter-ads", "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=plain&showintro=0&notrackers=1"),
+        ("steven-base", "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"),
+        ("hagezi-light", "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/light-onlydomains.txt"),
+    ],
+    "trackers": [
+        ("peter-trackers", "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=plain&showintro=0&onlytrackers=1"),
+        ("hagezi-light", "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/light-onlydomains.txt"),
+    ],
+    "nsfw": [
+        ("hagezi-nsfw", "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt"),
+        ("steven-porn", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts"),
+    ],
+    "gambling": [
+        ("hagezi-gambling-mini", "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-mini-onlydomains.txt"),
+        ("steven-gambling", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts"),
+    ],
+}
+
+# DNS cannot target in-app features such as Reels reliably; these intentionally
+# block the service/domain family. Edit to fit your policy.
+STREAMING_SEEDS = {
+    "youtube.com", "youtu.be", "youtube-nocookie.com", "googlevideo.com", "ytimg.com",
+    "spotify.com", "scdn.co", "spotifycdn.com",
+    "netflix.com", "nflxvideo.net", "nflximg.net", "nflxso.net", "nflxext.com",
+    "disneyplus.com", "dssott.com", "bamgrid.com",
+    "hulu.com", "huluim.com",
+    "primevideo.com", "amazonvideo.com",
+    "twitch.tv", "ttvnw.net", "jtvnw.net",
+    "soundcloud.com", "sndcdn.com",
+    "iheart.com", "iheartmedia.com", "tunein.com",
+    "deezer.com", "dzcdn.net", "tidal.com",
+    "vimeo.com", "vimeocdn.com", "dailymotion.com", "dmcdn.net",
+    "instagram.com", "cdninstagram.com",
+    "tiktok.com", "tiktokcdn.com", "tiktokv.com",
+    "facebook.com", "fbcdn.net",
+}
+
+DOMAIN_RE = re.compile(
+    r"(?i)(?:^|[\s|/@=,:])(?:https?://)?(?:www\.)?"
+    r"((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9-]{2,63})"
+)
+
+def fetch(url: str, timeout: int = 45) -> bytes:
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read()
+
+def normalize(domain: str) -> str | None:
+    d = domain.strip().lower().rstrip(".")
+    if d.startswith(("localhost", "local.")) or len(d) > 253 or "." not in d:
+        return None
+    try:
+        d = d.encode("idna").decode("ascii")
+    except UnicodeError:
+        return None
+    labels = d.split(".")
+    if any(not x or len(x) > 63 or x[0] == "-" or x[-1] == "-" for x in labels):
+        return None
+    if not all(re.fullmatch(r"[a-z0-9-]+", x) for x in labels):
+        return None
+    return d
+
+def parse_domains(text: str) -> set[str]:
+    out = set()
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line or line.startswith(("#", "!", "[", ";")):
+            continue
+        line = line.split("#", 1)[0].strip()
+        # hosts, plain-domain, ABP/uBO/AdGuard and dnsmasq-ish inputs
+        for token in re.findall(r"[A-Za-z0-9._-]+\.[A-Za-z0-9.-]+", line):
+            d = normalize(token.strip("|^.*"))
+            if d and not re.fullmatch(r"\d+(?:\.\d+){3}", d):
+                out.add(d)
+    return out
+
+class PSL:
+    def __init__(self, text: str):
+        self.normal, self.wild, self.exc = set(), set(), set()
+        for raw in text.splitlines():
+            s = raw.strip().lower()
+            if not s or s.startswith("//"):
+                continue
+            if s.startswith("!"):
+                self.exc.add(s[1:])
+            elif s.startswith("*."):
+                self.wild.add(s[2:])
+            else:
+                self.normal.add(s)
+
+    def registrable(self, domain: str) -> str:
+        parts = domain.split(".")
+        best = 1
+        for i in range(len(parts)):
+            suffix = ".".join(parts[i:])
+            if suffix in self.exc:
+                best = max(1, len(parts) - i - 1)
+                break
+            if suffix in self.normal:
+                best = max(best, len(parts) - i)
+            if i + 1 < len(parts) and ".".join(parts[i + 1:]) in self.wild:
+                best = max(best, len(parts) - i)
+        return domain if len(parts) <= best else ".".join(parts[-(best + 1):])
+
+def load_tranco(limit: int) -> tuple[dict[str, int], set[str]]:
+    data = fetch("https://tranco-list.eu/top-1m.csv.zip")
+    ranks, top = {}, set()
+    with zipfile.ZipFile(io.BytesIO(data)) as zf:
+        name = zf.namelist()[0]
+        with zf.open(name) as fh:
+            for row in csv.reader(io.TextIOWrapper(fh, encoding="utf-8")):
+                if len(row) < 2:
+                    continue
+                rank, domain = int(row[0]), normalize(row[1])
+                if not domain:
+                    continue
+                ranks[domain] = rank
+                if rank <= limit:
+                    top.add(domain)
+                if rank >= max(limit, 100_000):
+                    break
+    return ranks, top
+
+def collapse(domains: set[str], psl: PSL, protected: set[str]) -> set[str]:
+    groups = defaultdict(set)
+    for d in domains:
+        groups[psl.registrable(d)].add(d)
+
+    out = set()
+    for parent, children in groups.items():
+        # Never promote a blocked subdomain to a popular registrable parent.
+        if parent not in protected and (parent in children or len(children) >= COLLAPSE_MIN):
+            out.add(parent)
+        else:
+            out.update(children)
+    return out
+
+def rank_domains(domains: set[str], votes: Counter, tranco: dict[str, int],
+                 psl: PSL, limit: int) -> list[str]:
+    def score(d: str):
+        parent = psl.registrable(d)
+        rank = tranco.get(parent, 2_000_000)
+        # More independent source votes first, then web popularity, then shorter rules.
+        return (-votes[d], rank, d.count("."), len(d), d)
+    return sorted(domains, key=score)[:limit]
+
+def collect(category: str, psl: PSL, tranco: dict[str, int],
+            protected: set[str], limit: int) -> list[str]:
+    if category == "streaming":
+        return rank_domains(set(STREAMING_SEEDS), Counter({d: 3 for d in STREAMING_SEEDS}),
+                            tranco, psl, limit)
+
+    votes, union = Counter(), set()
+    for name, url in SOURCES[category]:
+        print(f"[{category}] {name}", file=sys.stderr)
+        domains = parse_domains(fetch(url).decode("utf-8", "replace"))
+        for d in domains:
+            votes[d] += 1
+        union |= domains
+
+    compact = collapse(union, psl, protected)
+    # Parent rules inherit the strongest vote among their covered source domains.
+    for d in compact:
+        if votes[d] == 0:
+            votes[d] = max((v for x, v in votes.items() if x == d or x.endswith("." + d)), default=1)
+    return rank_domains(compact, votes, tranco, psl, limit)
+
+def write_outputs(outdir: Path, category: str, domains: list[str]) -> None:
+    outdir.mkdir(parents=True, exist_ok=True)
+    header = f"! compact-blocklist category={category} entries={len(domains)}\n"
+
+    (outdir / f"{category}.adblock.txt").write_text(
+        header + "\n".join(f"||{d}^" for d in domains) + "\n", encoding="utf-8")
+    (outdir / f"{category}.pihole.txt").write_text(
+        "\n".join(domains) + "\n", encoding="utf-8")
+
+    # MikroTik: group up to 5 domains per regex to keep rule count small.
+    mt = ["# RouterOS DNS static NXDOMAIN rules"]
+    for i in range(0, len(domains), 5):
+        chunk = domains[i:i + 5]
+        alternatives = "|".join(re.escape(d).replace(r"\.", r"\\.") for d in chunk)
+        mt.append(f'/ip dns static add regexp="(^|\\\\.)({alternatives})$" type=NXDOMAIN comment="{category}"')
+    (outdir / f"{category}.mikrotik.rsc").write_text("\n".join(mt) + "\n", encoding="utf-8")
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description="Build small ranked DNS/adblock category lists.")
+    ap.add_argument("-n", "--limit", type=int, default=DEFAULT_LIMIT, help="rules per category (default: 50)")
+    ap.add_argument("-o", "--out", default="compact-blocklists", help="output directory")
+    ap.add_argument("--tranco-protect", type=int, default=100_000,
+                    help="never collapse subdomains into these top Tranco parents")
+    ap.add_argument("--categories", nargs="+",
+                    choices=["ads", "trackers", "nsfw", "gambling", "streaming"],
+                    default=["ads", "trackers", "nsfw", "gambling", "streaming"])
+    args = ap.parse_args()
+
+    if args.limit < 1 or args.tranco_protect < 0:
+        ap.error("limits must be positive")
+
+    print("[meta] Public Suffix List", file=sys.stderr)
+    psl = PSL(fetch("https://publicsuffix.org/list/public_suffix_list.dat").decode("utf-8", "replace"))
+    print("[meta] Tranco", file=sys.stderr)
+    tranco, protected = load_tranco(args.tranco_protect)
+
+    out = Path(args.out)
+    for category in args.categories:
+        domains = collect(category, psl, tranco, protected, args.limit)
+        write_outputs(out, category, domains)
+        print(f"[done] {category}: {len(domains)}", file=sys.stderr)
+    return 0
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+
