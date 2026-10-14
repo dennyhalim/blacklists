@@ -54,7 +54,7 @@ STREAM_BASE2 = "https://raw.githubusercontent.com/lennysh/dns-blocklists/main/se
 SOURCES["streaming"] = [
     ("yt", STREAM_BASE1 + "youtube.txt"),
     ("short", STREAM_BASE1 + "shortvideo.txt"),
-    ("streaming", STREAM_BASE1 + "streaming-tv.txt"),
+#    ("streaming", STREAM_BASE1 + "streaming-tv.txt"),
     ("netflix", STREAM_BASE2 + "netflix.txt"),
     ("tiktok", STREAM_BASE2 + "tiktok.txt"),
 ]
