@@ -6,6 +6,7 @@ add cname=strict.bing.com name=www.bing.com type=CNAME comment="safe.bl.dennyhal
 add address=216.239.38.119 regexp=www.google.co type=A comment="safe.bl.dennyhalim.com"
 add regexp="(casino|poker|bingo|slots|gambl)" type=NXDOMAIN comment="nsfw.bl.dennyhalim.com"
 add regexp="(adult|lgbt|xxx|porn|sexy|webcam)" type=NXDOMAIN comment="nsfw.bl.dennyhalim.com"
+add regexp="(ahcdn|xnxx|xhamster|booru|xvideos)" type=NXDOMAIN comment="nsfw.bl.dennyhalim.com"
 add regexp=".*\\.(bet|bid|cfd|icu|tk|top)\$" type=NXDOMAIN comment="tld.bl.dennyhalim.com"
 add regexp=".*\\.(cam|gay|gq|sex|tube)\$" type=NXDOMAIN comment="tld.bl.dennyhalim.com"
 add regexp="google(ad|tag|syndication|-analytic)" type=NXDOMAIN comment="google.bl.dennyhalim.com"
