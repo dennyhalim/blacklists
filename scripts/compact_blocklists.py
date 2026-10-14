@@ -41,6 +41,7 @@ SOURCES = {
     ],
     "threats": [
         ("hagezi-tif", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif-onlydomains.txt"),
+        ("urlhaus", "https://urlhaus.abuse.ch/downloads/text"),
     ],
     "gambling": [
         ("hagezi-gambling-mini", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.mini-onlydomains.txt"),
