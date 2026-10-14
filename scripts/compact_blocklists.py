@@ -33,11 +33,11 @@ SOURCES = {
         ("hagezi-light", "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/light-onlydomains.txt"),
     ],
     "nsfw": [
-        ("hagezi-nsfw", "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/nsfw-onlydomains.txt"),
+        ("hagezi-nsfw", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nsfw-onlydomains.txt"),
         ("steven-porn", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts"),
     ],
     "gambling": [
-        ("hagezi-gambling-mini", "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/gambling-mini-onlydomains.txt"),
+        ("hagezi-gambling-mini", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.mini-onlydomains.txt"),
         ("steven-gambling", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts"),
     ],
 }
