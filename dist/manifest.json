@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-14 21:19:59 UTC",
+    "generated_at": "2026-10-15 03:22:13 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -11,7 +11,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 136319,
+        "domains": 136850,
         "files": {
           "adblock": "dist/adblock/gambling.txt",
           "dnsmasq": "dist/dnsmasq/gambling.conf",
@@ -21,7 +21,7 @@
           "rpz": "dist/rpz/gambling.rpz",
           "wildcard": "dist/wildcard/gambling.txt"
         },
-        "native_rules": 6699
+        "native_rules": 6712
       },
       "nsfw": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 142525,
+        "domains": 142693,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -52,7 +52,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 129991,
+        "domains": 129976,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 236117,
+        "domains": 236515,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -211,7 +211,7 @@
       ]
     },
     "c2": {
-      "entries": 35223,
+      "entries": 35125,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -291,7 +291,7 @@
       ]
     },
     "combined4server": {
-      "entries": 215273,
+      "entries": 212908,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -374,7 +374,7 @@
       ]
     },
     "complete": {
-      "entries": 79271,
+      "entries": 80554,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -419,7 +419,7 @@
       ]
     },
     "goliath": {
-      "entries": 230947,
+      "entries": 228961,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -459,7 +459,7 @@
       ]
     },
     "server": {
-      "entries": 2670,
+      "entries": 2667,
       "files": {
         "bat": [
           "dist/windows/server.bat"
