@@ -1,7 +1,7 @@
 [
   {
     "pattern": "fifa",
-    "domains": 2835,
+    "domains": 2832,
     "tranco_protected_matches": 0,
     "examples": [
       "2025-cwc-fifa.com",
@@ -13,34 +13,34 @@
     "suggested_regex": "(^|\\.)[^.]*fifa[^.]*\\."
   },
   {
-    "pattern": "app",
-    "domains": 2688,
-    "tranco_protected_matches": 28,
-    "examples": [
-      "00.app.dev.rhone.email",
-      "001app.com",
-      "1-800-chat-app.com",
-      "12315app.com",
-      "1388app15ag.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*app[^.]*\\."
-  },
-  {
     "pattern": "live",
-    "domains": 2612,
-    "tranco_protected_matches": 9,
+    "domains": 2682,
+    "tranco_protected_matches": 8,
     "examples": [
       "01-live-sm.com.cn",
+      "01zhibo-live-huya.com",
+      "01zhibo-live-iqiyi.com",
       "01zhibo-live-qq.com",
-      "163-live.com",
-      "178-live-cntv.com",
-      "178-live-mgtv.com"
+      "163-live.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*live[^.]*\\."
   },
   {
+    "pattern": "app",
+    "domains": 2630,
+    "tranco_protected_matches": 27,
+    "examples": [
+      "00.app.dev.rhone.email",
+      "001app.com",
+      "1-800-chat-app.com",
+      "10x-capital-app.com",
+      "12315app.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*app[^.]*\\."
+  },
+  {
     "pattern": "moneyhub",
-    "domains": 2020,
+    "domains": 2008,
     "tranco_protected_matches": 0,
     "examples": [
       "moneyhub-abitisabihu.click",
@@ -53,20 +53,20 @@
   },
   {
     "pattern": "casino",
-    "domains": 1691,
+    "domains": 1673,
     "tranco_protected_matches": 0,
     "examples": [
       "000333casino.com",
       "00casino.com",
       "10black-casino.fr",
       "123casino.org",
-      "1bet-casino.fr"
+      "1aha-rand-casino-gambling.net"
     ],
     "suggested_regex": "(^|\\.)[^.]*casino[^.]*\\."
   },
   {
     "pattern": "whatsapp",
-    "domains": 1596,
+    "domains": 1646,
     "tranco_protected_matches": 2,
     "examples": [
       "128-whatsapp.com.cn",
@@ -79,10 +79,10 @@
   },
   {
     "pattern": "online",
-    "domains": 1435,
+    "domains": 1381,
     "tranco_protected_matches": 5,
     "examples": [
-      "00001f52offi1ce0001365online.com",
+      "054online.com",
       "1-on-sign-sync-online.com",
       "1-straussvipeu-online.shop",
       "101-extra-mobil-sadece-bugune-ozel-online-alisveris-tr.pro-tr.online",
@@ -91,73 +91,47 @@
     "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
   },
   {
+    "pattern": "web",
+    "domains": 1046,
+    "tranco_protected_matches": 33,
+    "examples": [
+      "0-web.com",
+      "00000web.info",
+      "03web-zoom.us",
+      "04web-zoom.us",
+      "06web-zoom.us"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*web[^.]*\\."
+  },
+  {
     "pattern": "bgi",
-    "domains": 1406,
+    "domains": 1006,
     "tranco_protected_matches": 0,
     "examples": [
       "bgi.cc",
       "bgi.info",
       "bgi1927uht.vip",
       "bgi4309uht.vip",
-      "bgi4601uht.vip"
+      "bgi5001uht.vip"
     ],
     "suggested_regex": "(^|\\.)[^.]*bgi[^.]*\\."
   },
   {
     "pattern": "uht",
-    "domains": 1403,
+    "domains": 1003,
     "tranco_protected_matches": 0,
     "examples": [
       "bgi1927uht.vip",
       "bgi4309uht.vip",
-      "bgi4601uht.vip",
-      "bgi4602uht.vip",
-      "bgi4603uht.vip"
+      "bgi5001uht.vip",
+      "bgi5002uht.vip",
+      "bgi5003uht.vip"
     ],
     "suggested_regex": "(^|\\.)[^.]*uht[^.]*\\."
   },
   {
-    "pattern": "lordfilm",
-    "domains": 1245,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "100-dnej-svobody-lordfilm.ru",
-      "100-dney-svobody-lordfilm.ru",
-      "30-dney-nochi-lordfilm.ru",
-      "4etyre-lordfilm.ru",
-      "8lordfilm-0.xyz"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*lordfilm[^.]*\\."
-  },
-  {
-    "pattern": "web",
-    "domains": 1145,
-    "tranco_protected_matches": 33,
-    "examples": [
-      "0-web.com",
-      "00000web.info",
-      "03web-zoom.us",
-      "06web-zoom.us",
-      "07web-zoom.us"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*web[^.]*\\."
-  },
-  {
-    "pattern": "gov",
-    "domains": 1138,
-    "tranco_protected_matches": 2,
-    "examples": [
-      "39bb0e97b6013ba3c59244a4ef911898-irs-gov.com",
-      "agenziaentrate-gov.com",
-      "agriculture-gov.fr",
-      "aidat-iades-web-grs-e-devlet-gov-tr.com.ph",
-      "aidatcepdestekmobilkapisi-gov-tr.com.ph"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*gov[^.]*\\."
-  },
-  {
     "pattern": "beta",
-    "domains": 917,
+    "domains": 919,
     "tranco_protected_matches": 0,
     "examples": [
       "1.0-beta.1.zip",
@@ -182,21 +156,34 @@
     "suggested_regex": "(^|\\.)[^.]*alpha[^.]*\\."
   },
   {
-    "pattern": "vip",
-    "domains": 868,
+    "pattern": "bet",
+    "domains": 836,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "000bet.com",
+      "002bet.com",
+      "0032bet.com",
+      "007bet.lat",
+      "00bet.net"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*bet[^.]*\\."
+  },
+  {
+    "pattern": "office",
+    "domains": 835,
     "tranco_protected_matches": 1,
     "examples": [
-      "010365vip.vip",
-      "028365vip.vip",
-      "029365vip.vip",
-      "0371365vip.vip",
-      "07warisan138vip.com"
+      "001office.cn",
+      "007office.cn",
+      "15-office.com",
+      "1xbet-office.top",
+      "241-office.com"
     ],
-    "suggested_regex": "(^|\\.)[^.]*vip[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*office[^.]*\\."
   },
   {
     "pattern": "finance",
-    "domains": 861,
+    "domains": 783,
     "tranco_protected_matches": 0,
     "examples": [
       "12finance.com",
@@ -209,150 +196,72 @@
   },
   {
     "pattern": "login",
-    "domains": 857,
+    "domains": 748,
     "tranco_protected_matches": 5,
     "examples": [
-      "1password-login-account.readthedocs.io",
-      "1password-login-on-android.readthedocs.io",
-      "1password-login-online.readthedocs.io",
       "1password-login.com",
-      "1win-login.fr"
+      "1win-login.fr",
+      "2757login.cfd",
+      "3446login.cfd",
+      "4-en-login-app.de"
     ],
     "suggested_regex": "(^|\\.)[^.]*login[^.]*\\."
   },
   {
-    "pattern": "office",
-    "domains": 838,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "001office.cn",
-      "007office.cn",
-      "241-office.com",
-      "2nd-office.app",
-      "3032-62-office.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*office[^.]*\\."
-  },
-  {
-    "pattern": "win",
-    "domains": 778,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "07win.lat",
-      "1-win-kz.org",
-      "1-win.fr",
-      "100win.top",
-      "100win100.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*win[^.]*\\."
-  },
-  {
-    "pattern": "bet",
-    "domains": 768,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "000bet.com",
-      "002bet.com",
-      "0032bet.com",
-      "007bet.lat",
-      "00bet.net"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*bet[^.]*\\."
-  },
-  {
-    "pattern": "pro",
-    "domains": 768,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "00pro.com",
-      "0x-pro.top",
-      "100pro.me",
-      "101-extra-mobil-sadece-bugune-ozel-online-alisveris-tr.pro-tr.online",
-      "101-extra-sadece-bugune-ozel-alisveris-sepeti-tr.360-mobil-pro.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*pro[^.]*\\."
-  },
-  {
     "pattern": "oferta",
-    "domains": 739,
+    "domains": 741,
     "tranco_protected_matches": 0,
     "examples": [
+      "022-oferta5928121.sbs",
       "092810-oferta.shop",
       "8364-oferta.shop",
       "87543-oferta.click",
-      "alebilet.lokalna-oferta2456326.sbs",
-      "alebilet.oferta04.shop"
+      "alebilet.lokalna-oferta2456326.sbs"
     ],
     "suggested_regex": "(^|\\.)[^.]*oferta[^.]*\\."
   },
   {
-    "pattern": "shop",
-    "domains": 694,
-    "tranco_protected_matches": 4,
+    "pattern": "pro",
+    "domains": 678,
+    "tranco_protected_matches": 1,
     "examples": [
-      "1-rx-shop.com",
-      "101-extra-bugune-ozel-indirim-alisveris-sepeti-cepte-shop-tr.indirimde-biz-tr.online",
-      "101-extra-sadece-bugune-ozel-mobil-indirim-sepeti-shop-tr.avantajshop.online",
-      "101-extra-sadece-bugune-ozel-shop-sepet-indirimleri-tr.vipde-indirim.online",
-      "101-mobil-sadece-bugune-ozel-extra-indirim-sepeti-cep.trendy-shop-tr.online"
+      "00pro.com",
+      "101-extra-mobil-sadece-bugune-ozel-online-alisveris-tr.pro-tr.online",
+      "101-extra-sadece-bugune-ozel-alisveris-sepeti-tr.360-mobil-pro.com",
+      "12138pro.com",
+      "17cinemas-pro.cloud"
     ],
-    "suggested_regex": "(^|\\.)[^.]*shop[^.]*\\."
-  },
-  {
-    "pattern": "mail",
-    "domains": 689,
-    "tranco_protected_matches": 10,
-    "examples": [
-      "010mail.com",
-      "1mail.dev",
-      "1mail.site",
-      "1mail.work",
-      "2mail.cloud"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*mail[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*pro[^.]*\\."
   },
   {
     "pattern": "apple",
-    "domains": 669,
+    "domains": 617,
     "tranco_protected_matches": 1,
     "examples": [
       "01apple.com",
       "0431apple.cn",
       "100-apple-card-reward.com",
       "1000apple.com",
-      "10272-apple.com"
+      "1027-apple.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*apple[^.]*\\."
   },
   {
-    "pattern": "xjp",
-    "domains": 656,
+    "pattern": "allegrolokalnie",
+    "domains": 614,
     "tranco_protected_matches": 0,
     "examples": [
-      "alexis378xjp.live",
-      "alexis379xjp.live",
-      "alexis381xjp.live",
-      "alexis382xjp.live",
-      "alexis383xjp.live"
+      "allegrolokalnie.0-230-23.rest",
+      "allegrolokalnie.004852.vu",
+      "allegrolokalnie.01836431344.surf",
+      "allegrolokalnie.030455.click",
+      "allegrolokalnie.03284903.shop"
     ],
-    "suggested_regex": "(^|\\.)[^.]*xjp[^.]*\\."
-  },
-  {
-    "pattern": "portal",
-    "domains": 610,
-    "tranco_protected_matches": 5,
-    "examples": [
-      "17cinemas-portal.cloud",
-      "1portal.co",
-      "41786-portal-google.com",
-      "51bliao-portal.cloud",
-      "51chigua-portal.cloud"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*portal[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*allegrolokalnie[^.]*\\."
   },
   {
     "pattern": "fifaworldcup",
-    "domains": 603,
+    "domains": 602,
     "tranco_protected_matches": 0,
     "examples": [
       "2026-app-fifaworldcup.com",
@@ -365,7 +274,7 @@
   },
   {
     "pattern": "software",
-    "domains": 599,
+    "domains": 593,
     "tranco_protected_matches": 1,
     "examples": [
       "007software.com",
@@ -377,8 +286,21 @@
     "suggested_regex": "(^|\\.)[^.]*software[^.]*\\."
   },
   {
-    "pattern": "france",
+    "pattern": "shop",
     "domains": 585,
+    "tranco_protected_matches": 4,
+    "examples": [
+      "1-rx-shop.com",
+      "101-extra-bugune-ozel-indirim-alisveris-sepeti-cepte-shop-tr.indirimde-biz-tr.online",
+      "101-extra-sadece-bugune-ozel-mobil-indirim-sepeti-shop-tr.avantajshop.online",
+      "101-extra-sadece-bugune-ozel-online-indirim-alisveris-sepette.expert-shop.online",
+      "101-extra-sadece-bugune-ozel-shop-sepet-indirimleri-tr.vipde-indirim.online"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*shop[^.]*\\."
+  },
+  {
+    "pattern": "france",
+    "domains": 566,
     "tranco_protected_matches": 0,
     "examples": [
       "1wins-france.fr",
@@ -390,73 +312,21 @@
     "suggested_regex": "(^|\\.)[^.]*france[^.]*\\."
   },
   {
-    "pattern": "booking",
-    "domains": 574,
+    "pattern": "win",
+    "domains": 557,
     "tranco_protected_matches": 0,
     "examples": [
-      "100limit-booking.com",
-      "12487guest-booking.com",
-      "247booking.shop",
-      "24hr-booking.com",
-      "2booking.cn"
+      "07win.lat",
+      "1-win.fr",
+      "100win.top",
+      "10bet-win.com",
+      "1121win.org"
     ],
-    "suggested_regex": "(^|\\.)[^.]*booking[^.]*\\."
-  },
-  {
-    "pattern": "ledger",
-    "domains": 564,
-    "tranco_protected_matches": 5,
-    "examples": [
-      "01895729-ledger.com",
-      "02-ledger.com",
-      "04-ledger.com",
-      "05-ledger.com",
-      "08-ledger.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*ledger[^.]*\\."
-  },
-  {
-    "pattern": "api",
-    "domains": 558,
-    "tranco_protected_matches": 5,
-    "examples": [
-      "101api.info",
-      "3cq-api.com",
-      "a-proxy-api-istudio-v1.6.zip",
-      "account-api.com",
-      "account-sync-api.net"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*api[^.]*\\."
-  },
-  {
-    "pattern": "vavada",
-    "domains": 552,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "1igrat-vavada.top",
-      "alipay.vavada5.top",
-      "android-vavada.com",
-      "authorize.vavada-i8.top",
-      "casino-vavada.club"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*vavada[^.]*\\."
-  },
-  {
-    "pattern": "google",
-    "domains": 545,
-    "tranco_protected_matches": 8,
-    "examples": [
-      "11255793google.com",
-      "118214google.com",
-      "119-google.com",
-      "15-google.com",
-      "156221-google.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*google[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*win[^.]*\\."
   },
   {
     "pattern": "wending",
-    "domains": 544,
+    "domains": 549,
     "tranco_protected_matches": 0,
     "examples": [
       "aajh-wending.com.cn",
@@ -468,21 +338,73 @@
     "suggested_regex": "(^|\\.)[^.]*wending[^.]*\\."
   },
   {
-    "pattern": "allegrolokalnie",
-    "domains": 542,
+    "pattern": "vip",
+    "domains": 541,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "010365vip.vip",
+      "028365vip.vip",
+      "029365vip.vip",
+      "0371365vip.vip",
+      "07warisan138vip.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*vip[^.]*\\."
+  },
+  {
+    "pattern": "portal",
+    "domains": 541,
+    "tranco_protected_matches": 4,
+    "examples": [
+      "17cinemas-portal.cloud",
+      "1portal.co",
+      "41786-portal-google.com",
+      "51bliao-portal.cloud",
+      "51chigua-portal.cloud"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*portal[^.]*\\."
+  },
+  {
+    "pattern": "vavada",
+    "domains": 538,
     "tranco_protected_matches": 0,
     "examples": [
-      "allegrolokalnie.0-230-23.rest",
-      "allegrolokalnie.004852.vu",
-      "allegrolokalnie.01836431344.surf",
-      "allegrolokalnie.030455.click",
-      "allegrolokalnie.03284903.shop"
+      "1igrat-vavada.top",
+      "alipay.vavada5.top",
+      "authorize.vavada-i8.top",
+      "casino-vavada777g.top",
+      "login.vavada-8vx.top"
     ],
-    "suggested_regex": "(^|\\.)[^.]*allegrolokalnie[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*vavada[^.]*\\."
+  },
+  {
+    "pattern": "booking",
+    "domains": 536,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "100limit-booking.com",
+      "247booking.shop",
+      "24hr-booking.com",
+      "2booking.cn",
+      "2littproductions-booking.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*booking[^.]*\\."
+  },
+  {
+    "pattern": "google",
+    "domains": 512,
+    "tranco_protected_matches": 7,
+    "examples": [
+      "11255793google.com",
+      "119-google.com",
+      "15-google.com",
+      "156221-google.com",
+      "161-google.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*google[^.]*\\."
   },
   {
     "pattern": "game",
-    "domains": 536,
+    "domains": 496,
     "tranco_protected_matches": 3,
     "examples": [
       "0-8-game.com",
@@ -494,34 +416,86 @@
     "suggested_regex": "(^|\\.)[^.]*game[^.]*\\."
   },
   {
-    "pattern": "kra",
-    "domains": 529,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "100kra.cc",
-      "12kra.com",
-      "2kra45.cc",
-      "43kra.com",
-      "46kra.at"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*kra[^.]*\\."
-  },
-  {
     "pattern": "official",
-    "domains": 528,
-    "tranco_protected_matches": 2,
+    "domains": 485,
+    "tranco_protected_matches": 1,
     "examples": [
       "007bsb-log-in-official.top",
       "17cinemas-official.cloud",
       "1win-official-betting.click",
-      "1win-official-zerkalo14.buzz",
-      "475official.shop"
+      "475official.shop",
+      "51baoliao-official.cloud"
     ],
     "suggested_regex": "(^|\\.)[^.]*official[^.]*\\."
   },
   {
+    "pattern": "azino",
+    "domains": 468,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "5zdxh-azino777.icu",
+      "7rad0-azino777.icu",
+      "azino-777-axy.top",
+      "azino-777-bbb.click",
+      "azino-777-htv.click"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*azino[^.]*\\."
+  },
+  {
+    "pattern": "btc",
+    "domains": 464,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "0-btc.com",
+      "10000btc4two.pizza",
+      "128btc.com",
+      "1btc.online",
+      "212btc.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*btc[^.]*\\."
+  },
+  {
+    "pattern": "ledger",
+    "domains": 456,
+    "tranco_protected_matches": 4,
+    "examples": [
+      "01895729-ledger.com",
+      "101ledger.com",
+      "11ledger.com",
+      "144223ledger.com",
+      "284824-ledger.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*ledger[^.]*\\."
+  },
+  {
+    "pattern": "gov",
+    "domains": 456,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "39bb0e97b6013ba3c59244a4ef911898-irs-gov.com",
+      "agenziaentrate-gov.com",
+      "agriculture-gov.fr",
+      "aidat-iades-web-grs-e-devlet-gov-tr.com.ph",
+      "aidatcepdestekmobilkapisi-gov-tr.com.ph"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*gov[^.]*\\."
+  },
+  {
+    "pattern": "api",
+    "domains": 452,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "101api.info",
+      "3cq-api.com",
+      "a-proxy-api-istudio-v1.6.zip",
+      "account-api.com",
+      "account-sync-api.net"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*api[^.]*\\."
+  },
+  {
     "pattern": "info",
-    "domains": 527,
+    "domains": 436,
     "tranco_protected_matches": 11,
     "examples": [
       "0180info.de",
@@ -533,35 +507,22 @@
     "suggested_regex": "(^|\\.)[^.]*info[^.]*\\."
   },
   {
-    "pattern": "coinbase",
-    "domains": 516,
-    "tranco_protected_matches": 0,
+    "pattern": "site",
+    "domains": 417,
+    "tranco_protected_matches": 6,
     "examples": [
-      "022721coinbase.com",
-      "092375coinbase.com",
-      "093831coinbase.com",
-      "102931-coinbase.com",
-      "109431coinbase.com"
+      "01ejjpa2.behtarin-site-shartbandi.com",
+      "1031site.com",
+      "17cinemas-site.cloud",
+      "280826-site.geekever.com",
+      "280826-site.newsingermany.com"
     ],
-    "suggested_regex": "(^|\\.)[^.]*coinbase[^.]*\\."
-  },
-  {
-    "pattern": "support",
-    "domains": 499,
-    "tranco_protected_matches": 9,
-    "examples": [
-      "123support.se",
-      "1st-support-shop.com",
-      "1st-support.com",
-      "abonnement-support.fr",
-      "acc-support.eu.cc"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*support[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*site[^.]*\\."
   },
   {
     "pattern": "play",
-    "domains": 469,
-    "tranco_protected_matches": 1,
+    "domains": 416,
+    "tranco_protected_matches": 0,
     "examples": [
       "011play.com",
       "123play.live",
@@ -572,164 +533,34 @@
     "suggested_regex": "(^|\\.)[^.]*play[^.]*\\."
   },
   {
-    "pattern": "btc",
-    "domains": 462,
-    "tranco_protected_matches": 0,
+    "pattern": "store",
+    "domains": 410,
+    "tranco_protected_matches": 6,
     "examples": [
-      "10000btc4two.pizza",
-      "128btc.com",
-      "1btc.online",
-      "212btc.com",
-      "5btc3.lol"
+      "010store.com",
+      "1394store.com",
+      "152store.shop",
+      "1911builders-store.com",
+      "2m-store.com"
     ],
-    "suggested_regex": "(^|\\.)[^.]*btc[^.]*\\."
-  },
-  {
-    "pattern": "azino",
-    "domains": 461,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "5zdxh-azino777.icu",
-      "7rad0-azino777.icu",
-      "azino-777-axy.top",
-      "azino-777-bbb.click",
-      "azino-777-mob.top"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*azino[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*store[^.]*\\."
   },
   {
     "pattern": "crypto",
-    "domains": 460,
+    "domains": 402,
     "tranco_protected_matches": 1,
     "examples": [
       "000crypto000.com",
       "007crypto.com",
       "013928-crypto.com",
-      "014829-crypto.com",
-      "015928-crypto.com"
+      "015928-crypto.com",
+      "018253-crypto.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*crypto[^.]*\\."
   },
   {
-    "pattern": "secure",
-    "domains": 456,
-    "tranco_protected_matches": 3,
-    "examples": [
-      "1secure-chase.com",
-      "abonnement-secure.fr",
-      "access-secure.live",
-      "access-secure.top",
-      "account-secure-login.net"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*secure[^.]*\\."
-  },
-  {
-    "pattern": "store",
-    "domains": 455,
-    "tranco_protected_matches": 6,
-    "examples": [
-      "1394store.com",
-      "152store.shop",
-      "2m-store.com",
-      "365store.online",
-      "45r-store.shop"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*store[^.]*\\."
-  },
-  {
-    "pattern": "the",
-    "domains": 455,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "7the24.com",
-      "a-canary-flies-the-canyon.com",
-      "access-the-website.com",
-      "ages-unlocking-dark-doom-tricks-the-v3.1-alpha.3.zip",
-      "arsimster-in-the-beningin.ru"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*the[^.]*\\."
-  },
-  {
-    "pattern": "service",
-    "domains": 451,
-    "tranco_protected_matches": 2,
-    "examples": [
-      "1-rustore-service.click",
-      "999080321newfolder1002002231-service1002.space",
-      "999080321test51-service10020125999080321.xyz",
-      "a1-locksmith-service.com",
-      "a18service.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*service[^.]*\\."
-  },
-  {
-    "pattern": "site",
-    "domains": 446,
-    "tranco_protected_matches": 6,
-    "examples": [
-      "01ejjpa2.behtarin-site-shartbandi.com",
-      "1031site.com",
-      "17cinemas-site.cloud",
-      "1win-site.net",
-      "280826-site.geekever.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*site[^.]*\\."
-  },
-  {
-    "pattern": "news",
-    "domains": 422,
-    "tranco_protected_matches": 5,
-    "examples": [
-      "001news.com",
-      "020news.com",
-      "17cinemas-news.cloud",
-      "24news.online",
-      "3xl-news.pro"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*news[^.]*\\."
-  },
-  {
-    "pattern": "top",
-    "domains": 419,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "1win-top-promo.ru",
-      "22bet-top.com",
-      "777top.com",
-      "7zip.top.pages.dnsoe4.com",
-      "888top7.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*top[^.]*\\."
-  },
-  {
-    "pattern": "hub",
-    "domains": 414,
-    "tranco_protected_matches": 3,
-    "examples": [
-      "123movies-hub.com",
-      "21-star-hub.click",
-      "abhishekkumarnaik34-hub.github.io",
-      "admin-hub.com",
-      "agency-connection-hub.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*hub[^.]*\\."
-  },
-  {
-    "pattern": "kraken",
-    "domains": 412,
-    "tranco_protected_matches": 6,
-    "examples": [
-      "035930kraken.com",
-      "127326kraken.com",
-      "128409-kraken.com",
-      "18kraken.at",
-      "194683-kraken.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*kraken[^.]*\\."
-  },
-  {
     "pattern": "bot",
-    "domains": 412,
+    "domains": 400,
     "tranco_protected_matches": 0,
     "examples": [
       "0bot.qzz.io",
@@ -741,21 +572,8 @@
     "suggested_regex": "(^|\\.)[^.]*bot[^.]*\\."
   },
   {
-    "pattern": "system",
-    "domains": 411,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "achievements-psp-system-3.2.zip",
-      "admin-system.xyz",
-      "afrifundcapital-x-system.com",
-      "agalarovinvest-system.com",
-      "agency-system-gateway.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*system[^.]*\\."
-  },
-  {
     "pattern": "facebook",
-    "domains": 403,
+    "domains": 397,
     "tranco_protected_matches": 3,
     "examples": [
       "0976facebook-fanpage-userworkshopsession-details-update.ph",
@@ -767,34 +585,177 @@
     "suggested_regex": "(^|\\.)[^.]*facebook[^.]*\\."
   },
   {
-    "pattern": "account",
-    "domains": 403,
-    "tranco_protected_matches": 3,
+    "pattern": "the",
+    "domains": 392,
+    "tranco_protected_matches": 0,
     "examples": [
-      "1account-apple.com",
-      "1password-login-account.readthedocs.io",
-      "3610dcmtcpaypal-verify-account.suspicious-domain.xyz",
-      "43facebook--status-account-lockedout-check-unblock.ph",
-      "aade-account.vip"
+      "7the24.com",
+      "a-canary-flies-the-canyon.com",
+      "access-the-website.com",
+      "ages-unlocking-dark-doom-tricks-the-v3.1-alpha.3.zip",
+      "arsimster-in-the-beningin.ru"
     ],
-    "suggested_regex": "(^|\\.)[^.]*account[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*the[^.]*\\."
   },
   {
-    "pattern": "slon",
-    "domains": 397,
+    "pattern": "support",
+    "domains": 388,
+    "tranco_protected_matches": 9,
+    "examples": [
+      "123support.se",
+      "1st-support-shop.com",
+      "1st-support.com",
+      "abonnement-support.fr",
+      "acc-support.eu.cc"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*support[^.]*\\."
+  },
+  {
+    "pattern": "news",
+    "domains": 384,
+    "tranco_protected_matches": 4,
+    "examples": [
+      "001news.com",
+      "020news.com",
+      "024news.com",
+      "17cinemas-news.cloud",
+      "24news.online"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*news[^.]*\\."
+  },
+  {
+    "pattern": "secure",
+    "domains": 379,
     "tranco_protected_matches": 2,
     "examples": [
-      "1-slon.cc",
-      "1slon4.cc",
-      "1slon6.cc",
-      "1slon7cc.online",
-      "1slon7cc.ru"
+      "1secure-chase.com",
+      "abonnement-secure.fr",
+      "access-secure.live",
+      "ag-v3-dex-beta-secure.cloud",
+      "ag-wallet-beta-api-secure.app"
     ],
-    "suggested_regex": "(^|\\.)[^.]*slon[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*secure[^.]*\\."
+  },
+  {
+    "pattern": "hub",
+    "domains": 377,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "123movies-hub.com",
+      "21-star-hub.click",
+      "abhishekkumarnaik34-hub.github.io",
+      "agency-connection-hub.com",
+      "agentops-hub-v1.9.zip"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*hub[^.]*\\."
+  },
+  {
+    "pattern": "service",
+    "domains": 374,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "1-rustore-service.click",
+      "999080321newfolder1002002231-service1002.space",
+      "999080321test51-service10020125999080321.xyz",
+      "a2service.com",
+      "acc.mecha-service.nl"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*service[^.]*\\."
+  },
+  {
+    "pattern": "system",
+    "domains": 362,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "achievements-psp-system-3.2.zip",
+      "afrifundcapital-x-system.com",
+      "agalarovinvest-system.com",
+      "agency-system-gateway.com",
+      "agentive-system.xyz"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*system[^.]*\\."
+  },
+  {
+    "pattern": "coinbase",
+    "domains": 360,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "022721coinbase.com",
+      "092375coinbase.com",
+      "093831coinbase.com",
+      "102931-coinbase.com",
+      "109431coinbase.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*coinbase[^.]*\\."
+  },
+  {
+    "pattern": "free",
+    "domains": 359,
+    "tranco_protected_matches": 6,
+    "examples": [
+      "0-0free.com",
+      "000free.us",
+      "005.free-counter.co.uk",
+      "006.free-counter.co.uk",
+      "007.free-counter.co.uk"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*free[^.]*\\."
+  },
+  {
+    "pattern": "mail",
+    "domains": 352,
+    "tranco_protected_matches": 9,
+    "examples": [
+      "010mail.com",
+      "1mail.dev",
+      "1mail.site",
+      "1mail.work",
+      "2mail.cloud"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*mail[^.]*\\."
+  },
+  {
+    "pattern": "delivery",
+    "domains": 341,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "4lc-delivery.com",
+      "acai-delivery.shop",
+      "ai-delivery-lab.com",
+      "aji-delivery.com",
+      "albaik-delivery.top"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*delivery[^.]*\\."
+  },
+  {
+    "pattern": "allegro",
+    "domains": 337,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "allegro-hepsiburada.ph",
+      "allegro-lokalnie.0182345.com",
+      "allegro-lokalnie.105427.cc",
+      "allegro-lokalnie.12913920h4.shop",
+      "allegro-lokalnie.187239120-h0192.shop"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*allegro[^.]*\\."
+  },
+  {
+    "pattern": "home",
+    "domains": 329,
+    "tranco_protected_matches": 10,
+    "examples": [
+      "001home.com",
+      "020home.com",
+      "021home.com",
+      "1401home.com",
+      "17cinemas-home.cloud"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*home[^.]*\\."
   },
   {
     "pattern": "tech",
-    "domains": 394,
+    "domains": 326,
     "tranco_protected_matches": 0,
     "examples": [
       "01tech.com",
@@ -806,8 +767,21 @@
     "suggested_regex": "(^|\\.)[^.]*tech[^.]*\\."
   },
   {
+    "pattern": "top",
+    "domains": 323,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "1win-top-promo.ru",
+      "22bet-top.com",
+      "777top.com",
+      "7zip.top.pages.dnsoe4.com",
+      "888top7.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*top[^.]*\\."
+  },
+  {
     "pattern": "pay",
-    "domains": 383,
+    "domains": 316,
     "tranco_protected_matches": 1,
     "examples": [
       "000pay.com",
@@ -819,112 +793,86 @@
     "suggested_regex": "(^|\\.)[^.]*pay[^.]*\\."
   },
   {
-    "pattern": "free",
-    "domains": 380,
-    "tranco_protected_matches": 7,
-    "examples": [
-      "0-0free.com",
-      "000free.us",
-      "005.free-counter.co.uk",
-      "006.free-counter.co.uk",
-      "007.free-counter.co.uk"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*free[^.]*\\."
-  },
-  {
-    "pattern": "dewi",
-    "domains": 379,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "dewi1.lol",
-      "dewi11-1.club",
-      "dewi11-ads1.top",
-      "dewi11-ads2.asia",
-      "dewi11-adsj6.club"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*dewi[^.]*\\."
-  },
-  {
-    "pattern": "home",
-    "domains": 368,
-    "tranco_protected_matches": 11,
-    "examples": [
-      "001home.com",
-      "020home.com",
-      "021home.com",
-      "0565home.com",
-      "1401home.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*home[^.]*\\."
-  },
-  {
-    "pattern": "slot",
-    "domains": 367,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "146slot.org",
-      "19slot.com",
-      "1win-slot9.site",
-      "1x-slot.site",
-      "1xslots-slot.cfd"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*slot[^.]*\\."
-  },
-  {
-    "pattern": "order",
-    "domains": 365,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "1-order.com",
-      "20order07202025.txt",
-      "7-order.com",
-      "79683order.com",
-      "business-ozon-order-page-status.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*order[^.]*\\."
-  },
-  {
     "pattern": "test",
-    "domains": 365,
-    "tranco_protected_matches": 5,
+    "domains": 315,
+    "tranco_protected_matches": 3,
     "examples": [
       "20test.txt",
-      "23223-test-3232.com",
       "3545652.ni628701.web.hosting-test.net",
       "3548415.ym628929.web.hosting-test.net",
-      "3555111.ee629501.web.hosting-test.net"
+      "3555111.ee629501.web.hosting-test.net",
+      "999080321test51-service10020125999080321.xyz"
     ],
     "suggested_regex": "(^|\\.)[^.]*test[^.]*\\."
   },
   {
-    "pattern": "link",
-    "domains": 363,
-    "tranco_protected_matches": 4,
+    "pattern": "dragon",
+    "domains": 313,
+    "tranco_protected_matches": 0,
     "examples": [
-      "001link.com",
-      "0772link.com",
-      "100link.click",
-      "17cinemas-link.cloud",
-      "1link.online"
+      "dragon-acb19.cfd",
+      "dragon-access.top",
+      "dragon-amr95.sbs",
+      "dragon-ane16.buzz",
+      "dragon-anu41.buzz"
     ],
-    "suggested_regex": "(^|\\.)[^.]*link[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*dragon[^.]*\\."
   },
   {
-    "pattern": "delivery",
-    "domains": 357,
+    "pattern": "apps",
+    "domains": 312,
     "tranco_protected_matches": 2,
     "examples": [
-      "1-sec-delivery.com",
-      "4lc-delivery.com",
-      "ai-delivery-lab.com",
-      "aji-delivery.com",
-      "alarsal-alsarie-for-delivery-services-est.com"
+      "17cinemas-apps.cloud",
+      "1xbet-apps.cyou",
+      "51baoliao-apps.cloud",
+      "51bliao-apps.cloud",
+      "51chigua-apps.cloud"
     ],
-    "suggested_regex": "(^|\\.)[^.]*delivery[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*apps[^.]*\\."
+  },
+  {
+    "pattern": "account",
+    "domains": 311,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "1account-apple.com",
+      "3610dcmtcpaypal-verify-account.suspicious-domain.xyz",
+      "43facebook--status-account-lockedout-check-unblock.ph",
+      "account-access-center.com",
+      "account-access-rc3uenqi.elitechiropracticandrehab.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*account[^.]*\\."
+  },
+  {
+    "pattern": "tiger",
+    "domains": 311,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "jetton-tiger.cfd",
+      "onitsuka-tiger-jp.online",
+      "onitsuka-tiger.de",
+      "onitsuka-tiger.fr",
+      "pm1001tiger.vip"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*tiger[^.]*\\."
+  },
+  {
+    "pattern": "games",
+    "domains": 310,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "121games.com",
+      "1337games.net",
+      "16games.it",
+      "188games.net",
+      "288games.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*games[^.]*\\."
   },
   {
     "pattern": "club",
-    "domains": 335,
+    "domains": 305,
     "tranco_protected_matches": 2,
     "examples": [
       "1-800-club-fuck.com",
@@ -936,186 +884,30 @@
     "suggested_regex": "(^|\\.)[^.]*club[^.]*\\."
   },
   {
-    "pattern": "games",
-    "domains": 335,
-    "tranco_protected_matches": 1,
+    "pattern": "yandex",
+    "domains": 303,
+    "tranco_protected_matches": 16,
     "examples": [
-      "121games.com",
-      "1337games.net",
-      "13games.net",
-      "16games.it",
-      "288games.com"
+      "086yandex.cdek.yandex.whm.h5yeld71v4ew49c1.kaswads.online",
+      "7sri4p7xarcugcgu.sber.yandex.ir0859017v3i9id1.update.registry.stilberri.ru",
+      "accounts-yandex.com",
+      "admin-yandex.website",
+      "admin.s3-yandex.cc"
     ],
-    "suggested_regex": "(^|\\.)[^.]*games[^.]*\\."
-  },
-  {
-    "pattern": "apps",
-    "domains": 335,
-    "tranco_protected_matches": 4,
-    "examples": [
-      "17cinemas-apps.cloud",
-      "51baoliao-apps.cloud",
-      "51bliao-apps.cloud",
-      "51chigua-apps.cloud",
-      "51shipin-apps.cloud"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*apps[^.]*\\."
-  },
-  {
-    "pattern": "binance",
-    "domains": 333,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "0342-binance.com",
-      "0rs-binance.com",
-      "204126-binance.com",
-      "298346-binance.com",
-      "356492-binance.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*binance[^.]*\\."
-  },
-  {
-    "pattern": "ftp",
-    "domains": 333,
-    "tranco_protected_matches": 2,
-    "examples": [
-      "arthur-ftp.info",
-      "check-ftp.ru",
-      "cyberduck-ftp.com",
-      "ftp-louis.lurahosting.net",
-      "ftp-reklama.gpd24.pl"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*ftp[^.]*\\."
-  },
-  {
-    "pattern": "cloud",
-    "domains": 332,
-    "tranco_protected_matches": 8,
-    "examples": [
-      "021cloud.com",
-      "0cloud.xyz",
-      "10cloud.com",
-      "256cloud.com",
-      "2b240c37-4333-4a5d-93eb-69bb3f82b2c7.us-east-1.cloud.genez.io"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*cloud[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*yandex[^.]*\\."
   },
   {
     "pattern": "mobile",
-    "domains": 317,
+    "domains": 298,
     "tranco_protected_matches": 0,
     "examples": [
       "007-mobile.org",
       "11bet-mobile.com",
-      "1f.mobile007.click",
+      "1xbet-mobile.click",
       "2560.fd.mobile.tv.sms13.de",
       "69cash-mobile.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*mobile[^.]*\\."
-  },
-  {
-    "pattern": "allegro",
-    "domains": 317,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "allegro-appassionato.org",
-      "allegro-hepsiburada.ph",
-      "allegro-lokalnie.0182345.com",
-      "allegro-lokalnie.078565.top",
-      "allegro-lokalnie.105427.cc"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*allegro[^.]*\\."
-  },
-  {
-    "pattern": "tiger",
-    "domains": 317,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "i-tiger.info",
-      "jetton-tiger.cfd",
-      "onitsuka-tiger-jp.online",
-      "onitsuka-tiger.de",
-      "onitsuka-tiger.fr"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*tiger[^.]*\\."
-  },
-  {
-    "pattern": "verify",
-    "domains": 312,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "3610dcmtcpaypal-verify-account.suspicious-domain.xyz",
-      "4front-verify-now.cfd",
-      "account-verify-4front.cfd",
-      "account-verify.help",
-      "account-verify.icu"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*verify[^.]*\\."
-  },
-  {
-    "pattern": "pinup",
-    "domains": 312,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "kazino-pinup-officiall22.win",
-      "kazino-pinup-zerkalo.win",
-      "kazino-pinup1.win",
-      "pinup-02.win",
-      "pinup-03pt.top"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*pinup[^.]*\\."
-  },
-  {
-    "pattern": "platform",
-    "domains": 303,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "agency-digital-platform.com",
-      "agency-global-platform.com",
-      "agency-partner-platform.com",
-      "agency-partnerhub-platform.com",
-      "ai-ads-platform.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*platform[^.]*\\."
-  },
-  {
-    "pattern": "three",
-    "domains": 302,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "open2three.lat",
-      "psg-three-llc.digital",
-      "seven-three-nine.com",
-      "three-hundred-bucks.com",
-      "three-memory-llm-lane-v1.3.zip"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*three[^.]*\\."
-  },
-  {
-    "pattern": "host",
-    "domains": 300,
-    "tranco_protected_matches": 21,
-    "examples": [
-      "0.232.205.92.host.secureserver.net",
-      "10.185.202.64.host.secureserver.net",
-      "198-144-179-82-host.colocrossing.com",
-      "3n3host.one",
-      "88.212.109.208.host.secureserver.net"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*host[^.]*\\."
-  },
-  {
-    "pattern": "icloud",
-    "domains": 298,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "03-icloud.com",
-      "04-icloud.com",
-      "05-icloud.com",
-      "06-icloud.com",
-      "0z-icloud.top"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*icloud[^.]*\\."
   },
   {
     "pattern": "jindinghui",
@@ -1131,30 +923,17 @@
     "suggested_regex": "(^|\\.)[^.]*jindinghui[^.]*\\."
   },
   {
-    "pattern": "get",
-    "domains": 295,
-    "tranco_protected_matches": 2,
+    "pattern": "pinup",
+    "domains": 292,
+    "tranco_protected_matches": 0,
     "examples": [
-      "1-800-get-fucked.com",
-      "1-800-get-horny.com",
-      "1-800-get-love.com",
-      "1-800-get-sexx.com",
-      "binance-get.net"
+      "kazino-pinup-officiall22.win",
+      "kazino-pinup-zerkalo.win",
+      "kazino-pinup1.win",
+      "pinup-02.win",
+      "pinup-03pt.top"
     ],
-    "suggested_regex": "(^|\\.)[^.]*get[^.]*\\."
-  },
-  {
-    "pattern": "yandex",
-    "domains": 293,
-    "tranco_protected_matches": 16,
-    "examples": [
-      "086yandex.cdek.yandex.whm.h5yeld71v4ew49c1.kaswads.online",
-      "7sri4p7xarcugcgu.sber.yandex.ir0859017v3i9id1.update.registry.stilberri.ru",
-      "accounts-yandex.com",
-      "admin-yandex.website",
-      "admin.s3-yandex.cc"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*yandex[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*pinup[^.]*\\."
   },
   {
     "pattern": "jintian",
@@ -1170,73 +949,34 @@
     "suggested_regex": "(^|\\.)[^.]*jintian[^.]*\\."
   },
   {
-    "pattern": "check",
-    "domains": 288,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "04-19check.com",
-      "43facebook--status-account-lockedout-check-unblock.ph",
-      "aade-check.vip",
-      "acc.fanpages-updatetick-check17835.click",
-      "adblocker-check.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*check[^.]*\\."
-  },
-  {
-    "pattern": "page",
-    "domains": 288,
-    "tranco_protected_matches": 5,
-    "examples": [
-      "090.apollo-page.kro.kr",
-      "17cinemas-page.cloud",
-      "51baoliao-page.cloud",
-      "51chigua-page.cloud",
-      "51shipin-page.cloud"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*page[^.]*\\."
-  },
-  {
-    "pattern": "video",
+    "pattern": "link",
     "domains": 286,
-    "tranco_protected_matches": 2,
+    "tranco_protected_matches": 3,
     "examples": [
-      "1-1video.com",
-      "123video.net",
-      "1video-online.me",
-      "24video.be",
-      "360video.online"
+      "001link.com",
+      "0772link.com",
+      "100link.click",
+      "168jackpot-link.com",
+      "17cinemas-link.cloud"
     ],
-    "suggested_regex": "(^|\\.)[^.]*video[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*link[^.]*\\."
   },
   {
-    "pattern": "data",
+    "pattern": "platform",
     "domains": 286,
-    "tranco_protected_matches": 4,
+    "tranco_protected_matches": 0,
     "examples": [
-      "123data.xyz",
-      "1776-data-analysis.xyz",
-      "2008data.com",
-      "a-big-qn-data-2.1.zip",
-      "a-metrics-analysis-study-data-twelfthly.zip"
+      "agency-digital-platform.com",
+      "agency-global-platform.com",
+      "agency-partner-platform.com",
+      "agency-partnerhub-platform.com",
+      "ai-ads-platform.com"
     ],
-    "suggested_regex": "(^|\\.)[^.]*data[^.]*\\."
-  },
-  {
-    "pattern": "update",
-    "domains": 280,
-    "tranco_protected_matches": 14,
-    "examples": [
-      "0976facebook-fanpage-userworkshopsession-details-update.ph",
-      "43facebook-security-update-team-urgent-warning-fix.ph",
-      "55ups-update.za.com",
-      "7sri4p7xarcugcgu.sber.yandex.ir0859017v3i9id1.update.registry.stilberri.ru",
-      "acc.ads-fanpage-update.click"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*update[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*platform[^.]*\\."
   },
   {
     "pattern": "covid",
-    "domains": 280,
+    "domains": 282,
     "tranco_protected_matches": 0,
     "examples": [
       "against-covid19.com",
@@ -1248,30 +988,30 @@
     "suggested_regex": "(^|\\.)[^.]*covid[^.]*\\."
   },
   {
-    "pattern": "group",
-    "domains": 278,
-    "tranco_protected_matches": 0,
+    "pattern": "video",
+    "domains": 280,
+    "tranco_protected_matches": 1,
     "examples": [
-      "101group.net",
-      "1782group.com",
-      "299group.com",
-      "401group.com",
-      "418group.com"
+      "123video.net",
+      "1video-online.me",
+      "24video.be",
+      "360video.online",
+      "51video-app.cloud"
     ],
-    "suggested_regex": "(^|\\.)[^.]*group[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*video[^.]*\\."
   },
   {
-    "pattern": "trk",
-    "domains": 275,
-    "tranco_protected_matches": 0,
+    "pattern": "host",
+    "domains": 278,
+    "tranco_protected_matches": 12,
     "examples": [
-      "69trk.com",
-      "717trk.com",
-      "848trk.com",
-      "86trk.com",
-      "8trk.com"
+      "0.232.205.92.host.secureserver.net",
+      "10.185.202.64.host.secureserver.net",
+      "198-144-179-82-host.colocrossing.com",
+      "3n3host.one",
+      "88.212.109.208.host.secureserver.net"
     ],
-    "suggested_regex": "(^|\\.)[^.]*trk[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*host[^.]*\\."
   },
   {
     "pattern": "yunding",
@@ -1287,8 +1027,34 @@
     "suggested_regex": "(^|\\.)[^.]*yunding[^.]*\\."
   },
   {
+    "pattern": "trk",
+    "domains": 272,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "69trk.com",
+      "717trk.com",
+      "848trk.com",
+      "86trk.com",
+      "8trk.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*trk[^.]*\\."
+  },
+  {
+    "pattern": "cloud",
+    "domains": 269,
+    "tranco_protected_matches": 8,
+    "examples": [
+      "021cloud.com",
+      "0cloud.xyz",
+      "10cloud.com",
+      "3cloud.net",
+      "865299ce-0536-4652-aded-f74ae5cc1545.us-east-1.cloud.genez.io"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*cloud[^.]*\\."
+  },
+  {
     "pattern": "amp",
-    "domains": 271,
+    "domains": 269,
     "tranco_protected_matches": 0,
     "examples": [
       "amp-beraksekebon.lat",
@@ -1298,5 +1064,239 @@
       "amp-beraksekebon3.lat"
     ],
     "suggested_regex": "(^|\\.)[^.]*amp[^.]*\\."
+  },
+  {
+    "pattern": "gpt",
+    "domains": 266,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "15215036882.gpt138.xyz",
+      "aa2000gpt-es.com",
+      "aa2000gpt-pt.live",
+      "aa2000gpt.pro",
+      "accu-gpt.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*gpt[^.]*\\."
+  },
+  {
+    "pattern": "worldcup",
+    "domains": 265,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "2026-live-fifa2026worldcup.com",
+      "ae-fifa-worldcup.com",
+      "africa-fifa-worldcup.com",
+      "android-fifa-worldcup.com",
+      "app-fifa-worldcup.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*worldcup[^.]*\\."
+  },
+  {
+    "pattern": "cwc",
+    "domains": 264,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "2025-cwc-fifa.com",
+      "2026-cwc-fifa.com",
+      "2026cwc-fifa.com",
+      "2026cwc-fifaofficial.com",
+      "alpha-2026cwc-fifa.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*cwc[^.]*\\."
+  },
+  {
+    "pattern": "search",
+    "domains": 257,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "0-hassle-search-engine-submission.com",
+      "1search.io",
+      "2020search.com",
+      "2search.org",
+      "404search.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*search[^.]*\\."
+  },
+  {
+    "pattern": "page",
+    "domains": 253,
+    "tranco_protected_matches": 4,
+    "examples": [
+      "090.apollo-page.kro.kr",
+      "17cinemas-page.cloud",
+      "51baoliao-page.cloud",
+      "51chigua-page.cloud",
+      "51shipin-page.cloud"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*page[^.]*\\."
+  },
+  {
+    "pattern": "wap",
+    "domains": 251,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "17cinemas-wap.cloud",
+      "1filmy4wap.living",
+      "1wap-whatsapp.com",
+      "2026-wap-fifacup.com",
+      "51baoliao-wap.cloud"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*wap[^.]*\\."
+  },
+  {
+    "pattern": "claude",
+    "domains": 250,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "ads-claude-beta.com",
+      "ads-claude.com",
+      "agents-claude-forge-1.6.zip",
+      "agents-claude-unified-code-v3.2.zip",
+      "agents-v-claude-wizard-code-2.2.zip"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*claude[^.]*\\."
+  },
+  {
+    "pattern": "code",
+    "domains": 249,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "0-code.com",
+      "00code.in",
+      "0to1code.com",
+      "12580code.com",
+      "360degree-code.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*code[^.]*\\."
+  },
+  {
+    "pattern": "telegram",
+    "domains": 249,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "3telegram.com",
+      "60-telegram.whlyxps.com",
+      "a-telegram.hl.cn",
+      "account-telegram.top",
+      "agent-bot-telegram-3.2.zip"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*telegram[^.]*\\."
+  },
+  {
+    "pattern": "data",
+    "domains": 247,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "123data.xyz",
+      "1776-data-analysis.xyz",
+      "a-big-qn-data-2.1.zip",
+      "a-metrics-analysis-study-data-twelfthly.zip",
+      "a3data-stell-pvdp.click"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*data[^.]*\\."
+  },
+  {
+    "pattern": "bradesco",
+    "domains": 244,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "acesso-bradesco.digital",
+      "banco-bradesco-pj.com",
+      "bradesco-atualizarpj.digital",
+      "bradesco-avisa.click",
+      "bradesco-pfseg.online"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*bradesco[^.]*\\."
+  },
+  {
+    "pattern": "update",
+    "domains": 242,
+    "tranco_protected_matches": 14,
+    "examples": [
+      "0976facebook-fanpage-userworkshopsession-details-update.ph",
+      "43facebook-security-update-team-urgent-warning-fix.ph",
+      "7sri4p7xarcugcgu.sber.yandex.ir0859017v3i9id1.update.registry.stilberri.ru",
+      "account-update-pulse.com",
+      "account-update.imamsadr.net"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*update[^.]*\\."
+  },
+  {
+    "pattern": "get",
+    "domains": 240,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "1-800-get-fucked.com",
+      "1-800-get-horny.com",
+      "1-800-get-love.com",
+      "1-800-get-sexx.com",
+      "can-get-some.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*get[^.]*\\."
+  },
+  {
+    "pattern": "tracking",
+    "domains": 240,
+    "tranco_protected_matches": 6,
+    "examples": [
+      "17tracking.cc",
+      "amazon-tracking.com",
+      "apple-tracking.com",
+      "auspost-tracking.com",
+      "auto-tracking.club"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*tracking[^.]*\\."
+  },
+  {
+    "pattern": "admiralx",
+    "domains": 238,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "admiralx-abd.top",
+      "admiralx-acu.top",
+      "admiralx-adp.top",
+      "admiralx-aeu.top",
+      "admiralx-afp.top"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*admiralx[^.]*\\."
+  },
+  {
+    "pattern": "client",
+    "domains": 237,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "20client.exe",
+      "22qq-client-1.21.11.jar",
+      "22qq-client.com",
+      "67client-1.21.11.jar",
+      "67client-1.6.2cr.jar"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*client[^.]*\\."
+  },
+  {
+    "pattern": "auth",
+    "domains": 236,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "00auth-i0gvhhvf-0000-li00of.click",
+      "026auth-idveri.sbs",
+      "45575-boa-auth-gateway.xyz",
+      "4576-auth-gateway.live",
+      "496-acceweb-auth.live"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*auth[^.]*\\."
+  },
+  {
+    "pattern": "slon",
+    "domains": 236,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "1-slon.cc",
+      "1slon7cc.online",
+      "1slon7cc.ru",
+      "2slon7cc.online",
+      "2slon7cc.ru"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*slon[^.]*\\."
   }
 ]
