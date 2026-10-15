@@ -18,4 +18,4 @@
 /ip dns static add regexp="(^|\\.)(xxpkg\.com|paramountplus\.com|peacocktv\.com|vimeocdn\.com|kuaishou\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(snssdk\.com|rumble\.com|like\.video|hbomax\.com|mydramawave\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(indazn\.com|ksapisrv\.com|douyinpic\.com|ttlivecdn\.com|jtvnw\.net)$" type=NXDOMAIN comment="streaming"
-/ip dns static add regexp="(^|\\.)(dssott\.com|bigolive\.tv|tiktokcdn\-eu\.com\.ttdns3\.com|bigo\.sg|plex\.bz)$" type=NXDOMAIN comment="streaming"
+/ip dns static add regexp="(^|\\.)(dssott\.com|tmtreader\.com|bigolive\.tv|tiktokcdn\-eu\.com\.ttdns3\.com|bigo\.sg)$" type=NXDOMAIN comment="streaming"

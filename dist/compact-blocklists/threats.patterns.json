@@ -144,7 +144,7 @@
   },
   {
     "pattern": "alpha",
-    "domains": 876,
+    "domains": 877,
     "tranco_protected_matches": 0,
     "examples": [
       "1.0-alpha.3.zip",
@@ -157,7 +157,7 @@
   },
   {
     "pattern": "bet",
-    "domains": 836,
+    "domains": 835,
     "tranco_protected_matches": 0,
     "examples": [
       "000bet.com",
@@ -507,19 +507,6 @@
     "suggested_regex": "(^|\\.)[^.]*info[^.]*\\."
   },
   {
-    "pattern": "site",
-    "domains": 417,
-    "tranco_protected_matches": 6,
-    "examples": [
-      "01ejjpa2.behtarin-site-shartbandi.com",
-      "1031site.com",
-      "17cinemas-site.cloud",
-      "280826-site.geekever.com",
-      "280826-site.newsingermany.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*site[^.]*\\."
-  },
-  {
     "pattern": "play",
     "domains": 416,
     "tranco_protected_matches": 0,
@@ -531,6 +518,19 @@
       "2026-play-fifacup.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*play[^.]*\\."
+  },
+  {
+    "pattern": "site",
+    "domains": 416,
+    "tranco_protected_matches": 6,
+    "examples": [
+      "01ejjpa2.behtarin-site-shartbandi.com",
+      "1031site.com",
+      "17cinemas-site.cloud",
+      "280826-site.geekever.com",
+      "280826-site.newsingermany.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*site[^.]*\\."
   },
   {
     "pattern": "store",
@@ -768,7 +768,7 @@
   },
   {
     "pattern": "top",
-    "domains": 323,
+    "domains": 322,
     "tranco_protected_matches": 0,
     "examples": [
       "1win-top-promo.ru",
