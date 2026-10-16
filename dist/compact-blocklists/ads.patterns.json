@@ -1,7 +1,7 @@
 [
   {
     "pattern": "ads",
-    "domains": 539,
+    "domains": 540,
     "tranco_protected_matches": 199,
     "examples": [
       "206ads.com",
@@ -105,7 +105,7 @@
   },
   {
     "pattern": "adv",
-    "domains": 41,
+    "domains": 42,
     "tranco_protected_matches": 10,
     "examples": [
       "ads-adv.top",
@@ -858,6 +858,19 @@
     "suggested_regex": "(^|\\.)[^.]*abc[^.]*\\."
   },
   {
+    "pattern": "tech",
+    "domains": 12,
+    "tranco_protected_matches": 4,
+    "examples": [
+      "ad-tech.ru",
+      "adup-tech.com",
+      "agat-tech.com",
+      "developer-tech.com",
+      "discover-tech.io"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*tech[^.]*\\."
+  },
+  {
     "pattern": "loader",
     "domains": 12,
     "tranco_protected_matches": 3,
@@ -1064,19 +1077,6 @@
       "link.advancedsystemrepairpro.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*link[^.]*\\."
-  },
-  {
-    "pattern": "tech",
-    "domains": 11,
-    "tranco_protected_matches": 4,
-    "examples": [
-      "ad-tech.ru",
-      "adup-tech.com",
-      "agat-tech.com",
-      "developer-tech.com",
-      "i-tech.com.au"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*tech[^.]*\\."
   },
   {
     "pattern": "msn",

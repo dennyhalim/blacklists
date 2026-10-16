@@ -1,6 +1,6 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
-ads | 539 | 199 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
+ads | 540 | 199 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
 google | 97 | 95 | 9to5google.com, accounts.google.com, ads.google.cn, ads.google.com, adservice.google.com
 min | 69 | 2 | 20min.ch, 90min.com, ace.min.js, ad.min.js, adasync.min.js
 news | 66 | 36 | 12news.com, 1news.co.nz, 47news.jp, 9news.com, abc7news.com
@@ -8,7 +8,7 @@ adserver | 58 | 17 | ace-adserver.com, adserver.71i.de, adserver.adultfriendfind
 media | 51 | 14 | 152media.com, 22media.world, 247media.com, 404media.co, 888media.net
 trovit | 48 | 4 | trovit.ae, trovit.be, trovit.ca, trovit.ch, trovit.cl
 webike | 46 | 1 | japan-webike.be, japan-webike.ca, japan-webike.ch, japan-webike.dk, japan-webike.ie
-adv | 41 | 10 | ads-adv.top, adv-adserver.com, adv-agent.php, adv-scroll-sidebar.js, adv.asahi.com
+adv | 42 | 10 | ads-adv.top, adv-adserver.com, adv-agent.php, adv-scroll-sidebar.js, adv.asahi.com
 downdetector | 41 | 1 | downdetector.ae, downdetector.ca, downdetector.cl, downdetector.co.nz, downdetector.co.uk
 banner | 40 | 9 | adguard-banner.png, ane-native-banner.js, ane-popup-banner.js, banner-1.png, banner-hiroba.com
 amazon | 38 | 31 | aax-eu-dub.amazon.com, advertising.amazon.de, amazon-adsystem.com, amazon.ae, amazon.ca
@@ -66,6 +66,7 @@ adx | 13 | 5 | adx-exchange.toast.com, adx-t.com, adx.ae, adx.fulcrum.com.fj, ad
 search | 13 | 6 | contents-search-windows.com, eve-search.com, search-carousel-widget.snc-prod.aws.cinch.co.uk, search-converter.com, search-nowglobal.com
 top | 13 | 4 | top-best.com, top-site-list.com, top-skin.min.js, top.gg, top.list.ru
 abc | 12 | 9 | 6abc.com, abc-ads.com, abc10.com, abc11.com, abc13.com
+tech | 12 | 4 | ad-tech.ru, adup-tech.com, agat-tech.com, developer-tech.com, discover-tech.io
 loader | 12 | 3 | adfx.loader.bind.js, content-loader.com, fs-loader.com, lazyad-loader.js, lazyad-loader.min.js
 shopee | 12 | 10 | ads.shopee.cn, ads.shopee.co.th, ads.shopee.com.br, ads.shopee.com.mx, ads.shopee.com.my
 advertising | 12 | 3 | advertising-cdn.com, advertising.amazon.de, advertising.block, advertising.com, advertising365.com
@@ -82,7 +83,6 @@ laredoute | 12 | 6 | laredoute.be, laredoute.ch, laredoute.co.uk, laredoute.com,
 promo | 12 | 2 | my-promo7.com, promo-bc.com, promo-reklama.ru, promo.badoink.com, promo.blackdatehookup.com
 pop | 12 | 1 | pip-pip-pop.com, pop-ad.js, pop-code.js, pop.dojo.cc, pop.go
 link | 11 | 0 | 4link.it, link-booster.de, link-converter.js, link.365av.net, link.advancedsystemrepairpro.com
-tech | 11 | 4 | ad-tech.ru, adup-tech.com, agat-tech.com, developer-tech.com, i-tech.com.au
 msn | 11 | 11 | ads.eu.msn.com, ads.msn.com, ads1.msn.com, arc1.msn.com, msn.com
 advert | 11 | 0 | advert.ae, advert.bayarea.com, advert.club, advert.com.tr, advert.dyna.ultraweb.hu
 afgr | 11 | 1 | afgr1.com, afgr10.com, afgr11.com, afgr2.com, afgr3.com

@@ -534,8 +534,8 @@
   },
   {
     "pattern": "click",
-    "domains": 136,
-    "tranco_protected_matches": 65,
+    "domains": 137,
+    "tranco_protected_matches": 66,
     "examples": [
       "a8click.daini2.co.jp",
       "a8click.you-up.com",
@@ -702,6 +702,19 @@
     "suggested_regex": "(^|\\.)[^.]*business[^.]*\\."
   },
   {
+    "pattern": "pixel",
+    "domains": 104,
+    "tranco_protected_matches": 40,
+    "examples": [
+      "0pixel.php",
+      "1pixel.php",
+      "aftership-pixel.com",
+      "cdn-channels-pixel.ex.co",
+      "cookiesync-pixel.js"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*pixel[^.]*\\."
+  },
+  {
     "pattern": "ssl",
     "domains": 104,
     "tranco_protected_matches": 45,
@@ -713,19 +726,6 @@
       "analytics-ssl.allconnect.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*ssl[^.]*\\."
-  },
-  {
-    "pattern": "pixel",
-    "domains": 103,
-    "tranco_protected_matches": 39,
-    "examples": [
-      "0pixel.php",
-      "1pixel.php",
-      "aftership-pixel.com",
-      "cdn-channels-pixel.ex.co",
-      "cookiesync-pixel.js"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*pixel[^.]*\\."
   },
   {
     "pattern": "counter",
