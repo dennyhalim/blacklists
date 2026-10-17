@@ -1,7 +1,7 @@
 [
   {
     "pattern": "casino",
-    "domains": 18450,
+    "domains": 18449,
     "tranco_protected_matches": 22,
     "examples": [
       "0-casino.info",
@@ -14,7 +14,7 @@
   },
   {
     "pattern": "xbet",
-    "domains": 6659,
+    "domains": 6658,
     "tranco_protected_matches": 10,
     "examples": [
       "1-xbet-casino.net",
@@ -27,7 +27,7 @@
   },
   {
     "pattern": "bet",
-    "domains": 4617,
+    "domains": 4616,
     "tranco_protected_matches": 33,
     "examples": [
       "0000bet-slot.com",
@@ -79,7 +79,7 @@
   },
   {
     "pattern": "slot",
-    "domains": 1558,
+    "domains": 1557,
     "tranco_protected_matches": 0,
     "examples": [
       "0000bet-slot.com",
@@ -105,7 +105,7 @@
   },
   {
     "pattern": "slots",
-    "domains": 1208,
+    "domains": 1230,
     "tranco_protected_matches": 0,
     "examples": [
       "007slots.bar",
@@ -131,7 +131,7 @@
   },
   {
     "pattern": "jojobet",
-    "domains": 774,
+    "domains": 770,
     "tranco_protected_matches": 0,
     "examples": [
       "01jojobet.com",
@@ -144,7 +144,7 @@
   },
   {
     "pattern": "bets",
-    "domains": 723,
+    "domains": 729,
     "tranco_protected_matches": 1,
     "examples": [
       "0055bets.com",
@@ -170,7 +170,7 @@
   },
   {
     "pattern": "vip",
-    "domains": 597,
+    "domains": 596,
     "tranco_protected_matches": 2,
     "examples": [
       "017win-vip.com",
@@ -196,7 +196,7 @@
   },
   {
     "pattern": "pokerdom",
-    "domains": 508,
+    "domains": 509,
     "tranco_protected_matches": 0,
     "examples": [
       "24-pokerdom.com",
@@ -274,7 +274,7 @@
   },
   {
     "pattern": "poker",
-    "domains": 365,
+    "domains": 370,
     "tranco_protected_matches": 3,
     "examples": [
       "0xbtc-poker.app",
@@ -456,7 +456,7 @@
   },
   {
     "pattern": "amp",
-    "domains": 254,
+    "domains": 253,
     "tranco_protected_matches": 0,
     "examples": [
       "1win-amp-0nb0.buzz",
@@ -625,7 +625,7 @@
   },
   {
     "pattern": "site",
-    "domains": 189,
+    "domains": 190,
     "tranco_protected_matches": 0,
     "examples": [
       "1win-bet-site-oficial-br.com",
@@ -638,7 +638,7 @@
   },
   {
     "pattern": "france",
-    "domains": 189,
+    "domains": 190,
     "tranco_protected_matches": 0,
     "examples": [
       "1wincassinos-france.fr",
@@ -651,7 +651,7 @@
   },
   {
     "pattern": "matbet",
-    "domains": 183,
+    "domains": 182,
     "tranco_protected_matches": 0,
     "examples": [
       "1958matbet.com",
@@ -911,7 +911,7 @@
   },
   {
     "pattern": "beta",
-    "domains": 143,
+    "domains": 142,
     "tranco_protected_matches": 0,
     "examples": [
       "2-beta.com",
@@ -1106,7 +1106,7 @@
   },
   {
     "pattern": "betano",
-    "domains": 121,
+    "domains": 120,
     "tranco_protected_matches": 10,
     "examples": [
       "apk-betano.com",
@@ -1222,6 +1222,19 @@
     "suggested_regex": "(^|\\.)[^.]*adres[^.]*\\."
   },
   {
+    "pattern": "blackjack",
+    "domains": 109,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "247blackjack.com",
+      "ace-blackjack21.biz",
+      "achievement-supergame-blackjack.info",
+      "auto-blackjack.xyz",
+      "best-blackjack.xyz"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*blackjack[^.]*\\."
+  },
+  {
     "pattern": "gacor",
     "domains": 108,
     "tranco_protected_matches": 0,
@@ -1235,6 +1248,19 @@
     "suggested_regex": "(^|\\.)[^.]*gacor[^.]*\\."
   },
   {
+    "pattern": "ligne",
+    "domains": 108,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "application-casino-en-ligne.ink",
+      "betzino-casino-en-ligne.com",
+      "betzino-en-ligne.com",
+      "bigclash-casino-en-ligne.com",
+      "bigclashcasino-en-ligne.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*ligne[^.]*\\."
+  },
+  {
     "pattern": "fast",
     "domains": 107,
     "tranco_protected_matches": 0,
@@ -1246,19 +1272,6 @@
       "best-fast-withdrawal-casino.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*fast[^.]*\\."
-  },
-  {
-    "pattern": "blackjack",
-    "domains": 107,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "247blackjack.com",
-      "ace-blackjack21.biz",
-      "achievement-supergame-blackjack.info",
-      "auto-blackjack.xyz",
-      "best-blackjack.xyz"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*blackjack[^.]*\\."
   },
   {
     "pattern": "spinbetter",
@@ -1285,18 +1298,5 @@
       "casino-vodka.win"
     ],
     "suggested_regex": "(^|\\.)[^.]*vodka[^.]*\\."
-  },
-  {
-    "pattern": "ligne",
-    "domains": 105,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "application-casino-en-ligne.ink",
-      "betzino-casino-en-ligne.com",
-      "betzino-en-ligne.com",
-      "bigclash-casino-en-ligne.com",
-      "bigclashcasino-en-ligne.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*ligne[^.]*\\."
   }
 ]
