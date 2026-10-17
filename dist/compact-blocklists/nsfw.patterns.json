@@ -1,7 +1,7 @@
 [
   {
     "pattern": "porn",
-    "domains": 2190,
+    "domains": 2192,
     "tranco_protected_matches": 103,
     "examples": [
       "069porn.com",
@@ -14,8 +14,8 @@
   },
   {
     "pattern": "sex",
-    "domains": 1576,
-    "tranco_protected_matches": 62,
+    "domains": 1580,
+    "tranco_protected_matches": 61,
     "examples": [
       "021sex.net",
       "09sex.com",
@@ -40,8 +40,8 @@
   },
   {
     "pattern": "porno",
-    "domains": 1298,
-    "tranco_protected_matches": 33,
+    "domains": 1299,
+    "tranco_protected_matches": 31,
     "examples": [
       "03porno.com",
       "0porno.xyz",
@@ -53,7 +53,7 @@
   },
   {
     "pattern": "xxx",
-    "domains": 1185,
+    "domains": 1186,
     "tranco_protected_matches": 61,
     "examples": [
       "0.xxx-cdn.com",
@@ -145,7 +145,7 @@
   {
     "pattern": "xvideos",
     "domains": 405,
-    "tranco_protected_matches": 92,
+    "tranco_protected_matches": 93,
     "examples": [
       "00xvideos.com",
       "18-carne-anal.xvideos-brazzers.ru",
@@ -183,7 +183,7 @@
   },
   {
     "pattern": "gay",
-    "domains": 357,
+    "domains": 358,
     "tranco_protected_matches": 52,
     "examples": [
       "1069gay.click",
@@ -235,7 +235,7 @@
   },
   {
     "pattern": "adult",
-    "domains": 288,
+    "domains": 289,
     "tranco_protected_matches": 13,
     "examples": [
       "18adult.chat",
@@ -520,6 +520,19 @@
     "suggested_regex": "(^|\\.)[^.]*zproxy[^.]*\\."
   },
   {
+    "pattern": "chat",
+    "domains": 146,
+    "tranco_protected_matches": 17,
+    "examples": [
+      "321chat.com",
+      "6chat.streamray.com",
+      "adult-chat.top",
+      "adult-video-chat.com",
+      "adult-video-chat.net"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*chat[^.]*\\."
+  },
+  {
     "pattern": "cams",
     "domains": 145,
     "tranco_protected_matches": 14,
@@ -531,19 +544,6 @@
       "666cams.top"
     ],
     "suggested_regex": "(^|\\.)[^.]*cams[^.]*\\."
-  },
-  {
-    "pattern": "chat",
-    "domains": 144,
-    "tranco_protected_matches": 17,
-    "examples": [
-      "321chat.com",
-      "6chat.streamray.com",
-      "adult-chat.top",
-      "adult-video-chat.com",
-      "adult-video-chat.net"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*chat[^.]*\\."
   },
   {
     "pattern": "mtree",

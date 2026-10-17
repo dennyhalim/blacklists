@@ -2,7 +2,7 @@
   {
     "pattern": "casino",
     "domains": 18673,
-    "tranco_protected_matches": 21,
+    "tranco_protected_matches": 22,
     "examples": [
       "0-casino.info",
       "00-casino.com",
@@ -41,7 +41,7 @@
   {
     "pattern": "win",
     "domains": 3744,
-    "tranco_protected_matches": 13,
+    "tranco_protected_matches": 11,
     "examples": [
       "001win-bet.com",
       "001win8.com",
@@ -92,7 +92,7 @@
   },
   {
     "pattern": "melbet",
-    "domains": 1463,
+    "domains": 1462,
     "tranco_protected_matches": 3,
     "examples": [
       "24melbet.top",
@@ -131,7 +131,7 @@
   },
   {
     "pattern": "jojobet",
-    "domains": 763,
+    "domains": 761,
     "tranco_protected_matches": 0,
     "examples": [
       "01jojobet.com",
@@ -184,7 +184,7 @@
   {
     "pattern": "vip",
     "domains": 570,
-    "tranco_protected_matches": 3,
+    "tranco_protected_matches": 2,
     "examples": [
       "017win-vip.com",
       "018win-vip.com",
@@ -196,7 +196,7 @@
   },
   {
     "pattern": "play",
-    "domains": 566,
+    "domains": 567,
     "tranco_protected_matches": 1,
     "examples": [
       "12bet-play365.com",
@@ -962,19 +962,6 @@
     "suggested_regex": "(^|\\.)[^.]*maxwin[^.]*\\."
   },
   {
-    "pattern": "apk",
-    "domains": 136,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "1111bet-apk.click",
-      "1win-app-apk.com",
-      "1wincasino-apk.com",
-      "1x-regs1xbet-apk1.top",
-      "1x-regs1xbet-apk2.top"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*apk[^.]*\\."
-  },
-  {
     "pattern": "oficial",
     "domains": 135,
     "tranco_protected_matches": 0,
@@ -986,6 +973,19 @@
       "1win-argentina-oficial.app"
     ],
     "suggested_regex": "(^|\\.)[^.]*oficial[^.]*\\."
+  },
+  {
+    "pattern": "apk",
+    "domains": 135,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "1111bet-apk.click",
+      "1win-app-apk.com",
+      "1wincasino-apk.com",
+      "1x-regs1xbet-apk1.top",
+      "1x-regs1xbet-apk2.top"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*apk[^.]*\\."
   },
   {
     "pattern": "vaycasino",
