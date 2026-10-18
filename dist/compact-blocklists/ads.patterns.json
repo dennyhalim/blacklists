@@ -312,6 +312,19 @@
     "suggested_regex": "(^|\\.)[^.]*live[^.]*\\."
   },
   {
+    "pattern": "yahoo",
+    "domains": 22,
+    "tranco_protected_matches": 22,
+    "examples": [
+      "ads.yahoo.com",
+      "beap.gemini.yahoo.com",
+      "c2shb.pubgw.yahoo.com",
+      "finance.yahoo.com",
+      "gemini.yahoo.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*yahoo[^.]*\\."
+  },
+  {
     "pattern": "forums",
     "domains": 22,
     "tranco_protected_matches": 19,
@@ -323,19 +336,6 @@
       "forums.digitalspy.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*forums[^.]*\\."
-  },
-  {
-    "pattern": "yahoo",
-    "domains": 21,
-    "tranco_protected_matches": 21,
-    "examples": [
-      "ads.yahoo.com",
-      "beap.gemini.yahoo.com",
-      "c2shb.pubgw.yahoo.com",
-      "finance.yahoo.com",
-      "gemini.yahoo.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*yahoo[^.]*\\."
   },
   {
     "pattern": "gamereactor",
@@ -832,6 +832,19 @@
     "suggested_regex": "(^|\\.)[^.]*search[^.]*\\."
   },
   {
+    "pattern": "load",
+    "domains": 13,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "css-load.com",
+      "html-load.cc",
+      "html-load.com",
+      "img-load.com",
+      "load-ads.php"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*load[^.]*\\."
+  },
+  {
     "pattern": "top",
     "domains": 13,
     "tranco_protected_matches": 4,
@@ -1001,19 +1014,6 @@
     "suggested_regex": "(^|\\.)[^.]*stat[^.]*\\."
   },
   {
-    "pattern": "load",
-    "domains": 12,
-    "tranco_protected_matches": 2,
-    "examples": [
-      "css-load.com",
-      "html-load.cc",
-      "html-load.com",
-      "img-load.com",
-      "load-ads.php"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*load[^.]*\\."
-  },
-  {
     "pattern": "dood",
     "domains": 12,
     "tranco_protected_matches": 0,
@@ -1090,6 +1090,19 @@
       "msn.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*msn[^.]*\\."
+  },
+  {
+    "pattern": "html",
+    "domains": 11,
+    "tranco_protected_matches": 4,
+    "examples": [
+      "ads.psd2html.com",
+      "banners5html2.com",
+      "html-code-generator.com",
+      "html-load.cc",
+      "html-load.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*html[^.]*\\."
   },
   {
     "pattern": "advert",
@@ -1181,19 +1194,6 @@
       "sparta-tracking.xyz"
     ],
     "suggested_regex": "(^|\\.)[^.]*tracking[^.]*\\."
-  },
-  {
-    "pattern": "html",
-    "domains": 10,
-    "tranco_protected_matches": 3,
-    "examples": [
-      "ads.psd2html.com",
-      "banners5html2.com",
-      "html-code-generator.com",
-      "html-load.cc",
-      "html-load.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*html[^.]*\\."
   },
   {
     "pattern": "sex",
