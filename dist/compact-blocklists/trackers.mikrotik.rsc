@@ -12,7 +12,7 @@
 /ip dns static add regexp="(^|\\.)(quantummetric\.com|chartbeat\.net|quantcount\.com|ioam\.de|pxf\.io)$" type=NXDOMAIN comment="trackers"
 /ip dns static add regexp="(^|\\.)(dev\.visualwebsiteoptimizer\.com|mmstat\.com|metrics\-logger\.spot\.im|histats\.com|evs\.sgmt\.loom\.com)$" type=NXDOMAIN comment="trackers"
 /ip dns static add regexp="(^|\\.)(braze\.eu|px\.mountain\.com|smetrics\.walgreens\.com|obs\.sd4823\.spglobal\.com|chartbeat\.com)$" type=NXDOMAIN comment="trackers"
-/ip dns static add regexp="(^|\\.)(pipedream\.wistia\.com|trkn\.us|confiant\-integrations\.net|rs6\.net|hs\-analytics\.net)$" type=NXDOMAIN comment="trackers"
+/ip dns static add regexp="(^|\\.)(pipedream\.wistia\.com|trkn\.us|rs6\.net|confiant\-integrations\.net|hs\-analytics\.net)$" type=NXDOMAIN comment="trackers"
 /ip dns static add regexp="(^|\\.)(akstat\.io|siteimproveanalytics\.io|tns\-counter\.ru|trkweb\.clinch\.co|analytics\.bitrix\.info)$" type=NXDOMAIN comment="trackers"
 /ip dns static add regexp="(^|\\.)(trk\.bc\.shutterfly\.com|analytics\-fe\.digital\-cloud\-prem\.medallia\.eu|track\.mailerlite\.com|awstrack\.me|linksynergy\.com)$" type=NXDOMAIN comment="trackers"
 /ip dns static add regexp="(^|\\.)(click\.e\.progressive\.com|sdk\.51\.la|analytics\.org\.coveo\.com|marketo\.com|catfront\.dianping\.com)$" type=NXDOMAIN comment="trackers"
