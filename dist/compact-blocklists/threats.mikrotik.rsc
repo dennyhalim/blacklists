@@ -17,5 +17,5 @@
 /ip dns static add regexp="(^|\\.)(jlwz\.cn|jo3\.org|site\.je|6sim\.vip|bore\.pub)$" type=NXDOMAIN comment="threats"
 /ip dns static add regexp="(^|\\.)(cmp4\.top|cpxlt\.cn|croco\.cx|dynga\.pl|ficus\.in)$" type=NXDOMAIN comment="threats"
 /ip dns static add regexp="(^|\\.)(mx9x\.com|osmb\.net|razao\.pt|198348\.gl|65512\.cfd)$" type=NXDOMAIN comment="threats"
-/ip dns static add regexp="(^|\\.)(becof\.org|bvaco\.com|cliffg\.me|d\-j\-d\.com|dklak\.cam)$" type=NXDOMAIN comment="threats"
-/ip dns static add regexp="(^|\\.)(dongyu\.us|ezpz\.link|fmrio\.com|funrat\.co|gitrm\.cfd)$" type=NXDOMAIN comment="threats"
+/ip dns static add regexp="(^|\\.)(becof\.org|bvaco\.com|cepde\.org|cliffg\.me|d\-j\-d\.com)$" type=NXDOMAIN comment="threats"
+/ip dns static add regexp="(^|\\.)(dklak\.cam|dongyu\.us|ezpz\.link|fmrio\.com|funrat\.co)$" type=NXDOMAIN comment="threats"
