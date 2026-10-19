@@ -1,6 +1,6 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
-ads | 540 | 199 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
+ads | 542 | 199 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
 google | 97 | 95 | 9to5google.com, accounts.google.com, ads.google.cn, ads.google.com, adservice.google.com
 min | 69 | 2 | 20min.ch, 90min.com, ace.min.js, ad.min.js, adasync.min.js
 news | 66 | 36 | 12news.com, 1news.co.nz, 47news.jp, 9news.com, abc7news.com
@@ -34,10 +34,10 @@ trk | 19 | 0 | 905trk.com, ads4trk.com, adsb4trk.com, cm-trk2.com, cm-trk5.com
 push | 18 | 2 | 1push.io, go-g3t-push.net, in-page-push.com, in-page-push.net, inpage-push.com
 affiliate | 18 | 5 | 4affiliate.net, ads.planetwin365affiliate.com, affiliate-b.com, affiliate-cdn.raptive.com, affiliate-robot.com
 tube | 18 | 7 | 4tube.com, boy18tube.com, china-tube.site, ea-tube.com, forced-tube.net
+widget | 18 | 7 | ads-widget.js, dh-widget.android-authority.com, hotwire-widget.dailywire.com, pub-referral-widget.current.us, search-carousel-widget.snc-prod.aws.cinch.co.uk
 player | 18 | 12 | api-player.globalsun.io, gannett-player.ex.co, player.abacast.net, player.allclassical.org, player.amperwave.net
 pub | 17 | 7 | 9pub.io, dev2pub.com, e9pub3xc44wm9ekeiivkombz9bkr.cfd, pub-3d10bad2840341eaa1c7e39b09958b46.r2.dev, pub-81f2b77f5bc841c5ae64221394d67f53.r2.dev
 mail | 17 | 15 | ad.mail.ru, ads.mail.bg, cloud.mail.ru, cyprus-mail.com, e.mail.ru
-widget | 17 | 7 | dh-widget.android-authority.com, hotwire-widget.dailywire.com, pub-referral-widget.current.us, search-carousel-widget.snc-prod.aws.cinch.co.uk, strossle-widget-sdk.js
 douglas | 17 | 4 | douglas.at, douglas.be, douglas.ch, douglas.cz, douglas.de
 modivo | 17 | 1 | modivo.at, modivo.bg, modivo.cz, modivo.de, modivo.ee
 click | 16 | 4 | 24click.top, click-cdn.com, click-for-preview.com, click.alibaba.com, click.aliexpress.com

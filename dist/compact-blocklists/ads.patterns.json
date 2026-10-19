@@ -1,7 +1,7 @@
 [
   {
     "pattern": "ads",
-    "domains": 540,
+    "domains": 542,
     "tranco_protected_matches": 199,
     "examples": [
       "206ads.com",
@@ -442,6 +442,19 @@
     "suggested_regex": "(^|\\.)[^.]*tube[^.]*\\."
   },
   {
+    "pattern": "widget",
+    "domains": 18,
+    "tranco_protected_matches": 7,
+    "examples": [
+      "ads-widget.js",
+      "dh-widget.android-authority.com",
+      "hotwire-widget.dailywire.com",
+      "pub-referral-widget.current.us",
+      "search-carousel-widget.snc-prod.aws.cinch.co.uk"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*widget[^.]*\\."
+  },
+  {
     "pattern": "player",
     "domains": 18,
     "tranco_protected_matches": 12,
@@ -479,19 +492,6 @@
       "e.mail.ru"
     ],
     "suggested_regex": "(^|\\.)[^.]*mail[^.]*\\."
-  },
-  {
-    "pattern": "widget",
-    "domains": 17,
-    "tranco_protected_matches": 7,
-    "examples": [
-      "dh-widget.android-authority.com",
-      "hotwire-widget.dailywire.com",
-      "pub-referral-widget.current.us",
-      "search-carousel-widget.snc-prod.aws.cinch.co.uk",
-      "strossle-widget-sdk.js"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*widget[^.]*\\."
   },
   {
     "pattern": "douglas",
