@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield30, abuseipdbnet, lessbogons, webclient, feodo, etcompromised, alienvault, threatviewc2, censys
-# Entries: 8410
+# Entries: 8413
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-compact" and comment="bl.dennyhalim.com"]
@@ -19,6 +19,7 @@ add list="dhbl-compact" address="1.24.16.0/24" timeout=3d comment="bl.dennyhalim
 add list="dhbl-compact" address="1.32.128.0/18" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="1.34.58.110" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="1.34.226.50" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="1.92.135.168" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="1.117.74.144" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="1.117.154.185" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="1.161.219.86" timeout=3d comment="bl.dennyhalim.com"
@@ -2692,6 +2693,7 @@ add list="dhbl-compact" address="101.192.72.0/22" timeout=3d comment="bl.dennyha
 add list="dhbl-compact" address="101.192.84.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="101.193.104.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="101.193.116.0/22" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="101.200.193.211" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="101.201.54.74" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="101.203.128.0/19" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.90.126.99" timeout=3d comment="bl.dennyhalim.com"
@@ -2702,7 +2704,9 @@ add list="dhbl-compact" address="102.135.105.0/24" timeout=3d comment="bl.dennyh
 add list="dhbl-compact" address="102.135.106.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.192.0.0/13" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.200.4.0/22" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-compact" address="102.200.8.0/21" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="102.200.8.0/22" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="102.200.12.0/23" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="102.200.15.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.200.16.0/20" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.200.32.0/19" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="102.200.64.0/18" timeout=3d comment="bl.dennyhalim.com"
@@ -8245,7 +8249,6 @@ add list="dhbl-compact" address="208.98.64.0/18" timeout=3d comment="bl.dennyhal
 add list="dhbl-compact" address="208.187.240.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="208.217.32.0/20" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="209.17.192.0/19" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-compact" address="209.38.82.85" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="209.50.160.0/19" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="209.66.0.0/18" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="209.66.128.0/19" timeout=3d comment="bl.dennyhalim.com"
