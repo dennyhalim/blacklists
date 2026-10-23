@@ -1,6 +1,6 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
-ads | 542 | 200 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
+ads | 541 | 200 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
 google | 97 | 95 | 9to5google.com, accounts.google.com, ads.google.cn, ads.google.com, adservice.google.com
 min | 69 | 2 | 20min.ch, 90min.com, ace.min.js, ad.min.js, adasync.min.js
 news | 66 | 36 | 12news.com, 1news.co.nz, 47news.jp, 9news.com, abc7news.com
@@ -20,7 +20,7 @@ porn | 30 | 11 | 18porn.sex, 24porn.com, 3d-porn.co, 3d-porn.org, deepfake-porn.
 banners | 30 | 7 | banners-script.js, banners.adultfriendfinder.com, banners.alt.com, banners.amigos.com, banners.asiafriendfinder.com
 online | 27 | 9 | aff-online.com, ai-online.com, akiba-online.com, cheap-jewelry-online.com, classy-online.jp
 radiome | 27 | 0 | radiome.ar, radiome.at, radiome.bo, radiome.ch, radiome.cl
-web | 26 | 7 | 1web.me, ads.web.de, beacon.gu-web.net, gn-web-assets.api.bbc.com, illicium.web.money
+web | 26 | 6 | 1web.me, ads.web.de, beacon.gu-web.net, gn-web-assets.api.bbc.com, illicium.web.money
 games | 25 | 8 | 1001games.com, 1980-games.com, 69games.xxx, adult-sex-games.com, cracked-games.org
 assets | 25 | 8 | assets.ctfassets.net, assets.everlit.audio, assets.hearstapps.com, assets.presearch.com, assets.sheetmusicplus.com
 live | 24 | 15 | 24live.com, cheshire-live.co.uk, creative.141live.com, creative.live.javdock.com, creative.live.javmix.tv
