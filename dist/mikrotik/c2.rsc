@@ -1,5 +1,5 @@
 # Generated from: etblock, dshield30, abuseipdbnet, threatviewc2, censys, feodo, level2, threatfox
-# Entries: 37832
+# Entries: 37835
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-c2" and comment="bl.dennyhalim.com"]
@@ -9990,6 +9990,7 @@ add list="dhbl-c2" address="62.234.22.228" timeout=3d comment="bl.dennyhalim.com
 add list="dhbl-c2" address="62.234.24.30" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="62.234.27.204" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="62.234.37.129" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-c2" address="62.234.45.132" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="62.234.72.163" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="62.234.144.140" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="62.234.215.37" timeout=3d comment="bl.dennyhalim.com"
@@ -34194,6 +34195,7 @@ add list="dhbl-c2" address="198.44.32.14" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="198.44.46.58" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="198.44.46.122" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="198.44.58.153" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-c2" address="198.44.116.156" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="198.44.167.14" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="198.44.177.179" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="198.44.179.38" timeout=3d comment="bl.dennyhalim.com"
@@ -37186,6 +37188,7 @@ add list="dhbl-c2" address="217.177.128.229" timeout=3d comment="bl.dennyhalim.c
 add list="dhbl-c2" address="217.182.129.250" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="217.182.168.142" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="217.182.253.249" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-c2" address="217.194.133.89" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="217.195.153.81" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="217.195.153.125" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-c2" address="217.195.153.196" timeout=3d comment="bl.dennyhalim.com"
