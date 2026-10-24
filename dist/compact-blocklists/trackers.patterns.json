@@ -299,6 +299,19 @@
     "suggested_regex": "(^|\\.)[^.]*web[^.]*\\."
   },
   {
+    "pattern": "api",
+    "domains": 224,
+    "tranco_protected_matches": 151,
+    "examples": [
+      "a-api.skz.dev",
+      "a1.api.bbc.co.uk",
+      "a1.api.bbc.com",
+      "ad-tracker-api.luizalabs.com",
+      "affiliate-api.raptive.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*api[^.]*\\."
+  },
+  {
     "pattern": "sstats",
     "domains": 224,
     "tranco_protected_matches": 78,
@@ -310,19 +323,6 @@
       "sstats.airfarewatchdog.co.uk"
     ],
     "suggested_regex": "(^|\\.)[^.]*sstats[^.]*\\."
-  },
-  {
-    "pattern": "api",
-    "domains": 223,
-    "tranco_protected_matches": 151,
-    "examples": [
-      "a-api.skz.dev",
-      "a1.api.bbc.co.uk",
-      "a1.api.bbc.com",
-      "ad-tracker-api.luizalabs.com",
-      "affiliate-api.raptive.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*api[^.]*\\."
   },
   {
     "pattern": "branch",
@@ -663,6 +663,19 @@
     "suggested_regex": "(^|\\.)[^.]*plausible[^.]*\\."
   },
   {
+    "pattern": "pixel",
+    "domains": 105,
+    "tranco_protected_matches": 41,
+    "examples": [
+      "0pixel.php",
+      "1pixel.php",
+      "aftership-pixel.com",
+      "cdn-channels-pixel.ex.co",
+      "cookiesync-pixel.js"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*pixel[^.]*\\."
+  },
+  {
     "pattern": "dev",
     "domains": 105,
     "tranco_protected_matches": 31,
@@ -700,19 +713,6 @@
       "business-decision.actonservice.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*business[^.]*\\."
-  },
-  {
-    "pattern": "pixel",
-    "domains": 104,
-    "tranco_protected_matches": 40,
-    "examples": [
-      "0pixel.php",
-      "1pixel.php",
-      "aftership-pixel.com",
-      "cdn-channels-pixel.ex.co",
-      "cookiesync-pixel.js"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*pixel[^.]*\\."
   },
   {
     "pattern": "ssl",
