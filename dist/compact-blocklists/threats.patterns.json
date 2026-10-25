@@ -132,7 +132,7 @@
   {
     "pattern": "login",
     "domains": 3133,
-    "tranco_protected_matches": 20,
+    "tranco_protected_matches": 19,
     "examples": [
       "0679login.com",
       "0k9.0k9login.com",
@@ -1118,19 +1118,6 @@
     "suggested_regex": "(^|\\.)[^.]*mail[^.]*\\."
   },
   {
-    "pattern": "bzm",
-    "domains": 549,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "84377.032143210bzm91ce0icu9lvct.123barnystreet.opik.net",
-      "8725032183210bzm91ce0icu9lvct.123barnystreet.opik.net",
-      "ahgfehgbyxwvuxwvuponpupnvzr4q3r2qs3n02ruqt1mvm1tv43nr.3210bzm91ce0icu9lvct.123barnystreet.opik.net",
-      "axwvqxwrpupnvzr4q3r2qs3n02ruqt1mvm1tv43nr.3210bzm91ce0icu9lvct.123barnystreet.opik.net",
-      "bawww.cfb896eda4af4672.3210bzm91ce0icu9lvct.123barnystreet.opik.net"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*bzm[^.]*\\."
-  },
-  {
     "pattern": "lvct",
     "domains": 549,
     "tranco_protected_matches": 0,
@@ -1142,6 +1129,19 @@
       "bawww.cfb896eda4af4672.3210bzm91ce0icu9lvct.123barnystreet.opik.net"
     ],
     "suggested_regex": "(^|\\.)[^.]*lvct[^.]*\\."
+  },
+  {
+    "pattern": "bzm",
+    "domains": 549,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "84377.032143210bzm91ce0icu9lvct.123barnystreet.opik.net",
+      "8725032183210bzm91ce0icu9lvct.123barnystreet.opik.net",
+      "ahgfehgbyxwvuxwvuponpupnvzr4q3r2qs3n02ruqt1mvm1tv43nr.3210bzm91ce0icu9lvct.123barnystreet.opik.net",
+      "axwvqxwrpupnvzr4q3r2qs3n02ruqt1mvm1tv43nr.3210bzm91ce0icu9lvct.123barnystreet.opik.net",
+      "bawww.cfb896eda4af4672.3210bzm91ce0icu9lvct.123barnystreet.opik.net"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*bzm[^.]*\\."
   },
   {
     "pattern": "dynu",
