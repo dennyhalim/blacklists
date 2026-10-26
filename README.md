@@ -1,6 +1,6 @@
 # IP Blocklists
 
-Automatically downloads selected [FireHOL](https://iplists.firehol.org/) IP blocklists, combines them as configured, and generates ready-to-import MikroTik RouterOS `.rsc` address lists.
+Automatically downloads selected blocklists, combines them as configured, and generates ready-to-import MikroTik RouterOS `.rsc` address lists.
 
 The generated lists are rebuilt by GitHub Actions and committed back to the repository when they change.
 
