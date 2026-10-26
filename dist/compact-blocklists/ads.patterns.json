@@ -1,7 +1,7 @@
 [
   {
     "pattern": "ads",
-    "domains": 541,
+    "domains": 539,
     "tranco_protected_matches": 200,
     "examples": [
       "206ads.com",
@@ -40,7 +40,7 @@
   },
   {
     "pattern": "news",
-    "domains": 66,
+    "domains": 65,
     "tranco_protected_matches": 37,
     "examples": [
       "12news.com",
@@ -351,19 +351,6 @@
     "suggested_regex": "(^|\\.)[^.]*gamereactor[^.]*\\."
   },
   {
-    "pattern": "track",
-    "domains": 20,
-    "tranco_protected_matches": 4,
-    "examples": [
-      "2track.info",
-      "aff-track.net",
-      "m2track.co",
-      "me4track.com",
-      "reasonable-track.pro"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*track[^.]*\\."
-  },
-  {
     "pattern": "the",
     "domains": 20,
     "tranco_protected_matches": 9,
@@ -377,17 +364,17 @@
     "suggested_regex": "(^|\\.)[^.]*the[^.]*\\."
   },
   {
-    "pattern": "content",
-    "domains": 20,
-    "tranco_protected_matches": 5,
+    "pattern": "track",
+    "domains": 19,
+    "tranco_protected_matches": 4,
     "examples": [
-      "cam-content.com",
-      "content-cooperation.com",
-      "content-hoster.xyz",
-      "content-item.pro",
-      "content-loader.com"
+      "2track.info",
+      "aff-track.net",
+      "m2track.co",
+      "me4track.com",
+      "t.17track.net"
     ],
-    "suggested_regex": "(^|\\.)[^.]*content[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*track[^.]*\\."
   },
   {
     "pattern": "trk",
@@ -403,17 +390,17 @@
     "suggested_regex": "(^|\\.)[^.]*trk[^.]*\\."
   },
   {
-    "pattern": "push",
-    "domains": 18,
-    "tranco_protected_matches": 2,
+    "pattern": "content",
+    "domains": 19,
+    "tranco_protected_matches": 5,
     "examples": [
-      "1push.io",
-      "go-g3t-push.net",
-      "in-page-push.com",
-      "in-page-push.net",
-      "inpage-push.com"
+      "cam-content.com",
+      "content-cooperation.com",
+      "content-hoster.xyz",
+      "content-item.pro",
+      "content-loader.com"
     ],
-    "suggested_regex": "(^|\\.)[^.]*push[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*content[^.]*\\."
   },
   {
     "pattern": "affiliate",
@@ -466,6 +453,19 @@
       "player.amperwave.net"
     ],
     "suggested_regex": "(^|\\.)[^.]*player[^.]*\\."
+  },
+  {
+    "pattern": "push",
+    "domains": 17,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "1push.io",
+      "go-g3t-push.net",
+      "in-page-push.com",
+      "in-page-push.net",
+      "inpage-push.net"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*push[^.]*\\."
   },
   {
     "pattern": "pub",
@@ -793,19 +793,6 @@
     "suggested_regex": "(^|\\.)[^.]*doubleclick[^.]*\\."
   },
   {
-    "pattern": "img",
-    "domains": 13,
-    "tranco_protected_matches": 5,
-    "examples": [
-      "ads-img.mozilla.org",
-      "advertise-img.jpg",
-      "bbn.img.com.ua",
-      "hentai-img.com",
-      "img-load.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*img[^.]*\\."
-  },
-  {
     "pattern": "adx",
     "domains": 13,
     "tranco_protected_matches": 5,
@@ -882,6 +869,19 @@
       "lazyad-loader.min.js"
     ],
     "suggested_regex": "(^|\\.)[^.]*loader[^.]*\\."
+  },
+  {
+    "pattern": "img",
+    "domains": 12,
+    "tranco_protected_matches": 5,
+    "examples": [
+      "ads-img.mozilla.org",
+      "advertise-img.jpg",
+      "bbn.img.com.ua",
+      "hentai-img.com",
+      "img-load.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*img[^.]*\\."
   },
   {
     "pattern": "shopee",
@@ -1261,19 +1261,6 @@
     "suggested_regex": "(^|\\.)[^.]*core[^.]*\\."
   },
   {
-    "pattern": "protect",
-    "domains": 10,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "bzux-protect.pro",
-      "cxnp-protect.pro",
-      "gno-protect.pro",
-      "lhkc-protect.pro",
-      "protect-x.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*protect[^.]*\\."
-  },
-  {
     "pattern": "play",
     "domains": 10,
     "tranco_protected_matches": 4,
@@ -1298,5 +1285,18 @@
       "crpdt.livejasmin.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*livejasmin[^.]*\\."
+  },
+  {
+    "pattern": "star",
+    "domains": 10,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "porn-star.com",
+      "pr-star.de",
+      "puzzle-star-battle.com",
+      "star-advertising.com",
+      "star-clicks.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*star[^.]*\\."
   }
 ]

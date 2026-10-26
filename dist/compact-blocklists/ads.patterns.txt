@@ -1,9 +1,9 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
-ads | 541 | 200 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
+ads | 539 | 200 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
 google | 97 | 95 | 9to5google.com, accounts.google.com, ads.google.cn, ads.google.com, adservice.google.com
 min | 69 | 2 | 20min.ch, 90min.com, ace.min.js, ad.min.js, adasync.min.js
-news | 66 | 37 | 12news.com, 1news.co.nz, 47news.jp, 9news.com, abc7news.com
+news | 65 | 37 | 12news.com, 1news.co.nz, 47news.jp, 9news.com, abc7news.com
 adserver | 58 | 17 | ace-adserver.com, adserver.71i.de, adserver.adultfriendfinder.com, adserver.adverty.com, adserver.anawe.cz
 media | 51 | 15 | 152media.com, 22media.world, 247media.com, 404media.co, 888media.net
 trovit | 48 | 4 | trovit.ae, trovit.be, trovit.ca, trovit.ch, trovit.cl
@@ -27,15 +27,15 @@ live | 24 | 15 | 24live.com, cheshire-live.co.uk, creative.141live.com, creative
 forums | 22 | 19 | baking-forums.com, forums.anandtech.com, forums.androidcentral.com, forums.bluemoon-mcfc.co.uk, forums.digitalspy.com
 yahoo | 21 | 21 | ads.yahoo.com, beap.gemini.yahoo.com, c2shb.pubgw.yahoo.com, finance.yahoo.com, gemini.yahoo.com
 gamereactor | 21 | 1 | gamereactor.asia, gamereactor.cn, gamereactor.com.tr, gamereactor.cz, gamereactor.de
-track | 20 | 4 | 2track.info, aff-track.net, m2track.co, me4track.com, reasonable-track.pro
 the | 20 | 9 | access-the-website.com, ad2the.net, d29dbajta0the9.cloudfront.net, loader.the-crossword-solver.com, runt-of-the-web.com
-content | 20 | 5 | cam-content.com, content-cooperation.com, content-hoster.xyz, content-item.pro, content-loader.com
+track | 19 | 4 | 2track.info, aff-track.net, m2track.co, me4track.com, t.17track.net
 trk | 19 | 0 | 905trk.com, ads4trk.com, adsb4trk.com, cm-trk2.com, cm-trk5.com
-push | 18 | 2 | 1push.io, go-g3t-push.net, in-page-push.com, in-page-push.net, inpage-push.com
+content | 19 | 5 | cam-content.com, content-cooperation.com, content-hoster.xyz, content-item.pro, content-loader.com
 affiliate | 18 | 5 | 4affiliate.net, ads.planetwin365affiliate.com, affiliate-b.com, affiliate-cdn.raptive.com, affiliate-robot.com
 tube | 18 | 7 | 4tube.com, boy18tube.com, china-tube.site, ea-tube.com, forced-tube.net
 widget | 18 | 7 | ads-widget.js, dh-widget.android-authority.com, hotwire-widget.dailywire.com, pub-referral-widget.current.us, search-carousel-widget.snc-prod.aws.cinch.co.uk
 player | 18 | 13 | api-player.globalsun.io, gannett-player.ex.co, player.abacast.net, player.allclassical.org, player.amperwave.net
+push | 17 | 2 | 1push.io, go-g3t-push.net, in-page-push.com, in-page-push.net, inpage-push.net
 pub | 17 | 7 | 9pub.io, dev2pub.com, e9pub3xc44wm9ekeiivkombz9bkr.cfd, pub-3d10bad2840341eaa1c7e39b09958b46.r2.dev, pub-81f2b77f5bc841c5ae64221394d67f53.r2.dev
 mail | 17 | 15 | ad.mail.ru, ads.mail.bg, cloud.mail.ru, cyprus-mail.com, e.mail.ru
 douglas | 17 | 4 | douglas.at, douglas.be, douglas.ch, douglas.cz, douglas.de
@@ -61,13 +61,13 @@ affiliates | 13 | 2 | 24affiliates.com, affiliates.allposters.com, affiliates.fa
 partners | 13 | 6 | 777-partners.com, 777-partners.net, 777partners.com, ads-partners.coupang.com, bet3000partners.com
 free | 13 | 3 | ad-free.info, all-free-download.com, allsports4free.live, allsports4free.online, download-now-button-png-free-download.png
 doubleclick | 13 | 12 | ad.doubleclick.net, adclick.g.doubleclick.net, doubleclick-cn.net, doubleclick.com, doubleclick.min.js
-img | 13 | 5 | ads-img.mozilla.org, advertise-img.jpg, bbn.img.com.ua, hentai-img.com, img-load.com
 adx | 13 | 5 | adx-exchange.toast.com, adx-t.com, adx.ae, adx.fulcrum.com.fj, adx.gayboy.at
 search | 13 | 6 | contents-search-windows.com, eve-search.com, search-carousel-widget.snc-prod.aws.cinch.co.uk, search-converter.com, search-nowglobal.com
 top | 13 | 4 | top-best.com, top-site-list.com, top-skin.min.js, top.gg, top.list.ru
 abc | 12 | 9 | 6abc.com, abc-ads.com, abc10.com, abc11.com, abc13.com
 tech | 12 | 4 | ad-tech.ru, adup-tech.com, agat-tech.com, developer-tech.com, discover-tech.io
 loader | 12 | 3 | adfx.loader.bind.js, content-loader.com, fs-loader.com, lazyad-loader.js, lazyad-loader.min.js
+img | 12 | 5 | ads-img.mozilla.org, advertise-img.jpg, bbn.img.com.ua, hentai-img.com, img-load.com
 shopee | 12 | 10 | ads.shopee.cn, ads.shopee.co.th, ads.shopee.com.br, ads.shopee.com.mx, ads.shopee.com.my
 advertising | 12 | 3 | advertising-cdn.com, advertising.amazon.de, advertising.block, advertising.com, advertising365.com
 japan | 12 | 3 | anime-japan.jp, japan-webike.be, japan-webike.ca, japan-webike.ch, japan-webike.dk
@@ -97,6 +97,6 @@ asg | 10 | 1 | asg.aphex.me, asg.bhabhiporn.pro, asg.faperoni.com, asg.irontube.
 script | 10 | 1 | banners-script.js, full-page-script.js, gdpr-ad-script.js, global-ad-script.js, script-manager.js
 best | 10 | 0 | best-faucets.com, best-girls-around.com, best-global-apps.com, best-offer-for-you.com, best-video-app.com
 core | 10 | 2 | box-core.net, core.dimatter.ai, core.js, core.windows.net, core77.com
-protect | 10 | 0 | bzux-protect.pro, cxnp-protect.pro, gno-protect.pro, lhkc-protect.pro, protect-x.com
 play | 10 | 4 | coffee2play.com, ds2play.com, play-asia.com, play-lg.com, play.google.com
 livejasmin | 10 | 9 | creatives.livejasmin.com, crmapt.livejasmin.com, crmpt.livejasmin.com, crmt.livejasmin.com, crpdt.livejasmin.com
+star | 10 | 3 | porn-star.com, pr-star.de, puzzle-star-battle.com, star-advertising.com, star-clicks.com
