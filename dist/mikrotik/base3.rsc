@@ -6583,7 +6583,7 @@ add list="dhbl-base3" address="210.211.28.0/23" timeout=3d comment="bl.dennyhali
 add list="dhbl-base3" address="211.102.0.0/17" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="211.102.136.0/21" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="212.14.245.3" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-base3" address="212.30.36.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-base3" address="212.30.36.152" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="212.68.164.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="212.102.58.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="212.129.0.0/18" timeout=3d comment="bl.dennyhalim.com"

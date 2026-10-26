@@ -8410,7 +8410,7 @@ add list="dhbl-compact" address="211.184.175.246" timeout=3d comment="bl.dennyha
 add list="dhbl-compact" address="212.8.251.167" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="212.14.244.222" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="212.14.245.3" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-compact" address="212.30.36.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="212.30.36.152" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="212.68.164.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="212.102.58.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="212.113.106.118" timeout=3d comment="bl.dennyhalim.com"
