@@ -1,7 +1,7 @@
 [
   {
     "pattern": "casino",
-    "domains": 14594,
+    "domains": 14590,
     "tranco_protected_matches": 20,
     "examples": [
       "0-casino.info",
@@ -14,7 +14,7 @@
   },
   {
     "pattern": "xbet",
-    "domains": 5076,
+    "domains": 5074,
     "tranco_protected_matches": 10,
     "examples": [
       "0xbet-casino-nl.top",
@@ -27,7 +27,7 @@
   },
   {
     "pattern": "bet",
-    "domains": 4518,
+    "domains": 4516,
     "tranco_protected_matches": 33,
     "examples": [
       "0000bet-slot.com",
@@ -40,7 +40,7 @@
   },
   {
     "pattern": "win",
-    "domains": 3155,
+    "domains": 3153,
     "tranco_protected_matches": 12,
     "examples": [
       "001win8.com",
@@ -131,7 +131,7 @@
   },
   {
     "pattern": "jojobet",
-    "domains": 710,
+    "domains": 701,
     "tranco_protected_matches": 0,
     "examples": [
       "10029jojobet.com",
@@ -157,7 +157,7 @@
   },
   {
     "pattern": "bets",
-    "domains": 590,
+    "domains": 592,
     "tranco_protected_matches": 2,
     "examples": [
       "0088bets.org",
@@ -313,7 +313,7 @@
   },
   {
     "pattern": "poker",
-    "domains": 296,
+    "domains": 299,
     "tranco_protected_matches": 3,
     "examples": [
       "00poker.com",
@@ -859,7 +859,7 @@
   },
   {
     "pattern": "live",
-    "domains": 131,
+    "domains": 130,
     "tranco_protected_matches": 2,
     "examples": [
       "1win-live-casino-bangladesh.com",
@@ -963,7 +963,7 @@
   },
   {
     "pattern": "better",
-    "domains": 113,
+    "domains": 112,
     "tranco_protected_matches": 0,
     "examples": [
       "2b-better.jp",
@@ -1041,7 +1041,7 @@
   },
   {
     "pattern": "madridbet",
-    "domains": 105,
+    "domains": 104,
     "tranco_protected_matches": 0,
     "examples": [
       "m-madridbet4231.com",
@@ -1248,19 +1248,6 @@
     "suggested_regex": "(^|\\.)[^.]*web[^.]*\\."
   },
   {
-    "pattern": "adres",
-    "domains": 91,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "1xbet-adres.com",
-      "adres-matbet.com",
-      "bahiscasino-adres.com",
-      "bahiscasino-adres.icu",
-      "bahiscasino-gercek-adres.icu"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*adres[^.]*\\."
-  },
-  {
     "pattern": "situs",
     "domains": 91,
     "tranco_protected_matches": 0,
@@ -1285,6 +1272,19 @@
       "sanscasino339.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*sanscasino[^.]*\\."
+  },
+  {
+    "pattern": "adres",
+    "domains": 90,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "1xbet-adres.com",
+      "adres-matbet.com",
+      "bahiscasino-adres.com",
+      "bahiscasino-adres.icu",
+      "bahiscasino-gercek-adres.icu"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*adres[^.]*\\."
   },
   {
     "pattern": "roobet",

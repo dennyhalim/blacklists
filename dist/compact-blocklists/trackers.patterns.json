@@ -663,6 +663,19 @@
     "suggested_regex": "(^|\\.)[^.]*plausible[^.]*\\."
   },
   {
+    "pattern": "online",
+    "domains": 106,
+    "tranco_protected_matches": 42,
+    "examples": [
+      "a8.cypris-online.jp",
+      "a8.geo-online.co.jp",
+      "a8clk.olulu-online.jp",
+      "a8clk.rental.geo-online.co.jp",
+      "a8clk.waq-online.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
+  },
+  {
     "pattern": "pixel",
     "domains": 105,
     "tranco_protected_matches": 41,
@@ -687,19 +700,6 @@
       "a8dev.hikarinet-s.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*dev[^.]*\\."
-  },
-  {
-    "pattern": "online",
-    "domains": 105,
-    "tranco_protected_matches": 41,
-    "examples": [
-      "a8.cypris-online.jp",
-      "a8.geo-online.co.jp",
-      "a8clk.olulu-online.jp",
-      "a8clk.rental.geo-online.co.jp",
-      "a8clk.waq-online.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
   },
   {
     "pattern": "business",
