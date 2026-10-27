@@ -235,8 +235,8 @@
   },
   {
     "pattern": "online",
-    "domains": 27,
-    "tranco_protected_matches": 9,
+    "domains": 28,
+    "tranco_protected_matches": 10,
     "examples": [
       "aff-online.com",
       "ai-online.com",
@@ -598,6 +598,19 @@
     "suggested_regex": "(^|\\.)[^.]*jquery[^.]*\\."
   },
   {
+    "pattern": "fox",
+    "domains": 16,
+    "tranco_protected_matches": 16,
+    "examples": [
+      "fox10phoenix.com",
+      "fox11online.com",
+      "fox13news.com",
+      "fox23.com",
+      "fox26houston.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*fox[^.]*\\."
+  },
+  {
     "pattern": "yandex",
     "domains": 15,
     "tranco_protected_matches": 14,
@@ -648,19 +661,6 @@
       "app.koah.ai"
     ],
     "suggested_regex": "(^|\\.)[^.]*app[^.]*\\."
-  },
-  {
-    "pattern": "fox",
-    "domains": 15,
-    "tranco_protected_matches": 15,
-    "examples": [
-      "fox10phoenix.com",
-      "fox13news.com",
-      "fox23.com",
-      "fox26houston.com",
-      "fox29.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*fox[^.]*\\."
   },
   {
     "pattern": "partner",
