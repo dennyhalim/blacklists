@@ -1,14 +1,14 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
 actonservice | 2973 | 2973 | 12build.actonservice.com, 23andme.actonservice.com, 3mark.actonservice.com, 3plworldwide.actonservice.com, a10053.actonservice.com
-smetrics | 2943 | 917 | a.smetrics.sovereign.com, al-smetrics.vizio.com, origin-smetrics.go365.com, sit-smetrics.nab.com.au, smetrics-cns.panasonic.com
-marketing | 1619 | 120 | 5363316.marketing.numi.com, aad-marketing.ascendeventmedia.com, ablink.marketing.adobemailing.com, ablink.marketing.li.me, ablink.marketing.max.com
+smetrics | 2943 | 916 | a.smetrics.sovereign.com, al-smetrics.vizio.com, origin-smetrics.go365.com, sit-smetrics.nab.com.au, smetrics-cns.panasonic.com
+marketing | 1619 | 119 | 5363316.marketing.numi.com, aad-marketing.ascendeventmedia.com, ablink.marketing.adobemailing.com, ablink.marketing.li.me, ablink.marketing.max.com
 metrics | 1430 | 722 | aa-metrics.aircard.jp, aa-metrics.airpayment.jp, aa-metrics.airregi.jp, aa-metrics.airreserve.net, aa-metrics.airrsv.net
 info | 1015 | 157 | 10298198.info.sofi.org, a8clk.info2.sunbridge.com, a8cv.info.atgp.jp, ablink.info.felixmobile.com.au, ablink.info.oneatwork.app
-app | 944 | 241 | 105app.com, 21udflra4wd.app-dev.cainthus.com, 6nwp0r33a71m.app.dev.cardahealth.com, 6ynyejkv0j1s.app.tapmyback.com, a8clk.app.offerbox.jp
+app | 944 | 242 | 105app.com, 21udflra4wd.app-dev.cainthus.com, 6nwp0r33a71m.app.dev.cardahealth.com, 6ynyejkv0j1s.app.tapmyback.com, a8clk.app.offerbox.jp
 stats | 912 | 161 | 0stats.com, 4stats.de, 99stats.com, active24stats.nl, anon-stats.eff.org
-analytics | 846 | 298 | a8c-analytics.js, adb-analytics.live-now.com, adobe-analytics-dc.belastingdienst.nl, adobe-analytics.js, adobe-analytics.vionicshoes.com
-tracking | 812 | 253 | 77tracking.com, a4b-tracking.com, active-tracking.de, ad-bls-tracking.lemino.docomo.ne.jp, ads-tracking.beop.io
+analytics | 846 | 297 | a8c-analytics.js, adb-analytics.live-now.com, adobe-analytics-dc.belastingdienst.nl, adobe-analytics.js, adobe-analytics.vionicshoes.com
+tracking | 812 | 252 | 77tracking.com, a4b-tracking.com, active-tracking.de, ad-bls-tracking.lemino.docomo.ne.jp, ads-tracking.beop.io
 link | 725 | 102 | a8.kizuna-link.jp, a8.shop.km-link.jp, a8cv.global-link-seminar.com, a8cv.jbl-link.com, acc-link-ccontact.focuscura.com
 data | 567 | 328 | analytics-data-collector.js, analytics-data-collector.min.js, analytics.data.lloydsbankinggroup.com, analytics.data.visenze.com, atom-data.io
 images | 501 | 207 | channel.images.production.web.w4a.tv, images.a.flukebiomedical.com, images.access.imaginelearning.com, images.aepinfo.com, images.alliances.infor.com
@@ -21,7 +21,7 @@ news | 338 | 85 | 12news.com, 9news.com, abc17news.com, ablink.news.emails-pureg
 track | 321 | 105 | 17track.net, a8.track.entry.dokoyorimo.com, a8track.aidmybank.com, a8track.bizdigi.jp, a8track.speakbuddy-personalcoaching.com
 min | 286 | 3 | 15min.lt, 20min.ch, 24868.min.js, adf-tm-base-min.js, admtracker.lib.min.js
 links | 262 | 91 | bbanywhere.links.rosieapp.com, br.links.kmartphotos.com.au, br.links.kodakmoments.com, email-links.crowdfireapp.com, file-downloads.outbound-links.js
-target | 254 | 126 | aec-target.base.be, aec-target.telenet.be, aep-target.credit-suisse.com, company-target.com, dm-target.fishersci.com
+target | 254 | 125 | aec-target.base.be, aec-target.telenet.be, aep-target.credit-suisse.com, company-target.com, dm-target.fishersci.com
 web | 253 | 54 | a8.web-hikari.net, a8clk.web-camp.io, a8cv.web-planners.net, absys.web.de, adebis.thd-web.jp
 api | 224 | 151 | a-api.skz.dev, a1.api.bbc.co.uk, a1.api.bbc.com, ad-tracker-api.luizalabs.com, affiliate-api.raptive.com
 sstats | 224 | 78 | omtrns.sstats.q8.dk, sstats.aavacations.com, sstats.adultswim.com, sstats.afco.com, sstats.airfarewatchdog.co.uk
@@ -33,7 +33,7 @@ connect | 175 | 64 | a8.hoken-connect.com, app.connect.cch.ca, app.connect.mandi
 sanalytics | 172 | 32 | sanalytics.adobe.tp.gskpro.com, sanalytics.adultswim.co.uk, sanalytics.allianz-assistance.co.uk, sanalytics.amig.com, sanalytics.autozone.com
 mail | 167 | 54 | 1l-hit.mail.ru, a8.ama-mail.jp, a8.hana-mail.jp, ablink.mail.activearcade.ai, ablink.mail.adobespark.com
 get | 165 | 16 | app-test.get360fit.com, app.get-e.com, app.get.comcastbiz.com, applink.get-a-way.com, cart-get-tokens.html
-ssc | 164 | 27 | ssc.alhurra.com, ssc.amerikaninsesi.org, ssc.amerikaovozi.com, ssc.amerikayidzayn.com, ssc.amerikiskhma.com
+ssc | 164 | 28 | ssc.alhurra.com, ssc.amerikaninsesi.org, ssc.amerikaovozi.com, ssc.amerikayidzayn.com, ssc.amerikiskhma.com
 events | 163 | 86 | acds-events.adobe.io, adtech-events.bookmyshow.com, analytify-events-tracking.js, bi-events-collector.spot.im, browser.events.data.microsoft.com
 adobe | 160 | 124 | account.adobe.com, acds-events.adobe.io, adobe-analytics-dc.belastingdienst.nl, adobe-analytics.js, adobe-analytics.vionicshoes.com
 tracker | 159 | 52 | ad-tracker-api.luizalabs.com, affiliate-tracker.js, air360tracker.net, ajax-link-tracker.js, analytics-tracker.thescore.com
@@ -46,7 +46,7 @@ ablink | 133 | 75 | ablink.1954.bk.com, ablink.8email.eightsleep.com, ablink.a.r
 axp | 124 | 66 | axp.8newsnow.com, axp.abc27.com, axp.abc4.com, axp.avaya.com, axp.bigcountryhomepage.com
 somni | 118 | 49 | somni.accenture.com, somni.alaskaair.com, somni.americanwesthomes.com, somni.amrock.com, somni.amsurg.com
 log | 116 | 70 | 24log.com, 24log.de, 24log.es, 24log.it, 24log.ru
-metric | 115 | 53 | api-metric.gosweb.gosuslugi.ru, digital-metric.com, metric-nonssl.nomura.co.jp, metric.1035thearrow.com, metric.4imprint.com
+metric | 115 | 54 | api-metric.gosweb.gosuslugi.ru, digital-metric.com, metric-nonssl.nomura.co.jp, metric.1035thearrow.com, metric.4imprint.com
 response | 114 | 39 | app.payments-response.americanexpress.co.uk, app.response.adobesystemsinc.com, app.response.aiu.edu.au, app.response.americancentury.com, app.response.americanexpress.ca
 share | 112 | 9 | dev-share.beaconlearningapp.com, dev-share.haloedapp.com, dev-share.smartfashion.ai, images.share.iheartmedia.com, share-backcountry.onxmaps.com
 mdws | 112 | 0 | mdws.1stchoicesavings.ca, mdws.advancesavings.ca, mdws.aldergrovecu.ca, mdws.assiniboine.mb.ca, mdws.banquelaurentienne.ca
@@ -67,7 +67,7 @@ intel | 87 | 25 | ainu.intel.cn, ainu.intel.co.jp, ainu.intel.co.kr, ainu.intel.
 pwc | 87 | 18 | contents.pwc.com, elqjourney.pwc.com, images.comm.pwc.com.br, info.bookkeepingconnect.pwc.com, info.checkin.pwc.com
 saa | 87 | 39 | marketing.saa.com, saa-aem.hamamatsu.com, saa.247sports.com, saa.cbs.com, saa.cbsi.com
 sonar | 86 | 86 | sonar6-akl1-1.xx.fbcdn.net.iberostar.com, sonar6-ams2-1.xx.fbcdn.net.iberostar.com, sonar6-arn2-1.xx.fbcdn.net.iberostar.com, sonar6-atl3-1.xx.fbcdn.net.iberostar.com, sonar6-bcn1-1.xx.fbcdn.net.iberostar.com
-sadbmetrics | 85 | 23 | sadbmetrics.15kvalencia.es, sadbmetrics.7canibales.com, sadbmetrics.abc.es, sadbmetrics.alhambraventure.com, sadbmetrics.andorrataste.com
+sadbmetrics | 85 | 24 | sadbmetrics.15kvalencia.es, sadbmetrics.7canibales.com, sadbmetrics.abc.es, sadbmetrics.alhambraventure.com, sadbmetrics.andorrataste.com
 asp | 84 | 2 | a8clk.asp.jcity.co.jp, asp.glasspp119.jp, asp.hachipp119.com, asp.taishokunext.com, data.asp.coca-cola.com
 adebis | 78 | 16 | adebis-52667624.wowma.jp, adebis-bkan.vbest.jp, adebis-cname.jobmall.jp, adebis-dojyo.dojyo.jp, adebis-morijuku.morijuku.com
 srepdata | 77 | 44 | srepdata.12newsnow.com, srepdata.13wmaz.com, srepdata.app.com, srepdata.armytimes.com, srepdata.azcentral.com
@@ -81,7 +81,7 @@ ricoh | 72 | 1 | applicatifs.ricoh.fr, application.ricoh.ch, application.ricoh.c
 vodafone | 71 | 63 | app.update.vodafone.co.uk, at.vodafone.de, automotive-business.vodafone.com, business.vodafone.co.nz, business.vodafone.com
 sony | 70 | 14 | app.marketing.pro.sony.eu, electronics.sony-latin.com, hesprh.sony.jp, hqmetrics.sony.com, metrics.helpguide.sony.net
 openapp | 69 | 0 | aggelakia.openapp.link, aivali.openapp.link, alaburger.openapp.link, alapita.openapp.link, alibabapizza.openapp.link
-smetric | 67 | 24 | smetric.4imprint.com, smetric.ads.microsoft.com, smetric.atg.se, smetric.bahamabreeze.com, smetric.baylorhealth.com
+smetric | 67 | 25 | smetric.4imprint.com, smetric.ads.microsoft.com, smetric.atg.se, smetric.bahamabreeze.com, smetric.baylorhealth.com
 staging | 66 | 16 | 1k5vz1ejbcx.staging.probemas.com, ablink.staging-e.klarna.com, ablinks-staging.email.tispr.com, ac9kpxbans1l.staging.unstoppabledomains.com, api-staging.sitelytics.tech
 global | 66 | 30 | a8.global-mobility-service.com, a8clk.global-crown.com, a8cv.global-dive.jp, a8cv.global-link-seminar.com, analytics.global.sky.com
 join | 66 | 6 | a8cv.join-tech.jp, images.join.masaisrael.org, join-staging.kloaked.app, join-test.pre-prod.spur.io, join-test.step.com

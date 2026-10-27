@@ -1,5 +1,5 @@
 # Generated from: feodo, etcompromised, alienvault, threatviewc2, censys
-# Entries: 2008
+# Entries: 2009
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-baseip" and comment="bl.dennyhalim.com"]
@@ -676,6 +676,7 @@ add list="dhbl-baseip" address="65.108.11.163" timeout=3d comment="bl.dennyhalim
 add list="dhbl-baseip" address="66.42.33.159" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="66.42.97.210" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="68.64.176.42" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="68.64.176.76" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="68.183.107.64" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="68.183.200.63" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="68.233.238.123" timeout=3d comment="bl.dennyhalim.com"
