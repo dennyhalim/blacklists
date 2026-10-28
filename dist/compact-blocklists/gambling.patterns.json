@@ -1,7 +1,7 @@
 [
   {
     "pattern": "casino",
-    "domains": 15010,
+    "domains": 15011,
     "tranco_protected_matches": 20,
     "examples": [
       "0-casino.info",
@@ -27,7 +27,7 @@
   },
   {
     "pattern": "bet",
-    "domains": 4498,
+    "domains": 4504,
     "tranco_protected_matches": 33,
     "examples": [
       "0000bet-slot.com",
@@ -92,7 +92,7 @@
   },
   {
     "pattern": "slots",
-    "domains": 1215,
+    "domains": 1218,
     "tranco_protected_matches": 0,
     "examples": [
       "007slots.bar",
@@ -131,7 +131,7 @@
   },
   {
     "pattern": "jojobet",
-    "domains": 695,
+    "domains": 693,
     "tranco_protected_matches": 0,
     "examples": [
       "10029jojobet.com",
@@ -157,7 +157,7 @@
   },
   {
     "pattern": "bets",
-    "domains": 597,
+    "domains": 598,
     "tranco_protected_matches": 2,
     "examples": [
       "0088bets.org",
@@ -287,7 +287,7 @@
   },
   {
     "pattern": "poker",
-    "domains": 319,
+    "domains": 322,
     "tranco_protected_matches": 3,
     "examples": [
       "1poker88.net",
@@ -1287,16 +1287,16 @@
     "suggested_regex": "(^|\\.)[^.]*situs[^.]*\\."
   },
   {
-    "pattern": "roobet",
+    "pattern": "vegas",
     "domains": 87,
-    "tranco_protected_matches": 1,
+    "tranco_protected_matches": 4,
     "examples": [
-      "ac-roobet.com",
-      "ae-roobet.com",
-      "ai-roobet.com",
-      "ao-roobet.com",
-      "as-roobet.com"
+      "ag.cdn-vegas.com",
+      "blackjack-vegas.de",
+      "casino-vegas-plus.fr",
+      "casino-vegas145.sbs",
+      "casinoleo-vegas.com"
     ],
-    "suggested_regex": "(^|\\.)[^.]*roobet[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*vegas[^.]*\\."
   }
 ]

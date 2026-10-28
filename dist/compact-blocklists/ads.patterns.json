@@ -286,6 +286,19 @@
     "suggested_regex": "(^|\\.)[^.]*games[^.]*\\."
   },
   {
+    "pattern": "live",
+    "domains": 25,
+    "tranco_protected_matches": 14,
+    "examples": [
+      "24live.com",
+      "cheshire-live.co.uk",
+      "creative.141live.com",
+      "creative.live.javdock.com",
+      "creative.live.javmix.tv"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*live[^.]*\\."
+  },
+  {
     "pattern": "assets",
     "domains": 25,
     "tranco_protected_matches": 8,
@@ -297,19 +310,6 @@
       "assets.sheetmusicplus.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*assets[^.]*\\."
-  },
-  {
-    "pattern": "live",
-    "domains": 24,
-    "tranco_protected_matches": 14,
-    "examples": [
-      "24live.com",
-      "cheshire-live.co.uk",
-      "creative.141live.com",
-      "creative.live.javdock.com",
-      "creative.live.javmix.tv"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*live[^.]*\\."
   },
   {
     "pattern": "forums",
