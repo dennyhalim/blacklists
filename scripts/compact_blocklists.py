@@ -47,6 +47,9 @@ SOURCES = {
         ("hagezi-gambling-mini", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling.mini-onlydomains.txt"),
         ("steven-gambling", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts"),
     ],
+    "badbots_notdomain": [
+        ("bad_ua", "https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list"),
+    ],
 }
 
 STREAM_BASE1 = "https://raw.githubusercontent.com/pedro-nsy/nsy-dns-blocklist/main/lists/"
