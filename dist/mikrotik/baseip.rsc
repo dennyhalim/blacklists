@@ -1,4 +1,4 @@
-# Generated from: feodo, etcompromised, alienvault, threatviewc2, censys
+# Generated from: etcompromised, alienvault, threatviewc2, censys, feodo
 # Entries: 2015
 # Managed entries expire after: 3d
 /ip firewall address-list

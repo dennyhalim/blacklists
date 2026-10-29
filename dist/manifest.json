@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-29 05:15:19 UTC",
+    "generated_at": "2026-10-29 05:35:51 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -201,15 +201,15 @@
         ]
       },
       "sources": [
-        "feodo",
         "etcompromised",
         "alienvault",
         "threatviewc2",
-        "censys"
+        "censys",
+        "feodo"
       ]
     },
     "c2": {
-      "entries": 40086,
+      "entries": 59982,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -243,7 +243,8 @@
         "censys",
         "feodo",
         "level2",
-        "threatfox"
+        "threatfox",
+        "mal40k"
       ]
     },
     "combined": {
@@ -289,7 +290,7 @@
       ]
     },
     "combined4server": {
-      "entries": 218642,
+      "entries": 218354,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -372,7 +373,7 @@
       ]
     },
     "complete": {
-      "entries": 75950,
+      "entries": 55928,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -412,11 +413,11 @@
         "threatviewc2",
         "censys",
         "tif",
-        "mal40k"
+        "graphicline"
       ]
     },
     "goliath": {
-      "entries": 235459,
+      "entries": 202474,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -452,7 +453,7 @@
         "ipsum2",
         "level3",
         "abuser30",
-        "abuseipdb"
+        "abuseipdbbig"
       ]
     },
     "server": {
@@ -494,6 +495,7 @@
   },
   "sources": {
     "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-7d.ipv4",
+    "abuseipdbbig": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-120d-25percent.ipv4",
     "abuseipdbnet": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-120d-50percent.ipv4",
     "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
     "abuser30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_30d.netset",
