@@ -111,13 +111,13 @@ SOURCES: dict[str, str] = {
 LISTS: dict[str, tuple[str, ...]] = {
     "base3": ("etblock", "webserver", "dshield30", "abuseipdbnet", "lessbogons", "webclient", "feodo"),
     "baseip": ("etcompromised","alienvault","threatviewc2","censys","feodo"),
-    "server": ("etblock","dshield30","abuseipdbnet","threatviewc2","censys","feodo"),
+    "server": ("etblock","dshield30","abuseipdbbig","threatviewc2","censys","feodo"),
     "c2": ("server","level2","threatfox", "mal40k"),
     "compact": ("base3", "baseip"),
     "combined": ("base3", "level2", "baseip"),
     "combined4server": ("server", "level4", "botnet", "abuser", "threatview", "malin", "graphicline"),
     "complete": ("combined", "tif","graphicline"),
-    "goliath": ("server", "ipsum2", "level3", "abuser30", "abuseipdbbig"),
+    "goliath": ("server", "ipsum2", "level3", "abuser30", "abuseipdb"),
 }
 
 EXPORTS: dict[str, bool] = {
