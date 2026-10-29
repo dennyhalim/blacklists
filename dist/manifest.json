@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-29 15:54:35 UTC",
+    "generated_at": "2026-10-29 22:29:11 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 143410,
+        "domains": 143408,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -52,7 +52,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 132363,
+        "domains": 132482,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -174,7 +174,7 @@
       ]
     },
     "baseip": {
-      "entries": 2023,
+      "entries": 2024,
       "files": {
         "bat": [
           "dist/windows/baseip.bat"
@@ -209,7 +209,7 @@
       ]
     },
     "c2": {
-      "entries": 56352,
+      "entries": 56357,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -248,7 +248,7 @@
       ]
     },
     "combined": {
-      "entries": 27816,
+      "entries": 27817,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -290,7 +290,7 @@
       ]
     },
     "combined4server": {
-      "entries": 218606,
+      "entries": 218586,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -332,7 +332,7 @@
       ]
     },
     "compact": {
-      "entries": 8546,
+      "entries": 8547,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -373,7 +373,7 @@
       ]
     },
     "complete": {
-      "entries": 51770,
+      "entries": 51771,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -417,7 +417,7 @@
       ]
     },
     "goliath": {
-      "entries": 234813,
+      "entries": 235164,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -457,7 +457,7 @@
       ]
     },
     "server": {
-      "entries": 2804,
+      "entries": 2805,
       "files": {
         "bat": [
           "dist/windows/server.bat"

@@ -18,4 +18,4 @@
 /ip dns static add regexp="(^|\\.)(oxrpq7u67eojl2g2m7gzxgidfo3a\.auth\.skybridge\.click|mgmt\-privateendpointproxy\-prd\-eu\.securitycenter\.windows\.com|logintometamask\.tumblr\.com|polygon\-bor\-rpc\.publicnode\.com|mybluehost\.me)$" type=NXDOMAIN comment="threats"
 /ip dns static add regexp="(^|\\.)(fsedata\.stanford\.edu|info\-fsi\.stanford\.edu|ad\.bn\.netease\.com|cloud102\.hostgator\.com|tracking\.hostgator\.com)$" type=NXDOMAIN comment="threats"
 /ip dns static add regexp="(^|\\.)(webpublic\.substack\.com|uniproject\.substack\.com|etharticles\.substack\.com|teamproject\.substack\.com|web3projects\.substack\.com)$" type=NXDOMAIN comment="threats"
-/ip dns static add regexp="(^|\\.)(0x00000000000\.substack\.com|tradestrategy\.substack\.com|publicationgroup\.substack\.com|xyws\.whecloud\.com|0xrpc\.io)$" type=NXDOMAIN comment="threats"
+/ip dns static add regexp="(^|\\.)(0x00000000000\.substack\.com|tradestrategy\.substack\.com|publicationgroup\.substack\.com|xyws\.whecloud\.com|metrics\.us\.playstation\.com)$" type=NXDOMAIN comment="threats"
