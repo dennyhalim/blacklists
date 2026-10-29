@@ -79,8 +79,8 @@
   },
   {
     "pattern": "stats",
-    "domains": 912,
-    "tranco_protected_matches": 161,
+    "domains": 913,
+    "tranco_protected_matches": 162,
     "examples": [
       "0stats.com",
       "4stats.de",
@@ -131,8 +131,8 @@
   },
   {
     "pattern": "data",
-    "domains": 567,
-    "tranco_protected_matches": 328,
+    "domains": 568,
+    "tranco_protected_matches": 329,
     "examples": [
       "analytics-data-collector.js",
       "analytics-data-collector.min.js",
@@ -429,6 +429,19 @@
     "suggested_regex": "(^|\\.)[^.]*get[^.]*\\."
   },
   {
+    "pattern": "events",
+    "domains": 164,
+    "tranco_protected_matches": 87,
+    "examples": [
+      "acds-events.adobe.io",
+      "adtech-events.bookmyshow.com",
+      "analytify-events-tracking.js",
+      "bi-events-collector.spot.im",
+      "browser.events.data.microsoft.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*events[^.]*\\."
+  },
+  {
     "pattern": "ssc",
     "domains": 164,
     "tranco_protected_matches": 28,
@@ -440,19 +453,6 @@
       "ssc.amerikiskhma.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*ssc[^.]*\\."
-  },
-  {
-    "pattern": "events",
-    "domains": 163,
-    "tranco_protected_matches": 86,
-    "examples": [
-      "acds-events.adobe.io",
-      "adtech-events.bookmyshow.com",
-      "analytify-events-tracking.js",
-      "bi-events-collector.spot.im",
-      "browser.events.data.microsoft.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*events[^.]*\\."
   },
   {
     "pattern": "adobe",
