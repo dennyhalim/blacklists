@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-29 05:35:51 UTC",
+    "generated_at": "2026-10-29 06:58:55 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 142798,
+        "domains": 142801,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -137,7 +137,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6658,
+      "entries": 6650,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -209,7 +209,7 @@
       ]
     },
     "c2": {
-      "entries": 59982,
+      "entries": 59503,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -238,7 +238,7 @@
       "sources": [
         "etblock",
         "dshield30",
-        "abuseipdbnet",
+        "abuseipdbbig",
         "threatviewc2",
         "censys",
         "feodo",
@@ -248,7 +248,7 @@
       ]
     },
     "combined": {
-      "entries": 31889,
+      "entries": 31885,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -290,7 +290,7 @@
       ]
     },
     "combined4server": {
-      "entries": 218354,
+      "entries": 216963,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -319,7 +319,7 @@
       "sources": [
         "etblock",
         "dshield30",
-        "abuseipdbnet",
+        "abuseipdbbig",
         "threatviewc2",
         "censys",
         "feodo",
@@ -332,7 +332,7 @@
       ]
     },
     "compact": {
-      "entries": 8557,
+      "entries": 8549,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -373,7 +373,7 @@
       ]
     },
     "complete": {
-      "entries": 55928,
+      "entries": 55924,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -417,7 +417,7 @@
       ]
     },
     "goliath": {
-      "entries": 202474,
+      "entries": 233644,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -446,18 +446,18 @@
       "sources": [
         "etblock",
         "dshield30",
-        "abuseipdbnet",
+        "abuseipdbbig",
         "threatviewc2",
         "censys",
         "feodo",
         "ipsum2",
         "level3",
         "abuser30",
-        "abuseipdbbig"
+        "abuseipdb"
       ]
     },
     "server": {
-      "entries": 2636,
+      "entries": 2783,
       "files": {
         "bat": [
           "dist/windows/server.bat"
@@ -486,7 +486,7 @@
       "sources": [
         "etblock",
         "dshield30",
-        "abuseipdbnet",
+        "abuseipdbbig",
         "threatviewc2",
         "censys",
         "feodo"
@@ -495,8 +495,8 @@
   },
   "sources": {
     "abuseipdb": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/abuseipdb-s100-7d.ipv4",
-    "abuseipdbbig": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-120d-25percent.ipv4",
-    "abuseipdbnet": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-120d-50percent.ipv4",
+    "abuseipdbbig": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-90d-20percent.ipv4",
+    "abuseipdbnet": "https://raw.githubusercontent.com/borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/abuseipdb-s99-hallofshame-90d-50percent.ipv4",
     "abuser": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_1d.netset",
     "abuser30": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_abusers_30d.netset",
     "alienvault": "http://reputation.alienvault.com/reputation.data",
