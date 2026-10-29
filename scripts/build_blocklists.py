@@ -97,6 +97,11 @@ SOURCES: dict[str, str] = {
         "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/"
         "abuseipdb-s99-hallofshame-120d-50percent.ipv4"
     ),
+    "abuseipdbbig": (
+        "https://raw.githubusercontent.com/"
+        "borestad/blocklist-abuseipdb/main/stats/hallofshame/subnets/"
+        "abuseipdb-s99-hallofshame-120d-25percent.ipv4"
+    ),
     "ipsum2": (
         "https://raw.githubusercontent.com/"
         "stamparm/ipsum/master/levels/2.txt"
@@ -105,14 +110,14 @@ SOURCES: dict[str, str] = {
 
 LISTS: dict[str, tuple[str, ...]] = {
     "base3": ("etblock", "webserver", "dshield30", "abuseipdbnet", "lessbogons", "webclient", "feodo"),
-    "baseip": ("feodo", "etcompromised","alienvault","threatviewc2","censys"),
+    "baseip": ("etcompromised","alienvault","threatviewc2","censys","feodo"),
     "server": ("etblock","dshield30","abuseipdbnet","threatviewc2","censys","feodo"),
-    "c2": ("server","level2","threatfox"),
+    "c2": ("server","level2","threatfox", "mal40k"),
     "compact": ("base3", "baseip"),
     "combined": ("base3", "level2", "baseip"),
     "combined4server": ("server", "level4", "botnet", "abuser", "threatview", "malin", "graphicline"),
-    "complete": ("combined", "level2", "tif", "mal40k"),
-    "goliath": ("server", "ipsum2", "level3", "abuser30", "abuseipdb"),
+    "complete": ("combined", "tif","graphicline"),
+    "goliath": ("server", "ipsum2", "level3", "abuser30", "abuseipdbbig"),
 }
 
 EXPORTS: dict[str, bool] = {
