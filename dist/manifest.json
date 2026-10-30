@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-10-30 15:35:43 UTC",
+    "generated_at": "2026-10-30 21:59:32 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -52,7 +52,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 132368,
+        "domains": 132461,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 228081,
+        "domains": 233282,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6638,
+      "entries": 6637,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -211,7 +211,7 @@
       ]
     },
     "c2": {
-      "entries": 56198,
+      "entries": 56223,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -250,7 +250,7 @@
       ]
     },
     "combined": {
-      "entries": 27563,
+      "entries": 27562,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -292,7 +292,7 @@
       ]
     },
     "combined4server": {
-      "entries": 216394,
+      "entries": 216409,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -334,7 +334,7 @@
       ]
     },
     "compact": {
-      "entries": 8556,
+      "entries": 8555,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -375,7 +375,7 @@
       ]
     },
     "complete": {
-      "entries": 50695,
+      "entries": 50694,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -419,7 +419,7 @@
       ]
     },
     "goliath": {
-      "entries": 234819,
+      "entries": 235242,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
