@@ -1,6 +1,6 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
-ads | 540 | 202 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
+ads | 539 | 201 | 206ads.com, 30ads.com, 360ads.com, a-ads.com, abc-ads.com
 google | 97 | 95 | 9to5google.com, accounts.google.com, ads.google.cn, ads.google.com, adservice.google.com
 min | 69 | 2 | 20min.ch, 90min.com, ace.min.js, ad.min.js, adasync.min.js
 news | 65 | 38 | 12news.com, 1news.co.nz, 47news.jp, 9news.com, abc7news.com
@@ -57,6 +57,7 @@ download | 14 | 4 | all-free-download.com, august15download.com, bwp.download.co
 data | 14 | 4 | auto-data.net, cookieless-data.com, data-px.services, data.angel.digital, data159.click
 rakuten | 14 | 14 | ba.afl.rakuten.co.jp, edy.rakuten.co.jp, game.pointmall.rakuten.net, hb.afl.rakuten.co.jp, hbb.afl.rakuten.co.jp
 defender | 14 | 0 | bfyz-defender.pro, eldj-defender.pro, esrh-defender.pro, kfvv-defender.pro, mkcf-defender.pro
+pop | 13 | 1 | 1pop.online, pip-pip-pop.com, pop-ad.js, pop-code.js, pop.dojo.cc
 affiliates | 13 | 2 | 24affiliates.com, affiliates.allposters.com, affiliates.fantasticbet.com, affiliates.flightconnections.com, affiliates.goodvibes.com
 partners | 13 | 6 | 777-partners.com, 777-partners.net, 777partners.com, ads-partners.coupang.com, bet3000partners.com
 free | 13 | 3 | ad-free.info, all-free-download.com, allsports4free.live, allsports4free.online, download-now-button-png-free-download.png
@@ -81,7 +82,6 @@ load | 12 | 2 | css-load.com, html-load.cc, html-load.com, img-load.com, load-ad
 dood | 12 | 0 | dood.la, dood.li, dood.pm, dood.re, dood.sh
 laredoute | 12 | 5 | laredoute.be, laredoute.ch, laredoute.co.uk, laredoute.com, laredoute.de
 promo | 12 | 2 | my-promo7.com, promo-bc.com, promo-reklama.ru, promo.badoink.com, promo.blackdatehookup.com
-pop | 12 | 1 | pip-pip-pop.com, pop-ad.js, pop-code.js, pop.dojo.cc, pop.go
 link | 11 | 0 | 4link.it, link-booster.de, link-converter.js, link.365av.net, link.advancedsystemrepairpro.com
 msn | 11 | 11 | ads.eu.msn.com, ads.msn.com, ads1.msn.com, arc1.msn.com, msn.com
 advert | 11 | 0 | advert.ae, advert.bayarea.com, advert.club, advert.com.tr, advert.dyna.ultraweb.hu

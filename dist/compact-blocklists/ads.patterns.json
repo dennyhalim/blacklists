@@ -1,8 +1,8 @@
 [
   {
     "pattern": "ads",
-    "domains": 540,
-    "tranco_protected_matches": 202,
+    "domains": 539,
+    "tranco_protected_matches": 201,
     "examples": [
       "206ads.com",
       "30ads.com",
@@ -741,6 +741,19 @@
     "suggested_regex": "(^|\\.)[^.]*defender[^.]*\\."
   },
   {
+    "pattern": "pop",
+    "domains": 13,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "1pop.online",
+      "pip-pip-pop.com",
+      "pop-ad.js",
+      "pop-code.js",
+      "pop.dojo.cc"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*pop[^.]*\\."
+  },
+  {
     "pattern": "affiliates",
     "domains": 13,
     "tranco_protected_matches": 2,
@@ -1051,19 +1064,6 @@
       "promo.blackdatehookup.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*promo[^.]*\\."
-  },
-  {
-    "pattern": "pop",
-    "domains": 12,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "pip-pip-pop.com",
-      "pop-ad.js",
-      "pop-code.js",
-      "pop.dojo.cc",
-      "pop.go"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*pop[^.]*\\."
   },
   {
     "pattern": "link",
