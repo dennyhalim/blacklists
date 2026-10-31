@@ -416,6 +416,19 @@
     "suggested_regex": "(^|\\.)[^.]*mail[^.]*\\."
   },
   {
+    "pattern": "events",
+    "domains": 165,
+    "tranco_protected_matches": 87,
+    "examples": [
+      "acds-events.adobe.io",
+      "adtech-events.bookmyshow.com",
+      "analytify-events-tracking.js",
+      "bi-events-collector.spot.im",
+      "browser.events.data.microsoft.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*events[^.]*\\."
+  },
+  {
     "pattern": "get",
     "domains": 165,
     "tranco_protected_matches": 16,
@@ -427,19 +440,6 @@
       "cart-get-tokens.html"
     ],
     "suggested_regex": "(^|\\.)[^.]*get[^.]*\\."
-  },
-  {
-    "pattern": "events",
-    "domains": 164,
-    "tranco_protected_matches": 87,
-    "examples": [
-      "acds-events.adobe.io",
-      "adtech-events.bookmyshow.com",
-      "analytify-events-tracking.js",
-      "bi-events-collector.spot.im",
-      "browser.events.data.microsoft.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*events[^.]*\\."
   },
   {
     "pattern": "ssc",
