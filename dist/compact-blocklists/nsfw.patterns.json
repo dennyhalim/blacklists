@@ -53,7 +53,7 @@
   },
   {
     "pattern": "xxx",
-    "domains": 1192,
+    "domains": 1193,
     "tranco_protected_matches": 59,
     "examples": [
       "0.xxx-cdn.com",
@@ -702,6 +702,19 @@
     "suggested_regex": "(^|\\.)[^.]*ero[^.]*\\."
   },
   {
+    "pattern": "angel",
+    "domains": 114,
+    "tranco_protected_matches": 6,
+    "examples": [
+      "a-angel.skyblog.com",
+      "alison-angel-1.com",
+      "alison-angel.biz",
+      "alison-angel.org",
+      "alt-angel.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*angel[^.]*\\."
+  },
+  {
     "pattern": "viet",
     "domains": 114,
     "tranco_protected_matches": 0,
@@ -713,19 +726,6 @@
       "tuoi69.viet69.biz"
     ],
     "suggested_regex": "(^|\\.)[^.]*viet[^.]*\\."
-  },
-  {
-    "pattern": "angel",
-    "domains": 113,
-    "tranco_protected_matches": 6,
-    "examples": [
-      "a-angel.skyblog.com",
-      "alison-angel-1.com",
-      "alison-angel.biz",
-      "alison-angel.org",
-      "alt-angel.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*angel[^.]*\\."
   },
   {
     "pattern": "join",

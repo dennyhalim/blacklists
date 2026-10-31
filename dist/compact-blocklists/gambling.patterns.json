@@ -1,7 +1,7 @@
 [
   {
     "pattern": "casino",
-    "domains": 16028,
+    "domains": 16027,
     "tranco_protected_matches": 21,
     "examples": [
       "0-casino.info",
@@ -14,7 +14,7 @@
   },
   {
     "pattern": "bet",
-    "domains": 4679,
+    "domains": 4678,
     "tranco_protected_matches": 33,
     "examples": [
       "0000bet-slot.com",
@@ -27,7 +27,7 @@
   },
   {
     "pattern": "xbet",
-    "domains": 4221,
+    "domains": 4220,
     "tranco_protected_matches": 10,
     "examples": [
       "0xbet-casino-nl.top",
@@ -144,7 +144,7 @@
   },
   {
     "pattern": "jojobet",
-    "domains": 626,
+    "domains": 623,
     "tranco_protected_matches": 0,
     "examples": [
       "10029jojobet.com",
@@ -183,7 +183,7 @@
   },
   {
     "pattern": "official",
-    "domains": 521,
+    "domains": 520,
     "tranco_protected_matches": 2,
     "examples": [
       "1g1casino-official.com",
@@ -611,19 +611,6 @@
     "suggested_regex": "(^|\\.)[^.]*the[^.]*\\."
   },
   {
-    "pattern": "amp",
-    "domains": 180,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "1win-amp-1hd3.buzz",
-      "1win-amp-25.ru",
-      "1win-amp-5.top",
-      "1win-amp-6.top",
-      "1win-amp-6v6e.buzz"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*amp[^.]*\\."
-  },
-  {
     "pattern": "lucky",
     "domains": 180,
     "tranco_protected_matches": 0,
@@ -635,6 +622,19 @@
       "casino-lucky-block.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*lucky[^.]*\\."
+  },
+  {
+    "pattern": "amp",
+    "domains": 179,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "1win-amp-1hd3.buzz",
+      "1win-amp-25.ru",
+      "1win-amp-5.top",
+      "1win-amp-6.top",
+      "1win-amp-6v6e.buzz"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*amp[^.]*\\."
   },
   {
     "pattern": "spin",
