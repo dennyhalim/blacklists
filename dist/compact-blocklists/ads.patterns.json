@@ -1170,6 +1170,19 @@
     "suggested_regex": "(^|\\.)[^.]*new[^.]*\\."
   },
   {
+    "pattern": "adblock",
+    "domains": 10,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "adblock-360.com",
+      "adblock-detector.min.js",
+      "adblock-guru.com",
+      "adblock-one-protection.com",
+      "adblock-tester.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*adblock[^.]*\\."
+  },
+  {
     "pattern": "tracking",
     "domains": 10,
     "tranco_protected_matches": 0,
@@ -1285,18 +1298,5 @@
       "crpdt.livejasmin.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*livejasmin[^.]*\\."
-  },
-  {
-    "pattern": "star",
-    "domains": 10,
-    "tranco_protected_matches": 3,
-    "examples": [
-      "porn-star.com",
-      "pr-star.de",
-      "puzzle-star-battle.com",
-      "star-advertising.com",
-      "star-clicks.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*star[^.]*\\."
   }
 ]
