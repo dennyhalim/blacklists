@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield30, abuseipdbnet, lessbogons, webclient, feodo, level2, etcompromised, alienvault, threatviewc2, censys
-# Entries: 24869
+# Entries: 24867
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-combined" and comment="bl.dennyhalim.com"]
@@ -3938,7 +3938,6 @@ add list="dhbl-combined" address="43.248.108.0/24" timeout=3d comment="bl.dennyh
 add list="dhbl-combined" address="43.249.16.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="43.249.40.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="43.249.88.0/21" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-combined" address="43.249.124.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="43.250.235.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="43.251.16.209" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="43.251.93.43" timeout=3d comment="bl.dennyhalim.com"
@@ -10614,7 +10613,7 @@ add list="dhbl-combined" address="103.71.136.0/22" timeout=3d comment="bl.dennyh
 add list="dhbl-combined" address="103.71.176.25" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="103.71.176.30/31" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="103.71.176.189" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-combined" address="103.71.218.0/23" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-combined" address="103.71.219.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="103.71.244.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="103.72.147.51" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="103.72.200.0/24" timeout=3d comment="bl.dennyhalim.com"
@@ -16387,7 +16386,6 @@ add list="dhbl-combined" address="163.61.103.152" timeout=3d comment="bl.dennyha
 add list="dhbl-combined" address="163.61.160.0/26" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="163.61.160.192/26" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="163.61.161.192/26" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-combined" address="163.61.162.64/26" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="163.61.162.128/25" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="163.61.163.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-combined" address="163.61.164.0/22" timeout=3d comment="bl.dennyhalim.com"
