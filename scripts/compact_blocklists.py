@@ -27,7 +27,8 @@ SOURCES = {
     "ads": [
         ("peter-ads", "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=plain&showintro=0&notrackers=1"),
 #        ("steven-base", "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"),
-#        ("hagezi-light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/light-onlydomains.txt"),
+        ("hagezi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/ultimate-onlydomains.txt"),
+        ("oisd", "https://big.oisd.nl"),
         ("easylist", "https://easylist.to/easylist/easylist.txt"),
     ],
     "trackers": [
