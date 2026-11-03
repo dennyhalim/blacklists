@@ -17,6 +17,7 @@
 
 # Remove previous installation
 /system scheduler remove [find where name=$schedulerName]
+/tools netwatch remove [find where name=$schedulerName]
 /system script remove [find where name=$downloaderName]
 
 # Create downloader, delay waits internet on startup
@@ -65,6 +66,9 @@
     start-time=startup \
     on-event=$downloaderName \
     policy=ftp,read,write,policy,test
+
+# add netwatch
+/tool netwatch add host=1.1.1.1 interval=10s up-script="/system/script/run $schedulerName"
 
 :log info "bl.dennyhalim.com : installer completed"
 :log info ("bl.dennyhalim.com : update interval = " . $interval)
