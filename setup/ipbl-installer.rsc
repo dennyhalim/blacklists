@@ -68,7 +68,7 @@
     policy=ftp,read,write,policy,test
 
 # add netwatch
-/tool netwatch add host=1.1.1.1 interval=10s up-script="/system/script/run $schedulerName"
+/tool netwatch add name=$schedulerName host=1.1.1.1 interval=10s up-script="/system/script/run $downloaderName"
 
 :log info "bl.dennyhalim.com : installer completed"
 :log info ("bl.dennyhalim.com : update interval = " . $interval)
