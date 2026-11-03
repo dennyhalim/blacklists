@@ -17,7 +17,7 @@
 
 # Remove previous installation
 /system scheduler remove [find where name=$schedulerName]
-/tools netwatch remove [find where name=$schedulerName]
+#/tools netwatch remove [find where name=$schedulerName]
 /system script remove [find where name=$downloaderName]
 
 # Create downloader, delay waits internet on startup
