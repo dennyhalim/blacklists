@@ -72,3 +72,5 @@
 
 :log info "bl.dennyhalim.com : installer completed"
 :log info ("bl.dennyhalim.com : update interval = " . $interval)
+
+/system/script/run $downloaderName
