@@ -19,11 +19,12 @@
 /system scheduler remove [find where name=$schedulerName]
 /system script remove [find where name=$downloaderName]
 
-# Create downloader
+# Create downloader, delay waits internet on startup
 /system script add \
     name=$downloaderName \
     policy=ftp,read,write,policy,test \
     source=("
+:delay 15s
 :local url \"" . $blacklistUrl . "\"
 :local file \"" . $downloadFile . "\"
 
