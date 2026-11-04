@@ -1,5 +1,5 @@
 # Generated from: etcompromised, alienvault, threatviewc2, censys, feodo
-# Entries: 2013
+# Entries: 2015
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-baseip" and comment="bl.dennyhalim.com"]
@@ -163,6 +163,7 @@ add list="dhbl-baseip" address="23.227.204.126" timeout=3d comment="bl.dennyhali
 add list="dhbl-baseip" address="23.238.82.42" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="23.247.108.44" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="23.251.133.108" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="23.254.226.103" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="24.137.215.164" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="24.188.100.85" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="27.21.91.254" timeout=3d comment="bl.dennyhalim.com"
@@ -2010,6 +2011,7 @@ add list="dhbl-baseip" address="222.247.5.78" timeout=3d comment="bl.dennyhalim.
 add list="dhbl-baseip" address="222.253.45.141" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="222.255.214.236" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="222.255.215.42" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="222.255.215.127" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="223.68.136.206" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="223.130.31.57" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="223.149.1.211" timeout=3d comment="bl.dennyhalim.com"

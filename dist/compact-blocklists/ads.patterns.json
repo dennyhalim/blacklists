@@ -209,7 +209,7 @@
   },
   {
     "pattern": "app",
-    "domains": 1689,
+    "domains": 1684,
     "tranco_protected_matches": 406,
     "examples": [
       "001app.com",
@@ -274,7 +274,7 @@
   },
   {
     "pattern": "server",
-    "domains": 1383,
+    "domains": 1384,
     "tranco_protected_matches": 125,
     "examples": [
       "10.rallyad-server.net",
@@ -300,7 +300,7 @@
   },
   {
     "pattern": "google",
-    "domains": 979,
+    "domains": 978,
     "tranco_protected_matches": 797,
     "examples": [
       "0-09-preview-google-ads-bump.data.taxfix.tech",
@@ -456,7 +456,7 @@
   },
   {
     "pattern": "stat",
-    "domains": 643,
+    "domains": 644,
     "tranco_protected_matches": 238,
     "examples": [
       "123stat.com",
@@ -573,7 +573,7 @@
   },
   {
     "pattern": "oferta",
-    "domains": 507,
+    "domains": 509,
     "tranco_protected_matches": 0,
     "examples": [
       "8364-oferta.shop",
@@ -651,7 +651,7 @@
   },
   {
     "pattern": "service",
-    "domains": 460,
+    "domains": 461,
     "tranco_protected_matches": 195,
     "examples": [
       "360service.report360.io",
@@ -703,7 +703,7 @@
   },
   {
     "pattern": "pro",
-    "domains": 442,
+    "domains": 443,
     "tranco_protected_matches": 40,
     "examples": [
       "00pro.com",
@@ -713,6 +713,19 @@
       "acclog002.shop-pro.jp"
     ],
     "suggested_regex": "(^|\\.)[^.]*pro[^.]*\\."
+  },
+  {
+    "pattern": "allegrolokalnie",
+    "domains": 403,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "allegrolokalnie.01836431344.surf",
+      "allegrolokalnie.0873455.rest",
+      "allegrolokalnie.0oferta2937zvw993.forum",
+      "allegrolokalnie.0oferta92847zcw299.forum",
+      "allegrolokalnie.123412341543.shop"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*allegrolokalnie[^.]*\\."
   },
   {
     "pattern": "normal",
@@ -726,19 +739,6 @@
       "ads3-normal-hl.zijieapi.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*normal[^.]*\\."
-  },
-  {
-    "pattern": "allegrolokalnie",
-    "domains": 396,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "allegrolokalnie.01836431344.surf",
-      "allegrolokalnie.0873455.rest",
-      "allegrolokalnie.0oferta2937zvw993.forum",
-      "allegrolokalnie.0oferta92847zcw299.forum",
-      "allegrolokalnie.123412341543.shop"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*allegrolokalnie[^.]*\\."
   },
   {
     "pattern": "statistik",
@@ -755,7 +755,7 @@
   },
   {
     "pattern": "info",
-    "domains": 390,
+    "domains": 391,
     "tranco_protected_matches": 100,
     "examples": [
       "000-054343-info.weebly.com",
@@ -794,7 +794,7 @@
   },
   {
     "pattern": "login",
-    "domains": 381,
+    "domains": 379,
     "tranco_protected_matches": 49,
     "examples": [
       "1win-login.fr",
@@ -937,7 +937,7 @@
   },
   {
     "pattern": "click",
-    "domains": 330,
+    "domains": 329,
     "tranco_protected_matches": 61,
     "examples": [
       "1000click.ir",
@@ -989,7 +989,7 @@
   },
   {
     "pattern": "biz",
-    "domains": 307,
+    "domains": 315,
     "tranco_protected_matches": 9,
     "examples": [
       "a8.biz.ne.jp",
@@ -1025,19 +1025,6 @@
       "aan.amazon.es"
     ],
     "suggested_regex": "(^|\\.)[^.]*amazon[^.]*\\."
-  },
-  {
-    "pattern": "webcindario",
-    "domains": 296,
-    "tranco_protected_matches": 296,
-    "examples": [
-      "019201.webcindario.com",
-      "02d772vb82.webcindario.com",
-      "2025loja.webcindario.com",
-      "3exterio0r.webcindario.com",
-      "761438af.webcindario.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*webcindario[^.]*\\."
   },
   {
     "pattern": "covid",
@@ -1079,8 +1066,21 @@
     "suggested_regex": "(^|\\.)[^.]*free[^.]*\\."
   },
   {
+    "pattern": "webcindario",
+    "domains": 282,
+    "tranco_protected_matches": 282,
+    "examples": [
+      "019201.webcindario.com",
+      "02d772vb82.webcindario.com",
+      "2025loja.webcindario.com",
+      "3exterio0r.webcindario.com",
+      "761438af.webcindario.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*webcindario[^.]*\\."
+  },
+  {
     "pattern": "mail",
-    "domains": 277,
+    "domains": 275,
     "tranco_protected_matches": 102,
     "examples": [
       "010mail.com",
@@ -1093,8 +1093,8 @@
   },
   {
     "pattern": "start",
-    "domains": 274,
-    "tranco_protected_matches": 13,
+    "domains": 273,
+    "tranco_protected_matches": 12,
     "examples": [
       "0ii-meta-confirm-info.start.page",
       "11225544serviceaccountbussines.start.page",
@@ -1158,7 +1158,7 @@
   },
   {
     "pattern": "store",
-    "domains": 255,
+    "domains": 257,
     "tranco_protected_matches": 28,
     "examples": [
       "003store.com",

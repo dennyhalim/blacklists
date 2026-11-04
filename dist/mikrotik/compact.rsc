@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield30, abuseipdbnet, lessbogons, webclient, feodo, etcompromised, alienvault, threatviewc2, censys
-# Entries: 8424
+# Entries: 8426
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-compact" and comment="bl.dennyhalim.com"]
@@ -456,6 +456,7 @@ add list="dhbl-compact" address="23.248.199.10" timeout=3d comment="bl.dennyhali
 add list="dhbl-compact" address="23.248.203.82" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="23.251.133.108" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="23.251.146.115" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="23.254.226.103" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="24.137.16.0/20" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="24.137.215.164" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="24.170.208.0/20" timeout=3d comment="bl.dennyhalim.com"
@@ -8416,6 +8417,7 @@ add list="dhbl-compact" address="222.247.5.78" timeout=3d comment="bl.dennyhalim
 add list="dhbl-compact" address="222.253.45.141" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="222.255.214.236" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="222.255.215.42" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="222.255.215.127" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="223.26.48.0/20" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="223.29.226.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="223.68.136.206" timeout=3d comment="bl.dennyhalim.com"
