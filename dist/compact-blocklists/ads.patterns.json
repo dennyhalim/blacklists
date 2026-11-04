@@ -131,8 +131,8 @@
   },
   {
     "pattern": "weebly",
-    "domains": 2097,
-    "tranco_protected_matches": 2097,
+    "domains": 2099,
+    "tranco_protected_matches": 2099,
     "examples": [
       "000-054343-info.weebly.com",
       "0002985647.weebly.com",
@@ -209,7 +209,7 @@
   },
   {
     "pattern": "app",
-    "domains": 1684,
+    "domains": 1685,
     "tranco_protected_matches": 406,
     "examples": [
       "001app.com",
@@ -469,7 +469,7 @@
   },
   {
     "pattern": "web",
-    "domains": 636,
+    "domains": 637,
     "tranco_protected_matches": 199,
     "examples": [
       "0-web.com",
@@ -508,7 +508,7 @@
   },
   {
     "pattern": "shop",
-    "domains": 581,
+    "domains": 582,
     "tranco_protected_matches": 33,
     "examples": [
       "001shop.cz",
@@ -573,7 +573,7 @@
   },
   {
     "pattern": "oferta",
-    "domains": 509,
+    "domains": 508,
     "tranco_protected_matches": 0,
     "examples": [
       "8364-oferta.shop",
@@ -716,7 +716,7 @@
   },
   {
     "pattern": "allegrolokalnie",
-    "domains": 403,
+    "domains": 407,
     "tranco_protected_matches": 0,
     "examples": [
       "allegrolokalnie.01836431344.surf",
@@ -794,7 +794,7 @@
   },
   {
     "pattern": "login",
-    "domains": 379,
+    "domains": 380,
     "tranco_protected_matches": 49,
     "examples": [
       "1win-login.fr",
@@ -898,7 +898,7 @@
   },
   {
     "pattern": "digital",
-    "domains": 343,
+    "domains": 344,
     "tranco_protected_matches": 58,
     "examples": [
       "0digital1.com",
@@ -963,7 +963,7 @@
   },
   {
     "pattern": "news",
-    "domains": 326,
+    "domains": 325,
     "tranco_protected_matches": 127,
     "examples": [
       "001news.com",
@@ -1080,7 +1080,7 @@
   },
   {
     "pattern": "mail",
-    "domains": 275,
+    "domains": 276,
     "tranco_protected_matches": 102,
     "examples": [
       "010mail.com",
@@ -1105,6 +1105,19 @@
     "suggested_regex": "(^|\\.)[^.]*start[^.]*\\."
   },
   {
+    "pattern": "mobile",
+    "domains": 269,
+    "tranco_protected_matches": 150,
+    "examples": [
+      "007-mobile.org",
+      "1mobile.com",
+      "2560.fd.mobile.tv.sms13.de",
+      "ad.mobile.youku.com",
+      "adimg.mobile.sina.cn"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*mobile[^.]*\\."
+  },
+  {
     "pattern": "host",
     "domains": 269,
     "tranco_protected_matches": 18,
@@ -1116,19 +1129,6 @@
       "ad-host-backup-america.s3.us-west-1.amazonaws.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*host[^.]*\\."
-  },
-  {
-    "pattern": "mobile",
-    "domains": 268,
-    "tranco_protected_matches": 150,
-    "examples": [
-      "007-mobile.org",
-      "1mobile.com",
-      "2560.fd.mobile.tv.sms13.de",
-      "ad.mobile.youku.com",
-      "adimg.mobile.sina.cn"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*mobile[^.]*\\."
   },
   {
     "pattern": "hit",
@@ -1197,7 +1197,7 @@
   },
   {
     "pattern": "system",
-    "domains": 250,
+    "domains": 251,
     "tranco_protected_matches": 20,
     "examples": [
       "afrifundcapital-x-system.com",
