@@ -1,7 +1,7 @@
 [
   {
     "pattern": "casino",
-    "domains": 13194,
+    "domains": 13188,
     "tranco_protected_matches": 21,
     "examples": [
       "0-casino.info",
@@ -79,7 +79,7 @@
   },
   {
     "pattern": "slots",
-    "domains": 779,
+    "domains": 778,
     "tranco_protected_matches": 0,
     "examples": [
       "000slots.com",
@@ -416,19 +416,6 @@
     "suggested_regex": "(^|\\.)[^.]*login[^.]*\\."
   },
   {
-    "pattern": "lucky",
-    "domains": 171,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "1xbet-lucky-offer.com",
-      "aus-lucky-ones-casino.app",
-      "aus-lucky-ones-casino.com",
-      "aus-lucky-ones-casino.net",
-      "casino-lucky-bird.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*lucky[^.]*\\."
-  },
-  {
     "pattern": "canada",
     "domains": 169,
     "tranco_protected_matches": 0,
@@ -440,6 +427,19 @@
       "best-bitcoin-casino-canada.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*canada[^.]*\\."
+  },
+  {
+    "pattern": "lucky",
+    "domains": 168,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "1xbet-lucky-offer.com",
+      "aus-lucky-ones-casino.app",
+      "aus-lucky-ones-casino.com",
+      "aus-lucky-ones-casino.net",
+      "casino-lucky-bird.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*lucky[^.]*\\."
   },
   {
     "pattern": "betcasino",

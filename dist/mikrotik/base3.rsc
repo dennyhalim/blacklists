@@ -6322,7 +6322,7 @@ add list="dhbl-base3" address="216.25.89.0/24" timeout=3d comment="bl.dennyhalim
 add list="dhbl-base3" address="216.25.90.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="216.26.224.0/19" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="216.63.240.0/22" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-base3" address="216.73.160.0/23" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-base3" address="216.73.160.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="216.73.216.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="216.83.48.231" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="216.93.48.0/21" timeout=3d comment="bl.dennyhalim.com"
