@@ -248,7 +248,7 @@
   },
   {
     "pattern": "min",
-    "domains": 286,
+    "domains": 287,
     "tranco_protected_matches": 3,
     "examples": [
       "15min.lt",
@@ -534,14 +534,14 @@
   },
   {
     "pattern": "click",
-    "domains": 137,
+    "domains": 136,
     "tranco_protected_matches": 65,
     "examples": [
       "a8click.daini2.co.jp",
       "a8click.you-up.com",
       "a8click.young-mobile.net",
-      "click-1.pl",
-      "click-analytics.js"
+      "click-analytics.js",
+      "click-ext.anxa.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*click[^.]*\\."
   },
