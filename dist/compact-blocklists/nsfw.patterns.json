@@ -40,7 +40,7 @@
   },
   {
     "pattern": "porno",
-    "domains": 1179,
+    "domains": 1180,
     "tranco_protected_matches": 35,
     "examples": [
       "03porno.com",
@@ -533,19 +533,6 @@
     "suggested_regex": "(^|\\.)[^.]*media[^.]*\\."
   },
   {
-    "pattern": "itch",
-    "domains": 130,
-    "tranco_protected_matches": 130,
-    "examples": [
-      "adult-vr-game-room.itch.io",
-      "andehp.itch.io",
-      "aph-v.itch.io",
-      "asephy.itch.io",
-      "astrokaen.itch.io"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*itch[^.]*\\."
-  },
-  {
     "pattern": "chat",
     "domains": 128,
     "tranco_protected_matches": 17,
@@ -557,6 +544,19 @@
       "adult-video-chat.cam"
     ],
     "suggested_regex": "(^|\\.)[^.]*chat[^.]*\\."
+  },
+  {
+    "pattern": "itch",
+    "domains": 128,
+    "tranco_protected_matches": 128,
+    "examples": [
+      "adult-vr-game-room.itch.io",
+      "andehp.itch.io",
+      "aph-v.itch.io",
+      "asephy.itch.io",
+      "astrokaen.itch.io"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*itch[^.]*\\."
   },
   {
     "pattern": "asian",
@@ -1118,6 +1118,19 @@
     "suggested_regex": "(^|\\.)[^.]*chaturbate[^.]*\\."
   },
   {
+    "pattern": "escorts",
+    "domains": 90,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "007-kent-escorts.com",
+      "1-escorts.com",
+      "1escorts.club",
+      "1escorts.net",
+      "2012-london-escorts.co.uk"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*escorts[^.]*\\."
+  },
+  {
     "pattern": "prostitutki",
     "domains": 90,
     "tranco_protected_matches": 0,
@@ -1129,19 +1142,6 @@
       "prostitutki-altemevsk-sexplanet.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*prostitutki[^.]*\\."
-  },
-  {
-    "pattern": "escorts",
-    "domains": 89,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "007-kent-escorts.com",
-      "1-escorts.com",
-      "1escorts.club",
-      "1escorts.net",
-      "2012-london-escorts.co.uk"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*escorts[^.]*\\."
   },
   {
     "pattern": "pornos",
