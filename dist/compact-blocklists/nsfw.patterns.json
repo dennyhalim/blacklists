@@ -1,7 +1,7 @@
 [
   {
     "pattern": "porn",
-    "domains": 2050,
+    "domains": 2052,
     "tranco_protected_matches": 107,
     "examples": [
       "069porn.com",
@@ -14,14 +14,14 @@
   },
   {
     "pattern": "sex",
-    "domains": 1407,
+    "domains": 1418,
     "tranco_protected_matches": 67,
     "examples": [
       "021sex.net",
       "09sex.com",
       "0sex.club",
-      "118sex.com",
-      "123sex.ru"
+      "10sex.co.il",
+      "118sex.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*sex[^.]*\\."
   },
@@ -40,7 +40,7 @@
   },
   {
     "pattern": "porno",
-    "domains": 1176,
+    "domains": 1187,
     "tranco_protected_matches": 35,
     "examples": [
       "03porno.com",
@@ -53,7 +53,7 @@
   },
   {
     "pattern": "xxx",
-    "domains": 1110,
+    "domains": 1112,
     "tranco_protected_matches": 59,
     "examples": [
       "0.xxx-cdn.com",
@@ -92,7 +92,7 @@
   },
   {
     "pattern": "tube",
-    "domains": 651,
+    "domains": 654,
     "tranco_protected_matches": 56,
     "examples": [
       "001tube8.com",
@@ -118,7 +118,7 @@
   },
   {
     "pattern": "video",
-    "domains": 447,
+    "domains": 450,
     "tranco_protected_matches": 55,
     "examples": [
       "123video.nl",
@@ -131,7 +131,7 @@
   },
   {
     "pattern": "free",
-    "domains": 413,
+    "domains": 414,
     "tranco_protected_matches": 36,
     "examples": [
       "123cams4free.com",
@@ -157,7 +157,7 @@
   },
   {
     "pattern": "videos",
-    "domains": 364,
+    "domains": 366,
     "tranco_protected_matches": 24,
     "examples": [
       "1024videos.com",
@@ -183,7 +183,7 @@
   },
   {
     "pattern": "gay",
-    "domains": 298,
+    "domains": 300,
     "tranco_protected_matches": 53,
     "examples": [
       "18gay.click",
@@ -196,7 +196,7 @@
   },
   {
     "pattern": "hentai",
-    "domains": 290,
+    "domains": 291,
     "tranco_protected_matches": 33,
     "examples": [
       "101hentai.com",
@@ -209,7 +209,7 @@
   },
   {
     "pattern": "teen",
-    "domains": 282,
+    "domains": 279,
     "tranco_protected_matches": 10,
     "examples": [
       "18-sex-teen.com",
@@ -235,7 +235,7 @@
   },
   {
     "pattern": "adult",
-    "domains": 241,
+    "domains": 244,
     "tranco_protected_matches": 14,
     "examples": [
       "1adult.com",
@@ -248,7 +248,7 @@
   },
   {
     "pattern": "live",
-    "domains": 235,
+    "domains": 234,
     "tranco_protected_matches": 35,
     "examples": [
       "18live.ink",
@@ -286,21 +286,8 @@
     "suggested_regex": "(^|\\.)[^.]*girls[^.]*\\."
   },
   {
-    "pattern": "cam",
-    "domains": 222,
-    "tranco_protected_matches": 19,
-    "examples": [
-      "1cam.webcam",
-      "22cam.com",
-      "2cam.xxx",
-      "adult-cam-sites.net",
-      "angelinas-cam.de"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*cam[^.]*\\."
-  },
-  {
     "pattern": "hot",
-    "domains": 220,
+    "domains": 221,
     "tranco_protected_matches": 12,
     "examples": [
       "1.hot-dances.com",
@@ -310,6 +297,19 @@
       "adult-hot-tube.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*hot[^.]*\\."
+  },
+  {
+    "pattern": "cam",
+    "domains": 219,
+    "tranco_protected_matches": 19,
+    "examples": [
+      "1cam.webcam",
+      "22cam.com",
+      "2cam.xxx",
+      "adult-cam-sites.net",
+      "angelinas-cam.de"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*cam[^.]*\\."
   },
   {
     "pattern": "booru",
@@ -326,33 +326,33 @@
   },
   {
     "pattern": "mature",
-    "domains": 172,
+    "domains": 173,
     "tranco_protected_matches": 4,
     "examples": [
       "100mature.com",
+      "1mature.cc",
       "1mature.shop",
       "6mature9.com",
-      "99mature.com",
-      "affiliates.bizarre-mature-sex.com"
+      "99mature.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*mature[^.]*\\."
   },
   {
     "pattern": "fuck",
-    "domains": 169,
+    "domains": 170,
     "tranco_protected_matches": 1,
     "examples": [
       "18fuck.me",
+      "1fuck.cc",
       "88fuck.com",
       "911fuck.com",
-      "adult-fuck-porn.com",
-      "adult-fuck-tube.com"
+      "adult-fuck-porn.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*fuck[^.]*\\."
   },
   {
     "pattern": "jav",
-    "domains": 165,
+    "domains": 164,
     "tranco_protected_matches": 13,
     "examples": [
       "037jav.com",
@@ -429,21 +429,8 @@
     "suggested_regex": "(^|\\.)[^.]*movies[^.]*\\."
   },
   {
-    "pattern": "angels",
-    "domains": 155,
-    "tranco_protected_matches": 8,
-    "examples": [
-      "007angels.com",
-      "19angels.net",
-      "6angels.ch",
-      "abl-angels.deluxepass.com",
-      "affiliate-cash.tied-angels.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*angels[^.]*\\."
-  },
-  {
     "pattern": "sexy",
-    "domains": 155,
+    "domains": 156,
     "tranco_protected_matches": 2,
     "examples": [
       "4sexy.net",
@@ -453,6 +440,19 @@
       "bongacams-sexy.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*sexy[^.]*\\."
+  },
+  {
+    "pattern": "angels",
+    "domains": 154,
+    "tranco_protected_matches": 8,
+    "examples": [
+      "007angels.com",
+      "19angels.net",
+      "6angels.ch",
+      "abl-angels.deluxepass.com",
+      "affiliate-cash.tied-angels.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*angels[^.]*\\."
   },
   {
     "pattern": "content",
@@ -482,7 +482,7 @@
   },
   {
     "pattern": "cams",
-    "domains": 144,
+    "domains": 145,
     "tranco_protected_matches": 14,
     "examples": [
       "123cams4free.com",
@@ -508,7 +508,7 @@
   },
   {
     "pattern": "escort",
-    "domains": 140,
+    "domains": 139,
     "tranco_protected_matches": 5,
     "examples": [
       "1am-escort.com",
@@ -533,9 +533,22 @@
     "suggested_regex": "(^|\\.)[^.]*media[^.]*\\."
   },
   {
+    "pattern": "top",
+    "domains": 129,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "101top.biz",
+      "18top.link",
+      "1top.club",
+      "accompagnatrici-top.com",
+      "adult-top-vids.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*top[^.]*\\."
+  },
+  {
     "pattern": "itch",
-    "domains": 130,
-    "tranco_protected_matches": 130,
+    "domains": 129,
+    "tranco_protected_matches": 129,
     "examples": [
       "adult-vr-game-room.itch.io",
       "andehp.itch.io",
@@ -547,7 +560,7 @@
   },
   {
     "pattern": "chat",
-    "domains": 129,
+    "domains": 128,
     "tranco_protected_matches": 17,
     "examples": [
       "321chat.com",
@@ -570,19 +583,6 @@
       "asian-bdsm.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*asian[^.]*\\."
-  },
-  {
-    "pattern": "top",
-    "domains": 127,
-    "tranco_protected_matches": 2,
-    "examples": [
-      "101top.biz",
-      "18top.link",
-      "1top.club",
-      "accompagnatrici-top.com",
-      "adult-top-vids.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*top[^.]*\\."
   },
   {
     "pattern": "teens",
@@ -638,14 +638,14 @@
   },
   {
     "pattern": "pornvideos",
-    "domains": 118,
+    "domains": 119,
     "tranco_protected_matches": 0,
     "examples": [
       "18pornvideos.net",
       "18pornvideos.pro",
+      "1pornvideos.cc",
       "24pornvideos.cc",
-      "24pornvideos.com",
-      "24pornvideos.tv"
+      "24pornvideos.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*pornvideos[^.]*\\."
   },
@@ -664,7 +664,7 @@
   },
   {
     "pattern": "studentki",
-    "domains": 115,
+    "domains": 117,
     "tranco_protected_matches": 17,
     "examples": [
       "ex-studentki.cool",
@@ -715,17 +715,17 @@
     "suggested_regex": "(^|\\.)[^.]*join[^.]*\\."
   },
   {
-    "pattern": "viet",
-    "domains": 110,
-    "tranco_protected_matches": 0,
+    "pattern": "xxxvideos",
+    "domains": 109,
+    "tranco_protected_matches": 1,
     "examples": [
-      "dugai-viet.com",
-      "m.viet69.tech",
-      "phimmy18-viet.blog",
-      "sex.viet69.tech",
-      "tuoi69.viet69.biz"
+      "1xxxvideos.cc",
+      "1xxxvideos.com",
+      "6xxxvideos.com",
+      "acute-xxxvideos.com",
+      "all-xxxvideos.com"
     ],
-    "suggested_regex": "(^|\\.)[^.]*viet[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*xxxvideos[^.]*\\."
   },
   {
     "pattern": "tlsext",
@@ -741,17 +741,17 @@
     "suggested_regex": "(^|\\.)[^.]*tlsext[^.]*\\."
   },
   {
-    "pattern": "xxxvideos",
-    "domains": 108,
-    "tranco_protected_matches": 1,
+    "pattern": "viet",
+    "domains": 109,
+    "tranco_protected_matches": 0,
     "examples": [
-      "1xxxvideos.com",
-      "6xxxvideos.com",
-      "acute-xxxvideos.com",
-      "all-xxxvideos.com",
-      "asian-xxxvideos.com"
+      "dugai-viet.com",
+      "m.viet69.tech",
+      "phimmy18-viet.blog",
+      "sex.viet69.tech",
+      "tuoi69.viet69.biz"
     ],
-    "suggested_regex": "(^|\\.)[^.]*xxxvideos[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*viet[^.]*\\."
   },
   {
     "pattern": "ads",
@@ -832,21 +832,8 @@
     "suggested_regex": "(^|\\.)[^.]*thumbs[^.]*\\."
   },
   {
-    "pattern": "xxxtube",
-    "domains": 98,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "1xxxtube.com",
-      "3d-xxxtube.com",
-      "3xxxtube.cc",
-      "69xxxtube.com",
-      "7xxxtube.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*xxxtube[^.]*\\."
-  },
-  {
     "pattern": "beeg",
-    "domains": 98,
+    "domains": 99,
     "tranco_protected_matches": 9,
     "examples": [
       "2beeg.me",
@@ -859,7 +846,7 @@
   },
   {
     "pattern": "fetish",
-    "domains": 98,
+    "domains": 99,
     "tranco_protected_matches": 3,
     "examples": [
       "adult-bondage-fetish.com",
@@ -869,6 +856,19 @@
       "extreme-fetish.org"
     ],
     "suggested_regex": "(^|\\.)[^.]*fetish[^.]*\\."
+  },
+  {
+    "pattern": "amateur",
+    "domains": 98,
+    "tranco_protected_matches": 13,
+    "examples": [
+      "1liveshow-amateur.com",
+      "amateur-beauties.net",
+      "amateur-blogx.com",
+      "amateur-camsex.ch",
+      "amateur-cougar.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*amateur[^.]*\\."
   },
   {
     "pattern": "fap",
@@ -923,8 +923,34 @@
     "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
   },
   {
-    "pattern": "telefonsex",
+    "pattern": "shemale",
     "domains": 96,
+    "tranco_protected_matches": 26,
+    "examples": [
+      "10shemale.com",
+      "1shemale.cc",
+      "1shemale.com",
+      "all-shemale-video.com",
+      "amateur-shemale-porn.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*shemale[^.]*\\."
+  },
+  {
+    "pattern": "xxxtube",
+    "domains": 96,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "1xxxtube.com",
+      "3d-xxxtube.com",
+      "3xxxtube.cc",
+      "69xxxtube.com",
+      "7xxxtube.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*xxxtube[^.]*\\."
+  },
+  {
+    "pattern": "telefonsex",
+    "domains": 95,
     "tranco_protected_matches": 0,
     "examples": [
       "0900-telefonsex-sofort.com",
@@ -934,19 +960,6 @@
       "aaa-telefonsex-telefonerotik.de"
     ],
     "suggested_regex": "(^|\\.)[^.]*telefonsex[^.]*\\."
-  },
-  {
-    "pattern": "amateur",
-    "domains": 96,
-    "tranco_protected_matches": 13,
-    "examples": [
-      "1liveshow-amateur.com",
-      "amateur-beauties.net",
-      "amateur-blogx.com",
-      "amateur-camsex.ch",
-      "amateur-cougar.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*amateur[^.]*\\."
   },
   {
     "pattern": "vids",
@@ -986,19 +999,6 @@
       "clit1.sextracker.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*sextracker[^.]*\\."
-  },
-  {
-    "pattern": "shemale",
-    "domains": 94,
-    "tranco_protected_matches": 26,
-    "examples": [
-      "10shemale.com",
-      "1shemale.com",
-      "all-shemale-video.com",
-      "amateur-shemale-porn.com",
-      "ar.shemale.movie"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*shemale[^.]*\\."
   },
   {
     "pattern": "sexvideos",
@@ -1066,6 +1066,19 @@
     "suggested_regex": "(^|\\.)[^.]*mobile[^.]*\\."
   },
   {
+    "pattern": "escorts",
+    "domains": 92,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "007-kent-escorts.com",
+      "1-escorts.com",
+      "1escorts.club",
+      "1escorts.net",
+      "2012-london-escorts.co.uk"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*escorts[^.]*\\."
+  },
+  {
     "pattern": "pussy",
     "domains": 92,
     "tranco_protected_matches": 0,
@@ -1131,19 +1144,6 @@
     "suggested_regex": "(^|\\.)[^.]*prostitutki[^.]*\\."
   },
   {
-    "pattern": "escorts",
-    "domains": 89,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "007-kent-escorts.com",
-      "1-escorts.com",
-      "1escorts.club",
-      "1escorts.net",
-      "2012-london-escorts.co.uk"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*escorts[^.]*\\."
-  },
-  {
     "pattern": "pornos",
     "domains": 89,
     "tranco_protected_matches": 0,
@@ -1170,6 +1170,19 @@
     "suggested_regex": "(^|\\.)[^.]*angelfire[^.]*\\."
   },
   {
+    "pattern": "desi",
+    "domains": 89,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "cum-desi.com",
+      "desi-bhabhi-xxx.net",
+      "desi-chudai.club",
+      "desi-chudai.com",
+      "desi-college-girls.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*desi[^.]*\\."
+  },
+  {
     "pattern": "redtube",
     "domains": 89,
     "tranco_protected_matches": 15,
@@ -1181,19 +1194,6 @@
       "fr.redtube.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*redtube[^.]*\\."
-  },
-  {
-    "pattern": "desi",
-    "domains": 88,
-    "tranco_protected_matches": 2,
-    "examples": [
-      "cum-desi.com",
-      "desi-bhabhi-xxx.net",
-      "desi-chudai.club",
-      "desi-chudai.com",
-      "desi-college-girls.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*desi[^.]*\\."
   },
   {
     "pattern": "anal",
@@ -1222,6 +1222,19 @@
     "suggested_regex": "(^|\\.)[^.]*phimsex[^.]*\\."
   },
   {
+    "pattern": "bdsm",
+    "domains": 83,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "52bdsm.cfd",
+      "amateurs-bdsm.com",
+      "asian-bdsm.com",
+      "bdsm--porn.com",
+      "bdsm--sex.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*bdsm[^.]*\\."
+  },
+  {
     "pattern": "rule",
     "domains": 83,
     "tranco_protected_matches": 28,
@@ -1233,19 +1246,6 @@
       "img.rule34.xxx"
     ],
     "suggested_regex": "(^|\\.)[^.]*rule[^.]*\\."
-  },
-  {
-    "pattern": "bdsm",
-    "domains": 80,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "52bdsm.cfd",
-      "amateurs-bdsm.com",
-      "asian-bdsm.com",
-      "bdsm--porn.com",
-      "bdsm--sex.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*bdsm[^.]*\\."
   },
   {
     "pattern": "arab",

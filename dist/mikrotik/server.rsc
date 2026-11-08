@@ -1,5 +1,5 @@
 # Generated from: etblock, dshield30, abuseipdbbig, threatviewc2, censys, feodo
-# Entries: 2885
+# Entries: 2887
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-server" and comment="bl.dennyhalim.com"]
@@ -454,6 +454,7 @@ add list="dhbl-server" address="45.221.116.0/22" timeout=3d comment="bl.dennyhal
 add list="dhbl-server" address="45.227.252.253" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="45.227.253.20" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="45.227.253.132" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-server" address="45.227.254.143" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="45.230.66.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="45.235.38.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="45.248.88.0/22" timeout=3d comment="bl.dennyhalim.com"
@@ -2876,6 +2877,7 @@ add list="dhbl-server" address="220.197.85.0/24" timeout=3d comment="bl.dennyhal
 add list="dhbl-server" address="220.202.112.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="221.128.128.0/17" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="222.123.0.0/16" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-server" address="222.186.135.93" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="222.255.214.236" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="222.255.215.42" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="222.255.215.127" timeout=3d comment="bl.dennyhalim.com"
