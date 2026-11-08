@@ -66,7 +66,7 @@
   },
   {
     "pattern": "app",
-    "domains": 944,
+    "domains": 946,
     "tranco_protected_matches": 239,
     "examples": [
       "105app.com",
@@ -105,7 +105,7 @@
   },
   {
     "pattern": "tracking",
-    "domains": 813,
+    "domains": 814,
     "tranco_protected_matches": 257,
     "examples": [
       "77tracking.com",
@@ -300,8 +300,8 @@
   },
   {
     "pattern": "api",
-    "domains": 227,
-    "tranco_protected_matches": 154,
+    "domains": 228,
+    "tranco_protected_matches": 155,
     "examples": [
       "a-api.skz.dev",
       "a1.api.bbc.co.uk",
@@ -494,6 +494,19 @@
     "suggested_regex": "(^|\\.)[^.]*dii[^.]*\\."
   },
   {
+    "pattern": "engage",
+    "domains": 145,
+    "tranco_protected_matches": 30,
+    "examples": [
+      "8041691.engage.hipages.com.au",
+      "ablink.engage.hipages.com.au",
+      "ablink.engage.insighttimer.com",
+      "api-engage-us.sitecorecloud.io",
+      "avaya-engage.avaya.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*engage[^.]*\\."
+  },
+  {
     "pattern": "shop",
     "domains": 145,
     "tranco_protected_matches": 22,
@@ -505,19 +518,6 @@
       "a8.shop.nicosuma.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*shop[^.]*\\."
-  },
-  {
-    "pattern": "engage",
-    "domains": 144,
-    "tranco_protected_matches": 29,
-    "examples": [
-      "8041691.engage.hipages.com.au",
-      "ablink.engage.hipages.com.au",
-      "ablink.engage.insighttimer.com",
-      "avaya-engage.avaya.com",
-      "campaigns.engage.cebglobal.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*engage[^.]*\\."
   },
   {
     "pattern": "iberostar",
@@ -663,6 +663,19 @@
     "suggested_regex": "(^|\\.)[^.]*plausible[^.]*\\."
   },
   {
+    "pattern": "pixel",
+    "domains": 106,
+    "tranco_protected_matches": 40,
+    "examples": [
+      "0pixel.php",
+      "1pixel.php",
+      "aftership-pixel.com",
+      "cdn-channels-pixel.ex.co",
+      "cookiesync-pixel.js"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*pixel[^.]*\\."
+  },
+  {
     "pattern": "online",
     "domains": 106,
     "tranco_protected_matches": 42,
@@ -674,19 +687,6 @@
       "a8clk.waq-online.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
-  },
-  {
-    "pattern": "pixel",
-    "domains": 105,
-    "tranco_protected_matches": 40,
-    "examples": [
-      "0pixel.php",
-      "1pixel.php",
-      "aftership-pixel.com",
-      "cdn-channels-pixel.ex.co",
-      "cookiesync-pixel.js"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*pixel[^.]*\\."
   },
   {
     "pattern": "dev",
