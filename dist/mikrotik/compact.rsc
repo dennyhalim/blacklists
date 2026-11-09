@@ -1126,7 +1126,7 @@ add list="dhbl-compact" address="44.229.15.19" timeout=3d comment="bl.dennyhalim
 add list="dhbl-compact" address="44.248.196.163" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="44.251.247.18" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="45.3.62.0/24" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-compact" address="45.8.19.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-compact" address="45.8.19.79" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="45.8.158.25" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="45.9.168.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-compact" address="45.11.19.66" timeout=3d comment="bl.dennyhalim.com"

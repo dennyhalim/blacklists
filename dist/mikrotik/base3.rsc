@@ -694,7 +694,7 @@ add list="dhbl-base3" address="44.221.105.234" timeout=3d comment="bl.dennyhalim
 add list="dhbl-base3" address="44.223.116.149" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="44.223.232.55" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="45.3.62.0/24" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-base3" address="45.8.19.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-base3" address="45.8.19.79" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="45.9.168.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="45.11.76.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-base3" address="45.13.37.0/24" timeout=3d comment="bl.dennyhalim.com"
