@@ -13,7 +13,7 @@
 /ip dns static add regexp="(^|\\.)(tubi\.io|tiktok\.tps\.dv\.tech|disneyplus\.com|max\.com|paramountplus\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(amemv\.com|inkuai\.com|kwai\.com|xiaohongshu\.com|zijieapi\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(douyin\.com|samsungcloud\.tv|kwaipros\.com|tiktokrow\-cdn\.com|play\.mercadolibre\.com\.mx)$" type=NXDOMAIN comment="streaming"
-/ip dns static add regexp="(^|\\.)(mythad\.com|kslawin\.com|douyinliving\.com|pluto\.tv|ap4r\.com)$" type=NXDOMAIN comment="streaming"
+/ip dns static add regexp="(^|\\.)(mythad\.com|douyinliving\.com|kslawin\.com|pluto\.tv|ap4r\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(douyinvod\.com|adaether\.com|aiv\-delivery\.net|indazn\.com|plex\.tv)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(discomax\.com|peacocktv\.com|yximgs\.com|mydramawave\.com|hbomax\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(crunchyroll\.com|xxpkg\.com|rumble\.com|snssdk\.com|vimeocdn\.com)$" type=NXDOMAIN comment="streaming"
