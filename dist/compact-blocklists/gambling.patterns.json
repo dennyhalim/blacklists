@@ -1,7 +1,7 @@
 [
   {
     "pattern": "casino",
-    "domains": 6204,
+    "domains": 6206,
     "tranco_protected_matches": 20,
     "examples": [
       "0-online-casino.us",
@@ -40,7 +40,7 @@
   },
   {
     "pattern": "win",
-    "domains": 1208,
+    "domains": 1206,
     "tranco_protected_matches": 12,
     "examples": [
       "001win8.com",
@@ -144,7 +144,7 @@
   },
   {
     "pattern": "play",
-    "domains": 256,
+    "domains": 257,
     "tranco_protected_matches": 1,
     "examples": [
       "168play.games",
@@ -416,19 +416,6 @@
     "suggested_regex": "(^|\\.)[^.]*site[^.]*\\."
   },
   {
-    "pattern": "ufabet",
-    "domains": 100,
-    "tranco_protected_matches": 2,
-    "examples": [
-      "1-ufabet.life",
-      "19ufabet.top",
-      "1ufabet-th.store",
-      "1ufabet.co",
-      "1ufabet.space"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*ufabet[^.]*\\."
-  },
-  {
     "pattern": "login",
     "domains": 100,
     "tranco_protected_matches": 0,
@@ -440,6 +427,19 @@
       "365-casino-login.cfd"
     ],
     "suggested_regex": "(^|\\.)[^.]*login[^.]*\\."
+  },
+  {
+    "pattern": "ufabet",
+    "domains": 99,
+    "tranco_protected_matches": 2,
+    "examples": [
+      "1-ufabet.life",
+      "19ufabet.top",
+      "1ufabet-th.store",
+      "1ufabet.co",
+      "1ufabet.space"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*ufabet[^.]*\\."
   },
   {
     "pattern": "leonbets",
@@ -533,19 +533,6 @@
     "suggested_regex": "(^|\\.)[^.]*vhod[^.]*\\."
   },
   {
-    "pattern": "jojobet",
-    "domains": 73,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "10049jojobet.com",
-      "jojobet-10127.com",
-      "jojobet-ca-official.com",
-      "jojobet-casino.net",
-      "jojobet-casino.org"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*jojobet[^.]*\\."
-  },
-  {
     "pattern": "oficial",
     "domains": 72,
     "tranco_protected_matches": 0,
@@ -557,6 +544,19 @@
       "735bet-oficial.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*oficial[^.]*\\."
+  },
+  {
+    "pattern": "jojobet",
+    "domains": 70,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "10049jojobet.com",
+      "jojobet-10127.com",
+      "jojobet-ca-official.com",
+      "jojobet-casino.net",
+      "jojobet-casino.org"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*jojobet[^.]*\\."
   },
   {
     "pattern": "apk",
