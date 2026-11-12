@@ -15,7 +15,7 @@
   {
     "pattern": "smetrics",
     "domains": 2943,
-    "tranco_protected_matches": 914,
+    "tranco_protected_matches": 918,
     "examples": [
       "a.smetrics.sovereign.com",
       "al-smetrics.vizio.com",
@@ -41,7 +41,7 @@
   {
     "pattern": "metrics",
     "domains": 1431,
-    "tranco_protected_matches": 718,
+    "tranco_protected_matches": 720,
     "examples": [
       "aa-metrics.aircard.jp",
       "aa-metrics.airpayment.jp",
@@ -54,7 +54,7 @@
   {
     "pattern": "info",
     "domains": 1015,
-    "tranco_protected_matches": 155,
+    "tranco_protected_matches": 158,
     "examples": [
       "10298198.info.sofi.org",
       "a8clk.info2.sunbridge.com",
@@ -67,7 +67,7 @@
   {
     "pattern": "app",
     "domains": 951,
-    "tranco_protected_matches": 240,
+    "tranco_protected_matches": 242,
     "examples": [
       "105app.com",
       "21udflra4wd.app-dev.cainthus.com",
@@ -93,7 +93,7 @@
   {
     "pattern": "analytics",
     "domains": 848,
-    "tranco_protected_matches": 298,
+    "tranco_protected_matches": 300,
     "examples": [
       "a8c-analytics.js",
       "adb-analytics.live-now.com",
@@ -106,7 +106,7 @@
   {
     "pattern": "tracking",
     "domains": 814,
-    "tranco_protected_matches": 255,
+    "tranco_protected_matches": 254,
     "examples": [
       "77tracking.com",
       "a4b-tracking.com",
@@ -132,7 +132,7 @@
   {
     "pattern": "data",
     "domains": 570,
-    "tranco_protected_matches": 328,
+    "tranco_protected_matches": 329,
     "examples": [
       "analytics-data-collector.js",
       "analytics-data-collector.min.js",
@@ -275,7 +275,7 @@
   {
     "pattern": "target",
     "domains": 254,
-    "tranco_protected_matches": 123,
+    "tranco_protected_matches": 124,
     "examples": [
       "aec-target.base.be",
       "aec-target.telenet.be",
@@ -300,7 +300,7 @@
   },
   {
     "pattern": "api",
-    "domains": 228,
+    "domains": 227,
     "tranco_protected_matches": 155,
     "examples": [
       "a-api.skz.dev",
@@ -444,7 +444,7 @@
   {
     "pattern": "ssc",
     "domains": 164,
-    "tranco_protected_matches": 27,
+    "tranco_protected_matches": 28,
     "examples": [
       "ssc.alhurra.com",
       "ssc.amerikaninsesi.org",
@@ -535,7 +535,7 @@
   {
     "pattern": "click",
     "domains": 138,
-    "tranco_protected_matches": 65,
+    "tranco_protected_matches": 66,
     "examples": [
       "a8click.aw-anotherworks.com",
       "a8click.daini2.co.jp",
@@ -561,7 +561,7 @@
   {
     "pattern": "axp",
     "domains": 124,
-    "tranco_protected_matches": 66,
+    "tranco_protected_matches": 67,
     "examples": [
       "axp.8newsnow.com",
       "axp.abc27.com",
@@ -574,7 +574,7 @@
   {
     "pattern": "somni",
     "domains": 118,
-    "tranco_protected_matches": 48,
+    "tranco_protected_matches": 49,
     "examples": [
       "somni.accenture.com",
       "somni.alaskaair.com",
@@ -613,7 +613,7 @@
   {
     "pattern": "response",
     "domains": 114,
-    "tranco_protected_matches": 38,
+    "tranco_protected_matches": 39,
     "examples": [
       "app.payments-response.americanexpress.co.uk",
       "app.response.adobesystemsinc.com",
@@ -626,7 +626,7 @@
   {
     "pattern": "share",
     "domains": 112,
-    "tranco_protected_matches": 9,
+    "tranco_protected_matches": 10,
     "examples": [
       "dev-share.beaconlearningapp.com",
       "dev-share.haloedapp.com",
@@ -665,7 +665,7 @@
   {
     "pattern": "pixel",
     "domains": 108,
-    "tranco_protected_matches": 41,
+    "tranco_protected_matches": 43,
     "examples": [
       "0pixel.php",
       "1pixel.php",
@@ -1094,7 +1094,7 @@
   {
     "pattern": "global",
     "domains": 66,
-    "tranco_protected_matches": 30,
+    "tranco_protected_matches": 31,
     "examples": [
       "a8.global-mobility-service.com",
       "a8clk.global-crown.com",
@@ -1172,7 +1172,7 @@
   {
     "pattern": "learn",
     "domains": 59,
-    "tranco_protected_matches": 12,
+    "tranco_protected_matches": 13,
     "examples": [
       "app.learn.datafoundry.com",
       "app.learn.ioninteractive.com",
@@ -1248,19 +1248,6 @@
     "suggested_regex": "(^|\\.)[^.]*dyson[^.]*\\."
   },
   {
-    "pattern": "total",
-    "domains": 56,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "adminspace.carte-gr.total.fr",
-      "af.total-marriage.com",
-      "appinfosoryz.carte-gr.total.fr",
-      "appsecurezomation.carte-gr.total.fr",
-      "art.carte-gr.total.fr"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
-  },
-  {
     "pattern": "carte",
     "domains": 56,
     "tranco_protected_matches": 1,
@@ -1272,6 +1259,19 @@
       "auth.carte-gr.total.fr"
     ],
     "suggested_regex": "(^|\\.)[^.]*carte[^.]*\\."
+  },
+  {
+    "pattern": "total",
+    "domains": 56,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "adminspace.carte-gr.total.fr",
+      "af.total-marriage.com",
+      "appinfosoryz.carte-gr.total.fr",
+      "appsecurezomation.carte-gr.total.fr",
+      "art.carte-gr.total.fr"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
   },
   {
     "pattern": "insights",

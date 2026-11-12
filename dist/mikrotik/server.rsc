@@ -1,5 +1,5 @@
 # Generated from: etblock, dshield30, abuseipdbbig, threatviewc2, censys, feodo
-# Entries: 2906
+# Entries: 2911
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-server" and comment="bl.dennyhalim.com"]
@@ -644,6 +644,7 @@ add list="dhbl-server" address="69.165.0.0/20" timeout=3d comment="bl.dennyhalim
 add list="dhbl-server" address="70.34.196.238" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="71.6.233.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="72.146.31.117" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-server" address="72.255.3.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="72.255.18.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="72.255.26.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="72.255.32.0/23" timeout=3d comment="bl.dennyhalim.com"
@@ -1151,7 +1152,7 @@ add list="dhbl-server" address="103.253.216.0/22" timeout=3d comment="bl.dennyha
 add list="dhbl-server" address="103.254.108.0/22" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="104.21.54.192" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="104.28.155.0/24" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-server" address="104.28.156.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-server" address="104.28.156.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="104.28.159.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="104.28.161.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="104.28.162.0/23" timeout=3d comment="bl.dennyhalim.com"
@@ -1245,6 +1246,7 @@ add list="dhbl-server" address="111.92.243.40" timeout=3d comment="bl.dennyhalim
 add list="dhbl-server" address="111.92.243.236" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="111.170.148.141" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="111.223.244.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-server" address="111.225.149.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="111.225.214.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="111.228.5.127" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="111.228.55.96" timeout=3d comment="bl.dennyhalim.com"
@@ -1872,7 +1874,7 @@ add list="dhbl-server" address="172.93.193.34" timeout=3d comment="bl.dennyhalim
 add list="dhbl-server" address="172.93.193.238" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="172.94.0.0/17" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="172.96.189.218" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-server" address="172.98.33.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-server" address="172.98.32.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="172.104.232.196" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="172.105.27.61" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="172.105.147.0/24" timeout=3d comment="bl.dennyhalim.com"
@@ -1898,6 +1900,7 @@ add list="dhbl-server" address="175.41.16.98" timeout=3d comment="bl.dennyhalim.
 add list="dhbl-server" address="175.41.21.29" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="175.103.64.0/18" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="175.107.205.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-server" address="175.107.208.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="175.107.228.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="175.107.233.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="175.178.126.48" timeout=3d comment="bl.dennyhalim.com"
@@ -2085,6 +2088,7 @@ add list="dhbl-server" address="185.255.192.0/22" timeout=3d comment="bl.dennyha
 add list="dhbl-server" address="186.19.123.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="186.22.16.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="186.22.62.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-server" address="186.22.238.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="186.22.253.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="186.65.112.0/20" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="186.158.120.0/24" timeout=3d comment="bl.dennyhalim.com"
@@ -2257,6 +2261,7 @@ add list="dhbl-server" address="194.39.227.0/24" timeout=3d comment="bl.dennyhal
 add list="dhbl-server" address="194.41.60.0/23" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="194.44.26.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="194.44.50.0/24" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-server" address="194.44.56.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="194.50.153.12" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="194.50.153.19" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-server" address="194.50.153.20" timeout=3d comment="bl.dennyhalim.com"
