@@ -27,7 +27,7 @@
   },
   {
     "pattern": "marketing",
-    "domains": 1619,
+    "domains": 1620,
     "tranco_protected_matches": 121,
     "examples": [
       "5363316.marketing.numi.com",
@@ -66,8 +66,8 @@
   },
   {
     "pattern": "app",
-    "domains": 949,
-    "tranco_protected_matches": 239,
+    "domains": 951,
+    "tranco_protected_matches": 240,
     "examples": [
       "105app.com",
       "21udflra4wd.app-dev.cainthus.com",
@@ -105,7 +105,7 @@
   },
   {
     "pattern": "tracking",
-    "domains": 815,
+    "domains": 814,
     "tranco_protected_matches": 255,
     "examples": [
       "77tracking.com",
@@ -118,14 +118,14 @@
   },
   {
     "pattern": "link",
-    "domains": 725,
+    "domains": 723,
     "tranco_protected_matches": 105,
     "examples": [
       "a8.kizuna-link.jp",
-      "a8.shop.km-link.jp",
       "a8cv.global-link-seminar.com",
-      "a8cv.jbl-link.com",
-      "acc-link-ccontact.focuscura.com"
+      "acc-link-ccontact.focuscura.com",
+      "ajax-link-tracker.js",
+      "app-link-test.inkl.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*link[^.]*\\."
   },
@@ -209,13 +209,13 @@
   },
   {
     "pattern": "clk",
-    "domains": 355,
-    "tranco_protected_matches": 45,
+    "domains": 352,
+    "tranco_protected_matches": 43,
     "examples": [
       "a8clk.011330.jp",
+      "a8clk.17skin.jp",
       "a8clk.1osechi.com",
       "a8clk.292957.jp",
-      "a8clk.9factor.com",
       "a8clk.account.matsui.co.jp"
     ],
     "suggested_regex": "(^|\\.)[^.]*clk[^.]*\\."
@@ -235,14 +235,14 @@
   },
   {
     "pattern": "track",
-    "domains": 322,
+    "domains": 326,
     "tranco_protected_matches": 105,
     "examples": [
       "17track.net",
       "a8.track.entry.dokoyorimo.com",
-      "a8track.aidmybank.com",
       "a8track.bizdigi.jp",
-      "a8track.speakbuddy-personalcoaching.com"
+      "a8track.boost-station.jp",
+      "a8track.spartabuddy.jp"
     ],
     "suggested_regex": "(^|\\.)[^.]*track[^.]*\\."
   },
@@ -273,19 +273,6 @@
     "suggested_regex": "(^|\\.)[^.]*links[^.]*\\."
   },
   {
-    "pattern": "web",
-    "domains": 254,
-    "tranco_protected_matches": 54,
-    "examples": [
-      "a8.web-hikari.net",
-      "a8clk.web-camp.io",
-      "a8cv.web-planners.net",
-      "absys.web.de",
-      "adebis.thd-web.jp"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*web[^.]*\\."
-  },
-  {
     "pattern": "target",
     "domains": 254,
     "tranco_protected_matches": 123,
@@ -297,6 +284,19 @@
       "dm-target.fishersci.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*target[^.]*\\."
+  },
+  {
+    "pattern": "web",
+    "domains": 251,
+    "tranco_protected_matches": 54,
+    "examples": [
+      "a8.web-hikari.net",
+      "a8clk.web-camp.io",
+      "a8cv.web-planners.net",
+      "absys.web.de",
+      "adebis.thd-web.jp"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*web[^.]*\\."
   },
   {
     "pattern": "api",
@@ -325,6 +325,19 @@
     "suggested_regex": "(^|\\.)[^.]*sstats[^.]*\\."
   },
   {
+    "pattern": "test",
+    "domains": 198,
+    "tranco_protected_matches": 35,
+    "examples": [
+      "2e718yf5jypb.test.digitalsurge.io",
+      "9735476.test.skyscanner.net",
+      "a8clk.test.coreda.jp",
+      "ablink.test.iheart.com",
+      "ablink.test.kfc.com.au"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*test[^.]*\\."
+  },
+  {
     "pattern": "branch",
     "domains": 197,
     "tranco_protected_matches": 22,
@@ -336,19 +349,6 @@
       "app-branch.yummybazaar-qa.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*branch[^.]*\\."
-  },
-  {
-    "pattern": "test",
-    "domains": 196,
-    "tranco_protected_matches": 35,
-    "examples": [
-      "2e718yf5jypb.test.digitalsurge.io",
-      "9735476.test.skyscanner.net",
-      "ablink.test.iheart.com",
-      "ablink.test.kfc.com.au",
-      "ablink.test.skyscanner.net"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*test[^.]*\\."
   },
   {
     "pattern": "espmp",
@@ -378,14 +378,14 @@
   },
   {
     "pattern": "connect",
-    "domains": 175,
+    "domains": 174,
     "tranco_protected_matches": 63,
     "examples": [
-      "a8.hoken-connect.com",
       "app.connect.cch.ca",
       "app.connect.mandiant.com",
       "app.connect.synopsys.com",
-      "app.connect.vmware.com"
+      "app.connect.vmware.com",
+      "app.connect.wgbh.org"
     ],
     "suggested_regex": "(^|\\.)[^.]*connect[^.]*\\."
   },
@@ -404,14 +404,14 @@
   },
   {
     "pattern": "mail",
-    "domains": 167,
+    "domains": 166,
     "tranco_protected_matches": 51,
     "examples": [
       "1l-hit.mail.ru",
-      "a8.ama-mail.jp",
       "a8.hana-mail.jp",
       "ablink.mail.activearcade.ai",
-      "ablink.mail.adobespark.com"
+      "ablink.mail.adobespark.com",
+      "ablink.mail.flipfit.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*mail[^.]*\\."
   },
@@ -494,6 +494,19 @@
     "suggested_regex": "(^|\\.)[^.]*dii[^.]*\\."
   },
   {
+    "pattern": "shop",
+    "domains": 146,
+    "tranco_protected_matches": 22,
+    "examples": [
+      "a8.arrrt-shop.com",
+      "a8.l-co-shop.jp",
+      "a8.shop-jp.technogelworld.com",
+      "a8.shop.basefood.co.jp",
+      "a8.shop.dreammug.co.jp"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*shop[^.]*\\."
+  },
+  {
     "pattern": "engage",
     "domains": 145,
     "tranco_protected_matches": 29,
@@ -505,19 +518,6 @@
       "avaya-engage.avaya.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*engage[^.]*\\."
-  },
-  {
-    "pattern": "shop",
-    "domains": 145,
-    "tranco_protected_matches": 22,
-    "examples": [
-      "a8.arrrt-shop.com",
-      "a8.l-co-shop.jp",
-      "a8.shop.basefood.co.jp",
-      "a8.shop.km-link.jp",
-      "a8.shop.nicosuma.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*shop[^.]*\\."
   },
   {
     "pattern": "iberostar",
@@ -534,14 +534,14 @@
   },
   {
     "pattern": "click",
-    "domains": 136,
+    "domains": 138,
     "tranco_protected_matches": 65,
     "examples": [
+      "a8click.aw-anotherworks.com",
       "a8click.daini2.co.jp",
+      "a8click.uzuz.jp",
       "a8click.you-up.com",
-      "a8click.young-mobile.net",
-      "click-analytics.js",
-      "click-ext.anxa.com"
+      "a8click.young-mobile.net"
     ],
     "suggested_regex": "(^|\\.)[^.]*click[^.]*\\."
   },
@@ -664,7 +664,7 @@
   },
   {
     "pattern": "pixel",
-    "domains": 107,
+    "domains": 108,
     "tranco_protected_matches": 41,
     "examples": [
       "0pixel.php",
@@ -677,14 +677,14 @@
   },
   {
     "pattern": "online",
-    "domains": 106,
+    "domains": 107,
     "tranco_protected_matches": 42,
     "examples": [
       "a8.cypris-online.jp",
       "a8.geo-online.co.jp",
+      "a8.online-yomikakisoroban.com",
       "a8clk.olulu-online.jp",
-      "a8clk.rental.geo-online.co.jp",
-      "a8clk.waq-online.com"
+      "a8clk.rental.geo-online.co.jp"
     ],
     "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
   },
@@ -702,6 +702,19 @@
     "suggested_regex": "(^|\\.)[^.]*dev[^.]*\\."
   },
   {
+    "pattern": "ssl",
+    "domains": 105,
+    "tranco_protected_matches": 44,
+    "examples": [
+      "4e4356b68404a5138d2d-33393516977f9ca8dc54af2141da2a28.ssl.cf1.rackcdn.com",
+      "a8.ssl.aispr.jp",
+      "a8cv.ssl24.net",
+      "adobe.com.ssl.d1.sc.omtrdc.net",
+      "afi.ssl.gmobb.jp"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*ssl[^.]*\\."
+  },
+  {
     "pattern": "business",
     "domains": 105,
     "tranco_protected_matches": 52,
@@ -713,19 +726,6 @@
       "business-decision.actonservice.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*business[^.]*\\."
-  },
-  {
-    "pattern": "ssl",
-    "domains": 104,
-    "tranco_protected_matches": 44,
-    "examples": [
-      "4e4356b68404a5138d2d-33393516977f9ca8dc54af2141da2a28.ssl.cf1.rackcdn.com",
-      "a8.ssl.aispr.jp",
-      "adobe.com.ssl.d1.sc.omtrdc.net",
-      "afi.ssl.gmobb.jp",
-      "analytics-ssl.allconnect.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*ssl[^.]*\\."
   },
   {
     "pattern": "counter",
@@ -885,14 +885,14 @@
   },
   {
     "pattern": "asp",
-    "domains": 84,
+    "domains": 82,
     "tranco_protected_matches": 2,
     "examples": [
       "a8clk.asp.jcity.co.jp",
-      "asp.glasspp119.jp",
-      "asp.hachipp119.com",
-      "asp.taishokunext.com",
-      "data.asp.coca-cola.com"
+      "a8cv.air-mobareco-asp.jp",
+      "data.asp.coca-cola.com",
+      "elaine-asp.de",
+      "stats.asp24.pl"
     ],
     "suggested_regex": "(^|\\.)[^.]*asp[^.]*\\."
   },
@@ -1053,6 +1053,19 @@
     "suggested_regex": "(^|\\.)[^.]*openapp[^.]*\\."
   },
   {
+    "pattern": "staging",
+    "domains": 67,
+    "tranco_protected_matches": 16,
+    "examples": [
+      "1k5vz1ejbcx.staging.probemas.com",
+      "a8trck.staging-meguru.helloactivity.com",
+      "ablink.staging-e.klarna.com",
+      "ablinks-staging.email.tispr.com",
+      "ac9kpxbans1l.staging.unstoppabledomains.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*staging[^.]*\\."
+  },
+  {
     "pattern": "smetric",
     "domains": 67,
     "tranco_protected_matches": 26,
@@ -1064,19 +1077,6 @@
       "smetric.baylorhealth.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*smetric[^.]*\\."
-  },
-  {
-    "pattern": "staging",
-    "domains": 66,
-    "tranco_protected_matches": 16,
-    "examples": [
-      "1k5vz1ejbcx.staging.probemas.com",
-      "ablink.staging-e.klarna.com",
-      "ablinks-staging.email.tispr.com",
-      "ac9kpxbans1l.staging.unstoppabledomains.com",
-      "api-staging.sitelytics.tech"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*staging[^.]*\\."
   },
   {
     "pattern": "tag",
@@ -1132,16 +1132,29 @@
   },
   {
     "pattern": "mobile",
-    "domains": 64,
+    "domains": 65,
     "tranco_protected_matches": 44,
     "examples": [
+      "a8.next-mobile.jp",
       "a8click.young-mobile.net",
       "a8clk.mobile-norikae.com",
       "analytics.mobile.yandex.net",
-      "configurator.ecom-mobile-samsung.com",
-      "cqishr.mobile.de"
+      "configurator.ecom-mobile-samsung.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*mobile[^.]*\\."
+  },
+  {
+    "pattern": "cloud",
+    "domains": 60,
+    "tranco_protected_matches": 30,
+    "examples": [
+      "a8.01cloud.jp",
+      "a8cv.cloud-wi-fi.jp",
+      "a8cv.cx-cloud.jp",
+      "adstrategy-elb.go2cloud.org",
+      "alchemist.go2cloud.org"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*cloud[^.]*\\."
   },
   {
     "pattern": "nifr",
@@ -1155,19 +1168,6 @@
       "tr.asp00ah.espmp-nifr.net"
     ],
     "suggested_regex": "(^|\\.)[^.]*nifr[^.]*\\."
-  },
-  {
-    "pattern": "cloud",
-    "domains": 59,
-    "tranco_protected_matches": 30,
-    "examples": [
-      "a8.01cloud.jp",
-      "a8cv.cloud-wi-fi.jp",
-      "adstrategy-elb.go2cloud.org",
-      "alchemist.go2cloud.org",
-      "alias.cloud-marketing.dimensiondata.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*cloud[^.]*\\."
   },
   {
     "pattern": "learn",
@@ -1248,6 +1248,19 @@
     "suggested_regex": "(^|\\.)[^.]*dyson[^.]*\\."
   },
   {
+    "pattern": "total",
+    "domains": 56,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "adminspace.carte-gr.total.fr",
+      "af.total-marriage.com",
+      "appinfosoryz.carte-gr.total.fr",
+      "appsecurezomation.carte-gr.total.fr",
+      "art.carte-gr.total.fr"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
+  },
+  {
     "pattern": "carte",
     "domains": 56,
     "tranco_protected_matches": 1,
@@ -1285,18 +1298,5 @@
       "sxjfhh.citizen-times.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*sxjfhh[^.]*\\."
-  },
-  {
-    "pattern": "prod",
-    "domains": 55,
-    "tranco_protected_matches": 28,
-    "examples": [
-      "ablinkclicktest.prod.aws.skyscnr.com",
-      "analysis.prod.joyfru.jiji.com",
-      "analytics-prod-alb-292764149.us-west-2.elb.amazonaws.com",
-      "analytics-prod.js",
-      "analytics-prod2.glance-internal.inmobi.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*prod[^.]*\\."
   }
 ]
