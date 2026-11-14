@@ -1,5 +1,5 @@
 # Generated from: etcompromised, alienvault, threatviewc2, censys, feodo
-# Entries: 2072
+# Entries: 2075
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-baseip" and comment="bl.dennyhalim.com"]
@@ -511,6 +511,7 @@ add list="dhbl-baseip" address="45.203.220.220" timeout=3d comment="bl.dennyhali
 add list="dhbl-baseip" address="45.204.216.24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="45.207.8.36" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="45.207.208.51" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="45.207.222.145" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="45.227.252.253" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="45.227.253.20" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="45.227.253.132" timeout=3d comment="bl.dennyhalim.com"
@@ -809,6 +810,7 @@ add list="dhbl-baseip" address="81.250.169.249" timeout=3d comment="bl.dennyhali
 add list="dhbl-baseip" address="82.156.2.25" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="82.156.156.160" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="82.156.186.185" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="82.156.197.147" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="82.156.219.31" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="82.156.241.148" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="82.157.149.194" timeout=3d comment="bl.dennyhalim.com"
@@ -1754,6 +1756,7 @@ add list="dhbl-baseip" address="176.120.22.61" timeout=3d comment="bl.dennyhalim
 add list="dhbl-baseip" address="176.121.48.1" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="176.121.49.1" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="176.121.49.225" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="176.121.50.1" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="176.121.51.1" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="176.121.62.10" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="176.221.206.115" timeout=3d comment="bl.dennyhalim.com"

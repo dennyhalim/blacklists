@@ -92,8 +92,8 @@
   },
   {
     "pattern": "analytics",
-    "domains": 848,
-    "tranco_protected_matches": 299,
+    "domains": 851,
+    "tranco_protected_matches": 300,
     "examples": [
       "a8c-analytics.js",
       "adb-analytics.live-now.com",
@@ -300,7 +300,7 @@
   },
   {
     "pattern": "api",
-    "domains": 227,
+    "domains": 228,
     "tranco_protected_matches": 155,
     "examples": [
       "a-api.skz.dev",
@@ -417,8 +417,8 @@
   },
   {
     "pattern": "events",
-    "domains": 165,
-    "tranco_protected_matches": 86,
+    "domains": 166,
+    "tranco_protected_matches": 87,
     "examples": [
       "acds-events.adobe.io",
       "adtech-events.bookmyshow.com",
@@ -1066,6 +1066,19 @@
     "suggested_regex": "(^|\\.)[^.]*staging[^.]*\\."
   },
   {
+    "pattern": "tag",
+    "domains": 67,
+    "tranco_protected_matches": 24,
+    "examples": [
+      "360tag.net",
+      "a8tag.emprorm.com",
+      "a8tag.suplinx.com",
+      "aim-tag.hcn.health",
+      "angular-tag.js"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*tag[^.]*\\."
+  },
+  {
     "pattern": "smetric",
     "domains": 67,
     "tranco_protected_matches": 26,
@@ -1077,19 +1090,6 @@
       "smetric.baylorhealth.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*smetric[^.]*\\."
-  },
-  {
-    "pattern": "tag",
-    "domains": 66,
-    "tranco_protected_matches": 24,
-    "examples": [
-      "360tag.net",
-      "a8tag.emprorm.com",
-      "a8tag.suplinx.com",
-      "aim-tag.hcn.health",
-      "angular-tag.js"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*tag[^.]*\\."
   },
   {
     "pattern": "global",
