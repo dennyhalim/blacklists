@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-11-14 15:36:24 UTC",
+    "generated_at": "2026-11-14 22:01:20 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -52,7 +52,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 133085,
+        "domains": 132614,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 496857,
+        "domains": 499913,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -139,7 +139,7 @@
   },
   "lists": {
     "base3": {
-      "entries": 6128,
+      "entries": 6082,
       "files": {
         "bat": [
           "dist/windows/base3.bat"
@@ -211,7 +211,7 @@
       ]
     },
     "c2": {
-      "entries": 54926,
+      "entries": 54930,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -250,7 +250,7 @@
       ]
     },
     "combined": {
-      "entries": 22924,
+      "entries": 22878,
       "files": {
         "bat": [
           "dist/windows/combined.bat"
@@ -292,7 +292,7 @@
       ]
     },
     "combined4server": {
-      "entries": 208750,
+      "entries": 208778,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -334,7 +334,7 @@
       ]
     },
     "compact": {
-      "entries": 8130,
+      "entries": 8084,
       "files": {
         "bat": [
           "dist/windows/compact.bat"
@@ -375,7 +375,7 @@
       ]
     },
     "complete": {
-      "entries": 46306,
+      "entries": 46260,
       "files": {
         "bat": [
           "dist/windows/complete.bat"
@@ -419,7 +419,7 @@
       ]
     },
     "goliath": {
-      "entries": 234254,
+      "entries": 234729,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -459,7 +459,7 @@
       ]
     },
     "server": {
-      "entries": 2907,
+      "entries": 2909,
       "files": {
         "bat": [
           "dist/windows/server.bat"

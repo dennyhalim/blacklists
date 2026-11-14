@@ -61,6 +61,17 @@
     "suggested_regex": "(^|\\.)[^.]*amazon[^.]*\\."
   },
   {
+    "pattern": "tiktok",
+    "domains": 3,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "connect.tiktok-minis.com",
+      "tiktok.com",
+      "tiktok.tps.dv.tech"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*tiktok[^.]*\\."
+  },
+  {
     "pattern": "hls",
     "domains": 3,
     "tranco_protected_matches": 3,
