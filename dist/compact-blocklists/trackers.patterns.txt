@@ -1,13 +1,13 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
 actonservice | 2973 | 2973 | 12build.actonservice.com, 23andme.actonservice.com, 3mark.actonservice.com, 3plworldwide.actonservice.com, a10053.actonservice.com
-smetrics | 2943 | 921 | a.smetrics.sovereign.com, al-smetrics.vizio.com, origin-smetrics.go365.com, sit-smetrics.nab.com.au, smetrics-cns.panasonic.com
-marketing | 1620 | 122 | 5363316.marketing.numi.com, aad-marketing.ascendeventmedia.com, ablink.marketing.adobemailing.com, ablink.marketing.li.me, ablink.marketing.max.com
+smetrics | 2943 | 924 | a.smetrics.sovereign.com, al-smetrics.vizio.com, origin-smetrics.go365.com, sit-smetrics.nab.com.au, smetrics-cns.panasonic.com
+marketing | 1620 | 123 | 5363316.marketing.numi.com, aad-marketing.ascendeventmedia.com, ablink.marketing.adobemailing.com, ablink.marketing.li.me, ablink.marketing.max.com
 metrics | 1431 | 723 | aa-metrics.aircard.jp, aa-metrics.airpayment.jp, aa-metrics.airregi.jp, aa-metrics.airreserve.net, aa-metrics.airrsv.net
 info | 1015 | 161 | 10298198.info.sofi.org, a8clk.info2.sunbridge.com, a8cv.info.atgp.jp, ablink.info.felixmobile.com.au, ablink.info.oneatwork.app
 app | 951 | 242 | 105app.com, 21udflra4wd.app-dev.cainthus.com, 6nwp0r33a71m.app.dev.cardahealth.com, 6ynyejkv0j1s.app.tapmyback.com, a8clk.app.offerbox.jp
-stats | 913 | 161 | 0stats.com, 4stats.de, 99stats.com, active24stats.nl, anon-stats.eff.org
-analytics | 851 | 300 | a8c-analytics.js, adb-analytics.live-now.com, adobe-analytics-dc.belastingdienst.nl, adobe-analytics.js, adobe-analytics.vionicshoes.com
+stats | 913 | 162 | 0stats.com, 4stats.de, 99stats.com, active24stats.nl, anon-stats.eff.org
+analytics | 851 | 301 | a8c-analytics.js, adb-analytics.live-now.com, adobe-analytics-dc.belastingdienst.nl, adobe-analytics.js, adobe-analytics.vionicshoes.com
 tracking | 814 | 258 | 77tracking.com, a4b-tracking.com, active-tracking.de, ad-bls-tracking.lemino.docomo.ne.jp, ads-tracking.beop.io
 link | 723 | 106 | a8.kizuna-link.jp, a8cv.global-link-seminar.com, acc-link-ccontact.focuscura.com, ajax-link-tracker.js, app-link-test.inkl.com
 data | 570 | 329 | analytics-data-collector.js, analytics-data-collector.min.js, analytics.data.lloydsbankinggroup.com, analytics.data.visenze.com, atom-data.io
@@ -24,7 +24,7 @@ links | 261 | 91 | bbanywhere.links.rosieapp.com, br.links.kmartphotos.com.au, b
 target | 254 | 126 | aec-target.base.be, aec-target.telenet.be, aep-target.credit-suisse.com, company-target.com, dm-target.fishersci.com
 web | 251 | 54 | a8.web-hikari.net, a8clk.web-camp.io, a8cv.web-planners.net, absys.web.de, adebis.thd-web.jp
 api | 228 | 155 | a-api.skz.dev, a1.api.bbc.co.uk, a1.api.bbc.com, ad-tracker-api.luizalabs.com, affiliate-api.raptive.com
-sstats | 224 | 78 | omtrns.sstats.q8.dk, sstats.aavacations.com, sstats.adultswim.com, sstats.afco.com, sstats.airfarewatchdog.co.uk
+sstats | 224 | 79 | omtrns.sstats.q8.dk, sstats.aavacations.com, sstats.adultswim.com, sstats.afco.com, sstats.airfarewatchdog.co.uk
 test | 198 | 35 | 2e718yf5jypb.test.digitalsurge.io, 9735476.test.skyscanner.net, a8clk.test.coreda.jp, ablink.test.iheart.com, ablink.test.kfc.com.au
 branch | 197 | 22 | 22153974.branch.rocks, a8.industrial-branch.com, active-email.branch.rocks, amazon-email.branch.rocks, app-branch.yummybazaar-qa.com
 espmp | 193 | 0 | tr.aasi.espmp-agfr.net, tr.afpa.espmp-cufr.net, tr.alex.espmp-agfr.net, tr.apou032.espmp-agfr.net, tr.asp0010.espmp-nifr.net
@@ -58,7 +58,7 @@ ssl | 105 | 44 | 4e4356b68404a5138d2d-33393516977f9ca8dc54af2141da2a28.ssl.cf1.r
 business | 105 | 52 | app.business.westernunion.com, app.growth.orange-business.com, automotive-business.vodafone.com, business-cards.americanexpress.com, business-decision.actonservice.com
 counter | 96 | 22 | 123-counter.de, 24counter.com, a-counter.kiev.ua, besucherzaehler-counter.de, counter-go.de
 content | 96 | 26 | ba-content.de, calgary-content.cresa.com, charlotte-content.cresa.com, cincinnati-content.cresa.com, connect.content-hub.netapp.com
-ebis | 94 | 12 | ac-ebis-otrk.usen.com, ac-ebis-stb.usen.com, ac-ebis-uhome.usen.com, ac-ebis.otoraku.jp, ac-ebis.usen-ad.com
+ebis | 94 | 13 | ac-ebis-otrk.usen.com, ac-ebis-stb.usen.com, ac-ebis-uhome.usen.com, ac-ebis.otoraku.jp, ac-ebis.usen-ad.com
 fbcdn | 93 | 93 | external-bos5-1.xx.fbcdn.net.iberostar.com, external.fpbc1-1.fna.fbcdn.net.iberostar.com, instagram.xx.fbcdn.net.iberostar.com, scontent-atl3-2.xx.fbcdn.net.iberostar.com, scontent-cdg4-1.xx.fbcdn.net.iberostar.com
 americanexpress | 92 | 37 | acceptcards.americanexpress.co.uk, acq-au.americanexpress.com, acq-hk.americanexpress.com, acq-jp.americanexpress.com, acq-sg.americanexpress.com
 zooplus | 92 | 36 | di2.zooplus.es, dii1.zooplus.at, dii1.zooplus.be, dii1.zooplus.bg, dii1.zooplus.ch
