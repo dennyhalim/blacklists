@@ -15,7 +15,7 @@
   {
     "pattern": "smetrics",
     "domains": 2943,
-    "tranco_protected_matches": 924,
+    "tranco_protected_matches": 925,
     "examples": [
       "a.smetrics.sovereign.com",
       "al-smetrics.vizio.com",
@@ -41,7 +41,7 @@
   {
     "pattern": "metrics",
     "domains": 1431,
-    "tranco_protected_matches": 723,
+    "tranco_protected_matches": 724,
     "examples": [
       "aa-metrics.aircard.jp",
       "aa-metrics.airpayment.jp",
@@ -67,7 +67,7 @@
   {
     "pattern": "app",
     "domains": 951,
-    "tranco_protected_matches": 242,
+    "tranco_protected_matches": 244,
     "examples": [
       "105app.com",
       "21udflra4wd.app-dev.cainthus.com",
@@ -106,7 +106,7 @@
   {
     "pattern": "tracking",
     "domains": 814,
-    "tranco_protected_matches": 258,
+    "tranco_protected_matches": 257,
     "examples": [
       "77tracking.com",
       "a4b-tracking.com",
@@ -145,7 +145,7 @@
   {
     "pattern": "images",
     "domains": 501,
-    "tranco_protected_matches": 202,
+    "tranco_protected_matches": 201,
     "examples": [
       "channel.images.production.web.w4a.tv",
       "images.a.flukebiomedical.com",
@@ -158,7 +158,7 @@
   {
     "pattern": "email",
     "domains": 404,
-    "tranco_protected_matches": 134,
+    "tranco_protected_matches": 133,
     "examples": [
       "19035924.email.almosafer.com",
       "19035955.email.tajawal.com",
@@ -184,7 +184,7 @@
   {
     "pattern": "utiq",
     "domains": 384,
-    "tranco_protected_matches": 223,
+    "tranco_protected_matches": 222,
     "examples": [
       "utiq-test.utest1.work",
       "utiq-test.utest3.work",
@@ -236,7 +236,7 @@
   {
     "pattern": "track",
     "domains": 326,
-    "tranco_protected_matches": 106,
+    "tranco_protected_matches": 107,
     "examples": [
       "17track.net",
       "a8.track.entry.dokoyorimo.com",
@@ -418,7 +418,7 @@
   {
     "pattern": "events",
     "domains": 166,
-    "tranco_protected_matches": 87,
+    "tranco_protected_matches": 88,
     "examples": [
       "acds-events.adobe.io",
       "adtech-events.bookmyshow.com",
@@ -548,7 +548,7 @@
   {
     "pattern": "ablink",
     "domains": 133,
-    "tranco_protected_matches": 73,
+    "tranco_protected_matches": 76,
     "examples": [
       "ablink.1954.bk.com",
       "ablink.8email.eightsleep.com",
@@ -678,7 +678,7 @@
   {
     "pattern": "online",
     "domains": 107,
-    "tranco_protected_matches": 42,
+    "tranco_protected_matches": 41,
     "examples": [
       "a8.cypris-online.jp",
       "a8.geo-online.co.jp",
@@ -756,7 +756,7 @@
   {
     "pattern": "ebis",
     "domains": 94,
-    "tranco_protected_matches": 13,
+    "tranco_protected_matches": 12,
     "examples": [
       "ac-ebis-otrk.usen.com",
       "ac-ebis-stb.usen.com",
@@ -1185,7 +1185,7 @@
   {
     "pattern": "forms",
     "domains": 59,
-    "tranco_protected_matches": 27,
+    "tranco_protected_matches": 28,
     "examples": [
       "forms-emea.lenovo.com",
       "forms.accc-cancer.org",
@@ -1248,19 +1248,6 @@
     "suggested_regex": "(^|\\.)[^.]*dyson[^.]*\\."
   },
   {
-    "pattern": "carte",
-    "domains": 56,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "adminspace.carte-gr.total.fr",
-      "appinfosoryz.carte-gr.total.fr",
-      "appsecurezomation.carte-gr.total.fr",
-      "art.carte-gr.total.fr",
-      "auth.carte-gr.total.fr"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*carte[^.]*\\."
-  },
-  {
     "pattern": "total",
     "domains": 56,
     "tranco_protected_matches": 0,
@@ -1272,6 +1259,19 @@
       "art.carte-gr.total.fr"
     ],
     "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
+  },
+  {
+    "pattern": "carte",
+    "domains": 56,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "adminspace.carte-gr.total.fr",
+      "appinfosoryz.carte-gr.total.fr",
+      "appsecurezomation.carte-gr.total.fr",
+      "art.carte-gr.total.fr",
+      "auth.carte-gr.total.fr"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*carte[^.]*\\."
   },
   {
     "pattern": "insights",
