@@ -72,7 +72,7 @@
     "suggested_regex": "(^|\\.)[^.]*tiktok[^.]*\\."
   },
   {
-    "pattern": "svod",
+    "pattern": "hls",
     "domains": 3,
     "tranco_protected_matches": 3,
     "examples": [
@@ -80,7 +80,7 @@
       "hls-svod-ve.itunes.g.aaplimg.com",
       "hls-svod.itunes.apple.com"
     ],
-    "suggested_regex": "(^|\\.)[^.]*svod[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*hls[^.]*\\."
   },
   {
     "pattern": "aaplimg",
@@ -105,7 +105,7 @@
     "suggested_regex": "(^|\\.)[^.]*itunes[^.]*\\."
   },
   {
-    "pattern": "hls",
+    "pattern": "svod",
     "domains": 3,
     "tranco_protected_matches": 3,
     "examples": [
@@ -113,7 +113,7 @@
       "hls-svod-ve.itunes.g.aaplimg.com",
       "hls-svod.itunes.apple.com"
     ],
-    "suggested_regex": "(^|\\.)[^.]*hls[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*svod[^.]*\\."
   },
   {
     "pattern": "odysee",
