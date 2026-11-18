@@ -131,8 +131,8 @@
   },
   {
     "pattern": "data",
-    "domains": 571,
-    "tranco_protected_matches": 330,
+    "domains": 572,
+    "tranco_protected_matches": 331,
     "examples": [
       "analytics-data-collector.js",
       "analytics-data-collector.min.js",
@@ -235,7 +235,7 @@
   },
   {
     "pattern": "track",
-    "domains": 326,
+    "domains": 327,
     "tranco_protected_matches": 107,
     "examples": [
       "17track.net",
@@ -287,7 +287,7 @@
   },
   {
     "pattern": "web",
-    "domains": 251,
+    "domains": 252,
     "tranco_protected_matches": 54,
     "examples": [
       "a8.web-hikari.net",
@@ -950,7 +950,7 @@
   },
   {
     "pattern": "event",
-    "domains": 75,
+    "domains": 76,
     "tranco_protected_matches": 38,
     "examples": [
       "analytics-event-adapter.bundle.min.js",
@@ -1248,6 +1248,19 @@
     "suggested_regex": "(^|\\.)[^.]*dyson[^.]*\\."
   },
   {
+    "pattern": "prod",
+    "domains": 56,
+    "tranco_protected_matches": 28,
+    "examples": [
+      "ablinkclicktest.prod.aws.skyscnr.com",
+      "analysis.prod.joyfru.jiji.com",
+      "analytics-prod-alb-292764149.us-west-2.elb.amazonaws.com",
+      "analytics-prod.js",
+      "analytics-prod2.glance-internal.inmobi.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*prod[^.]*\\."
+  },
+  {
     "pattern": "carte",
     "domains": 56,
     "tranco_protected_matches": 1,
@@ -1285,18 +1298,5 @@
       "insights-mxp-cdn.coursecareers.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*insights[^.]*\\."
-  },
-  {
-    "pattern": "sxjfhh",
-    "domains": 56,
-    "tranco_protected_matches": 41,
-    "examples": [
-      "sxjfhh.app.com",
-      "sxjfhh.azcentral.com",
-      "sxjfhh.battlecreekenquirer.com",
-      "sxjfhh.caller.com",
-      "sxjfhh.citizen-times.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*sxjfhh[^.]*\\."
   }
 ]
