@@ -79,7 +79,7 @@
   },
   {
     "pattern": "stats",
-    "domains": 913,
+    "domains": 914,
     "tranco_protected_matches": 162,
     "examples": [
       "0stats.com",
@@ -92,14 +92,14 @@
   },
   {
     "pattern": "analytics",
-    "domains": 851,
+    "domains": 852,
     "tranco_protected_matches": 302,
     "examples": [
       "a8c-analytics.js",
+      "access-analytics.js",
       "adb-analytics.live-now.com",
       "adobe-analytics-dc.belastingdienst.nl",
-      "adobe-analytics.js",
-      "adobe-analytics.vionicshoes.com"
+      "adobe-analytics.js"
     ],
     "suggested_regex": "(^|\\.)[^.]*analytics[^.]*\\."
   },
@@ -1274,19 +1274,6 @@
     "suggested_regex": "(^|\\.)[^.]*prod[^.]*\\."
   },
   {
-    "pattern": "total",
-    "domains": 56,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "adminspace.carte-gr.total.fr",
-      "af.total-marriage.com",
-      "appinfosoryz.carte-gr.total.fr",
-      "appsecurezomation.carte-gr.total.fr",
-      "art.carte-gr.total.fr"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
-  },
-  {
     "pattern": "carte",
     "domains": 56,
     "tranco_protected_matches": 1,
@@ -1298,5 +1285,18 @@
       "auth.carte-gr.total.fr"
     ],
     "suggested_regex": "(^|\\.)[^.]*carte[^.]*\\."
+  },
+  {
+    "pattern": "total",
+    "domains": 56,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "adminspace.carte-gr.total.fr",
+      "af.total-marriage.com",
+      "appinfosoryz.carte-gr.total.fr",
+      "appsecurezomation.carte-gr.total.fr",
+      "art.carte-gr.total.fr"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
   }
 ]
