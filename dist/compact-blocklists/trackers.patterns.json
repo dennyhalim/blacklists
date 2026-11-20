@@ -15,7 +15,7 @@
   {
     "pattern": "smetrics",
     "domains": 2943,
-    "tranco_protected_matches": 926,
+    "tranco_protected_matches": 925,
     "examples": [
       "a.smetrics.sovereign.com",
       "al-smetrics.vizio.com",
@@ -54,7 +54,7 @@
   {
     "pattern": "info",
     "domains": 1015,
-    "tranco_protected_matches": 161,
+    "tranco_protected_matches": 160,
     "examples": [
       "10298198.info.sofi.org",
       "a8clk.info2.sunbridge.com",
@@ -67,7 +67,7 @@
   {
     "pattern": "app",
     "domains": 951,
-    "tranco_protected_matches": 244,
+    "tranco_protected_matches": 245,
     "examples": [
       "105app.com",
       "21udflra4wd.app-dev.cainthus.com",
@@ -92,8 +92,8 @@
   },
   {
     "pattern": "analytics",
-    "domains": 852,
-    "tranco_protected_matches": 302,
+    "domains": 853,
+    "tranco_protected_matches": 301,
     "examples": [
       "a8c-analytics.js",
       "access-analytics.js",
@@ -145,7 +145,7 @@
   {
     "pattern": "images",
     "domains": 501,
-    "tranco_protected_matches": 203,
+    "tranco_protected_matches": 204,
     "examples": [
       "channel.images.production.web.w4a.tv",
       "images.a.flukebiomedical.com",
@@ -184,7 +184,7 @@
   {
     "pattern": "utiq",
     "domains": 384,
-    "tranco_protected_matches": 223,
+    "tranco_protected_matches": 224,
     "examples": [
       "utiq-test.utest1.work",
       "utiq-test.utest3.work",
@@ -261,7 +261,7 @@
   },
   {
     "pattern": "links",
-    "domains": 261,
+    "domains": 262,
     "tranco_protected_matches": 91,
     "examples": [
       "bbanywhere.links.rosieapp.com",
@@ -300,8 +300,8 @@
   },
   {
     "pattern": "api",
-    "domains": 228,
-    "tranco_protected_matches": 155,
+    "domains": 229,
+    "tranco_protected_matches": 156,
     "examples": [
       "a-api.skz.dev",
       "a1.api.bbc.co.uk",
@@ -444,7 +444,7 @@
   {
     "pattern": "ssc",
     "domains": 164,
-    "tranco_protected_matches": 28,
+    "tranco_protected_matches": 29,
     "examples": [
       "ssc.alhurra.com",
       "ssc.amerikaninsesi.org",
@@ -613,7 +613,7 @@
   {
     "pattern": "response",
     "domains": 114,
-    "tranco_protected_matches": 39,
+    "tranco_protected_matches": 40,
     "examples": [
       "app.payments-response.americanexpress.co.uk",
       "app.response.adobesystemsinc.com",
@@ -873,7 +873,7 @@
   {
     "pattern": "sadbmetrics",
     "domains": 85,
-    "tranco_protected_matches": 24,
+    "tranco_protected_matches": 25,
     "examples": [
       "sadbmetrics.15kvalencia.es",
       "sadbmetrics.7canibales.com",
@@ -1196,6 +1196,19 @@
     "suggested_regex": "(^|\\.)[^.]*forms[^.]*\\."
   },
   {
+    "pattern": "insights",
+    "domains": 58,
+    "tranco_protected_matches": 17,
+    "examples": [
+      "entail-insights.com",
+      "fastly-insights.com",
+      "g2insights-cdn.azureedge.net",
+      "g2insights-fd-a0gpgwa4fycxd9d4.z01.azurefd.net",
+      "gdm-user-insights.js"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*insights[^.]*\\."
+  },
+  {
     "pattern": "omniture",
     "domains": 57,
     "tranco_protected_matches": 48,
@@ -1207,6 +1220,19 @@
       "fpssl-monitor-dal.omniture.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*omniture[^.]*\\."
+  },
+  {
+    "pattern": "prod",
+    "domains": 57,
+    "tranco_protected_matches": 28,
+    "examples": [
+      "ablinkclicktest.prod.aws.skyscnr.com",
+      "analysis.prod.joyfru.jiji.com",
+      "analytics-prod-alb-292764149.us-west-2.elb.amazonaws.com",
+      "analytics-prod.js",
+      "analytics-prod.pubgen.org"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*prod[^.]*\\."
   },
   {
     "pattern": "newsletter",
@@ -1235,19 +1261,6 @@
     "suggested_regex": "(^|\\.)[^.]*img[^.]*\\."
   },
   {
-    "pattern": "insights",
-    "domains": 57,
-    "tranco_protected_matches": 17,
-    "examples": [
-      "entail-insights.com",
-      "fastly-insights.com",
-      "g2insights-cdn.azureedge.net",
-      "gdm-user-insights.js",
-      "insights-mxp-cdn.coursecareers.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*insights[^.]*\\."
-  },
-  {
     "pattern": "dyson",
     "domains": 56,
     "tranco_protected_matches": 15,
@@ -1261,17 +1274,17 @@
     "suggested_regex": "(^|\\.)[^.]*dyson[^.]*\\."
   },
   {
-    "pattern": "prod",
+    "pattern": "total",
     "domains": 56,
-    "tranco_protected_matches": 28,
+    "tranco_protected_matches": 0,
     "examples": [
-      "ablinkclicktest.prod.aws.skyscnr.com",
-      "analysis.prod.joyfru.jiji.com",
-      "analytics-prod-alb-292764149.us-west-2.elb.amazonaws.com",
-      "analytics-prod.js",
-      "analytics-prod2.glance-internal.inmobi.com"
+      "adminspace.carte-gr.total.fr",
+      "af.total-marriage.com",
+      "appinfosoryz.carte-gr.total.fr",
+      "appsecurezomation.carte-gr.total.fr",
+      "art.carte-gr.total.fr"
     ],
-    "suggested_regex": "(^|\\.)[^.]*prod[^.]*\\."
+    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
   },
   {
     "pattern": "carte",
@@ -1285,18 +1298,5 @@
       "auth.carte-gr.total.fr"
     ],
     "suggested_regex": "(^|\\.)[^.]*carte[^.]*\\."
-  },
-  {
-    "pattern": "total",
-    "domains": 56,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "adminspace.carte-gr.total.fr",
-      "af.total-marriage.com",
-      "appinfosoryz.carte-gr.total.fr",
-      "appsecurezomation.carte-gr.total.fr",
-      "art.carte-gr.total.fr"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
   }
 ]
