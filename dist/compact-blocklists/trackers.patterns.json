@@ -15,7 +15,7 @@
   {
     "pattern": "smetrics",
     "domains": 2943,
-    "tranco_protected_matches": 925,
+    "tranco_protected_matches": 927,
     "examples": [
       "a.smetrics.sovereign.com",
       "al-smetrics.vizio.com",
@@ -41,7 +41,7 @@
   {
     "pattern": "metrics",
     "domains": 1431,
-    "tranco_protected_matches": 726,
+    "tranco_protected_matches": 728,
     "examples": [
       "aa-metrics.aircard.jp",
       "aa-metrics.airpayment.jp",
@@ -184,7 +184,7 @@
   {
     "pattern": "utiq",
     "domains": 384,
-    "tranco_protected_matches": 224,
+    "tranco_protected_matches": 225,
     "examples": [
       "utiq-test.utest1.work",
       "utiq-test.utest3.work",
@@ -613,7 +613,7 @@
   {
     "pattern": "response",
     "domains": 114,
-    "tranco_protected_matches": 40,
+    "tranco_protected_matches": 41,
     "examples": [
       "app.payments-response.americanexpress.co.uk",
       "app.response.adobesystemsinc.com",
@@ -1198,7 +1198,7 @@
   {
     "pattern": "insights",
     "domains": 58,
-    "tranco_protected_matches": 17,
+    "tranco_protected_matches": 16,
     "examples": [
       "entail-insights.com",
       "fastly-insights.com",
@@ -1274,19 +1274,6 @@
     "suggested_regex": "(^|\\.)[^.]*dyson[^.]*\\."
   },
   {
-    "pattern": "total",
-    "domains": 56,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "adminspace.carte-gr.total.fr",
-      "af.total-marriage.com",
-      "appinfosoryz.carte-gr.total.fr",
-      "appsecurezomation.carte-gr.total.fr",
-      "art.carte-gr.total.fr"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
-  },
-  {
     "pattern": "carte",
     "domains": 56,
     "tranco_protected_matches": 1,
@@ -1298,5 +1285,18 @@
       "auth.carte-gr.total.fr"
     ],
     "suggested_regex": "(^|\\.)[^.]*carte[^.]*\\."
+  },
+  {
+    "pattern": "total",
+    "domains": 56,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "adminspace.carte-gr.total.fr",
+      "af.total-marriage.com",
+      "appinfosoryz.carte-gr.total.fr",
+      "appsecurezomation.carte-gr.total.fr",
+      "art.carte-gr.total.fr"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
   }
 ]

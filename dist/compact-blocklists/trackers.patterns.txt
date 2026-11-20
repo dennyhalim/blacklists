@@ -1,9 +1,9 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
 actonservice | 2973 | 2973 | 12build.actonservice.com, 23andme.actonservice.com, 3mark.actonservice.com, 3plworldwide.actonservice.com, a10053.actonservice.com
-smetrics | 2943 | 925 | a.smetrics.sovereign.com, al-smetrics.vizio.com, origin-smetrics.go365.com, sit-smetrics.nab.com.au, smetrics-cns.panasonic.com
+smetrics | 2943 | 927 | a.smetrics.sovereign.com, al-smetrics.vizio.com, origin-smetrics.go365.com, sit-smetrics.nab.com.au, smetrics-cns.panasonic.com
 marketing | 1620 | 125 | 5363316.marketing.numi.com, aad-marketing.ascendeventmedia.com, ablink.marketing.adobemailing.com, ablink.marketing.li.me, ablink.marketing.max.com
-metrics | 1431 | 726 | aa-metrics.aircard.jp, aa-metrics.airpayment.jp, aa-metrics.airregi.jp, aa-metrics.airreserve.net, aa-metrics.airrsv.net
+metrics | 1431 | 728 | aa-metrics.aircard.jp, aa-metrics.airpayment.jp, aa-metrics.airregi.jp, aa-metrics.airreserve.net, aa-metrics.airrsv.net
 info | 1015 | 160 | 10298198.info.sofi.org, a8clk.info2.sunbridge.com, a8cv.info.atgp.jp, ablink.info.felixmobile.com.au, ablink.info.oneatwork.app
 app | 951 | 245 | 105app.com, 21udflra4wd.app-dev.cainthus.com, 6nwp0r33a71m.app.dev.cardahealth.com, 6ynyejkv0j1s.app.tapmyback.com, a8clk.app.offerbox.jp
 stats | 914 | 162 | 0stats.com, 4stats.de, 99stats.com, active24stats.nl, anon-stats.eff.org
@@ -14,7 +14,7 @@ data | 572 | 331 | analytics-data-collector.js, analytics-data-collector.min.js,
 images | 501 | 204 | channel.images.production.web.w4a.tv, images.a.flukebiomedical.com, images.access.imaginelearning.com, images.aepinfo.com, images.alliances.infor.com
 email | 404 | 133 | 19035924.email.almosafer.com, 19035955.email.tajawal.com, 6519114.email.tajawal.com, ablink.8email.eightsleep.com, ablink.email.creator.shopltk.com
 secure | 404 | 37 | a8-wpxblog.secure.wpx.ne.jp, a8-wpxshin.secure.wpx.ne.jp, a8-xshop.secure.xserver.ne.jp, a8clk.secure.freee.co.jp, a8clk.secure.jetboy.jp
-utiq | 384 | 224 | utiq-test.utest1.work, utiq-test.utest3.work, utiq.11freunde.de, utiq.20minutos.es, utiq.24auto.de
+utiq | 384 | 225 | utiq-test.utest1.work, utiq-test.utest3.work, utiq.11freunde.de, utiq.20minutos.es, utiq.24auto.de
 trk | 370 | 83 | 2trk.info, a8trk.www.std-lab.jp, active-trk7.com, ads-trk.vidible.tv, atlas-trk.prd.msg.ss-inf.net
 clk | 352 | 43 | a8clk.011330.jp, a8clk.17skin.jp, a8clk.1osechi.com, a8clk.292957.jp, a8clk.account.matsui.co.jp
 news | 338 | 84 | 12news.com, 9news.com, abc17news.com, ablink.news.emails-puregym.com, ablink.news.felixmobile.com.au
@@ -47,7 +47,7 @@ axp | 124 | 69 | axp.8newsnow.com, axp.abc27.com, axp.abc4.com, axp.avaya.com, a
 somni | 118 | 49 | somni.accenture.com, somni.alaskaair.com, somni.americanwesthomes.com, somni.amrock.com, somni.amsurg.com
 log | 116 | 68 | 24log.com, 24log.de, 24log.es, 24log.it, 24log.ru
 metric | 115 | 56 | api-metric.gosweb.gosuslugi.ru, digital-metric.com, metric-nonssl.nomura.co.jp, metric.1035thearrow.com, metric.4imprint.com
-response | 114 | 40 | app.payments-response.americanexpress.co.uk, app.response.adobesystemsinc.com, app.response.aiu.edu.au, app.response.americancentury.com, app.response.americanexpress.ca
+response | 114 | 41 | app.payments-response.americanexpress.co.uk, app.response.adobesystemsinc.com, app.response.aiu.edu.au, app.response.americancentury.com, app.response.americanexpress.ca
 share | 112 | 10 | dev-share.beaconlearningapp.com, dev-share.haloedapp.com, dev-share.smartfashion.ai, images.share.iheartmedia.com, share-backcountry.onxmaps.com
 mdws | 112 | 0 | mdws.1stchoicesavings.ca, mdws.advancesavings.ca, mdws.aldergrovecu.ca, mdws.assiniboine.mb.ca, mdws.banquelaurentienne.ca
 plausible | 109 | 7 | analytics.plausible.js, fgn-plausible.serverable.com, plausible-analytics.xyz, plausible-coqwx5kr.js, plausible-stats.tangodelta.media
@@ -92,11 +92,11 @@ cloud | 60 | 30 | a8.01cloud.jp, a8cv.cloud-wi-fi.jp, a8cv.cx-cloud.jp, adstrate
 nifr | 60 | 0 | tr.asp0010.espmp-nifr.net, tr.asp0085.espmp-nifr.net, tr.asp008y.espmp-nifr.net, tr.asp00a6.espmp-nifr.net, tr.asp00ah.espmp-nifr.net
 learn | 59 | 13 | app.learn.datafoundry.com, app.learn.ioninteractive.com, app.learn.mindjet.com, app.learn.rasmussen.edu, archived.learn.eloqua.extrahop.com
 forms | 59 | 28 | forms-emea.lenovo.com, forms.accc-cancer.org, forms.anthology.com, forms.aweber.com, forms.b.oncourselearning.com
-insights | 58 | 17 | entail-insights.com, fastly-insights.com, g2insights-cdn.azureedge.net, g2insights-fd-a0gpgwa4fycxd9d4.z01.azurefd.net, gdm-user-insights.js
+insights | 58 | 16 | entail-insights.com, fastly-insights.com, g2insights-cdn.azureedge.net, g2insights-fd-a0gpgwa4fycxd9d4.z01.azurefd.net, gdm-user-insights.js
 omniture | 57 | 48 | 0tfsd2rwwu3xjstb.edge41.testandtarget.omniture.com, 1ps6e7sort397gy9.edge46.testandtarget.omniture.com, 20.edge46.testandtarget.omniture.com, app.green.omniture.com, fpssl-monitor-dal.omniture.com
 prod | 57 | 28 | ablinkclicktest.prod.aws.skyscnr.com, analysis.prod.joyfru.jiji.com, analytics-prod-alb-292764149.us-west-2.elb.amazonaws.com, analytics-prod.js, analytics-prod.pubgen.org
 newsletter | 57 | 14 | app.newsletter.bisnow.com, data.newsletter.avianca.com, data.newsletter.italia.it, data.newsletter.seasmiles.com, images.newsletter.hach.com.cn
 img | 57 | 21 | b1img.com, e-img.hover.to, img-static.com, img.aonunited.com, img.ashx
 dyson | 56 | 15 | aa.dyson.at, aa.dyson.be, aa.dyson.ch, aa.dyson.co.uk, aa.dyson.com
-total | 56 | 0 | adminspace.carte-gr.total.fr, af.total-marriage.com, appinfosoryz.carte-gr.total.fr, appsecurezomation.carte-gr.total.fr, art.carte-gr.total.fr
 carte | 56 | 1 | adminspace.carte-gr.total.fr, appinfosoryz.carte-gr.total.fr, appsecurezomation.carte-gr.total.fr, art.carte-gr.total.fr, auth.carte-gr.total.fr
+total | 56 | 0 | adminspace.carte-gr.total.fr, af.total-marriage.com, appinfosoryz.carte-gr.total.fr, appsecurezomation.carte-gr.total.fr, art.carte-gr.total.fr

@@ -1,7 +1,7 @@
 {
   "domain": {
     "dnsmasq_nftset_targets": "4#inet#filter#domain_blocklist_v4,6#inet#filter#domain_blocklist_v6",
-    "generated_at": "2026-11-20 17:36:13 UTC",
+    "generated_at": "2026-11-20 23:44:01 UTC",
     "lists": {
       "gambling": {
         "config": {
@@ -32,7 +32,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 140305,
+        "domains": 140306,
         "files": {
           "adblock": "dist/adblock/nsfw.txt",
           "dnsmasq": "dist/dnsmasq/nsfw.conf",
@@ -52,7 +52,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 129549,
+        "domains": 129279,
         "files": {
           "adblock": "dist/adblock/phishing.txt",
           "dnsmasq": "dist/dnsmasq/phishing.conf",
@@ -92,7 +92,7 @@
           ],
           "merge_subdomains": 4
         },
-        "domains": 992603,
+        "domains": 1171077,
         "files": {
           "adblock": "dist/adblock/threat.txt",
           "dnsmasq": "dist/dnsmasq/threat.conf",
@@ -211,7 +211,7 @@
       ]
     },
     "c2": {
-      "entries": 57455,
+      "entries": 57456,
       "files": {
         "bat": [
           "dist/windows/c2.bat"
@@ -292,7 +292,7 @@
       ]
     },
     "combined4server": {
-      "entries": 215830,
+      "entries": 219804,
       "files": {
         "bat": [
           "dist/windows/combined4server.bat"
@@ -419,7 +419,7 @@
       ]
     },
     "goliath": {
-      "entries": 244720,
+      "entries": 245512,
       "files": {
         "bat": [
           "dist/windows/goliath.bat"
@@ -459,7 +459,7 @@
       ]
     },
     "server": {
-      "entries": 2915,
+      "entries": 2916,
       "files": {
         "bat": [
           "dist/windows/server.bat"

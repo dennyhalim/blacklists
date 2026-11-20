@@ -17,5 +17,5 @@
 /ip dns static add regexp="(^|\\.)(adaether\.com|oec\-im\-tt\-sg\.tiktokglobalshopv\.com|aiv\-delivery\.net|douyinvod\.com|indazn\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(discomax\.com|plex\.tv|peacocktv\.com|hbomax\.com|yximgs\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(mydramawave\.com|crunchyroll\.com|xxpkg\.com|snssdk\.com|vimeocdn\.com)$" type=NXDOMAIN comment="streaming"
-/ip dns static add regexp="(^|\\.)(rumble\.com|kuaishou\.com|xhscdn\.com|ksapisrv\.com|dssott\.com)$" type=NXDOMAIN comment="streaming"
-/ip dns static add regexp="(^|\\.)(tiktokcdn\-eu\.com\.ttdns3\.com|douyinpic\.com|ttlivecdn\.com|jtvnw\.net|tmtreader\.com)$" type=NXDOMAIN comment="streaming"
+/ip dns static add regexp="(^|\\.)(rumble\.com|xhscdn\.com|kuaishou\.com|ksapisrv\.com|tiktokcdn\-eu\.com\.ttdns3\.com)$" type=NXDOMAIN comment="streaming"
+/ip dns static add regexp="(^|\\.)(dssott\.com|douyinpic\.com|ttlivecdn\.com|jtvnw\.net|tmtreader\.com)$" type=NXDOMAIN comment="streaming"
