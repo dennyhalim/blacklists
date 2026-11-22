@@ -15,7 +15,7 @@
   {
     "pattern": "smetrics",
     "domains": 2943,
-    "tranco_protected_matches": 927,
+    "tranco_protected_matches": 929,
     "examples": [
       "a.smetrics.sovereign.com",
       "al-smetrics.vizio.com",
@@ -41,7 +41,7 @@
   {
     "pattern": "metrics",
     "domains": 1431,
-    "tranco_protected_matches": 728,
+    "tranco_protected_matches": 729,
     "examples": [
       "aa-metrics.aircard.jp",
       "aa-metrics.airpayment.jp",
@@ -54,7 +54,7 @@
   {
     "pattern": "info",
     "domains": 1015,
-    "tranco_protected_matches": 160,
+    "tranco_protected_matches": 161,
     "examples": [
       "10298198.info.sofi.org",
       "a8clk.info2.sunbridge.com",
@@ -67,7 +67,7 @@
   {
     "pattern": "app",
     "domains": 951,
-    "tranco_protected_matches": 245,
+    "tranco_protected_matches": 246,
     "examples": [
       "105app.com",
       "21udflra4wd.app-dev.cainthus.com",
@@ -93,7 +93,7 @@
   {
     "pattern": "analytics",
     "domains": 853,
-    "tranco_protected_matches": 301,
+    "tranco_protected_matches": 304,
     "examples": [
       "a8c-analytics.js",
       "access-analytics.js",
@@ -106,7 +106,7 @@
   {
     "pattern": "tracking",
     "domains": 814,
-    "tranco_protected_matches": 261,
+    "tranco_protected_matches": 262,
     "examples": [
       "77tracking.com",
       "a4b-tracking.com",
@@ -131,8 +131,8 @@
   },
   {
     "pattern": "data",
-    "domains": 572,
-    "tranco_protected_matches": 331,
+    "domains": 573,
+    "tranco_protected_matches": 337,
     "examples": [
       "analytics-data-collector.js",
       "analytics-data-collector.min.js",
@@ -158,7 +158,7 @@
   {
     "pattern": "email",
     "domains": 404,
-    "tranco_protected_matches": 133,
+    "tranco_protected_matches": 134,
     "examples": [
       "19035924.email.almosafer.com",
       "19035955.email.tajawal.com",
@@ -184,7 +184,7 @@
   {
     "pattern": "utiq",
     "domains": 384,
-    "tranco_protected_matches": 225,
+    "tranco_protected_matches": 226,
     "examples": [
       "utiq-test.utest1.work",
       "utiq-test.utest3.work",
@@ -223,7 +223,7 @@
   {
     "pattern": "news",
     "domains": 338,
-    "tranco_protected_matches": 84,
+    "tranco_protected_matches": 85,
     "examples": [
       "12news.com",
       "9news.com",
@@ -248,7 +248,7 @@
   },
   {
     "pattern": "min",
-    "domains": 290,
+    "domains": 289,
     "tranco_protected_matches": 3,
     "examples": [
       "15min.lt",
@@ -403,6 +403,19 @@
     "suggested_regex": "(^|\\.)[^.]*sanalytics[^.]*\\."
   },
   {
+    "pattern": "events",
+    "domains": 168,
+    "tranco_protected_matches": 90,
+    "examples": [
+      "acds-events.adobe.io",
+      "adtech-events.bookmyshow.com",
+      "analytify-events-tracking.js",
+      "bi-events-collector.spot.im",
+      "browser.events.data.microsoft.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*events[^.]*\\."
+  },
+  {
     "pattern": "mail",
     "domains": 166,
     "tranco_protected_matches": 51,
@@ -414,19 +427,6 @@
       "ablink.mail.flipfit.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*mail[^.]*\\."
-  },
-  {
-    "pattern": "events",
-    "domains": 166,
-    "tranco_protected_matches": 88,
-    "examples": [
-      "acds-events.adobe.io",
-      "adtech-events.bookmyshow.com",
-      "analytify-events-tracking.js",
-      "bi-events-collector.spot.im",
-      "browser.events.data.microsoft.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*events[^.]*\\."
   },
   {
     "pattern": "get",
@@ -548,7 +548,7 @@
   {
     "pattern": "ablink",
     "domains": 133,
-    "tranco_protected_matches": 76,
+    "tranco_protected_matches": 77,
     "examples": [
       "ablink.1954.bk.com",
       "ablink.8email.eightsleep.com",
@@ -561,7 +561,7 @@
   {
     "pattern": "axp",
     "domains": 124,
-    "tranco_protected_matches": 69,
+    "tranco_protected_matches": 68,
     "examples": [
       "axp.8newsnow.com",
       "axp.abc27.com",
@@ -600,7 +600,7 @@
   {
     "pattern": "metric",
     "domains": 115,
-    "tranco_protected_matches": 56,
+    "tranco_protected_matches": 57,
     "examples": [
       "api-metric.gosweb.gosuslugi.ru",
       "digital-metric.com",
@@ -704,7 +704,7 @@
   {
     "pattern": "ssl",
     "domains": 105,
-    "tranco_protected_matches": 44,
+    "tranco_protected_matches": 45,
     "examples": [
       "4e4356b68404a5138d2d-33393516977f9ca8dc54af2141da2a28.ssl.cf1.rackcdn.com",
       "a8.ssl.aispr.jp",
@@ -756,7 +756,7 @@
   {
     "pattern": "ebis",
     "domains": 94,
-    "tranco_protected_matches": 12,
+    "tranco_protected_matches": 11,
     "examples": [
       "ac-ebis-otrk.usen.com",
       "ac-ebis-stb.usen.com",
@@ -938,7 +938,7 @@
   {
     "pattern": "collector",
     "domains": 76,
-    "tranco_protected_matches": 46,
+    "tranco_protected_matches": 45,
     "examples": [
       "ads-collector.luizalabs.com",
       "adv-analytics-collector.videograph.ai",
@@ -964,7 +964,7 @@
   {
     "pattern": "solutions",
     "domains": 74,
-    "tranco_protected_matches": 24,
+    "tranco_protected_matches": 25,
     "examples": [
       "206solutions.com",
       "8020solutions.net",
@@ -1185,7 +1185,7 @@
   {
     "pattern": "forms",
     "domains": 59,
-    "tranco_protected_matches": 28,
+    "tranco_protected_matches": 29,
     "examples": [
       "forms-emea.lenovo.com",
       "forms.accc-cancer.org",
