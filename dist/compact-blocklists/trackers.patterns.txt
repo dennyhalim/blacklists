@@ -1,11 +1,11 @@
 # REVIEW ONLY: substring patterns may block legitimate domains.
 # pattern | matched domains | Tranco-protected matches | examples
 actonservice | 2973 | 2973 | 12build.actonservice.com, 23andme.actonservice.com, 3mark.actonservice.com, 3plworldwide.actonservice.com, a10053.actonservice.com
-smetrics | 2943 | 929 | a.smetrics.sovereign.com, al-smetrics.vizio.com, origin-smetrics.go365.com, sit-smetrics.nab.com.au, smetrics-cns.panasonic.com
+smetrics | 2943 | 928 | a.smetrics.sovereign.com, al-smetrics.vizio.com, origin-smetrics.go365.com, sit-smetrics.nab.com.au, smetrics-cns.panasonic.com
 marketing | 1620 | 125 | 5363316.marketing.numi.com, aad-marketing.ascendeventmedia.com, ablink.marketing.adobemailing.com, ablink.marketing.li.me, ablink.marketing.max.com
-metrics | 1431 | 729 | aa-metrics.aircard.jp, aa-metrics.airpayment.jp, aa-metrics.airregi.jp, aa-metrics.airreserve.net, aa-metrics.airrsv.net
-info | 1015 | 161 | 10298198.info.sofi.org, a8clk.info2.sunbridge.com, a8cv.info.atgp.jp, ablink.info.felixmobile.com.au, ablink.info.oneatwork.app
-app | 951 | 246 | 105app.com, 21udflra4wd.app-dev.cainthus.com, 6nwp0r33a71m.app.dev.cardahealth.com, 6ynyejkv0j1s.app.tapmyback.com, a8clk.app.offerbox.jp
+metrics | 1431 | 728 | aa-metrics.aircard.jp, aa-metrics.airpayment.jp, aa-metrics.airregi.jp, aa-metrics.airreserve.net, aa-metrics.airrsv.net
+info | 1016 | 162 | 10298198.info.sofi.org, a8clk.info2.sunbridge.com, a8cv.info.atgp.jp, ablink.info.felixmobile.com.au, ablink.info.oneatwork.app
+app | 951 | 248 | 105app.com, 21udflra4wd.app-dev.cainthus.com, 6nwp0r33a71m.app.dev.cardahealth.com, 6ynyejkv0j1s.app.tapmyback.com, a8clk.app.offerbox.jp
 stats | 914 | 162 | 0stats.com, 4stats.de, 99stats.com, active24stats.nl, anon-stats.eff.org
 analytics | 852 | 303 | a8c-analytics.js, access-analytics.js, adb-analytics.live-now.com, adobe-analytics-dc.belastingdienst.nl, adobe-analytics.js
 tracking | 814 | 262 | 77tracking.com, a4b-tracking.com, active-tracking.de, ad-bls-tracking.lemino.docomo.ne.jp, ads-tracking.beop.io
@@ -23,7 +23,7 @@ min | 289 | 3 | 15min.lt, 20min.ch, 24868.min.js, adf-tm-base-min.js, admtracker
 links | 262 | 91 | bbanywhere.links.rosieapp.com, br.links.kmartphotos.com.au, br.links.kodakmoments.com, email-links.crowdfireapp.com, file-downloads.outbound-links.js
 target | 254 | 126 | aec-target.base.be, aec-target.telenet.be, aep-target.credit-suisse.com, company-target.com, dm-target.fishersci.com
 web | 252 | 54 | a8.web-hikari.net, a8clk.web-camp.io, a8cv.web-planners.net, absys.web.de, adebis.thd-web.jp
-api | 229 | 156 | a-api.skz.dev, a1.api.bbc.co.uk, a1.api.bbc.com, ad-tracker-api.luizalabs.com, affiliate-api.raptive.com
+api | 229 | 157 | a-api.skz.dev, a1.api.bbc.co.uk, a1.api.bbc.com, ad-tracker-api.luizalabs.com, affiliate-api.raptive.com
 sstats | 224 | 78 | omtrns.sstats.q8.dk, sstats.aavacations.com, sstats.adultswim.com, sstats.afco.com, sstats.airfarewatchdog.co.uk
 test | 198 | 35 | 2e718yf5jypb.test.digitalsurge.io, 9735476.test.skyscanner.net, a8clk.test.coreda.jp, ablink.test.iheart.com, ablink.test.kfc.com.au
 branch | 197 | 22 | 22153974.branch.rocks, a8.industrial-branch.com, active-email.branch.rocks, amazon-email.branch.rocks, app-branch.yummybazaar-qa.com
@@ -42,7 +42,7 @@ shop | 146 | 22 | a8.arrrt-shop.com, a8.l-co-shop.jp, a8.shop-jp.technogelworld.
 engage | 145 | 31 | 8041691.engage.hipages.com.au, ablink.engage.hipages.com.au, ablink.engage.insighttimer.com, api-engage-us.sitecorecloud.io, avaya-engage.avaya.com
 iberostar | 143 | 143 | 63-217-112-145.static.pccwglobal.net.iberostar.com, ak-br-cdn.kwai.net.iberostar.com, akv2-br-cdn.kwai.net.iberostar.com, ali-pro-origin-pull.kwai.net.iberostar.com, ali-pro-pull.kwai.net.iberostar.com
 click | 138 | 65 | a8click.aw-anotherworks.com, a8click.daini2.co.jp, a8click.uzuz.jp, a8click.you-up.com, a8click.young-mobile.net
-ablink | 133 | 77 | ablink.1954.bk.com, ablink.8email.eightsleep.com, ablink.a.radio.com, ablink.account.one.app, ablink.account.zip.co
+ablink | 133 | 76 | ablink.1954.bk.com, ablink.8email.eightsleep.com, ablink.a.radio.com, ablink.account.one.app, ablink.account.zip.co
 axp | 124 | 68 | axp.8newsnow.com, axp.abc27.com, axp.abc4.com, axp.avaya.com, axp.bigcountryhomepage.com
 somni | 118 | 49 | somni.accenture.com, somni.alaskaair.com, somni.americanwesthomes.com, somni.amrock.com, somni.amsurg.com
 log | 116 | 68 | 24log.com, 24log.de, 24log.es, 24log.it, 24log.ru
@@ -98,5 +98,5 @@ prod | 57 | 28 | ablinkclicktest.prod.aws.skyscnr.com, analysis.prod.joyfru.jiji
 newsletter | 57 | 14 | app.newsletter.bisnow.com, data.newsletter.avianca.com, data.newsletter.italia.it, data.newsletter.seasmiles.com, images.newsletter.hach.com.cn
 img | 57 | 21 | b1img.com, e-img.hover.to, img-static.com, img.aonunited.com, img.ashx
 dyson | 56 | 15 | aa.dyson.at, aa.dyson.be, aa.dyson.ch, aa.dyson.co.uk, aa.dyson.com
-total | 56 | 0 | adminspace.carte-gr.total.fr, af.total-marriage.com, appinfosoryz.carte-gr.total.fr, appsecurezomation.carte-gr.total.fr, art.carte-gr.total.fr
 carte | 56 | 1 | adminspace.carte-gr.total.fr, appinfosoryz.carte-gr.total.fr, appsecurezomation.carte-gr.total.fr, art.carte-gr.total.fr, auth.carte-gr.total.fr
+total | 56 | 0 | adminspace.carte-gr.total.fr, af.total-marriage.com, appinfosoryz.carte-gr.total.fr, appsecurezomation.carte-gr.total.fr, art.carte-gr.total.fr

@@ -1,9 +1,10 @@
 # Generated from: etcompromised, alienvault, threatviewc2, censys, feodo
-# Entries: 2107
+# Entries: 2110
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-baseip" and comment="bl.dennyhalim.com"]
 add list="dhbl-baseip" address="1.14.76.111" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="1.14.219.84" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="1.15.25.138" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="1.15.25.148" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="1.15.174.189" timeout=3d comment="bl.dennyhalim.com"
@@ -89,6 +90,7 @@ add list="dhbl-baseip" address="8.210.78.137" timeout=3d comment="bl.dennyhalim.
 add list="dhbl-baseip" address="8.210.194.59" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="8.212.44.149" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="8.212.49.116" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="8.212.181.6" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="8.219.76.168" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="8.219.78.159" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="8.219.229.99" timeout=3d comment="bl.dennyhalim.com"
@@ -153,6 +155,7 @@ add list="dhbl-baseip" address="23.132.164.148" timeout=3d comment="bl.dennyhali
 add list="dhbl-baseip" address="23.132.164.164" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="23.132.164.245" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="23.132.164.246" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="23.142.132.143" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="23.224.70.227" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="23.224.152.138/31" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="23.227.178.59" timeout=3d comment="bl.dennyhalim.com"

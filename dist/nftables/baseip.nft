@@ -1,6 +1,7 @@
 flush set inet filter blocklist_baseip
 add element inet filter blocklist_baseip {
         1.14.76.111,
+        1.14.219.84,
         1.15.25.138,
         1.15.25.148,
         1.15.174.189,
@@ -86,6 +87,7 @@ add element inet filter blocklist_baseip {
         8.210.194.59,
         8.212.44.149,
         8.212.49.116,
+        8.212.181.6,
         8.219.76.168,
         8.219.78.159,
         8.219.229.99,
@@ -150,6 +152,7 @@ add element inet filter blocklist_baseip {
         23.132.164.164,
         23.132.164.245,
         23.132.164.246,
+        23.142.132.143,
         23.224.70.227,
         23.224.152.138/31,
         23.227.178.59,
