@@ -72,28 +72,6 @@
     "suggested_regex": "(^|\\.)[^.]*tiktok[^.]*\\."
   },
   {
-    "pattern": "itunes",
-    "domains": 3,
-    "tranco_protected_matches": 3,
-    "examples": [
-      "hls-svod-aoc-ve.itunes.g.aaplimg.com",
-      "hls-svod-ve.itunes.g.aaplimg.com",
-      "hls-svod.itunes.apple.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*itunes[^.]*\\."
-  },
-  {
-    "pattern": "svod",
-    "domains": 3,
-    "tranco_protected_matches": 3,
-    "examples": [
-      "hls-svod-aoc-ve.itunes.g.aaplimg.com",
-      "hls-svod-ve.itunes.g.aaplimg.com",
-      "hls-svod.itunes.apple.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*svod[^.]*\\."
-  },
-  {
     "pattern": "aaplimg",
     "domains": 3,
     "tranco_protected_matches": 3,
@@ -105,6 +83,17 @@
     "suggested_regex": "(^|\\.)[^.]*aaplimg[^.]*\\."
   },
   {
+    "pattern": "itunes",
+    "domains": 3,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "hls-svod-aoc-ve.itunes.g.aaplimg.com",
+      "hls-svod-ve.itunes.g.aaplimg.com",
+      "hls-svod.itunes.apple.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*itunes[^.]*\\."
+  },
+  {
     "pattern": "hls",
     "domains": 3,
     "tranco_protected_matches": 3,
@@ -114,6 +103,17 @@
       "hls-svod.itunes.apple.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*hls[^.]*\\."
+  },
+  {
+    "pattern": "svod",
+    "domains": 3,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "hls-svod-aoc-ve.itunes.g.aaplimg.com",
+      "hls-svod-ve.itunes.g.aaplimg.com",
+      "hls-svod.itunes.apple.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*svod[^.]*\\."
   },
   {
     "pattern": "odysee",

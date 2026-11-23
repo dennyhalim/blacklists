@@ -92,7 +92,7 @@
   },
   {
     "pattern": "analytics",
-    "domains": 852,
+    "domains": 853,
     "tranco_protected_matches": 303,
     "examples": [
       "a8c-analytics.js",
@@ -1053,6 +1053,19 @@
     "suggested_regex": "(^|\\.)[^.]*openapp[^.]*\\."
   },
   {
+    "pattern": "tag",
+    "domains": 68,
+    "tranco_protected_matches": 25,
+    "examples": [
+      "360tag.net",
+      "a8tag.emprorm.com",
+      "a8tag.suplinx.com",
+      "aim-tag.hcn.health",
+      "angular-tag.js"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*tag[^.]*\\."
+  },
+  {
     "pattern": "staging",
     "domains": 67,
     "tranco_protected_matches": 16,
@@ -1064,19 +1077,6 @@
       "ac9kpxbans1l.staging.unstoppabledomains.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*staging[^.]*\\."
-  },
-  {
-    "pattern": "tag",
-    "domains": 67,
-    "tranco_protected_matches": 24,
-    "examples": [
-      "360tag.net",
-      "a8tag.emprorm.com",
-      "a8tag.suplinx.com",
-      "aim-tag.hcn.health",
-      "angular-tag.js"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*tag[^.]*\\."
   },
   {
     "pattern": "smetric",
@@ -1183,6 +1183,19 @@
     "suggested_regex": "(^|\\.)[^.]*learn[^.]*\\."
   },
   {
+    "pattern": "insights",
+    "domains": 59,
+    "tranco_protected_matches": 17,
+    "examples": [
+      "entail-insights.com",
+      "fastly-insights.com",
+      "g2insights-cdn.azureedge.net",
+      "g2insights-fd-a0gpgwa4fycxd9d4.z01.azurefd.net",
+      "gdm-user-insights.js"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*insights[^.]*\\."
+  },
+  {
     "pattern": "forms",
     "domains": 59,
     "tranco_protected_matches": 29,
@@ -1194,19 +1207,6 @@
       "forms.b.oncourselearning.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*forms[^.]*\\."
-  },
-  {
-    "pattern": "insights",
-    "domains": 58,
-    "tranco_protected_matches": 16,
-    "examples": [
-      "entail-insights.com",
-      "fastly-insights.com",
-      "g2insights-cdn.azureedge.net",
-      "g2insights-fd-a0gpgwa4fycxd9d4.z01.azurefd.net",
-      "gdm-user-insights.js"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*insights[^.]*\\."
   },
   {
     "pattern": "omniture",

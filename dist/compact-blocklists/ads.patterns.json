@@ -1,7 +1,7 @@
 [
   {
     "pattern": "sonar",
-    "domains": 14816,
+    "domains": 14815,
     "tranco_protected_matches": 14814,
     "examples": [
       "edge-sonar-mini-shv-01-atl3.fbcdn.net",
@@ -27,8 +27,8 @@
   },
   {
     "pattern": "analytics",
-    "domains": 10454,
-    "tranco_protected_matches": 3089,
+    "domains": 10434,
+    "tranco_protected_matches": 3088,
     "examples": [
       "12analytics.com",
       "14691856716.analytics-03.media-qzcr2w4-72.sussybaka.store",
@@ -66,8 +66,8 @@
   },
   {
     "pattern": "matomo",
-    "domains": 5274,
-    "tranco_protected_matches": 559,
+    "domains": 5269,
+    "tranco_protected_matches": 558,
     "examples": [
       "2f3b233e-matomo-1.ext.kdv.services",
       "2matomo.hirschtec.eu",
@@ -79,8 +79,8 @@
   },
   {
     "pattern": "ads",
-    "domains": 4156,
-    "tranco_protected_matches": 1605,
+    "domains": 4145,
+    "tranco_protected_matches": 1604,
     "examples": [
       "0-09-preview-google-ads-bump.data.taxfix.tech",
       "1-1ads.com",
@@ -92,8 +92,8 @@
   },
   {
     "pattern": "stats",
-    "domains": 3592,
-    "tranco_protected_matches": 816,
+    "domains": 3583,
+    "tranco_protected_matches": 815,
     "examples": [
       "0stats.com",
       "4stats.de",
@@ -105,8 +105,8 @@
   },
   {
     "pattern": "sgtm",
-    "domains": 3540,
-    "tranco_protected_matches": 631,
+    "domains": 3523,
+    "tranco_protected_matches": 621,
     "examples": [
       "ampura-sgtm-7362999571.europe-west1.run.app",
       "api-sgtm.nordstrom.com",
@@ -118,7 +118,7 @@
   },
   {
     "pattern": "sst",
-    "domains": 3105,
+    "domains": 3095,
     "tranco_protected_matches": 406,
     "examples": [
       "cdn.sst.kungsangen.com",
@@ -131,8 +131,8 @@
   },
   {
     "pattern": "tracking",
-    "domains": 2848,
-    "tranco_protected_matches": 974,
+    "domains": 2845,
+    "tranco_protected_matches": 975,
     "examples": [
       "129-tracking01.mail2many.de",
       "147-tracking01.mail2many.de",
@@ -144,7 +144,7 @@
   },
   {
     "pattern": "gtm",
-    "domains": 2546,
+    "domains": 2543,
     "tranco_protected_matches": 514,
     "examples": [
       "ad-exchange.gtm.toastoven.net",
@@ -157,8 +157,8 @@
   },
   {
     "pattern": "metrics",
-    "domains": 2526,
-    "tranco_protected_matches": 1121,
+    "domains": 2523,
+    "tranco_protected_matches": 1120,
     "examples": [
       "0001-metrics1-data-hicloud-com.geac.dbankedge.cn",
       "0001-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn",
@@ -170,8 +170,8 @@
   },
   {
     "pattern": "sentry",
-    "domains": 2409,
-    "tranco_protected_matches": 892,
+    "domains": 2407,
+    "tranco_protected_matches": 893,
     "examples": [
       "aac-sentry.amd.com",
       "aai-id-sentry.advai.net",
@@ -183,8 +183,8 @@
   },
   {
     "pattern": "api",
-    "domains": 2281,
-    "tranco_protected_matches": 1382,
+    "domains": 2278,
+    "tranco_protected_matches": 1381,
     "examples": [
       "101api.info",
       "227api.com",
@@ -196,7 +196,7 @@
   },
   {
     "pattern": "app",
-    "domains": 2266,
+    "domains": 2253,
     "tranco_protected_matches": 603,
     "examples": [
       "001app.com",
@@ -209,20 +209,20 @@
   },
   {
     "pattern": "track",
-    "domains": 2112,
+    "domains": 2108,
     "tranco_protected_matches": 616,
     "examples": [
       "2track.info",
-      "a8track.aidmybank.com",
       "account-track-fr-pubgw-umxvynd-2129058884.eu-west-3.elb.amazonaws.com",
       "account-track-fr-pubgw-uxuqce0-1972019483.eu-west-3.elb.amazonaws.com",
-      "account-track-sg-pubgw-bjscyjo-1156958859.ap-southeast-1.elb.amazonaws.com"
+      "account-track-sg-pubgw-bjscyjo-1156958859.ap-southeast-1.elb.amazonaws.com",
+      "ad-srv-track.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*track[^.]*\\."
   },
   {
     "pattern": "log",
-    "domains": 2099,
+    "domains": 2095,
     "tranco_protected_matches": 1231,
     "examples": [
       "1-log.com",
@@ -274,8 +274,8 @@
   },
   {
     "pattern": "prod",
-    "domains": 1539,
-    "tranco_protected_matches": 801,
+    "domains": 1536,
+    "tranco_protected_matches": 800,
     "examples": [
       "124220078916-monika-prod-monitoring-backup.s3.eu-central-1.amazonaws.com",
       "526088041474-prod-fingerprint-assets.s3.us-west-2.amazonaws.com",
@@ -287,8 +287,8 @@
   },
   {
     "pattern": "data",
-    "domains": 1484,
-    "tranco_protected_matches": 474,
+    "domains": 1479,
+    "tranco_protected_matches": 472,
     "examples": [
       "0-09-preview-google-ads-bump.data.taxfix.tech",
       "0001-metrics1-data-hicloud-com.geac.dbankedge.cn",
@@ -300,7 +300,7 @@
   },
   {
     "pattern": "casino",
-    "domains": 1455,
+    "domains": 1454,
     "tranco_protected_matches": 13,
     "examples": [
       "000333casino.com",
@@ -313,7 +313,7 @@
   },
   {
     "pattern": "pub",
-    "domains": 1352,
+    "domains": 1353,
     "tranco_protected_matches": 72,
     "examples": [
       "101pub.org",
@@ -326,8 +326,8 @@
   },
   {
     "pattern": "weebly",
-    "domains": 1344,
-    "tranco_protected_matches": 1344,
+    "domains": 1343,
+    "tranco_protected_matches": 1343,
     "examples": [
       "0002985647.weebly.com",
       "008963466.weebly.com",
@@ -339,7 +339,7 @@
   },
   {
     "pattern": "tracker",
-    "domains": 1092,
+    "domains": 1090,
     "tranco_protected_matches": 443,
     "examples": [
       "123-tracker.com",
@@ -364,19 +364,6 @@
     "suggested_regex": "(^|\\.)[^.]*side[^.]*\\."
   },
   {
-    "pattern": "trk",
-    "domains": 1066,
-    "tranco_protected_matches": 286,
-    "examples": [
-      "1b0tc.trk.elasticemail.com",
-      "1h607.trk.elasticemail.com",
-      "1habt.trk.elasticemail.com",
-      "1k1vn.trk.elasticemail.com",
-      "1kzj5.trk.elasticemail.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*trk[^.]*\\."
-  },
-  {
     "pattern": "telemetry",
     "domains": 1056,
     "tranco_protected_matches": 656,
@@ -390,8 +377,21 @@
     "suggested_regex": "(^|\\.)[^.]*telemetry[^.]*\\."
   },
   {
+    "pattern": "trk",
+    "domains": 1055,
+    "tranco_protected_matches": 286,
+    "examples": [
+      "1b0tc.trk.elasticemail.com",
+      "1h607.trk.elasticemail.com",
+      "1habt.trk.elasticemail.com",
+      "1k1vn.trk.elasticemail.com",
+      "1kzj5.trk.elasticemail.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*trk[^.]*\\."
+  },
+  {
     "pattern": "google",
-    "domains": 984,
+    "domains": 983,
     "tranco_protected_matches": 801,
     "examples": [
       "0-09-preview-google-ads-bump.data.taxfix.tech",
@@ -404,7 +404,7 @@
   },
   {
     "pattern": "collector",
-    "domains": 960,
+    "domains": 958,
     "tranco_protected_matches": 570,
     "examples": [
       "489a19fa-d831-4954-858d-46436d5cdb20.register.collector.scopely.io",
@@ -417,7 +417,7 @@
   },
   {
     "pattern": "xml",
-    "domains": 866,
+    "domains": 864,
     "tranco_protected_matches": 37,
     "examples": [
       "ad-maven.xml.ak-is.net",
@@ -427,19 +427,6 @@
       "xml-eu-v4.aasedformed-c.online"
     ],
     "suggested_regex": "(^|\\.)[^.]*xml[^.]*\\."
-  },
-  {
-    "pattern": "online",
-    "domains": 838,
-    "tranco_protected_matches": 116,
-    "examples": [
-      "0x80.online-software.org",
-      "1984-online.com",
-      "1wins-app-india-online.com",
-      "21casino-online.de",
-      "24slots-online.de"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
   },
   {
     "pattern": "info",
@@ -455,8 +442,21 @@
     "suggested_regex": "(^|\\.)[^.]*info[^.]*\\."
   },
   {
+    "pattern": "online",
+    "domains": 832,
+    "tranco_protected_matches": 116,
+    "examples": [
+      "0x80.online-software.org",
+      "1984-online.com",
+      "1wins-app-india-online.com",
+      "21casino-online.de",
+      "24slots-online.de"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
+  },
+  {
     "pattern": "plausible",
-    "domains": 827,
+    "domains": 824,
     "tranco_protected_matches": 77,
     "examples": [
       "analytics-plausible.portal.gov.bd",
@@ -508,8 +508,8 @@
   },
   {
     "pattern": "logs",
-    "domains": 781,
-    "tranco_protected_matches": 482,
+    "domains": 780,
+    "tranco_protected_matches": 481,
     "examples": [
       "124220078916-access-logs.s3.eu-central-1.amazonaws.com",
       "124220078916-cloudia-logs.s3.eu-central-1.amazonaws.com",
@@ -521,8 +521,8 @@
   },
   {
     "pattern": "stat",
-    "domains": 775,
-    "tranco_protected_matches": 288,
+    "domains": 771,
+    "tranco_protected_matches": 286,
     "examples": [
       "123stat.com",
       "1stat.ru",
@@ -534,7 +534,7 @@
   },
   {
     "pattern": "web",
-    "domains": 758,
+    "domains": 755,
     "tranco_protected_matches": 252,
     "examples": [
       "0-web.com",
@@ -547,14 +547,14 @@
   },
   {
     "pattern": "aws",
-    "domains": 732,
+    "domains": 733,
     "tranco_protected_matches": 666,
     "examples": [
       "abc-prod-telemetry.aws.seabc.go.com",
       "ad-delivery-service.marketing-web-development.cb-aws-prd.eu",
       "ad-notice-aws.falconnet.app",
-      "ads.aws.dev.compagniedesalpes.fr",
-      "ads.consents-management.prod.aws.statista.com"
+      "ads-east-aws.adsymptotic.com",
+      "ads.aws.dev.compagniedesalpes.fr"
     ],
     "suggested_regex": "(^|\\.)[^.]*aws[^.]*\\."
   },
@@ -586,7 +586,7 @@
   },
   {
     "pattern": "collect",
-    "domains": 670,
+    "domains": 668,
     "tranco_protected_matches": 263,
     "examples": [
       "100016075.collect.igodigital.com",
@@ -599,7 +599,7 @@
   },
   {
     "pattern": "monitor",
-    "domains": 647,
+    "domains": 646,
     "tranco_protected_matches": 473,
     "examples": [
       "243706b73.monitor-ab9af5.sussybaka.store",
@@ -612,7 +612,7 @@
   },
   {
     "pattern": "france",
-    "domains": 606,
+    "domains": 605,
     "tranco_protected_matches": 10,
     "examples": [
       "1win-france.fr",
@@ -651,7 +651,7 @@
   },
   {
     "pattern": "live",
-    "domains": 581,
+    "domains": 580,
     "tranco_protected_matches": 301,
     "examples": [
       "100023.live173.com",
@@ -664,7 +664,7 @@
   },
   {
     "pattern": "monitoring",
-    "domains": 579,
+    "domains": 578,
     "tranco_protected_matches": 435,
     "examples": [
       "124220078916-monika-prod-monitoring-backup.s3.eu-central-1.amazonaws.com",
@@ -676,22 +676,9 @@
     "suggested_regex": "(^|\\.)[^.]*monitoring[^.]*\\."
   },
   {
-    "pattern": "shop",
-    "domains": 551,
-    "tranco_protected_matches": 40,
-    "examples": [
-      "001shop.cz",
-      "0800apo-shop.de",
-      "1-rx-shop.com",
-      "1shop.de",
-      "3821401244.hagel-shop.de"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*shop[^.]*\\."
-  },
-  {
     "pattern": "cloud",
-    "domains": 550,
-    "tranco_protected_matches": 347,
+    "domains": 548,
+    "tranco_protected_matches": 346,
     "examples": [
       "003d6db553fcd8ae426bf76f121e0878-dot-cloud-365-000.el.r.appspot.com",
       "007.go2cloud.org",
@@ -715,8 +702,21 @@
     "suggested_regex": "(^|\\.)[^.]*images[^.]*\\."
   },
   {
+    "pattern": "shop",
+    "domains": 545,
+    "tranco_protected_matches": 40,
+    "examples": [
+      "001shop.cz",
+      "0800apo-shop.de",
+      "1-rx-shop.com",
+      "1shop.de",
+      "3821401244.hagel-shop.de"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*shop[^.]*\\."
+  },
+  {
     "pattern": "normal",
-    "domains": 535,
+    "domains": 534,
     "tranco_protected_matches": 484,
     "examples": [
       "ad-format16-normal-useastred.tiktokv.eu",
@@ -729,7 +729,7 @@
   },
   {
     "pattern": "news",
-    "domains": 529,
+    "domains": 524,
     "tranco_protected_matches": 139,
     "examples": [
       "001news.com",
@@ -742,7 +742,7 @@
   },
   {
     "pattern": "pixel",
-    "domains": 523,
+    "domains": 521,
     "tranco_protected_matches": 200,
     "examples": [
       "ad-pixel.ru",
@@ -781,8 +781,8 @@
   },
   {
     "pattern": "service",
-    "domains": 510,
-    "tranco_protected_matches": 231,
+    "domains": 511,
+    "tranco_protected_matches": 230,
     "examples": [
       "360service.report360.io",
       "414259695207-crash-report-service-crashes.s3.us-west-2.amazonaws.com",
@@ -807,7 +807,7 @@
   },
   {
     "pattern": "adserver",
-    "domains": 493,
+    "domains": 491,
     "tranco_protected_matches": 127,
     "examples": [
       "2in1adserver.long.tv",
@@ -819,21 +819,8 @@
     "suggested_regex": "(^|\\.)[^.]*adserver[^.]*\\."
   },
   {
-    "pattern": "secure",
-    "domains": 471,
-    "tranco_protected_matches": 84,
-    "examples": [
-      "139644804765798-dot-we-secure-file-sh4456.appspot.com",
-      "158743g43.secure0034.hubspot.net",
-      "191126-secure-prizmex.tecnoticias.net",
-      "20191021t124955-dot-we-secure-file-sh4455.appspot.com",
-      "3d-secure.fr"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*secure[^.]*\\."
-  },
-  {
     "pattern": "allegrolokalnie",
-    "domains": 458,
+    "domains": 470,
     "tranco_protected_matches": 0,
     "examples": [
       "allegro.allegrolokalnie-oferty.click",
@@ -845,8 +832,21 @@
     "suggested_regex": "(^|\\.)[^.]*allegrolokalnie[^.]*\\."
   },
   {
+    "pattern": "secure",
+    "domains": 467,
+    "tranco_protected_matches": 84,
+    "examples": [
+      "139644804765798-dot-we-secure-file-sh4456.appspot.com",
+      "158743g43.secure0034.hubspot.net",
+      "191126-secure-prizmex.tecnoticias.net",
+      "20191021t124955-dot-we-secure-file-sh4455.appspot.com",
+      "3d-secure.fr"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*secure[^.]*\\."
+  },
+  {
     "pattern": "oferta",
-    "domains": 452,
+    "domains": 455,
     "tranco_protected_matches": 0,
     "examples": [
       "8364-oferta.shop",
@@ -872,8 +872,8 @@
   },
   {
     "pattern": "media",
-    "domains": 421,
-    "tranco_protected_matches": 102,
+    "domains": 418,
+    "tranco_protected_matches": 101,
     "examples": [
       "04media.com",
       "050media.nl",
@@ -898,7 +898,7 @@
   },
   {
     "pattern": "dev",
-    "domains": 385,
+    "domains": 378,
     "tranco_protected_matches": 106,
     "examples": [
       "00nvk529ieyf-pages-dev.translate.goog",
@@ -910,21 +910,8 @@
     "suggested_regex": "(^|\\.)[^.]*dev[^.]*\\."
   },
   {
-    "pattern": "digital",
-    "domains": 373,
-    "tranco_protected_matches": 70,
-    "examples": [
-      "0digital1.com",
-      "112digital.com",
-      "4killawm-awm-digital.pages.dev",
-      "920digital.com",
-      "acwagpt-digital.pages.dev"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*digital[^.]*\\."
-  },
-  {
     "pattern": "click",
-    "domains": 372,
+    "domains": 374,
     "tranco_protected_matches": 66,
     "examples": [
       "1000click.ir",
@@ -936,8 +923,21 @@
     "suggested_regex": "(^|\\.)[^.]*click[^.]*\\."
   },
   {
+    "pattern": "digital",
+    "domains": 372,
+    "tranco_protected_matches": 70,
+    "examples": [
+      "0digital1.com",
+      "112digital.com",
+      "4killawm-awm-digital.pages.dev",
+      "920digital.com",
+      "acwagpt-digital.pages.dev"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*digital[^.]*\\."
+  },
+  {
     "pattern": "platform",
-    "domains": 367,
+    "domains": 366,
     "tranco_protected_matches": 135,
     "examples": [
       "191126-kalyndraxa-ai-trading-platform.tecnoticias.net",
@@ -976,8 +976,8 @@
   },
   {
     "pattern": "tags",
-    "domains": 355,
-    "tranco_protected_matches": 269,
+    "domains": 354,
+    "tranco_protected_matches": 268,
     "examples": [
       "alt-tags.accessiblyapp.com",
       "cisco-tags.cisco.com",
@@ -1027,19 +1027,6 @@
     "suggested_regex": "(^|\\.)[^.]*rum[^.]*\\."
   },
   {
-    "pattern": "login",
-    "domains": 329,
-    "tranco_protected_matches": 44,
-    "examples": [
-      "1win-login.fr",
-      "4-en-login-app.de",
-      "ac-dijon-login.weebly.com",
-      "allegro-pl-login.comxa.com",
-      "amazon.co.jp.update-login-asp1.lkhwkd.ph"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*login[^.]*\\."
-  },
-  {
     "pattern": "tag",
     "domains": 328,
     "tranco_protected_matches": 107,
@@ -1053,8 +1040,21 @@
     "suggested_regex": "(^|\\.)[^.]*tag[^.]*\\."
   },
   {
+    "pattern": "login",
+    "domains": 328,
+    "tranco_protected_matches": 44,
+    "examples": [
+      "1win-login.fr",
+      "4-en-login-app.de",
+      "ac-dijon-login.weebly.com",
+      "allegro-pl-login.comxa.com",
+      "amazon.co.jp.update-login-asp1.lkhwkd.ph"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*login[^.]*\\."
+  },
+  {
     "pattern": "mail",
-    "domains": 325,
+    "domains": 324,
     "tranco_protected_matches": 94,
     "examples": [
       "010mail.com",
@@ -1079,19 +1079,6 @@
     "suggested_regex": "(^|\\.)[^.]*btc[^.]*\\."
   },
   {
-    "pattern": "amazon",
-    "domains": 319,
-    "tranco_protected_matches": 270,
-    "examples": [
-      "aan.amazon.co.jp",
-      "aan.amazon.co.uk",
-      "aan.amazon.com",
-      "aan.amazon.de",
-      "aan.amazon.es"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*amazon[^.]*\\."
-  },
-  {
     "pattern": "fdel",
     "domains": 319,
     "tranco_protected_matches": 319,
@@ -1103,6 +1090,19 @@
       "sonar.fdel1-3.fna.whatsapp.net"
     ],
     "suggested_regex": "(^|\\.)[^.]*fdel[^.]*\\."
+  },
+  {
+    "pattern": "amazon",
+    "domains": 315,
+    "tranco_protected_matches": 270,
+    "examples": [
+      "aan.amazon.co.jp",
+      "aan.amazon.co.uk",
+      "aan.amazon.com",
+      "aan.amazon.de",
+      "aan.amazon.es"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*amazon[^.]*\\."
   },
   {
     "pattern": "lgsmartad",
@@ -1158,7 +1158,7 @@
   },
   {
     "pattern": "production",
-    "domains": 300,
+    "domains": 301,
     "tranco_protected_matches": 121,
     "examples": [
       "abproxy.production-public.tubi.io",
@@ -1183,19 +1183,6 @@
     "suggested_regex": "(^|\\.)[^.]*aldi[^.]*\\."
   },
   {
-    "pattern": "host",
-    "domains": 292,
-    "tranco_protected_matches": 23,
-    "examples": [
-      "55b558c7-resources.web.host.ch",
-      "7host.com",
-      "93.105.205.92.host.secureserver.net",
-      "ad-host-backup-america.oss-us-west-1.aliyuncs.com",
-      "ad-host-backup-america.s3.us-west-1.amazonaws.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*host[^.]*\\."
-  },
-  {
     "pattern": "covid",
     "domains": 292,
     "tranco_protected_matches": 6,
@@ -1210,7 +1197,7 @@
   },
   {
     "pattern": "beacon",
-    "domains": 291,
+    "domains": 290,
     "tranco_protected_matches": 148,
     "examples": [
       "a.wikia-beacon.com",
@@ -1249,7 +1236,7 @@
   },
   {
     "pattern": "tech",
-    "domains": 284,
+    "domains": 281,
     "tranco_protected_matches": 31,
     "examples": [
       "01tech.com",
@@ -1298,5 +1285,18 @@
       "ad-client-in.skuyapi.my.id"
     ],
     "suggested_regex": "(^|\\.)[^.]*client[^.]*\\."
+  },
+  {
+    "pattern": "fmnl",
+    "domains": 274,
+    "tranco_protected_matches": 274,
+    "examples": [
+      "sonar.fmnl10-1.fna.fbcdn.net",
+      "sonar.fmnl10-1.fna.whatsapp.net",
+      "sonar.fmnl11-1.fna.fbcdn.net",
+      "sonar.fmnl11-1.fna.whatsapp.net",
+      "sonar.fmnl12-1.fna.fbcdn.net"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*fmnl[^.]*\\."
   }
 ]
