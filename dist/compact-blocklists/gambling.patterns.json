@@ -27,7 +27,7 @@
   },
   {
     "pattern": "xbet",
-    "domains": 2365,
+    "domains": 2367,
     "tranco_protected_matches": 14,
     "examples": [
       "0xbet-casino-online.com",
@@ -40,7 +40,7 @@
   },
   {
     "pattern": "win",
-    "domains": 1258,
+    "domains": 1259,
     "tranco_protected_matches": 13,
     "examples": [
       "001win8.com",
@@ -53,7 +53,7 @@
   },
   {
     "pattern": "online",
-    "domains": 896,
+    "domains": 897,
     "tranco_protected_matches": 4,
     "examples": [
       "0xbet-casino-online.com",
@@ -157,7 +157,7 @@
   },
   {
     "pattern": "slots",
-    "domains": 320,
+    "domains": 323,
     "tranco_protected_matches": 0,
     "examples": [
       "1-slots.world",
@@ -170,7 +170,7 @@
   },
   {
     "pattern": "pokerdom",
-    "domains": 293,
+    "domains": 294,
     "tranco_protected_matches": 0,
     "examples": [
       "1pokerdom.casino",
@@ -196,7 +196,7 @@
   },
   {
     "pattern": "bets",
-    "domains": 246,
+    "domains": 247,
     "tranco_protected_matches": 2,
     "examples": [
       "10048bets10.cam",
@@ -221,19 +221,6 @@
     "suggested_regex": "(^|\\.)[^.]*stake[^.]*\\."
   },
   {
-    "pattern": "jojobet",
-    "domains": 223,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "10165jojobet.com",
-      "20jojobet.org",
-      "495jojobet.com",
-      "501jojobet.com",
-      "508jojobet.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*jojobet[^.]*\\."
-  },
-  {
     "pattern": "venusbet",
     "domains": 218,
     "tranco_protected_matches": 0,
@@ -245,6 +232,19 @@
       "venusbet1026.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*venusbet[^.]*\\."
+  },
+  {
+    "pattern": "jojobet",
+    "domains": 217,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "10165jojobet.com",
+      "20jojobet.org",
+      "495jojobet.com",
+      "501jojobet.com",
+      "508jojobet.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*jojobet[^.]*\\."
   },
   {
     "pattern": "app",
@@ -260,6 +260,19 @@
     "suggested_regex": "(^|\\.)[^.]*app[^.]*\\."
   },
   {
+    "pattern": "vip",
+    "domains": 196,
+    "tranco_protected_matches": 3,
+    "examples": [
+      "111vip.casino",
+      "234vip1.com",
+      "24vip-casino.org",
+      "24vip-online.casino",
+      "3389vip.casino"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*vip[^.]*\\."
+  },
+  {
     "pattern": "matbet",
     "domains": 196,
     "tranco_protected_matches": 0,
@@ -271,19 +284,6 @@
       "matbet-2024.vip"
     ],
     "suggested_regex": "(^|\\.)[^.]*matbet[^.]*\\."
-  },
-  {
-    "pattern": "vip",
-    "domains": 193,
-    "tranco_protected_matches": 3,
-    "examples": [
-      "111vip.casino",
-      "234vip1.com",
-      "24vip-casino.org",
-      "24vip-online.casino",
-      "3389vip.casino"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*vip[^.]*\\."
   },
   {
     "pattern": "maltcasino",
@@ -378,7 +378,7 @@
   },
   {
     "pattern": "top",
-    "domains": 134,
+    "domains": 135,
     "tranco_protected_matches": 1,
     "examples": [
       "188top.casino",
@@ -520,6 +520,19 @@
     "suggested_regex": "(^|\\.)[^.]*login[^.]*\\."
   },
   {
+    "pattern": "giris",
+    "domains": 98,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "1-to-win-giris-tur.live",
+      "1xbet-giris-67.com",
+      "1xbet-giris-68.com",
+      "1xbet-giris-69.com",
+      "1xbet-giris-70.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*giris[^.]*\\."
+  },
+  {
     "pattern": "xslots",
     "domains": 98,
     "tranco_protected_matches": 0,
@@ -546,21 +559,8 @@
     "suggested_regex": "(^|\\.)[^.]*baji[^.]*\\."
   },
   {
-    "pattern": "giris",
-    "domains": 97,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "1-to-win-giris-tur.live",
-      "1xbet-giris-67.com",
-      "1xbet-giris-68.com",
-      "1xbet-giris-69.com",
-      "1xbet-giris-70.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*giris[^.]*\\."
-  },
-  {
     "pattern": "poker",
-    "domains": 94,
+    "domains": 95,
     "tranco_protected_matches": 3,
     "examples": [
       "123poker.life",

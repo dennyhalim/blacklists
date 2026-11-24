@@ -67,7 +67,7 @@
   {
     "pattern": "app",
     "domains": 951,
-    "tranco_protected_matches": 248,
+    "tranco_protected_matches": 249,
     "examples": [
       "105app.com",
       "21udflra4wd.app-dev.cainthus.com",
@@ -106,7 +106,7 @@
   {
     "pattern": "tracking",
     "domains": 814,
-    "tranco_protected_matches": 262,
+    "tranco_protected_matches": 260,
     "examples": [
       "77tracking.com",
       "a4b-tracking.com",
@@ -184,7 +184,7 @@
   {
     "pattern": "utiq",
     "domains": 384,
-    "tranco_protected_matches": 226,
+    "tranco_protected_matches": 227,
     "examples": [
       "utiq-test.utest1.work",
       "utiq-test.utest3.work",
@@ -574,7 +574,7 @@
   {
     "pattern": "somni",
     "domains": 118,
-    "tranco_protected_matches": 49,
+    "tranco_protected_matches": 48,
     "examples": [
       "somni.accenture.com",
       "somni.alaskaair.com",
@@ -600,7 +600,7 @@
   {
     "pattern": "metric",
     "domains": 115,
-    "tranco_protected_matches": 57,
+    "tranco_protected_matches": 56,
     "examples": [
       "api-metric.gosweb.gosuslugi.ru",
       "digital-metric.com",
@@ -704,7 +704,7 @@
   {
     "pattern": "ssl",
     "domains": 105,
-    "tranco_protected_matches": 45,
+    "tranco_protected_matches": 44,
     "examples": [
       "4e4356b68404a5138d2d-33393516977f9ca8dc54af2141da2a28.ssl.cf1.rackcdn.com",
       "a8.ssl.aispr.jp",
@@ -938,7 +938,7 @@
   {
     "pattern": "collector",
     "domains": 76,
-    "tranco_protected_matches": 45,
+    "tranco_protected_matches": 46,
     "examples": [
       "ads-collector.luizalabs.com",
       "adv-analytics-collector.videograph.ai",
@@ -1081,7 +1081,7 @@
   {
     "pattern": "smetric",
     "domains": 67,
-    "tranco_protected_matches": 26,
+    "tranco_protected_matches": 25,
     "examples": [
       "smetric.4imprint.com",
       "smetric.ads.microsoft.com",
@@ -1198,7 +1198,7 @@
   {
     "pattern": "forms",
     "domains": 59,
-    "tranco_protected_matches": 29,
+    "tranco_protected_matches": 28,
     "examples": [
       "forms-emea.lenovo.com",
       "forms.accc-cancer.org",
@@ -1274,19 +1274,6 @@
     "suggested_regex": "(^|\\.)[^.]*dyson[^.]*\\."
   },
   {
-    "pattern": "total",
-    "domains": 56,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "adminspace.carte-gr.total.fr",
-      "af.total-marriage.com",
-      "appinfosoryz.carte-gr.total.fr",
-      "appsecurezomation.carte-gr.total.fr",
-      "art.carte-gr.total.fr"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
-  },
-  {
     "pattern": "carte",
     "domains": 56,
     "tranco_protected_matches": 1,
@@ -1298,5 +1285,18 @@
       "auth.carte-gr.total.fr"
     ],
     "suggested_regex": "(^|\\.)[^.]*carte[^.]*\\."
+  },
+  {
+    "pattern": "total",
+    "domains": 56,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "adminspace.carte-gr.total.fr",
+      "af.total-marriage.com",
+      "appinfosoryz.carte-gr.total.fr",
+      "appsecurezomation.carte-gr.total.fr",
+      "art.carte-gr.total.fr"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
   }
 ]
