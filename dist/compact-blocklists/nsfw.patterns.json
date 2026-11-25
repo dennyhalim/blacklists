@@ -2,7 +2,7 @@
   {
     "pattern": "porn",
     "domains": 1999,
-    "tranco_protected_matches": 104,
+    "tranco_protected_matches": 102,
     "examples": [
       "069porn.com",
       "0porn.cc",
@@ -14,8 +14,8 @@
   },
   {
     "pattern": "sex",
-    "domains": 1358,
-    "tranco_protected_matches": 64,
+    "domains": 1360,
+    "tranco_protected_matches": 63,
     "examples": [
       "021sex.net",
       "09sex.com",
@@ -40,7 +40,7 @@
   },
   {
     "pattern": "porno",
-    "domains": 1160,
+    "domains": 1161,
     "tranco_protected_matches": 33,
     "examples": [
       "03porno.com",
@@ -53,21 +53,21 @@
   },
   {
     "pattern": "xxx",
-    "domains": 1098,
+    "domains": 1100,
     "tranco_protected_matches": 59,
     "examples": [
       "0.xxx-cdn.com",
       "003xxx.com",
+      "0145xxx.com",
       "0xxx-ws.zproxy.org",
-      "0xxx.ws",
-      "1130xxx.asia"
+      "0xxx.ws"
     ],
     "suggested_regex": "(^|\\.)[^.]*xxx[^.]*\\."
   },
   {
     "pattern": "img",
     "domains": 1006,
-    "tranco_protected_matches": 219,
+    "tranco_protected_matches": 218,
     "examples": [
       "b3.img.mobypicture.com",
       "cdn-d-img.pornhub.com",
@@ -105,7 +105,7 @@
   },
   {
     "pattern": "xnxx",
-    "domains": 571,
+    "domains": 572,
     "tranco_protected_matches": 118,
     "examples": [
       "110xnxx.com",
@@ -274,7 +274,7 @@
   },
   {
     "pattern": "girls",
-    "domains": 228,
+    "domains": 229,
     "tranco_protected_matches": 2,
     "examples": [
       "18-girls-av.com",
@@ -287,7 +287,7 @@
   },
   {
     "pattern": "hot",
-    "domains": 226,
+    "domains": 225,
     "tranco_protected_matches": 12,
     "examples": [
       "1.hot-dances.com",
@@ -339,7 +339,7 @@
   },
   {
     "pattern": "fuck",
-    "domains": 166,
+    "domains": 165,
     "tranco_protected_matches": 1,
     "examples": [
       "18fuck.me",
@@ -430,14 +430,14 @@
   },
   {
     "pattern": "cams",
-    "domains": 155,
+    "domains": 156,
     "tranco_protected_matches": 14,
     "examples": [
+      "0cams.com",
       "123cams4free.com",
       "12cams.be",
       "18-cams.com",
-      "321cams.net",
-      "4cams.net"
+      "321cams.net"
     ],
     "suggested_regex": "(^|\\.)[^.]*cams[^.]*\\."
   },
@@ -547,16 +547,29 @@
   },
   {
     "pattern": "escort",
-    "domains": 128,
+    "domains": 129,
     "tranco_protected_matches": 5,
     "examples": [
       "141sex-escort.com",
       "1escort-site.com",
+      "69escort.ch",
       "82escort.site",
-      "abby69escort.com",
-      "abu-dhabi-escort.com"
+      "abby69escort.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*escort[^.]*\\."
+  },
+  {
+    "pattern": "asian",
+    "domains": 129,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "asian-amateur.com",
+      "asian-anal.info",
+      "asian-area.net",
+      "asian-av.com",
+      "asian-bdsm.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*asian[^.]*\\."
   },
   {
     "pattern": "chat",
@@ -570,19 +583,6 @@
       "adult.chat-avenue.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*chat[^.]*\\."
-  },
-  {
-    "pattern": "asian",
-    "domains": 128,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "asian-amateur.com",
-      "asian-anal.info",
-      "asian-area.net",
-      "asian-av.com",
-      "asian-bdsm.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*asian[^.]*\\."
   },
   {
     "pattern": "teens",
@@ -651,7 +651,7 @@
   },
   {
     "pattern": "pornvideos",
-    "domains": 117,
+    "domains": 118,
     "tranco_protected_matches": 0,
     "examples": [
       "18pornvideos.net",
@@ -754,19 +754,6 @@
     "suggested_regex": "(^|\\.)[^.]*incest[^.]*\\."
   },
   {
-    "pattern": "xxxvideos",
-    "domains": 106,
-    "tranco_protected_matches": 1,
-    "examples": [
-      "1xxxvideos.com",
-      "6xxxvideos.com",
-      "acute-xxxvideos.com",
-      "all-xxxvideos.com",
-      "asian-xxxvideos.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*xxxvideos[^.]*\\."
-  },
-  {
     "pattern": "edge",
     "domains": 106,
     "tranco_protected_matches": 101,
@@ -804,6 +791,19 @@
       "ru.sex-studentki.guru"
     ],
     "suggested_regex": "(^|\\.)[^.]*studentki[^.]*\\."
+  },
+  {
+    "pattern": "xxxvideos",
+    "domains": 103,
+    "tranco_protected_matches": 1,
+    "examples": [
+      "1xxxvideos.com",
+      "6xxxvideos.com",
+      "acute-xxxvideos.com",
+      "all-xxxvideos.com",
+      "asian-xxxvideos.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*xxxvideos[^.]*\\."
   },
   {
     "pattern": "thumbs",
@@ -884,6 +884,19 @@
     "suggested_regex": "(^|\\.)[^.]*vids[^.]*\\."
   },
   {
+    "pattern": "amateur",
+    "domains": 97,
+    "tranco_protected_matches": 13,
+    "examples": [
+      "1liveshow-amateur.com",
+      "amateur-beauties.net",
+      "amateur-blogx.com",
+      "amateur-camsex.ch",
+      "amateur-cougar.com"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*amateur[^.]*\\."
+  },
+  {
     "pattern": "xxxtube",
     "domains": 97,
     "tranco_protected_matches": 0,
@@ -895,6 +908,19 @@
       "99xxxtube.com"
     ],
     "suggested_regex": "(^|\\.)[^.]*xxxtube[^.]*\\."
+  },
+  {
+    "pattern": "online",
+    "domains": 97,
+    "tranco_protected_matches": 10,
+    "examples": [
+      "24porno-online.cc",
+      "24porno-online.top",
+      "404.online.net",
+      "akiba-online.com",
+      "anal-online.org"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
   },
   {
     "pattern": "best",
@@ -934,32 +960,6 @@
       "free-porn-galleries.biz"
     ],
     "suggested_regex": "(^|\\.)[^.]*galleries[^.]*\\."
-  },
-  {
-    "pattern": "amateur",
-    "domains": 96,
-    "tranco_protected_matches": 13,
-    "examples": [
-      "1liveshow-amateur.com",
-      "amateur-beauties.net",
-      "amateur-blogx.com",
-      "amateur-camsex.ch",
-      "amateur-cougar.com"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*amateur[^.]*\\."
-  },
-  {
-    "pattern": "online",
-    "domains": 96,
-    "tranco_protected_matches": 10,
-    "examples": [
-      "24porno-online.cc",
-      "24porno-online.top",
-      "404.online.net",
-      "akiba-online.com",
-      "anal-online.org"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*online[^.]*\\."
   },
   {
     "pattern": "sextracker",

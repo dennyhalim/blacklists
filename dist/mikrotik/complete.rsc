@@ -1,5 +1,5 @@
 # Generated from: etblock, webserver, dshield30, abuseipdbnet, lessbogons, webclient, feodo, level2, etcompromised, alienvault, threatviewc2, censys, tif, graphicline
-# Entries: 45961
+# Entries: 45959
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-complete" and comment="bl.dennyhalim.com"]
@@ -663,7 +663,6 @@ add list="dhbl-complete" address="5.189.163.143" timeout=3d comment="bl.dennyhal
 add list="dhbl-complete" address="5.189.174.43" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="5.189.184.113" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="5.189.188.40" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-complete" address="5.189.191.124" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="5.189.217.0" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="5.189.252.0" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="5.195.53.173" timeout=3d comment="bl.dennyhalim.com"
@@ -8435,6 +8434,7 @@ add list="dhbl-complete" address="45.82.110.150" timeout=3d comment="bl.dennyhal
 add list="dhbl-complete" address="45.83.28.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="45.83.31.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="45.85.93.127" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-complete" address="45.85.180.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="45.86.60.174" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="45.86.62.54" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="45.86.67.90" timeout=3d comment="bl.dennyhalim.com"
@@ -20164,6 +20164,7 @@ add list="dhbl-complete" address="104.218.164.117" timeout=3d comment="bl.dennyh
 add list="dhbl-complete" address="104.218.165.188" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="104.219.233.131" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="104.222.30.193" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-complete" address="104.223.26.24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="104.223.84.34" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="104.231.221.146" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="104.232.96.0/20" timeout=3d comment="bl.dennyhalim.com"
@@ -29333,7 +29334,6 @@ add list="dhbl-complete" address="141.206.128.0/20" timeout=3d comment="bl.denny
 add list="dhbl-complete" address="141.223.5.21" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="141.224.130.229" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="141.226.25.165" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-complete" address="141.229.72.0/21" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="141.229.80.0/20" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="141.229.96.0/19" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="141.229.128.0/17" timeout=3d comment="bl.dennyhalim.com"
@@ -38438,8 +38438,6 @@ add list="dhbl-complete" address="192.55.209.0/24" timeout=3d comment="bl.dennyh
 add list="dhbl-complete" address="192.55.220.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="192.64.8.16" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="192.65.202.0/24" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-complete" address="192.67.85.0/24" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-complete" address="192.67.168.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="192.67.248.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="192.68.139.0/24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-complete" address="192.68.171.0/24" timeout=3d comment="bl.dennyhalim.com"
