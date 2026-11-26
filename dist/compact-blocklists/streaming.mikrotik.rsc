@@ -12,7 +12,7 @@
 /ip dns static add regexp="(^|\\.)(fast\.com|byteglb\.com|bamgrid\.com|primevideo\.com|tubi\.io)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(kick\.com|tiktok\.tps\.dv\.tech|disneyplus\.com|paramountplus\.com|max\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(amemv\.com|inkuai\.com|kwai\.com|xiaohongshu\.com|zijieapi\.com)$" type=NXDOMAIN comment="streaming"
-/ip dns static add regexp="(^|\\.)(douyin\.com|samsungcloud\.tv|kwaipros\.com|tiktokrow\-cdn\.com|play\.mercadolibre\.com\.mx)$" type=NXDOMAIN comment="streaming"
+/ip dns static add regexp="(^|\\.)(douyin\.com|kwaipros\.com|samsungcloud\.tv|tiktokrow\-cdn\.com|play\.mercadolibre\.com\.mx)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(mythad\.com|douyinliving\.com|pluto\.tv|kslawin\.com|ap4r\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(adaether\.com|aiv\-delivery\.net|oec\-im\-tt\-sg\.tiktokglobalshopv\.com|indazn\.com|discomax\.com)$" type=NXDOMAIN comment="streaming"
 /ip dns static add regexp="(^|\\.)(douyinvod\.com|plex\.tv|peacocktv\.com|hbomax\.com|yximgs\.com)$" type=NXDOMAIN comment="streaming"
