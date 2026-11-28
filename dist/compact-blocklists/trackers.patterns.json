@@ -28,7 +28,7 @@
   {
     "pattern": "marketing",
     "domains": 1620,
-    "tranco_protected_matches": 124,
+    "tranco_protected_matches": 123,
     "examples": [
       "5363316.marketing.numi.com",
       "aad-marketing.ascendeventmedia.com",
@@ -41,7 +41,7 @@
   {
     "pattern": "metrics",
     "domains": 1431,
-    "tranco_protected_matches": 730,
+    "tranco_protected_matches": 731,
     "examples": [
       "aa-metrics.aircard.jp",
       "aa-metrics.airpayment.jp",
@@ -93,7 +93,7 @@
   {
     "pattern": "analytics",
     "domains": 854,
-    "tranco_protected_matches": 306,
+    "tranco_protected_matches": 305,
     "examples": [
       "a8c-analytics.js",
       "access-analytics.js",
@@ -119,7 +119,7 @@
   {
     "pattern": "link",
     "domains": 723,
-    "tranco_protected_matches": 106,
+    "tranco_protected_matches": 105,
     "examples": [
       "a8.kizuna-link.jp",
       "a8cv.global-link-seminar.com",
@@ -184,7 +184,7 @@
   {
     "pattern": "utiq",
     "domains": 384,
-    "tranco_protected_matches": 228,
+    "tranco_protected_matches": 227,
     "examples": [
       "utiq-test.utest1.work",
       "utiq-test.utest3.work",
@@ -197,7 +197,7 @@
   {
     "pattern": "trk",
     "domains": 370,
-    "tranco_protected_matches": 83,
+    "tranco_protected_matches": 84,
     "examples": [
       "2trk.info",
       "a8trk.www.std-lab.jp",
@@ -314,7 +314,7 @@
   {
     "pattern": "sstats",
     "domains": 224,
-    "tranco_protected_matches": 78,
+    "tranco_protected_matches": 77,
     "examples": [
       "omtrns.sstats.q8.dk",
       "sstats.aavacations.com",
@@ -366,7 +366,7 @@
   {
     "pattern": "stat",
     "domains": 180,
-    "tranco_protected_matches": 62,
+    "tranco_protected_matches": 61,
     "examples": [
       "123stat.com",
       "4399stat.5054399.com",
@@ -379,7 +379,7 @@
   {
     "pattern": "connect",
     "domains": 174,
-    "tranco_protected_matches": 63,
+    "tranco_protected_matches": 62,
     "examples": [
       "app.connect.cch.ca",
       "app.connect.mandiant.com",
@@ -509,7 +509,7 @@
   {
     "pattern": "engage",
     "domains": 145,
-    "tranco_protected_matches": 31,
+    "tranco_protected_matches": 30,
     "examples": [
       "8041691.engage.hipages.com.au",
       "ablink.engage.hipages.com.au",
@@ -704,7 +704,7 @@
   {
     "pattern": "ssl",
     "domains": 105,
-    "tranco_protected_matches": 45,
+    "tranco_protected_matches": 44,
     "examples": [
       "4e4356b68404a5138d2d-33393516977f9ca8dc54af2141da2a28.ssl.cf1.rackcdn.com",
       "a8.ssl.aispr.jp",
@@ -1081,7 +1081,7 @@
   {
     "pattern": "smetric",
     "domains": 67,
-    "tranco_protected_matches": 25,
+    "tranco_protected_matches": 26,
     "examples": [
       "smetric.4imprint.com",
       "smetric.ads.microsoft.com",
@@ -1133,7 +1133,7 @@
   {
     "pattern": "mobile",
     "domains": 65,
-    "tranco_protected_matches": 44,
+    "tranco_protected_matches": 45,
     "examples": [
       "a8.next-mobile.jp",
       "a8click.young-mobile.net",
@@ -1274,19 +1274,6 @@
     "suggested_regex": "(^|\\.)[^.]*dyson[^.]*\\."
   },
   {
-    "pattern": "total",
-    "domains": 56,
-    "tranco_protected_matches": 0,
-    "examples": [
-      "adminspace.carte-gr.total.fr",
-      "af.total-marriage.com",
-      "appinfosoryz.carte-gr.total.fr",
-      "appsecurezomation.carte-gr.total.fr",
-      "art.carte-gr.total.fr"
-    ],
-    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
-  },
-  {
     "pattern": "carte",
     "domains": 56,
     "tranco_protected_matches": 1,
@@ -1298,5 +1285,18 @@
       "auth.carte-gr.total.fr"
     ],
     "suggested_regex": "(^|\\.)[^.]*carte[^.]*\\."
+  },
+  {
+    "pattern": "total",
+    "domains": 56,
+    "tranco_protected_matches": 0,
+    "examples": [
+      "adminspace.carte-gr.total.fr",
+      "af.total-marriage.com",
+      "appinfosoryz.carte-gr.total.fr",
+      "appsecurezomation.carte-gr.total.fr",
+      "art.carte-gr.total.fr"
+    ],
+    "suggested_regex": "(^|\\.)[^.]*total[^.]*\\."
   }
 ]

@@ -1,5 +1,5 @@
 # Generated from: etcompromised, alienvault, threatviewc2, censys, feodo
-# Entries: 2102
+# Entries: 2105
 # Managed entries expire after: 3d
 /ip firewall address-list
 remove [find where list="dhbl-baseip" and comment="bl.dennyhalim.com"]
@@ -539,6 +539,7 @@ add list="dhbl-baseip" address="47.86.184.71" timeout=3d comment="bl.dennyhalim.
 add list="dhbl-baseip" address="47.90.142.15" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="47.90.202.152" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="47.92.127.53" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="47.92.212.48" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="47.93.28.103" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="47.95.201.24" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="47.95.207.79" timeout=3d comment="bl.dennyhalim.com"
@@ -973,6 +974,7 @@ add list="dhbl-baseip" address="101.181.102.108" timeout=3d comment="bl.dennyhal
 add list="dhbl-baseip" address="101.181.104.241" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="101.181.114.172" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="101.181.132.37" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="101.200.72.6" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="101.201.54.74" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="101.201.104.208" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="102.220.45.186" timeout=3d comment="bl.dennyhalim.com"
@@ -1277,7 +1279,6 @@ add list="dhbl-baseip" address="120.29.143.194" timeout=3d comment="bl.dennyhali
 add list="dhbl-baseip" address="120.29.153.121" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="120.39.197.231" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="120.46.197.246" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-baseip" address="120.48.16.142" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="120.48.18.226" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="120.48.28.246" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="120.48.50.33" timeout=3d comment="bl.dennyhalim.com"
@@ -1381,6 +1382,7 @@ add list="dhbl-baseip" address="123.12.23.5" timeout=3d comment="bl.dennyhalim.c
 add list="dhbl-baseip" address="123.25.1.226" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="123.30.238.247" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="123.56.78.220" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="123.57.153.206" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="123.58.198.236" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="123.110.213.41" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="123.139.38.70" timeout=3d comment="bl.dennyhalim.com"
@@ -1425,6 +1427,7 @@ add list="dhbl-baseip" address="125.228.90.229" timeout=3d comment="bl.dennyhali
 add list="dhbl-baseip" address="127.0.0.1" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="128.185.33.227" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="129.28.85.210" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="129.204.47.139" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="129.204.103.151" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="129.226.135.188" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="130.12.181.21" timeout=3d comment="bl.dennyhalim.com"
@@ -1443,7 +1446,6 @@ add list="dhbl-baseip" address="134.209.164.110" timeout=3d comment="bl.dennyhal
 add list="dhbl-baseip" address="134.209.218.203" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="135.125.238.245" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="137.74.162.180" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-baseip" address="137.175.102.172" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="137.184.22.236" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="137.184.30.177" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="137.184.42.85" timeout=3d comment="bl.dennyhalim.com"
@@ -1582,6 +1584,8 @@ add list="dhbl-baseip" address="150.158.119.242" timeout=3d comment="bl.dennyhal
 add list="dhbl-baseip" address="150.158.170.241" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="150.187.25.242" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="150.242.14.129" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="151.239.11.18" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="151.239.24.160" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="151.242.43.71" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="152.32.202.240" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="152.32.236.102" timeout=3d comment="bl.dennyhalim.com"
@@ -1673,7 +1677,6 @@ add list="dhbl-baseip" address="161.97.83.227" timeout=3d comment="bl.dennyhalim
 add list="dhbl-baseip" address="161.97.97.229" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="161.97.122.7" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="161.97.143.54" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-baseip" address="162.14.122.146" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="162.33.177.27" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="162.33.177.167" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="162.33.178.244" timeout=3d comment="bl.dennyhalim.com"
@@ -1959,6 +1962,7 @@ add list="dhbl-baseip" address="193.187.110.158" timeout=3d comment="bl.dennyhal
 add list="dhbl-baseip" address="193.187.110.160" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="193.201.9.229" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="193.233.203.214" timeout=3d comment="bl.dennyhalim.com"
+add list="dhbl-baseip" address="193.239.86.192/31" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="194.5.212.192" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="194.37.97.146" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="194.37.97.153" timeout=3d comment="bl.dennyhalim.com"
@@ -1982,7 +1986,6 @@ add list="dhbl-baseip" address="196.189.236.67" timeout=3d comment="bl.dennyhali
 add list="dhbl-baseip" address="196.251.69.253" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="196.251.83.89" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="198.23.242.99" timeout=3d comment="bl.dennyhalim.com"
-add list="dhbl-baseip" address="198.44.116.156" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="198.54.117.242" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="198.98.53.34" timeout=3d comment="bl.dennyhalim.com"
 add list="dhbl-baseip" address="198.98.62.43" timeout=3d comment="bl.dennyhalim.com"
